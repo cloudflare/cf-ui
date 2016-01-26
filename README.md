@@ -48,3 +48,9 @@ $ npm run examples
 $ node example/server.js
 # Now open http://localhost:8000/ in your browser.
 ```
+
+Or you can run the examples dev task: (Note: this is still really slow)
+
+```sh
+$ npm run examples-dev
+```
