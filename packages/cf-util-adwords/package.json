@@ -1,0 +1,10 @@
+{
+  "name": "cf-util-adwords",
+  "description": "CloudFlare Google AdWords Util",
+  "version": "3.0.2",
+  "main": "lib/index.js",
+  "author": "James Kyle <jkyle@cloudflare.com>",
+  "license": "BSD-3-Clause",
+  "dependencies": {},
+  "devDependencies": {}
+}

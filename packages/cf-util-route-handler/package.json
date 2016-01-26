@@ -1,0 +1,13 @@
+{
+  "name": "cf-util-route-handler",
+  "description": "CloudFlare Route Handler Util",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "author": "James Kyle <me@thejameskyle.com>",
+  "license": "BSD-3-Clause",
+  "dependencies": {},
+  "devDependencies": {
+    "backbone": "^1.2.3",
+    "jquery": "^2.1.4"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "cf-util-markdown",
+  "description": "CloudFlare Markdown Util",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "author": "James Kyle <jkyle@cloudflare.com>",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "marked": "^0.3.5"
+  },
+  "devDependencies": {}
+}

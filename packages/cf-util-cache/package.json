@@ -1,0 +1,12 @@
+{
+  "name": "cf-util-cache",
+  "description": "CloudFlare Cache Util",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "author": "James Kyle <jkyle@cloudflare.com>",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "cf-util-logger": "^1.0.0"
+  },
+  "devDependencies": {}
+}

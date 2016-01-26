@@ -1,0 +1,17 @@
+{
+  "name": "cf-component-link",
+  "description": "CloudFlare Link Component",
+  "version": "1.2.0",
+  "main": "lib/index.js",
+  "author": "James Kyle <jkyle@cloudflare.com>",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "cf-util-route-handler": "^1.0.0",
+    "react": "^0.14.2"
+  },
+  "devDependencies": {
+    "backbone": "^1.2.3",
+    "jquery": "^2.2.0",
+    "react-dom": "^0.14.2"
+  }
+}

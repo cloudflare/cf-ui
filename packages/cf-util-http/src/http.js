@@ -1,0 +1,153 @@
+import superagent from 'superagent';
+import createLogger from 'cf-util-logger';
+
+const logRequest = createLogger('http:request');
+const logError = createLogger('http:error');
+const logSuccess = createLogger('http:success');
+
+// Mapping of http request types to superagent methods.
+const METHODS = {
+  GET    : 'get',
+  POST   : 'post',
+  PUT    : 'put',
+  PATCH  : 'patch',
+  DELETE : 'del'
+};
+
+// Store beforeSend callbacks.
+const beforeSendCallbacks = [];
+
+/**
+ * Modify request options before they are sent.
+ * Useful for authentication or other middleware.
+ *
+ * ```js
+ * beforeSend(function(opts) {
+ *   opts.url = '/api/v4' + opts.url;
+ * });
+ * ```
+ *
+ * @param {Function} callback
+ */
+export function beforeSend(callback) {
+  beforeSendCallbacks.push(callback);
+}
+
+/**
+ * Perform an http request.
+ *
+ * ```js
+ * request('POST', '/posts', {
+ *   body: {
+ *     title: 'A New Post',
+ *     content: 'Contents of the new post.'
+ *   }
+ * }, function(res) {
+ *   console.log(res.body); // > { result: { id: 1, title: 'A New Post', content: 'Contents of the new post.' } }
+ * }, function(err) {
+ *   console.log(res.body); // > { errors: [{ message: 'Error!' }] }
+ * });
+ * ```
+ *
+ * @param {String} method - GET/POST/PUT/PATCH/DELETE
+ * @param {String} url
+ * @param {Object} [opts]
+ * @param {Object} [opts.parameters]
+ * @param {Object} [opts.headers]
+ * @param {Object} [opts.body]
+ * @param {Function} [onSuccess]
+ * @param {Function} [onError]
+ * @returns {Function} Abort request.
+ */
+export function request(method, url, opts, onSuccess, onError) {
+  opts = opts || {};
+
+  opts.method = method;
+  opts.url = url;
+  opts.onSuccess = onSuccess;
+  opts.onError = onError;
+
+  // Allow beforeSend to modify request options.
+  beforeSendCallbacks.forEach(callback => callback(opts));
+
+  // Configure request
+  const req = superagent[METHODS[method]](opts.url);
+
+  if (opts.parameters) {
+    req.query(opts.parameters);
+  }
+
+  if (opts.headers) {
+    req.set(opts.headers);
+  }
+
+  if (opts.body) {
+    req.send(opts.body);
+  }
+
+  let logMessage = `${opts.method} ${opts.url}`;
+
+  logRequest(logMessage);
+
+  // Send request
+  req.end((err, res) => {
+    const callback = err ? opts.onError : opts.onSuccess;
+
+    logMessage = `${logMessage} (${res.status} ${res.statusText})`;
+
+    if (err) {
+      logError(logMessage);
+    } else {
+      logSuccess(logMessage);
+    }
+
+    if (callback) {
+      callback({
+        headers: res.headers,
+        status: res.status,
+        body: res.body,
+        text: res.text
+      });
+    }
+  });
+
+  // Return abort function
+  return function() {
+    req.abort();
+  };
+}
+
+/**
+ * Perform a GET request.
+ */
+export function get(...args) {
+  return request('GET', ...args);
+}
+
+/**
+ * Perform a POST request.
+ */
+export function post(...args) {
+  return request('POST', ...args);
+}
+
+/**
+ * Perform a PUT request.
+ */
+export function put(...args) {
+  return request('PUT', ...args);
+}
+
+/**
+ * Perform a PATCH request.
+ */
+export function patch(...args) {
+  return request('PATCH', ...args);
+}
+
+/**
+ * Perform a DELETE request.
+ */
+export function del(...args) {
+  return request('DELETE', ...args);
+}

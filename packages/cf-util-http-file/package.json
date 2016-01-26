@@ -1,0 +1,15 @@
+{
+  "name": "cf-util-http-file",
+  "description": "CloudFlare HTTP File Util",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "author": "James Kyle <jkyle@cloudflare.com>",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "cf-util-http": "^1.1.0"
+  },
+  "devDependencies": {
+    "express": "^4.13.3",
+    "multer": "^1.1.0"
+  }
+}

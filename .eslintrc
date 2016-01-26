@@ -1,0 +1,50 @@
+# vim: set ft=yaml:
+---
+  env:
+    browser: true
+    node: true
+  parser: babel-eslint
+  # plugins:
+  #   - "cflint"
+  rules:
+    # Possible Errors
+    quote-props:
+      - 1
+      - "as-needed"
+    quotes:
+      - 2
+      - "single"
+    # Best Practices
+    block-scoped-var: 2
+    default-case: 2
+    guard-for-in: 2
+    no-else-return: 2
+    no-floating-decimal: 2
+    no-self-compare: 2
+    no-void: 2
+    radix: 2
+    ## Possible that this will switch to a "2" later
+    wrap-iife: 2
+    # Strict Mode
+    strict:
+      - 2
+      - "never"
+    # Variables
+    no-catch-shadow: 2
+    # Node.js
+    handle-callback-err: 2
+    # Stylistic Issues
+    brace-style:
+      - 1
+      - "1tbs"
+    camelcase: 0
+    comma-style:
+      - 2
+      - "last"
+    no-lonely-if: 2
+    no-nested-ternary: 2
+    no-underscore-dangle: 0
+    semi:
+      - 2
+      - "always"
+    space-unary-ops: 2

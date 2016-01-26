@@ -1,0 +1,14 @@
+{
+  "name": "cf-component-textarea",
+  "description": "CloudFlare Textarea Component",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "author": "James Kyle <jkyle@cloudflare.com>",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "react": "^0.14.2"
+  },
+  "devDependencies": {
+    "react-dom": "^0.14.2"
+  }
+}

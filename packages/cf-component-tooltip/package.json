@@ -1,0 +1,15 @@
+{
+  "name": "cf-component-tooltip",
+  "description": "CloudFlare Tooltip Component",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "author": "James Kyle <jkyle@cloudflare.com>",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "react": "^0.14.2",
+    "tether-tooltip": "^1.1.0"
+  },
+  "devDependencies": {
+    "react-dom": "^0.14.2"
+  }
+}
