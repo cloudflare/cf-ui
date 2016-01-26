@@ -10,7 +10,7 @@
     "dev": "gulp dev",
     "lint": "gulp lint",
     "test": "gulp test",
-    "examples": "browserify packages/cf-component-*/example/*/component.js -o example/bundle.js -t babelify",
+    "examples": "browserify packages/cf-component-*/example/*/component.js -o example/bundle.js -t babelify && node example/server.js"
   },
   "devDependencies": {
     "babel-core": "^6.0.20",
