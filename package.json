@@ -6,7 +6,7 @@
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "gulp build",
-    "bootstrap": "gulp bootstrap",
+    "bootstrap": "lerna bootstrap",
     "dev": "gulp dev",
     "lint": "gulp lint",
     "test": "gulp test",
