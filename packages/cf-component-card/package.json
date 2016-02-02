@@ -1,7 +1,7 @@
 {
   "name": "cf-component-card",
   "description": "CloudFlare Card Component",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
@@ -9,7 +9,7 @@
     "react": "^0.14.2"
   },
   "devDependencies": {
-    "cf-component-button": "^2.0.0",
+    "cf-component-button": "^2.1.0",
     "react-dom": "^0.14.2"
   }
 }

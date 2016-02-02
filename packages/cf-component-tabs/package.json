@@ -1,13 +1,13 @@
 {
   "name": "cf-component-tabs",
   "description": "CloudFlare Tabs Component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "cf-component-select": "^1.0.0",
-    "cf-component-viewport": "^1.0.0",
+    "cf-component-select": "^1.0.1",
+    "cf-component-viewport": "^1.0.1",
     "react": "^0.14.2"
   },
   "devDependencies": {
