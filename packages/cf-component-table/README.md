@@ -11,8 +11,8 @@ $ npm install cf-component-table
 ## Usage
 
 ```js
-import React from 'react';
-import {
+const React = require('react');
+const {
   Table,
   TableHead,
   TableBody,
@@ -20,7 +20,7 @@ import {
   TableRow,
   TableHeadCell,
   TableCell
-} from '../../src/index';
+} = require('../../src/index');
 
 export default class Application extends React.Component {
   render() {

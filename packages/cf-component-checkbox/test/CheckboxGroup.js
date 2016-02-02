@@ -1,7 +1,7 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import CheckboxGroup from '../src/CheckboxGroup';
-import Checkbox from '../src/Checkbox';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const CheckboxGroup = require('../src/CheckboxGroup');
+const Checkbox = require('../src/Checkbox');
 
 describe('CheckboxGroup', function() {
   it('should render', function() {

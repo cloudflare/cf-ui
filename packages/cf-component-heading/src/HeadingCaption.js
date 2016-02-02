@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class HeadingCaption extends React.Component {
+class HeadingCaption extends React.Component {
   render() {
     return (
       <small className="cf-heading__caption">
@@ -9,3 +9,5 @@ export default class HeadingCaption extends React.Component {
     );
   }
 }
+
+module.exports = HeadingCaption;

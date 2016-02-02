@@ -11,8 +11,8 @@ $ npm install cf-component-toggle
 ## Usage
 
 ```js
-import React from 'react';
-import Toggle from '../../src/index';
+const React = require('react');
+const Toggle = require('../../src/index');
 
 class Application extends React.Component {
   state = {

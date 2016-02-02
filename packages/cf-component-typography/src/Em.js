@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class Em extends React.Component {
+class Em extends React.Component {
   render() {
     return (
       <em className="cf-em">
@@ -9,3 +9,5 @@ export default class Em extends React.Component {
     );
   }
 }
+
+module.exports = Em;

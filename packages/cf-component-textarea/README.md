@@ -11,8 +11,8 @@ $ npm install cf-component-textarea
 ## Usage
 
 ```js
-import React from 'react';
-import Textarea from '../../src/index';
+const React = require('react');
+const Textarea = require('../../src/index');
 
 class Application extends React.Component {
   state = {

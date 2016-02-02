@@ -1,8 +1,9 @@
-import React, {PropTypes} from 'react';
-import Viewport from 'cf-component-viewport';
-import Select from 'cf-component-select';
+const React = require('react');
+const {PropTypes} = React;
+const Viewport = require('cf-component-viewport');
+const Select = require('cf-component-select');
 
-export default class Tabs extends React.Component {
+class Tabs extends React.Component {
   static propTypes = {
     onChange: PropTypes.func.isRequired,
     activeTab: PropTypes.string.isRequired,
@@ -78,3 +79,5 @@ export default class Tabs extends React.Component {
     );
   }
 }
+
+module.exports = Tabs;

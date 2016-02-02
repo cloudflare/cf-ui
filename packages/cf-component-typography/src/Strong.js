@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class Strong extends React.Component {
+class Strong extends React.Component {
   render() {
     return (
       <strong className="cf-strong">
@@ -9,3 +9,5 @@ export default class Strong extends React.Component {
     );
   }
 }
+
+module.exports = Strong;

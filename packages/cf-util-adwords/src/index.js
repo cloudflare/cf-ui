@@ -1,1 +1,1 @@
-export default from './trackAdwords';
+module.exports = require('./trackAdwords');

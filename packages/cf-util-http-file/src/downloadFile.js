@@ -1,4 +1,4 @@
-import {get as httpGet} from './http';
+const {get: httpGet} = require('./http');
 
 function saveFile(filename, file) {
   // Data URIs cannot be used for navigation, for scripting, or to
@@ -22,9 +22,11 @@ function saveFile(filename, file) {
   link.dispatchEvent(event);
 }
 
-export default function downloadFile(url, filename, onSuccess, onError) {
+function downloadFile(url, filename, onSuccess, onError) {
   return httpGet(url, null, res => {
     saveFile(filename, res.text);
     if (onSuccess) onSuccess(res);
   }, onError);
 }
+
+module.exports = downloadFile;

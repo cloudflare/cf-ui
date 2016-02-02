@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class Strike extends React.Component {
+class Strike extends React.Component {
   render() {
     return (
       <s className="cf-strike">
@@ -9,3 +9,5 @@ export default class Strike extends React.Component {
     );
   }
 }
+
+module.exports = Strike;

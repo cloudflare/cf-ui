@@ -1,2 +1,2 @@
-export Tabs from './Tabs';
-export TabsPanel from './TabsPanel';
+exports.Tabs = require('./Tabs');
+exports.TabsPanel = require('./TabsPanel');

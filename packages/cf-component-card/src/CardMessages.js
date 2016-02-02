@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class CardMessages extends React.Component {
+class CardMessages extends React.Component {
   static propTypes = {
     messages: PropTypes.arrayOf(PropTypes.shape({
       type: PropTypes.oneOf(['info', 'success', 'error', 'warning']),
@@ -22,3 +23,5 @@ export default class CardMessages extends React.Component {
     );
   }
 }
+
+module.exports = CardMessages;

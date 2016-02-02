@@ -1,5 +1,5 @@
-import {equal as assertEqual} from 'assert';
-import renderMarkdown from '../src/renderMarkdown';
+const {equal: assertEqual} = require('assert');
+const renderMarkdown = require('../src/renderMarkdown');
 
 describe('renderMarkdown', function() {
   it('should render markdown', function() {

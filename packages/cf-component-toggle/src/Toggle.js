@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class Toggle extends React.Component {
+class Toggle extends React.Component {
   static propTypes = {
     label: PropTypes.oneOfType([
       PropTypes.string,
@@ -43,3 +44,5 @@ export default class Toggle extends React.Component {
     );
   }
 }
+
+module.exports = Toggle;

@@ -1,7 +1,7 @@
-export Card from './Card';
-export CardContent from './CardContent';
-export CardControl from './CardControl';
-export CardDrawers from './CardDrawers';
-export CardLoadingText from './CardLoadingText';
-export CardMessages from './CardMessages';
-export CardSection from './CardSection';
+exports.Card = require('./Card');
+exports.CardContent = require('./CardContent');
+exports.CardControl = require('./CardControl');
+exports.CardDrawers = require('./CardDrawers');
+exports.CardLoadingText = require('./CardLoadingText');
+exports.CardMessages = require('./CardMessages');
+exports.CardSection = require('./CardSection');

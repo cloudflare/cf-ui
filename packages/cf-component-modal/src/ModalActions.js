@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class ModalActions extends React.Component {
+class ModalActions extends React.Component {
   render() {
     return (
       <div className="cf-modal__actions">
@@ -9,3 +9,5 @@ export default class ModalActions extends React.Component {
     );
   }
 }
+
+module.exports = ModalActions;

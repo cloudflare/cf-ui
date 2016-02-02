@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import ModalBody from '../src/ModalBody';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const ModalBody = require('../src/ModalBody');
 
 describe('ModalBody', function() {
   it('should render', function() {

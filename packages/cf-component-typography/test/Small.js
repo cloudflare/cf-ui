@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Small from '../src/Small';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Small = require('../src/Small');
 
 describe('Small', function() {
   it('should render', function() {

@@ -11,8 +11,8 @@ $ npm install cf-component-loading
 ## Usage
 
 ```js
-import React from 'react';
-import Loading from 'cf-component-loading';
+const React = require('react');
+const Loading = require('cf-component-loading');
 
 class MyComponent extends React.Component {
   render() {

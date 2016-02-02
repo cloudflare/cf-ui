@@ -1,7 +1,7 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import List from '../src/List';
-import ListItem from '../src/ListItem';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const List = require('../src/List');
+const ListItem = require('../src/ListItem');
 
 describe('List', function() {
   it('should render', function() {

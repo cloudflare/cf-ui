@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class Callout extends React.Component {
+class Callout extends React.Component {
   static propTypes = {
     type: PropTypes.oneOf(['default', 'info']),
     title: PropTypes.string.isRequired,
@@ -23,4 +24,6 @@ export default class Callout extends React.Component {
       </div>
     );
   }
-}
+};
+
+module.exports = Callout;

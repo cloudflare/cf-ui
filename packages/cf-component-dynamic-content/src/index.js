@@ -1,1 +1,1 @@
-export default from './DynamicContent';
+module.exports = require('./DynamicContent');

@@ -11,8 +11,8 @@ $ npm install cf-component-icon
 ## Usage
 
 ```js
-import React from 'react';
-import Icon from 'cf-component-icon';
+const React = require('react');
+const Icon = require('cf-component-icon');
 
 class Application extends React.Component {
   render() {

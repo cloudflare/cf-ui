@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class Textarea extends React.Component {
+class Textarea extends React.Component {
   static propTypes = {
     name: PropTypes.string.isRequired,
     value: PropTypes.string.isRequired,
@@ -21,3 +22,5 @@ export default class Textarea extends React.Component {
     );
   }
 }
+
+module.exports = Textarea;

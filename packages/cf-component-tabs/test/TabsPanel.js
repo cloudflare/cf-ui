@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import TabsPanel from '../src/TabsPanel';
+const React = require('react');
+const {PropTypes} = React;
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const TabsPanel = require('../src/TabsPanel');
 
 class Context extends React.Component {
   static propTypes = { activeTab: PropTypes.string.isRequired };

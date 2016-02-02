@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Link from '../src/Link';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Link = require('../src/Link');
 
 describe('Link', function() {
   it('should render', function() {

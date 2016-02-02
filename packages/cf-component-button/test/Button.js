@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Button from '../src/Button';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Button = require('../src/Button');
 
 describe('Button', function() {
   it('should render with type', function() {

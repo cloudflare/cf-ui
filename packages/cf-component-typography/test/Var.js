@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Var from '../src/Var';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Var = require('../src/Var');
 
 describe('Var', function() {
   it('should render', function() {

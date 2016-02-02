@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class ListItem extends React.Component {
+class ListItem extends React.Component {
   render() {
     return (
       <li className="cf-list__item">
@@ -9,3 +9,5 @@ export default class ListItem extends React.Component {
     );
   }
 }
+
+module.exports = ListItem;

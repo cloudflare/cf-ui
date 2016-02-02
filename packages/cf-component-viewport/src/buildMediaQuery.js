@@ -1,4 +1,4 @@
-export default function buildMediaQuery({minWidth, maxWidth}, not) {
+function buildMediaQuery({minWidth, maxWidth}, not) {
   let query = '';
 
   if (minWidth) {
@@ -19,3 +19,5 @@ export default function buildMediaQuery({minWidth, maxWidth}, not) {
 
   return query;
 }
+
+module.exports = buildMediaQuery;

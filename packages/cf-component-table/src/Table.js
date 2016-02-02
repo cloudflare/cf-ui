@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class Table extends React.Component {
+class Table extends React.Component {
   static propTypes = {
     striped: PropTypes.bool,
     hover: PropTypes.bool,
@@ -30,3 +31,5 @@ export default class Table extends React.Component {
     );
   }
 }
+
+module.exports = Table;

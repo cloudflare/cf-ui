@@ -1,6 +1,6 @@
 let currentFocus;
 
-export function trackFocus() {
+function trackFocus() {
   const prevFocus = global.HTMLElement.prototype.focus;
 
   global.HTMLElement.prototype.focus = function() {
@@ -13,6 +13,8 @@ export function trackFocus() {
   };
 }
 
-export function getCurrentFocus() {
+function getCurrentFocus() {
   return currentFocus;
 }
+
+module.exports = { trackFocus, getCurrentFocus };

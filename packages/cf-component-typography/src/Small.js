@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class Small extends React.Component {
+class Small extends React.Component {
   render() {
     return (
       <small className="cf-small">
@@ -9,3 +9,5 @@ export default class Small extends React.Component {
     );
   }
 }
+
+module.exports = Small;

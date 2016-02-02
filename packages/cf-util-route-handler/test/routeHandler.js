@@ -1,5 +1,5 @@
-import * as assert from 'assert';
-import {handleRoutes, routeTo, __resetRouteHandler} from '../src/routeHandler';
+const assert = require('assert');
+const {handleRoutes, routeTo, __resetRouteHandler} = require('../src/routeHandler');
 
 describe('routeHandler', function() {
   afterEach(function() {

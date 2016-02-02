@@ -11,8 +11,8 @@ $ npm install cf-component-list
 ## Usage
 
 ```js
-import React from 'react';
-import {List, ListItem} from 'cf-component-list';
+const React = require('react');
+const {List, ListItem} = require('cf-component-list');
 
 export default class Application extends React.Component {
   render() {

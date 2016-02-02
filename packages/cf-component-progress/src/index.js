@@ -1,1 +1,1 @@
-export default from './Progress';
+module.exports = require('./Progress');

@@ -1,2 +1,2 @@
-export Heading from './Heading';
-export HeadingCaption from './HeadingCaption';
+exports.Heading = require('./Heading');
+exports.HeadingCaption = require('./HeadingCaption');

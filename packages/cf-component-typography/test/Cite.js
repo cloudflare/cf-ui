@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Cite from '../src/Cite';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Cite = require('../src/Cite');
 
 describe('Cite', function() {
   it('should render', function() {

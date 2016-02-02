@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Em from '../src/Em';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Em = require('../src/Em');
 
 describe('Em', function() {
   it('should render', function() {

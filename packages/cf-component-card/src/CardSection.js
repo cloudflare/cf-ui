@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class CardSection extends React.Component {
+class CardSection extends React.Component {
   static propTypes = {
     status: PropTypes.oneOf([
       'default',
@@ -20,3 +21,5 @@ export default class CardSection extends React.Component {
     );
   }
 }
+
+module.exports = CardSection;

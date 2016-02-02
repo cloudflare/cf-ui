@@ -1,7 +1,8 @@
-import React, {PropTypes} from 'react';
-import ReactSelect from 'react-select';
+const React = require('react');
+const {PropTypes} = React;
+const ReactSelect = require('react-select');
 
-export default class Select extends React.Component {
+class Select extends React.Component {
   static propTypes = {
     label: PropTypes.string,
 
@@ -46,4 +47,6 @@ export default class Select extends React.Component {
       </div>
     );
   }
-}
+};
+
+module.exports = Select;

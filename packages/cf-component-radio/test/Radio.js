@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Radio from '../src/Radio';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Radio = require('../src/Radio');
 
 describe('Radio', function() {
   it('should render', function() {

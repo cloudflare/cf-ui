@@ -1,7 +1,7 @@
-export Table from './Table';
-export TableBody from './TableBody';
-export TableCell from './TableCell';
-export TableFoot from './TableFoot';
-export TableHead from './TableHead';
-export TableHeadCell from './TableHeadCell';
-export TableRow from './TableRow';
+exports.Table = require('./Table');
+exports.TableBody = require('./TableBody');
+exports.TableCell = require('./TableCell');
+exports.TableFoot = require('./TableFoot');
+exports.TableHead = require('./TableHead');
+exports.TableHeadCell = require('./TableHeadCell');
+exports.TableRow = require('./TableRow');

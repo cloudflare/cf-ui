@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Code from '../src/Code';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Code = require('../src/Code');
 
 describe('Code', function() {
   it('should render', function() {

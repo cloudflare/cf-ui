@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import ModalTitle from '../src/ModalTitle';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const ModalTitle = require('../src/ModalTitle');
 
 describe('ModalTitle', function() {
   it('should render', function() {

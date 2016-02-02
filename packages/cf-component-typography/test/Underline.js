@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Underline from '../src/Underline';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Underline = require('../src/Underline');
 
 describe('Underline', function() {
   it('should render', function() {

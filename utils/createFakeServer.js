@@ -1,6 +1,6 @@
 import {fakeServer} from 'sinon';
 
-export default function createFakeServer() {
+function createFakeServer() {
   let server = fakeServer.create();
 
   return {
@@ -16,3 +16,5 @@ export default function createFakeServer() {
     }
   };
 }
+
+module.exports = createFakeServer;

@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class TableHead extends React.Component {
+class TableHead extends React.Component {
   render() {
     return (
       <thead className="cf-table__head">
@@ -9,3 +9,5 @@ export default class TableHead extends React.Component {
     );
   }
 }
+
+module.exports = TableHead;

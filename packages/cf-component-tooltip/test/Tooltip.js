@@ -1,5 +1,5 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Tooltip from '../src/Tooltip';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Tooltip = require('../src/Tooltip');
 
 console.warn('No Tooltip tests.');

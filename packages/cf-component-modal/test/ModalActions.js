@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import ModalActions from '../src/ModalActions';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const ModalActions = require('../src/ModalActions');
 
 describe('ModalActions', function() {
   it('should render', function() {

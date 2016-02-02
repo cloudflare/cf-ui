@@ -1,7 +1,8 @@
-import React, {PropTypes} from 'react';
-import {TYPES, SIZES} from './options';
+const React = require('react');
+const {PropTypes} = React;
+const {TYPES, SIZES} = require('./options');
 
-export default class Icon extends React.Component {
+class Icon extends React.Component {
   static propTypes = {
     label: PropTypes.oneOfType([
       PropTypes.string,
@@ -31,4 +32,6 @@ export default class Icon extends React.Component {
       <i className={className}>{this.props.label}</i>
     );
   }
-}
+};
+
+module.exports = Icon;

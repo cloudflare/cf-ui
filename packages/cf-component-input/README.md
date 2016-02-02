@@ -11,8 +11,8 @@ $ npm install cf-component-input
 ## Usage
 
 ```js
-import React from 'react';
-import Input from '../../src/index';
+const React = require('react');
+const Input = require('../../src/index');
 
 class Application extends React.Component {
   state = {

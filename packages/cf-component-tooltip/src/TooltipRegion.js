@@ -1,7 +1,8 @@
-import React, {PropTypes} from 'react';
-import createTooltip from './createTooltip';
+const React = require('react');
+const {PropTypes} = React;
+const createTooltip = require('./createTooltip');
 
-export default class TooltipRegion extends React.Component {
+class TooltipRegion extends React.Component {
   static propTypes = {
     position: PropTypes.string,
     querySelector: PropTypes.string
@@ -33,4 +34,6 @@ export default class TooltipRegion extends React.Component {
       </div>
     );
   }
-}
+};
+
+module.exports = TooltipRegion;

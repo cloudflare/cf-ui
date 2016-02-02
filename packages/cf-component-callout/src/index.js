@@ -1,1 +1,1 @@
-export default from './Callout';
+module.exports = require('./Callout');

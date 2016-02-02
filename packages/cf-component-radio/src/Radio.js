@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class Radio extends React.Component {
+class Radio extends React.Component {
   static propTypes = {
     label: PropTypes.oneOfType([
       PropTypes.string,
@@ -41,3 +42,5 @@ export default class Radio extends React.Component {
     );
   }
 }
+
+module.exports = Radio;

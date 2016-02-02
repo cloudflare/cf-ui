@@ -1,9 +1,10 @@
-import React, {PropTypes} from 'react';
-import {findDOMNode} from 'react-dom';
-import Link from 'cf-component-link';
-import DropdownRegistry from './DropdownRegistry';
+const React = require('react');
+const {PropTypes} = React;
+const {findDOMNode} = require('react-dom');
+const Link = require('cf-component-link');
+const DropdownRegistry = require('./DropdownRegistry');
 
-export default class DropdownLink extends React.Component {
+class DropdownLink extends React.Component {
   static propTypes = {
     to: PropTypes.string,
     onClick: PropTypes.func,
@@ -56,3 +57,5 @@ export default class DropdownLink extends React.Component {
     );
   }
 }
+
+module.exports = DropdownLink;

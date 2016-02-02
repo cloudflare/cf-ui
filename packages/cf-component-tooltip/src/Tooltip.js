@@ -1,8 +1,9 @@
-import React, {PropTypes} from 'react';
-import {findDOMNode} from 'react-dom';
-import createTooltip from './createTooltip';
+const React = require('react');
+const {PropTypes} = React;
+const {findDOMNode} = require('react-dom');
+const createTooltip = require('./createTooltip');
 
-export default class Tooltip extends React.Component {
+class Tooltip extends React.Component {
   static propTypes = {
     content: PropTypes.string.isRequired,
     children: PropTypes.element.isRequired,
@@ -29,3 +30,5 @@ export default class Tooltip extends React.Component {
     return this.props.children;
   }
 }
+
+module.exports = Tooltip;

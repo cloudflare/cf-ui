@@ -11,16 +11,16 @@ $ npm install cf-component-dropdown
 ## Usage
 
 ```js
-import React from 'react';
-import {
+const React = require('react');
+const {
   Button,
   ButtonGroup
-} from 'cf-component-button';
-import {
+} = require('cf-component-button');
+const {
   Dropdown,
   DropdownLink,
   DropdownSeparator
-} from '../../src/index';
+} = require('../../src/index');
 
 class Application extends React.Component {
   state = {

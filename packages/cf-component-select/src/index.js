@@ -1,1 +1,1 @@
-export default from './Select';
+module.exports = require('./Select');

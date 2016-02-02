@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class Label extends React.Component {
+class Label extends React.Component {
   static propTypes = {
     type: PropTypes.oneOf([
       'default',
@@ -22,3 +23,5 @@ export default class Label extends React.Component {
     }, this.props.children);
   }
 }
+
+module.exports = Label;

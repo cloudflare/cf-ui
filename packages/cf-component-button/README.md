@@ -11,11 +11,11 @@ $ npm install cf-component-button
 ## Usage
 
 ```js
-import React from 'react';
-import {
+const React = require('react');
+const {
   ButtonGroup,
   Button
-} from 'cf-component-button';
+} = require('cf-component-button');
 
 export default class Application extends React.Component {
   handleButtonOneClick = () => {

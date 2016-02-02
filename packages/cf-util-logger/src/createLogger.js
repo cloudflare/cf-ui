@@ -1,9 +1,11 @@
-import debug from 'debug';
+const debug = require('debug');
 
-export default function createLogger(name) {
+function createLogger(name) {
   const logger = debug(name);
 
   return function(message) {
     logger(message);
   };
 }
+
+module.exports = createLogger;

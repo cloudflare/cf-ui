@@ -11,8 +11,8 @@ $ npm install cf-component-code
 ## Usage
 
 ```js
-import React from 'react';
-import {Code, CodeBlock} from 'cf-component-code';
+const React = require('react');
+const {Code, CodeBlock} = require('cf-component-code');
 
 export default class Application extends React.Component {
   render() {

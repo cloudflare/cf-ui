@@ -1,5 +1,5 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import DropdownRegistry from '../src/DropdownRegistry';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const DropdownRegistry = require('../src/DropdownRegistry');
 
 console.warn('No DropdownRegistry tests.');

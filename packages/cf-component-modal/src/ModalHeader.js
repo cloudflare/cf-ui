@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class ModalHeader extends React.Component {
+class ModalHeader extends React.Component {
   render() {
     return (
       <header className="cf-modal__header">
@@ -9,3 +9,5 @@ export default class ModalHeader extends React.Component {
     );
   }
 }
+
+module.exports = ModalHeader;

@@ -1,3 +1,3 @@
-export NotificationList from './NotificationList';
-export Notification from './Notification';
-export NotificationGlobalContainer from './NotificationGlobalContainer';
+exports.NotificationList = require('./NotificationList');
+exports.Notification = require('./Notification');
+exports.NotificationGlobalContainer = require('./NotificationGlobalContainer');

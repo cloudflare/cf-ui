@@ -1,2 +1,2 @@
-export Page from './Page';
-export PageHeader from './PageHeader';
+exports.Page = require('./Page');
+exports.PageHeader = require('./PageHeader');

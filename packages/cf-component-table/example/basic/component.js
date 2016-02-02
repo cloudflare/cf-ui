@@ -1,7 +1,7 @@
-import React from 'react';
-import {render} from 'react-dom';
+const React = require('react');
+const {render} = require('react-dom');
 
-import {
+const {
   Table,
   TableHead,
   TableBody,
@@ -9,7 +9,7 @@ import {
   TableRow,
   TableHeadCell,
   TableCell
-} from '../../src/index';
+} = require('../../src/index');
 
 class Component extends React.Component {
   render() {
@@ -29,10 +29,12 @@ class Component extends React.Component {
           </TableRow>
         </TableHead>
         <TableBody>
-          {data.map(row =>
-            <TableRow>
-              {row.map(cell =>
-                <TableCell>{cell}</TableCell>
+          {data.map((row, r) =>
+            <TableRow key={r}>
+              {row.map((cell, c) =>
+                <TableCell key={c}>
+                  {cell}
+                </TableCell>
               )}
             </TableRow>
           )}

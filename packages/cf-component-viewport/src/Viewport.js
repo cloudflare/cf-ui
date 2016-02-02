@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
-import MediaQuery from 'react-responsive';
-import buildMediaQuery from './buildMediaQuery';
+const React = require('react');
+const {PropTypes} = React;
+const MediaQuery = require('react-responsive');
+const buildMediaQuery = require('./buildMediaQuery');
 
 const SIZES = {
   mobile       : { minWidth: null,     maxWidth: '15.6em' },
@@ -10,7 +11,7 @@ const SIZES = {
   desktopLarge : { minWidth: '66em',   maxWidth:  null    }
 };
 
-export default class Viewport extends React.Component {
+class Viewport extends React.Component {
   static propTypes = {
     not: PropTypes.bool,
     size: PropTypes.oneOf([
@@ -37,3 +38,5 @@ export default class Viewport extends React.Component {
     );
   }
 }
+
+module.exports = Viewport;

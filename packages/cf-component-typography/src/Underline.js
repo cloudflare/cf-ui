@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class Underline extends React.Component {
+class Underline extends React.Component {
   render() {
     return (
       <u className="cf-underline">
@@ -9,3 +9,6 @@ export default class Underline extends React.Component {
     );
   }
 }
+
+
+module.exports = Underline;

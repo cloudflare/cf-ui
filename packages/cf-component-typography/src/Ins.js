@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class Ins extends React.Component {
+class Ins extends React.Component {
   render() {
     return (
       <ins className="cf-ins">
@@ -9,3 +9,5 @@ export default class Ins extends React.Component {
     );
   }
 }
+
+module.exports = Ins;

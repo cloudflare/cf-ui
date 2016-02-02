@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class Page extends React.Component {
+class PageHeader extends React.Component {
   static propTypes = {
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string
@@ -16,4 +17,6 @@ export default class Page extends React.Component {
       </header>
     );
   }
-}
+};
+
+module.exports = PageHeader;

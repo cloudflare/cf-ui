@@ -1,5 +1,5 @@
-import superagent from 'superagent';
-import createLogger from 'cf-util-logger';
+const superagent = require('superagent');
+const createLogger = require('cf-util-logger');
 
 const logRequest = createLogger('http:request');
 const logError = createLogger('http:error');
@@ -29,7 +29,7 @@ const beforeSendCallbacks = [];
  *
  * @param {Function} callback
  */
-export function beforeSend(callback) {
+function beforeSend(callback) {
   beforeSendCallbacks.push(callback);
 }
 
@@ -59,7 +59,7 @@ export function beforeSend(callback) {
  * @param {Function} [onError]
  * @returns {Function} Abort request.
  */
-export function request(method, url, opts, onSuccess, onError) {
+function request(method, url, opts, onSuccess, onError) {
   opts = opts || {};
 
   opts.method = method;
@@ -120,34 +120,36 @@ export function request(method, url, opts, onSuccess, onError) {
 /**
  * Perform a GET request.
  */
-export function get(...args) {
+function get(...args) {
   return request('GET', ...args);
 }
 
 /**
  * Perform a POST request.
  */
-export function post(...args) {
+function post(...args) {
   return request('POST', ...args);
 }
 
 /**
  * Perform a PUT request.
  */
-export function put(...args) {
+function put(...args) {
   return request('PUT', ...args);
 }
 
 /**
  * Perform a PATCH request.
  */
-export function patch(...args) {
+function patch(...args) {
   return request('PATCH', ...args);
 }
 
 /**
  * Perform a DELETE request.
  */
-export function del(...args) {
+function del(...args) {
   return request('DELETE', ...args);
 }
+
+module.exports = {beforeSend, request, get, post, put, patch, del};

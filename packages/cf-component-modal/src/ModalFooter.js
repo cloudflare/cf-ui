@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class ModalFooter extends React.Component {
+class ModalFooter extends React.Component {
   static propTypes = {
     simple: PropTypes.bool
   };
@@ -23,3 +24,5 @@ export default class ModalFooter extends React.Component {
     );
   }
 }
+
+module.exports = ModalFooter;

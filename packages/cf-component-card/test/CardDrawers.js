@@ -1,8 +1,8 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import CardDrawers from '../src/CardDrawers';
-import CardToolbar from '../src/CardToolbar';
-import CardToolbarLink from '../src/CardToolbarLink';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const CardDrawers = require('../src/CardDrawers');
+const CardToolbar = require('../src/CardToolbar');
+const CardToolbarLink = require('../src/CardToolbarLink');
 
 function sanitizeId(str) {
   return str.replace(/"card-(\d)-drawer-([a-z]+)"/ig, '"%id%-$2"');

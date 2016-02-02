@@ -1,8 +1,9 @@
-import React, {PropTypes} from 'react';
-import DropdownRegistry from './DropdownRegistry';
-import {canUseDOM} from 'exenv';
+const React = require('react');
+const {PropTypes} = React;
+const DropdownRegistry = require('./DropdownRegistry');
+const {canUseDOM} = require('exenv');
 
-export default class Dropdown extends React.Component {
+class Dropdown extends React.Component {
   static propTypes = {
     onClose: PropTypes.func.isRequired,
     align: PropTypes.oneOf(['left', 'right'])
@@ -67,3 +68,5 @@ export default class Dropdown extends React.Component {
     );
   }
 }
+
+module.exports = Dropdown;

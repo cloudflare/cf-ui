@@ -1,7 +1,7 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import CodeBlock from '../src/CodeBlock';
-import Code from '../src/Code';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const CodeBlock = require('../src/CodeBlock');
+const Code = require('../src/Code');
 
 describe('CodeBlock', function() {
   it('should render', function() {

@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class Var extends React.Component {
+class Var extends React.Component {
   render() {
     return (
       <var className="cf-var">
@@ -9,3 +9,5 @@ export default class Var extends React.Component {
     );
   }
 }
+
+module.exports = Var;

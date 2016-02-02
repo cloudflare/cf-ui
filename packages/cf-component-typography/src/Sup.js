@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class Sup extends React.Component {
+class Sup extends React.Component {
   render() {
     return (
       <sup className="cf-sup">
@@ -9,3 +9,5 @@ export default class Sup extends React.Component {
     );
   }
 }
+
+module.exports = Sup;

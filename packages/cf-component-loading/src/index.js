@@ -1,1 +1,1 @@
-export default from './Loading';
+module.exports = require('./Loading');

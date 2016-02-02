@@ -11,8 +11,8 @@ $ npm install cf-component-link
 ## Usage
 
 ```js
-import React from 'react';
-import Link from '../../src/index';
+const React = require('react');
+const Link = require('../../src/index');
 
 class Application extends React.Component {
   render() {

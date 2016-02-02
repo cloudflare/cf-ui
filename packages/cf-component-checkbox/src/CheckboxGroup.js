@@ -1,8 +1,9 @@
-import React, {PropTypes} from 'react';
-import Checkbox from './Checkbox';
-import {contains} from 'lodash';
+const React = require('react');
+const {PropTypes} = React;
+const Checkbox = require('./Checkbox');
+const includes = require('lodash/includes');
 
-export default class CheckboxGroup extends React.Component {
+class CheckboxGroup extends React.Component {
   static propTypes = {
     values: PropTypes.arrayOf(PropTypes.string).isRequired,
     onChange: PropTypes.func.isRequired,
@@ -22,7 +23,7 @@ export default class CheckboxGroup extends React.Component {
         return checked;
       }
 
-      return contains(this.props.values, option.value);
+      return includes(this.props.values, option.value);
     }).map(option => {
       return option.value;
     });
@@ -39,10 +40,12 @@ export default class CheckboxGroup extends React.Component {
             label={option.label}
             name={option.name}
             value={option.value}
-            checked={contains(this.props.values, option.value)}
+            checked={includes(this.props.values, option.value)}
             onChange={val => this.handleChange(option.value, val)}/>;
         })}
       </div>
     );
   }
 }
+
+module.exports = CheckboxGroup;

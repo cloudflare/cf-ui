@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class Sub extends React.Component {
+class Sub extends React.Component {
   render() {
     return (
       <sub className="cf-sub">
@@ -9,3 +9,6 @@ export default class Sub extends React.Component {
     );
   }
 }
+
+
+module.exports = Sub;

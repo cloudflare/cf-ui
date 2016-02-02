@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import ButtonGroup from '../src/ButtonGroup';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const ButtonGroup = require('../src/ButtonGroup');
 
 describe('ButtonGroup', function() {
   it('should render', function() {

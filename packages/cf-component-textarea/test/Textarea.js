@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Textarea from '../src/Textarea';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Textarea = require('../src/Textarea');
 
 describe('Textarea', function() {
   it('should render', function() {

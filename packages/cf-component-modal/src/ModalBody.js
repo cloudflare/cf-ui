@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class ModalBody extends React.Component {
+class ModalBody extends React.Component {
   render() {
     return (
       <div className="cf-modal__body">
@@ -9,3 +9,5 @@ export default class ModalBody extends React.Component {
     );
   }
 }
+
+module.exports = ModalBody;

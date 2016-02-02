@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class TableFoot extends React.Component {
+class TableFoot extends React.Component {
   render() {
     return (
       <tfoot className="cf-table__foot">
@@ -9,3 +9,5 @@ export default class TableFoot extends React.Component {
     );
   }
 }
+
+module.exports = TableFoot;

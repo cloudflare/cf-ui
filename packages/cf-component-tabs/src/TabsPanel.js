@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class TabsPanel extends React.Component {
+class TabsPanel extends React.Component {
   static propTypes = {
     id: PropTypes.string.isRequired
   };
@@ -24,3 +25,5 @@ export default class TabsPanel extends React.Component {
     );
   }
 }
+
+module.exports = TabsPanel;

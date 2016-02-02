@@ -11,8 +11,8 @@ $ npm install cf-component-notifications
 ## Usage
 
 ```js
-import React from 'react';
-import {NotificationList, Notification} from 'cf-component-notifications';
+const React = require('react');
+const {NotificationList, Notification} = require('cf-component-notifications');
 
 let UNIQUE_ID = 0;
 
@@ -57,7 +57,7 @@ class Application extends React.Component {
 }
 ```
 
-### :rotating_light: Important! :rotating_light:
+### :rotating_light: const ant! :rotating_light:
 
 When passing a `key` to `<Notification/>` above, note that this must be a unique
 id that does not change in between renders. Do not use the index of the `map`

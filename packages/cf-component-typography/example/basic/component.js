@@ -1,7 +1,7 @@
-import React from 'react';
-import {render} from 'react-dom';
+const React = require('react');
+const {render} = require('react-dom');
 
-import {
+const {
   Abbr,
   Cite,
   Del,
@@ -17,7 +17,7 @@ import {
   Sup,
   Underline,
   Var
-} from '../../src/index';
+} = require('../../src/index');
 
 class Component extends React.Component {
   render() {

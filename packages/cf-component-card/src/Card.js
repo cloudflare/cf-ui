@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class Card extends React.Component {
+class Card extends React.Component {
   render() {
     return (
       <section className="cf-card">
@@ -9,3 +9,5 @@ export default class Card extends React.Component {
     );
   }
 }
+
+module.exports = Card;

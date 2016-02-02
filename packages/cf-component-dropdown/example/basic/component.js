@@ -1,19 +1,19 @@
-import React from 'react';
-import {render} from 'react-dom';
-import {handleRoutes} from 'cf-util-route-handler';
+const React = require('react');
+const {render} = require('react-dom');
+const {handleRoutes} = require('cf-util-route-handler');
 
 handleRoutes(route => console.log(route));
 
-import {
+const {
   Button,
   ButtonGroup
-} from 'cf-component-button';
+} = require('cf-component-button');
 
-import {
+const {
   Dropdown,
   DropdownLink,
   DropdownSeparator
-} from '../../src/index';
+} = require('../../src/index');
 
 class Component extends React.Component {
   state = {

@@ -1,5 +1,5 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import TooltipRegion from '../src/TooltipRegion';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const TooltipRegion = require('../src/TooltipRegion');
 
 console.warn('No TooltipRegion tests.');

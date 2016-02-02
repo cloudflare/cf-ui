@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class Abbr extends React.Component {
+class Abbr extends React.Component {
   static propTypes = {
     title: React.PropTypes.string.isRequired
   };
@@ -13,3 +13,5 @@ export default class Abbr extends React.Component {
     );
   }
 }
+
+module.exports = Abbr;

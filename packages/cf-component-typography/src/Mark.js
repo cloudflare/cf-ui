@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class Mark extends React.Component {
+class Mark extends React.Component {
   render() {
     return (
       <mark className="cf-mark">
@@ -9,3 +9,5 @@ export default class Mark extends React.Component {
     );
   }
 }
+
+module.exports = Mark;

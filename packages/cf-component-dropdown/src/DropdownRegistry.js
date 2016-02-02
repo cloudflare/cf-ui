@@ -1,4 +1,4 @@
-export default class DropdownRegistry {
+class DropdownRegistry {
   constructor() {
     this._links = [];
     this._currentFocusIndex = -1;
@@ -34,3 +34,5 @@ export default class DropdownRegistry {
     this._currentFocusIndex = -1;
   }
 }
+
+module.exports = DropdownRegistry;

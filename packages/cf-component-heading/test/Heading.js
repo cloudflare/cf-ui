@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Heading from '../src/Heading';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Heading = require('../src/Heading');
 
 describe('Heading', function() {
   it('should render size', function() {

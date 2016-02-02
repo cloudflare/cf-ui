@@ -1,7 +1,7 @@
-export Modal from './Modal';
-export ModalActions from './ModalActions';
-export ModalBody from './ModalBody';
-export ModalClose from './ModalClose';
-export ModalFooter from './ModalFooter';
-export ModalHeader from './ModalHeader';
-export ModalTitle from './ModalTitle';
+exports.Modal = require('./Modal');
+exports.ModalActions = require('./ModalActions');
+exports.ModalBody = require('./ModalBody');
+exports.ModalClose = require('./ModalClose');
+exports.ModalFooter = require('./ModalFooter');
+exports.ModalHeader = require('./ModalHeader');
+exports.ModalTitle = require('./ModalTitle');

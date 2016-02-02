@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class ButtonGroup extends React.Component {
+class ButtonGroup extends React.Component {
   render() {
     return (
       <div className='cf-btn__group'>
@@ -8,4 +8,6 @@ export default class ButtonGroup extends React.Component {
       </div>
     );
   }
-}
+};
+
+module.exports = ButtonGroup;

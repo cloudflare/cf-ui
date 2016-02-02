@@ -5,6 +5,8 @@
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
-  "dependencies": {},
+  "dependencies": {
+    "lodash": "^4.1.0"
+  },
   "devDependencies": {}
 }

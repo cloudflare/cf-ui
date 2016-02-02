@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class Page extends React.Component {
+class Page extends React.Component {
   render() {
     return (
       <article className="cf-page">
@@ -9,3 +9,5 @@ export default class Page extends React.Component {
     );
   }
 }
+
+module.exports = Page;

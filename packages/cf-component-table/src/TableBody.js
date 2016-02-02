@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class TableBody extends React.Component {
+class TableBody extends React.Component {
   render() {
     return (
       <tbody className="cf-table__body">
@@ -9,3 +9,5 @@ export default class TableBody extends React.Component {
     );
   }
 }
+
+module.exports = TableBody;

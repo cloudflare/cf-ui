@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import ModalFooter from '../src/ModalFooter';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const ModalFooter = require('../src/ModalFooter');
 
 describe('ModalFooter', function() {
   it('should render', function() {

@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class Heading extends React.Component {
+class Heading extends React.Component {
   static propTypes = {
     size: PropTypes.oneOf([1, 2, 3, 4, 5, 6]).isRequired
   };
@@ -11,3 +12,5 @@ export default class Heading extends React.Component {
     return React.createElement(tagName, { className }, this.props.children);
   }
 }
+
+module.exports = Heading;

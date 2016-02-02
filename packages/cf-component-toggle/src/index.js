@@ -1,1 +1,1 @@
-export default from './Toggle';
+module.exports = require('./Toggle');

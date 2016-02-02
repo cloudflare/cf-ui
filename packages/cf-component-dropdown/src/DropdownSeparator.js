@@ -1,9 +1,11 @@
-import React from 'react';
+const React = require('react');
 
-export default class DropdownSeparator extends React.Component {
+class DropdownSeparator extends React.Component {
   render() {
     return (
       <div className="cf-dropdown__separator" role="separator"/>
     );
   }
 }
+
+module.exports = DropdownSeparator;

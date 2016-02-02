@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class TableHeadCell extends React.Component {
+class TableHeadCell extends React.Component {
   static propTypes = {
     sortable: PropTypes.bool,
     editable: PropTypes.bool
@@ -24,3 +25,5 @@ export default class TableHeadCell extends React.Component {
     );
   }
 }
+
+module.exports = TableHeadCell;

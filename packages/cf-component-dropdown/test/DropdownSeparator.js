@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import DropdownSeparator from '../src/DropdownSeparator';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const DropdownSeparator = require('../src/DropdownSeparator');
 
 describe('DropdownSeparator', function() {
   it('should render with to', function() {

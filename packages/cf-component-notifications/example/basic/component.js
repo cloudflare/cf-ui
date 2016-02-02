@@ -1,14 +1,14 @@
-import React from 'react';
-import {render} from 'react-dom';
+const React = require('react');
+const {render} = require('react-dom');
 
-import {
+const {
   NotificationList,
   Notification,
   NotificationGlobalContainer
-} from '../../src/index';
-import {
+} = require('../../src/index');
+const {
   Button
-} from 'cf-component-button';
+} = require('cf-component-button');
 
 let UNIQUE_ID = 0;
 

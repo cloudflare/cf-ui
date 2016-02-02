@@ -1,5 +1,5 @@
-import {equal as assertEqual} from 'assert';
-import buildMediaQuery from '../src/buildMediaQuery';
+const {equal: assertEqual} = require('assert');
+const buildMediaQuery = require('../src/buildMediaQuery');
 
 describe('buildMediaQuery', function() {
   it('should build minWidth query', function() {

@@ -15,7 +15,7 @@ $ npm install cf-util-markdown
 ## Usage
 
 ```js
-import markdown from 'cf-util-markdown';
+const markdown = require('cf-util-markdown');
 
 markdown.render('# Hello World');
 // >> <h1>Hello World</h1>

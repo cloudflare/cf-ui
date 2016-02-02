@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Mark from '../src/Mark';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Mark = require('../src/Mark');
 
 describe('Mark', function() {
   it('should render', function() {

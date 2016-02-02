@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Kbd from '../src/Kbd';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Kbd = require('../src/Kbd');
 
 describe('Kbd', function() {
   it('should render', function() {

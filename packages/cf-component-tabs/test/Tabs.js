@@ -1,7 +1,7 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Tabs from '../src/Tabs';
-import TabsPanel from '../src/TabsPanel';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Tabs = require('../src/Tabs');
+const TabsPanel = require('../src/TabsPanel');
 
 describe('Tabs', function() {
   it('should render', function() {

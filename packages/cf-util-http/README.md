@@ -15,7 +15,7 @@ $ npm install cf-util-http
 ## Usage
 
 ```js
-import http from 'cf-util-http';
+const http = require('cf-util-http');
 
 http.beforeSend(opts => {
   opts.url = '/api/v4' + opts.url;

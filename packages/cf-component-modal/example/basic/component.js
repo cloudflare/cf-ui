@@ -1,7 +1,7 @@
-import React from 'react';
-import {render} from 'react-dom';
+const React = require('react');
+const {render} = require('react-dom');
 
-import {
+const {
   Modal,
   ModalHeader,
   ModalTitle,
@@ -9,13 +9,13 @@ import {
   ModalBody,
   ModalFooter,
   ModalActions
-} from '../../src/index';
-import {
+} = require('../../src/index');
+const {
   GatewayDest,
   GatewayProvider
-} from 'react-gateway';
-import ReactModal2 from 'react-modal2';
-import {Button} from 'cf-component-button';
+} = require('react-gateway');
+const ReactModal2 = require('react-modal2');
+const {Button} = require('cf-component-button');
 
 class ComponentWithModal extends React.Component {
   state = {

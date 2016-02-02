@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import NotificationList from '../src/NotificationList';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const NotificationList = require('../src/NotificationList');
 
 describe('NotificationList', function() {
   it('should render', function() {

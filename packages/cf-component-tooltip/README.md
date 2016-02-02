@@ -11,11 +11,11 @@ $ npm install cf-component-tooltip
 ## Usage
 
 ```js
-import React from 'react';
-import {
+const React = require('react');
+const {
   Tooltip,
   TooltipRegion
-} from 'cf-component-tooltip';
+} = require('cf-component-tooltip');
 
 class Application extends React.Component {
   render() {

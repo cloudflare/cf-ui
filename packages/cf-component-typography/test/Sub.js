@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Sub from '../src/Sub';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Sub = require('../src/Sub');
 
 describe('Sub', function() {
   it('should render', function() {

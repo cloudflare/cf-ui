@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class ModalTitle extends React.Component {
+class ModalTitle extends React.Component {
   render() {
     return (
       <h4 className="cf-modal__title">
@@ -9,3 +9,5 @@ export default class ModalTitle extends React.Component {
     );
   }
 }
+
+module.exports = ModalTitle;

@@ -1,2 +1,2 @@
-export Button from './Button';
-export ButtonGroup from './ButtonGroup';
+exports.Button = require('./Button');
+exports.ButtonGroup = require('./ButtonGroup');

@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Strike from '../src/Strike';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Strike = require('../src/Strike');
 
 describe('Strike', function() {
   it('should render', function() {

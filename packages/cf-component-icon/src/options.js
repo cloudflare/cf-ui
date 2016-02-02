@@ -1,4 +1,4 @@
-export const TYPES = (
+exports.TYPES = (
   'caret-up chevron-up caret-down chevron-down caret-left chevron-left ' +
   'caret-right chevron-right ok-sign exclamation-sign info-sign pause time ' +
   'ok clipboard bolt chart drive filter flowchart hamburger lock list file ' +
@@ -7,4 +7,4 @@ export const TYPES = (
   'upload loading'
 ).split(' ');
 
-export const SIZES = '2x 3x 4x large xlarge'.split(' ');
+exports.SIZES = '2x 3x 4x large xlarge'.split(' ');

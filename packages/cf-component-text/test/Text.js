@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Text from '../src/Text';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Text = require('../src/Text');
 
 describe('Text', function() {
   it('should render size', function() {

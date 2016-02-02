@@ -11,8 +11,8 @@ $ npm install cf-component-dynamic-content
 ## Usage
 
 ```js
-import React from 'react';
-import DynamicContent from '../../src/index';
+const React = require('react');
+const DynamicContent = require('../../src/index');
 
 export default class Application extends React.Component {
   render() {

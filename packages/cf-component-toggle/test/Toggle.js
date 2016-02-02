@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Toggle from '../src/Toggle';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Toggle = require('../src/Toggle');
 
 describe('Toggle', function() {
   it('should render', function() {

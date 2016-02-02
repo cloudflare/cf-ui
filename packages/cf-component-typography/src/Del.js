@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class Del extends React.Component {
+class Del extends React.Component {
   render() {
     return (
       <del className="cf-del">
@@ -9,3 +9,5 @@ export default class Del extends React.Component {
     );
   }
 }
+
+module.exports = Del;

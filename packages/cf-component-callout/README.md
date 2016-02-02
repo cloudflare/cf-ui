@@ -11,8 +11,8 @@ $ npm install cf-component-callout
 ## Usage
 
 ```js
-import React from 'react';
-import Callout from 'cf-component-callout';
+const React = require('react');
+const Callout = require('cf-component-callout');
 
 export default class MyComponent extends React.Component {
   render() {

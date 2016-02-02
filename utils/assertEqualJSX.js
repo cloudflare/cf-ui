@@ -1,14 +1,14 @@
-import {renderToStaticMarkup} from 'react-dom/server';
-import {html as beautifyHTML} from 'js-beautify';
-import {diffWords} from 'diff';
-import chalk from 'chalk';
-import {fail} from 'assert';
+const {renderToStaticMarkup} = require('react-dom/server');
+const {html: beautifyHTML} = require('js-beautify');
+const {diffWords} = require('diff');
+const chalk = require('chalk');
+const {fail} = require('assert');
 
 const colors = new chalk.constructor({
   enabled: !!global.top.karma
 });
 
-export default function assertEqualJSX(actual, expected, opts = {}) {
+function assertEqualJSX(actual, expected, opts = {}) {
   actual = renderToStaticMarkup(actual);
   expected = renderToStaticMarkup(expected);
 
@@ -54,3 +54,5 @@ export default function assertEqualJSX(actual, expected, opts = {}) {
 
   fail(actual, expected, message, '==');
 }
+
+module.exports = assertEqualJSX;

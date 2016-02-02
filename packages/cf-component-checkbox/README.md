@@ -11,11 +11,11 @@ $ npm install cf-component-checkbox
 ## Usage
 
 ```js
-import React from 'react';
-import {
+const React = require('react');
+const {
   Checkbox,
   CheckboxGroup
-} from '../../src/index';
+} = require('../../src/index');
 
 class Application extends React.Component {
   state = {

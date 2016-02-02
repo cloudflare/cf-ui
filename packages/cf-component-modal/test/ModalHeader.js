@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import ModalHeader from '../src/ModalHeader';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const ModalHeader = require('../src/ModalHeader');
 
 describe('ModalHeader', function() {
   it('should render', function() {

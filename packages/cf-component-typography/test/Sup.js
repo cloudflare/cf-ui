@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Sup from '../src/Sup';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Sup = require('../src/Sup');
 
 describe('Sup', function() {
   it('should render', function() {

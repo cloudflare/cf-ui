@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import ModalClose from '../src/ModalClose';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const ModalClose = require('../src/ModalClose');
 
 describe('ModalClose', function() {
   it('should render', function() {

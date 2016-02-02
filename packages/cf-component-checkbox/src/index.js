@@ -1,2 +1,2 @@
-export Checkbox from './Checkbox';
-export CheckboxGroup from './CheckboxGroup';
+exports.Checkbox = require('./Checkbox');
+exports.CheckboxGroup = require('./CheckboxGroup');

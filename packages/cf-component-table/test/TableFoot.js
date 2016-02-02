@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import TableFoot from '../src/TableFoot';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const TableFoot = require('../src/TableFoot');
 
 describe('TableFoot', function() {
   it('should render', function() {

@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class Samp extends React.Component {
+class Samp extends React.Component {
   render() {
     return (
       <samp className="cf-samp">
@@ -9,3 +9,5 @@ export default class Samp extends React.Component {
     );
   }
 }
+
+module.exports = Samp;

@@ -1,9 +1,10 @@
-import React, {PropTypes} from 'react';
-import Link from 'cf-component-link';
+const React = require('react');
+const {PropTypes} = React;
+const Link = require('cf-component-link');
 
 let UNIQUE_ID = 0;
 
-export default class Progress extends React.Component {
+class Progress extends React.Component {
   static propTypes = {
     active: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
@@ -60,4 +61,6 @@ export default class Progress extends React.Component {
       </div>
     );
   }
-}
+};
+
+module.exports = Progress;

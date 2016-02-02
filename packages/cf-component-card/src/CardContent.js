@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class CardContent extends React.Component {
+class CardContent extends React.Component {
   static propTypes = {
     title: PropTypes.any.isRequired
   };
@@ -16,3 +17,5 @@ export default class CardContent extends React.Component {
     );
   }
 }
+
+module.exports = CardContent;

@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Abbr from '../src/Abbr';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Abbr = require('../src/Abbr');
 
 describe('Abbr', function() {
   it('should render', function() {

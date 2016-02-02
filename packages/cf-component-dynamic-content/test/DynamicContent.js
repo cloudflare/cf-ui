@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import DynamicContent from '../src/DynamicContent';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const DynamicContent = require('../src/DynamicContent');
 
 describe('DynamicContent', function() {
   it('should render', function() {

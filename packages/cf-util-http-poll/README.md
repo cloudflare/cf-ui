@@ -11,7 +11,7 @@ $ npm install cf-util-http-poll
 ## Usage
 
 ```js
-import poll from 'cf-util-http-poll';
+const poll = require('cf-util-http-poll');
 
 const cancelPolling = poll('/api/v4/dnssec/status', {
   interval: 2000,

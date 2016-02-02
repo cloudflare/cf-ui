@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class ModalClose extends React.Component {
+class ModalClose extends React.Component {
   static propTypes = {
     onClick: PropTypes.func.isRequired
   };
@@ -11,3 +12,5 @@ export default class ModalClose extends React.Component {
     );
   }
 }
+
+module.exports = ModalClose;

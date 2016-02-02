@@ -1,1 +1,1 @@
-export default from './httpPoll';
+module.exports = require('./httpPoll');

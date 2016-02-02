@@ -1,2 +1,2 @@
-export List from './List';
-export ListItem from './ListItem';
+exports.List = require('./List');
+exports.ListItem = require('./ListItem');

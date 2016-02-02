@@ -1,1 +1,1 @@
-export default from './Input';
+module.exports = require('./Input');

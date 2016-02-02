@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class List extends React.Component {
+class List extends React.Component {
   static propTypes = {
     ordered: PropTypes.bool,
     unstyled: PropTypes.bool
@@ -27,3 +28,5 @@ export default class List extends React.Component {
     return React.createElement(tagName, { className }, this.props.children);
   }
 }
+
+module.exports = List;

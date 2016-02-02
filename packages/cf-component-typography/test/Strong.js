@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Strong from '../src/Strong';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Strong = require('../src/Strong');
 
 describe('Strong', function() {
   it('should render', function() {

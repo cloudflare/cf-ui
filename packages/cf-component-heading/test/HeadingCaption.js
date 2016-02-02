@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import HeadingCaption from '../src/HeadingCaption';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const HeadingCaption = require('../src/HeadingCaption');
 
 describe('HeadingCaption', function() {
   it('should render', function() {

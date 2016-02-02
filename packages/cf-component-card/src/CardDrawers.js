@@ -1,11 +1,12 @@
-import React, {PropTypes} from 'react';
-import CardSection from './CardSection';
-import CardToolbar from './CardToolbar';
-import CardToolbarLink from './CardToolbarLink';
+const React = require('react');
+const {PropTypes} = React;
+const CardSection = require('./CardSection');
+const CardToolbar = require('./CardToolbar');
+const CardToolbarLink = require('./CardToolbarLink');
 
 let UNIQUE_ID = 0;
 
-export default class CardDrawers extends React.Component {
+class CardDrawers extends React.Component {
   static propTypes = {
     onClick: PropTypes.func.isRequired,
 
@@ -74,3 +75,5 @@ export default class CardDrawers extends React.Component {
     );
   }
 }
+
+module.exports = CardDrawers;

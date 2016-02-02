@@ -1,7 +1,7 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Progress from '../src/Progress';
-import Link from 'cf-component-link';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Progress = require('../src/Progress');
+const Link = require('cf-component-link');
 
 describe('Progress', function() {
   it('should render', function() {

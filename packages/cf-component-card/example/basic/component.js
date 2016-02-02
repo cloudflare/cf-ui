@@ -1,6 +1,6 @@
-import React from 'react';
-import {render} from 'react-dom';
-import {
+const React = require('react');
+const {render} = require('react-dom');
+const {
   Card,
   CardContent,
   CardControl,
@@ -8,8 +8,8 @@ import {
   CardLoadingText,
   CardMessages,
   CardSection
-} from '../../src/index';
-import {Button} from 'cf-component-button';
+} = require('../../src/index');
+const {Button} = require('cf-component-button');
 
 class Component extends React.Component {
   state = {
@@ -34,7 +34,7 @@ class Component extends React.Component {
             ]}/>
           </CardContent>
           <CardControl>
-            <Button>Example Control</Button>
+            <Button onClick={() => {}}>Example Control</Button>
           </CardControl>
         </CardSection>
         <CardDrawers

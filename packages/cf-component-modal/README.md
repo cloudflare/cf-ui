@@ -11,8 +11,8 @@ $ npm install --save cf-component-modal react-gateway
 ## Usage
 
 ```js
-import React from 'react';
-import {
+const React = require('react');
+const {
   Modal,
   ModalHeader,
   ModalTitle,
@@ -20,11 +20,11 @@ import {
   ModalBody,
   ModalFooter,
   ModalActions
-} from 'cf-component-modal';
-import {
+} = require('cf-component-modal');
+const {
   GatewayDest,
   GatewayProvider
-} from 'react-gateway';
+} = require('react-gateway');
 
 class MyComponentWithModal extends React.Component {
   state = {

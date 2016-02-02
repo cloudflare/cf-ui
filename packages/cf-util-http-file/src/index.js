@@ -1,2 +1,2 @@
-export uploadFile from './uploadFile';
-export downloadFile from './downloadFile';
+exports.uploadFile = require('./uploadFile');
+exports.downloadFile = require('./downloadFile');

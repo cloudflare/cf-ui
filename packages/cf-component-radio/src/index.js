@@ -1,2 +1,2 @@
-export Radio from './Radio';
-export RadioGroup from './RadioGroup';
+exports.Radio = require('./Radio');
+exports.RadioGroup = require('./RadioGroup');

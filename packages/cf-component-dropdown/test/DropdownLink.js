@@ -1,7 +1,7 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Dropdown from '../src/Dropdown';
-import DropdownLink from '../src/DropdownLink';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Dropdown = require('../src/Dropdown');
+const DropdownLink = require('../src/DropdownLink');
 
 describe('DropdownLink', function() {
   it('should render with to', function() {

@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class NotificationList extends React.Component {
+class NotificationList extends React.Component {
   render() {
     return (
       <div className="cf-notifications">
@@ -9,3 +9,5 @@ export default class NotificationList extends React.Component {
     );
   }
 }
+
+module.exports = NotificationList;

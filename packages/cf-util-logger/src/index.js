@@ -1,1 +1,1 @@
-export default from './createLogger';
+module.exports = require('./createLogger');

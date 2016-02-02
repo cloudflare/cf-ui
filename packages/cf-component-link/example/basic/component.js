@@ -1,14 +1,16 @@
-import React from 'react';
-import {render} from 'react-dom';
+const React = require('react');
+const {render} = require('react-dom');
 
-import {handleRoutes, routeTo} from 'cf-util-route-handler';
-import backboneAdapter from 'cf-util-route-handler/lib/backbone-adapter';
-import Backbone from 'backbone';
+const {handleRoutes, routeTo} = require('cf-util-route-handler');
+const Backbone = require('backbone');
 
-import Link from '../../src/index';
+const Link = require('../../src/index');
 
 // setup the router
-handleRoutes(backboneAdapter);
+handleRoutes(function(url) {
+  Backbone.history.navigate(url, true);
+});
+
 new Backbone.Router({
   routes: {
     ''    : () => console.log('/'),

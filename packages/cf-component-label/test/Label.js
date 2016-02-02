@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Label from '../src/Label';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Label = require('../src/Label');
 
 describe('Label', function() {
   it('should render', function() {

@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react')
 
-export default class Loading extends React.Component {
+class Loading extends React.Component {
   render() {
     return (
       <div className="cf-loading" role="status">
@@ -9,3 +9,5 @@ export default class Loading extends React.Component {
     );
   }
 }
+
+module.exports = Loading;

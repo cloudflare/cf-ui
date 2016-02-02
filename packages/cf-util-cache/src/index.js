@@ -1,1 +1,1 @@
-export * from './cache';
+module.exports = require('./cache');

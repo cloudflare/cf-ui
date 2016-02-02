@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import NotificationGlobalContainer from '../src/NotificationGlobalContainer';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const NotificationGlobalContainer = require('../src/NotificationGlobalContainer');
 
 describe('NotificationGlobalContainer', function() {
   it('should render', function() {

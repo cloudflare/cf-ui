@@ -1,5 +1,5 @@
-import {once} from 'lodash';
-import promisescript from 'promisescript';
+const once = require('lodash/once');
+const promisescript = require('promisescript');
 
 const adwords = {};
 
@@ -12,7 +12,7 @@ const getScript = once(() => promisescript({
   exposed: ADWORDS_GLOBAL
 }));
 
-export default function trackAdwords(id, label, params, remarketingOnly = false) {
+function trackAdwords(id, label, params, remarketingOnly = false) {
   return getScript().then(() => {
     // AdWords exposes an onload callback but not an onerror callback so we
     // can't wait for this to be successful. (shrug)
@@ -23,4 +23,6 @@ export default function trackAdwords(id, label, params, remarketingOnly = false)
       google_remarketing_only: remarketingOnly
     });
   });
-};
+}
+
+module.exports = trackAdwords;

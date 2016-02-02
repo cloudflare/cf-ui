@@ -1,1 +1,1 @@
-export * from './http';
+module.exports = require('./http');

@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import CardLoadingText from '../src/CardLoadingText';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const CardLoadingText = require('../src/CardLoadingText');
 
 describe('CardLoadingText', function() {
   it('should render', function() {

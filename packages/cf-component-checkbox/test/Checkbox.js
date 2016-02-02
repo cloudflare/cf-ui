@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Checkbox from '../src/Checkbox';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Checkbox = require('../src/Checkbox');
 
 describe('Checkbox', function() {
   it('should render', function() {

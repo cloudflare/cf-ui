@@ -11,11 +11,13 @@ $ npm install cf-util-route-handler
 ## Usage
 
 ```js
-import {handleRoutes, routeTo} from 'cf-util-route-handler';
-import backboneRouteHandler from 'cf-util-route-handler/lib/backboneRouteHandler';
+const {handleRoutes, routeTo} = require('cf-util-route-handler');
+const Backbone = require('backbone');
 
 // setup the router
-handleRoutes(backboneRouteHandler);
+handleRoutes(function(url) {
+  Backbone.history.navigate(url, true);
+});
 
 // do all the world to make the router work normally
 new Backbone.Router({

@@ -11,8 +11,8 @@ $ npm install cf-component-viewport
 ## Usage
 
 ```js
-import React from 'react';
-import Viewport from 'cf-component-viewport';
+const React = require('react');
+const Viewport = require('cf-component-viewport');
 
 export default class MyComponent extends React.Component {
   render() {

@@ -1,7 +1,8 @@
-import React, {PropTypes} from 'react';
-import {routeTo} from 'cf-util-route-handler';
+const React = require('react');
+const {PropTypes} = React;
+const {routeTo} = require('cf-util-route-handler');
 
-export default class Link extends React.Component {
+class Link extends React.Component {
   static propTypes = {
     to: PropTypes.string,
     onClick: PropTypes.func,
@@ -66,3 +67,5 @@ export default class Link extends React.Component {
     return React.createElement(tagName, props, children);
   }
 }
+
+module.exports = Link;

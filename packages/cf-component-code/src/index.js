@@ -1,2 +1,2 @@
-export Code from './Code';
-export CodeBlock from './CodeBlock';
+exports.Code = require('./Code');
+exports.CodeBlock = require('./CodeBlock');

@@ -1,1 +1,1 @@
-export * from './routeHandler';
+module.exports = require('./routeHandler');

@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class Code extends React.Component {
+class Code extends React.Component {
   render() {
     return (
       <code className="cf-code">
@@ -9,3 +9,5 @@ export default class Code extends React.Component {
     );
   }
 }
+
+module.exports = Code;

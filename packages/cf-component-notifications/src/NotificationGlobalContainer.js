@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class NotificationGlobalContainer extends React.Component {
+class NotificationGlobalContainer extends React.Component {
   render() {
     return (
       <div className="cf-notifications__global_container">
@@ -9,3 +9,5 @@ export default class NotificationGlobalContainer extends React.Component {
     );
   }
 }
+
+module.exports = NotificationGlobalContainer;

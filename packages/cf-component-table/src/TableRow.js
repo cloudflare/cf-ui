@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class Table extends React.Component {
+class TableRow extends React.Component {
   static propTypes = {
     type: PropTypes.oneOf([
       'default',
@@ -39,3 +40,5 @@ export default class Table extends React.Component {
     );
   }
 }
+
+module.exports = TableRow;

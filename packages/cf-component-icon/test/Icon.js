@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Icon from '../src/Icon';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Icon = require('../src/Icon');
 
 describe('Icon', function() {
   it('should render type', function() {

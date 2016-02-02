@@ -1,7 +1,7 @@
-import React from 'react';
-import {render} from 'react-dom';
+const React = require('react');
+const {render} = require('react-dom');
 
-import Label from '../../src/index';
+const Label = require('../../src/index');
 
 class Component extends React.Component {
   render() {

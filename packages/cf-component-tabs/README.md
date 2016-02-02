@@ -11,12 +11,12 @@ $ npm install cf-component-tabs
 ## Usage
 
 ```js
-import React from 'react';
+const React = require('react');
 
-import {
+const {
   Tabs,
   TabsPanel
-} from '../../src/index';
+} = require('../../src/index');
 
 class Application extends React.Component {
   state = {

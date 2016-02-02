@@ -1,5 +1,5 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Select from '../src/Select';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Select = require('../src/Select');
 
 console.warn('No Select tests.');

@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class Checkbox extends React.Component {
+class Checkbox extends React.Component {
   static propTypes = {
     label: PropTypes.oneOfType([
       PropTypes.string,
@@ -41,3 +42,5 @@ export default class Checkbox extends React.Component {
     );
   }
 }
+
+module.exports = Checkbox;

@@ -11,8 +11,8 @@ $ npm install cf-component-label
 ## Usage
 
 ```js
-import React from 'react';
-import Label from 'cf-component-label';
+const React = require('react');
+const Label = require('cf-component-label');
 
 class Application extends React.Component {
   render() {

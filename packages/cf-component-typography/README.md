@@ -11,8 +11,8 @@ $ npm install cf-component-typography
 ## Usage
 
 ```js
-import React from 'react';
-import {
+const React = require('react');
+const {
   Abbr,
   Cite,
   Del,
@@ -28,7 +28,7 @@ import {
   Sup,
   Underline,
   Var
-} from '../../src/index';
+} = require('../../src/index');
 
 class Application extends React.Component {
   render() {

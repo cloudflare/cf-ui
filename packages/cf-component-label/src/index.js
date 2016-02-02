@@ -1,1 +1,1 @@
-export default from './Label';
+module.exports = require('./Label');

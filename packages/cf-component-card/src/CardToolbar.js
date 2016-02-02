@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class CardToolbar extends React.Component {
+class CardToolbar extends React.Component {
   static propTypes = {
     controls: PropTypes.any,
     links: PropTypes.any
@@ -19,3 +20,5 @@ export default class CardToolbar extends React.Component {
     );
   }
 }
+
+module.exports = CardToolbar;

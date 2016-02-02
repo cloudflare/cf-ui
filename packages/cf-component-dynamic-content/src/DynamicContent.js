@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class DynamicContent extends React.Component {
+class DynamicContent extends React.Component {
   static propTypes = {
     dangerouslySetInnerHTML: PropTypes.shape({
       __html: PropTypes.string.isRequired
@@ -15,3 +16,5 @@ export default class DynamicContent extends React.Component {
     );
   }
 }
+
+module.exports = DynamicContent;

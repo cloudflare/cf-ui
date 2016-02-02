@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import CardSection from '../src/CardSection';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const CardSection = require('../src/CardSection');
 
 describe('CardSection', function() {
   it('should render', function() {

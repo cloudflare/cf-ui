@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Loading from '../src/Loading';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Loading = require('../src/Loading');
 
 describe('Loading', function() {
   it('should render', function() {

@@ -1,1 +1,1 @@
-export default from './renderMarkdown';
+module.exports = require('./renderMarkdown');

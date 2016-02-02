@@ -14,8 +14,8 @@ $ npm install cf-component-select
 ## Usage
 
 ```js
-import React from 'react';
-import Select from 'cf-component-select';
+const React = require('react');
+const Select = require('cf-component-select');
 
 export default class MyComponent extends React.Component {
   state = {

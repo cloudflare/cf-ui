@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Callout from '../src/Callout';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Callout = require('../src/Callout');
 
 describe('Callout', function() {
   it('should render "default" by default', function() {

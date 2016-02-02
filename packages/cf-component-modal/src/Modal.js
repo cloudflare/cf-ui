@@ -1,9 +1,10 @@
-import React, {PropTypes} from 'react';
-import ReactModal2 from 'react-modal2';
-import {Gateway} from 'react-gateway';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+const React = require('react');
+const {PropTypes} = React;
+const ReactModal2 = require('react-modal2').default;
+const {Gateway} = require('react-gateway');
+const ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 
-export default class Modal extends React.Component {
+class Modal extends React.Component {
   static propTypes = {
     type: PropTypes.oneOf([
       'confirm'
@@ -55,3 +56,5 @@ export default class Modal extends React.Component {
     );
   }
 }
+
+module.exports = Modal;

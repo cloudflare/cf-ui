@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class Input extends React.Component {
+class Input extends React.Component {
   static propTypes = {
     type: PropTypes.oneOf([
       'text',
@@ -33,3 +34,5 @@ export default class Input extends React.Component {
     );
   }
 }
+
+module.exports = Input;

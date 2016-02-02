@@ -1,3 +1,3 @@
-export Dropdown from './Dropdown';
-export DropdownLink from './DropdownLink';
-export DropdownSeparator from './DropdownSeparator';
+exports.Dropdown = require('./Dropdown');
+exports.DropdownLink = require('./DropdownLink');
+exports.DropdownSeparator = require('./DropdownSeparator');

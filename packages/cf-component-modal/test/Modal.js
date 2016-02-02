@@ -1,7 +1,7 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Modal from '../src/Modal';
-import {GatewayDest, GatewayProvider} from 'react-gateway';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Modal = require('../src/Modal');
+const {GatewayDest, GatewayProvider} = require('react-gateway');
 
 describe('Modal', function() {
   it('should hide the modal when `isOpen` is `false`', function() {

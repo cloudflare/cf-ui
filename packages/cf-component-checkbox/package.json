@@ -6,6 +6,7 @@
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
   "dependencies": {
+    "lodash": "^4.1.0",
     "react": "^0.14.2"
   },
   "devDependencies": {

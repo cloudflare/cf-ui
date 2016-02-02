@@ -1,7 +1,8 @@
-import React, {PropTypes} from 'react';
-import raf from 'raf';
+const React = require('react');
+const {PropTypes} = React;
+const raf = require('raf');
 
-export default class Notification extends React.Component {
+class Notification extends React.Component {
   static propTypes = {
     type: PropTypes.oneOf(['success', 'error', 'info', 'warning']),
     message: PropTypes.string.isRequired,
@@ -124,3 +125,5 @@ export default class Notification extends React.Component {
     );
   }
 }
+
+module.exports = Notification;

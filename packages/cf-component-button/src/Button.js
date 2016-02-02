@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class Button extends React.Component {
+class Button extends React.Component {
   static propTypes = {
     onClick: PropTypes.func.isRequired,
     type: PropTypes.oneOf([
@@ -29,4 +30,6 @@ export default class Button extends React.Component {
       </button>
     );
   }
-}
+};
+
+module.exports = Button;

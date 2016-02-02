@@ -1,6 +1,6 @@
-import {equal as assertEqual} from 'assert';
-import createFakeServer from '../../../utils/createFakeServer';
-import httpPoll from '../src/httpPoll';
+const {equal: assertEqual} = require('assert');
+const createFakeServer = require('../../../utils/createFakeServer');
+const httpPoll = require('../src/httpPoll');
 
 let server;
 

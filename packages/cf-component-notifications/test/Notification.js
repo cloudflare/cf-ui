@@ -1,8 +1,8 @@
-import React from 'react';
-import {expect} from 'chai';
-import {render, unmountComponentAtNode, findDOMNode} from 'react-dom';
-import * as TestUtils from 'react-addons-test-utils';
-import Notification from '../src/Notification';
+const React = require('react');
+const {expect} = require('chai');
+const {render, unmountComponentAtNode, findDOMNode} = require('react-dom');
+const TestUtils = require('react-addons-test-utils');
+const Notification = require('../src/Notification');
 
 // timeout as second arg is so annoying
 function delay(timeout, cb) {

@@ -1,5 +1,5 @@
-import {equal as assertEqual} from 'assert';
-import createLogger from '../src/createLogger';
+const {equal: assertEqual} = require('assert');
+const createLogger = require('../src/createLogger');
 
 describe('createLogger', function() {
   it('should create a logging function', function() {

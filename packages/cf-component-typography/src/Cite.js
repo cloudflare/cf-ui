@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class Cite extends React.Component {
+class Cite extends React.Component {
   render() {
     return (
       <cite className="cf-cite">
@@ -9,3 +9,5 @@ export default class Cite extends React.Component {
     );
   }
 }
+
+module.exports = Cite;

@@ -1,1 +1,1 @@
-export default from './Viewport';
+module.exports = require('./Viewport');

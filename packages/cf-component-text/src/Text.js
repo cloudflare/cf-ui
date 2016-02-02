@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class Text extends React.Component {
+class Text extends React.Component {
   static propTypes = {
     size: PropTypes.oneOf(['normal', 'small']),
     align: PropTypes.oneOf(['start', 'center', 'justify', 'end']),
@@ -34,3 +35,5 @@ export default class Text extends React.Component {
     );
   }
 }
+
+module.exports = Text;

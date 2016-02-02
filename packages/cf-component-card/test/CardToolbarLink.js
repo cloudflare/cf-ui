@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import CardToolbarLink from '../src/CardToolbarLink';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const CardToolbarLink = require('../src/CardToolbarLink');
 
 describe('CardToolbar', function() {
   it('should render', function() {

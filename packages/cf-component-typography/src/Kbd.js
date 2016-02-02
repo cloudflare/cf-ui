@@ -1,6 +1,6 @@
-import React from 'react';
+const React = require('react');
 
-export default class Kbd extends React.Component {
+class Kbd extends React.Component {
   render() {
     return (
       <kbd className="cf-kbd">
@@ -9,3 +9,5 @@ export default class Kbd extends React.Component {
     );
   }
 }
+
+module.exports = Kbd;

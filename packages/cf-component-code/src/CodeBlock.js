@@ -1,7 +1,7 @@
-import React from 'react';
-import Code from './Code';
+const React = require('react');
+const Code = require('./Code');
 
-export default class CodeBlock extends React.Component {
+class CodeBlock extends React.Component {
   render() {
     return (
       <pre className="cf-code__block">
@@ -12,3 +12,5 @@ export default class CodeBlock extends React.Component {
     );
   }
 }
+
+module.exports = CodeBlock;

@@ -1,1 +1,1 @@
-export default from './Textarea';
+module.exports = require('./Textarea');

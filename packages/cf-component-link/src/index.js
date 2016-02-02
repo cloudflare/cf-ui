@@ -1,1 +1,1 @@
-export default from './Link';
+module.exports = require('./Link');

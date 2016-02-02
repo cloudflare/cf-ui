@@ -1,7 +1,8 @@
-import React, {PropTypes} from 'react';
-import Radio from './Radio';
+const React = require('react');
+const {PropTypes} = React;
+const Radio = require('./Radio');
 
-export default class RadioGroup extends React.Component {
+class RadioGroup extends React.Component {
   static propTypes = {
     value: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
@@ -31,3 +32,5 @@ export default class RadioGroup extends React.Component {
     );
   }
 }
+
+module.exports = RadioGroup;

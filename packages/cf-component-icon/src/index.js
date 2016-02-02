@@ -1,1 +1,1 @@
-export default from './Icon';
+module.exports = require('./Icon');

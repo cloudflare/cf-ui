@@ -1,6 +1,6 @@
-import React from 'react';
-import assertEqualJSX from '../../../utils/assertEqualJSX';
-import Page from '../src/Page';
+const React = require('react');
+const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const Page = require('../src/Page');
 
 describe('Page', function() {
   it('should render', function() {

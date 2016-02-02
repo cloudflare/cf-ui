@@ -1,6 +1,7 @@
-import React, {PropTypes} from 'react';
+const React = require('react');
+const {PropTypes} = React;
 
-export default class CardToolbarLink extends React.Component {
+class CardToolbarLink extends React.Component {
   static propTypes = {
     onClick: PropTypes.func.isRequired,
     isActive: PropTypes.bool.isRequired,
@@ -26,3 +27,5 @@ export default class CardToolbarLink extends React.Component {
     );
   }
 }
+
+module.exports = CardToolbarLink;

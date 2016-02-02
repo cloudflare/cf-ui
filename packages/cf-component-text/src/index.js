@@ -1,1 +1,1 @@
-export default from './Text';
+module.exports = require('./Text');

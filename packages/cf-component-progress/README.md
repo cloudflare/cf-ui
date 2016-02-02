@@ -11,8 +11,8 @@ $ npm install cf-component-progress
 ## Usage
 
 ```js
-import React from 'react';
-import Progress from '../../src/index';
+const React = require('react');
+const Progress = require('../../src/index');
 
 export default class Application extends React.Component {
   state = {

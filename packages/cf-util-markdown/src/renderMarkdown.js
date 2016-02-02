@@ -1,4 +1,4 @@
-import marked from 'marked';
+const marked = require('marked');
 
 // Setup default options.
 marked.setOptions({
@@ -18,7 +18,7 @@ marked.setOptions({
  * @param {Boolean} [opts.__dangerouslyDontSanitizeMarkdown]
  * @return {String} Rendered markdown.
  */
-export default function renderMarkdown(str, opts) {
+function renderMarkdown(str, opts) {
   const markedOpts = {};
 
   if (opts && opts.__dangerouslyDontSanitizeMarkdown) {
@@ -26,4 +26,6 @@ export default function renderMarkdown(str, opts) {
   }
 
   return marked(str, markedOpts);
-};
+}
+
+module.exports = renderMarkdown;
