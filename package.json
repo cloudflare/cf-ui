@@ -18,7 +18,7 @@
   "devDependencies": {
     "babel-core": "^6.0.20",
     "babel-eslint": "^4.1.6",
-    "babel-preset-cf": "^1.2.0",
+    "babel-preset-cf": "^1.4.0",
     "babelify": "^7.2.0",
     "browserify-istanbul": "^0.2.1",
     "chai": "^3.4.1",
