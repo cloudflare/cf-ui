@@ -11,7 +11,7 @@
     "examples": "browserify packages/cf-component-*/example/*/component.js -o example/bundle.js -t babelify && node example/server.js",
     "examples-dev": "watchify packages/cf-component-*/example/*/component.js -o example/bundle.js -t babelify -p errorify & node example/server.js",
     "lint": "gulp lint",
-    "publish": "lerna publish -i",
+    "publish": "git pull --rebase && lerna publish -i",
     "test": "gulp test",
     "updated": "lerna updated -i"
   },
