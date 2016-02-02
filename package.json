@@ -6,12 +6,14 @@
   "license": "BSD-3-Clause",
   "scripts": {
     "build": "gulp build",
-    "bootstrap": "lerna bootstrap",
+    "bootstrap": "lerna bootstrap -i",
     "dev": "gulp dev",
-    "lint": "gulp lint",
-    "test": "gulp test",
     "examples": "browserify packages/cf-component-*/example/*/component.js -o example/bundle.js -t babelify && node example/server.js",
-    "examples-dev": "watchify packages/cf-component-*/example/*/component.js -o example/bundle.js -t babelify -p errorify & node example/server.js"
+    "examples-dev": "watchify packages/cf-component-*/example/*/component.js -o example/bundle.js -t babelify -p errorify & node example/server.js",
+    "lint": "gulp lint",
+    "publish": "lerna publish -i",
+    "test": "gulp test",
+    "updated": "lerna updated -i"
   },
   "devDependencies": {
     "babel-core": "^6.0.20",
@@ -48,7 +50,7 @@
     "karma-safari-launcher": "^0.1.1",
     "karma-sauce-launcher": "^0.3.0",
     "karma-tape-reporter": "^1.0.3",
-    "lerna": "^1.0.5",
+    "lerna": "github:kittens/lerna#tjk/i",
     "minimist": "^1.2.0",
     "mocha": "^2.3.3",
     "react": "^0.14.2",
