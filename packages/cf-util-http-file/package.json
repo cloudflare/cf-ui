@@ -5,6 +5,9 @@
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
   "dependencies": {
     "cf-util-http": "^1.2.1"
   },
