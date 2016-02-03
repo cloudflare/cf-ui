@@ -1163,6 +1163,79 @@ a.cf-link--disabled {
   color: gray;
 }
 
+/*
+ * Pagination
+ */
+
+.cf-pagination::after,
+.cf-pagination__list::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.cf-pagination__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: left;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.cf-pagination__item {
+  float: left;
+  position: relative;
+  background: white;
+  color: #00A9EB;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom-width: 2px;
+}
+
+.cf-pagination__item:first-child {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.cf-pagination__item:last-child {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.cf-pagination__item + .cf-pagination__item {
+  margin-left: -1px;
+}
+
+.cf-pagination__item--active {
+  background: #00A9EB;
+  border-color: #0C7FE9;
+  color: white;
+  z-index: 1;
+}
+
+.cf-pagination__item--disabled {
+  background: #eee;
+  color: #666;
+}
+
+.cf-pagination__link {
+  position: relative;
+  display: block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+}
+
+.cf-pagination__link:focus {
+  z-index: 1;
+}
+
+.cf-pagination__item--active .cf-pagination__link,
+.cf-pagination__item--disabled .cf-pagination__link {
+  cursor: default;
+}
+
 /**
  * Progress
  */
