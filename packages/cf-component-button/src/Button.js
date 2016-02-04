@@ -4,6 +4,7 @@ const {PropTypes} = React;
 class Button extends React.Component {
   static propTypes = {
     onClick: PropTypes.func.isRequired,
+    submit: PropTypes.bool,
     type: PropTypes.oneOf([
       'default',
       'primary',
@@ -15,14 +16,17 @@ class Button extends React.Component {
   };
 
   static defaultProps = {
-    type: 'default'
+    type: 'default',
+    submit: false
   };
 
   render() {
+    let type = this.props.submit ? 'submit' : 'button';
     let className = 'cf-btn cf-btn--' + this.props.type;
 
     return (
       <button
+        type={type}
         className={className}
         disabled={this.props.disabled}
         onClick={this.props.onClick}>
