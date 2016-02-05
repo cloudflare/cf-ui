@@ -1,7 +1,7 @@
 {
   "name": "cf-component-dropdown",
   "description": "CloudFlare Dropdown Component",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
@@ -14,7 +14,7 @@
     "react": "^0.14.2"
   },
   "devDependencies": {
-    "cf-component-button": "^2.1.1",
+    "cf-component-button": "^2.1.2",
     "react-dom": "^0.14.2"
   }
 }

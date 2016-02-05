@@ -1,7 +1,7 @@
 {
   "name": "cf-component-modal",
   "description": "CloudFlare Modal Component",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
@@ -15,7 +15,7 @@
     "react-modal2": "^3.0.1"
   },
   "devDependencies": {
-    "cf-component-button": "^2.1.1",
+    "cf-component-button": "^2.1.2",
     "react-dom": "^0.14.2"
   }
 }
