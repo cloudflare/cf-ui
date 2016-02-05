@@ -25,4 +25,4 @@ function trackAdwords(id, label, params, remarketingOnly = false) {
   });
 }
 
-module.exports = trackAdwords;
+module.exports = {trackAdwords};
