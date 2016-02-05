@@ -54,7 +54,7 @@ function build() {
   return gulp.src(scripts)
     .pipe(fixErrorHandling())
     .pipe(renameSrcToLib())
-    .pipe(newer(dest))
+    // .pipe(newer(dest))
     .pipe(through.obj((file, enc, callback) => {
       gutil.log('Compiling', '\'' + chalk.cyan(file._path) + '\'...');
       callback(null, file);
