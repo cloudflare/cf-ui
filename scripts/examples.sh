@@ -2,10 +2,10 @@
 set -e
 
 echo "Building repos..."
-time ./node_modules/.bin/gulp build
+./node_modules/.bin/gulp build
 
 echo "Building vendor.js..."
-time ./node_modules/.bin/browserify \
+./node_modules/.bin/browserify \
   -r react \
   -r react-dom \
   -r lodash --noparse lodash \
@@ -13,7 +13,7 @@ time ./node_modules/.bin/browserify \
   -o example/vendor.js
 
 echo "Building bundle.js..."
-time ./node_modules/.bin/browserify packages/cf-component-*/example/*/component.js \
+./node_modules/.bin/browserify packages/cf-component-*/example/*/component.js \
   -x react \
   -x react-dom \
   -x lodash \
