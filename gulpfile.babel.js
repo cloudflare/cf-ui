@@ -56,7 +56,8 @@ function build() {
     .pipe(renameSrcToLib())
     // .pipe(newer(dest))
     .pipe(through.obj((file, enc, callback) => {
-      gutil.log('Compiling', '\'' + chalk.cyan(file._path) + '\'...');
+      const filepath = path.relative(path.resolve(__dirname, 'packages'), file._path);
+      gutil.log('Compiling', '\'' + chalk.cyan(filepath) + '\'...');
       callback(null, file);
     }))
     .pipe(babel())

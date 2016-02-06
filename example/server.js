@@ -38,6 +38,7 @@ app.get('/', function(req, res) {
     '  <body>',
     '    <h1>CloudFlare Components</h1>',
     '    ' + componentsHtml,
+    '    <script type="text/javascript" src="/vendor.js"></script>',
     '    <script type="text/javascript" src="/bundle.js"></script>',
     '  </body>',
     '</html>'
@@ -46,6 +47,10 @@ app.get('/', function(req, res) {
 
 app.get('/bundle.js', function(req, res) {
   res.sendFile(path.resolve(__dirname, 'bundle.js'));
+});
+
+app.get('/vendor.js', function(req, res) {
+  res.sendFile(path.resolve(__dirname, 'vendor.js'));
 });
 
 app.get('/styles.css', function(req, res) {
