@@ -2,6 +2,9 @@ var fs = require('fs');
 var path = require('path');
 var express = require('express');
 
+var vendor = process.argv[2];
+var bundle = process.argv[3];
+
 var packagesPath = path.resolve(__dirname, '../packages');
 var packages = fs.readdirSync(packagesPath);
 
@@ -46,11 +49,11 @@ app.get('/', function(req, res) {
 });
 
 app.get('/bundle.js', function(req, res) {
-  res.sendFile(path.resolve(__dirname, 'bundle.js'));
+  res.sendFile(bundle);
 });
 
 app.get('/vendor.js', function(req, res) {
-  res.sendFile(path.resolve(__dirname, 'vendor.js'));
+  res.sendFile(vendor);
 });
 
 app.get('/styles.css', function(req, res) {

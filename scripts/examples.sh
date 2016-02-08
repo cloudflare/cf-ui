@@ -1,6 +1,9 @@
 #!/bin/sh
 set -e
 
+vendor=$(mktemp /tmp/vendor.js.XXXXXX)
+bundle=$(mktemp /tmp/bundle.js.XXXXXX)
+
 ./node_modules/.bin/gulp build
 
 ./node_modules/.bin/watchify \
@@ -9,7 +12,7 @@ set -e
   -r react-dom \
   -r lodash --noparse lodash \
   -r react-addons-css-transition-group \
-  -o example/vendor.js & \
+  -o $vendor & \
 ./node_modules/.bin/watchify packages/cf-component-*/example/*/component.js \
   -v \
   -x react \
@@ -17,5 +20,5 @@ set -e
   -x lodash \
   -x react-addons-css-transition-group \
   -t babelify \
-  -o example/bundle.js & \
-node ./example/server.js
+  -o $bundle & \
+node ./example/server.js $vendor $bundle
