@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "cf-component-button": "^2.1.2",
+    "cf-util-route-handler": "^2.0.2",
     "react-dom": "^0.14.2"
   }
 }
