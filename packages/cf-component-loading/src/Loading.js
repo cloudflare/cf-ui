@@ -1,4 +1,4 @@
-const React = require('react')
+const React = require('react');
 
 class Loading extends React.Component {
   render() {
