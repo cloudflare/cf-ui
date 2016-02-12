@@ -30,13 +30,23 @@ packages.map(function(pkg) {
 
 var app = express();
 
+var wwwStyleStat = fs.statSync(path.resolve(__dirname, 'www-style'));
+var styles;
+
+if (wwwStyleStat.isDirectory()) {
+  styles = '/assets/www-style/stylesheets/components.css';
+} else {
+  styles = '/assets/styles.css';
+}
+
 app.get('/', function(req, res) {
   res.send([
     '<!doctype html>',
     '<html>',
     '  <head>',
     '    <title>CloudFlare Components</title>',
-    '    <link rel="stylesheet" href="/styles.css">',
+    '    <link rel="stylesheet" href="/assets/base.css">',
+    '    <link rel="stylesheet" href="' + styles + '">',
     '  </head>',
     '  <body>',
     '    <h1>CloudFlare Components</h1>',
@@ -56,9 +66,7 @@ app.get('/vendor.js', function(req, res) {
   res.sendFile(vendor);
 });
 
-app.get('/styles.css', function(req, res) {
-  res.sendFile(path.resolve(__dirname, 'styles.css'));
-});
+app.use('/assets', express.static(__dirname));
 
 app.listen(8000);
 console.log('Listening at http://localhost:8000/');
