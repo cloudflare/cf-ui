@@ -1,4 +1,5 @@
 const React = require('react');
+const Link = require('cf-component-link');
 const {PropTypes} = React;
 
 class CardToolbarLink extends React.Component {
@@ -21,9 +22,9 @@ class CardToolbarLink extends React.Component {
     }
 
     return (
-      <a href="#" role="tab" id={this.props.id} className={className} onClick={this.handleClick}>
+      <Link role="tab" id={this.props.id} className={className} onClick={this.handleClick}>
         {this.props.children}
-      </a>
+      </Link>
     );
   }
 }
