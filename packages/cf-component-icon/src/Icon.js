@@ -29,7 +29,11 @@ class Icon extends React.Component {
     if (this.props.white) className += ' cf-icon--white';
 
     return (
-      <i className={className}>{this.props.label}</i>
+      <i className={className}>
+        {this.props.label && (
+          <span className="cf-icon__label">{this.props.label}</span>
+        )}
+      </i>
     );
   }
 };
