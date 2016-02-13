@@ -7,7 +7,9 @@ describe('Icon', function() {
     assertEqualJSX(
       <Icon type="info-sign" label="Info"/>,
       // should equal
-      <i className="cf-icon cf-icon--info-sign">Info</i>
+      <i className="cf-icon cf-icon--info-sign">
+        <span className="cf-icon__label">Info</span>
+      </i>
     );
   });
 
@@ -15,7 +17,9 @@ describe('Icon', function() {
     assertEqualJSX(
       <Icon type="info-sign" label="Info" size="xlarge"/>,
       // should equal
-      <i className="cf-icon cf-icon--info-sign cf-icon--xlarge">Info</i>
+      <i className="cf-icon cf-icon--info-sign cf-icon--xlarge">
+        <span className="cf-icon__label">Info</span>
+      </i>
     );
   });
 
@@ -23,7 +27,9 @@ describe('Icon', function() {
     assertEqualJSX(
       <Icon type="info-sign" label="Info" border spin muted white/>,
       // should equal
-      <i className="cf-icon cf-icon--info-sign cf-icon--border cf-icon--spin cf-icon--muted cf-icon--white">Info</i>
+      <i className="cf-icon cf-icon--info-sign cf-icon--border cf-icon--spin cf-icon--muted cf-icon--white">
+        <span className="cf-icon__label">Info</span>
+      </i>
     );
   });
 
