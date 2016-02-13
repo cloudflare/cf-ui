@@ -1,0 +1,24 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 93.75%;
+}
+
+body {
+  margin: 2em auto;
+  padding: 0 2em;
+  max-width: 960px;
+  font: normal 1em/1.5 "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.cf-example {
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 3px;
+  background: #eee;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+}
