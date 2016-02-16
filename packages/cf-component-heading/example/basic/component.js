@@ -9,7 +9,7 @@ const {
 class Component extends React.Component {
   render() {
     return (
-      <Heading size={4}>
+      <Heading size={2}>
         Look at this nice heading!
         <HeadingCaption>It even has a nice HeadingCaption</HeadingCaption>
       </Heading>

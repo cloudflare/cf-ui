@@ -18,21 +18,21 @@ class Component extends React.Component {
         <p>Sizes:</p>
         <p>
           {SIZES.map(size =>
-            <Icon label={size} type={TYPES[0]} size={size} key={size}/>
+            <Icon label={size} type="gear" size={size} key={size}/>
           )}
         </p>
 
         <p>Border:</p>
-        <p><Icon label="border" type={TYPES[0]} border/></p>
+        <p><Icon label="border" type="gear" border/></p>
 
         <p>Spin:</p>
-        <p><Icon label="border" type={TYPES[0]} spin/></p>
+        <p><Icon label="border" type="gear" spin/></p>
 
         <p>Muted:</p>
-        <p><Icon label="border" type={TYPES[0]} muted/></p>
+        <p><Icon label="border" type="gear" muted/></p>
 
         <p>White:</p>
-        <p><Icon label="border" type={TYPES[0]} white/></p>
+        <p><Icon label="border" type="gear" white/></p>
       </div>
     );
   }
