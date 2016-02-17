@@ -312,6 +312,41 @@
 }
 
 /**
+ * Layout
+ */
+
+.cf-layout__container {
+  padding: 0 1.5em;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.cf-layout__row {
+  overflow: hidden;
+}
+
+.cf-layout__column {
+  float: left;
+}
+
+@media (max-width: 720px) {
+  .cf-layout__column {
+    width: 100% !important;
+    float: none;
+  }
+}
+
+#cf-component-layout--basic {
+  text-align: center;
+}
+
+#cf-component-layout--basic .cf-layout__container:hover,
+#cf-component-layout--basic .cf-layout__row:hover,
+#cf-component-layout--basic .cf-layout__column:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/**
  * Link
  */
 
