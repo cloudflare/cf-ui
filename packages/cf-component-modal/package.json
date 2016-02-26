@@ -9,9 +9,10 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
+    "cf-component-icon": "^1.0.5",
     "react": "^0.14.2",
     "react-addons-css-transition-group": "^0.14.2",
-    "react-gateway": "^2.0.3",
+    "react-gateway": "^1.1.0",
     "react-modal2": "^3.0.1"
   },
   "devDependencies": {
