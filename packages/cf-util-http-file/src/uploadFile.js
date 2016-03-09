@@ -1,4 +1,4 @@
-const {post: httpPost} = require('./http');
+const {post: httpPost} = require('cf-util-http');
 
 function uploadFile(url, file, onSuccess, onError) {
   const formData = new FormData();

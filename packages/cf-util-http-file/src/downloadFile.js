@@ -1,6 +1,7 @@
-const {get: httpGet} = require('./http');
+const {get: httpGet} = require('cf-util-http');
 
-function saveFile(filename, file) {
+function saveFile(filename, file, mimeType) {
+  mimeType = mimeType || 'data:application/octet-stream';
   // Data URIs cannot be used for navigation, for scripting, or to
   // populate frame or iframe elements in IE. Instead for IE specifically,
   // use `msSaveBlob` to save the file.
@@ -13,7 +14,7 @@ function saveFile(filename, file) {
   // comprised of the contents of the response (aka our file), then click
   // the link. This will prompt the browser to download the file.
   const link = global.document.createElement('a');
-  link.href = 'data:application/octet-stream,' + global.encodeURI(file);
+  link.href = mimeType + ',' + global.encodeURI(file);
   if (filename) link.download = filename;
 
   // Dispatch fake click event to download the file
@@ -29,4 +30,4 @@ function downloadFile(url, filename, onSuccess, onError) {
   }, onError);
 }
 
-module.exports = downloadFile;
+module.exports = { saveFile, downloadFile };
