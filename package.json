@@ -51,7 +51,7 @@
     "karma-safari-launcher": "^0.1.1",
     "karma-sauce-launcher": "^0.3.0",
     "karma-tape-reporter": "^1.0.3",
-    "lerna": "github:kittens/lerna#tjk/i",
+    "lerna": "github:kittens/lerna#4b2cbadeb9a95273b5f2dad631ca4a18e77c752e",
     "lodash": "^4.3.0",
     "minimist": "^1.2.0",
     "mocha": "^2.3.3",
