@@ -50,11 +50,11 @@ function initKarmaServer(singleRun, cb) {
   }, cb).start();
 }
 
-function build() {
+function build(dev) {
   return gulp.src(scripts)
     .pipe(fixErrorHandling())
     .pipe(renameSrcToLib())
-    // .pipe(newer(dest))
+    .pipe(dev ? newer(dest) : gutil.noop())
     .pipe(through.obj((file, enc, callback) => {
       const filepath = path.relative(path.resolve(__dirname, 'packages'), file._path);
       gutil.log('Compiling', '\'' + chalk.cyan(filepath) + '\'...');
@@ -84,13 +84,16 @@ function testWatch(cb) {
 
 function dev(cb) {
   watch(scripts, () => {
-    build();
+    build(true);
     lint();
   });
   testWatch(cb);
 }
 
-gulp.task('build', build);
+gulp.task('build', function() {
+  return build(false);
+});
+
 gulp.task('lint', lint);
 gulp.task('test', test);
 
