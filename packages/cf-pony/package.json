@@ -1,0 +1,24 @@
+{
+  "name": "cfdash",
+  "description": "CloudFlare ponyfills and utility methods",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "author": "James Kyle <jkyle@cloudflare.com>",
+  "license": "BSD-3-Clause",
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "array-includes": "^3.0.2",
+    "array.prototype.find": "^2.0.0",
+    "object-assign": "^4.0.1",
+    "object-is": "^1.0.1",
+    "string-includes": "^1.0.0",
+    "string.prototype.endswith": "^0.2.0",
+    "string.prototype.startswith": "^0.2.0",
+    "string.prototype.trim": "^1.1.2",
+    "string.prototype.trimleft": "^2.0.0",
+    "string.prototype.trimright": "^2.0.0"
+  },
+  "devDependencies": {}
+}
