@@ -109,15 +109,13 @@ module.exports = function(config) {
       transform: [
         'babelify'
       ].concat(args.istanbul && [
-        'browserify-istanbul'
+        ['browserify-istanbul', {
+          instrumenter: require('isparta')
+        }]
       ] || [])
     },
 
     coverageReporter: {
-      instrumenters: { isparta: require('isparta') },
-      instrumenter: {
-        '**/*.js': 'isparta'
-      },
       reporters: [
         {
           type: 'html'
