@@ -1,5 +1,6 @@
 import minimist from 'minimist';
 import defined from 'defined';
+import path from 'path';
 
 const customLaunchers = {};
 
@@ -109,15 +110,17 @@ module.exports = function(config) {
       transform: [
         'babelify'
       ].concat(args.istanbul && [
-        'browserify-istanbul'
+        ['browserify-istanbul', {
+          instrumenter: require('isparta'),
+          ignore: [
+            '**/lib/**',
+            path.resolve(__dirname, 'utils/**')
+          ]
+        }]
       ] || [])
     },
 
     coverageReporter: {
-      instrumenters: { isparta: require('isparta') },
-      instrumenter: {
-        '**/*.js': 'isparta'
-      },
       reporters: [
         {
           type: 'html'
