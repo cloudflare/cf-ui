@@ -2,14 +2,14 @@ const React = require('react');
 const assertEqualJSX = require('../../../utils/assertEqualJSX');
 const CardToolbarLink = require('../src/CardToolbarLink');
 
-describe('CardToolbar', function() {
+describe('CardToolbarLink', function() {
   it('should render', function() {
     assertEqualJSX(
       <CardToolbarLink id="link" isActive={false} onClick={() => {}}>
         CardToolbarLink
       </CardToolbarLink>,
       // should equal
-      <a href="#" role="tab" id="link" className="cf-card__toolbar_link">
+      <a role="tab" id="link" href="#!" className="cf-link cf-card__toolbar_link">
         CardToolbarLink
       </a>
     );
@@ -21,7 +21,7 @@ describe('CardToolbar', function() {
         CardToolbarLink
       </CardToolbarLink>,
       // should equal
-      <a href="#" role="tab" id="link" className="cf-card__toolbar_link cf-card__toolbar_link--open">
+      <a role="tab" id="link" href="#!" className="cf-link cf-card__toolbar_link cf-card__toolbar_link--open">
         CardToolbarLink
       </a>
     );
