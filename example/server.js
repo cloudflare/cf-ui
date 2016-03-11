@@ -1,6 +1,7 @@
 var fs = require('fs');
 var path = require('path');
 var express = require('express');
+var pathExists = require('path-exists');
 
 var vendor = process.argv[2];
 var bundle = process.argv[3];
@@ -30,10 +31,10 @@ packages.map(function(pkg) {
 
 var app = express();
 
-var wwwStyleStat = fs.statSync(path.resolve(__dirname, 'www-style'));
+var wwwStyleExists = pathExists.sync(path.resolve(__dirname, 'www-style'));
 var styles;
 
-if (wwwStyleStat.isDirectory()) {
+if (wwwStyleExists) {
   styles = '/assets/www-style/stylesheets/components.css';
 } else {
   styles = '/assets/styles.css';
