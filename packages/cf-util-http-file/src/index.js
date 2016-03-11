@@ -1,4 +1,3 @@
-var downloadFile = require('./downloadFile');
 exports.uploadFile = require('./uploadFile');
-exports.downloadFile = downloadFile.downloadFile;
-exports.saveFile = downloadFile.saveFile;
+exports.saveFile = require('./saveFile');
+exports.downloadFile = require('./downloadFile');
