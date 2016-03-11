@@ -1,5 +1,5 @@
 {
-  "name": "cfdash",
+  "name": "cf-pony",
   "description": "CloudFlare ponyfills and utility methods",
   "version": "0.0.0",
   "main": "lib/index.js",
