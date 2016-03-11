@@ -1,5 +1,7 @@
 # cf-pony
 
+![Big Horse](http://i.imgur.com/1d2bwkn.png)
+
 > CloudFlare [ponyfills](https://ponyfoo.com/articles/polyfills-or-ponyfills)
 
 We are wrapping other modules so that we can deprecate them in the future with
