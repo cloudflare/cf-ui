@@ -55,6 +55,7 @@
     "lodash": "^4.3.0",
     "minimist": "^1.2.0",
     "mocha": "^2.3.3",
+    "path-exists": "^2.1.0",
     "react": "^0.14.2",
     "react-addons-css-transition-group": "^0.14.2",
     "react-dom": "^0.14.2",
