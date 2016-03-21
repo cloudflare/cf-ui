@@ -10,19 +10,19 @@ class Component extends React.Component {
   render() {
     return (
       <div>
-        <Flex>
+        <Flex spacing={false}>
           <FlexItem>FlexItem 1</FlexItem>
           <FlexItem>FlexItem 2</FlexItem>
           <FlexItem>FlexItem 3</FlexItem>
         </Flex>
 
-        <Flex>
+        <Flex spacing="thin">
           <FlexItem>FlexItem 1</FlexItem>
           <FlexItem>FlexItem 2</FlexItem>
           <FlexItem collapse>Collapsed FlexItem</FlexItem>
         </Flex>
 
-        <Flex>
+        <Flex spacing="wide">
           <FlexItem collapse>FlexItem 1</FlexItem>
           <FlexItem>FlexItem 2</FlexItem>
           <FlexItem collapse>Collapsed FlexItem</FlexItem>

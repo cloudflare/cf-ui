@@ -282,6 +282,14 @@
           flex: 0 0;
 }
 
+.cf-flex--thin .cf-flex__item + .cf-flex__item {
+  margin-left: 5px;
+}
+
+.cf-flex--wide .cf-flex__item + .cf-flex__item {
+  margin-left: 20px;
+}
+
 /**
  * Heading
  */
