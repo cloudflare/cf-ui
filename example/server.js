@@ -14,6 +14,7 @@ packages = packages.filter(function(pkg) {
 });
 
 var componentsHtml = '';
+var sidebarHtml = '';
 
 packages.forEach(function(pkg) {
   var examplesPath = path.resolve(packagesPath, pkg, 'example');
@@ -24,7 +25,7 @@ packages.forEach(function(pkg) {
 
   var examples = fs.readdirSync(examplesPath);
 
-  componentsHtml += '<h2>' + pkg + '</h2>';
+  componentsHtml += '<h2 id="' + pkg + '">' + pkg + '</h2>';
 
   examples.forEach(function(example) {
     if (example !== 'basic') {
@@ -32,6 +33,8 @@ packages.forEach(function(pkg) {
     }
     componentsHtml += '<div class="cf-example" id="' + pkg + '--' + example + '"></div>';
   });
+
+  sidebarHtml += '<a href="#' + pkg + '">' + pkg + '</a>';
 });
 
 var app = express();
@@ -55,8 +58,9 @@ app.get('/', function(req, res) {
     '    <link rel="stylesheet" href="' + styles + '">',
     '  </head>',
     '  <body>',
-    '    <h1>CloudFlare Components</h1>',
-    '    ' + componentsHtml,
+    '    <header class="cf-example-header">cf-ui</header>',
+    '    <nav class="cf-example-sidebar">' + sidebarHtml + '</nav>',
+    '    <div class="cf-example-content">' + componentsHtml + '</div>',
     '    <script type="text/javascript" src="/vendor.js"></script>',
     '    <script type="text/javascript" src="/bundle.js"></script>',
     '  </body>',
