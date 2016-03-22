@@ -24,13 +24,14 @@ class Button extends React.Component {
   render() {
     const {disabled, loading} = this.props;
     const type = this.props.submit ? 'submit' : 'button';
-    let className = `cf-btn cf-btn--${this.props.type}`;
+    let className = 'cf-btn cf-btn--' + this.props.type;
+
     if (loading) {
       className += ' cf-btn--loading';
     }
 
     // Unless the disabled state is explicitly set, the button is disabled when loading.
-    const isDisabled = typeof disabled === 'undefined' ? loading : disabled;
+    const isDisabled = disabled ? loading : disabled;
 
     return (
       <button

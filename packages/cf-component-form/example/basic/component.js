@@ -7,6 +7,7 @@ const {
   FormFieldset,
   FormLabel
 } = require('../../src/index');
+const {Flex, FlexItem} = require('cf-component-flex');
 const {Button} = require('cf-component-button');
 const Input = require('cf-component-input');
 const Select = require('cf-component-select');
@@ -52,19 +53,21 @@ class Component extends React.Component {
         <FormHeader title="Feedback Form"/>
 
         <FormFieldset legend="Name">
-          <div style={{ float: 'left', width: '50%', paddingRight: '0.5em' }}>
-            <FormLabel>First Name</FormLabel>
-            <Input name="firstName" type="text"
-              value={this.state.firstName}
-              onChange={this.handleFirstNameChange}/>
-          </div>
+          <Flex spacing="wide">
+            <FlexItem>
+              <FormLabel>First Name</FormLabel>
+              <Input name="firstName" type="text"
+                value={this.state.firstName}
+                onChange={this.handleFirstNameChange}/>
+            </FlexItem>
 
-          <div style={{ float: 'left', width: '50%', paddingLeft: '0.5em' }}>
-            <FormLabel>Last Name</FormLabel>
-            <Input name="lastName" type="text"
-              value={this.state.lastName}
-              onChange={this.handleLastNameChange}/>
-          </div>
+            <FlexItem>
+              <FormLabel>Last Name</FormLabel>
+              <Input name="lastName" type="text"
+                value={this.state.lastName}
+                onChange={this.handleLastNameChange}/>
+            </FlexItem>
+          </Flex>
         </FormFieldset>
 
         <FormFieldset legend="Type">
@@ -86,7 +89,9 @@ class Component extends React.Component {
         </FormFieldset>
 
         <FormFooter>
-          <Button submit type="primary" onClick={this.handleSubmit}>Submit</Button>
+          <Button submit type="primary" onClick={this.handleSubmit}>
+            Submit
+          </Button>
         </FormFooter>
       </Form>
     );
