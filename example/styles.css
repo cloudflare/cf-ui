@@ -258,6 +258,39 @@
 }
 
 /**
+ * Flex
+ */
+
+.cf-flex {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cf-flex__item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0;
+      -ms-flex: 1 0;
+          flex: 1 0;
+}
+
+.cf-flex__item--collapse {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0;
+      -ms-flex: 0 0;
+          flex: 0 0;
+}
+
+.cf-flex--thin .cf-flex__item + .cf-flex__item {
+  margin-left: 5px;
+}
+
+.cf-flex--wide .cf-flex__item + .cf-flex__item {
+  margin-left: 20px;
+}
+
+/**
  * Heading
  */
 

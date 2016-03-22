@@ -1,0 +1,12 @@
+# vim: set ft=yaml:
+---
+  globals:
+    describe: false
+    it: false
+    before: false
+    after: false
+    beforeEach: false
+    afterEach: false
+  rules:
+    no-unused-expressions: 0
+    new-cap: 0
