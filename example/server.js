@@ -15,11 +15,16 @@ packages = packages.filter(function(pkg) {
 
 var componentsHtml = '';
 
-packages.map(function(pkg) {
-  componentsHtml += '<h2>' + pkg + '</h2>';
-
+packages.forEach(function(pkg) {
   var examplesPath = path.resolve(packagesPath, pkg, 'example');
+
+  if (!pathExists.sync(examplesPath)) {
+    return;
+  }
+
   var examples = fs.readdirSync(examplesPath);
+
+  componentsHtml += '<h2>' + pkg + '</h2>';
 
   examples.forEach(function(example) {
     if (example !== 'basic') {
