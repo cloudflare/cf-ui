@@ -1,3 +1,32 @@
+
+/**
+ * Type Styles
+ */
+
+p, h1, h2, h3, h4 {
+  color: #434148;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.6em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+h4 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1em;
+}
+
 /**
  * Button
  */
@@ -13,7 +42,8 @@ button:not(.cf-btn) {
   -webkit-font-smoothing: antialiased;
   cursor: pointer;
   color: white;
-  border: 3px solid rgba(0, 0, 0, 0.1);;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 3px solid rgba(0, 0, 0, 0.2);
 }
 
 .cf-btn--default,
@@ -23,19 +53,19 @@ button:not(.cf-btn) {
 
 .cf-btn--primary {
   color: white;
-  background: dodgerblue;
+  background: #00A9EB;
 }
 
 .cf-btn--success {
-  background: limegreen;
+  background: #68970F;
 }
 
 .cf-btn--warning {
-  background: tomato;
+  background: #FCA520;
 }
 
 .cf-btn--error {
-  background: crimson;
+  background: #FF3100;
 }
 
 .cf-btn__group {
@@ -79,12 +109,12 @@ button:not(.cf-btn) {
 
 .cf-callout {
   padding: 1em;
-  border: 3px solid;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 2px;
 }
 
 .cf-callout--default {
-  background: #eee;
+  background: #ebebeb;
   border-color: #ccc;
 }
 
@@ -99,7 +129,7 @@ button:not(.cf-btn) {
 
 .cf-card {
   background: white;
-  border: 3px solid #ddd;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 3px;
 }
 
@@ -110,7 +140,7 @@ button:not(.cf-btn) {
 }
 
 .cf-card__section + .cf-card__section {
-  border-top: 3px solid #ddd;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .cf-card__content {
@@ -122,7 +152,7 @@ button:not(.cf-btn) {
   display: table-cell;
   width: 30%;
   background: #eee;
-  border-left: 3px solid #ddd;
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
   padding: 2em;
   vertical-align: top;
 }
@@ -135,7 +165,7 @@ button:not(.cf-btn) {
 }
 
 .cf-card__drawers_container--open {
-  border-top: 3px solid #ddd;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .cf-card__toolbar {
@@ -162,17 +192,17 @@ button:not(.cf-btn) {
 .cf-card__message {
   margin-top: 0.5em;
   padding: 0.5em 1em;
-  border: 3px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 3px;
 }
 
 .cf-card__message--info {
-  background: dodgerblue;
+  background: #00A9EB;
   color: white;
 }
 
 .cf-card__message--error {
-  background: crimson;
+  background: #FF3100;
   color: white;
 }
 
@@ -205,7 +235,7 @@ button:not(.cf-btn) {
 
 .cf-checkbox--checked .cf-checkbox__input,
 .cf-radio--checked .cf-radio__input {
-  border-color: dodgerblue;
+  border-color: #00A9EB;
 }
 
 .cf-checkbox--checked .cf-checkbox__input::after,
@@ -218,7 +248,7 @@ button:not(.cf-btn) {
   bottom: 3px;
   right: 3px;
 
-  background: dodgerblue;
+  background: #00A9EB;
 }
 
 .cf-checkbox--checked .cf-checkbox__input::after {
@@ -238,12 +268,13 @@ button:not(.cf-btn) {
   font-family: monaco, Consolas, "Lucida Console", monospace;
   font-size: 0.9em;
   background: #ddd;
+  color: #434148;
   border-radius: 2px;
   padding: 0.05em 0.3em;
 }
 
 .cf-code__block {
-  border: 3px solid #bbb;
+  border: 2px solid #bbb;
   background: #ddd;
   padding: 0.5em 1em;
   border-radius: 2px;
@@ -379,7 +410,7 @@ button:not(.cf-btn) {
 
 .cf-heading__caption {
   margin-left: 0.3em;
-  color: #666;
+  color: #434148;
 }
 
 /**
@@ -392,7 +423,7 @@ button:not(.cf-btn) {
   font: inherit;
   -webkit-appearance: textfield;
   margin-right: 0.5em;
-  border: 3px solid #ddd;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   background: white;
   border-radius: 3px;
 }
@@ -415,23 +446,23 @@ button:not(.cf-btn) {
 }
 
 .cf-label--default {
-  background: #aaa;
+  background: #434148;
 }
 
 .cf-label--info {
-  background: dodgerblue;
+  background: #00A9EB;
 }
 
 .cf-label--success {
-  background: limegreen;
+  background: #68970F;
 }
 
 .cf-label--warning {
-  background: tomato;
+  background: #FCA520;
 }
 
 .cf-label--error {
-  background: crimson;
+  background: #FF3100;
 }
 
 /**
@@ -474,12 +505,12 @@ button:not(.cf-btn) {
  */
 
 a.cf-link {
-  color: dodgerblue;
+  color: #00A9EB;
   text-decoration: none;
 }
 
 a.cf-link:hover {
-  border-bottom: 3px solid;
+  border-bottom: 2px solid;
 }
 
 a.cf-link--disabled {
@@ -489,7 +520,7 @@ a.cf-link--disabled {
 }
 
 .special-link {
-  color: tomato;
+  color: #FCA520;
 }
 
 /**
@@ -545,7 +576,7 @@ a.cf-link--disabled {
   margin: 0 auto;
 
   background: white;
-  border: 3px solid #ccc;
+  border: 2px solid #434148;
   border-radius: 3px;
 
   -webkit-transform-origin: center;
@@ -562,7 +593,7 @@ a.cf-link--disabled {
   position: relative;
   padding: 20px;
   background: #f9f9f9;
-  border-bottom: 3px solid #eee;
+  border-bottom: 2px solid #eee;
 }
 
 .cf-modal__title {
@@ -594,7 +625,7 @@ a.cf-link--disabled {
 .cf-modal__footer {
   padding: 15px 20px;
   background: #ebebeb;
-  border-top: 3px solid #ddd;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .cf-modal__actions {
@@ -723,19 +754,19 @@ a.cf-link--disabled {
 }
 
 .cf-notifications__item--success {
-  background: limegreen;
+  background: #68970F;
 }
 
 .cf-notifications__item--error {
-  background: crimson;
+  background: #FF3100;
 }
 
 .cf-notifications__item--info {
-  background: dodgerblue;
+  background: #00A9EB;
 }
 
 .cf-notifications__item--warning {
-  background: tomato;
+  background: #FCA520;
 }
 
 .cf-notifications__item_progress {
@@ -755,6 +786,8 @@ a.cf-link--disabled {
 .cf-notifications__item_message {
   position: relative;
   z-index: 1;
+  color: #fff;
+  font-weight: bold;
 }
 
 .cf-notifications__item_close {
@@ -789,19 +822,19 @@ a.cf-link--disabled {
   -webkit-appearance: none;
   appearance: none;
   background: white;
-  border: 3px solid #ddd;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 3px;
 }
 
 .cf-progress__bar::-webkit-progress-bar {
   /*margin-top: -3px;*/
   background-color: white;
-  color: dodgerblue;
+  color: #00A9EB;
 }
 
 .cf-progress__bar::-webkit-progress-value {
-  background-color: dodgerblue;
-  color: dodgerblue;
+  background-color: #00A9EB;
+  color: #00A9EB;
   transition: width 0.5s ease;
   box-shadow: 0 0 0 3px #0C7FE9;
   border-radius: 1px;
@@ -809,13 +842,13 @@ a.cf-link--disabled {
 
 /* Mozilla uses progress-bar as the value */
 .cf-progress__bar::-moz-progress-bar {
-  background-color: dodgerblue;
-  color: dodgerblue;
+  background-color: #00A9EB;
+  color: #00A9EB;
 }
 
 .cf-progress__bar:indeterminate {
-  background-color: tomato;
-  color: tomato;
+  background-color: #FCA520;
+  color: #FCA520;
 }
 
 .cf-progress__items {
@@ -925,7 +958,7 @@ a.cf-link--disabled {
 }
 .Select-placeholder {
   bottom: 0;
-  color: #aaa;
+  color: #434148;
   left: 0;
   line-height: 34px;
   padding-left: 10px;
@@ -942,7 +975,7 @@ a.cf-link--disabled {
   color: #333;
 }
 .Select-value {
-  color: #aaa;
+  color: #434148;
   left: 0;
   padding: 8px 52px 8px 10px;
   position: absolute;
@@ -1207,7 +1240,7 @@ a.cf-link--disabled {
   display: table-cell;
   padding: 1em;
   cursor: pointer;
-  border: 3px solid #ddd;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .cf-tabs__item:first-child {
@@ -1230,7 +1263,7 @@ a.cf-link--disabled {
 .cf-tabs__panel {
   background: white;
   padding: 2em;
-  border: 3px solid #ddd;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-top: 0;
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
@@ -1244,7 +1277,7 @@ a.cf-link--disabled {
   width: 100%;
   background: white;
   border-spacing: 0;
-  border: 3px solid #ddd;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .cf-table__head {
@@ -1320,19 +1353,19 @@ a.cf-link--disabled {
  */
 
 .cf-text--info {
-  color: dodgerblue;
+  color: #00A9EB;
 }
 
 .cf-text--success {
-  color: limegreen;
+  color: #68970F;
 }
 
 .cf-text--warning {
-  color: tomato;
+  color: #FCA520;
 }
 
 .cf-text--error {
-  color: crimson;
+  color: #FF3100;
 }
 
 .cf-text--muted {
@@ -1349,7 +1382,7 @@ a.cf-link--disabled {
   font: inherit;
   margin: 0;
   padding: 0.3em 0.6em;
-  border: 3px solid #ddd;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   background: white;
   border-radius: 3px;
 }
@@ -1365,7 +1398,7 @@ a.cf-link--disabled {
   width: 8em;
   background: #ccc;
   border-radius: 2px;
-  border: 1px solid #aaa;
+  border: 1px solid #434148;
   cursor: pointer;
 }
 
@@ -1631,9 +1664,9 @@ a.cf-link--disabled {
 }
 
 .cf-viewport--is {
-  background: limegreen;
+  background: #68970F;
 }
 
 .cf-viewport--not {
-  background: crimson;
+  background: #FF3100;
 }
