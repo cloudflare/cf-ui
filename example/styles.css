@@ -407,33 +407,36 @@ button:not(.cf-btn) {
  * Flex
  */
 
-.cf-flex {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
 
-.cf-flex__item {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 0 auto;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
-}
+@media (min-width: 720px) {
+  .cf-flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
 
-.cf-flex__item--collapse {
-  -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
-}
+  .cf-flex__item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 auto;
+        -ms-flex: 1 0 auto;
+            flex: 1 0 auto;
+  }
 
-.cf-flex--thin .cf-flex__item + .cf-flex__item {
-  margin-left: 5px;
-}
+  .cf-flex__item--collapse {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 auto;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+  }
 
-.cf-flex--wide .cf-flex__item + .cf-flex__item {
-  margin-left: 20px;
+  .cf-flex--thin .cf-flex__item + .cf-flex__item {
+    margin-left: 5px;
+  }
+
+  .cf-flex--wide .cf-flex__item + .cf-flex__item {
+    margin-left: 20px;
+  }
 }
 
 /**
@@ -633,8 +636,10 @@ h2.cf-heading.cf-heading--2 {
  */
 
 .cf-label {
+  display: inline-block;
   padding: 0.2em 0.5em;
   margin-right: 0.3em;
+  margin-bottom: 0.2em;
   border-radius: 2px;
   font-weight: bold;
   color: white;
@@ -667,7 +672,7 @@ h2.cf-heading.cf-heading--2 {
 
 .cf-layout__container {
   padding: 0 1.5em;
-  max-width: 80%;
+  max-width: 90%;
   margin: 0 auto;
 }
 
@@ -680,6 +685,11 @@ h2.cf-heading.cf-heading--2 {
 }
 
 @media (max-width: 720px) {
+  .cf-layout__container {
+    padding: 0;
+    max-width: none;
+  }
+
   .cf-layout__column {
     width: 100% !important;
     float: none;
@@ -1594,9 +1604,13 @@ a.cf-link--disabled {
   height: 3em;
   width: 8em;
   background: gray;
-  border-radius: 2px;
+  border-radius: 3px;
   border: 1px solid gray;
   cursor: pointer;
+}
+
+.cf-toggle--active {
+  border-color: #00A9EB;
 }
 
 .cf-toggle::before,
@@ -1614,7 +1628,7 @@ a.cf-link--disabled {
 .cf-toggle::before {
   content: "On";
   left: 0;
-  background: #68970F;
+  background: #00A9EB;
 }
 
 .cf-toggle::after {
@@ -1643,12 +1657,13 @@ a.cf-link--disabled {
   bottom: 0;
   width: 50%;
   background: white;
-  border-radius: 1px;
+  border-radius: 2px;
   transition: left 100ms ease;
 }
 
 .cf-toggle__handle::before {
-  content: "❮ ❯";
+  content: "\e904  \e906";
+  font-family: "icons";
   display: block;
   position: absolute;
   top: 50%;
@@ -1846,25 +1861,4 @@ a.cf-link--disabled {
 
 .tooltip-element .tooltip-content {
   padding: 0.5em 1em;
-}
-
-/**
- * Viewport
- */
-
-.cf-viewport--is,
-.cf-viewport--not {
-  padding: 1em;
-  margin: 0;
-  color: white;
-  -webkit-font-smoothing: antialiased;
-  font-family: monaco, Consolas, "Lucida Console", monospace;
-}
-
-.cf-viewport--is {
-  background: #68970F;
-}
-
-.cf-viewport--not {
-  background: #FF3100;
 }

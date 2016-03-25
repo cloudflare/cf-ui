@@ -17,6 +17,7 @@ body {
   background: #00A9EB;
   color: white;
   border-bottom: 3px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 
   font-size: 20px;
   font-weight: 200;
@@ -32,27 +33,24 @@ body {
   padding: 0 2rem;
 }
 
-@media (min-width: 960px) {
-  html, body {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
+.cf-example-content h2 {
+  padding-top: 60px;
+  margin-top: 0px;
+}
 
+@media (min-width: 960px) {
   .cf-example-header {
-    position: absolute;
+    position: fixed;
     z-index: 2;
     top: 0;
     left: 0;
     right: 0;
     height: 50px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   }
 
   .cf-example-sidebar {
     display: block;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     top: 50px;
     bottom: 0;
@@ -76,13 +74,8 @@ body {
   }
 
   .cf-example-content {
-    position: absolute;
-    top: 50px;
-    bottom: 0;
-    left: 250px;
-    right: 0;
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
+    margin-top: 50px;
+    margin-left: 250px;
   }
 }
 
@@ -150,12 +143,33 @@ body {
   height: auto;
 }
 
+#cf-component-label--basic,
 #cf-component-typography--basic {
   word-wrap: break-word;
 }
 
+#cf-component-viewport--basic .cf-viewport--is,
+#cf-component-viewport--basic .cf-viewport--not {
+  padding: 1em;
+  margin: 0;
+  margin-bottom: 2px;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#cf-component-viewport--basic .cf-viewport--is {
+  background: #00A9EB;
+}
+
+#cf-component-viewport--basic .cf-viewport--not {
+  background: gray;
+}
+
 /**
- *
+ * Code Highlighting
  */
 
 .cf-example__code { background-color: #1d1f21; color: #c5c8c6; }
