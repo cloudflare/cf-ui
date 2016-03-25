@@ -2,6 +2,12 @@ var fs = require('fs');
 var path = require('path');
 var express = require('express');
 var pathExists = require('path-exists');
+var Highlights = require('highlights');
+var highlighter = new Highlights();
+
+highlighter.requireGrammarsSync({
+  modulePath: require.resolve('language-babel/package.json')
+});
 
 var vendor = process.argv[2];
 var bundle = process.argv[3];
@@ -28,10 +34,25 @@ packages.forEach(function(pkg) {
   componentsHtml += '<h2 id="' + pkg + '">' + pkg + '</h2>';
 
   examples.forEach(function(example) {
+    var contentPath = path.join(examplesPath, example, 'component.js');
+    var content = fs.readFileSync(contentPath).toString()
+
+    content = highlighter.highlightSync({
+      fileContents: content,
+      filePath: contentPath,
+      scopeName: 'source.js'
+    });
+
     if (example !== 'basic') {
       componentsHtml += '<p>' + example + '</p>';
     }
-    componentsHtml += '<div class="cf-example" id="' + pkg + '--' + example + '"></div>';
+
+    componentsHtml += (
+      '<div class="cf-example">' +
+      '  <div class="cf-example__content" id="' + pkg + '--' + example + '"></div>' +
+      '  <div class="cf-example__code">' + content + '</div>' +
+      '</div>'
+    );
   });
 
   sidebarHtml += '<a href="#' + pkg + '">' + pkg + '</a>';
@@ -53,6 +74,7 @@ app.get('/', function(req, res) {
     '<!doctype html>',
     '<html>',
     '  <head>',
+    '    <meta name="viewport" content="width=device-width">',
     '    <title>CloudFlare Components</title>',
     '    <link rel="stylesheet" href="/assets/base.css">',
     '    <link rel="stylesheet" href="' + styles + '">',
