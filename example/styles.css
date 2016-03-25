@@ -760,10 +760,13 @@ a.cf-link--disabled {
   vertical-align: middle;
 
   padding: 20px;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.95);
 
   -webkit-transform-origin: center;
   transform-origin: center;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  will-change: opacity;
 }
 
 .cf-modal {
@@ -773,13 +776,21 @@ a.cf-link--disabled {
   margin: 0 auto;
 
   background: white;
-  border: 2px solid #434148;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
   border-radius: 3px;
+  box-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.05),
+    0 5px 20px rgba(0, 0, 0, 0.05);
 
   -webkit-transform-origin: center;
   transform-origin: center;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  will-change: transform, opacity;
 }
 
 .cf-modal:focus {
@@ -790,7 +801,8 @@ a.cf-link--disabled {
   position: relative;
   padding: 20px;
   background: #f9f9f9;
-  border-bottom: 2px solid #eee;
+  border-bottom: 1px solid #eee;
+  border-radius: 2px 2px 0 0;
 }
 
 .cf-modal__title {
@@ -822,7 +834,8 @@ a.cf-link--disabled {
 .cf-modal__footer {
   padding: 15px 20px;
   background: #ebebeb;
-  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid #ddd;
+  border-radius: 0 0 1px 1px;
 }
 
 .cf-modal__actions {
@@ -842,7 +855,7 @@ a.cf-link--disabled {
 .cf-transition-modal-appear.cf-transition-modal-appear-active .cf-modal__backdrop,
 .cf-transition-modal-enter.cf-transition-modal-enter-active .cf-modal__backdrop,
 .cf-transition-modal-leave .cf-modal__backdrop {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(255, 255, 255, 0.95);
 }
 
 .cf-transition-modal-appear-active .cf-modal__backdrop,
@@ -853,10 +866,11 @@ a.cf-link--disabled {
 }
 
 .cf-transition-modal-appear .cf-modal,
-.cf-transition-modal-enter .cf-modal,
-.cf-transition-modal-leave.cf-transition-modal-leave-active .cf-modal {
+.cf-transition-modal-enter .cf-modal {
+/*.cf-transition-modal-leave.cf-transition-modal-leave-active .cf-modal {*/
   opacity: 0;
-  -webkit-transform: matrix3d(
+  -webkit-transform: translate(0, -100px);
+  /*-webkit-transform: matrix3d(
     1, 0, 0, 0,
     0, 1, 0, -0.0002,
     0, 0, 1, 0,
@@ -867,14 +881,15 @@ a.cf-link--disabled {
     0, 1, 0, -0.0002,
     0, 0, 1, 0,
     0, -10, 0, 1.1
-  );
+  );*/
 }
 
 .cf-transition-modal-appear.cf-transition-modal-appear-active .cf-modal,
 .cf-transition-modal-enter.cf-transition-modal-enter-active .cf-modal,
 .cf-transition-modal-leave .cf-modal {
   opacity: 1;
-  -webkit-transform: matrix3d(
+  -webkit-transform: translate(0, 0);
+  /*-webkit-transform: matrix3d(
     1, 0, 0, 0,
     0, 1, 0, 0,
     0, 0, 1, 0,
@@ -885,7 +900,12 @@ a.cf-link--disabled {
     0, 1, 0, 0,
     0, 0, 1, 0,
     0, 0, 0, 1
-  );
+  );*/
+}
+
+.cf-transition-modal-leave.cf-transition-modal-leave-active .cf-modal {
+  opacity: 0;
+  -webkit-transform: translate(0, 20px);
 }
 
 .cf-transition-modal-appear-active .cf-modal,
