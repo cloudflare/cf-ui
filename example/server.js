@@ -31,7 +31,7 @@ packages.forEach(function(pkg) {
 
   var examples = fs.readdirSync(examplesPath);
 
-  componentsHtml += '<h2 id="' + pkg + '">' + pkg + '</h2>';
+  componentsHtml += '<h2 class="cf-example__heading" id="' + pkg + '">' + pkg + '</h2>';
 
   examples.forEach(function(example) {
     var contentPath = path.join(examplesPath, example, 'component.js');

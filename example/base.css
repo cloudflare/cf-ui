@@ -33,7 +33,7 @@ body {
   padding: 0 2rem;
 }
 
-.cf-example-content h2 {
+.cf-example__heading {
   padding-top: 60px;
   margin-top: 0px;
 }
