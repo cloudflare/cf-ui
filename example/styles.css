@@ -108,7 +108,7 @@ button:not(.cf-btn) {
  */
 
 .cf-callout {
-  padding: 1em;
+  padding: 1.4em;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 2px;
 }
@@ -144,7 +144,7 @@ button:not(.cf-btn) {
 }
 
 .cf-card__content {
-  padding: 1em;
+  padding: 1.4em;
   display: table-cell;
 }
 
@@ -159,9 +159,9 @@ button:not(.cf-btn) {
 
 .cf-card__title {
   margin-top: 0;
-  font-size: 2em;
+  font-size: 1.4em;
   list-style: 1;
-  margin-bottom: 0;
+  margin-bottom: -10px;
 }
 
 .cf-card__drawers_container--open {
@@ -274,7 +274,7 @@ button:not(.cf-btn) {
 }
 
 .cf-code__block {
-  border: 2px solid #bbb;
+  border: 1px solid #bbb;
   background: #ddd;
   padding: 0.5em 1em;
   border-radius: 2px;
@@ -411,6 +411,14 @@ button:not(.cf-btn) {
 .cf-heading__caption {
   margin-left: 0.3em;
   color: #434148;
+  font-size: .8em;
+  font-color: #888;
+  font-weight: lighter;
+  display: block;
+}
+
+h2.cf-heading.cf-heading--2 {
+  margin-top: 10px;
 }
 
 /**
@@ -438,11 +446,12 @@ button:not(.cf-btn) {
  */
 
 .cf-label {
-  padding: 0.2em 0.4em;
-  margin-right: 0.2em;
+  padding: 0.2em 0.5em;
+  margin-right: 0.3em;
   border-radius: 2px;
   font-weight: bold;
   color: white;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .cf-label--default {
@@ -504,13 +513,17 @@ button:not(.cf-btn) {
  * Link
  */
 
+ .cf-example-content h2 {
+  margin-top: 60px;
+ }
+
 a.cf-link {
   color: #00A9EB;
   text-decoration: none;
 }
 
 a.cf-link:hover {
-  border-bottom: 2px solid;
+  color: #0085be;
 }
 
 a.cf-link--disabled {
@@ -836,7 +849,7 @@ a.cf-link--disabled {
   background-color: #00A9EB;
   color: #00A9EB;
   transition: width 0.5s ease;
-  box-shadow: 0 0 0 3px #0C7FE9;
+  border-bottom: 2px solid #0C7FE9;
   border-radius: 1px;
 }
 
