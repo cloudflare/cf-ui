@@ -731,6 +731,60 @@ a.cf-link--disabled {
 }
 
 /**
+ * Loading
+ */
+
+.cf-loading {
+  display: inline-block;
+
+  line-height: normal;
+  vertical-align: baseline;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-image: none;
+  background-position: 0% 0%;
+  background-repeat: repeat;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  animation-name: loading;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+
+  transform-origin: center;
+}
+
+.cf-loading:before {
+  content: "\e925";
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icons" !important;
+  text-decoration: inherit;
+  speak: none;
+}
+
+.cf-loading__label {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+@keyframes loading {
+   20% { transform: rotate3d(0, 0, 1,  15deg); }
+   40% { transform: rotate3d(0, 0, 1, -10deg); }
+   60% { transform: rotate3d(0, 0, 1,   5deg); }
+   80% { transform: rotate3d(0, 0, 1,  -5deg); }
+  100% { transform: rotate3d(0, 0, 1,   0deg); }
+}
+
+/**
  * Modal
  */
 
@@ -1091,7 +1145,12 @@ a.cf-link--disabled {
   list-style: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
+}
+
+.cf-progress__items::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .cf-progress__item {
