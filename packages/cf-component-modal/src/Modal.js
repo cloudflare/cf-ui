@@ -1,7 +1,7 @@
 const React = require('react');
 const {PropTypes} = React;
 const ReactModal2 = require('react-modal2').default;
-const {Gateway} = require('react-gateway');
+const Gateway = require('react-gateway');
 const ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 
 class Modal extends React.Component {
@@ -28,7 +28,7 @@ class Modal extends React.Component {
     }
 
     return (
-      <Gateway into="modal">
+      <Gateway to={document.body}>
         <ReactCSSTransitionGroup
           transitionName='cf-transition-modal'
           transitionAppear={true}

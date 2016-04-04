@@ -12,7 +12,9 @@ class Input extends React.Component {
     ]),
     name: PropTypes.string.isRequired,
     value: PropTypes.string.isRequired,
-    onChange: PropTypes.func.isRequired
+    onChange: PropTypes.func.isRequired,
+    placeholder: PropTypes.string,
+    invalid: PropTypes.bool
   };
 
   static defaultProps = {
@@ -24,13 +26,20 @@ class Input extends React.Component {
   };
 
   render() {
+    let className = 'cf-input cf-input--' + this.props.type;
+
+    if (this.props.invalid) {
+      className += ' cf-input--invalid';
+    }
+
     return (
       <input
         type={this.props.type}
-        className={`cf-input cf-input--${this.props.type}`}
+        className={className}
         name={this.props.name}
         value={this.props.value}
-        onChange={this.handleChange}/>
+        onChange={this.handleChange}
+        placeholder={this.props.placeholder}/>
     );
   }
 }

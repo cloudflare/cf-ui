@@ -4,7 +4,7 @@ exports.TYPES = (
   'ok clipboard bolt chart drive filter flowchart hamburger lock list file ' +
   'shield plus happy sad search wrench remove remove-sign speech gear help ' +
   'widen calendar facebook twitter googleplus linkedin resize-horizontal ' +
-  'upload loading'
+  'upload loading close'
 ).split(' ');
 
 exports.SIZES = '2x 3x 4x large xlarge'.split(' ');

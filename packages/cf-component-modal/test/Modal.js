@@ -1,76 +1,45 @@
 const React = require('react');
 const assertEqualJSX = require('../../../utils/assertEqualJSX');
 const Modal = require('../src/Modal');
-const {GatewayDest, GatewayProvider} = require('react-gateway');
+const Gateway = require('react-gateway');
+const ReactDOM = require('react-dom');
+const assert = require('assert');
 
 describe('Modal', function() {
+
+  beforeEach(function() {
+    this.root = document.createElement('div');
+    document.body.innerHTML = '';
+    document.body.appendChild(this.root);
+  });
+
   it('should hide the modal when `isOpen` is `false`', function() {
-    assertEqualJSX(
-      <GatewayProvider>
-        <div>
-          <Modal isOpen={false} onRequestClose={function() {}}/>
-          <GatewayDest name="modal"/>
-        </div>
-      </GatewayProvider>,
-      // should be equal to
-      <div>
-        <noscript/>
-        <div>
-          <span></span>
-        </div>
-      </div>
-    );
+    var modal = <Modal isOpen={false} onRequestClose={function() {}}/>;
+    ReactDOM.render(modal, this.root);
+    assert.equal(document.querySelectorAll('.cf-modal__backdrop-scroller').length, 0);
   });
 
   it('should render the modal when `isOpen` is `true`', function() {
-    assertEqualJSX(
-      <GatewayProvider>
-        <div>
-          <Modal isOpen={true} onRequestClose={function() {}}/>
-          <GatewayDest name="modal"/>
-        </div>
-      </GatewayProvider>,
-      // should be equal to
-      <div>
-        <noscript/>
-        <div>
-          <span>
-            <div className="cf-modal__backdrop-scroller">
-              <div className="cf-modal__backdrop-outer">
-                <div className="cf-modal__backdrop">
-                  <div className="cf-modal" tabIndex="-1"></div>
-                </div>
-              </div>
-            </div>
-          </span>
-        </div>
-      </div>
-    );
+    var modal = <Modal isOpen={true} onRequestClose={function() {}}/>;
+    ReactDOM.render(modal, this.root);
+
+    var backdropScroller = document.querySelectorAll('.cf-modal__backdrop-scroller');
+    var backdropOuter = document.querySelectorAll('.cf-modal__backdrop-outer');
+    var backdrop =  document.querySelectorAll('.cf-modal__backdrop');
+    var cfModal = document.querySelectorAll('.cf-modal');
+
+    assert.equal(backdropScroller.length, 1);
+    assert.equal(backdropOuter.length, 1);
+    assert.equal(backdrop.length, 1);
+    assert.equal(cfModal.length, 1);
   });
 
   it('should add a `className` if `type` is `confirm`', function() {
-    assertEqualJSX(
-      <GatewayProvider>
-        <div>
-          <Modal type="confirm" isOpen={true} onRequestClose={function() {}}/>
-          <GatewayDest name="modal"/>
-        </div>
-      </GatewayProvider>,
-      // should be equal to
-      <div>
-        <noscript/>
-        <div>
-          <span>
-            <div className="cf-modal__backdrop-scroller">
-              <div className="cf-modal__backdrop-outer">
-                <div className="cf-modal__backdrop">
-                  <div className="cf-modal cf-modal--confirm" tabIndex="-1"></div>
-                </div>
-              </div>
-            </div>
-          </span>
-        </div>
-      </div>
-    );
+
+    var modal = <Modal type="confirm" isOpen={true} onRequestClose={function() {}}/>;
+    ReactDOM.render(modal, this.root);
+
+    var cfModal = document.querySelectorAll('.cf-modal');
+    assert.equal(cfModal[0].classList.contains('cf-modal--confirm'), true);
   });
 });

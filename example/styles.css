@@ -441,6 +441,74 @@ button:not(.cf-btn) {
 }
 
 /**
+ * Form
+ */
+
+.cf-form {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.cf-form__header {
+  padding: 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+.cf-form__footer {
+  padding: 1em;
+  text-align: right;
+}
+
+.cf-form__title {
+  margin: 0;
+}
+
+.cf-form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+.cf-form__fieldset_legend {
+  padding: 1em;
+}
+
+.cf-form__fieldset_content {
+  padding: 1em;
+  border: 0 solid #ddd;
+  border-top-width: 1px;
+  background: #eee;
+}
+
+.cf-form__label {
+  display: block;
+  margin-bottom: 0.2em;
+  color: #333;
+}
+
+.cf-form__label--hidden {
+  display: none;
+}
+
+@media (min-width: 720px) {
+  .cf-form__fieldset_legend {
+    float: left;
+    width: 30%;
+  }
+
+
+  .cf-form__fieldset_content {
+    float: left;
+    width: 70%;
+    border-top-width: 0;
+    border-left-width: 1px;
+  }
+}
+
+/**
  * Heading
  */
 
@@ -616,6 +684,7 @@ h2.cf-heading.cf-heading--2 {
  */
 
 .cf-input {
+  width: 100%;
   padding: 0.3em 0;
   text-indent: 0.6em;
   font: inherit;
@@ -1176,7 +1245,7 @@ a.cf-link--disabled {
  */
 
 .cf-select {
-  margin: 1em 0;
+  /*margin: 1em 0;*/
 }
 
 .cf-select label {

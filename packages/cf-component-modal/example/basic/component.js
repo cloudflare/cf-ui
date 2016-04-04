@@ -17,7 +17,7 @@ const {
 const ReactModal2 = require('react-modal2');
 const {Button} = require('cf-component-button');
 
-class ComponentWithModal extends React.Component {
+class Component extends React.Component {
   state = {
     isModalOpen: false
   };
@@ -51,21 +51,6 @@ class ComponentWithModal extends React.Component {
           </ModalFooter>
         </Modal>
       </div>
-    );
-  }
-}
-
-class Component extends React.Component {
-  render() {
-    return (
-      <GatewayProvider>
-        <div>
-          <div>
-            <ComponentWithModal/>
-          </div>
-          <GatewayDest name="modal"/>
-        </div>
-      </GatewayProvider>
     );
   }
 }

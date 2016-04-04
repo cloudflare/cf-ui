@@ -10,7 +10,7 @@ describe('Input', function() {
         value="content"
         onChange={() => {}}/>,
       // should equal
-      <Input
+      <input
         type="text"
         className="cf-input cf-input--text"
         name="example"
@@ -27,7 +27,7 @@ describe('Input', function() {
         value="content"
         onChange={() => {}}/>,
       // should equal
-      <Input
+      <input
         type="search"
         className="cf-input cf-input--search"
         name="example"
@@ -35,4 +35,41 @@ describe('Input', function() {
         onChange={() => {}}/>
     );
   });
+
+  it('should render with error', function() {
+    assertEqualJSX(
+      <Input
+        name="example"
+        value=""
+        invalid
+        onChange={() => {}}/>,
+      // should equal
+      <input
+        type="text"
+        className="cf-input cf-input--text cf-input--invalid"
+        name="example"
+        value=""
+        onChange={() => {}}/>
+    );
+  });
+
+  it('should render with placeholder', function() {
+    assertEqualJSX(
+      <Input
+        name="example"
+        value=""
+        placeholder="placeholder"
+        onChange={() => {}}/>,
+      // should equal
+      <input
+        type="text"
+        className="cf-input cf-input--text"
+        name="example"
+        value=""
+        placeholder="placeholder"
+        onChange={() => {}}/>
+    );
+  });
+
+
 });

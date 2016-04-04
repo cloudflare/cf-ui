@@ -7,7 +7,7 @@ describe('Button', function() {
     assertEqualJSX(
       <Button type="primary" onClick={() => {}}>Button</Button>,
       // should equal
-      <button className="cf-btn cf-btn--primary">Button</button>
+      <button type="button" className="cf-btn cf-btn--primary">Button</button>
     );
   });
 
@@ -15,7 +15,32 @@ describe('Button', function() {
     assertEqualJSX(
       <Button type="primary" disabled onClick={() => {}}>Button</Button>,
       // should equal
-      <button className="cf-btn cf-btn--primary" disabled>Button</button>
+      <button type="button" className="cf-btn cf-btn--primary" disabled>Button</button>
     );
   });
+
+  it('should render as submit', function() {
+    assertEqualJSX(
+      <Button type="primary" submit onClick={() => {}}>Button</Button>,
+      // should equal
+      <button type="submit" className="cf-btn cf-btn--primary">Button</button>
+    );
+  });
+
+  it('should render with loading', function() {
+    assertEqualJSX(
+      <Button type="primary" loading onClick={() => {}}>Button</Button>,
+      // should equal
+      <button type="button" className="cf-btn cf-btn--primary cf-btn--loading" disabled>Button</button>
+    );
+  });
+
+  it('should render with loading and disabled overridden', function() {
+    assertEqualJSX(
+      <Button type="primary" loading disabled={false} onClick={() => {}}>Button</Button>,
+      // should equal
+      <button type="button" className="cf-btn cf-btn--primary cf-btn--loading">Button</button>
+    );
+  });
+
 });
