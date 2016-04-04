@@ -2,6 +2,12 @@ var fs = require('fs');
 var path = require('path');
 var express = require('express');
 var pathExists = require('path-exists');
+var Highlights = require('highlights');
+var highlighter = new Highlights();
+
+highlighter.requireGrammarsSync({
+  modulePath: require.resolve('language-babel/package.json')
+});
 
 var vendor = process.argv[2];
 var bundle = process.argv[3];
@@ -14,19 +20,42 @@ packages = packages.filter(function(pkg) {
 });
 
 var componentsHtml = '';
+var sidebarHtml = '';
 
-packages.map(function(pkg) {
-  componentsHtml += '<h2>' + pkg + '</h2>';
-
+packages.forEach(function(pkg) {
   var examplesPath = path.resolve(packagesPath, pkg, 'example');
+
+  if (!pathExists.sync(examplesPath)) {
+    return;
+  }
+
   var examples = fs.readdirSync(examplesPath);
 
+  componentsHtml += '<h2 class="cf-example__heading" id="' + pkg + '">' + pkg + '</h2>';
+
   examples.forEach(function(example) {
+    var contentPath = path.join(examplesPath, example, 'component.js');
+    var content = fs.readFileSync(contentPath).toString()
+
+    content = highlighter.highlightSync({
+      fileContents: content,
+      filePath: contentPath,
+      scopeName: 'source.js'
+    });
+
     if (example !== 'basic') {
       componentsHtml += '<p>' + example + '</p>';
     }
-    componentsHtml += '<div class="cf-example" id="' + pkg + '--' + example + '"></div>';
+
+    componentsHtml += (
+      '<div class="cf-example">' +
+      '  <div class="cf-example__content" id="' + pkg + '--' + example + '"></div>' +
+      '  <div class="cf-example__code">' + content + '</div>' +
+      '</div>'
+    );
   });
+
+  sidebarHtml += '<a href="#' + pkg + '">' + pkg + '</a>';
 });
 
 var app = express();
@@ -45,13 +74,15 @@ app.get('/', function(req, res) {
     '<!doctype html>',
     '<html>',
     '  <head>',
+    '    <meta name="viewport" content="width=device-width">',
     '    <title>CloudFlare Components</title>',
     '    <link rel="stylesheet" href="/assets/base.css">',
     '    <link rel="stylesheet" href="' + styles + '">',
     '  </head>',
     '  <body>',
-    '    <h1>CloudFlare Components</h1>',
-    '    ' + componentsHtml,
+    '    <header class="cf-example-header">cf-ui</header>',
+    '    <nav class="cf-example-sidebar">' + sidebarHtml + '</nav>',
+    '    <div class="cf-example-content">' + componentsHtml + '</div>',
     '    <script type="text/javascript" src="/vendor.js"></script>',
     '    <script type="text/javascript" src="/bundle.js"></script>',
     '  </body>',
