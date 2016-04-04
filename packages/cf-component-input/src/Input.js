@@ -26,8 +26,8 @@ class Input extends React.Component {
   };
 
   render() {
+    let className = 'cf-input cf-input--' + this.props.type;
 
-    let className = `cf-input cf-input--${this.props.type}`;
     if (this.props.invalid) {
       className += ' cf-input--invalid';
     }

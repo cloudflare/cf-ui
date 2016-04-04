@@ -447,6 +447,8 @@ button:not(.cf-btn) {
 .cf-form {
   background: white;
   border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
 .cf-form__header {
@@ -471,16 +473,13 @@ button:not(.cf-btn) {
 }
 
 .cf-form__fieldset_legend {
-  float: left;
-  width: 30%;
   padding: 1em;
 }
 
 .cf-form__fieldset_content {
-  float: left;
-  width: 70%;
   padding: 1em;
-  border-left: 1px solid #ddd;
+  border: 0 solid #ddd;
+  border-top-width: 1px;
   background: #eee;
 }
 
@@ -492,6 +491,21 @@ button:not(.cf-btn) {
 
 .cf-form__label--hidden {
   display: none;
+}
+
+@media (min-width: 720px) {
+  .cf-form__fieldset_legend {
+    float: left;
+    width: 30%;
+  }
+
+
+  .cf-form__fieldset_content {
+    float: left;
+    width: 70%;
+    border-top-width: 0;
+    border-left-width: 1px;
+  }
 }
 
 /**

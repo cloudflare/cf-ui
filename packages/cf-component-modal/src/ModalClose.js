@@ -11,6 +11,10 @@ class ModalClose extends React.Component {
     ])
   };
 
+  static defaultProps = {
+    label: false
+  };
+
   render() {
     return (
       <span className="cf-modal__close" onClick={this.props.onClick}>
@@ -19,9 +23,5 @@ class ModalClose extends React.Component {
     );
   }
 }
-
-ModalClose.defaultProps = {
-  label: false
-};
 
 module.exports = ModalClose;
