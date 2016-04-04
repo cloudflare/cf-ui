@@ -1056,12 +1056,11 @@ a.cf-link--disabled {
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 3px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
 }
 
 .cf-progress__bar::-webkit-progress-bar {
-  /*margin-top: -3px;*/
-  background-color: white;
-  color: #00A9EB;
+  background-color: transparent;
 }
 
 .cf-progress__bar::-webkit-progress-value {
