@@ -530,11 +530,11 @@ h2.cf-heading.cf-heading--2 {
 
 @font-face {
   font-family: 'icons';
-  src: url('/assets/icons/icons.eot?64gxig');
-  src: url('/assets/icons/icons.eot?64gxig#iefix') format('embedded-opentype'),
-       url('/assets/icons/icons.ttf?64gxig')       format('truetype'),
-       url('/assets/icons/icons.woff?64gxig')      format('woff'),
-       url('/assets/icons/icons.svg?64gxig#icons') format('svg');
+  src: url('icons/icons.eot?64gxig');
+  src: url('icons/icons.eot?64gxig#iefix') format('embedded-opentype'),
+       url('icons/icons.ttf?64gxig')       format('truetype'),
+       url('icons/icons.woff?64gxig')      format('woff'),
+       url('icons/icons.svg?64gxig#icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -1701,7 +1701,7 @@ a.cf-link--disabled {
   background: white;
   padding: 2em;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  border-top: 0;
+  border-top: 0 !important; /* https://github.com/ben-eb/cssnano/issues/160 */
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
 }

@@ -43,14 +43,21 @@ $ npm run dev
 To see the examples:
 
 ```sh
-$ npm run examples
+$ npm run examples:build
 # This will take awhile
-$ node example/server.js
-# Now open http://localhost:8000/ in your browser.
+$ open dist/index.html
+# Now open http://path/to/cf-ui/dist/index.html in your browser.
 ```
 
-Or you can run the examples dev task: (Note: this is still really slow)
+Or you can run the examples dev task:
 
 ```sh
-$ npm run examples-dev
+$ npm run examples:dev
+```
+
+There are also versions of each of these tasks for the public styles
+
+```sh
+$ npm run example:build:public
+$ npm run example:dev:public
 ```
