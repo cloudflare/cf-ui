@@ -12,7 +12,7 @@ describe('Pagination', function() {
       <Pagination>Pagination</Pagination>,
       // should equal
       <div className="cf-pagination">
-        <ul className="cf-pagination__list" role="navigation" aria-describedby={false}>
+        <ul className="cf-pagination__list" role="navigation">
           Pagination
         </ul>
       </div>
