@@ -246,7 +246,7 @@ export function lint() {
 export const test = cb => initKarmaServer(true, cb);
 const testWatch = cb => initKarmaServer(false, cb);
 
-export function dev() {
+export function dev(cb) {
   watch(scripts, () => {
     compile(true);
     lint();
@@ -277,6 +277,11 @@ export const examplesBuildVendor = () => initBrowserifyVendor(false);
 export const examplesDevBundle = () => initBrowserifyBundle(true);
 export const examplesDevVendor = () => initBrowserifyVendor(true);
 
+function logLocation(cb) {
+  gutil.log('Open "file://' + path.resolve(__dirname, 'dist/index.html') + '" in your browser');
+  cb();
+}
+
 export const examplesBuild =
   gulp.series(
     examplesClean,
@@ -286,7 +291,8 @@ export const examplesBuild =
       examplesBuildIcons,
       examplesBuildBundle,
       examplesBuildVendor
-    )
+    ),
+    logLocation
   );
 
 export const examplesDev =
@@ -299,6 +305,7 @@ export const examplesDev =
       examplesDevBundle,
       examplesDevVendor
     ),
+    logLocation,
     function examplesWatcher() {
       gulp.watch(exampleComponents, examplesBuildHtml);
       gulp.watch(exampleStyles, examplesBuildCss);
