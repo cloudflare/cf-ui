@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "lodash": "^4.2.0",
-    "react": "^0.14.2"
+    "react": "^0.14.2",
+    "cf-component-icon": "^1.0.5"
   },
   "devDependencies": {
     "react-dom": "^0.14.2"

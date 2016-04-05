@@ -5,6 +5,7 @@ const {
   Pagination,
   PaginationItem
 } = require('../../src/index');
+const Icon = require('cf-component-icon');
 
 class Component extends React.Component {
   state = {
@@ -53,7 +54,7 @@ class Component extends React.Component {
           label="Previous Page"
           disabled={this.state.active === 1}
           onClick={this.handleClickPrev}>
-          &larr;
+          <Icon type="caret-left" label={false}/>
         </PaginationItem>
         {items}
         <PaginationItem
@@ -61,7 +62,7 @@ class Component extends React.Component {
           label="Next Page"
           disabled={this.state.active === this.state.pages}
           onClick={this.handleClickNext}>
-          &rarr;
+          <Icon type="caret-right" label={false}/>
         </PaginationItem>
       </Pagination>
     );
