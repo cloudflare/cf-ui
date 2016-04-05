@@ -8,7 +8,7 @@ class Pagination extends React.Component {
   };
 
   render() {
-    const id = this.props.info ? uniqueId('cf-pagination-') : false;
+    const id = this.props.info ? uniqueId('cf-pagination-') : null;
 
     return (
       <div className="cf-pagination">
