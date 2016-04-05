@@ -23,9 +23,15 @@ class PaginationItem extends React.Component {
 
     return (
       <li className={className}>
-        <a className="cf-pagination__link" href="#" onClick={this.handleClick} aria-label={this.props.label}>
-          {this.props.children}
-        </a>
+        {(this.props.active || this.props.disabled) ? (
+          <span className="cf-pagination__link" aria-label={this.props.label}>
+            {this.props.children}
+          </span>
+        ) : (
+          <a className="cf-pagination__link" href="#" onClick={this.handleClick} aria-label={this.props.label}>
+            {this.props.children}
+          </a>
+        )}
       </li>
     );
   }

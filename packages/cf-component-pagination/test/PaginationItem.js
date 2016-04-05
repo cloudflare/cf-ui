@@ -24,9 +24,9 @@ describe('PaginationItem', function() {
       </PaginationItem>,
       // should equal
       <li className="cf-pagination__item cf-pagination__item--number cf-pagination__item--active">
-        <a className="cf-pagination__link" href="#" aria-label="PaginationLabel">
+        <span className="cf-pagination__link" aria-label="PaginationLabel">
           PaginationItem
-        </a>
+        </span>
       </li>
     );
   });
@@ -38,9 +38,9 @@ describe('PaginationItem', function() {
       </PaginationItem>,
       // should equal
       <li className="cf-pagination__item cf-pagination__item--number cf-pagination__item--disabled">
-        <a className="cf-pagination__link" href="#" aria-label="PaginationLabel">
+        <span className="cf-pagination__link" aria-label="PaginationLabel">
           PaginationItem
-        </a>
+        </span>
       </li>
     );
   });
