@@ -68,7 +68,9 @@ class CopyableTextarea extends React.Component {
 
     return (
       <div className="cf-copyable-textarea" style={containerStyles}>
-        <div style={overlayStyles} onClick={this.handleOverlayClick}></div>
+        {!this.state.focused && (
+          <div style={overlayStyles} onClick={this.handleOverlayClick}></div>
+        )}
         <Textarea
           ref="textarea"
           readOnly
