@@ -298,6 +298,7 @@ export const examplesBuild =
 export const examplesDev =
   gulp.series(
     examplesClean,
+    build,
     gulp.parallel(
       examplesBuildHtml,
       examplesBuildCss,
@@ -310,6 +311,7 @@ export const examplesDev =
       gulp.watch(exampleComponents, examplesBuildHtml);
       gulp.watch(exampleStyles, examplesBuildCss);
       gulp.watch(exampleIcons, examplesBuildIcons);
+      gulp.watch(scripts, () => compile(true));
     }
   );
 

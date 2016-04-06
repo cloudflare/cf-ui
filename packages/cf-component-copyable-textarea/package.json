@@ -1,7 +1,7 @@
 {
-  "name": "cf-component-textarea",
-  "description": "CloudFlare Textarea Component",
-  "version": "1.0.3",
+  "name": "cf-component-copyable-textarea",
+  "description": "CloudFlare Copyable Textarea Component",
+  "version": "0.0.0",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
@@ -9,10 +9,10 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
+    "cf-component-textarea": "^1.0.3",
+    "cf-util-text": "^0.0.0",
     "react": "^0.14.2",
-    "react-required-if": "^1.0.0"
-  },
-  "devDependencies": {
     "react-dom": "^0.14.2"
-  }
+  },
+  "devDependencies": {}
 }
