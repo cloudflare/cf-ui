@@ -11,9 +11,8 @@
   "dependencies": {
     "cf-component-textarea": "^1.0.3",
     "cf-util-text": "^0.0.0",
-    "react": "^0.14.2"
-  },
-  "devDependencies": {
+    "react": "^0.14.2",
     "react-dom": "^0.14.2"
-  }
+  },
+  "devDependencies": {}
 }

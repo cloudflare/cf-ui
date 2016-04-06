@@ -2,6 +2,19 @@ const React = require('react');
 const {PropTypes} = React;
 const Textarea = require('cf-component-textarea');
 const {getText} = require('cf-util-text');
+const {findDOMNode} = require('react-dom');
+
+const containerStyles = {
+  position: 'relative'
+};
+
+const overlayStyles = {
+  position: 'absolute',
+  top: 0,
+  bottom: 0,
+  left: 0,
+  right: 0
+};
 
 class CopyableTextarea extends React.Component {
   static propTypes = {
@@ -14,9 +27,12 @@ class CopyableTextarea extends React.Component {
     copied: false
   };
 
-  handleFocus = e => {
-    const target = e.currentTarget;
+  handleOverlayClick = e => {
+    e.preventDefault();
 
+    const target = findDOMNode(this.refs.textarea);
+
+    target.focus();
     target.select();
 
     let success;
@@ -29,11 +45,6 @@ class CopyableTextarea extends React.Component {
     this.setState({
       focused: true,
       copied: success
-    }, () => {
-      // Even though the <textarea> isn't being updated in the DOM, Safari
-      // loses the selection out for some unknown reason, and this is the best
-      // I can do to fix it for now. I'm sorry.
-      setTimeout(() => target.select(), 150);
     });
   };
 
@@ -56,13 +67,14 @@ class CopyableTextarea extends React.Component {
     }
 
     return (
-      <div className="cf-copyable-textarea">
+      <div className="cf-copyable-textarea" style={containerStyles}>
+        <div style={overlayStyles} onClick={this.handleOverlayClick}></div>
         <Textarea
+          ref="textarea"
           readOnly
           name={this.props.name}
           value={this.props.value}
-          onBlur={this.handleBlur}
-          onFocus={this.handleFocus}/>
+          onBlur={this.handleBlur}/>
         <p className="cf-copyable-textarea__help-text">
           {helpText}
         </p>
