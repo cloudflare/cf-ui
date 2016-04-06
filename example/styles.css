@@ -311,6 +311,16 @@ button:not(.cf-btn) {
 }
 
 /**
+ * Copyable Textarea
+ */
+
+.cf-copyable-textarea__help-text {
+  margin-top: 0;
+  color: gray;
+  font-size: 0.8em;
+}
+
+/**
  * Dropdown
  */
 
