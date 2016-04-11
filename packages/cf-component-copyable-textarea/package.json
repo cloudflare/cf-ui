@@ -1,7 +1,7 @@
 {
   "name": "cf-component-copyable-textarea",
   "description": "CloudFlare Copyable Textarea Component",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
