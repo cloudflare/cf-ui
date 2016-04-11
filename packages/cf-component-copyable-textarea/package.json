@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "cf-component-textarea": "^1.1.0",
-    "cf-util-text": "^0.0.0",
+    "cf-util-text": "^1.0.0",
     "react": "^0.14.2",
     "react-dom": "^0.14.2"
   },
