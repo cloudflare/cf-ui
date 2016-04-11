@@ -64,7 +64,7 @@
     "karma-sauce-launcher": "^0.3.0",
     "karma-tape-reporter": "^1.0.3",
     "language-babel": "github:gandm/language-babel",
-    "lerna": "github:kittens/lerna#4b2cbadeb9a95273b5f2dad631ca4a18e77c752e",
+    "lerna": "2.0.0-beta.1",
     "lodash": "^4.3.0",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
