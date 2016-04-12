@@ -31,7 +31,7 @@ class Button extends React.Component {
     }
 
     // Unless the disabled state is explicitly set, the button is disabled when loading.
-    const isDisabled = disabled ? loading : disabled;
+    const isDisabled = (disabled !== undefined ? disabled : loading) || false;
 
     return (
       <button

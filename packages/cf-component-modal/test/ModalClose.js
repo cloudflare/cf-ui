@@ -1,6 +1,7 @@
 const React = require('react');
 const assertEqualJSX = require('../../../utils/assertEqualJSX');
 const ModalClose = require('../src/ModalClose');
+const Icon = require('cf-component-icon');
 
 describe('ModalClose', function() {
   it('should render', function() {
@@ -8,7 +9,7 @@ describe('ModalClose', function() {
       <ModalClose onClick={() => {}}/>,
       // should equal
       <span className="cf-modal__close">
-        <i className="cf-icon cf-icon--close cf-icon--2x"/>
+        <Icon type="close" size="2x"/>
       </span>
     );
   });
@@ -18,9 +19,7 @@ describe('ModalClose', function() {
       <ModalClose label="label" onClick={() => {}}/>,
       // should equal
       <span className="cf-modal__close">
-        <i className="cf-icon cf-icon--close cf-icon--2x">
-          label
-        </i>
+        <Icon type="close" label="label" size="2x"/>
       </span>
     );
   });
