@@ -36,7 +36,7 @@ class CardDrawers extends React.Component {
           key={drawer.id}
           id={id}
           isActive={isActive}
-          onClick={this.props.onClick.bind(this, drawer.id)}>
+          onClick={this.props.onClick.bind(null, drawer.id)}>
           {drawer.name}
         </CardToolbarLink>
       );
