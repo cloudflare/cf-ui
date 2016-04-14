@@ -5,7 +5,8 @@ const {
   FormHeader,
   FormFooter,
   FormFieldset,
-  FormLabel
+  FormLabel,
+  FormFieldError
 } = require('../../src/index');
 const {Flex, FlexItem} = require('cf-component-flex');
 const {Button} = require('cf-component-button');
@@ -18,7 +19,7 @@ class Component extends React.Component {
     firstName: '',
     lastName: '',
     type: 'suggestion',
-    message: ''
+    message: 'This is blasphemy! This is madness!'
   };
 
   handleFirstNameChange = firstName => {
@@ -86,6 +87,9 @@ class Component extends React.Component {
           <Textarea name="message"
             value={this.state.message}
             onChange={this.handleMessageChange}/>
+          <FormFieldError
+            field={{ invalid: true }}
+            validations={{ response: 'Madness? This is Sparta!' }}/>
         </FormFieldset>
 
         <FormFooter>

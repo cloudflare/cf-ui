@@ -3,10 +3,9 @@
  * Type Styles
  */
 
-p, h1, h2, h3, h4 {
+body {
   color: #434148;
 }
-
 
 h1 {
   font-size: 1.8em;
@@ -501,6 +500,53 @@ button:not(.cf-btn) {
 
 .cf-form__label--hidden {
   display: none;
+}
+
+.cf-form__field-error {
+  position: relative;
+  margin-top: 0.1em;
+  padding: 0.5em 1em;
+
+  border: 1px solid #C32600;
+  border-bottom-width: 2px;
+
+  font-size: 0.8em;
+  font-weight: 600;
+  background: #FF3100;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  border-radius: 3px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.cf-form__field-error::before,
+.cf-form__field-error::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.cf-form__field-error::before {
+  left: 4px;
+  border-width: 6px;
+  border-bottom-color: #C32600;
+}
+
+.cf-form__field-error::after {
+  left: 5px;
+  border-width: 5px;
+  border-bottom-color: #FF3100;
+}
+
+.cf-form__field-error p {
+  margin: 0;
+}
+
+.cf-form__field-error p + p {
+  margin-top: 0.5em;
 }
 
 @media (min-width: 720px) {
