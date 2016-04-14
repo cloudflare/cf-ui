@@ -1,7 +1,7 @@
 {
   "name": "cf-component-form",
   "description": "CloudFlare Form Component",
-  "version": "1.1.0",
+  "version": "2.2.1",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
@@ -12,7 +12,7 @@
     "react": "^0.14.2"
   },
   "devDependencies": {
-    "cf-component-button": "^2.2.0",
+    "cf-component-button": "^2.2.1",
     "cf-component-flex": "^1.0.0",
     "cf-component-input": "^1.1.0",
     "cf-component-select": "^1.0.3",
