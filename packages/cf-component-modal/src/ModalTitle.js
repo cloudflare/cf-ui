@@ -1,11 +1,14 @@
 const React = require('react');
+const {Heading} = require('cf-component-heading');
 
 class ModalTitle extends React.Component {
   render() {
     return (
-      <h4 className="cf-modal__title">
-        {this.props.children}
-      </h4>
+      <div className="cf-modal__title">
+        <Heading size={3}>
+          {this.props.children}
+        </Heading>
+      </div>
     );
   }
 }

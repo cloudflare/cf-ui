@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "cf-component-icon": "^1.1.0",
+    "cf-component-heading": "^1.0.3",
     "react": "^0.14.2",
     "react-addons-css-transition-group": "^0.14.2",
     "react-gateway": "^1.1.0",
