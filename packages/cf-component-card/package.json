@@ -13,7 +13,7 @@
     "react": "^0.14.2"
   },
   "devDependencies": {
-    "cf-component-button": "^2.1.2",
+    "cf-component-button": "^2.2.1",
     "react-dom": "^0.14.2"
   }
 }

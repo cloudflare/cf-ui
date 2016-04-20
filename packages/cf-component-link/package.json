@@ -9,7 +9,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-util-route-handler": "^1.0.0",
+    "cf-util-route-handler": "^2.0.3",
     "react": "^0.14.2"
   },
   "devDependencies": {

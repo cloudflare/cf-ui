@@ -3,3 +3,4 @@ node_modules
 lib
 coverage
 dist
+packages/*/npm-debug.log.*
