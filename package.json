@@ -10,8 +10,8 @@
     "dev": "gulp dev",
     "lint": "gulp lint",
     "test": "gulp test",
-    "updated": "lerna updated -i",
-    "publish": "git pull --rebase && npm run build && lerna publish -i",
+    "updated": "lerna updated",
+    "publish": "git pull --rebase && npm run build && lerna publish",
     "examples:build": "gulp examplesBuild",
     "examples:dev": "gulp examplesDev",
     "examples:build:public": "gulp examplesBuild --public",
@@ -64,7 +64,7 @@
     "karma-sauce-launcher": "^0.3.0",
     "karma-tape-reporter": "^1.0.3",
     "language-babel": "github:gandm/language-babel",
-    "lerna": "2.0.0-beta.5",
+    "lerna": "2.0.0-beta.6",
     "lodash": "^4.3.0",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1",
@@ -79,5 +79,8 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.7.0"
+  },
+  "dependencies": {
+    "lerna": "2.0.0-beta.6"
   }
 }
