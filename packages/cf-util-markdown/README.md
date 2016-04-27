@@ -17,7 +17,7 @@ $ npm install cf-util-markdown
 ```js
 const markdown = require('cf-util-markdown');
 
-markdown.render('# Hello World');
+markdown('# Hello World');
 // >> <h1>Hello World</h1>
 ```
 
@@ -27,5 +27,5 @@ being sanitized you may do the following:
 **WARNING:** Be extremely careful about XSS vulnerabilities when doing this!
 
 ```js
-markdown.render('<h1>Hello World</h1>', { __dangerouslyDontSanitizeMarkdown: true });
+markdown('<h1>Hello World</h1>', { __dangerouslyDontSanitizeMarkdown: true });
 ```
