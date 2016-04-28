@@ -17,4 +17,12 @@ describe('renderMarkdown', function() {
       '<h1>Hello World</h1>'
     );
   });
+
+  it('should not memoize when options are being passed', function() {
+    var str = '<div></div>';
+    assertEqual(markdown(str), '<p>&lt;div&gt;&lt;/div&gt;</p>\n');
+    assertEqual(markdown(str, {
+      __dangerouslyDontSanitizeMarkdown: true
+    }), str);
+  });
 });
