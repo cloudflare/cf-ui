@@ -1,1 +1,1 @@
-module.exports = require('./renderMarkdown');
+module.exports = require('./markdown');

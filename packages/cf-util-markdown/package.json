@@ -9,6 +9,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
+    "lodash.memoize": "^4.0.3",
     "marked": "^0.3.5"
   },
   "devDependencies": {}
