@@ -129,7 +129,7 @@ function initBrowserify(files, output, externals, requires, transforms, watch) {
     bundler.on('log', gutil.log);
     bundler.on('update', () => gutil.log('Rebundling...'));
     bundler.on('time', time => {
-      gutil.log('Rebundled in:', gutil.colors.cyan(time + 'ms'))
+      gutil.log('Rebundled in:', gutil.colors.cyan(time + 'ms'));
     });
   }
 
@@ -183,7 +183,7 @@ export function examplesBuildHtml(cb) {
 
     examples.forEach(example => {
       const contentPath = path.join(examplesPath, example, 'component.js');
-      const content = fs.readFileSync(contentPath).toString()
+      const content = fs.readFileSync(contentPath).toString();
 
       const higlightedContent = highlighter.highlightSync({
         fileContents: content,
