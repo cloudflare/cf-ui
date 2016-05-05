@@ -44,7 +44,9 @@ const vendors = [
   'react',
   'react-dom',
   'lodash',
-  'react-addons-css-transition-group'
+  'react-addons-css-transition-group',
+  'redux',
+  'react-redux'
 ];
 
 let srcEx, libFragment;
