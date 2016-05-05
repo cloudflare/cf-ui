@@ -2,7 +2,8 @@ let handler;
 
 function handleRoutes(callback) {
   if (handler) {
-    throw new Error('Only one handler is allowed at a time');
+    console.error('Warning: Route Handler: Only one handler is allowed at a time');
+    return;
   }
 
   handler = callback;
@@ -10,7 +11,8 @@ function handleRoutes(callback) {
 
 function routeTo(url) {
   if (!handler) {
-    throw new Error('A handler needs to be setup before you can route');
+    console.error('Warning: Route Handler: A handler needs to be setup before you can route');
+    return;
   }
 
   handler(url);

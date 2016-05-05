@@ -36,7 +36,7 @@ highlighter.requireGrammarsSync({
 const scripts = './packages/*/src/**/*.js';
 const dest = 'packages';
 
-const exampleComponents = 'packages/cf-component-*/example/*/component.js';
+const exampleComponents = 'packages/cf-{component,builder}-*/example/*/component.js';
 const exampleStyles = ['example/base.css', 'example/styles.css'];
 const exampleIcons = 'example/icons/*';
 
@@ -164,7 +164,7 @@ function initBrowserifyVendor(watch) {
 export function examplesBuildHtml(cb) {
   const packagesPath = path.resolve(__dirname, 'packages');
   const packages = fs.readdirSync(packagesPath).filter(pkg => {
-    return pkg.indexOf('cf-component-') > -1;
+    return pkg.indexOf('cf-component-') > -1 || pkg.indexOf('cf-builder-') > -1;
   });
 
   let componentsHtml = '';
