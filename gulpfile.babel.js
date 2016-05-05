@@ -17,6 +17,10 @@ const child = require('child_process');
 const gutil = require('gulp-util');
 const chalk = require('chalk');
 const babel = require('gulp-babel');
+const babylon = require('babylon');
+const traverse = require('babel-traverse').default;
+const generate = require('babel-generator').default;
+const t = require('babel-types');
 const newer = require('gulp-newer');
 const watch = require('gulp-watch');
 const karma = require('karma');
@@ -212,6 +216,63 @@ export function examplesBuildHtml(cb) {
     });
 
     sidebarHtml += '<a href="#' + pkg + '">' + pkg + '</a>';
+
+    const sourceDir = path.resolve(packagesPath, pkg, 'src')
+
+    if (!pathExists.sync(sourceDir)) {
+      return;
+    }
+
+    const sourceFiles = fs.readdirSync(sourceDir);
+
+    sourceFiles.forEach(fileName => {
+      const sourcePath = path.join(sourceDir, fileName);
+      const source = fs.readFileSync(sourcePath).toString();
+
+      const ast = babylon.parse(source, {
+        sourceType: 'module',
+        plugins: ['jsx' , 'classProperties', 'objectRestSpread']
+      });
+
+      let propTypes = [];
+      let componentName = fileName;
+      traverse(ast, {
+        enter(path) {
+          if (t.isClassDeclaration(path.node)) {
+            componentName = path.node.id.name;
+          }
+
+          if (t.isClassProperty(path.node) && t.isIdentifier(path.node.key, { name: 'propTypes' } )) {
+            path.node.value.properties.forEach(prop => {
+              let propValue = generate(prop.value, {
+                retainLines: false,
+                concise: true
+              }, source).code;
+
+              propTypes.push({
+                name: prop.key.name,
+                value: propValue
+              });
+            });
+          }
+        }
+      });
+
+      if (propTypes.length) {
+        componentsHtml += (
+          '<div class="cf-proptypes">' +
+          '<div class="cf-example__name"><h2>' + componentName + '</h2></div>' +
+          '<div class="cf-example__proptypes">' +
+          '<table><tr><th>Prop Name</th><th>Value</th></tr>' +
+          propTypes.map(prop => {
+            return '<tr><td>' + prop.name + '</td><td>' + prop.value + '</td></tr>';
+          }).join('') + 
+          '</table>' +
+          '</div>' +
+          '</div>'
+        );
+      }
+    });
   });
 
   let styles;
