@@ -3,6 +3,7 @@ const {PropTypes} = React;
 const CardSection = require('./CardSection');
 const CardToolbar = require('./CardToolbar');
 const CardToolbarLink = require('./CardToolbarLink');
+const CardPropTypes = require('./CardPropTypes');
 
 let UNIQUE_ID = 0;
 
@@ -11,11 +12,7 @@ class CardDrawers extends React.Component {
     onClick: PropTypes.func.isRequired,
 
     active: PropTypes.string,
-    drawers: PropTypes.arrayOf(PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-      content: PropTypes.any.isRequired
-    })).isRequired,
+    drawers: CardPropTypes.cardDrawers.isRequired,
 
     // for an optional control to put on the left side of the toolbar
     controls: PropTypes.any

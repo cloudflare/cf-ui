@@ -227,6 +227,10 @@ button:not(.cf-btn) {
   }
 }
 
+.cf-card .cf-table {
+  border: none;
+}
+
 /**
  * Checkbox
  */
@@ -1773,6 +1777,10 @@ a.cf-link--disabled {
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
+.cf-table--striped .cf-table__row:nth-child(odd) .cf-table__cell {
+  background: #f3f3f3;
+}
+
 .cf-table__head {
   background: #f9f9f9;
   text-align: left;
@@ -1781,7 +1789,6 @@ a.cf-link--disabled {
 .cf-table__cell {
   padding: 0.5em 1em;
 }
-
 
 /**
  * Text

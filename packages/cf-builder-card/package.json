@@ -1,0 +1,25 @@
+{
+  "name": "cf-builder-card",
+  "description": "CloudFlare Card Builder",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "author": "James Kyle <jkyle@cloudflare.com>",
+  "license": "BSD-3-Clause",
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "cf-component-card": "^0.1.8",
+    "cf-component-dynamic-content": "^1.0.2",
+    "cf-pony": "^1.0.0",
+    "cf-util-markdown": "^1.0.3",
+    "react": "^0.14.2",
+    "react-redux": "^3.1.0"
+  },
+  "devDependencies": {
+    "cf-component-button": "^2.2.1",
+    "cf-component-table": "^0.3.0",
+    "react-dom": "^0.14.2",
+    "redux": "^3.0.2"
+  }
+}
