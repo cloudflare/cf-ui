@@ -16,6 +16,7 @@
  *   exports.arrayIncludes = wrapWarning('arrayIncludes', 'Array.prototype.includes', require('array-includes'));
  */
 
+exports.setImmediate = require('./setImmediate');
 exports.arrayIncludes = require('array-includes');
 exports.arrayFind = require('array.prototype.find');
 exports.objectAssign = require('object-assign');

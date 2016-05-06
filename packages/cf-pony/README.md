@@ -15,6 +15,17 @@ $ npm install cf-pony
 
 ## Usage
 
+#### `setImmediate`
+
+Use the ponyfill from this module.
+
+```js
+var cf = require('cf-pony');
+cf.setImmediate(function() {
+  // ...
+});
+```
+
 #### `Array.isArray`
 
 Use the native method.
