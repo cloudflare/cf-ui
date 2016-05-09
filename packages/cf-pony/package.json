@@ -13,6 +13,7 @@
     "array.prototype.find": "^2.0.0",
     "object-assign": "^4.0.1",
     "object-is": "^1.0.1",
+    "setimmediate": "^1.0.4",
     "string-includes": "^1.0.0",
     "string.prototype.endswith": "^0.2.0",
     "string.prototype.startswith": "^0.2.0",
