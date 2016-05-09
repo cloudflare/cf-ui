@@ -116,6 +116,60 @@ function compile(watch) {
     .pipe(gulp.dest(dest));
 };
 
+function isLocalPropTypeRequire(node) {
+  let isPropType = node.id && node.id.name && _.includes(node.id.name, 'PropTypes');
+  let isLocalRequire = false;
+
+  if (node.init && node.init.callee) {
+    let isRequire = node.init.callee.name === 'require';
+    let args = node.init.arguments;
+    isLocalRequire = isRequire && args && args.length && _.includes(args[0].value, './');
+  }
+  return isPropType && isLocalRequire;
+}
+
+function parseRequiredPropTypeFile(node, sourceDir) { 
+  let requiredFileName = node.init.arguments[0].value;
+  if (!_.includes(requiredFileName, '.js')) {
+    requiredFileName += '.js';
+  }
+  const requiredFilePath = path.join(sourceDir, requiredFileName);
+  const requiredFileSource = fs.readFileSync(requiredFilePath).toString();
+  let requiredFileProps = [];
+
+  const ast = babylon.parse(requiredFileSource, {
+    sourceType: 'module',
+    plugins: ['jsx' , 'classProperties', 'objectRestSpread']
+  });
+
+  traverse(ast, {
+    enter(path) {
+      const node = path.node;
+      if (
+        t.isMemberExpression(node.left) && 
+        t.isIdentifier(node.left.object, { name: 'module' }) &&
+        t.isIdentifier(node.left.property, { name: 'exports' }) &&
+        t.isObjectExpression(node.right)
+      ) {
+        node.right.properties.forEach(prop => {
+          const propName = prop.key.name;
+          const binding = path.scope.getBinding(propName);
+          const value = binding.path.node.init;
+          let propValue = generate(value, { concise: false }, requiredFileSource).code;
+
+          requiredFileProps.push({
+            name: propName,
+            source: requiredFileSource,
+            value: propValue
+          });
+        });
+      }
+    }
+  });
+
+  return requiredFileProps;
+}
+
 function initBrowserify(files, output, externals, requires, transforms, watch) {
   const options = {
     transform: transforms
@@ -236,23 +290,42 @@ export function examplesBuildHtml(cb) {
 
       let propTypes = [];
       let componentName = fileName;
+      let externallyRequiredProps = [];
+
       traverse(ast, {
         enter(path) {
+          // Update the component name with the variable name used in its class definition
           if (t.isClassDeclaration(path.node)) {
             componentName = path.node.id.name;
           }
 
+          // iterate over each prop and populate an array containing the name of the prop and its value
           if (t.isClassProperty(path.node) && t.isIdentifier(path.node.key, { name: 'propTypes' } )) {
             path.node.value.properties.forEach(prop => {
-              let propValue = generate(prop.value, {
-                retainLines: false,
-                concise: true
-              }, source).code;
+              let propValue = generate(prop.value, {}, source).code;
+              const propName = prop.key.name;
+
+              const highlightedContent = highlighter.highlightSync({
+                fileContents: propValue,
+                filePath: prop.source,
+                scopeName: propName
+              });
 
               propTypes.push({
-                name: prop.key.name,
-                value: propValue
+                name: propName,
+                value: highlightedContent
               });
+
+              // if the value for the prop is required from another file, parse the file and populate
+              // an array of those props
+              const variableName = prop.value.object ? prop.value.object.name : null;
+              const binding = variableName && path.scope.getBinding(variableName);
+              if (binding && isLocalPropTypeRequire(binding.path.node)) {
+                externallyRequiredProps.push({
+                  name: variableName,
+                  props: parseRequiredPropTypeFile(binding.path.node, sourceDir)
+                });
+              }
             });
           }
         }
@@ -266,11 +339,28 @@ export function examplesBuildHtml(cb) {
           '<table><tr><th>Prop Name</th><th>Value</th></tr>' +
           propTypes.map(prop => {
             return '<tr><td>' + prop.name + '</td><td>' + prop.value + '</td></tr>';
-          }).join('') + 
+          }).join('') +
           '</table>' +
           '</div>' +
           '</div>'
         );
+      }
+
+      if (externallyRequiredProps.length) {
+        _.each(externallyRequiredProps, function(variable) {
+          componentsHtml += (
+            '<div class="cf-proptypes">' +
+            '<div class="cf-example__name"><h2>' + variable.name + '</h2></div>' +
+            '<div class="cf-example__proptypes">' +
+            '<table><tr><th>Prop Name</th><th>Value</th></tr>' +
+            variable.props.map(prop => {
+              return '<tr><td>' + prop.name + '</td><td>' + prop.value + '</td></tr>';
+            }).join('') +
+            '</table>' +
+            '</div>' +
+            '</div>'
+          );
+        });
       }
     });
   });
