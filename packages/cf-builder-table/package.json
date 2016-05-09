@@ -1,0 +1,23 @@
+{
+  "name": "cf-builder-table",
+  "description": "CloudFlare Table Builder",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "author": "James Kyle <jkyle@cloudflare.com>",
+  "license": "BSD-3-Clause",
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "cf-component-table": "^0.3.0",
+    "cf-pony": "^1.0.0",
+    "react": "^0.14.2",
+    "react-redux": "^3.1.0"
+  },
+  "devDependencies": {
+    "cf-component-button": "^2.2.1",
+    "react-dom": "^0.14.2",
+    "redux": "^3.0.2",
+    "redux-thunk": "^2.0.1"
+  }
+}

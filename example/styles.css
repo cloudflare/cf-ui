@@ -1790,6 +1790,18 @@ a.cf-link--disabled {
   padding: 0.5em 1em;
 }
 
+.cf-table__row {
+  transition: none;
+}
+
+.cf-table__row--default {
+  transition: background 1000ms ease;
+}
+
+.cf-table__row--success {
+  background: #BBD291;
+}
+
 /**
  * Text
  */
