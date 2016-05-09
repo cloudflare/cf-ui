@@ -10,7 +10,7 @@ class Button extends React.Component {
       'primary',
       'success',
       'warning',
-      'error'
+      'danger'
     ]).isRequired,
     disabled: PropTypes.bool,
     loading: PropTypes.bool
