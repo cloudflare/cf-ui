@@ -26,6 +26,29 @@ cf.setImmediate(function() {
 });
 ```
 
+#### `requestAnimationFrame`
+
+Use the ponyfill from this module.
+
+```js
+var cf = require('cf-pony');
+cf.requestAnimationFrame(function() {
+  // ...
+});
+```
+
+#### `cancelAnimationFrame`
+
+Use the ponyfill from this module.
+
+```js
+var cf = require('cf-pony');
+var id = cf.requestAnimationFrame(function() {
+  // ...
+});
+cf.cancelAnimationFrame(id);
+```
+
 #### `Array.isArray`
 
 Use the native method.

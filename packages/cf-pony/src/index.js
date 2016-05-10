@@ -17,6 +17,8 @@
  */
 
 exports.setImmediate = require('./setImmediate');
+exports.requestAnimationFrame = require('raf');
+exports.cancelAnimationFrame = require('raf').cancel;
 exports.arrayIncludes = require('array-includes');
 exports.arrayFind = require('array.prototype.find');
 exports.objectAssign = require('object-assign');
