@@ -1,5 +1,4 @@
 const ActionTypes = require('./TableActionTypes');
-// const cf = require('cf-pony');
 
 const initialState = {};
 
