@@ -21,9 +21,9 @@ class PaginationBuilder extends React.Component {
   render() {
     const {totalCount: totalItems, page, perPage, infoFormatter, loading, onPageChange} = this.props;
 
-    const totalPages = Math.floor(totalItems / perPage);
+    const totalPages = Math.ceil(totalItems / perPage);
     const pageIndex = this.props.page - 1;
-    const start = Math.max((pageIndex * perPage) + 1, 0);
+    const start = Math.max((pageIndex * perPage) + 1, 1);
     const end = Math.min(start + perPage - 1, totalItems);
 
     const handleClickItem = page => {
