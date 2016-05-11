@@ -10,7 +10,7 @@ $ npm install cf-builder-pagination
 
 ## Usage
 
-```
+```js
 const React = require('react');
 const {render} = require('react-dom');
 const {PaginationBuilder} = require('../../src/index');
