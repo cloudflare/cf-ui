@@ -16,16 +16,17 @@ describe('routeHandler', function() {
     assert.equal(called, true);
   });
 
-  it('should throw an error when no handler has been setup', function() {
-    assert.throws(() => {
+  it('should not throw an error when no handler has been setup', function() {
+    assert.doesNotThrow(() => {
       routeTo('/route');
     });
   });
 
-  it('should throw an error when trying to setup multiple handlers', function() {
+  it('should only ever allow one handler', function() {
+    let called = false;
+    handleRoutes(url => called = true);
     handleRoutes(url => {});
-    assert.throws(() => {
-      handleRoutes(url => {});
-    });
+    routeTo('/route');
+    assert.ok(called);
   });
 });
