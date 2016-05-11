@@ -1,24 +1,10 @@
 const React = require('react');
-const {PropTypes} = React;
+const TablePropTypes = require('./TablePropTypes');
 
 class TableRow extends React.Component {
   static propTypes = {
-    type: PropTypes.oneOf([
-      'default',
-      'info',
-      'success',
-      'warning',
-      'error'
-    ]),
-    accent: PropTypes.oneOf([
-      false,
-      'gray',
-      'orange',
-      'pink',
-      'red',
-      'green',
-      'purple'
-    ])
+    type: TablePropTypes.rowType,
+    accent: TablePropTypes.rowAccent
   };
 
   static defaultProps = {

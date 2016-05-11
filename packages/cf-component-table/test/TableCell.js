@@ -11,19 +11,11 @@ describe('TableCell', function() {
     );
   });
 
-  it('should render with sortable', function() {
+  it('should render with align', function() {
     assertEqualJSX(
-      <TableCell sortable>TableCell</TableCell>,
+      <TableCell align="center">TableCell</TableCell>,
       // should equal
-      <td className="cf-table__cell cf-table__cell--sortable">TableCell</td>
-    );
-  });
-
-  it('should render with editable', function() {
-    assertEqualJSX(
-      <TableCell editable>TableCell</TableCell>,
-      // should equal
-      <td className="cf-table__cell cf-table__cell--editable">TableCell</td>
+      <td className="cf-table__cell cf-table__cell--align-center">TableCell</td>
     );
   });
 });
