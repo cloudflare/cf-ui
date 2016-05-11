@@ -110,6 +110,23 @@ body {
   font-size: 0.8em;
 }
 
+.cf-example__proptypes table {
+  border-spacing: 0;
+  min-width: 100%;
+}
+
+.cf-example__proptypes th {
+  background-color: #f9f9f9;
+  border-bottom: 3px solid #eee;
+}
+
+.cf-example__proptypes td,
+.cf-example__proptypes th {
+  padding: 5px 10px;
+  text-align: left;
+}
+
+
 #cf-component-flex--basic .cf-flex + .cf-flex {
   margin-top: 10px;
 }

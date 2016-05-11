@@ -334,7 +334,7 @@ export function examplesBuildHtml(cb) {
       if (propTypes.length) {
         componentsHtml += (
           '<div class="cf-proptypes">' +
-          '<div class="cf-example__name"><h2>' + componentName + '</h2></div>' +
+          '<div class="cf-example__name"><h3>PropTypes for ' + componentName + '</h3></div>' +
           '<div class="cf-example__proptypes">' +
           '<table><tr><th>Prop Name</th><th>Value</th></tr>' +
           propTypes.map(prop => {
@@ -350,7 +350,7 @@ export function examplesBuildHtml(cb) {
         _.each(externallyRequiredProps, function(variable) {
           componentsHtml += (
             '<div class="cf-proptypes">' +
-            '<div class="cf-example__name"><h2>' + variable.name + '</h2></div>' +
+            '<div class="cf-example__name"><h4>' + variable.name + '</h4></div>' +
             '<div class="cf-example__proptypes">' +
             '<table><tr><th>Prop Name</th><th>Value</th></tr>' +
             variable.props.map(prop => {
