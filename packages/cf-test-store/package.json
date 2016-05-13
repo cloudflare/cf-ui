@@ -1,7 +1,7 @@
 {
-  "name": "cf-util-http-poll",
-  "description": "CloudFlare HTTP Polling Util",
-  "version": "1.0.3",
+  "name": "cf-test-store",
+  "description": "CloudFlare Store Test Util",
+  "version": "0.0.0",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
@@ -9,9 +9,8 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-util-http": "^1.2.3"
+    "redux-mock-store": "^1.0.2",
+    "redux-thunk": "^2.1.0"
   },
-  "devDependencies": {
-    "cf-test-server": "^0.0.0"
-  }
+  "devDependencies": {}
 }

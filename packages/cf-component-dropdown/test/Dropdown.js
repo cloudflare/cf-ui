@@ -1,6 +1,6 @@
 const React = require('react');
 const assertEqualJSX = require('assert-equal-jsx');
-const {trackFocus, getCurrentFocus} = require('../../../utils/focus');
+const {trackFocus, getCurrentFocus} = require('cf-test-focus');
 const {equal: assertEqual} = require('assert');
 const {render, unmountComponentAtNode} = require('react-dom');
 
@@ -37,11 +37,9 @@ describe('Dropdown', function() {
     beforeEach(function() {
       this.root = global.document.createElement('div');
       global.document.body.appendChild(this.root);
-      this.restoreFocus = trackFocus();
     });
 
     afterEach(function() {
-      this.restoreFocus();
       unmountComponentAtNode(this.root);
       global.document.body.removeChild(this.root);
       delete this.root;
@@ -49,7 +47,9 @@ describe('Dropdown', function() {
 
     it('should call `onClose` when the `esc` key is pressed', function() {
       var called = false;
-      var onClose = function() { called = true; };
+      var onClose = function() {
+        called = true;
+      };
 
       var dom = <Dropdown onClose={onClose}/>;
       var instance = render(dom, this.root);
@@ -59,6 +59,8 @@ describe('Dropdown', function() {
     });
 
     it('should be able to navigate with the up and down keys', function() {
+      trackFocus();
+
       const down = { keyCode: 40, preventDefault() {} };
       const up = { keyCode: 38, preventDefault() {} };
 
