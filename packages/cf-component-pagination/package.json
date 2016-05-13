@@ -14,6 +14,7 @@
     "cf-component-icon": "^1.1.0"
   },
   "devDependencies": {
+    "assert-equal-jsx": "^1.0.0",
     "react-dom": "^0.14.2"
   }
 }
