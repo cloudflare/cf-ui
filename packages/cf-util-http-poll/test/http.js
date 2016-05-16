@@ -1,19 +1,11 @@
 const {equal: assertEqual} = require('assert');
-const createFakeServer = require('../../../utils/createFakeServer');
+const {createFakeServer} = require('cf-test-server');
 const httpPoll = require('../src/httpPoll');
 
-let server;
-
 describe('httpPoll', function() {
-  beforeEach(function() {
-    server = createFakeServer();
-  });
-
-  afterEach(function() {
-    server.destroy();
-  });
-
   it('should poll until `isComplete` returns `true`', function(done) {
+    const server = createFakeServer();
+
     this.timeout(10000);
 
     function setupResponse(active) {

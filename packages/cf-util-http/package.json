@@ -12,5 +12,7 @@
     "cf-util-logger": "^1.0.3",
     "superagent": "^1.4.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "cf-test-server": "^0.0.0"
+  }
 }

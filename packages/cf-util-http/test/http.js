@@ -1,20 +1,12 @@
 const {equal: assertEqual} = require('assert');
-const createFakeServer = require('../../../utils/createFakeServer');
+const {createFakeServer} = require('cf-test-server');
 const http = require('../src/http');
 
-let server;
-
 describe('http', function() {
-  beforeEach(function() {
-    server = createFakeServer();
-  });
-
-  afterEach(function() {
-    server.destroy();
-  });
-
   describe('request', function() {
     it('should call the success handler on success', function(done) {
+      const server = createFakeServer();
+
       server.respondWith('DELETE', '/posts/3', 200, { 'Content-Type': 'application/json' }, {
         message: 'Hello World'
       });
@@ -30,6 +22,8 @@ describe('http', function() {
     });
 
     it('should call the error handler on error', function(done) {
+      const server = createFakeServer();
+
       server.respondWith('GET', '/missing', 404, { 'Content-Type': 'application/json' }, {
         message: 'Not Found'
       });
@@ -47,6 +41,8 @@ describe('http', function() {
 
   describe('get', function() {
     it('should make a GET request', function(done) {
+      const server = createFakeServer();
+
       server.respondWith('GET', '/posts', 200, { 'Content-Type': 'application/json' }, [
         { id: 1, title: 'Post 1', content: 'Contents of Post 1' },
         { id: 2, title: 'Post 2', content: 'Contents of Post 2' }
@@ -63,6 +59,8 @@ describe('http', function() {
 
   describe('post', function() {
     it('should make a POST request', function(done) {
+      const server = createFakeServer();
+
       server.respondWith('POST', '/posts', 200, { 'Content-Type': 'application/json' }, {
         id: 3, title: 'Post 3', content: 'Contents of Post 3'
       });
@@ -78,6 +76,8 @@ describe('http', function() {
 
   describe('http.put', function() {
     it('should make a PUT request', function(done) {
+      const server = createFakeServer();
+
       server.respondWith('PUT', '/posts/3', 200, { 'Content-Type': 'application/json' }, {
         id: 3, title: 'Post 3', content: 'Contents of Post 3 (edit)'
       });
@@ -93,6 +93,8 @@ describe('http', function() {
 
   describe('http.patch', function() {
     it('should make a PATCH request', function(done) {
+      const server = createFakeServer();
+
       server.respondWith('PATCH', '/posts/3', 200, { 'Content-Type': 'application/json' }, {
         id: 3, title: 'Post 3', content: 'Contents of Post 3 (edit 2)'
       });
@@ -108,6 +110,8 @@ describe('http', function() {
 
   describe('http.del', function() {
     it('should make a DELETE request', function(done) {
+      const server = createFakeServer();
+
       server.respondWith('DELETE', '/posts/3', 200, { 'Content-Type': 'application/json' }, {
         id: 3, title: 'Post 3', content: 'Contents of Post 3'
       });

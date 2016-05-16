@@ -1,0 +1,1 @@
+exports.createMockStore = require('./createMockStore');
