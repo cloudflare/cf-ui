@@ -13,6 +13,7 @@
     "react-select": "^0.9.1"
   },
   "devDependencies": {
+    "assert-equal-jsx": "^1.0.0",
     "react-dom": "^0.14.2"
   }
 }

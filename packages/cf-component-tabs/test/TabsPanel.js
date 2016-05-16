@@ -1,6 +1,6 @@
 const React = require('react');
 const {PropTypes} = React;
-const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const assertEqualJSX = require('assert-equal-jsx');
 const TabsPanel = require('../src/TabsPanel');
 
 class Context extends React.Component {

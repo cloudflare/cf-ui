@@ -1,5 +1,5 @@
 const React = require('react');
-const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const assertEqualJSX = require('assert-equal-jsx');
 const {trackFocus, getCurrentFocus} = require('../../../utils/focus');
 const {equal: assertEqual} = require('assert');
 const {render, unmountComponentAtNode} = require('react-dom');

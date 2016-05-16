@@ -1,5 +1,5 @@
 const React = require('react');
-const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const assertEqualJSX = require('assert-equal-jsx');
 const Callout = require('../src/Callout');
 
 describe('Callout', function() {

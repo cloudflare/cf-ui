@@ -1,5 +1,5 @@
 const React = require('react');
-const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const assertEqualJSX = require('assert-equal-jsx');
 const RadioGroup = require('../src/RadioGroup');
 const Radio = require('../src/Radio');
 

@@ -12,6 +12,7 @@
     "react": "^0.14.2"
   },
   "devDependencies": {
+    "assert-equal-jsx": "^1.0.0",
     "cf-component-button": "^2.2.1",
     "cf-component-flex": "^1.0.0",
     "cf-component-input": "^1.1.0",

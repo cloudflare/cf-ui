@@ -1,5 +1,5 @@
 const React = require('react');
-const assertEqualJSX = require('../../../utils/assertEqualJSX');
+const assertEqualJSX = require('assert-equal-jsx');
 const CardDrawers = require('../src/CardDrawers');
 const CardToolbar = require('../src/CardToolbar');
 const CardToolbarLink = require('../src/CardToolbarLink');
