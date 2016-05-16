@@ -1,7 +1,7 @@
 {
   "name": "cf-util-http",
   "description": "CloudFlare HTTP Util",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
@@ -13,6 +13,6 @@
     "superagent": "^1.4.0"
   },
   "devDependencies": {
-    "cf-test-server": "^0.0.0"
+    "cf-test-server": "^1.0.0"
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "cf-component-notifications",
   "description": "CloudFlare Notifications Component",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
@@ -14,7 +14,7 @@
   },
   "devDependencies": {
     "assert-equal-jsx": "^1.0.0",
-    "cf-component-button": "^2.2.1",
+    "cf-component-button": "^2.2.2",
     "react-addons-test-utils": "^0.14.7",
     "react-dom": "^0.14.2"
   }

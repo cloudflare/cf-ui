@@ -1,7 +1,7 @@
 {
   "name": "cf-component-form",
   "description": "CloudFlare Form Component",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
@@ -13,11 +13,11 @@
   },
   "devDependencies": {
     "assert-equal-jsx": "^1.0.0",
-    "cf-component-button": "^2.2.1",
-    "cf-component-flex": "^1.0.0",
-    "cf-component-input": "^1.1.0",
-    "cf-component-select": "^1.0.3",
-    "cf-component-textarea": "^1.0.3",
+    "cf-component-button": "^2.2.2",
+    "cf-component-flex": "^1.0.1",
+    "cf-component-input": "^1.1.1",
+    "cf-component-select": "^1.0.4",
+    "cf-component-textarea": "^1.1.1",
     "react-dom": "^0.14.2"
   }
 }

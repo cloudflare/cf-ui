@@ -1,7 +1,7 @@
 {
   "name": "cf-test-focus",
   "description": "CloudFlare Focus Test Util",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
@@ -9,7 +9,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-test-stub": "^0.0.0"
+    "cf-test-stub": "^1.0.0"
   },
   "devDependencies": {}
 }
