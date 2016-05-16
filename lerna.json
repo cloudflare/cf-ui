@@ -1,4 +1,10 @@
 {
   "lerna": "2.0.0-beta.6",
-  "version": "independent"
+  "version": "independent",
+  "publishConfig": {
+    "ignore": [
+      "example/**",
+      "test/**"
+    ]
+  }
 }
