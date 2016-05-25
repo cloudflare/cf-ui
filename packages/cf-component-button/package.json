@@ -1,7 +1,7 @@
 {
   "name": "cf-component-button",
   "description": "CloudFlare Button Component",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",

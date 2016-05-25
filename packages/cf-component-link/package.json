@@ -1,7 +1,7 @@
 {
   "name": "cf-component-link",
   "description": "CloudFlare Link Component",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",

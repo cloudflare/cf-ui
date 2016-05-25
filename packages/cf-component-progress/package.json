@@ -1,7 +1,7 @@
 {
   "name": "cf-component-progress",
   "description": "CloudFlare Progress Component",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
@@ -9,7 +9,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-component-link": "^3.0.1",
+    "cf-component-link": "^3.0.2",
     "react": "^0.14.2"
   },
   "devDependencies": {

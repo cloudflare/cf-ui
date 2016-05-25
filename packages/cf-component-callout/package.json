@@ -1,7 +1,7 @@
 {
   "name": "cf-component-callout",
   "description": "CloudFlare Callout Component",
-  "version": "2.0.5",
+  "version": "2.0.6",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
