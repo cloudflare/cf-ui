@@ -1,63 +1,24 @@
 # cf-ui
 
-This is a monorepo with all of CloudFlare's UI components and utils.
+> CloudFlare UI Framework
 
-To get started run:
+cf-ui is a set of over 50 packages used to build UIs at CloudFlare using
+projects such as [React](https://facebook.github.io/react/),
+[Redux](http://redux.js.org), [npm](https://www.npmjs.com),
+[Lerna](https://lernajs.io), and more.
 
-```sh
-$ git clone ssh://git@stash.cfops.it:7999/~jkyle/cf-ui.git
-$ npm install
-$ npm run bootstrap
+## Installation
+
+```js
+$ npm install [package-name]
 ```
 
-To run the build:
+To view all of the available packages, see the [`packages/` directory](packages).
 
-```sh
-$ npm run build
-```
+## Contributing
 
-To run the tests:
+To get started contributing please see [CONTRIBUTING.md](CONTRIBUTING.md)
 
-```sh
-$ npm run test
-```
+## License
 
-To run the lint:
-
-```sh
-$ npm run lint
-```
-
-To test a single package:
-
-```sh
-$ npm test -- --package cf-component-button
-```
-
-To continuously run the build, lint, and tests:
-
-```sh
-$ npm run dev
-```
-
-To see the examples:
-
-```sh
-$ npm run examples:build
-# This will take awhile
-$ open dist/index.html
-# Now open http://path/to/cf-ui/dist/index.html in your browser.
-```
-
-Or you can run the examples dev task:
-
-```sh
-$ npm run examples:dev
-```
-
-There are also versions of each of these tasks for the public styles
-
-```sh
-$ npm run example:build:public
-$ npm run example:dev:public
-```
+cf-ui is [BSD Licensed](LICENSE)

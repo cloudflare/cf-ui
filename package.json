@@ -5,17 +5,17 @@
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
   "scripts": {
-    "bootstrap": "lerna bootstrap -i",
+    "bootstrap": "lerna bootstrap",
     "build": "gulp build",
     "dev": "gulp dev",
     "lint": "gulp lint",
     "test": "gulp test",
     "updated": "lerna updated",
     "publish": "git pull --rebase && check-installed-dependencies && npm run build && lerna publish",
-    "examples:build": "gulp examplesBuild",
-    "examples:dev": "gulp examplesDev",
-    "examples:build:public": "gulp examplesBuild --public",
-    "examples:dev:public": "gulp examplesDev --public",
+    "examples:build:internal": "gulp examplesBuild --view internal",
+    "examples:dev:internal": "gulp examplesDev --view internal",
+    "examples:build:external": "gulp examplesBuild --view external",
+    "examples:dev:external": "gulp examplesDev --view external",
     "examples:publish": "gulp examplesPublish"
   },
   "devDependencies": {

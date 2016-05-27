@@ -214,7 +214,15 @@ export function examplesBuildHtml(cb) {
     sidebarHtml += '<a href="#' + pkg + '">' + pkg + '</a>';
   });
 
-  const styles = gutil.env.public ? 'styles.css' : '../../www-style/htdocs/static/stylesheets/components.css';
+  let styles;
+
+  if (gutil.env.view === 'internal') {
+    styles = '../../www-style/htdocs/static/stylesheets/components.css';
+  } else if (gutil.env.view === 'external') {
+    styles = 'styles.css';
+  } else {
+    throw new Error('Not a valid view for styles. Needs --view [internal,external]');
+  }
 
   const html = (
     '<!doctype html>' +
@@ -324,14 +332,14 @@ export const examplesDev =
     }
   );
 
-function setEnvPublic(cb) {
-  gutil.env.public = true;
+function setViewExternal(cb) {
+  gutil.env.view = 'external';
   cb();
 }
 
 export const examplesPublish =
   gulp.series(
-    setEnvPublic,
+    setViewExternal,
     examplesBuild,
     function examplesPublisher(cb) {
       execSync([
