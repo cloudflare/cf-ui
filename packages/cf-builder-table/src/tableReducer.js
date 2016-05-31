@@ -2,7 +2,7 @@ const ActionTypes = require('./TableActionTypes');
 
 const initialState = {};
 
-function cardReducer(state = initialState, action) {
+function tableReducer(state = initialState, action) {
   switch (action.type) {
     case ActionTypes.CF_BUILDER_TABLE_FLASH_ROW_ON:
       return {
@@ -33,4 +33,4 @@ function cardReducer(state = initialState, action) {
   }
 }
 
-module.exports = cardReducer;
+module.exports = tableReducer;

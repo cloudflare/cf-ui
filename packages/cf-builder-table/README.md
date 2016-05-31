@@ -10,7 +10,7 @@ $ npm install cf-builder-table
 
 ## Usage
 
-```
+```js
 const React = require('react');
 const {render} = require('react-dom');
 const {createStore, combineReducers, applyMiddleware} = require('redux');

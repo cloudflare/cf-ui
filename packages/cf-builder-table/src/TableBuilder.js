@@ -12,6 +12,8 @@ const {
 
 class TableBuilder extends React.Component {
   static propTypes = {
+    tableName: PropTypes.string.isRequired,
+
     rows: TableBuilderPropTypes.rows.isRequired,
     columns: TableBuilderPropTypes.columns.isRequired,
 
@@ -35,7 +37,7 @@ class TableBuilder extends React.Component {
           <TableRow>
             {columns.map((column, index) => {
               return (
-                <TableHeadCell key={index} sortable={column.sortable}>
+                <TableHeadCell key={index}>
                   {column.label}
                 </TableHeadCell>
               );

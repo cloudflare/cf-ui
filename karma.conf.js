@@ -56,6 +56,21 @@ if (args.package) {
   filePattern = 'packages/*/test/**/*.js';
 }
 
+// Overridable with a comma-separated list with `--browsers`
+let browsers;
+
+if (typeof args.browsers === 'string') {
+  browsers = args.browsers.split(',').filter(b => b !== '');
+} else if (typeof args.browsers === 'boolean') {
+  browsers = [];
+} else {
+  browsers = args['sauce-labs'] ? Object.keys(customLaunchers) : [
+    'Chrome',
+    // 'Firefox',
+    // 'Safari'
+  ];
+}
+
 module.exports = function(config) {
   config.set({
     frameworks: ['browserify', 'mocha'],
@@ -91,11 +106,7 @@ module.exports = function(config) {
     logLevel: config.LOG_INFO,
 
     // Overridable with a comma-separated list with `--browsers`
-    browsers: args['sauce-labs'] ? Object.keys(customLaunchers) : [
-      'Chrome',
-      // 'Firefox',
-      // 'Safari'
-    ],
+    browsers: browsers,
 
     sauceLabs: {
       username: args['sauce-username'],
@@ -117,7 +128,11 @@ module.exports = function(config) {
             path.resolve(__dirname, 'utils/**')
           ]
         }]
-      ] || [])
+      ] || []),
+      configure(bundle) {
+        bundle.external('react/lib/ReactContext');
+        bundle.external('react/lib/ExecutionEnvironment');
+      }
     },
 
     coverageReporter: {

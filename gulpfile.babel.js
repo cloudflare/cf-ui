@@ -89,7 +89,13 @@ function initKarmaServer(singleRun, cb) {
   new karma.Server({
     configFile,
     singleRun
-  }, cb).start();
+  }, exitCode => {
+    if (exitCode > 0) {
+      cb(new Error(`Karma exited with status code ${exitCode}`));
+    } else {
+      cb();
+    }
+  }).start();
 }
 
 function compile(watch) {
