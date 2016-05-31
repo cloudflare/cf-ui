@@ -8,8 +8,6 @@
   "publishConfig": {
     "registry": "http://registry.npmjs.org/"
   },
-  "dependencies": {
-    "sinon": "^1.17.4"
-  },
+  "dependencies": {},
   "devDependencies": {}
 }
