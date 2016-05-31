@@ -46,22 +46,45 @@ function createStub() {
   return stub;
 }
 
-function stubMethod(obj, methodName) {
+function stubMethod(obj, methodName, method) {
   const test = current;
   const prev = obj[methodName];
-  const stub = createStub();
 
+  let called = false;
+  let callCount = 0;
+  let calls = [];
   let restored = false;
 
-  stub.restore = () => {
+  obj[methodName] = function(...args) {
     assertActive(test);
+    called = true;
+    callCount++;
+    calls.push({
+      context: this,
+      args: args
+    });
+    method.apply(this, args);
+  };
+
+  const stub = {};
+
+  defineGetter(test, stub, 'called', () => called);
+  defineGetter(test, stub, 'callCount', () => callCount);
+  defineGetter(test, stub, 'calls', () => calls);
+
+  function restore() {
     if (!restored) {
       obj[methodName] = prev;
       restored = true;
     }
+  }
+
+  stub.restore = () => {
+    assertActive(test);
+    restore();
   };
 
-  restores.push(stub.restore);
+  restores.push(restore);
 
   return stub;
 }
