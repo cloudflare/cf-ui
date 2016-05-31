@@ -1,0 +1,13 @@
+{
+  "name": "cf-util-async",
+  "description": "CloudFlare Async Util",
+  "version": "0.0.0",
+  "main": "lib/index.js",
+  "author": "James Kyle <jkyle@cloudflare.com>",
+  "license": "BSD-3-Clause",
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}

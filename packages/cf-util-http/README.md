@@ -26,10 +26,12 @@ http.post('/posts', {
     title: 'A New Post',
     content: 'Contents of the new post.'
   }
-}, function(res) {
-  console.log(res); // > { result: { id: 1, title: 'A New Post', content: 'Contents of the new post.' } }
-}, function(err) {
-  console.log(res.body); // > { errors: [{ message: 'Error!' }] }
+}, (err, res) => {
+  if (err) {
+    console.log(err.body); // > { errors: [{ message: 'Error!' }] }
+  } else {
+    console.log(res.body); // > { result: { id: 1, title: 'A New Post', content: 'Contents of the new post.' } }
+  }
 });
 ```
 
@@ -44,7 +46,7 @@ const abortRequest = http.request('POST', '/posts', {
   headers: {...},
   parameters: {...},
   body: {...}
-}, onSuccess, onError);
+}, callback);
 
 abortRequest();
 ```
@@ -59,18 +61,17 @@ abortRequest();
 | `opts.parameters` | `Object` | **Optional.** Parameters to be serialized into the url. |
 | `opts.headers` | `Object` | **Optional.** Headers to send with the request. |
 | `opts.body` | `Object` | **Optional.** The body of the request. |
-| `onSuccess` | `Function` | **Optional.** Callback to call on success. |
-| `onError` | `Function` | **Optional.** Callback to call on error. |
+| `callback` | `Function` | Callback to call when request is complete. |
 
 **Returns:**
 
 `http.request` will return an abort function that you can call to stop the
 request from being made.
 
-**`onSuccess`/`onError`:**
+**`callback`:**
 
-These callbacks will receive a single argument `res` which will have the
-following shape:
+The callback will receive two arguments: `err` and `res` which will both have
+the following shape (if they are not `null`):
 
 ```js
 {
