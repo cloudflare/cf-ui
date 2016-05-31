@@ -15,7 +15,10 @@ function assertActive(test) {
 
 function defineGetter(test, stub, methodName, method) {
   Object.defineProperty(stub, methodName, {
-    get: () => assertActive(test) && method()
+    get: () => {
+      assertActive(test);
+      return method();
+    }
   });
 }
 
@@ -36,7 +39,7 @@ function createStub() {
     });
   }
 
-  defineGetter(test, stub, 'called', () => current);
+  defineGetter(test, stub, 'called', () => called);
   defineGetter(test, stub, 'callCount', () => callCount);
   defineGetter(test, stub, 'calls', () => calls);
 
