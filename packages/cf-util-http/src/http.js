@@ -55,20 +55,18 @@ function beforeSend(callback) {
  * @param {Object} [opts.parameters]
  * @param {Object} [opts.headers]
  * @param {Object} [opts.body]
- * @param {Function} [onSuccess]
- * @param {Function} [onError]
+ * @param {Function} [callback]
  * @returns {Function} Abort request.
  */
-function request(method, url, opts, onSuccess, onError) {
+function request(method, url, opts, callback) {
   opts = opts || {};
 
   opts.method = method;
   opts.url = url;
-  opts.onSuccess = onSuccess;
-  opts.onError = onError;
+  opts.callback = callback;
 
   // Allow beforeSend to modify request options.
-  beforeSendCallbacks.forEach(callback => callback(opts));
+  beforeSendCallbacks.forEach(cb => cb(opts));
 
   // Configure request
   const req = superagent[METHODS[method]](opts.url);
@@ -91,23 +89,21 @@ function request(method, url, opts, onSuccess, onError) {
 
   // Send request
   req.end((err, res) => {
-    const callback = err ? opts.onError : opts.onSuccess;
-
     logMessage = `${logMessage} (${res.status} ${res.statusText})`;
+
+    const result = {
+      headers: res.headers,
+      status: res.status,
+      body: res.body,
+      text: res.text
+    };
 
     if (err) {
       logError(logMessage);
+      opts.callback(result);
     } else {
       logSuccess(logMessage);
-    }
-
-    if (callback) {
-      callback({
-        headers: res.headers,
-        status: res.status,
-        body: res.body,
-        text: res.text
-      });
+      opts.callback(null, result);
     }
   });
 

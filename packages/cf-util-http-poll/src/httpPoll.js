@@ -65,7 +65,13 @@ function httpPoll(url, opts) {
   }
 
   function next() {
-    currentAbort = httpGet(url, opts.requestOpts, onSuccess, onError);
+    currentAbort = httpGet(url, opts.requestOpts, (err, res) => {
+      if (err) {
+        onError(err);
+      } else {
+        onSuccess(res);
+      }
+    });
   }
 
   next();

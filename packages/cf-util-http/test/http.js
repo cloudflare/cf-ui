@@ -11,10 +11,11 @@ describe('http', function() {
         message: 'Hello World'
       });
 
-      http.request('DELETE', '/posts/3', null, res => {
+      http.request('DELETE', '/posts/3', null, (err, res) => {
         assertEqual(res.status, 200);
         assertEqual(res.headers['content-type'], 'application/json');
         assertEqual(res.body.message, 'Hello World');
+        assertEqual(err, null);
         done();
       });
 
@@ -28,10 +29,11 @@ describe('http', function() {
         message: 'Not Found'
       });
 
-      http.request('GET', '/missing', null, null, res => {
-        assertEqual(res.status, 404);
-        assertEqual(res.headers['content-type'], 'application/json');
-        assertEqual(res.body.message, 'Not Found');
+      http.request('GET', '/missing', null, (err, res) => {
+        assertEqual(err.status, 404);
+        assertEqual(err.headers['content-type'], 'application/json');
+        assertEqual(err.body.message, 'Not Found');
+        assertEqual(res, null);
         done();
       });
 
@@ -48,7 +50,8 @@ describe('http', function() {
         { id: 2, title: 'Post 2', content: 'Contents of Post 2' }
       ]);
 
-      http.get('/posts', null, res => {
+      http.get('/posts', null, (err, res) => {
+        if (err) return done(err);
         assertEqual(res.body[0].id, 1);
         done();
       });
@@ -65,7 +68,8 @@ describe('http', function() {
         id: 3, title: 'Post 3', content: 'Contents of Post 3'
       });
 
-      http.post('/posts', { body: { title: 'Post 3', content: 'Contents of Post 3' } }, res => {
+      http.post('/posts', { body: { title: 'Post 3', content: 'Contents of Post 3' } }, (err, res) => {
+        if (err) return done(err);
         assertEqual(res.body.id, 3);
         done();
       });
@@ -82,7 +86,8 @@ describe('http', function() {
         id: 3, title: 'Post 3', content: 'Contents of Post 3 (edit)'
       });
 
-      http.put('/posts/3', { body: { id: 3, title: 'Post 3', content: 'Contents of Post 3 (edit)' } }, res => {
+      http.put('/posts/3', { body: { id: 3, title: 'Post 3', content: 'Contents of Post 3 (edit)' } }, (err, res) => {
+        if (err) return done(err);
         assertEqual(res.body.content, 'Contents of Post 3 (edit)');
         done();
       });
@@ -99,7 +104,8 @@ describe('http', function() {
         id: 3, title: 'Post 3', content: 'Contents of Post 3 (edit 2)'
       });
 
-      http.patch('/posts/3', { body: { content: 'Contents of Post 3 (edit 2)' } }, res => {
+      http.patch('/posts/3', { body: { content: 'Contents of Post 3 (edit 2)' } }, (err, res) => {
+        if (err) return done(err);
         assertEqual(res.body.content, 'Contents of Post 3 (edit 2)');
         done();
       });
@@ -116,7 +122,8 @@ describe('http', function() {
         id: 3, title: 'Post 3', content: 'Contents of Post 3'
       });
 
-      http.del('/posts/3', null, res => {
+      http.del('/posts/3', null, (err, res) => {
+        if (err) return done(err);
         assertEqual(res.body.content, 'Contents of Post 3');
         done();
       });
