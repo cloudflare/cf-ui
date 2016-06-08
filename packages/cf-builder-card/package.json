@@ -18,6 +18,9 @@
   "devDependencies": {
     "cf-component-button": "^2.2.3",
     "cf-component-table": "^1.0.1",
+    "cf-test-store": "^1.0.0",
+    "enzyme": "^2.3.0",
+    "react-addons-test-utils": "^0.14.2",
     "react-dom": "^0.14.2",
     "redux": "^3.0.2"
   }
