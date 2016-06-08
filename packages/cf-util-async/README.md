@@ -17,7 +17,7 @@ const http = require('cf-util-http');
 const {series} = require('cf-util-async');
 
 series([
-  cb => http.get('endpoint-1.json', null, cb),
+  cb => http.get('endpoint-1.json', null, cb), // If an error occurs, then the rest of the callbacks are not called.
   cb => http.get('endpoint-2.json', null, cb)
 ], (err, results) => {
   if (err) {
