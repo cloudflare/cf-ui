@@ -7,6 +7,8 @@ projects such as [React](https://facebook.github.io/react/),
 [Redux](http://redux.js.org), [npm](https://www.npmjs.com),
 [Lerna](https://lernajs.io), and more.
 
+**[Read the introductory blog post &rarr;](https://blog.cloudflare.com/cf-ui/)**
+
 ## Installation
 
 ```js
