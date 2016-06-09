@@ -42,7 +42,7 @@ const dest = 'packages';
 
 const exampleComponents = 'packages/cf-{component,builder}-*/example/*/component.js';
 const exampleStyles = ['example/base.css', 'example/styles.css'];
-const exampleIcons = 'example/icons/*';
+const exampleAssets = 'example/assets/*';
 
 const vendors = [
   'react',
@@ -185,6 +185,42 @@ function initBrowserifyVendor(watch) {
   return initBrowserify([], 'vendor.js', null, vendors, [], watch);
 }
 
+function createPropTypesSection(id, title, props) {
+  return (
+    '<h4 class="cf-example__proptypes_name" id="' + id + '">' + title + '</h3>' +
+    '<div class="cf-example__proptypes_table">' +
+      '<table>' +
+        '<thead>' +
+          '<tr>' +
+            '<th>Prop Name</th>' +
+            '<th>Prop Validation</th>' +
+          '</tr>' +
+        '</thead>' +
+        '<tbody>' +
+          props.map(prop => {
+            let value = highlighter.highlightSync({
+              fileContents: prop.value,
+              filePath: prop.name,
+              scopeName: 'source.js'
+            });
+
+            if (prop.link) {
+              value = value.replace(prop.link, '<a href="#' + prop.link + '">' + prop.link + '</a>');
+            }
+
+            return (
+              '<tr>' +
+                '<th><code>' + prop.name + '</code></th>' +
+                '<td>' + value + '</td>' +
+              '</tr>'
+            );
+          }).join('') +
+        '</tbody>' +
+      '</table>' +
+    '</div>'
+  );
+}
+
 function parseSourceFile(source, fileName) {
   let proptypesHtml = '';
 
@@ -209,6 +245,7 @@ function parseSourceFile(source, fileName) {
         path.node.value.properties.forEach(prop => {
           let propValue = generate(prop.value, {}, source).code;
           const propName = prop.key.name;
+          let link;
 
           // look up the variable name and see if it's being required from a
           // local file. If it is, convert the text to a hyperlink so we can
@@ -219,12 +256,14 @@ function parseSourceFile(source, fileName) {
           }
           const binding = variableName && path.scope.getBinding(variableName);
           if (binding && isLocalPropTypeRequire(binding.path.node)) {
-            propValue = propValue.replace(variableName, '<a href="#' + variableName + '">' + variableName + '</a>');
+            link = variableName;
+            // propValue = propValue.replace(variableName, '<a href="#' + variableName + '">' + variableName + '</a>');
           }
 
           propTypes.push({
             name: propName,
-            value: propValue
+            value: propValue,
+            link: link
           });
         });
       }
@@ -232,18 +271,7 @@ function parseSourceFile(source, fileName) {
   });
 
   if (propTypes.length) {
-    proptypesHtml += (
-      '<div class="cf-proptypes">' +
-      '<div class="cf-example__name"><h3>PropTypes for ' + componentName + '</h3></div>' +
-      '<div class="cf-example__proptypes">' +
-      '<table><tr><th>Prop Name</th><th>Value</th></tr>' +
-      propTypes.map(prop => {
-        return '<tr><td>' + prop.name + '</td><td>' + prop.value + '</td></tr>';
-      }).join('') +
-      '</table>' +
-      '</div>' +
-      '</div>'
-    );
+    proptypesHtml += createPropTypesSection(componentName, '<code>&lt;' + componentName + '/&gt;</code>', propTypes, false);
   }
 
   return proptypesHtml;
@@ -285,18 +313,7 @@ function parsePropTypeFile(source, fileName) {
   });
 
   if (props.length) {
-    proptypesHtml += (
-      '<div class="cf-proptypes">' +
-      '<div class="cf-example__name"><h4 id="' + fileName + '">' + fileName + ' definitions</h3></div>' +
-      '<div class="cf-example__proptypes">' +
-      '<table><tr><th>Prop Name</th><th>Value</th></tr>' +
-      props.map(prop => {
-        return '<tr><td>' + prop.name + '</td><td>' + prop.value + '</td></tr>';
-      }).join('') +
-      '</table>' +
-      '</div>' +
-      '</div>'
-    );
+    proptypesHtml += createPropTypesSection(fileName, '<code>' + fileName + '</code>', props, true);
   }
 
   return proptypesHtml;
@@ -306,7 +323,7 @@ function generatePropTypeDocs(packagesPath, pkg) {
   let proptypesHtml = '';
   let proptypeDefinitionsHtml = '';
 
-  const sourceDir = path.resolve(packagesPath, pkg, 'src')
+  const sourceDir = path.resolve(packagesPath, pkg, 'src');
 
   if (!pathExists.sync(sourceDir)) {
     return;
@@ -375,7 +392,11 @@ export function examplesBuildHtml(cb) {
 
     sidebarHtml += '<a href="#' + pkg + '">' + pkg + '</a>';
 
-    componentsHtml += generatePropTypeDocs(packagesPath, pkg);
+    const propTypesHtml = generatePropTypeDocs(packagesPath, pkg);
+
+    if (propTypesHtml.length) {
+      componentsHtml += '<div class="cf-example__proptypes">' + propTypesHtml + '</div>';
+    }
   });
 
   let styles;
@@ -399,7 +420,11 @@ export function examplesBuildHtml(cb) {
     '<link rel="stylesheet" href="' + styles + '">' +
     '</head>' +
     '<body>' +
-    '<header class="cf-example-header">cf-ui</header>' +
+    '<header class="cf-example-header">' +
+    '<a href="https://github.com/cloudflare/cf-ui">' +
+    '<img src="assets/logo.png" alt="cf-ui" height="50"/>' +
+    '</a>' +
+    '</header>' +
     '<nav class="cf-example-sidebar">' + sidebarHtml + '</nav>' +
     '<div class="cf-example-content">' + componentsHtml + '</div>' +
     '<script type="text/javascript" src="vendor.js"></script>' +
@@ -446,9 +471,9 @@ export function examplesBuildCss() {
     .pipe(gulp.dest('dist'));
 }
 
-export function examplesBuildIcons() {
-  return gulp.src(exampleIcons)
-    .pipe(gulp.dest('dist/icons'));
+export function examplesBuildAssets() {
+  return gulp.src(exampleAssets)
+    .pipe(gulp.dest('dist/assets'));
 }
 
 export const examplesClean = () => del(['dist']);
@@ -469,7 +494,7 @@ export const examplesBuild =
     gulp.parallel(
       examplesBuildHtml,
       examplesBuildCss,
-      examplesBuildIcons,
+      examplesBuildAssets,
       examplesBuildBundle,
       examplesBuildVendor
     ),
@@ -483,7 +508,7 @@ export const examplesDev =
     gulp.parallel(
       examplesBuildHtml,
       examplesBuildCss,
-      examplesBuildIcons,
+      examplesBuildAssets,
       examplesDevBundle,
       examplesDevVendor
     ),
@@ -491,7 +516,7 @@ export const examplesDev =
     function examplesWatcher() {
       gulp.watch(exampleComponents, examplesBuildHtml);
       gulp.watch(exampleStyles, examplesBuildCss);
-      gulp.watch(exampleIcons, examplesBuildIcons);
+      gulp.watch(exampleAssets, examplesBuildAssets);
       gulp.watch(scripts, () => compile(true));
     }
   );

@@ -95,37 +95,108 @@ body {
   border-radius: 3px 3px 0 0;
 }
 
-.cf-example__code {
+.cf-example__code,
+.cf-example__proptypes {
   border: 3px solid #000;
   border-radius: 0 0 3px 3px;
-  color: white;
+  background-color: #1d1f21;
+  color: #c5c8c6;
   -webkit-font-smoothing: antialiased;
+}
+
+.cf-example__code {
+  border-radius: 0 0 3px 3px;
+}
+
+.cf-example__code,
+.cf-example__proptypes_table {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
 }
 
-.cf-example__code pre {
+.cf-example__proptypes {
+  border-radius: 3px;
+}
+
+.cf-example__code pre,
+.cf-example__proptypes pre {
   margin: 0;
+  font-family: inherit;
   font-family: monaco, Consolas, "Lucida Console", monospace;
+}
+
+.cf-example__code pre {
   font-size: 0.8em;
 }
 
-.cf-example__proptypes table {
+.cf-example__proptypes_table table {
   border-spacing: 0;
   min-width: 100%;
+  background: #181A1D;
+  padding: 1em 0;
 }
 
-.cf-example__proptypes th {
-  background-color: #f9f9f9;
-  border-bottom: 3px solid #eee;
-}
-
-.cf-example__proptypes td,
-.cf-example__proptypes th {
-  padding: 5px 10px;
+.cf-example__proptypes_table td,
+.cf-example__proptypes_table th {
+  padding: 5px 0;
   text-align: left;
+  vertical-align: top;
 }
 
+.cf-example__proptypes_table th:first-child {
+  width: 20%;
+  min-width: 120px;
+  text-align: right;
+  padding-right: 1em;
+}
+
+.cf-example__proptypes_name {
+  margin: -3em 0 0;
+  padding: 4em 0 1em 1em;
+}
+
+.cf-example__proptypes_table pre {
+  margin: 0;
+}
+
+.cf-example__proptypes_name code,
+.cf-example__proptypes_table code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  white-space: pre-wrap;
+}
+
+.cf-example__proptypes_table pre,
+.cf-example__proptypes_table code {
+  display: block;
+  font-size: 0.9em;
+}
+
+.cf-example__proptypes_table a {
+  color: #00A9EB;
+}
+
+.cf-example__code::before,
+.cf-example__proptypes::before {
+  display: block;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: #999;
+}
+
+.cf-example__code::before {
+  content: "Example Code";
+  margin-bottom: 1em;
+}
+
+.cf-example__proptypes::before {
+  content: "PropTypes";
+  margin-left: 1.5em;
+  margin-top: 1.25em;
+}
 
 #cf-component-flex--basic .cf-flex + .cf-flex {
   margin-top: 10px;
@@ -189,7 +260,6 @@ body {
  * Code Highlighting
  */
 
-.cf-example__code { background-color: #1d1f21; color: #c5c8c6; }
 .cf-example__code .invisible-character { color: rgba(197, 200, 198, 0.2); }
 .cf-example__code .indent-guide { color: rgba(197, 200, 198, 0.2); }
 .cf-example__code .wrap-guide { background-color: rgba(197, 200, 198, 0.1); }
