@@ -17,6 +17,10 @@ const child = require('child_process');
 const gutil = require('gulp-util');
 const chalk = require('chalk');
 const babel = require('gulp-babel');
+const babylon = require('babylon');
+const traverse = require('babel-traverse').default;
+const generate = require('babel-generator').default;
+const t = require('babel-types');
 const newer = require('gulp-newer');
 const watch = require('gulp-watch');
 const karma = require('karma');
@@ -112,6 +116,18 @@ function compile(watch) {
     .pipe(gulp.dest(dest));
 };
 
+function isLocalPropTypeRequire(node) {
+  let isPropType = node.id && node.id.name && _.includes(node.id.name, 'PropTypes');
+  let isLocalRequire = false;
+
+  if (node.init && node.init.callee) {
+    let isRequire = node.init.callee.name === 'require';
+    let args = node.init.arguments;
+    isLocalRequire = isRequire && args && args.length && _.includes(args[0].value, './');
+  }
+  return isPropType && isLocalRequire;
+}
+
 function initBrowserify(files, output, externals, requires, transforms, watch) {
   const options = {
     transform: transforms
@@ -169,6 +185,152 @@ function initBrowserifyVendor(watch) {
   return initBrowserify([], 'vendor.js', null, vendors, [], watch);
 }
 
+function parseSourceFile(source, fileName) {
+  let proptypesHtml = '';
+
+  const ast = babylon.parse(source, {
+    sourceType: 'module',
+    plugins: ['jsx' , 'classProperties', 'objectRestSpread']
+  });
+
+  let propTypes = [];
+  let componentName = fileName;
+
+  traverse(ast, {
+    enter(path) {
+      // Update the component name with the variable name used in its class definition
+      if (t.isClassDeclaration(path.node)) {
+        componentName = path.node.id.name;
+      }
+
+      // iterate over each prop and populate an array containing the name of
+      // the prop and its value
+      if (t.isClassProperty(path.node) && t.isIdentifier(path.node.key, { name: 'propTypes' } )) {
+        path.node.value.properties.forEach(prop => {
+          let propValue = generate(prop.value, {}, source).code;
+          const propName = prop.key.name;
+
+          // look up the variable name and see if it's being required from a
+          // local file. If it is, convert the text to a hyperlink so we can
+          // jump to the proptype definition on the page.
+          let variableName = prop.value.object ? prop.value.object.name : null;
+          if (!variableName && prop.value.object) {
+            variableName = prop.value.object.object ? prop.value.object.object.name : null;
+          }
+          const binding = variableName && path.scope.getBinding(variableName);
+          if (binding && isLocalPropTypeRequire(binding.path.node)) {
+            propValue = propValue.replace(variableName, '<a href="#' + variableName + '">' + variableName + '</a>');
+          }
+
+          propTypes.push({
+            name: propName,
+            value: propValue
+          });
+        });
+      }
+    }
+  });
+
+  if (propTypes.length) {
+    proptypesHtml += (
+      '<div class="cf-proptypes">' +
+      '<div class="cf-example__name"><h3>PropTypes for ' + componentName + '</h3></div>' +
+      '<div class="cf-example__proptypes">' +
+      '<table><tr><th>Prop Name</th><th>Value</th></tr>' +
+      propTypes.map(prop => {
+        return '<tr><td>' + prop.name + '</td><td>' + prop.value + '</td></tr>';
+      }).join('') +
+      '</table>' +
+      '</div>' +
+      '</div>'
+    );
+  }
+
+  return proptypesHtml;
+}
+
+function parsePropTypeFile(source, fileName) {
+  let props = [];
+  let proptypesHtml = '';
+  fileName = fileName.replace('.js', '');
+
+  const ast = babylon.parse(source, {
+    sourceType: 'module',
+    plugins: ['jsx' , 'classProperties', 'objectRestSpread']
+  });
+
+  traverse(ast, {
+    enter(path) {
+      const node = path.node;
+      if (
+        t.isMemberExpression(node.left) &&
+        t.isIdentifier(node.left.object, { name: 'module' }) &&
+        t.isIdentifier(node.left.property, { name: 'exports' }) &&
+        t.isObjectExpression(node.right)
+      ) {
+        node.right.properties.forEach(prop => {
+          const propName = prop.key.name;
+          const binding = path.scope.getBinding(propName);
+          const value = binding.path.node.init;
+          let propValue = generate(value, { concise: false }, source).code;
+
+          props.push({
+            name: propName,
+            source: source,
+            value: propValue
+          });
+        });
+      }
+    }
+  });
+
+  if (props.length) {
+    proptypesHtml += (
+      '<div class="cf-proptypes">' +
+      '<div class="cf-example__name"><h4 id="' + fileName + '">' + fileName + ' definitions</h3></div>' +
+      '<div class="cf-example__proptypes">' +
+      '<table><tr><th>Prop Name</th><th>Value</th></tr>' +
+      props.map(prop => {
+        return '<tr><td>' + prop.name + '</td><td>' + prop.value + '</td></tr>';
+      }).join('') +
+      '</table>' +
+      '</div>' +
+      '</div>'
+    );
+  }
+
+  return proptypesHtml;
+}
+
+function generatePropTypeDocs(packagesPath, pkg) {
+  let proptypesHtml = '';
+  let proptypeDefinitionsHtml = '';
+
+  const sourceDir = path.resolve(packagesPath, pkg, 'src')
+
+  if (!pathExists.sync(sourceDir)) {
+    return;
+  }
+
+  const sourceFiles = fs.readdirSync(sourceDir);
+
+  sourceFiles.forEach(fileName => {
+    const sourcePath = path.join(sourceDir, fileName);
+    const source = fs.readFileSync(sourcePath).toString();
+
+    if (_.includes(fileName, 'PropTypes')) {
+      proptypeDefinitionsHtml += parsePropTypeFile(source, fileName);
+    } else {
+      proptypesHtml += parseSourceFile(source, fileName);
+    }
+  });
+
+  // show prop type definitions after component prop types
+  proptypesHtml += proptypeDefinitionsHtml;
+
+  return proptypesHtml;
+}
+
 export function examplesBuildHtml(cb) {
   const packagesPath = path.resolve(__dirname, 'packages');
   const packages = fs.readdirSync(packagesPath).filter(pkg => {
@@ -212,6 +374,8 @@ export function examplesBuildHtml(cb) {
     });
 
     sidebarHtml += '<a href="#' + pkg + '">' + pkg + '</a>';
+
+    componentsHtml += generatePropTypeDocs(packagesPath, pkg);
   });
 
   let styles;
