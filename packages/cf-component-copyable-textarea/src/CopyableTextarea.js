@@ -19,7 +19,8 @@ const overlayStyles = {
 class CopyableTextarea extends React.Component {
   static propTypes = {
     name: PropTypes.string.isRequired,
-    value: PropTypes.string.isRequired
+    value: PropTypes.string.isRequired,
+    onCopy: PropTypes.func
   };
 
   state = {
@@ -31,7 +32,7 @@ class CopyableTextarea extends React.Component {
     e.preventDefault();
 
     const target = findDOMNode(this.refs.textarea);
-
+    const {onCopy} = this.props;
     target.focus();
     target.select();
 
@@ -40,6 +41,10 @@ class CopyableTextarea extends React.Component {
       success = document.execCommand('copy');
     } catch(e) {
       success = false;
+    }
+
+    if (success && onCopy) {
+      onCopy();
     }
 
     this.setState({
