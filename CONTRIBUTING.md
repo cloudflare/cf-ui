@@ -5,7 +5,7 @@
 To get started run:
 
 ```sh
-$ git clone ssh://git@stash.cfops.it:7999/~jkyle/cf-ui.git
+$ git clone ssh://git@github.com:cloudflare/cf-ui.git
 $ npm install
 $ npm run bootstrap
 ```
