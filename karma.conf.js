@@ -5,7 +5,7 @@ import path from 'path';
 const customLaunchers = {};
 
 const args = minimist(process.argv.slice(2), {
-  string: ['env', 'build-branch', 'build-number', 'suace-username', 'sauce-key'],
+  string: ['env', 'build-branch', 'build-number', 'sauce-username', 'sauce-key'],
   default: {
     env: process.env.NODE_ENV,
     'build-branch': process.env.BUILD_BRANCH,
