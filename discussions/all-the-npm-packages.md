@@ -13,13 +13,8 @@ version them independently so apps can move at different speeds.
 
 ### Thinking
 
-We have a bunch of separate JavaScript applications at CloudFlare:
-
-- WWW
-- Ninja Panel
-- Parter Portal
-- Partner integrations
-- A bunch of internal tools
+We have a bunch of separate JavaScript applications at CloudFlare both
+internal and external.
 
 Sharing code between all these applications is important– we don't want to
 start every new application from scratch when we have an entire framework built
