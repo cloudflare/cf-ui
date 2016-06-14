@@ -23,3 +23,4 @@ If any of this interests you, maybe you should consider
 - [Backbone to React](backbone-to-react.md)
 - [No Customizing `className`'s](no-customizing-classnames.md)
 - [Solving problems in layers](solving-problems-in-layers.md)
+- [Die inheritance die](die-inheritance-die.md)
