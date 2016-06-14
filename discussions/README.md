@@ -22,3 +22,4 @@ If any of this interests you, maybe you should consider
 - [ALL THE NPM PACKAGES!!!](all-the-npm-packages.md)
 - [Backbone to React](backbone-to-react.md)
 - [No Customizing `className`'s](no-customizing-classnames.md)
+- [Solving problems in layers](solving-problems-in-layers.md)
