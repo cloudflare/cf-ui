@@ -1,7 +1,7 @@
 {
   "name": "cf-util-http-poll",
   "description": "CloudFlare HTTP Polling Util",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
@@ -9,7 +9,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-util-http": "^1.2.4"
+    "cf-util-http": "^2.0.0"
   },
   "devDependencies": {
     "cf-test-server": "^1.0.0"

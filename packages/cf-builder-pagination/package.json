@@ -1,7 +1,7 @@
 {
   "name": "cf-builder-pagination",
   "description": "CloudFlare Pagination Builder",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
@@ -14,7 +14,7 @@
     "react": "^0.14.2"
   },
   "devDependencies": {
-    "cf-test-stub": "^1.0.0",
+    "cf-test-stub": "^1.0.1",
     "enzyme": "^2.3.0",
     "react-addons-test-utils": "^0.14.2",
     "react-dom": "^0.14.2"
