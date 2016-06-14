@@ -150,6 +150,3 @@ interactions is because:
 
 > **Note:** I'm specifically talking about not unit testing user interaction.
 > The state => ui unit tests should definitely stick around.
-
-I'm interested in what others think about this, and what problems might arise
-if we do this.
