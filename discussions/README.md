@@ -15,3 +15,4 @@ If any of this interests you, maybe you should consider
 - [Functional Testing Containers](functional-testing-containers.md)
 - [Broken Promises](broken-promises.md)
 - [cf-ui monorepo](cf-ui-monorepo.md)
+- [Wrapping External APIs](Wrapping-external-apis.md)
