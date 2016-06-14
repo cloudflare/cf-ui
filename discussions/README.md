@@ -18,3 +18,4 @@ If any of this interests you, maybe you should consider
 - [Wrapping External APIs](wrapping-external-apis.md)
 - [Plan for Abstraction](plan-for-abstraction.md)
 - [No ES6 Modules](no-es6-modules.md)
+- [Selectors Lite™](selectors-lite.md)
