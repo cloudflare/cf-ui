@@ -1,29 +1,46 @@
-# cf-test-store
+# cf-test-server
 
-> CloudFlare Store Test Util
+> CloudFlare Server Test Util
 
 ## Installation
 
 ```sh
-$ npm install cf-test-store
+$ npm install cf-test-server
 ```
 
 ## Usage
 
 ```js
 const assert = require('assert');
-const {createMockStore} = require('cf-test-store');
-const exampleActions = require('../src/actions/example');
+const {createFakeServer} = require('cf-test-server');
+const http = require('cf-util-http');
 
-describe('exampleActions', () => {
-  it('should do something', () => {
-    const store = createMockStore();
-    store.dispatch(exampleActions.doSomething());
-    assert.deepEqual(store.getActions(), [{
-      type: 'EXAMPLE_ACTION_ONE'
+describe('apiEndpoints', () => {
+  it('should do something', done => {
+    const server = createFakeServer();
+    
+    server.respondWith('GET', '/api/endpoint', 200, {
+      'Content-Type': 'application/json'
     }, {
-      type: 'EXAMPLE_ACTION_TWO'
-    }]);
+      value: 'foo'
+    });
+    
+    http.get('/api/endpoint', null, (err, res) => {
+      if (err) {
+        done(err);
+      } else {
+        try {
+          assert.equal(res.status, 200);
+          assert.equal(res.headers['Content-Type'], 'application/json');
+          assert.equal(res.body.value, 'foo');
+          done();
+        } catch (err) {
+          done(err);
+        }
+      }
+    });
+    
+    server.respond();
   });
 });
 ```
