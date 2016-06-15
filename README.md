@@ -9,6 +9,8 @@ projects such as [React](https://facebook.github.io/react/),
 
 **[Read the introductory blog post &rarr;](https://blog.cloudflare.com/cf-ui/)**
 
+**[Interested in more of our technical decisions? See `cf-ui/discussions` &rarr;](discussions)**
+
 ## Installation
 
 ```js
