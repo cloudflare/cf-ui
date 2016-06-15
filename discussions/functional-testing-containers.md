@@ -65,7 +65,7 @@ it('should do something', function() {
 });
 ```
 
-This seems like a good test, but the point that John made was that this isn't
+This seems like a good test, but the point that was made was that this isn't
 technically a unit test because we are re-testing that `<UiComponent/>` calls
 `onClick` when it has been clicked.
 
