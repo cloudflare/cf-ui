@@ -11,15 +11,15 @@
   "dependencies": {
     "cf-component-table": "^1.0.1",
     "cf-pony": "^1.1.0",
-    "react": "^0.14.2",
+    "react": "^0.14.2 || ^15.0.0-0",
     "react-redux": "^3.1.0"
   },
   "devDependencies": {
     "cf-component-button": "^2.2.3",
     "cf-test-store": "^1.0.0",
     "enzyme": "^2.3.0",
-    "react-addons-test-utils": "^0.14.2",
-    "react-dom": "^0.14.2",
+    "react-addons-test-utils": "^15.0.0-0",
+    "react-dom": "^15.0.0-0",
     "redux": "^3.0.2",
     "redux-thunk": "^2.0.1"
   }

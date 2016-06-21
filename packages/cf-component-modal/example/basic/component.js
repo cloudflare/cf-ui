@@ -55,11 +55,26 @@ class Component extends React.Component {
   }
 }
 
+class Application extends React.Component {
+  render() {
+    return (
+      <GatewayProvider>
+        <div>
+          {this.props.children}
+          <GatewayDest name="modal"/>
+        </div>
+      </GatewayProvider>
+    );
+  }
+}
+
 const root = document.getElementById('cf-component-modal--basic');
 
 ReactModal2.getApplicationElement = () => root;
 
 render(
-  <Component/>,
+  <Application>
+    <Component/>
+  </Application>,
   root
 );

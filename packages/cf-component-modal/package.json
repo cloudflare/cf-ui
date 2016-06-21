@@ -9,16 +9,16 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-component-icon": "^1.1.2",
     "cf-component-heading": "^1.0.5",
-    "react": "^0.14.2",
-    "react-addons-css-transition-group": "^0.14.2",
-    "react-gateway": "^1.1.0",
-    "react-modal2": "^3.0.1"
+    "cf-component-icon": "^1.1.2",
+    "react": "^0.14.2 || ^15.0.0-0",
+    "react-addons-css-transition-group": "^0.14.2 || ^15.0.0-0",
+    "react-gateway": "^2.2.0",
+    "react-modal2": "^3.1.0"
   },
   "devDependencies": {
     "assert-equal-jsx": "^1.0.0",
     "cf-component-button": "^2.2.3",
-    "react-dom": "^0.14.2"
+    "react-dom": "^15.0.0-0"
   }
 }
