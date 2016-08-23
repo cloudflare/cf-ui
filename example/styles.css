@@ -159,7 +159,7 @@ button:not(.cf-btn) {
   margin-bottom: -10px;
 }
 
-.cf-card__footer_message {
+.cf-card__footer {
     font-size: 0.8rem;
     color: #7c7c7c;
     line-height: 1.3;
