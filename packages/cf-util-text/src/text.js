@@ -4,9 +4,9 @@ function getText(id) {
   if (!text[id]) {
     console.error('Missing text for: "' + id + '"');
     return id;
-  } else {
-    return text[id];
-  }
+  } 
+  
+  return text[id];
 }
 
 function setText(id, value) {

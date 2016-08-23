@@ -159,6 +159,13 @@ button:not(.cf-btn) {
   margin-bottom: -10px;
 }
 
+.cf-card__footer_message {
+    font-size: 0.8rem;
+    color: #7c7c7c;
+    line-height: 1.3;
+    margin-top: 1.5em;
+}
+
 .cf-card__drawers_container--open {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
 }

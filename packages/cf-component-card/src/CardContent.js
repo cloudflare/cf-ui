@@ -3,7 +3,8 @@ const {PropTypes} = React;
 
 class CardContent extends React.Component {
   static propTypes = {
-    title: PropTypes.any.isRequired
+    title: PropTypes.any.isRequired,
+    footerMessage: PropTypes.string
   };
 
   render() {
@@ -13,6 +14,11 @@ class CardContent extends React.Component {
           {this.props.title}
         </h3>
         {this.props.children}
+        { this.props.footerMessage ? (
+          <div className="cf-card__footer_message">
+            {this.props.footerMessage}
+          </div> ) : null 
+        }
       </div>
     );
   }

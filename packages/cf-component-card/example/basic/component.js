@@ -26,7 +26,7 @@ class Component extends React.Component {
     return (
       <Card>
         <CardSection>
-          <CardContent title="Hello World">
+          <CardContent title="Hello World" footerMessage="This is a footer message.">
             <p>Here is some content.</p>
             <CardMessages messages={[
               { type: 'info', content: 'Info Message'},
