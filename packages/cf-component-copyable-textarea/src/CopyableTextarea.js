@@ -38,7 +38,7 @@ class CopyableTextarea extends React.Component {
     let success;
     try {
       success = document.execCommand('copy');
-    } catch(e) {
+    } catch(exception) {
       success = false;
     }
 
