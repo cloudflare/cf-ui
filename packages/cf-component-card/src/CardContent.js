@@ -1,5 +1,6 @@
 const React = require('react');
 const {PropTypes} = React;
+const Text = require('cf-component-text');
 
 class CardContent extends React.Component {
   static propTypes = {
@@ -16,7 +17,7 @@ class CardContent extends React.Component {
         {this.props.children}
         { this.props.footerMessage ? (
           <div className="cf-card__footer_message">
-            {this.props.footerMessage}
+            <Text size="small" type="muted">{this.props.footerMessage}</Text>
           </div> ) : null 
         }
       </div>

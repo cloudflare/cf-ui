@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "cf-component-link": "^3.0.2",
+    "cf-component-text": "^1.1.5",
     "react": "^0.14.2"
   },
   "devDependencies": {

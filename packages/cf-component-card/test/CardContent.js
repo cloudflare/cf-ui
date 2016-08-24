@@ -22,7 +22,7 @@ describe('CardContent', function() {
         <h3 className="cf-card__title">Title</h3>
         CardContent
         <div className="cf-card__footer_message">
-          Footer Message
+          <div className="cf-text--small cf-text--muted">Footer Message</div>
         </div>
       </div>
     );
