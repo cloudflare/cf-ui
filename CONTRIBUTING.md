@@ -5,8 +5,9 @@
 To get started run:
 
 ```sh
-$ git clone ssh://git@github.com:cloudflare/cf-ui.git
+$ git clone git@github.com:cloudflare/cf-ui.git
 $ npm install
+$ npm run build
 $ npm run bootstrap
 ```
 
