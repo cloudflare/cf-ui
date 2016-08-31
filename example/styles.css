@@ -870,7 +870,7 @@ a.cf-link--disabled {
  * Loading
  */
 
-.cf-loading {
+.cf-icon--loading {
   display: inline-block;
 
   line-height: normal;
@@ -897,7 +897,7 @@ a.cf-link--disabled {
   transform-origin: center;
 }
 
-.cf-loading:before {
+.cf-icon--loading:before {
   content: "\e925";
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icons" !important;
@@ -905,7 +905,7 @@ a.cf-link--disabled {
   speak: none;
 }
 
-.cf-loading__label {
+.cf-icon--loading__span {
   display: inline-block;
   width: 0;
   height: 0;
