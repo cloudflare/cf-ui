@@ -9,6 +9,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
+    "cf-component-icon": "^1.1.2",
     "react": "^0.14.2"
   },
   "devDependencies": {
