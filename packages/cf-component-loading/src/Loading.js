@@ -1,11 +1,10 @@
 const React = require('react');
+const Icon = require('cf-component-icon');
 
 class Loading extends React.Component {
   render() {
     return (
-      <div className="cf-icon--loading" role="status">
-        <span className="cf-icon--loading__span">Loading</span>
-      </div>
+      <Icon type="loading" label="Loading"/>
     );
   }
 }

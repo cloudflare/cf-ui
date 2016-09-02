@@ -905,13 +905,6 @@ a.cf-link--disabled {
   speak: none;
 }
 
-.cf-icon--loading__span {
-  display: inline-block;
-  width: 0;
-  height: 0;
-  overflow: hidden;
-}
-
 @keyframes loading {
    20% { transform: rotate3d(0, 0, 1,  15deg); }
    40% { transform: rotate3d(0, 0, 1, -10deg); }
