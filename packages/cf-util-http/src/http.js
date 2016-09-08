@@ -69,7 +69,7 @@ function request(method, url, opts, callback) {
   beforeSendCallbacks.forEach(cb => cb(opts));
 
   // Configure request
-  const req = superagent[METHODS[method]](opts.url);
+  const req = superagent[METHODS[ops.method]](opts.url);
 
   if (opts.parameters) {
     req.query(opts.parameters);
