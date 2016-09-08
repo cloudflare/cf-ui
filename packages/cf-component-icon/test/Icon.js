@@ -40,4 +40,12 @@ describe('Icon', function() {
       <i className="cf-icon cf-icon--info-sign"></i>
     );
   });
+
+    it('should render role', function() {
+    assertEqualJSX(
+      <Icon type="loading" label={false} role="status"/>,
+      // should equal
+      <i className="cf-icon cf-icon--loading" role="status"></i>
+    );
+  });
 });

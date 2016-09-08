@@ -7,7 +7,7 @@ describe('Loading', function() {
   it('should render', function() {
     assertEqualJSX(
       <Loading/>,
-        <Icon type="loading" label="Loading"/>
+        <Icon type="loading" label="Loading" role="status"/>
     );
   });
 });

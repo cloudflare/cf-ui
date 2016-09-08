@@ -13,7 +13,9 @@ class Icon extends React.Component {
     border: PropTypes.bool,
     spin: PropTypes.bool,
     muted: PropTypes.bool,
-    white: PropTypes.bool
+    white: PropTypes.bool,
+    role: PropTypes.string
+
   };
 
   render() {
@@ -29,7 +31,7 @@ class Icon extends React.Component {
     if (this.props.white) className += ' cf-icon--white';
 
     return (
-      <i className={className}>
+      <i className={className} role={this.props.role}>
         {this.props.label && (
           <span className="cf-icon__label">{this.props.label}</span>
         )}
