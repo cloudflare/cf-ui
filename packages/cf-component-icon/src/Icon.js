@@ -15,7 +15,6 @@ class Icon extends React.Component {
     muted: PropTypes.bool,
     white: PropTypes.bool,
     role: PropTypes.string
-
   };
 
   render() {
