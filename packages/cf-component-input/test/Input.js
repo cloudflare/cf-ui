@@ -71,5 +71,21 @@ describe('Input', function() {
     );
   });
 
+  it('should render with autocomplete', function () {
+    assertEqualJSX(
+      <Input
+        name="example"
+        value=""
+        autoComplete="off"
+        onChange={() => {}}/>,
+      <input
+        type="text"
+        className="cf-input cf-input--text"
+        name="example"
+        value=""
+        autoComplete="off"
+        onChange={() => {}}/>
+    );
+  });
 
 });
