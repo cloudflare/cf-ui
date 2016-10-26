@@ -14,6 +14,7 @@ class Input extends React.Component {
     value: PropTypes.string.isRequired,
     onChange: PropTypes.func.isRequired,
     placeholder: PropTypes.string,
+    autoComplete: PropTypes.string,
     invalid: PropTypes.bool
   };
 
@@ -39,7 +40,8 @@ class Input extends React.Component {
         name={this.props.name}
         value={this.props.value}
         onChange={this.handleChange}
-        placeholder={this.props.placeholder}/>
+        placeholder={this.props.placeholder}
+        autoComplete={this.props.autoComplete}/>
     );
   }
 }
