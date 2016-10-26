@@ -39,7 +39,8 @@ class Input extends React.Component {
         name={this.props.name}
         value={this.props.value}
         onChange={this.handleChange}
-        placeholder={this.props.placeholder}/>
+        placeholder={this.props.placeholder}
+        autocomplete={this.props.autocomplete}/>
     );
   }
 }
