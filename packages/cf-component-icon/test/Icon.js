@@ -41,7 +41,7 @@ describe('Icon', function() {
     );
   });
 
-    it('should render role', function() {
+  it('should render role', function() {
     assertEqualJSX(
       <Icon type="loading" label={false} role="status"/>,
       // should equal

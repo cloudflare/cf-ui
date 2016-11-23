@@ -1,7 +1,7 @@
 {
   "name": "cf-component-loading",
   "description": "CloudFlare Loading Component",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
@@ -9,7 +9,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-component-icon": "^1.1.2",
+    "cf-component-icon": "^1.1.3",
     "react": "^0.14.2"
   },
   "devDependencies": {
