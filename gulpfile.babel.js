@@ -13,6 +13,7 @@ const buffer = require('vinyl-buffer');
 const eslint = require('gulp-eslint');
 const uglify = require('gulp-uglify');
 const mkdirp = require('mkdirp');
+const envify = require('envify/custom');
 const child = require('child_process');
 const gutil = require('gulp-util');
 const chalk = require('chalk');
@@ -147,6 +148,14 @@ function initBrowserify(files, output, externals, requires, transforms, watch) {
     bundler.require(requires);
   }
 
+  if (!watch) {
+    bundler.transform(envify({
+      NODE_ENV: 'production'
+    }), {
+      global: true
+    });
+  }
+
   if (watch) {
     bundler = watchify(bundler);
     bundler.on('update', update);
@@ -159,8 +168,8 @@ function initBrowserify(files, output, externals, requires, transforms, watch) {
 
   function update() {
     return bundler.bundle()
-      .on('error', err => {
-        gutil.log(err);
+      .on('error', function(err) {
+        gutil.log(err.stack);
         this.emit('end');
       })
       .pipe(source(output))

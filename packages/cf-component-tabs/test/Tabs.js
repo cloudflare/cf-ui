@@ -15,7 +15,6 @@ describe('Tabs', function() {
       </Tabs>,
       // should equal
       <section className="cf-tabs">
-        <noscript/>
         <ul className="cf-tabs__group" role="tablist">
           <li role="tab" tabIndex="0" aria-controls="1" aria-selected="false" className="cf-tabs__item">One</li>
           <li role="tab" tabIndex="0" aria-controls="2" aria-selected="true" className="cf-tabs__item cf-tabs__item--active">Two</li>

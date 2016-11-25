@@ -11,13 +11,13 @@
   "dependencies": {
     "cf-component-link": "^3.0.2",
     "exenv": "^1.2.0",
-    "react": "^0.14.2"
+    "react": "^0.14.2 || ^15.0.0-0"
   },
   "devDependencies": {
     "assert-equal-jsx": "^1.0.0",
     "cf-component-button": "^2.2.3",
     "cf-test-focus": "^1.0.1",
     "cf-util-route-handler": "^3.0.0",
-    "react-dom": "^0.14.2"
+    "react-dom": "^15.0.0-0"
   }
 }

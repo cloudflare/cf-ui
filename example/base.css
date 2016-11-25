@@ -30,7 +30,7 @@ body {
 }
 
 .cf-example-content {
-  padding: 0 2rem;
+  padding: 0 2rem 3rem;
 }
 
 .cf-example__heading {
@@ -115,6 +115,7 @@ body {
 }
 
 .cf-example__proptypes {
+  margin: 20px 0;
   border-radius: 3px;
 }
 

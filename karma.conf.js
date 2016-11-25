@@ -130,6 +130,7 @@ module.exports = function(config) {
         }]
       ] || []),
       configure(bundle) {
+        bundle.external('react/addons');
         bundle.external('react/lib/ReactContext');
         bundle.external('react/lib/ExecutionEnvironment');
       }

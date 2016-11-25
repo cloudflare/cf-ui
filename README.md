@@ -13,9 +13,18 @@ projects such as [React](https://facebook.github.io/react/),
 
 ## Installation
 
-```js
+```bash
 $ npm install [package-name]
+$ npm run bootstrap
 ```
+## Viewing the Examples
+
+```bash
+$ npm run examples:[build|dev]:[internal:external]
+```
+
+Open `cf-ui/dist/index.html` in your browser.
+
 
 To view all of the available packages, see the [`packages/` directory](packages).
 
