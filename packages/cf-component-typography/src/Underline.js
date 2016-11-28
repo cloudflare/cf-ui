@@ -1,4 +1,5 @@
 const React = require('react');
+const {PropTypes} = React;
 
 class Underline extends React.Component {
   render() {
@@ -10,5 +11,8 @@ class Underline extends React.Component {
   }
 }
 
+Underline.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.node)
+};
 
 module.exports = Underline;

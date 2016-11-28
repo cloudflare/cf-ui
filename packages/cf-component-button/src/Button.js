@@ -2,25 +2,6 @@ const React = require('react');
 const {PropTypes} = React;
 
 class Button extends React.Component {
-  static propTypes = {
-    onClick: PropTypes.func.isRequired,
-    submit: PropTypes.bool,
-    type: PropTypes.oneOf([
-      'default',
-      'primary',
-      'success',
-      'warning',
-      'danger'
-    ]).isRequired,
-    disabled: PropTypes.bool,
-    loading: PropTypes.bool
-  };
-
-  static defaultProps = {
-    type: 'default',
-    submit: false
-  };
-
   render() {
     const {disabled, loading} = this.props;
     const type = this.props.submit ? 'submit' : 'button';
@@ -43,6 +24,26 @@ class Button extends React.Component {
       </button>
     );
   }
+}
+
+Button.propTypes = {
+  onClick: PropTypes.func.isRequired,
+  submit: PropTypes.bool,
+  type: PropTypes.oneOf([
+    'default',
+    'primary',
+    'success',
+    'warning',
+    'danger'
+  ]).isRequired,
+  disabled: PropTypes.bool,
+  loading: PropTypes.bool,
+  children: PropTypes.arrayOf(PropTypes.node)
+};
+
+Button.defaultProps = {
+  type: 'default',
+  submit: false
 };
 
 module.exports = Button;

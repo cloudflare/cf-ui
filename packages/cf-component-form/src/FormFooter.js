@@ -11,4 +11,8 @@ class FormFooter extends React.Component {
   }
 }
 
+FormFooter.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.node)
+};
+
 module.exports = FormFooter;

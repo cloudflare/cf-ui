@@ -1,4 +1,5 @@
 const React = require('react');
+const {PropTypes} = React;
 
 class NotificationGlobalContainer extends React.Component {
   render() {
@@ -9,5 +10,9 @@ class NotificationGlobalContainer extends React.Component {
     );
   }
 }
+
+NotificationGlobalContainer.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.node)
+};
 
 module.exports = NotificationGlobalContainer;

@@ -1,4 +1,3 @@
-const combineStreams = require('stream-combiner');
 const sourcemaps = require('gulp-sourcemaps');
 const Highlights = require('highlights');
 const browserify = require('browserify');
@@ -68,7 +67,7 @@ function execSync(cmd) {
   return child.execSync(cmd, {
     encoding: 'utf8'
   }).trim();
-};
+}
 
 function fixErrorHandling() {
   return plumber({
@@ -115,7 +114,7 @@ function compile(watch) {
     }))
     .pipe(babel())
     .pipe(gulp.dest(dest));
-};
+}
 
 function isLocalPropTypeRequire(node) {
   let isPropType = node.id && node.id.name && _.includes(node.id.name, 'PropTypes');
@@ -455,8 +454,8 @@ export function lint() {
     .pipe(eslint())
     .pipe(eslint.format())
     // for some reason eslint doesn't work without this
-    .on('data', file => {});
-};
+    .on('data', () => {});
+}
 
 export const test = cb => initKarmaServer(true, cb);
 const testWatch = cb => initKarmaServer(false, cb);
@@ -467,7 +466,7 @@ export function dev(cb) {
     lint();
   });
   testWatch(cb);
-};
+}
 
 export function examplesBuildCss() {
   return gulp.src(exampleStyles)

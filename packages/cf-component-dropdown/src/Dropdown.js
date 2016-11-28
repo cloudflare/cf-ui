@@ -4,18 +4,6 @@ const DropdownRegistry = require('./DropdownRegistry');
 const {canUseDOM} = require('exenv');
 
 class Dropdown extends React.Component {
-  static propTypes = {
-    onClose: PropTypes.func.isRequired,
-    align: PropTypes.oneOf(['left', 'right'])
-  };
-
-  static defaultProps = {
-    align: 'left'
-  };
-
-  static childContextTypes = {
-    dropdownRegistry: PropTypes.instanceOf(DropdownRegistry).isRequired
-  };
 
   getChildContext() {
     return {
@@ -26,6 +14,8 @@ class Dropdown extends React.Component {
   constructor(props, context) {
     super(props, context);
     this.dropdownRegistry = new DropdownRegistry();
+    this.handleDocumentClick = this.handleDocumentClick.bind(this);
+    this.handleDocumentKeydown = this.handleDocumentKeydown.bind(this);
   }
 
   componentDidMount() {
@@ -42,7 +32,7 @@ class Dropdown extends React.Component {
     }
   }
 
-  handleDocumentKeydown = event => {
+  handleDocumentKeydown(event) {
     const keyCode = event.keyCode;
 
     if (keyCode === 40) { // down
@@ -54,11 +44,11 @@ class Dropdown extends React.Component {
     } else if (keyCode === 27) { // esc
       this.props.onClose();
     }
-  };
+  }
 
-  handleDocumentClick = event => {
+  handleDocumentClick() {
     this.props.onClose();
-  };
+  }
 
   render() {
     return (
@@ -68,5 +58,19 @@ class Dropdown extends React.Component {
     );
   }
 }
+
+Dropdown.propTypes = {
+  onClose: PropTypes.func.isRequired,
+  align: PropTypes.oneOf(['left', 'right']),
+  children: PropTypes.arrayOf(PropTypes.node)
+};
+
+Dropdown.defaultProps = {
+  align: 'left'
+};
+
+Dropdown.childContextTypes = {
+  dropdownRegistry: PropTypes.instanceOf(DropdownRegistry).isRequired
+};
 
 module.exports = Dropdown;

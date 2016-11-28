@@ -2,16 +2,6 @@ const React = require('react');
 const {PropTypes} = React;
 
 class List extends React.Component {
-  static propTypes = {
-    ordered: PropTypes.bool,
-    unstyled: PropTypes.bool
-  };
-
-  static defaultProps = {
-    ordered: false,
-    unstyled: false
-  };
-
   render() {
     let tagName = 'ul';
     let className = 'cf-list';
@@ -28,5 +18,16 @@ class List extends React.Component {
     return React.createElement(tagName, { className }, this.props.children);
   }
 }
+
+List.propTypes = {
+  ordered: PropTypes.bool,
+  unstyled: PropTypes.bool,
+  children: PropTypes.arrayOf(PropTypes.node)
+};
+
+List.defaultProps = {
+  ordered: false,
+  unstyled: false
+};
 
 module.exports = List;

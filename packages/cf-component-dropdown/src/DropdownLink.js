@@ -1,19 +1,9 @@
 const React = require('react');
 const {PropTypes} = React;
-const {findDOMNode} = require('react-dom');
 const Link = require('cf-component-link');
 const DropdownRegistry = require('./DropdownRegistry');
 
 class DropdownLink extends React.Component {
-  static propTypes = {
-    to: PropTypes.string,
-    onClick: PropTypes.func,
-  };
-
-  static contextTypes = {
-    dropdownRegistry: PropTypes.instanceOf(DropdownRegistry).isRequired
-  };
-
   constructor(props, context) {
     if (!props.to && !props.onClick) {
       throw new Error('<DropdownLink/> requires either a `to` or `onClick` prop');
@@ -21,9 +11,13 @@ class DropdownLink extends React.Component {
 
     super(props, context);
     this.dropdownRegistry = context.dropdownRegistry;
+
+    this.handleLinkBlur = this.handleLinkBlur.bind(this);
+    this.handleLinkFocus = this.handleLinkFocus.bind(this);
+    this.focus = this.focus.bind(this);
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.dropdownRegistry.addChild(this);
   }
 
@@ -32,21 +26,21 @@ class DropdownLink extends React.Component {
   }
 
   focus() {
-    findDOMNode(this.refs.link).focus();
+    this.link.focus();
   }
 
-  handleLinkFocus = e => {
+  handleLinkFocus() {
     this.dropdownRegistry.setFocusedChild(this);
-  };
+  }
 
-  handleLinkBlur = e => {
+  handleLinkBlur() {
     this.dropdownRegistry.removeFocusedChild();
-  };
+  }
 
   render() {
     return (
       <li className="cf-dropdown__link" role="menuitem">
-        <Link ref="link"
+        <Link ref={node => this.link = node}
           to={this.props.to}
           onClick={this.props.onClick}
           onFocus={this.handleLinkFocus}
@@ -57,5 +51,15 @@ class DropdownLink extends React.Component {
     );
   }
 }
+
+DropdownLink.propTypes = {
+  to: PropTypes.string,
+  onClick: PropTypes.func,
+  children: PropTypes.arrayOf(PropTypes.node)
+};
+
+DropdownLink.contextTypes = {
+  dropdownRegistry: PropTypes.instanceOf(DropdownRegistry).isRequired
+};
 
 module.exports = DropdownLink;

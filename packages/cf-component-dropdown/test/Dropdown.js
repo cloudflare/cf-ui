@@ -6,7 +6,6 @@ const {render, unmountComponentAtNode} = require('react-dom');
 
 const Dropdown = require('../src/Dropdown');
 const DropdownLink = require('../src/DropdownLink');
-const DropdownSeparator = require('../src/DropdownSeparator');
 
 describe('Dropdown', function() {
   it('should render', function() {

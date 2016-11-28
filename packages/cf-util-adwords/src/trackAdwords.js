@@ -1,8 +1,6 @@
 const once = require('lodash/once');
 const promisescript = require('promisescript');
 
-const adwords = {};
-
 const ADWORDS_ASYNC_SCRIPT = 'https://www.googleadservices.com/pagead/conversion_async.js';
 const ADWORDS_GLOBAL = 'google_trackConversion';
 

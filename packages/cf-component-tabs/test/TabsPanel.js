@@ -4,13 +4,22 @@ const assertEqualJSX = require('assert-equal-jsx');
 const TabsPanel = require('../src/TabsPanel');
 
 class Context extends React.Component {
-  static propTypes = { activeTab: PropTypes.string.isRequired };
-  static childContextTypes = { activeTab: PropTypes.string.isRequired };
-  getChildContext() { return { activeTab: this.props.activeTab }; }
+  getChildContext() {
+    return { activeTab: this.props.activeTab };
+  }
   render() {
     return this.props.children;
   }
 }
+
+Context.propTypes = {
+  activeTab: PropTypes.string.isRequired,
+  children: PropTypes.arrayOf(PropTypes.node)
+};
+
+Context.childContextTypes = {
+  activeTab: PropTypes.string.isRequired
+};
 
 describe('TabsPanel', function() {
   it('should render', function() {

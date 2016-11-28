@@ -1,4 +1,5 @@
 const React = require('react');
+const {PropTypes} = React;
 
 class LayoutContainer extends React.Component {
   render() {
@@ -9,5 +10,9 @@ class LayoutContainer extends React.Component {
     );
   }
 }
+
+LayoutContainer.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.node)
+};
 
 module.exports = LayoutContainer;

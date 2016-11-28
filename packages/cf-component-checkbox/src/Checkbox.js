@@ -2,20 +2,9 @@ const React = require('react');
 const {PropTypes} = React;
 
 class Checkbox extends React.Component {
-  static propTypes = {
-    label: PropTypes.oneOfType([
-      PropTypes.string,
-      PropTypes.oneOf([false])
-    ]).isRequired,
-    name: PropTypes.string.isRequired,
-    value: PropTypes.string.isRequired,
-    checked: PropTypes.bool.isRequired,
-    onChange: PropTypes.func.isRequired
-  };
-
-  handleChange = e => {
+  handleChange(e) {
     this.props.onChange(e.target.checked);
-  };
+  }
 
   render() {
     let className = 'cf-checkbox';
@@ -42,5 +31,16 @@ class Checkbox extends React.Component {
     );
   }
 }
+
+Checkbox.propTypes = {
+  label: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.oneOf([false])
+  ]).isRequired,
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  checked: PropTypes.bool.isRequired,
+  onChange: PropTypes.func.isRequired
+};
 
 module.exports = Checkbox;

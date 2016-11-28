@@ -1,4 +1,5 @@
 const React = require('react');
+const {PropTypes} = React;
 const Code = require('./Code');
 
 class CodeBlock extends React.Component {
@@ -12,5 +13,9 @@ class CodeBlock extends React.Component {
     );
   }
 }
+
+CodeBlock.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.node)
+};
 
 module.exports = CodeBlock;

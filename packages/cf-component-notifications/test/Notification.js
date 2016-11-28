@@ -1,6 +1,6 @@
 const React = require('react');
 const {expect} = require('chai');
-const {render, unmountComponentAtNode, findDOMNode} = require('react-dom');
+const {render, unmountComponentAtNode} = require('react-dom');
 const TestUtils = require('react-addons-test-utils');
 const Notification = require('../src/Notification');
 
@@ -60,11 +60,11 @@ describe('Notification', function() {
     );
 
     delay(50, () => {
-      TestUtils.Simulate.mouseEnter(findDOMNode(instance));
+      TestUtils.Simulate.mouseEnter(instance);
 
       delay(150, () => {
         expect(called).to.be.false;
-        TestUtils.Simulate.mouseLeave(findDOMNode(instance));
+        TestUtils.Simulate.mouseLeave(instance);
 
         delay(150, () => {
           expect(called).to.be.true;

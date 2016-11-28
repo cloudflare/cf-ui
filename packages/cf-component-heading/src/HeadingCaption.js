@@ -1,4 +1,5 @@
 const React = require('react');
+const {PropTypes} = React;
 
 class HeadingCaption extends React.Component {
   render() {
@@ -9,5 +10,9 @@ class HeadingCaption extends React.Component {
     );
   }
 }
+
+HeadingCaption.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.node)
+};
 
 module.exports = HeadingCaption;

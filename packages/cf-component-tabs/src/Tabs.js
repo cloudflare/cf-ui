@@ -4,19 +4,6 @@ const Viewport = require('cf-component-viewport');
 const Select = require('cf-component-select');
 
 class Tabs extends React.Component {
-  static propTypes = {
-    onChange: PropTypes.func.isRequired,
-    activeTab: PropTypes.string.isRequired,
-    tabs: PropTypes.arrayOf(PropTypes.shape({
-      id: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
-    })).isRequired
-  };
-
-  static childContextTypes = {
-    activeTab: PropTypes.string.isRequired
-  };
-
   getChildContext() {
     return {
       activeTab: this.props.activeTab
@@ -40,7 +27,7 @@ class Tabs extends React.Component {
       <section className="cf-tabs">
         <Viewport size="mobile">
           <Select
-            onChange={this.handleChange}
+            onChange={this.handleChange.bind(this)}
             value={this.props.activeTab}
             options={this.props.tabs.map(tab => {
               return {
@@ -79,5 +66,20 @@ class Tabs extends React.Component {
     );
   }
 }
+
+Tabs.propTypes = {
+  onChange: PropTypes.func.isRequired,
+  active: PropTypes.string.isRequired,
+  activeTab: PropTypes.string.isRequired,
+  tabs: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string.isRequired,
+    label: PropTypes.string.isRequired
+  })).isRequired,
+  children: PropTypes.arrayOf(PropTypes.node)
+};
+
+Tabs.childContextTypes = {
+  activeTab: PropTypes.string.isRequired
+};
 
 module.exports = Tabs;

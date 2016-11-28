@@ -30,7 +30,7 @@ class DropdownRegistry {
     this._currentFocusIndex = this._links.indexOf(child);
   }
 
-  removeFocusedChild(child) {
+  removeFocusedChild() {
     this._currentFocusIndex = -1;
   }
 }

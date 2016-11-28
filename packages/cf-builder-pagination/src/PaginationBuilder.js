@@ -7,17 +7,6 @@ const {
 const Icon = require('cf-component-icon');
 
 class PaginationBuilder extends React.Component {
-  static propTypes = {
-    onPageChange: PropTypes.func.isRequired,
-    loading: PropTypes.bool,
-
-    totalCount: PropTypes.number.isRequired,
-    page: PropTypes.number.isRequired,
-    perPage: PropTypes.number.isRequired,
-
-    infoFormatter: PropTypes.func
-  };
-
   render() {
     const {totalCount: totalItems, page, perPage, infoFormatter, loading, onPageChange} = this.props;
 
@@ -91,5 +80,16 @@ class PaginationBuilder extends React.Component {
     );
   }
 }
+
+PaginationBuilder.propTypes = {
+  onPageChange: PropTypes.func.isRequired,
+  loading: PropTypes.bool,
+
+  totalCount: PropTypes.number.isRequired,
+  page: PropTypes.number.isRequired,
+  perPage: PropTypes.number.isRequired,
+
+  infoFormatter: PropTypes.func
+};
 
 module.exports = PaginationBuilder;

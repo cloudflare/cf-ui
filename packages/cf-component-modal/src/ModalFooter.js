@@ -2,14 +2,6 @@ const React = require('react');
 const {PropTypes} = React;
 
 class ModalFooter extends React.Component {
-  static propTypes = {
-    simple: PropTypes.bool
-  };
-
-  static defaultProps = {
-    simple: false
-  };
-
   render() {
     let className = 'cf-modal__footer';
 
@@ -24,5 +16,14 @@ class ModalFooter extends React.Component {
     );
   }
 }
+
+ModalFooter.propTypes = {
+  simple: PropTypes.bool,
+  children: PropTypes.arrayOf(PropTypes.node)
+};
+
+ModalFooter.defaultProps = {
+  simple: false
+};
 
 module.exports = ModalFooter;

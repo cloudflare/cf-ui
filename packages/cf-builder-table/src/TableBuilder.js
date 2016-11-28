@@ -11,20 +11,6 @@ const {
 } = require('cf-component-table');
 
 class TableBuilder extends React.Component {
-  static propTypes = {
-    tableName: PropTypes.string.isRequired,
-
-    rows: TableBuilderPropTypes.rows.isRequired,
-    columns: TableBuilderPropTypes.columns.isRequired,
-
-    striped: PropTypes.bool,
-    hover: PropTypes.bool,
-    bordered: PropTypes.bool,
-    condensed: PropTypes.bool,
-
-    flashes: PropTypes.object
-  };
-
   render() {
     const {rows, columns, striped, hover, bordered, condensed, flashes} = this.props;
     return (
@@ -49,7 +35,7 @@ class TableBuilder extends React.Component {
             const type = flashes[row.id] || row.type;
             return (
               <TableRow key={row.id} type={type} accent={row.accent}>
-                {columns.map((column, index) => {
+                {columns.map((column) => {
                   return column.cell(row.cells);
                 })}
               </TableRow>
@@ -60,6 +46,20 @@ class TableBuilder extends React.Component {
     );
   }
 }
+
+TableBuilder.propTypes = {
+  tableName: PropTypes.string.isRequired,
+
+  rows: TableBuilderPropTypes.rows.isRequired,
+  columns: TableBuilderPropTypes.columns.isRequired,
+
+  striped: PropTypes.bool,
+  hover: PropTypes.bool,
+  bordered: PropTypes.bool,
+  condensed: PropTypes.bool,
+
+  flashes: PropTypes.object
+};
 
 function mapStateToProps(state, ownProps) {
   const tableName = ownProps.tableName;

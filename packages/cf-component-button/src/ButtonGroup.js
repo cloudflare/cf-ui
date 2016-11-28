@@ -1,4 +1,5 @@
 const React = require('react');
+const {PropTypes} = React;
 
 class ButtonGroup extends React.Component {
   render() {
@@ -8,6 +9,10 @@ class ButtonGroup extends React.Component {
       </div>
     );
   }
+}
+
+ButtonGroup.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.node)
 };
 
 module.exports = ButtonGroup;

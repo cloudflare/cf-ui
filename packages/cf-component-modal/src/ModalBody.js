@@ -1,4 +1,5 @@
 const React = require('react');
+const {PropTypes} = React;
 
 class ModalBody extends React.Component {
   render() {
@@ -9,5 +10,9 @@ class ModalBody extends React.Component {
     );
   }
 }
+
+ModalBody.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.node)
+};
 
 module.exports = ModalBody;
