@@ -11,6 +11,11 @@ class Link extends React.Component {
     super(props, context);
 
     this.handleClick = this.handleClick.bind(this);
+    this.focus = this.focus.bind(this);
+  }
+
+  focus() {
+    this.link.focus();
   }
 
   handleClick(e) {
@@ -54,6 +59,8 @@ class Link extends React.Component {
     }
 
     props.onClick = this.handleClick;
+
+    props.ref = node => this.link = node;
 
     return React.createElement(tagName, props, children);
   }
