@@ -60,11 +60,15 @@ describe('Notification', function() {
     );
 
     delay(50, () => {
-      TestUtils.Simulate.mouseEnter(instance);
+      TestUtils.Simulate.mouseEnter(
+        TestUtils.findRenderedDOMComponentWithClass(instance, 'cf-notifications__item')
+      );
 
       delay(150, () => {
         expect(called).to.be.false;
-        TestUtils.Simulate.mouseLeave(instance);
+        TestUtils.Simulate.mouseLeave(
+          TestUtils.findRenderedDOMComponentWithClass(instance, 'cf-notifications__item')
+        );
 
         delay(150, () => {
           expect(called).to.be.true;
