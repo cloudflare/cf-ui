@@ -18,9 +18,13 @@ const React = require('react');
 const Select = require('cf-component-select');
 
 export default class MyComponent extends React.Component {
-  state = {
-    value: 1
-  };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: 1
+    }
+  }
 
   handleChange(value) {
     this.setState({ value });

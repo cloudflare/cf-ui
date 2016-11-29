@@ -15,15 +15,21 @@ const React = require('react');
 const Progress = require('../../src/index');
 
 export default class Application extends React.Component {
-  state = {
-    activeStep: 'foo'
-  };
 
-  handleStepChange = step => {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeStep: 'foo'
+    };
+
+    this.handleStepChange = this.handleStepChange.bind(this);
+  }
+
+  handleStepChange(step) {
     this.setState({
       activeStep: step
     });
-  };
+  }
 
   render() {
     return (
