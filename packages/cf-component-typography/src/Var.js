@@ -1,4 +1,5 @@
 const React = require('react');
+const {PropTypes} = React;
 
 class Var extends React.Component {
   render() {
@@ -9,5 +10,9 @@ class Var extends React.Component {
     );
   }
 }
+
+Var.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.node)
+};
 
 module.exports = Var;

@@ -7,7 +7,7 @@ function getStorage(storageType) {
 
   return {
     setItem: (id, val) => data[id] = String(val),
-    getItem: id => data.hasOwnProperty(id) ? data[id] : undef,
+    getItem: id => data.hasOwnProperty(id) ? data[id] : undefined,
     removeItem: id => delete data[id],
     clear: () => data = {}
   };

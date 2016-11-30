@@ -1,4 +1,5 @@
 const React = require('react');
+const {PropTypes} = React;
 
 class Card extends React.Component {
   render() {
@@ -9,5 +10,9 @@ class Card extends React.Component {
     );
   }
 }
+
+Card.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.node)
+};
 
 module.exports = Card;

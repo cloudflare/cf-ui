@@ -2,7 +2,6 @@ const React = require('react');
 const {PropTypes} = React;
 const Textarea = require('cf-component-textarea');
 const {getText} = require('cf-util-text');
-const {findDOMNode} = require('react-dom');
 
 const containerStyles = {
   position: 'relative'
@@ -17,21 +16,22 @@ const overlayStyles = {
 };
 
 class CopyableTextarea extends React.Component {
-  static propTypes = {
-    name: PropTypes.string.isRequired,
-    value: PropTypes.string.isRequired,
-    onCopy: PropTypes.func
-  };
 
-  state = {
-    focused: false,
-    copied: false
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      focused: false,
+      copied: false
+    };
 
-  handleOverlayClick = e => {
+    this.handleOverlayClick = this.handleOverlayClick.bind(this);
+    this.handleBlur = this.handleBlur.bind(this);
+  }
+
+  handleOverlayClick(e) {
     e.preventDefault();
 
-    const target = findDOMNode(this.refs.textarea);
+    const target = this.textarea;
     const {onCopy} = this.props;
     target.focus();
     target.select();
@@ -51,14 +51,14 @@ class CopyableTextarea extends React.Component {
       focused: true,
       copied: success
     });
-  };
+  }
 
-  handleBlur = () => {
+  handleBlur() {
     this.setState({
       focused: false,
       copied: false
     });
-  };
+  }
 
   render() {
     let helpText;
@@ -77,7 +77,7 @@ class CopyableTextarea extends React.Component {
           <div style={overlayStyles} onClick={this.handleOverlayClick}></div>
         )}
         <Textarea
-          ref="textarea"
+          ref={node => this.textarea = node}
           readOnly
           name={this.props.name}
           value={this.props.value}
@@ -89,5 +89,11 @@ class CopyableTextarea extends React.Component {
     );
   }
 }
+
+CopyableTextarea.propTypes = {
+  name: PropTypes.string.isRequired,
+  value: PropTypes.string.isRequired,
+  onCopy: PropTypes.func
+};
 
 module.exports = CopyableTextarea;

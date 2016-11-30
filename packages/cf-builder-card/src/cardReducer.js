@@ -4,7 +4,7 @@ const initialState = {};
 
 function cardReducer(state = initialState, action) {
   switch (action.type) {
-    case ActionTypes.CF_BUILDER_CARD_DRAWER_TOGGLE:
+    case ActionTypes.CF_BUILDER_CARD_DRAWER_TOGGLE: {
       const {cardName, drawerId} = action;
       const prevActiveDrawer = state[cardName] && state[cardName].activeDrawer;
 
@@ -15,9 +15,10 @@ function cardReducer(state = initialState, action) {
           activeDrawer: drawerId === prevActiveDrawer ? null : drawerId
         }
       };
-
-    default:
+    }
+    default: {
       return state;
+    }
   }
 }
 

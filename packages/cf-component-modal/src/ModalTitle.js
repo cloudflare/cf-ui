@@ -1,5 +1,6 @@
 const React = require('react');
 const {Heading} = require('cf-component-heading');
+const {PropTypes} = React;
 
 class ModalTitle extends React.Component {
   render() {
@@ -12,5 +13,9 @@ class ModalTitle extends React.Component {
     );
   }
 }
+
+ModalTitle.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.node)
+};
 
 module.exports = ModalTitle;

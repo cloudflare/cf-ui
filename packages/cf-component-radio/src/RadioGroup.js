@@ -3,19 +3,6 @@ const {PropTypes} = React;
 const Radio = require('./Radio');
 
 class RadioGroup extends React.Component {
-  static propTypes = {
-    value: PropTypes.string.isRequired,
-    onChange: PropTypes.func.isRequired,
-    options: PropTypes.arrayOf(PropTypes.shape({
-      label: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.oneOf([false])
-      ]).isRequired,
-      name: PropTypes.string.isRequired,
-      value: PropTypes.string.isRequired,
-    })).isRequired
-  };
-
   render() {
     return (
       <div className="cf-radio__group">
@@ -32,5 +19,18 @@ class RadioGroup extends React.Component {
     );
   }
 }
+
+RadioGroup.propTypes = {
+  value: PropTypes.string.isRequired,
+  onChange: PropTypes.func.isRequired,
+  options: PropTypes.arrayOf(PropTypes.shape({
+    label: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.oneOf([false])
+    ]).isRequired,
+    name: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired
+  })).isRequired
+};
 
 module.exports = RadioGroup;

@@ -1,4 +1,5 @@
 const React = require('react');
+const {PropTypes} = React;
 
 class NotificationList extends React.Component {
   render() {
@@ -9,5 +10,9 @@ class NotificationList extends React.Component {
     );
   }
 }
+
+NotificationList.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.node)
+};
 
 module.exports = NotificationList;

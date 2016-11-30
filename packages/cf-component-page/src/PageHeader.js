@@ -2,11 +2,6 @@ const React = require('react');
 const {PropTypes} = React;
 
 class PageHeader extends React.Component {
-  static propTypes = {
-    title: PropTypes.string.isRequired,
-    subtitle: PropTypes.string
-  };
-
   render() {
     return (
       <header className="cf-page__header">
@@ -17,6 +12,11 @@ class PageHeader extends React.Component {
       </header>
     );
   }
+}
+
+PageHeader.propTypes = {
+  title: PropTypes.string.isRequired,
+  subtitle: PropTypes.string
 };
 
 module.exports = PageHeader;

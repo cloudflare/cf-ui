@@ -4,20 +4,13 @@ const Checkbox = require('./Checkbox');
 const includes = require('lodash/includes');
 
 class CheckboxGroup extends React.Component {
-  static propTypes = {
-    values: PropTypes.arrayOf(PropTypes.string).isRequired,
-    onChange: PropTypes.func.isRequired,
-    options: PropTypes.arrayOf(PropTypes.shape({
-      label: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.oneOf([false])
-      ]).isRequired,
-      name: PropTypes.string.isRequired,
-      value: PropTypes.string.isRequired,
-    })).isRequired
-  };
 
-  handleChange = (value, checked) => {
+  constructor(props) {
+    super(props);
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(value, checked) {
     const values = this.props.options.filter(option => {
       if (option.value === value) {
         return checked;
@@ -29,7 +22,7 @@ class CheckboxGroup extends React.Component {
     });
 
     this.props.onChange(values);
-  };
+  }
 
   render() {
     return (
@@ -47,5 +40,18 @@ class CheckboxGroup extends React.Component {
     );
   }
 }
+
+CheckboxGroup.propTypes = {
+  values: PropTypes.arrayOf(PropTypes.string).isRequired,
+  onChange: PropTypes.func.isRequired,
+  options: PropTypes.arrayOf(PropTypes.shape({
+    label: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.oneOf([false])
+    ]).isRequired,
+    name: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired
+  })).isRequired
+};
 
 module.exports = CheckboxGroup;

@@ -5,7 +5,6 @@ const {
   Card,
   CardSection,
   CardContent,
-  CardMessages,
   CardControl,
   CardDrawers,
   CardPropTypes
@@ -15,20 +14,6 @@ const markdown = require('cf-util-markdown');
 const cardActions = require('./cardActions');
 
 class CardBuilder extends React.Component {
-  static propTypes = {
-    cardName: PropTypes.string.isRequired,
-
-    title: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-
-    control: PropTypes.element,
-    table: PropTypes.element,
-
-    drawers: CardPropTypes.cardDrawers,
-    onDrawerClick: PropTypes.func,
-    activeDrawer: PropTypes.string
-  };
-
   render() {
     return (
       <Card>
@@ -62,6 +47,20 @@ class CardBuilder extends React.Component {
     );
   }
 }
+
+CardBuilder.propTypes = {
+  cardName: PropTypes.string.isRequired,
+
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+
+  control: PropTypes.element,
+  table: PropTypes.element,
+
+  drawers: CardPropTypes.cardDrawers,
+  onDrawerClick: PropTypes.func,
+  activeDrawer: PropTypes.string
+};
 
 function mapStateToProps(state, ownProps) {
   const cardName = ownProps.cardName;

@@ -4,16 +4,6 @@ const {findDOMNode} = require('react-dom');
 const createTooltip = require('./createTooltip');
 
 class Tooltip extends React.Component {
-  static propTypes = {
-    content: PropTypes.string.isRequired,
-    children: PropTypes.element.isRequired,
-    position: PropTypes.string
-  };
-
-  static defaultProps = {
-    position: 'top center'
-  };
-
   componentDidMount() {
     this.destroyTooltip = createTooltip(
       findDOMNode(this),
@@ -30,5 +20,15 @@ class Tooltip extends React.Component {
     return this.props.children;
   }
 }
+
+Tooltip.propTypes = {
+  content: PropTypes.string.isRequired,
+  children: PropTypes.element.isRequired,
+  position: PropTypes.string
+};
+
+Tooltip.defaultProps = {
+  position: 'top center'
+};
 
 module.exports = Tooltip;

@@ -2,20 +2,6 @@ const React = require('react');
 const {PropTypes} = React;
 
 class Table extends React.Component {
-  static propTypes = {
-    striped: PropTypes.bool,
-    hover: PropTypes.bool,
-    bordered: PropTypes.bool,
-    condensed: PropTypes.bool
-  };
-
-  static defaultProps = {
-    striped: false,
-    hover: false,
-    bordered: true,
-    condensed: false
-  };
-
   render() {
     let className = 'cf-table';
 
@@ -31,5 +17,20 @@ class Table extends React.Component {
     );
   }
 }
+
+Table.propTypes = {
+  striped: PropTypes.bool,
+  hover: PropTypes.bool,
+  bordered: PropTypes.bool,
+  condensed: PropTypes.bool,
+  children: PropTypes.arrayOf(PropTypes.node)
+};
+
+Table.defaultProps = {
+  striped: false,
+  hover: false,
+  bordered: true,
+  condensed: false
+};
 
 module.exports = Table;

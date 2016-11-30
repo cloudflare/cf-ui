@@ -18,11 +18,12 @@ const {
 } = require('cf-component-button');
 
 export default class Application extends React.Component {
-  handleButtonOneClick = () => {
+
+  handleButtonOneClick() {
     // clicked...
   };
 
-  handleButtonTwoClick = () => {
+  handleButtonTwoClick() {
     // clicked...
   };
 
@@ -30,10 +31,10 @@ export default class Application extends React.Component {
     return (
       <div>
         <ButtonGroup>
-          <Button type="primary" onClick={this.handleButtonOneClick}>
+          <Button type="primary" onClick={this.handleButtonOneClick.bind(this)}>
             Button One
           </Button>
-          <Button type="primary" onClick={this.handleButtonTwoClick}>
+          <Button type="primary" onClick={this.handleButtonTwoClick.bind(this)}>
             Button Two
           </Button>
         </ButtonGroup>

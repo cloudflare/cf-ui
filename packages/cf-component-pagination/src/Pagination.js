@@ -3,10 +3,6 @@ const {PropTypes} = React;
 const uniqueId = require('lodash/uniqueId');
 
 class Pagination extends React.Component {
-  static propTypes = {
-    info: PropTypes.string
-  };
-
   render() {
     const id = this.props.info ? uniqueId('cf-pagination-') : null;
 
@@ -24,5 +20,10 @@ class Pagination extends React.Component {
     );
   }
 }
+
+Pagination.propTypes = {
+  info: PropTypes.string,
+  children: PropTypes.arrayOf(PropTypes.node)
+};
 
 module.exports = Pagination;

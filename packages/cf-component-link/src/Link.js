@@ -3,26 +3,22 @@ const {PropTypes} = React;
 const {routeTo} = require('cf-util-route-handler');
 
 class Link extends React.Component {
-  static propTypes = {
-    to: PropTypes.string,
-    onClick: PropTypes.func,
-    tagName: PropTypes.string,
-    disabled: PropTypes.bool
-  };
-
-  static defaultProps = {
-    tagName: 'a'
-  };
-
   constructor(props, context) {
     if (!props.to && !props.onClick) {
       throw new Error('<Link/> requires either a `to` or `onClick` prop');
     }
 
     super(props, context);
+
+    this.handleClick = this.handleClick.bind(this);
+    this.focus = this.focus.bind(this);
   }
 
-  handleClick = e => {
+  focus() {
+    this.link.focus();
+  }
+
+  handleClick(e) {
     e.preventDefault();
 
     if (this.props.disabled) {
@@ -34,7 +30,7 @@ class Link extends React.Component {
     } else {
       this.props.onClick(e);
     }
-  };
+  }
 
   render() {
     const {tagName, to, children, className, disabled, ...props} = this.props;
@@ -64,8 +60,23 @@ class Link extends React.Component {
 
     props.onClick = this.handleClick;
 
+    props.ref = node => this.link = node;
+
     return React.createElement(tagName, props, children);
   }
 }
+
+Link.propTypes = {
+  to: PropTypes.string,
+  onClick: PropTypes.func,
+  tagName: PropTypes.string,
+  disabled: PropTypes.bool,
+  className: PropTypes.string,
+  children: PropTypes.arrayOf(PropTypes.node)
+};
+
+Link.defaultProps = {
+  tagName: 'a'
+};
 
 module.exports = Link;

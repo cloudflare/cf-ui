@@ -1,4 +1,5 @@
 const React = require('react');
+const {PropTypes} = React;
 
 class LayoutRow extends React.Component {
   render() {
@@ -9,5 +10,9 @@ class LayoutRow extends React.Component {
     );
   }
 }
+
+LayoutRow.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.node)
+};
 
 module.exports = LayoutRow;

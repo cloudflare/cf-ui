@@ -3,18 +3,15 @@ const {PropTypes} = React;
 const Icon = require('cf-component-icon');
 
 class PaginationItem extends React.Component {
-  static propTypes = {
-    type: PropTypes.oneOf(['number', 'next', 'prev', 'ellipsis', 'loading']).isRequired,
-    label: PropTypes.string.isRequired,
-    onClick: PropTypes.func.isRequired,
-    active: PropTypes.bool,
-    disabled: PropTypes.bool
-  };
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
 
-  handleClick = e => {
+  handleClick(e) {
     e.preventDefault();
     this.props.onClick();
-  };
+  }
 
   render() {
     let className = 'cf-pagination__item cf-pagination__item--' + this.props.type;
@@ -52,5 +49,14 @@ class PaginationItem extends React.Component {
     );
   }
 }
+
+PaginationItem.propTypes = {
+  type: PropTypes.oneOf(['number', 'next', 'prev', 'ellipsis', 'loading']).isRequired,
+  label: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+  active: PropTypes.bool,
+  disabled: PropTypes.bool,
+  children: PropTypes.arrayOf(PropTypes.node)
+};
 
 module.exports = PaginationItem;

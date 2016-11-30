@@ -9,7 +9,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "redux-mock-store": "^1.0.2",
+    "redux-mock-store": "^1.2.0",
     "redux-thunk": "^2.1.0"
   },
   "devDependencies": {}

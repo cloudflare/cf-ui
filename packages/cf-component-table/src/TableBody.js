@@ -1,4 +1,5 @@
 const React = require('react');
+const {PropTypes} = React;
 
 class TableBody extends React.Component {
   render() {
@@ -9,5 +10,9 @@ class TableBody extends React.Component {
     );
   }
 }
+
+TableBody.propTypes = {
+  children: PropTypes.arrayOf(PropTypes.node)
+};
 
 module.exports = TableBody;

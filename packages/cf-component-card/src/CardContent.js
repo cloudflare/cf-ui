@@ -2,11 +2,6 @@ const React = require('react');
 const {PropTypes} = React;
 
 class CardContent extends React.Component {
-  static propTypes = {
-    title: PropTypes.any.isRequired,
-    footerMessage: PropTypes.string
-  };
-
   render() {
     return (
       <div className="cf-card__content">
@@ -17,11 +12,17 @@ class CardContent extends React.Component {
         { this.props.footerMessage ? (
           <div className="cf-card__footer_message">
             {this.props.footerMessage}
-          </div> ) : null 
+          </div> ) : null
         }
       </div>
     );
   }
 }
+
+CardContent.propTypes = {
+  title: PropTypes.any.isRequired,
+  footerMessage: PropTypes.string,
+  children: PropTypes.arrayOf(PropTypes.node)
+};
 
 module.exports = CardContent;

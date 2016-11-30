@@ -2,14 +2,6 @@ const React = require('react');
 const {PropTypes} = React;
 
 class TabsPanel extends React.Component {
-  static propTypes = {
-    id: PropTypes.string.isRequired
-  };
-
-  static contextTypes = {
-    activeTab: PropTypes.string.isRequired
-  };
-
   render() {
     const selected = this.context.activeTab === this.props.id;
 
@@ -25,5 +17,14 @@ class TabsPanel extends React.Component {
     );
   }
 }
+
+TabsPanel.propTypes = {
+  id: PropTypes.string.isRequired,
+  children: PropTypes.arrayOf(PropTypes.node)
+};
+
+TabsPanel.contextTypes = {
+  activeTab: PropTypes.string.isRequired
+};
 
 module.exports = TabsPanel;
