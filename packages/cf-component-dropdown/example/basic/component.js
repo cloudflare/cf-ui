@@ -16,10 +16,14 @@ const {
 } = require('../../src/index');
 
 class Component extends React.Component {
-  state = {
-    dropdown1Open: false,
-    dropdown2Open: false
-  };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      dropdown1Open: false,
+      dropdown2Open: false
+    };
+  }
 
   render() {
     return (

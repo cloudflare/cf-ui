@@ -1,7 +1,7 @@
 const React = require('react');
 const {render} = require('react-dom');
 
-const {handleRoutes, routeTo} = require('cf-util-route-handler');
+const {handleRoutes} = require('cf-util-route-handler');
 const Backbone = require('backbone');
 
 const Link = require('../../src/index');
@@ -21,7 +21,7 @@ new Backbone.Router({
 Backbone.history.start();
 
 class Component extends React.Component {
-  handleClick = () => {
+  handleClick() {
     console.log('handleClick!');
   };
 
@@ -32,7 +32,7 @@ class Component extends React.Component {
         <Link to="/">Link to /</Link>
 
         <p>Alternatively you can pass an <code>onClick</code> handler:</p>
-        <Link onClick={this.handleClick}>Link to something</Link>
+        <Link onClick={this.handleClick.bind(this)}>Link to something</Link>
         <p>Note: This will give it a <code>role="button"</code></p>
 
         <p>All additional props will be added to the <code>Link</code> element:</p>

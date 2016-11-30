@@ -4,15 +4,20 @@ const {render} = require('react-dom');
 const Input = require('../../src/index');
 
 class Component extends React.Component {
-  state = {
-    inputValue: 'Hello World'
-  };
 
-  handleChange = value => {
+  constructor(props) {
+    super(props);
+    this.state = {
+      inputValue: 'Hello World'
+    };
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(value) {
     this.setState({
       inputValue: value
     });
-  };
+  }
 
   render() {
     return (

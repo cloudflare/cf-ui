@@ -15,30 +15,40 @@ const Select = require('cf-component-select');
 const Textarea = require('cf-component-textarea');
 
 class Component extends React.Component {
-  state = {
-    firstName: '',
-    lastName: '',
-    type: 'suggestion',
-    message: 'This is blasphemy! This is madness!'
-  };
 
-  handleFirstNameChange = firstName => {
+  constructor(props) {
+    super(props);
+    this.state = {
+      firstName: '',
+      lastName: '',
+      type: 'suggestion',
+      message: 'This is blasphemy! This is madness!'
+    };
+
+    this.handleFirstNameChange = this.handleFirstNameChange.bind(this);
+    this.handleLastNameChange = this.handleLastNameChange.bind(this);
+    this.handleTypeChange = this.handleTypeChange.bind(this);
+    this.handleMessageChange = this.handleMessageChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+
+  handleFirstNameChange(firstName) {
     this.setState({ firstName });
-  };
+  }
 
-  handleLastNameChange = lastName => {
+  handleLastNameChange(lastName) {
     this.setState({ lastName });
-  };
+  }
 
-  handleTypeChange = type => {
+  handleTypeChange(type) {
     this.setState({ type });
-  };
+  }
 
-  handleMessageChange = message => {
+  handleMessageChange(message) {
     this.setState({ message });
-  };
+  }
 
-  handleSubmit = () => {
+  handleSubmit() {
     console.log(JSON.stringify(this.state, null, 2));
     this.setState({
       firstName: '',
@@ -46,7 +56,7 @@ class Component extends React.Component {
       type: 'suggestion',
       message: ''
     });
-  };
+  }
 
   render() {
     return (

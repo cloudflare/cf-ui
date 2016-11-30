@@ -7,17 +7,21 @@ const {
 } = require('../../src/index');
 
 class Component extends React.Component {
-  state = {
-    checkbox1: true,
-    checkbox2: false,
-    checkboxValues: ["option1"]
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      checkbox1: true,
+      checkbox2: false,
+      checkboxValues: ['option1']
+    };
+    this.onCheckboxGroupChange = this.onCheckboxGroupChange.bind(this);
+  }
 
-  onCheckboxGroupChange = values => {
+  onCheckboxGroupChange(values) {
     this.setState({
       checkboxValues: values
     });
-  };
+  }
 
   render() {
     return (

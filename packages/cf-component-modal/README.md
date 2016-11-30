@@ -27,9 +27,13 @@ const {
 } = require('react-gateway');
 
 class MyComponentWithModal extends React.Component {
-  state = {
-    isModalOpen: false
-  };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      isModalOpen: false
+    };
+  }
 
   handleRequestOpen() {
     this.setState({ isModalOpen: true });

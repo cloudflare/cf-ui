@@ -19,20 +19,25 @@ function hasAllItems(items, start, end) {
 }
 
 class Component extends React.Component {
-  state = {
-    items: [],
-    totalCount: 143,
-    page: 1,
-    perPage: 20
-  };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: [],
+      totalCount: 143,
+      page: 1,
+      perPage: 20
+    };
+    this.handlePageChange = this.handlePageChange.bind(this);
+  }
 
   componentDidMount() {
     this.maybeRequestPage(this.state.page);
   }
 
-  handlePageChange = page => {
+  handlePageChange(page) {
     this.maybeRequestPage(page);
-  };
+  }
 
   // This is mimicking what will happen in the API actions/reducers:
   maybeRequestPage(page) {

@@ -4,11 +4,15 @@ const {render} = require('react-dom');
 const Progress = require('../../src/index');
 
 class Component extends React.Component {
-  state = {
-    activeStep: 'foo'
-  };
 
-  handleStepChange = step => {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeStep: 'foo'
+    };
+  }
+
+  handleStepChange(step) {
     this.setState({
       activeStep: step
     });
@@ -18,7 +22,7 @@ class Component extends React.Component {
     return (
       <Progress
         active={this.state.activeStep}
-        onChange={this.handleStepChange}
+        onChange={this.handleStepChange.bind(this)}
         steps={[
           { id: 'foo', label: 'Foo', disabled: false },
           { id: 'bar', label: 'Bar', disabled: false },

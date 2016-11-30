@@ -7,11 +7,15 @@ const {
 } = require('../../src/index');
 
 class Component extends React.Component {
-  state = {
-    activeTab: 'one'
-  };
 
-  handleTabChange = id => {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeTab: 'one'
+    };
+  }
+
+  handleTabChange(id) {
     this.setState({ activeTab: id });
   };
 
@@ -24,7 +28,7 @@ class Component extends React.Component {
           { id: 'two',   label: 'Tab Two'   },
           { id: 'three', label: 'Tab Three' }
         ]}
-        onChange={this.handleTabChange}>
+        onChange={this.handleTabChange.bind(this)}>
 
         <TabsPanel id="one">
           <h1>Tab One</h1>
