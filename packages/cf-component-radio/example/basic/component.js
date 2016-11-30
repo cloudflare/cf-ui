@@ -7,11 +7,16 @@ const {
 } = require('../../src/index');
 
 class Component extends React.Component {
-  state = {
-    radioValue: "option1"
-  };
 
-  onRadioChange = val => {
+  constructor(props) {
+    super(props);
+    this.state = {
+      radioValue: 'option1'
+    };
+    this.onRadioChange = this.onRadioChange.bind(this);
+  }
+
+  onRadioChange(val) {
     this.setState({
       radioValue: val
     });
@@ -23,17 +28,17 @@ class Component extends React.Component {
         <p>You can create them individually with <code>Radio</code></p>
 
         <Radio
-          label="Option 1"
-          name="radio-option-1"
-          value="option1"
-          checked={this.state.radioValue === "option1"}
+          label='Option 1'
+          name='radio-option-1'
+          value='option1'
+          checked={this.state.radioValue === 'option1'}
           onChange={this.onRadioChange}/>
 
         <Radio
-          label="Option 2"
-          name="radio-option-2"
-          value="option2"
-          checked={this.state.radioValue === "option2"}
+          label='Option 2'
+          name='radio-option-2'
+          value='option2'
+          checked={this.state.radioValue === 'option2'}
           onChange={this.onRadioChange}/>
 
         <p>Or as a group with <code>RadioGroup</code></p>
@@ -50,9 +55,9 @@ class Component extends React.Component {
 
         <Radio
           label={false}
-          name="radio-option-1-no-label"
-          value="option1"
-          checked={this.state.radioValue === "option1"}
+          name='radio-option-1-no-label'
+          value='option1'
+          checked={this.state.radioValue === 'option1'}
           onChange={this.onRadioChange}/>
       </div>
     );

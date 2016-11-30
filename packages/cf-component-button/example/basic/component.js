@@ -6,21 +6,21 @@ const {
 } = require('../../src/index');
 
 class Component extends React.Component {
-  handleButtonOneClick = () => {
+  handleButtonOneClick() {
     console.log('Clicked Button One!');
-  };
+  }
 
-  handleButtonTwoClick = () => {
+  handleButtonTwoClick() {
     console.log('Clicked Button Two!');
-  };
+  }
 
   render() {
     return (
       <ButtonGroup>
-        <Button type="primary" onClick={this.handleButtonOneClick}>
+        <Button type="primary" onClick={this.handleButtonOneClick.bind(this)}>
           Button One
         </Button>
-        <Button type="primary" onClick={this.handleButtonTwoClick}>
+        <Button type="primary" onClick={this.handleButtonTwoClick.bind(this)}>
           Button Two
         </Button>
       </ButtonGroup>

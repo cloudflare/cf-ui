@@ -19,11 +19,16 @@ const {
 } = require('../../src/index');
 
 class Application extends React.Component {
-  state = {
-    radioValue: "option1"
-  };
 
-  onRadioChange = val => {
+  constructor(props) {
+    super(props);
+    this.state = {
+      radioValue: "option1"
+    };
+    this.onRadioChange = this.onRadioChange.bind(this);
+  }
+
+  onRadioChange(val) {
     this.setState({
       radioValue: val
     });

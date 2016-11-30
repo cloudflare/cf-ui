@@ -4,15 +4,19 @@ const {render} = require('react-dom');
 const Toggle = require('../../src/index');
 
 class Component extends React.Component {
-  state = {
-    toggleValue: false
-  };
 
-  handleToggle = value => {
+  constructor(props) {
+    super(props);
+    this.state = {
+      toggleValue: false
+    };
+  }
+
+  handleToggle(value) {
     this.setState({
       toggleValue: value
     });
-  };
+  }
 
   render() {
     return (
@@ -20,7 +24,7 @@ class Component extends React.Component {
         label="Example Toggle"
         name="example"
         value={this.state.toggleValue}
-        onChange={this.handleToggle}/>
+        onChange={this.handleToggle.bind(this)}/>
     );
   }
 }

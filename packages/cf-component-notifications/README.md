@@ -17,9 +17,13 @@ const {NotificationList, Notification} = require('cf-component-notifications');
 let UNIQUE_ID = 0;
 
 class Application extends React.Component {
-  state = {
-    notifications: []
-  };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      notifications: []
+    };
+  }
 
   handleAdd() {
     this.setState({

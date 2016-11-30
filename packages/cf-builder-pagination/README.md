@@ -20,14 +20,21 @@ function isRequestingItemsFromCurrentPage() {
 }
 
 class Component extends React.Component {
-  state = {
-    items: [],
-    totalCount: 143,
-    page: 1,
-    perPage: 20
-  };
 
-  handlePageChange = page => {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      items: [],
+      totalCount: 143,
+      page: 1,
+      perPage: 20
+    };
+
+    this.handlePageChange = this.handlePageChange.bind(this);
+  }
+
+  handlePageChange(page) {
     // Send off a paginated request...
   };
 

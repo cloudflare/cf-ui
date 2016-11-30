@@ -19,9 +19,13 @@ const {
 } = require('../../src/index');
 
 class Application extends React.Component {
-  state = {
-    activeTab: 'one'
-  };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeTab: 'one'
+    };
+  }
 
   handleTabChange(id) {
     this.setState({ activeTab: id });

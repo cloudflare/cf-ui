@@ -23,9 +23,13 @@ const {
 } = require('../../src/index');
 
 class Application extends React.Component {
-  state = {
-    dropdownOpen: false
-  };
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      dropdownOpen: false
+    };
+  }
 
   render() {
     return (

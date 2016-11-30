@@ -4,16 +4,21 @@ const {render} = require('react-dom');
 const Select = require('../../src/index');
 
 class Component extends React.Component {
-  state = {
-    value: 1,
-    multiValue: [1, 3]
-  };
 
-  handleChange = value => {
+  constructor(props) {
+    super(props);
+    this.state = {
+      value: 1,
+      multiValue: [1, 3]
+    };
+  }
+
+
+  handleChange(value) {
     this.setState({ value });
   };
 
-  handleMultiChange = value => {
+  handleMultiChange(value) {
     this.setState({
       multiValue: value.length ? value.split(',') : []
     });
@@ -30,7 +35,7 @@ class Component extends React.Component {
             { value: 2, label: 'Two' },
             { value: 3, label: 'Three' }
           ]}
-          onChange={this.handleChange}/>
+          onChange={this.handleChange.bind(this)}/>
 
         <Select searchable
           label="Searchable"
@@ -40,7 +45,7 @@ class Component extends React.Component {
             { value: 2, label: 'Two' },
             { value: 3, label: 'Three' }
           ]}
-          onChange={this.handleChange}/>
+          onChange={this.handleChange.bind(this)}/>
 
         <Select searchable multi
           label="Searchable Multi"
@@ -50,7 +55,7 @@ class Component extends React.Component {
             { value: 2, label: 'Two' },
             { value: 3, label: 'Three' }
           ]}
-          onChange={this.handleMultiChange}/>
+          onChange={this.handleMultiChange.bind(this)}/>
       </div>
     );
   }

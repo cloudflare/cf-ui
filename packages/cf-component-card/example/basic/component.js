@@ -5,18 +5,22 @@ const {
   CardContent,
   CardControl,
   CardDrawers,
-  CardLoadingText,
   CardMessages,
   CardSection
 } = require('../../src/index');
 const {Button} = require('cf-component-button');
 
 class Component extends React.Component {
-  state = {
-    activeDrawer: null
-  };
 
-  handleDrawerClick = id => {
+  constructor(props) {
+    super(props);
+    this.state = {
+      activeDrawer: null
+    };
+    this.handleDrawerClick = this.handleDrawerClick.bind(this);
+  }
+
+  handleDrawerClick(id) {
     this.setState({
       activeDrawer: id === this.state.activeDrawer ? null : id
     });

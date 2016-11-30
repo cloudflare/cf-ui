@@ -15,15 +15,19 @@ const React = require('react');
 const Input = require('../../src/index');
 
 class Application extends React.Component {
-  state = {
-    inputValue: 'Hello World'
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      inputValue: 'Hello World'
+    };
+    this.handleChange = this.handleChange.bind(this);
+  }
 
-  handleChange = value => {
+  handleChange(value) {
     this.setState({
       inputValue: value
     });
-  };
+  }
 
   render() {
     return (

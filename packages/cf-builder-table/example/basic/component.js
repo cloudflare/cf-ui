@@ -14,14 +14,21 @@ const {Button} = require('cf-component-button');
 const EXAMPLE_TABLE = 'EXAMPLE_TABLE';
 
 class Component extends React.Component {
-  state = {
-    data: [
-      { id: '1', name: 'James', coolness: 1 },
-      { id: '2', name: 'David', coolness: -1 }
-    ]
-  };
 
-  handleClick = id => {
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: [
+        { id: '1', name: 'James', coolness: 1 },
+        { id: '2', name: 'David', coolness: -1 }
+      ]
+    };
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+
+  handleClick(id) {
     this.setState({
       data: this.state.data.map(item => {
         return item.id === id
@@ -31,7 +38,7 @@ class Component extends React.Component {
     }, () => {
       this.props.dispatch(tableActions.flashRow(EXAMPLE_TABLE, id, 'success'));
     });
-  };
+  }
 
   render() {
     return (

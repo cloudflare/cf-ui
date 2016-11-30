@@ -18,17 +18,23 @@ const ReactModal2 = require('react-modal2');
 const {Button} = require('cf-component-button');
 
 class Component extends React.Component {
-  state = {
-    isModalOpen: false
-  };
 
-  handleRequestOpen = () => {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isModalOpen: false
+    };
+    this.handleRequestOpen = this.handleRequestOpen.bind(this);
+    this.handleRequestClose = this.handleRequestClose.bind(this);
+  }
+
+  handleRequestOpen() {
     this.setState({ isModalOpen: true });
-  };
+  }
 
-  handleRequestClose = () => {
+  handleRequestClose() {
     this.setState({ isModalOpen: false });
-  };
+  }
 
   render() {
     return (
