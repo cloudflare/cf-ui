@@ -12,7 +12,7 @@ class Sub extends React.Component {
 }
 
 Sub.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Sub;

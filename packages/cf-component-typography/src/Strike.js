@@ -12,7 +12,7 @@ class Strike extends React.Component {
 }
 
 Strike.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Strike;

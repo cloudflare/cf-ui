@@ -12,7 +12,7 @@ class LayoutRow extends React.Component {
 }
 
 LayoutRow.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = LayoutRow;

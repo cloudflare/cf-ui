@@ -56,7 +56,7 @@ PaginationItem.propTypes = {
   onClick: PropTypes.func.isRequired,
   active: PropTypes.bool,
   disabled: PropTypes.bool,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = PaginationItem;

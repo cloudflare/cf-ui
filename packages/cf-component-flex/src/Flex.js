@@ -23,7 +23,7 @@ Flex.propTypes = {
     'thin',
     'wide'
   ]).isRequired,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Flex;

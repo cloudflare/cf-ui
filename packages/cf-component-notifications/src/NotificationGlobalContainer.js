@@ -12,7 +12,7 @@ class NotificationGlobalContainer extends React.Component {
 }
 
 NotificationGlobalContainer.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = NotificationGlobalContainer;

@@ -12,7 +12,7 @@ class Small extends React.Component {
 }
 
 Small.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Small;

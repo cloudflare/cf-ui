@@ -18,7 +18,7 @@ class FormFieldset extends React.Component {
 
 FormFieldset.propTypes = {
   legend: PropTypes.string.isRequired,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = FormFieldset;

@@ -12,7 +12,7 @@ class ModalBody extends React.Component {
 }
 
 ModalBody.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = ModalBody;

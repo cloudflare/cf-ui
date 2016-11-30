@@ -19,7 +19,7 @@ class ModalFooter extends React.Component {
 
 ModalFooter.propTypes = {
   simple: PropTypes.bool,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 ModalFooter.defaultProps = {

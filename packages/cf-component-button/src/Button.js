@@ -38,7 +38,7 @@ Button.propTypes = {
   ]).isRequired,
   disabled: PropTypes.bool,
   loading: PropTypes.bool,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 Button.defaultProps = {

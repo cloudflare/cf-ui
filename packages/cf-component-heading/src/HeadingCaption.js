@@ -12,7 +12,7 @@ class HeadingCaption extends React.Component {
 }
 
 HeadingCaption.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = HeadingCaption;

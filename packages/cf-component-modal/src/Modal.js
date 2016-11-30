@@ -50,7 +50,7 @@ Modal.propTypes = {
   onRequestClose: PropTypes.func.isRequired,
   closeOnEsc: PropTypes.bool,
   closeOnBackdropClick: PropTypes.bool,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 Modal.defaultProps = {

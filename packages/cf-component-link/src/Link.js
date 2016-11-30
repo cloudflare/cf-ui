@@ -72,7 +72,7 @@ Link.propTypes = {
   tagName: PropTypes.string,
   disabled: PropTypes.bool,
   className: PropTypes.string,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 Link.defaultProps = {

@@ -14,7 +14,7 @@ class LayoutColumn extends React.Component {
 
 LayoutColumn.propTypes = {
   width: PropTypes.number.isRequired,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = LayoutColumn;

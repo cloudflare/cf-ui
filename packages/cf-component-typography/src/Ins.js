@@ -12,7 +12,7 @@ class Ins extends React.Component {
 }
 
 Ins.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Ins;

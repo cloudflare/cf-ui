@@ -23,7 +23,7 @@ class Pagination extends React.Component {
 
 Pagination.propTypes = {
   info: PropTypes.string,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Pagination;

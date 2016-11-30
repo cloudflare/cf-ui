@@ -22,7 +22,7 @@ class CardContent extends React.Component {
 CardContent.propTypes = {
   title: PropTypes.any.isRequired,
   footerMessage: PropTypes.string,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = CardContent;

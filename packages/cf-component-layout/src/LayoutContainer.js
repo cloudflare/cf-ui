@@ -12,7 +12,7 @@ class LayoutContainer extends React.Component {
 }
 
 LayoutContainer.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = LayoutContainer;

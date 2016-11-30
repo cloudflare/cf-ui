@@ -15,7 +15,7 @@ class CodeBlock extends React.Component {
 }
 
 CodeBlock.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = CodeBlock;

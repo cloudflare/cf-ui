@@ -33,7 +33,7 @@ Viewport.propTypes = {
     'desktop',
     'desktopLarge'
   ]).isRequired,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 Viewport.defaultProps = {

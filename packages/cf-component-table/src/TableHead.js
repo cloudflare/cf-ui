@@ -12,7 +12,7 @@ class TableHead extends React.Component {
 }
 
 TableHead.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = TableHead;
