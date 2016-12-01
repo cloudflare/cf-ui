@@ -1,7 +1,7 @@
 {
   "name": "cf-component-icon",
   "description": "CloudFlare Icon Component",
-  "version": "1.1.2",
+  "version": "2.0.0",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",

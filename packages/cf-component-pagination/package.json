@@ -1,7 +1,7 @@
 {
   "name": "cf-component-pagination",
   "description": "CloudFlare Pagination Component",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
@@ -11,7 +11,7 @@
   "dependencies": {
     "lodash": "^4.2.0",
     "react": "^0.14.2 || ^15.0.0-0",
-    "cf-component-icon": "^1.1.2"
+    "cf-component-icon": "^2.0.0"
   },
   "devDependencies": {
     "assert-equal-jsx": "^1.0.0",

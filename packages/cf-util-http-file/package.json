@@ -1,7 +1,7 @@
 {
   "name": "cf-util-http-file",
   "description": "CloudFlare HTTP File Util",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
@@ -9,7 +9,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-util-http": "^2.0.1"
+    "cf-util-http": "^3.0.0"
   },
   "devDependencies": {
     "express": "^4.13.3",
