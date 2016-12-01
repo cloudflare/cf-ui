@@ -11,7 +11,7 @@ class Heading extends React.Component {
 
 Heading.propTypes = {
   size: PropTypes.oneOf([1, 2, 3, 4, 5, 6]).isRequired,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Heading;

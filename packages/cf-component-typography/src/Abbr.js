@@ -13,7 +13,7 @@ class Abbr extends React.Component {
 
 Abbr.propTypes = {
   title: PropTypes.string.isRequired,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Abbr;

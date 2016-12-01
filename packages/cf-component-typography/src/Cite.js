@@ -12,7 +12,7 @@ class Cite extends React.Component {
 }
 
 Cite.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Cite;

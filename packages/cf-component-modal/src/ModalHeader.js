@@ -12,7 +12,7 @@ class ModalHeader extends React.Component {
 }
 
 ModalHeader.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = ModalHeader;

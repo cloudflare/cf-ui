@@ -29,7 +29,7 @@ class TooltipRegion extends React.Component {
 TooltipRegion.propTypes = {
   position: PropTypes.string,
   querySelector: PropTypes.string,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 TooltipRegion.defaultProps = {

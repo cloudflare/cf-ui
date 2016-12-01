@@ -12,7 +12,7 @@ class Var extends React.Component {
 }
 
 Var.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Var;

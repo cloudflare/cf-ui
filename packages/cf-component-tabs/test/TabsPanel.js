@@ -14,7 +14,7 @@ class Context extends React.Component {
 
 Context.propTypes = {
   activeTab: PropTypes.string.isRequired,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 Context.childContextTypes = {

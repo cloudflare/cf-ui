@@ -12,7 +12,7 @@ class Card extends React.Component {
 }
 
 Card.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Card;

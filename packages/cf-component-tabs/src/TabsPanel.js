@@ -20,7 +20,7 @@ class TabsPanel extends React.Component {
 
 TabsPanel.propTypes = {
   id: PropTypes.string.isRequired,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 TabsPanel.contextTypes = {

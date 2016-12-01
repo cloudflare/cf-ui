@@ -34,7 +34,7 @@ Text.propTypes = {
   align: PropTypes.oneOf(['start', 'center', 'justify', 'end']),
   type: PropTypes.oneOf(['info', 'success', 'warning', 'error', 'muted']),
   'case': PropTypes.oneOf(['capitalize', 'titlecase', 'lowercase', 'uppercase']),
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Text;

@@ -12,7 +12,7 @@ class TableBody extends React.Component {
 }
 
 TableBody.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = TableBody;

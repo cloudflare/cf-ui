@@ -15,7 +15,7 @@ class ModalTitle extends React.Component {
 }
 
 ModalTitle.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = ModalTitle;

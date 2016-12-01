@@ -12,7 +12,7 @@ class Del extends React.Component {
 }
 
 Del.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Del;

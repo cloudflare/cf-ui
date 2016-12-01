@@ -234,7 +234,7 @@ function parseSourceFile(source, fileName) {
 
   const ast = babylon.parse(source, {
     sourceType: 'module',
-    plugins: ['jsx' , 'classProperties', 'objectRestSpread']
+    plugins: ['jsx' , 'objectRestSpread']
   });
 
   let propTypes = [];
@@ -292,7 +292,7 @@ function parsePropTypeFile(source, fileName) {
 
   const ast = babylon.parse(source, {
     sourceType: 'module',
-    plugins: ['jsx' , 'classProperties', 'objectRestSpread']
+    plugins: ['jsx' , 'objectRestSpread']
   });
 
   traverse(ast, {

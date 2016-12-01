@@ -12,7 +12,7 @@ class Underline extends React.Component {
 }
 
 Underline.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Underline;

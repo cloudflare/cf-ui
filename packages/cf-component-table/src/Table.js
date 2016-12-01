@@ -23,7 +23,7 @@ Table.propTypes = {
   hover: PropTypes.bool,
   bordered: PropTypes.bool,
   condensed: PropTypes.bool,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 Table.defaultProps = {

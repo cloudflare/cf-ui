@@ -12,7 +12,7 @@ class Kbd extends React.Component {
 }
 
 Kbd.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Kbd;

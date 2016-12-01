@@ -12,7 +12,7 @@ class TableHeadCell extends React.Component {
 }
 
 TableHeadCell.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = TableHeadCell;

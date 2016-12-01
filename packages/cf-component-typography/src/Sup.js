@@ -12,7 +12,7 @@ class Sup extends React.Component {
 }
 
 Sup.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Sup;

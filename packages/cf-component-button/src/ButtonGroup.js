@@ -12,7 +12,7 @@ class ButtonGroup extends React.Component {
 }
 
 ButtonGroup.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = ButtonGroup;

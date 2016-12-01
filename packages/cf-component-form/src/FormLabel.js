@@ -19,7 +19,7 @@ class FormLabel extends React.Component {
 
 FormLabel.propTypes = {
   hidden: PropTypes.bool,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = FormLabel;

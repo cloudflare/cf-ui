@@ -12,7 +12,7 @@ class ListItem extends React.Component {
 }
 
 ListItem.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = ListItem;

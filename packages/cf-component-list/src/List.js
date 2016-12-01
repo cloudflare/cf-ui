@@ -22,7 +22,7 @@ class List extends React.Component {
 List.propTypes = {
   ordered: PropTypes.bool,
   unstyled: PropTypes.bool,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 List.defaultProps = {

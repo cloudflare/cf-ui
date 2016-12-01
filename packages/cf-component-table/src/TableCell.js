@@ -17,7 +17,7 @@ class TableCell extends React.Component {
 
 TableCell.propTypes = {
   align: PropTypes.oneOf(['left', 'center', 'right']),
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = TableCell;

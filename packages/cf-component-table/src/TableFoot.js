@@ -12,7 +12,7 @@ class TableFoot extends React.Component {
 }
 
 TableFoot.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = TableFoot;

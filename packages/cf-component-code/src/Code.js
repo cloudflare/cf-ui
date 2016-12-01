@@ -12,7 +12,7 @@ class Code extends React.Component {
 }
 
 Code.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Code;

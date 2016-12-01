@@ -15,7 +15,7 @@ class FlexItem extends React.Component {
 
 FlexItem.propTypes = {
   collapse: PropTypes.bool,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 FlexItem.defaultProps = {

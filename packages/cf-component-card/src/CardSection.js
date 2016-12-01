@@ -16,7 +16,7 @@ CardSection.propTypes = {
     'default',
     'error'
   ]),
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 CardSection.defaultProps = {

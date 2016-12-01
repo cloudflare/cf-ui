@@ -12,7 +12,7 @@ class ModalActions extends React.Component {
 }
 
 ModalActions.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = ModalActions;

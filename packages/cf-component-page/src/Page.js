@@ -12,7 +12,7 @@ class Page extends React.Component {
 }
 
 Page.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Page;

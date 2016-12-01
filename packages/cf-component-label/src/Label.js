@@ -18,7 +18,7 @@ Label.propTypes = {
     'error'
   ]).isRequired,
   tagName: PropTypes.string,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 Label.defaultProps = {

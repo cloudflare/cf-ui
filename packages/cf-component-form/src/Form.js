@@ -15,7 +15,7 @@ class Form extends React.Component {
 Form.propTypes = {
   layout: PropTypes.oneOf(['horizontal', 'vertical']).isRequired,
   onSubmit: PropTypes.func.isRequired,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Form;

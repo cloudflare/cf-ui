@@ -55,7 +55,7 @@ class DropdownLink extends React.Component {
 DropdownLink.propTypes = {
   to: PropTypes.string,
   onClick: PropTypes.func,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 DropdownLink.contextTypes = {

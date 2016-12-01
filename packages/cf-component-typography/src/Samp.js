@@ -12,7 +12,7 @@ class Samp extends React.Component {
 }
 
 Samp.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Samp;

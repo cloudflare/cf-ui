@@ -12,7 +12,7 @@ class NotificationList extends React.Component {
 }
 
 NotificationList.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = NotificationList;

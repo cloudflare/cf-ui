@@ -12,7 +12,7 @@ class Mark extends React.Component {
 }
 
 Mark.propTypes = {
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 module.exports = Mark;

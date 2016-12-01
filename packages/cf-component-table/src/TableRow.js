@@ -21,7 +21,7 @@ class TableRow extends React.Component {
 TableRow.propTypes = {
   type: TablePropTypes.rowType,
   accent: TablePropTypes.rowAccent,
-  children: PropTypes.arrayOf(PropTypes.node)
+  children: PropTypes.node
 };
 
 TableRow.defaultProps = {
