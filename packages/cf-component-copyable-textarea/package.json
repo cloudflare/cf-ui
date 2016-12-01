@@ -12,7 +12,7 @@
     "cf-component-textarea": "^2.0.0",
     "cf-util-text": "^2.0.0",
     "react": "^0.14.2 || ^15.0.0-0",
-    "react-dom": "^0.14.2"
+    "react-dom": "^0.14.2 || ^15.0.0-0"
   },
   "devDependencies": {}
 }
