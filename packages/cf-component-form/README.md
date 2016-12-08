@@ -19,7 +19,7 @@ const {
   FormFieldset,
   FormLabel,
   FormFieldError
-} = require('../../src/index');
+} = require('cf-component-form');
 const {Flex, FlexItem} = require('cf-component-flex');
 const {Button} = require('cf-component-button');
 const Input = require('cf-component-input');
