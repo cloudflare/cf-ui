@@ -20,6 +20,7 @@ class Input extends React.Component {
 
     return (
       <input
+        style={this.props.style}
         type={this.props.type}
         className={className}
         name={this.props.name}
@@ -44,11 +45,13 @@ Input.propTypes = {
   onChange: PropTypes.func.isRequired,
   placeholder: PropTypes.string,
   autoComplete: PropTypes.string,
-  invalid: PropTypes.bool
+  invalid: PropTypes.bool,
+  style: PropTypes.object
 };
 
 Input.defaultProps = {
-  type: 'text'
+  type: 'text',
+  style: {}
 };
 
 module.exports = Input;
