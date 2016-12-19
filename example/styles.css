@@ -1025,6 +1025,10 @@ a.cf-link--disabled {
   text-align: right;
 }
 
+.cf-modal--wide {
+  max-width: 800px;
+}
+
 /**
  * Modal Animations
  */

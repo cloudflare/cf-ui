@@ -22,7 +22,8 @@ class Component extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isModalOpen: false
+      isModalOpen: false,
+      isWide: false
     };
     this.handleRequestOpen = this.handleRequestOpen.bind(this);
     this.handleRequestClose = this.handleRequestClose.bind(this);
@@ -36,11 +37,18 @@ class Component extends React.Component {
     this.setState({ isModalOpen: false });
   }
 
+  handleWidthToggle() {
+    this.setState((oldState) => ({
+      isWide: !oldState.isWide
+    }));
+  }
+
   render() {
     return (
       <div>
         <Button onClick={this.handleRequestOpen}>Open Modal</Button>
         <Modal
+          width={this.state.isWide ? 'wide' : null}
           isOpen={this.state.isModalOpen}
           onRequestClose={this.handleRequestClose}>
           <ModalHeader>
@@ -52,6 +60,7 @@ class Component extends React.Component {
           </ModalBody>
           <ModalFooter>
             <ModalActions>
+              <button onClick={this.handleWidthToggle.bind(this)}>Toggle width</button>
               <button onClick={this.handleRequestClose.bind(this)}>Close Modal</button>
             </ModalActions>
           </ModalFooter>
