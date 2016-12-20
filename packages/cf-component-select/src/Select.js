@@ -9,7 +9,7 @@ class Select extends React.Component {
     ];
 
     if (this.props.invalid) {
-      classes.puhs('cf-select--invalid');
+      classes.push('cf-select--invalid');
     }
 
     return (
