@@ -6,8 +6,7 @@ describe('FormFieldError', function() {
   it('should render valid state', function() {
     assertEqualJSX(
       <FormFieldError field={{}} validations={{}}></FormFieldError>,
-      // should equal
-      <noscript/>
+      ''
     );
   });
 
