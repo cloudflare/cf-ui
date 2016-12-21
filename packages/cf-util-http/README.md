@@ -37,7 +37,7 @@ http.post('/posts', {
 
 ## API
 
-### `http.request(method, url, [opts], [onSuccess], [onError])`
+### `http.request(method, url, [opts], [callback])`
 
 Perform an HTTP request.
 
