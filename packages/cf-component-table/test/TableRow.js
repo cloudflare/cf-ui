@@ -11,6 +11,14 @@ describe('TableRow', function() {
     );
   });
 
+  it('should render extra class name', function() {
+    assertEqualJSX(
+      <TableRow className="extra">TableRow</TableRow>,
+      // should equal
+      <tr className="cf-table__row cf-table__row--default extra">TableRow</tr>
+    );
+  });
+
   it('should render with type', function() {
     assertEqualJSX(
       <TableRow type="error">TableRow</TableRow>,

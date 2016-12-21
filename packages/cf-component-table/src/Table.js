@@ -9,6 +9,7 @@ class Table extends React.Component {
     if (this.props.hover) className += ' cf-table--hover';
     if (this.props.bordered) className += ' cf-table--bordered';
     if (this.props.condensed) className += ' cf-table--condensed';
+    if (this.props.className.trim()) className += ' ' + this.props.className.trim();
 
     return (
       <table className={className}>
@@ -19,6 +20,7 @@ class Table extends React.Component {
 }
 
 Table.propTypes = {
+  className: PropTypes.string,
   striped: PropTypes.bool,
   hover: PropTypes.bool,
   bordered: PropTypes.bool,
@@ -27,6 +29,7 @@ Table.propTypes = {
 };
 
 Table.defaultProps = {
+  className: '',
   striped: false,
   hover: false,
   bordered: true,
