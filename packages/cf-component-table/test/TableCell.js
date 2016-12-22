@@ -11,6 +11,14 @@ describe('TableCell', function() {
     );
   });
 
+  it('should render extra class name', function() {
+    assertEqualJSX(
+      <TableCell className="extra">TableCell</TableCell>,
+      // should equal
+      <td className="cf-table__cell extra">TableCell</td>
+    );
+  });
+
   it('should render with align', function() {
     assertEqualJSX(
       <TableCell align="center">TableCell</TableCell>,

@@ -10,6 +10,10 @@ class TableRow extends React.Component {
       className += ` cf-table__row--accent-${this.props.accent}`;
     }
 
+    if (this.props.className.trim()) {
+      className += ' ' + this.props.className;
+    }
+
     return (
       <tr className={className}>
         {this.props.children}
@@ -19,12 +23,14 @@ class TableRow extends React.Component {
 }
 
 TableRow.propTypes = {
+  className: PropTypes.string,
   type: TablePropTypes.rowType,
   accent: TablePropTypes.rowAccent,
   children: PropTypes.node
 };
 
 TableRow.defaultProps = {
+  className: '',
   type: 'default',
   accent: false
 };

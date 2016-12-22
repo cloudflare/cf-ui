@@ -3,8 +3,11 @@ const {PropTypes} = React;
 
 class TableHead extends React.Component {
   render() {
+    let className = 'cf-table__head';
+    if (this.props.className.trim()) className += ' ' + this.props.className.trim();
+
     return (
-      <thead className="cf-table__head">
+      <thead className={className}>
         {this.props.children}
       </thead>
     );
@@ -12,7 +15,12 @@ class TableHead extends React.Component {
 }
 
 TableHead.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node
+};
+
+TableHead.defaultProps = {
+  className: ''
 };
 
 module.exports = TableHead;

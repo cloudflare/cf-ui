@@ -10,4 +10,12 @@ describe('TableFoot', function() {
       <tfoot className="cf-table__foot">TableFoot</tfoot>
     );
   });
+
+  it('should render extra class name', function() {
+    assertEqualJSX(
+      <TableFoot className="extra">TableFoot</TableFoot>,
+      // should equal
+      <tfoot className="cf-table__foot extra">TableFoot</tfoot>
+    );
+  });
 });

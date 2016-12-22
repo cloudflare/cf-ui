@@ -10,4 +10,12 @@ describe('TableHead', function() {
       <thead className="cf-table__head">TableHead</thead>
     );
   });
+
+  it('should render extra class name', function() {
+    assertEqualJSX(
+      <TableHead className="extra">TableHead</TableHead>,
+      // should equal
+      <thead className="cf-table__head extra">TableHead</thead>
+    );
+  });
 });
