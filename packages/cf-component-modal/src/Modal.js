@@ -56,8 +56,8 @@ Modal.propTypes = {
   closeOnBackdropClick: PropTypes.bool,
   children: PropTypes.node,
   width: PropTypes.oneOf([
-    'wide',
-  ]),
+    'wide'
+  ])
 };
 
 Modal.defaultProps = {
