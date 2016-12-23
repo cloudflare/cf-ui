@@ -4,8 +4,16 @@ const ReactSelect = require('react-select');
 
 class Select extends React.Component {
   render() {
+    let classes = [
+      'cf-select'
+    ];
+
+    if (this.props.invalid) {
+      classes.push('cf-select--invalid');
+    }
+
     return (
-      <div className="cf-select">
+      <div className={classes.join(' ')}>
         {this.props.label && <label>{this.props.label}</label>}
         <ReactSelect
           // Simplify if this isnt a searchable select
