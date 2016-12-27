@@ -10,4 +10,11 @@ describe('CardControl', function() {
       <div className="cf-card__control">CardControl</div>
     );
   });
+  it('should render wide', function() {
+    assertEqualJSX(
+      <CardControl wide>CardControl</CardControl>,
+      // should equal
+      <div className="cf-card__control cf-card__control--wide">CardControl</div>
+    );
+  });
 });
