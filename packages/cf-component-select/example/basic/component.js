@@ -18,9 +18,9 @@ class Component extends React.Component {
     this.setState({ value });
   };
 
-  handleMultiChange(value) {
+  handleMultiChange(values) {
     this.setState({
-      multiValue: value.length ? value.split(',') : []
+      multiValue: values.map((selected) => selected.value)
     });
   };
 

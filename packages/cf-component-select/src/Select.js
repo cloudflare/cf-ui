@@ -4,10 +4,11 @@ const ReactSelect = require('react-select');
 
 class Select extends React.Component {
   render() {
+    const SelectClass = this.props.async ? ReactSelect.Async : ReactSelect;
     return (
       <div className="cf-select">
         {this.props.label && <label>{this.props.label}</label>}
-        <ReactSelect
+        <SelectClass
           // Simplify if this isnt a searchable select
           searchable={this.props.searchable}
           clearable={this.props.searchable}
@@ -16,6 +17,7 @@ class Select extends React.Component {
           onChange={this.props.onChange}
           onBlur={this.props.onBlur}
           onFocus={this.props.onFocus}
+          loadOptions={this.props.loadOptions}
 
           multi={this.props.multi}
           value={this.props.value}
@@ -32,9 +34,11 @@ Select.propTypes = {
   onChange: PropTypes.func.isRequired,
   onBlur: PropTypes.func,
   onFocus: PropTypes.func,
+  loadOptions: PropTypes.func,
 
   multi: PropTypes.bool,
   searchable: PropTypes.bool,
+  async: PropTypes.bool,
 
   value: PropTypes.any,
   options: PropTypes.arrayOf(PropTypes.shape({
@@ -46,7 +50,8 @@ Select.propTypes = {
 
 Select.defaultProps = {
   multi: false,
-  searchable: false
+  searchable: false,
+  async: false
 };
 
 module.exports = Select;
