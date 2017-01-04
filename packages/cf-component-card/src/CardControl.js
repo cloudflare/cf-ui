@@ -3,8 +3,10 @@ const {PropTypes} = React;
 
 class CardControl extends React.Component {
   render() {
+    const className = 'cf-card__control' + (this.props.wide ? ' cf-card__control--wide' : '');
+
     return (
-      <div className="cf-card__control">
+      <div className={className}>
         {this.props.children}
       </div>
     );
@@ -12,7 +14,8 @@ class CardControl extends React.Component {
 }
 
 CardControl.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
+  wide: PropTypes.bool
 };
 
 module.exports = CardControl;
