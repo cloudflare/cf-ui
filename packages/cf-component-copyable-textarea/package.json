@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "assert-equal-jsx": "^1.0.3",
+    "cf-util-text": "^2.0.0",
     "react-addons-test-utils": "^15.4.1"
   }
 }
