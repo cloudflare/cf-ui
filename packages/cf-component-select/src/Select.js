@@ -43,7 +43,8 @@ Select.propTypes = {
   value: PropTypes.any,
   options: PropTypes.arrayOf(PropTypes.shape({
     label: PropTypes.string.isRequired,
-    value: PropTypes.any.isRequired
+    value: PropTypes.any.isRequired,
+    disabled: PropTypes.bool
   })),
   placeholder: PropTypes.string
 };
