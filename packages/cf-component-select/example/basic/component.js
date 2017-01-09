@@ -32,7 +32,7 @@ class Component extends React.Component {
           value={this.state.value}
           options={[
             { value: 1, label: 'One' },
-            { value: 2, label: 'Two' },
+            { value: 2, label: 'Two', disabled: true },
             { value: 3, label: 'Three' }
           ]}
           onChange={this.handleChange.bind(this)}/>
