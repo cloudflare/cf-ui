@@ -1,7 +1,13 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class Small extends React.Component {
+  static propTypes = {
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <small className="cf-small">
@@ -10,9 +16,5 @@ class Small extends React.Component {
     );
   }
 }
-
-Small.propTypes = {
-  children: PropTypes.node
-};
 
 module.exports = Small;

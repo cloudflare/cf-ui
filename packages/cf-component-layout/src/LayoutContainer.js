@@ -1,7 +1,13 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class LayoutContainer extends React.Component {
+  static propTypes = {
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <div className="cf-layout__container">
@@ -10,9 +16,5 @@ class LayoutContainer extends React.Component {
     );
   }
 }
-
-LayoutContainer.propTypes = {
-  children: PropTypes.node
-};
 
 module.exports = LayoutContainer;

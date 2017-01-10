@@ -1,3 +1,5 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 const Textarea = require('cf-component-textarea');
@@ -16,19 +18,20 @@ const overlayStyles = {
 };
 
 class CopyableTextarea extends React.Component {
+  textarea: HTMLTextAreaElement;
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      focused: false,
-      copied: false
-    };
+  static propTypes = {
+    name: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
+    onCopy: PropTypes.func
+  };
 
-    this.handleOverlayClick = this.handleOverlayClick.bind(this);
-    this.handleBlur = this.handleBlur.bind(this);
-  }
+  state = {
+    focused: false,
+    copied: false
+  };
 
-  handleOverlayClick(e) {
+  handleOverlayClick = (e: Event) => {
     e.preventDefault();
 
     const target = this.textarea;
@@ -53,12 +56,12 @@ class CopyableTextarea extends React.Component {
     });
   }
 
-  handleBlur() {
+  handleBlur = () => {
     this.setState({
       focused: false,
       copied: false
     });
-  }
+  };
 
   render() {
     let helpText;
@@ -89,11 +92,5 @@ class CopyableTextarea extends React.Component {
     );
   }
 }
-
-CopyableTextarea.propTypes = {
-  name: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-  onCopy: PropTypes.func
-};
 
 module.exports = CopyableTextarea;

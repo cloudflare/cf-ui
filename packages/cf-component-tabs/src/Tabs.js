@@ -1,22 +1,39 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 const Viewport = require('cf-component-viewport');
 const Select = require('cf-component-select');
 
 class Tabs extends React.Component {
+  static propTypes = {
+    onChange: PropTypes.func.isRequired,
+    active: PropTypes.string.isRequired,
+    activeTab: PropTypes.string.isRequired,
+    tabs: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired
+    })).isRequired,
+    children: PropTypes.node
+  };
+
+  static childContextTypes = {
+    activeTab: PropTypes.string.isRequired
+  };
+
   getChildContext() {
     return {
       activeTab: this.props.activeTab
     };
   }
 
-  handleChange(id) {
+  handleChange(id: string) {
     if (id !== this.props.active) {
       this.props.onChange(id);
     }
   }
 
-  handleKeyDown(id, event) {
+  handleKeyDown(id: string, event: KeyboardEvent) {
     if (event.which === 13) {
       this.handleChange(id);
     }
@@ -66,20 +83,5 @@ class Tabs extends React.Component {
     );
   }
 }
-
-Tabs.propTypes = {
-  onChange: PropTypes.func.isRequired,
-  active: PropTypes.string.isRequired,
-  activeTab: PropTypes.string.isRequired,
-  tabs: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired
-  })).isRequired,
-  children: PropTypes.node
-};
-
-Tabs.childContextTypes = {
-  activeTab: PropTypes.string.isRequired
-};
 
 module.exports = Tabs;

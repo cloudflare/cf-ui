@@ -1,4 +1,11 @@
-function buildMediaQuery({minWidth, maxWidth}, not) {
+// @flow
+
+type config = {
+  minWidth?: string,
+  maxWidth?: string
+};
+
+function buildMediaQuery({minWidth, maxWidth}: config, not?: boolean) {
   let query = '';
 
   if (minWidth) {

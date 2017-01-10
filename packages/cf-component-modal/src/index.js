@@ -1,3 +1,5 @@
+// @flow
+
 exports.Modal = require('./Modal');
 exports.ModalActions = require('./ModalActions');
 exports.ModalBody = require('./ModalBody');

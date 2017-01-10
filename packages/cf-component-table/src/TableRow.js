@@ -1,8 +1,21 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 const TablePropTypes = require('./TablePropTypes');
 
 class TableRow extends React.Component {
+  static propTypes = {
+    type: TablePropTypes.rowType,
+    accent: TablePropTypes.rowAccent,
+    children: PropTypes.node
+  };
+
+  static defaultProps = {
+    type: 'default',
+    accent: false
+  };
+
   render() {
     let className = `cf-table__row cf-table__row--${this.props.type}`;
 
@@ -17,16 +30,5 @@ class TableRow extends React.Component {
     );
   }
 }
-
-TableRow.propTypes = {
-  type: TablePropTypes.rowType,
-  accent: TablePropTypes.rowAccent,
-  children: PropTypes.node
-};
-
-TableRow.defaultProps = {
-  type: 'default',
-  accent: false
-};
 
 module.exports = TableRow;

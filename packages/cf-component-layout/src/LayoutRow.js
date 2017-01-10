@@ -1,7 +1,13 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class LayoutRow extends React.Component {
+  static propTypes = {
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <div className="cf-layout__row">
@@ -10,9 +16,5 @@ class LayoutRow extends React.Component {
     );
   }
 }
-
-LayoutRow.propTypes = {
-  children: PropTypes.node
-};
 
 module.exports = LayoutRow;

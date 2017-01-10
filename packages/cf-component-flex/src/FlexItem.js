@@ -1,7 +1,18 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class FlexItem extends React.Component {
+  static propTypes = {
+    collapse: PropTypes.bool,
+    children: PropTypes.node
+  };
+
+  static defaultProps = {
+    collapse: false
+  };
+
   render() {
     let className = 'cf-flex__item';
 
@@ -12,14 +23,5 @@ class FlexItem extends React.Component {
     return <div className={className}>{this.props.children}</div>;
   }
 }
-
-FlexItem.propTypes = {
-  collapse: PropTypes.bool,
-  children: PropTypes.node
-};
-
-FlexItem.defaultProps = {
-  collapse: false
-};
 
 module.exports = FlexItem;

@@ -1,7 +1,18 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class Flex extends React.Component {
+  static propTypes = {
+    spacing: PropTypes.oneOf([
+      false,
+      'thin',
+      'wide'
+    ]).isRequired,
+    children: PropTypes.node
+  };
+
   render() {
     let className = 'cf-flex';
 
@@ -16,14 +27,5 @@ class Flex extends React.Component {
     );
   }
 }
-
-Flex.propTypes = {
-  spacing: PropTypes.oneOf([
-    false,
-    'thin',
-    'wide'
-  ]).isRequired,
-  children: PropTypes.node
-};
 
 module.exports = Flex;

@@ -1,7 +1,15 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class DynamicContent extends React.Component {
+  static propTypes = {
+    dangerouslySetInnerHTML: PropTypes.shape({
+      __html: PropTypes.string.isRequired
+    }).isRequired
+  };
+
   render() {
     return (
       <div
@@ -10,11 +18,5 @@ class DynamicContent extends React.Component {
     );
   }
 }
-
-DynamicContent.propTypes = {
-  dangerouslySetInnerHTML: PropTypes.shape({
-    __html: PropTypes.string.isRequired
-  }).isRequired
-};
 
 module.exports = DynamicContent;

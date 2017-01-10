@@ -1,7 +1,14 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class CardToolbar extends React.Component {
+  static propTypes = {
+    controls: PropTypes.any,
+    links: PropTypes.any
+  };
+
   render() {
     return (
       <div className="cf-card__toolbar">
@@ -15,10 +22,5 @@ class CardToolbar extends React.Component {
     );
   }
 }
-
-CardToolbar.propTypes = {
-  controls: PropTypes.any,
-  links: PropTypes.any
-};
 
 module.exports = CardToolbar;

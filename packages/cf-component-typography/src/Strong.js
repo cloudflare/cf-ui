@@ -1,7 +1,13 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class Strong extends React.Component {
+  static propTypes = {
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <strong className="cf-strong">
@@ -10,9 +16,5 @@ class Strong extends React.Component {
     );
   }
 }
-
-Strong.propTypes = {
-  children: PropTypes.node
-};
 
 module.exports = Strong;

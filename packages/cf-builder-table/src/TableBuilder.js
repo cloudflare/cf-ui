@@ -1,3 +1,7 @@
+// @flow
+
+import type {TableState} from './TableTypes';
+
 const React = require('react');
 const {PropTypes} = React;
 const {connect} = require('react-redux');
@@ -11,6 +15,20 @@ const {
 } = require('cf-component-table');
 
 class TableBuilder extends React.Component {
+  static propTypes = {
+    tableName: PropTypes.string.isRequired,
+
+    rows: TableBuilderPropTypes.rows.isRequired,
+    columns: TableBuilderPropTypes.columns.isRequired,
+
+    striped: PropTypes.bool,
+    hover: PropTypes.bool,
+    bordered: PropTypes.bool,
+    condensed: PropTypes.bool,
+
+    flashes: PropTypes.object
+  };
+
   render() {
     const {rows, columns, striped, hover, bordered, condensed, flashes} = this.props;
     return (
@@ -47,21 +65,7 @@ class TableBuilder extends React.Component {
   }
 }
 
-TableBuilder.propTypes = {
-  tableName: PropTypes.string.isRequired,
-
-  rows: TableBuilderPropTypes.rows.isRequired,
-  columns: TableBuilderPropTypes.columns.isRequired,
-
-  striped: PropTypes.bool,
-  hover: PropTypes.bool,
-  bordered: PropTypes.bool,
-  condensed: PropTypes.bool,
-
-  flashes: PropTypes.object
-};
-
-function mapStateToProps(state, ownProps) {
+function mapStateToProps(state: TableState, ownProps) {
   const tableName = ownProps.tableName;
   const tableState = state.tables[tableName];
   return {

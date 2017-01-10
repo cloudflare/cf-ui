@@ -1,3 +1,5 @@
+// @flow
+
 exports.Table = require('./Table');
 exports.TableBody = require('./TableBody');
 exports.TableCell = require('./TableCell');

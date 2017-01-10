@@ -1,7 +1,13 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class FormHeader extends React.Component {
+  static propTypes = {
+    title: PropTypes.string.isRequired
+  };
+
   render() {
     return (
         <div className="cf-form__header">
@@ -12,9 +18,5 @@ class FormHeader extends React.Component {
     );
   }
 }
-
-FormHeader.propTypes = {
-  title: PropTypes.string.isRequired
-};
 
 module.exports = FormHeader;

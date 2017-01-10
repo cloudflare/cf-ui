@@ -1,4 +1,25 @@
-function createApiResponse(result = null, errors = null, messages = []) {
+// @flow
+
+type Json =
+  | string
+  | number
+  | boolean
+  | null
+  | Array<Json>
+  | { [key: string]: Json };
+
+type Result =
+  | null
+  | Array<Json>
+  | { [key: string]: Json };
+
+type Errors =
+  | null
+  | Array<string>;
+
+type Messages = Array<string>;
+
+function createApiResponse(result?: Result = null, errors?: Errors = null, messages?: Messages = []) {
   let resultInfo = null;
 
   if (Array.isArray(result)) {

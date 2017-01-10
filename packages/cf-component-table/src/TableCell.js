@@ -1,7 +1,14 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class TableCell extends React.Component {
+  static propTypes = {
+    align: PropTypes.oneOf(['left', 'center', 'right']),
+    children: PropTypes.node
+  };
+
   render() {
     let className = 'cf-table__cell';
 
@@ -14,10 +21,5 @@ class TableCell extends React.Component {
     );
   }
 }
-
-TableCell.propTypes = {
-  align: PropTypes.oneOf(['left', 'center', 'right']),
-  children: PropTypes.node
-};
 
 module.exports = TableCell;

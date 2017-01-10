@@ -1,6 +1,23 @@
+// @flow
+
+import type {
+  Options as RequestOptions,
+  Result as RequestResult,
+} from 'cf-util-http';
 const {get: httpGet} = require('cf-util-http');
 
-function validateOptions(opts) {
+export type Options = {
+  interval?: number,
+  timeout?: number,
+  requestOpts: RequestOptions,
+
+  isComplete: (res: RequestResult) => boolean,
+  onComplete: (res: RequestResult) => mixed,
+  onError: (err: RequestResult) => mixed,
+  onCancel?: () => mixed
+};
+
+function validateOptions(opts: Options) {
   if (!opts.isComplete) {
     throw new Error('`poll` requires `isComplete`');
   }
@@ -14,7 +31,7 @@ function validateOptions(opts) {
   }
 }
 
-function httpPoll(url, opts) {
+function httpPoll(url: string, opts: Options) {
   opts = opts || {};
 
   validateOptions(opts);
@@ -69,6 +86,7 @@ function httpPoll(url, opts) {
       if (err) {
         onError(err);
       } else {
+        res = ((res: any): RequestResult); // Fix `any`
         onSuccess(res);
       }
     });

@@ -1,7 +1,17 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class Text extends React.Component {
+  static propTypes = {
+    size: PropTypes.oneOf(['normal', 'small']),
+    align: PropTypes.oneOf(['start', 'center', 'justify', 'end']),
+    type: PropTypes.oneOf(['info', 'success', 'warning', 'error', 'muted']),
+    'case': PropTypes.oneOf(['capitalize', 'titlecase', 'lowercase', 'uppercase']),
+    children: PropTypes.node
+  };
+
   render() {
     let classNames = [];
 
@@ -28,13 +38,5 @@ class Text extends React.Component {
     );
   }
 }
-
-Text.propTypes = {
-  size: PropTypes.oneOf(['normal', 'small']),
-  align: PropTypes.oneOf(['start', 'center', 'justify', 'end']),
-  type: PropTypes.oneOf(['info', 'success', 'warning', 'error', 'muted']),
-  'case': PropTypes.oneOf(['capitalize', 'titlecase', 'lowercase', 'uppercase']),
-  children: PropTypes.node
-};
 
 module.exports = Text;

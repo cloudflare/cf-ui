@@ -1,4 +1,11 @@
-function series(funcs, callback) {
+// @flow
+
+import type {Func, Funcs, Callback} from './types';
+
+function series<Err, Res>(
+  funcs: Funcs<Err, Res>,
+  callback: Callback<Err, Res>
+) {
   const results = [];
   let index = 0;
 
@@ -20,7 +27,7 @@ function series(funcs, callback) {
       }
 
       if (error) {
-        callback(error);
+        callback(error, null);
       } else {
         results.push(result);
         next();

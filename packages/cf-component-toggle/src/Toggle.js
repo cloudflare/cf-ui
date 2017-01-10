@@ -1,16 +1,28 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
+type InputElementEvent = Event & {
+  target: HTMLInputElement
+};
+
 class Toggle extends React.Component {
+  static propTypes = {
+    label: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.oneOf([false])
+    ]).isRequired,
+    name: PropTypes.string,
+    value: PropTypes.bool,
+    onChange: PropTypes.func,
+    onFocus: PropTypes.func,
+    onBlur: PropTypes.func
+  };
 
-  constructor(props) {
-    super(props);
-    this.handleChange = this.handleChange.bind(this);
-  }
-
-  handleChange(e) {
+  handleChange = (e: InputElementEvent) => {
     this.props.onChange(e.target.checked);
-  }
+  };
 
   render() {
     let className = 'cf-toggle';
@@ -38,17 +50,5 @@ class Toggle extends React.Component {
     );
   }
 }
-
-Toggle.propTypes = {
-  label: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.oneOf([false])
-  ]).isRequired,
-  name: PropTypes.string,
-  value: PropTypes.bool,
-  onChange: PropTypes.func,
-  onFocus: PropTypes.func,
-  onBlur: PropTypes.func
-};
 
 module.exports = Toggle;

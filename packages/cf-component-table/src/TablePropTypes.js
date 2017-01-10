@@ -1,3 +1,5 @@
+// @flow
+
 const {PropTypes} = require('react');
 
 const rowType = PropTypes.oneOf([

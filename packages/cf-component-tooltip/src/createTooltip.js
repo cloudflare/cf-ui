@@ -1,6 +1,8 @@
+// @flow
+
 const Tooltip = require('tether-tooltip');
 
-function createTooltip(el, content, position) {
+function createTooltip(el: HTMLElement, content: string, position: string) {
   const instance = new Tooltip({
     target: el,
     classes: '',

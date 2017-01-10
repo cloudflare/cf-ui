@@ -1,8 +1,33 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 const ReactSelect = require('react-select');
 
 class Select extends React.Component {
+  static propTypes = {
+    label: PropTypes.string,
+
+    onChange: PropTypes.func.isRequired,
+    onBlur: PropTypes.func,
+    onFocus: PropTypes.func,
+
+    multi: PropTypes.bool,
+    searchable: PropTypes.bool,
+
+    value: PropTypes.any,
+    options: PropTypes.arrayOf(PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      value: PropTypes.any.isRequired
+    })),
+    placeholder: PropTypes.string
+  };
+
+  static defaultProps = {
+    multi: false,
+    searchable: false
+  };
+
   render() {
     return (
       <div className="cf-select">
@@ -25,28 +50,5 @@ class Select extends React.Component {
     );
   }
 }
-
-Select.propTypes = {
-  label: PropTypes.string,
-
-  onChange: PropTypes.func.isRequired,
-  onBlur: PropTypes.func,
-  onFocus: PropTypes.func,
-
-  multi: PropTypes.bool,
-  searchable: PropTypes.bool,
-
-  value: PropTypes.any,
-  options: PropTypes.arrayOf(PropTypes.shape({
-    label: PropTypes.string.isRequired,
-    value: PropTypes.any.isRequired
-  })),
-  placeholder: PropTypes.string
-};
-
-Select.defaultProps = {
-  multi: false,
-  searchable: false
-};
 
 module.exports = Select;

@@ -1,3 +1,5 @@
+// @flow
+
 exports.Abbr = require('./Abbr');
 exports.Cite = require('./Cite');
 exports.Del = require('./Del');

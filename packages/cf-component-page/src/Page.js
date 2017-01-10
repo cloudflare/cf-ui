@@ -1,7 +1,13 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class Page extends React.Component {
+  propTypes = {
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <article className="cf-page">
@@ -10,9 +16,5 @@ class Page extends React.Component {
     );
   }
 }
-
-Page.propTypes = {
-  children: PropTypes.node
-};
 
 module.exports = Page;

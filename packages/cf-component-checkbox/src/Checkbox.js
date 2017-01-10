@@ -1,10 +1,27 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
+type InputElementEvent = Event & {
+  target: HTMLInputElement
+};
+
 class Checkbox extends React.Component {
-  handleChange(e) {
+  static propTypes = {
+    label: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.oneOf([false])
+    ]).isRequired,
+    name: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
+    checked: PropTypes.bool.isRequired,
+    onChange: PropTypes.func.isRequired
+  };
+
+  handleChange = (e: InputElementEvent) => {
     this.props.onChange(e.target.checked);
-  }
+  };
 
   render() {
     let className = 'cf-checkbox';
@@ -31,16 +48,5 @@ class Checkbox extends React.Component {
     );
   }
 }
-
-Checkbox.propTypes = {
-  label: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.oneOf([false])
-  ]).isRequired,
-  name: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-  checked: PropTypes.bool.isRequired,
-  onChange: PropTypes.func.isRequired
-};
 
 module.exports = Checkbox;

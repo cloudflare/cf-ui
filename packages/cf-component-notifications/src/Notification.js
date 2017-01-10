@@ -1,16 +1,36 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 const raf = require('raf');
 
 class Notification extends React.Component {
+  _raf: number | null;
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      persist: this.props.persist,
-      timeoutId: null
-    };
-  }
+  static propTypes = {
+    type: PropTypes.oneOf(['success', 'error', 'info', 'warning']),
+    message: PropTypes.string.isRequired,
+
+    closable: PropTypes.bool,
+    delay: PropTypes.number,
+    persist: PropTypes.bool,
+
+    onClose: PropTypes.func.isRequired
+  };
+
+  static defaultProps = {
+    closable: true,
+    delay: 4000,
+    persist: false
+  };
+
+  state: {
+    persist: boolean,
+    timeoutId: null | number
+  } = {
+    persist: this.props.persist,
+    timeoutId: null
+  };
 
   componentDidMount() {
     // Wait two frames to ensure that the notification has rendered for the
@@ -112,22 +132,5 @@ class Notification extends React.Component {
     );
   }
 }
-
-Notification.propTypes = {
-  type: PropTypes.oneOf(['success', 'error', 'info', 'warning']),
-  message: PropTypes.string.isRequired,
-
-  closable: PropTypes.bool,
-  delay: PropTypes.number,
-  persist: PropTypes.bool,
-
-  onClose: PropTypes.func.isRequired
-};
-
-Notification.defaultProps = {
-  closable: true,
-  delay: 4000,
-  persist: false
-};
 
 module.exports = Notification;

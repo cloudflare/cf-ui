@@ -1,3 +1,5 @@
+// @flow
+
 const React = require('react');
 
 class CardLoadingText extends React.Component {

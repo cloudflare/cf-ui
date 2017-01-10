@@ -1,7 +1,13 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class Underline extends React.Component {
+  static propTypes = {
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <u className="cf-underline">
@@ -10,9 +16,5 @@ class Underline extends React.Component {
     );
   }
 }
-
-Underline.propTypes = {
-  children: PropTypes.node
-};
 
 module.exports = Underline;

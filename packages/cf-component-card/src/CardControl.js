@@ -1,7 +1,13 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class CardControl extends React.Component {
+  static propTypes = {
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <div className="cf-card__control">
@@ -10,9 +16,5 @@ class CardControl extends React.Component {
     );
   }
 }
-
-CardControl.propTypes = {
-  children: PropTypes.node
-};
 
 module.exports = CardControl;

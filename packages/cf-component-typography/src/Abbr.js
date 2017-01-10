@@ -1,7 +1,14 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class Abbr extends React.Component {
+  static propTypes = {
+    title: PropTypes.string.isRequired,
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <abbr className="cf-abbr" title={this.props.title}>
@@ -10,10 +17,5 @@ class Abbr extends React.Component {
     );
   }
 }
-
-Abbr.propTypes = {
-  title: PropTypes.string.isRequired,
-  children: PropTypes.node
-};
 
 module.exports = Abbr;

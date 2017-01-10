@@ -1,3 +1,8 @@
+// @flow
+
+declare var beforeEach: () => void;
+declare var afterEach: () => void;
+
 const {fakeServer} = require('sinon');
 
 let server = null;
@@ -23,11 +28,20 @@ function teardownServer() {
   server = null;
 }
 
+type Headers = { [header: string]: string };
+type Json =
+  | string
+  | number
+  | boolean
+  | null
+  | Array<Json>
+  | { [key: string]: Json };
+
 function createFakeServer() {
   initServer();
 
   return {
-    respondWith(method, url, status, headers, body) {
+    respondWith(method: string, url: string, status: number, headers: Headers, body: Json) {
       getServer().respondWith(method, url, [status, headers, JSON.stringify(body)]);
     },
     respond() {

@@ -1,7 +1,13 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class TableFoot extends React.Component {
+  static propTypes = {
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <tfoot className="cf-table__foot">
@@ -10,9 +16,5 @@ class TableFoot extends React.Component {
     );
   }
 }
-
-TableFoot.propTypes = {
-  children: PropTypes.node
-};
 
 module.exports = TableFoot;

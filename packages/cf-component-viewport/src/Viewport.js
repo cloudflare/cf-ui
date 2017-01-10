@@ -1,3 +1,5 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 const MediaQuery = require('react-responsive');
@@ -12,6 +14,22 @@ const SIZES = {
 };
 
 class Viewport extends React.Component {
+  static propTypes = {
+    not: PropTypes.bool,
+    size: PropTypes.oneOf([
+      'mobile',
+      'mobileWide',
+      'tablet',
+      'desktop',
+      'desktopLarge'
+    ]).isRequired,
+    children: PropTypes.node
+  };
+
+  static defaultProps = {
+    not: false
+  };
+
   render() {
     let { size, not } = this.props;
     let mediaQuery = buildMediaQuery(SIZES[size], not);
@@ -23,21 +41,5 @@ class Viewport extends React.Component {
     );
   }
 }
-
-Viewport.propTypes = {
-  not: PropTypes.bool,
-  size: PropTypes.oneOf([
-    'mobile',
-    'mobileWide',
-    'tablet',
-    'desktop',
-    'desktopLarge'
-  ]).isRequired,
-  children: PropTypes.node
-};
-
-Viewport.defaultProps = {
-  not: false
-};
 
 module.exports = Viewport;

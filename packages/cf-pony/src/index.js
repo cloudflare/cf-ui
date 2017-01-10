@@ -1,3 +1,5 @@
+// @flow
+
 /**
  * When we finally want to deprecate one of these methods:
  *

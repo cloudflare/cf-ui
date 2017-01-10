@@ -1,8 +1,24 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 const {TYPES, SIZES} = require('./options');
 
 class Icon extends React.Component {
+  static propTypes = {
+    label: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.oneOf([false])
+    ]).isRequired,
+    type: PropTypes.oneOf(TYPES).isRequired,
+    size: PropTypes.oneOf(SIZES),
+    border: PropTypes.bool,
+    spin: PropTypes.bool,
+    muted: PropTypes.bool,
+    white: PropTypes.bool,
+    role: PropTypes.string
+  };
+
   render() {
     let className = `cf-icon cf-icon--${this.props.type}`;
 
@@ -24,19 +40,5 @@ class Icon extends React.Component {
     );
   }
 }
-
-Icon.propTypes = {
-  label: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.oneOf([false])
-  ]).isRequired,
-  type: PropTypes.oneOf(TYPES).isRequired,
-  size: PropTypes.oneOf(SIZES),
-  border: PropTypes.bool,
-  spin: PropTypes.bool,
-  muted: PropTypes.bool,
-  white: PropTypes.bool,
-  role: PropTypes.string
-};
 
 module.exports = Icon;

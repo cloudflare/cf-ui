@@ -1,7 +1,13 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class ModalHeader extends React.Component {
+  static propTypes = {
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <header className="cf-modal__header">
@@ -10,9 +16,5 @@ class ModalHeader extends React.Component {
     );
   }
 }
-
-ModalHeader.propTypes = {
-  children: PropTypes.node
-};
 
 module.exports = ModalHeader;

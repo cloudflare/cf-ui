@@ -1,15 +1,36 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
-class Input extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleChange = this.handleChange.bind(this);
-  }
+type InputElementEvent = Event & {
+  target: HTMLInputElement
+};
 
-  handleChange(e) {
+class Input extends React.Component {
+  static propTypes = {
+    type: PropTypes.oneOf([
+      'text',
+      'email',
+      'number',
+      'password',
+      'search'
+    ]),
+    name: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
+    onChange: PropTypes.func.isRequired,
+    placeholder: PropTypes.string,
+    autoComplete: PropTypes.string,
+    invalid: PropTypes.bool
+  };
+
+  static defaultProps = {
+    type: 'text'
+  };
+
+  handleChange = (e: InputElementEvent) => {
     this.props.onChange(e.target.value);
-  }
+  };
 
   render() {
     let className = 'cf-input cf-input--' + this.props.type;
@@ -30,25 +51,5 @@ class Input extends React.Component {
     );
   }
 }
-
-Input.propTypes = {
-  type: PropTypes.oneOf([
-    'text',
-    'email',
-    'number',
-    'password',
-    'search'
-  ]),
-  name: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
-  placeholder: PropTypes.string,
-  autoComplete: PropTypes.string,
-  invalid: PropTypes.bool
-};
-
-Input.defaultProps = {
-  type: 'text'
-};
 
 module.exports = Input;

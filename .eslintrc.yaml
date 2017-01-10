@@ -1,11 +1,12 @@
-parserOptions:
-  ecmaVersion: 6
-  sourceType: "module"
-  ecmaFeatures:
-    globalReturn: false
-    impliedStrict: true
-    jsx: true
-    experimentalObjectRestSpread: true
+parser: "babel-eslint"
+# parserOptions:
+#   ecmaVersion: 6
+#   sourceType: "module"
+#   ecmaFeatures:
+#     globalReturn: false
+#     impliedStrict: true
+#     jsx: true
+#     experimentalObjectRestSpread: true
 env:
   browser: true
   node: true
@@ -13,6 +14,7 @@ env:
 plugins:
   - "cflint"
   - "react"
+  - "flowtype-errors"
 extends:
   - "plugin:react/recommended"
 rules:
@@ -62,3 +64,5 @@ rules:
     - vars: "all"
       args: "after-used"
   no-undef: 2
+  # Flow
+  flowtype-errors/show-errors: 2

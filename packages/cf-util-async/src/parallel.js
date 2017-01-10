@@ -1,5 +1,12 @@
-function parallel(funcs, callback) {
-  const results = [];
+// @flow
+
+import type {Func, Funcs, Callback} from './types';
+
+function parallel<Err, Res>(
+  funcs: Funcs<Err, Res>,
+  callback: Callback<Err, Res>
+) {
+  const results: Array<Res> = [];
 
   let index = 0;
   let errored = false;
@@ -21,7 +28,7 @@ function parallel(funcs, callback) {
 
       if (error) {
         errored = true;
-        callback(error);
+        callback(error, null);
         return;
       }
 

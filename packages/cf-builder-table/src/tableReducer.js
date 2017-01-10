@@ -1,10 +1,12 @@
-const ActionTypes = require('./TableActionTypes');
+// @flow
 
-const initialState = {};
+import type {TableAction, TableState} from './TableTypes';
 
-function tableReducer(state = initialState, action) {
+const initialState: TableState = {};
+
+function tableReducer(state: TableState = initialState, action: TableAction) {
   switch (action.type) {
-    case ActionTypes.CF_BUILDER_TABLE_FLASH_ROW_ON:
+    case 'CF_BUILDER_TABLE_FLASH_ROW_ON':
       return {
         ...state,
         [action.tableName]: {
@@ -16,7 +18,7 @@ function tableReducer(state = initialState, action) {
         }
       };
 
-    case ActionTypes.CF_BUILDER_TABLE_FLASH_ROW_OFF:
+    case 'CF_BUILDER_TABLE_FLASH_ROW_OFF':
       return {
         ...state,
         [action.tableName]: {

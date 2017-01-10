@@ -1,7 +1,13 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class TableHeadCell extends React.Component {
+  static propTypes = {
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <th className="cf-table__cell cf-table__cell--head">
@@ -10,9 +16,5 @@ class TableHeadCell extends React.Component {
     );
   }
 }
-
-TableHeadCell.propTypes = {
-  children: PropTypes.node
-};
 
 module.exports = TableHeadCell;

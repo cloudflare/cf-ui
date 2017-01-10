@@ -1,3 +1,5 @@
+// @flow
+
 const React = require('react');
 const Icon = require('cf-component-icon');
 

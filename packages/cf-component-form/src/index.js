@@ -1,3 +1,5 @@
+// @flow
+
 exports.Form = require('./Form');
 exports.FormHeader = require('./FormHeader');
 exports.FormFooter = require('./FormFooter');
