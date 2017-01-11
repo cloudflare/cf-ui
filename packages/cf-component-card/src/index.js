@@ -1,3 +1,5 @@
+// @flow
+
 exports.Card = require('./Card');
 exports.CardContent = require('./CardContent');
 exports.CardControl = require('./CardControl');

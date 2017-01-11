@@ -1,7 +1,14 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class FormFieldError extends React.Component {
+  static propTypes = {
+    field: PropTypes.object.isRequired,
+    validations: PropTypes.object.isRequired
+  };
+
   render() {
     if (!this.props.field.invalid) {
       return null;
@@ -20,10 +27,5 @@ class FormFieldError extends React.Component {
     );
   }
 }
-
-FormFieldError.propTypes = {
-  field: PropTypes.object.isRequired,
-  validations: PropTypes.object.isRequired
-};
 
 module.exports = FormFieldError;

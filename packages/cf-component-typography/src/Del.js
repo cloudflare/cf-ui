@@ -1,7 +1,13 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class Del extends React.Component {
+  static propTypes = {
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <del className="cf-del">
@@ -10,9 +16,5 @@ class Del extends React.Component {
     );
   }
 }
-
-Del.propTypes = {
-  children: PropTypes.node
-};
 
 module.exports = Del;

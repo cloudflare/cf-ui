@@ -1,8 +1,14 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 const Code = require('./Code');
 
 class CodeBlock extends React.Component {
+  static propTypes = {
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <pre className="cf-code__block">
@@ -13,9 +19,5 @@ class CodeBlock extends React.Component {
     );
   }
 }
-
-CodeBlock.propTypes = {
-  children: PropTypes.node
-};
 
 module.exports = CodeBlock;

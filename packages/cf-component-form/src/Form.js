@@ -1,7 +1,15 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class Form extends React.Component {
+  static propTypes = {
+    layout: PropTypes.oneOf(['horizontal', 'vertical']).isRequired,
+    onSubmit: PropTypes.func.isRequired,
+    children: PropTypes.node
+  };
+
   render() {
     let className = 'cf-form cf-form--' + this.props.layout;
     return (
@@ -11,11 +19,5 @@ class Form extends React.Component {
     );
   }
 }
-
-Form.propTypes = {
-  layout: PropTypes.oneOf(['horizontal', 'vertical']).isRequired,
-  onSubmit: PropTypes.func.isRequired,
-  children: PropTypes.node
-};
 
 module.exports = Form;

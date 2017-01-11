@@ -1,3 +1,18 @@
+// @flow
+
+declare var beforeEach: (cb: () => mixed) => void;
+declare var afterEach: (cb: () => mixed) => void;
+
+type StubObject = {
+  called: boolean,
+  callCount: number,
+  calls: Array<{context: mixed, args: Array<mixed>}>
+};
+
+type Stub = StubObject & {
+  (...args: Array<mixed>): void
+};
+
 let current = 0;
 let restores = [];
 
@@ -22,14 +37,14 @@ function defineGetter(test, stub, methodName, method) {
   });
 }
 
-function createStub() {
+function createStub(): Stub {
   const test = current;
 
   let called = false;
   let callCount = 0;
   let calls = [];
 
-  function stub(...args) {
+  function stub(...args: Array<mixed>) {
     assertActive(test);
     called = true;
     callCount++;
@@ -43,12 +58,12 @@ function createStub() {
   defineGetter(test, stub, 'callCount', () => callCount);
   defineGetter(test, stub, 'calls', () => calls);
 
-  return stub;
+  return ((stub: any): Stub);
 }
 
-function stubMethod(obj, methodName, method) {
+function stubMethod(obj: {}, methodName: string, method: () => mixed): StubObject {
   const test = current;
-  const prev = obj[methodName];
+  const prev: mixed = obj[methodName];
 
   let called = false;
   let callCount = 0;
@@ -86,7 +101,7 @@ function stubMethod(obj, methodName, method) {
 
   restores.push(restore);
 
-  return stub;
+  return ((stub: any): StubObject);
 }
 
 exports.createStub = createStub;

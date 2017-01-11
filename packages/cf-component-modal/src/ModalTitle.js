@@ -1,8 +1,14 @@
+// @flow
+
 const React = require('react');
 const {Heading} = require('cf-component-heading');
 const {PropTypes} = React;
 
 class ModalTitle extends React.Component {
+  static propTypes = {
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <div className="cf-modal__title">
@@ -13,9 +19,5 @@ class ModalTitle extends React.Component {
     );
   }
 }
-
-ModalTitle.propTypes = {
-  children: PropTypes.node
-};
 
 module.exports = ModalTitle;

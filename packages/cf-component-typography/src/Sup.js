@@ -1,7 +1,13 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class Sup extends React.Component {
+  static propTypes = {
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <sup className="cf-sup">
@@ -10,9 +16,5 @@ class Sup extends React.Component {
     );
   }
 }
-
-Sup.propTypes = {
-  children: PropTypes.node
-};
 
 module.exports = Sup;

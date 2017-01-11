@@ -1,3 +1,7 @@
+// @flow
+
+import type {Headers, Query, Body, RequestError, Response} from 'superagent';
+
 const superagent = require('superagent');
 const createLogger = require('cf-util-logger');
 
@@ -5,14 +9,43 @@ const logRequest = createLogger('http:request');
 const logError = createLogger('http:error');
 const logSuccess = createLogger('http:success');
 
-// Mapping of http request types to superagent methods.
-const METHODS = {
-  GET    : 'get',
-  POST   : 'post',
-  PUT    : 'put',
-  PATCH  : 'patch',
-  DELETE : 'del'
+export type Methods =
+  | 'GET'
+  | 'POST'
+  | 'PUT'
+  | 'PATCH'
+  | 'DELETE';
+
+export type Result = {
+  headers: Headers,
+  status: number,
+  body: Body,
+  text: string
 };
+
+export type Callback =
+  & ((err: null, result: Result) => mixed)
+  & ((err: Result, result: null) => mixed);
+
+export type Options = ?{
+  method?: Methods,
+  url?: string,
+  headers?: Headers,
+  parameters?: Query,
+  body?: Body,
+  callback?: Callback,
+};
+
+type OptionsComplete = {
+  method: Methods,
+  url: string,
+  headers?: Headers,
+  parameters?: Query,
+  body?: Body,
+  callback: Callback
+};
+
+export type Abort = () => void;
 
 // Store beforeSend callbacks.
 const beforeSendCallbacks = [];
@@ -29,7 +62,7 @@ const beforeSendCallbacks = [];
  *
  * @param {Function} callback
  */
-function beforeSend(callback) {
+function beforeSend(callback: (opts: OptionsComplete) => mixed) {
   beforeSendCallbacks.push(callback);
 }
 
@@ -58,37 +91,34 @@ function beforeSend(callback) {
  * @param {Function} [callback]
  * @returns {Function} Abort request.
  */
-function request(method, url, opts, callback) {
-  opts = opts || {};
-
-  opts.method = method;
-  opts.url = url;
-  opts.callback = callback;
+function request(method: Methods, url: string, opts: Options, callback: Callback): Abort {
+  const options: OptionsComplete = { ...opts, method, url, callback };
 
   // Allow beforeSend to modify request options.
-  beforeSendCallbacks.forEach(cb => cb(opts));
+  beforeSendCallbacks.forEach(cb => cb(options));
 
   // Configure request
-  const req = superagent[METHODS[opts.method]](opts.url);
+  const req = superagent(options.method, options.url);
 
-  if (opts.parameters) {
-    req.query(opts.parameters);
+  if (options.parameters) {
+    req.query(options.parameters);
   }
 
-  if (opts.headers) {
-    req.set(opts.headers);
+  if (options.headers) {
+    req.set(options.headers);
   }
 
-  if (opts.body) {
-    req.send(opts.body);
+  if (options.body) {
+    req.send(options.body);
   }
 
-  let logMessage = `${opts.method} ${opts.url}`;
+  let logMessage = `${options.method} ${options.url}`;
 
   logRequest(logMessage);
 
   // Send request
   req.end((err, res) => {
+    res = ((res: any): Response); // << Fix `any`
     logMessage = `${logMessage} (${res.status} ${res.statusText})`;
 
     const result = {
@@ -100,10 +130,10 @@ function request(method, url, opts, callback) {
 
     if (err) {
       logError(logMessage);
-      opts.callback(result);
+      options.callback(result, null);
     } else {
       logSuccess(logMessage);
-      opts.callback(null, result);
+      options.callback(null, result);
     }
   });
 
@@ -116,36 +146,36 @@ function request(method, url, opts, callback) {
 /**
  * Perform a GET request.
  */
-function get(...args) {
-  return request('GET', ...args);
+function get(url: string, opts: Options, callback: Callback): Abort {
+  return request('GET', url, opts, callback);
 }
 
 /**
  * Perform a POST request.
  */
-function post(...args) {
-  return request('POST', ...args);
+function post(url: string, opts: Options, callback: Callback): Abort {
+  return request('POST', url, opts, callback);
 }
 
 /**
  * Perform a PUT request.
  */
-function put(...args) {
-  return request('PUT', ...args);
+function put(url: string, opts: Options, callback: Callback): Abort {
+  return request('PUT', url, opts, callback);
 }
 
 /**
  * Perform a PATCH request.
  */
-function patch(...args) {
-  return request('PATCH', ...args);
+function patch(url: string, opts: Options, callback: Callback): Abort {
+  return request('PATCH', url, opts, callback);
 }
 
 /**
  * Perform a DELETE request.
  */
-function del(...args) {
-  return request('DELETE', ...args);
+function del(url: string, opts: Options, callback: Callback): Abort {
+  return request('DELETE', url, opts, callback);
 }
 
 module.exports = {beforeSend, request, get, post, put, patch, del};

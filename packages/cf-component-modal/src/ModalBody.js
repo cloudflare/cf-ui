@@ -1,7 +1,13 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class ModalBody extends React.Component {
+  static propTypes = {
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <div className="cf-modal__body">
@@ -10,9 +16,5 @@ class ModalBody extends React.Component {
     );
   }
 }
-
-ModalBody.propTypes = {
-  children: PropTypes.node
-};
 
 module.exports = ModalBody;

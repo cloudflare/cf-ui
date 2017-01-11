@@ -1,7 +1,14 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class FormLabel extends React.Component {
+  static propTypes = {
+    hidden: PropTypes.bool,
+    children: PropTypes.node
+  };
+
   render() {
     let className = 'cf-form__label';
 
@@ -17,9 +24,6 @@ class FormLabel extends React.Component {
   }
 }
 
-FormLabel.propTypes = {
-  hidden: PropTypes.bool,
-  children: PropTypes.node
-};
+
 
 module.exports = FormLabel;

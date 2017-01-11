@@ -1,8 +1,10 @@
-const ActionTypes = require('./CardActionTypes');
+// @flow
 
-exports.toggleDrawer = function(cardName, drawerId) {
+import type {CardAction} from './CardTypes';
+
+exports.toggleDrawer = function(cardName: string, drawerId: string): CardAction {
   return {
-    type: ActionTypes.CF_BUILDER_CARD_DRAWER_TOGGLE,
+    type: 'CF_BUILDER_CARD_DRAWER_TOGGLE',
     cardName: cardName,
     drawerId: drawerId
   };

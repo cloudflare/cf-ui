@@ -1,16 +1,27 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
+type InputElementEvent = Event & {
+  target: HTMLInputElement
+};
+
 class Radio extends React.Component {
+  static propTypes = {
+    label: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.oneOf([false])
+    ]).isRequired,
+    name: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
+    checked: PropTypes.bool.isRequired,
+    onChange: PropTypes.func.isRequired
+  };
 
-  constructor(props) {
-    super(props);
-    this.handleChange = this.handleChange.bind(this);
-  }
-
-  handleChange(e) {
+  handleChange = (e: InputElementEvent) => {
     this.props.onChange(e.target.value);
-  }
+  };
 
   render() {
     let className = 'cf-radio';
@@ -37,16 +48,5 @@ class Radio extends React.Component {
     );
   }
 }
-
-Radio.propTypes = {
-  label: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.oneOf([false])
-  ]).isRequired,
-  name: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-  checked: PropTypes.bool.isRequired,
-  onChange: PropTypes.func.isRequired
-};
 
 module.exports = Radio;

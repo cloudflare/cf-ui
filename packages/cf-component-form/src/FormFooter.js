@@ -1,7 +1,13 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class FormFooter extends React.Component {
+  static propTypes = {
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <div className="cf-form__footer">
@@ -10,9 +16,5 @@ class FormFooter extends React.Component {
     );
   }
 }
-
-FormFooter.propTypes = {
-  children: PropTypes.node
-};
 
 module.exports = FormFooter;

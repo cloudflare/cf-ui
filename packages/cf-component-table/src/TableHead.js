@@ -1,7 +1,18 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class TableHead extends React.Component {
+  static propTypes = {
+    className: PropTypes.string,
+    children: PropTypes.node
+  };
+
+  static defaultProps = {
+    className: ''
+  };
+
   render() {
     let className = 'cf-table__head';
     if (this.props.className.trim()) className += ' ' + this.props.className.trim();
@@ -13,14 +24,5 @@ class TableHead extends React.Component {
     );
   }
 }
-
-TableHead.propTypes = {
-  className: PropTypes.string,
-  children: PropTypes.node
-};
-
-TableHead.defaultProps = {
-  className: ''
-};
 
 module.exports = TableHead;

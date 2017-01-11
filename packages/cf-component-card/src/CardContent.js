@@ -1,7 +1,15 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class CardContent extends React.Component {
+  static propTypes = {
+    title: PropTypes.any.isRequired,
+    footerMessage: PropTypes.string,
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <div className="cf-card__content">
@@ -18,11 +26,5 @@ class CardContent extends React.Component {
     );
   }
 }
-
-CardContent.propTypes = {
-  title: PropTypes.any.isRequired,
-  footerMessage: PropTypes.string,
-  children: PropTypes.node
-};
 
 module.exports = CardContent;

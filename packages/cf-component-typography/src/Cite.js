@@ -1,7 +1,13 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class Cite extends React.Component {
+  static propTypes = {
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <cite className="cf-cite">
@@ -10,9 +16,5 @@ class Cite extends React.Component {
     );
   }
 }
-
-Cite.propTypes = {
-  children: PropTypes.node
-};
 
 module.exports = Cite;

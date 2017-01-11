@@ -1,7 +1,26 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class Table extends React.Component {
+  static propTypes = {
+    className: PropTypes.string,
+    striped: PropTypes.bool,
+    hover: PropTypes.bool,
+    bordered: PropTypes.bool,
+    condensed: PropTypes.bool,
+    children: PropTypes.node
+  };
+
+  static defaultProps = {
+    className: '',
+    striped: false,
+    hover: false,
+    bordered: true,
+    condensed: false
+  };
+
   render() {
     let className = 'cf-table';
 
@@ -18,22 +37,5 @@ class Table extends React.Component {
     );
   }
 }
-
-Table.propTypes = {
-  className: PropTypes.string,
-  striped: PropTypes.bool,
-  hover: PropTypes.bool,
-  bordered: PropTypes.bool,
-  condensed: PropTypes.bool,
-  children: PropTypes.node
-};
-
-Table.defaultProps = {
-  className: '',
-  striped: false,
-  hover: false,
-  bordered: true,
-  condensed: false
-};
 
 module.exports = Table;

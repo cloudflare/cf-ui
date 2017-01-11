@@ -1,7 +1,19 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class Callout extends React.Component {
+  static propTypes = {
+    type: PropTypes.oneOf(['default', 'info']),
+    title: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired
+  };
+
+  static defaultProps = {
+    type: 'default'
+  };
+
   render() {
     return (
       <div className={'cf-callout cf-callout--' + this.props.type}>
@@ -15,15 +27,5 @@ class Callout extends React.Component {
     );
   }
 }
-
-Callout.propTypes = {
-  type: PropTypes.oneOf(['default', 'info']),
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired
-};
-
-Callout.defaultProps = {
-  type: 'default'
-};
 
 module.exports = Callout;

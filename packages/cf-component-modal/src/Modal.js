@@ -1,3 +1,5 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 const ReactModal2 = require('react-modal2').default;
@@ -5,6 +7,25 @@ const {Gateway} = require('react-gateway');
 const ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 
 class Modal extends React.Component {
+  static propTypes = {
+    type: PropTypes.oneOf([
+    'confirm'
+    ]),
+    isOpen: PropTypes.bool.isRequired,
+    onRequestClose: PropTypes.func.isRequired,
+    closeOnEsc: PropTypes.bool,
+    closeOnBackdropClick: PropTypes.bool,
+    children: PropTypes.node,
+    width: PropTypes.oneOf([
+      'wide'
+    ])
+  };
+
+  static defaultProps = {
+    closeOnEsc: true,
+    closeOnBackdropClick: true
+  };
+
   render() {
     var modalClassName = 'cf-modal';
 
@@ -45,24 +66,5 @@ class Modal extends React.Component {
     );
   }
 }
-
-Modal.propTypes = {
-  type: PropTypes.oneOf([
-    'confirm'
-  ]),
-  isOpen: PropTypes.bool.isRequired,
-  onRequestClose: PropTypes.func.isRequired,
-  closeOnEsc: PropTypes.bool,
-  closeOnBackdropClick: PropTypes.bool,
-  children: PropTypes.node,
-  width: PropTypes.oneOf([
-    'wide'
-  ])
-};
-
-Modal.defaultProps = {
-  closeOnEsc: true,
-  closeOnBackdropClick: true
-};
 
 module.exports = Modal;

@@ -1,10 +1,13 @@
 {
-  "lerna": "2.0.0-beta.31",
+  "lerna": "2.0.0-beta.32",
   "version": "independent",
   "publishConfig": {
     "ignore": [
       "example/**",
       "test/**"
     ]
-  }
+  },
+  "packages": [
+    "packages/*"
+  ]
 }

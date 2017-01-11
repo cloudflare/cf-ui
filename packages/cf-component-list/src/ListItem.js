@@ -1,7 +1,13 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class ListItem extends React.Component {
+  static propTypes = {
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <li className="cf-list__item">
@@ -10,9 +16,5 @@ class ListItem extends React.Component {
     );
   }
 }
-
-ListItem.propTypes = {
-  children: PropTypes.node
-};
 
 module.exports = ListItem;

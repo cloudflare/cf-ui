@@ -1,3 +1,5 @@
+// @flow
+
 exports.TYPES = (
   'caret-up chevron-up caret-down chevron-down caret-left chevron-left ' +
   'caret-right chevron-right ok-sign exclamation-sign info-sign pause time ' +

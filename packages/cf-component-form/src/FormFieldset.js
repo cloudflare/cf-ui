@@ -1,7 +1,14 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class FormFieldset extends React.Component {
+  static propTypes = {
+    legend: PropTypes.string.isRequired,
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <fieldset className="cf-form__fieldset">
@@ -15,10 +22,5 @@ class FormFieldset extends React.Component {
     );
   }
 }
-
-FormFieldset.propTypes = {
-  legend: PropTypes.string.isRequired,
-  children: PropTypes.node
-};
 
 module.exports = FormFieldset;

@@ -1,19 +1,30 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 const Link = require('cf-component-link');
 
 class Progress extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
-  }
+  static propTypes = {
+    active: PropTypes.string.isRequired,
+    onChange: PropTypes.func.isRequired,
+    steps: PropTypes.arrayOf(PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      disabled: PropTypes.bool.isRequired
+    })).isRequired
+  };
 
-  handleClick(step) {
+  static defaultProps = {
+    steps: []
+  };
+
+  handleClick = (step: { id: string }) => {
     if (step.id !== this.props.active) {
       this.props.onChange(step.id);
     }
-  }
+  };
 
   render() {
     const max = this.props.steps.length;
@@ -52,19 +63,5 @@ class Progress extends React.Component {
     );
   }
 }
-
-Progress.propTypes = {
-  active: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
-  steps: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-    disabled: PropTypes.bool.isRequired
-  })).isRequired
-};
-
-Progress.defaultProps = {
-  steps: []
-};
 
 module.exports = Progress;

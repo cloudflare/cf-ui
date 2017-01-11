@@ -1,5 +1,11 @@
+// @flow
+
 const marked = require('marked');
 const memoize = require('lodash.memoize');
+
+type MarkdownOptions = {
+  __dangerouslyDontSanitizeMarkdown?: true
+};
 
 // Setup default options.
 marked.setOptions({
@@ -12,7 +18,7 @@ marked.setOptions({
   sanitize: true
 });
 
-const memoizedMarked = memoize(marked);
+const memoizedMarked: (md: string) => string = memoize(marked);
 
 /**
  * Render a markdown string as html.
@@ -21,7 +27,7 @@ const memoizedMarked = memoize(marked);
  * @param {Boolean} [opts.__dangerouslyDontSanitizeMarkdown]
  * @return {String} Rendered markdown.
  */
-function markdown(str, opts) {
+function markdown(str: string, opts?: MarkdownOptions) {
   const markedOpts = {};
 
   if (opts && opts.__dangerouslyDontSanitizeMarkdown) {

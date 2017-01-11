@@ -1,3 +1,5 @@
+// @flow
+
 const React = require('react');
 
 class DropdownSeparator extends React.Component {

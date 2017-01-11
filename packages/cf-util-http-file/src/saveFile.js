@@ -1,9 +1,17 @@
-function saveFile(filename, file, mimeType) {
+// @flow
+
+declare var global: {
+  document: typeof document,
+  encodeURI: typeof encodeURI,
+  navigator: typeof navigator,
+};
+
+function saveFile(filename: string, file: string, mimeType?: string) {
   mimeType = mimeType || 'data:application/octet-stream';
   // Data URIs cannot be used for navigation, for scripting, or to
   // populate frame or iframe elements in IE. Instead for IE specifically,
   // use `msSaveBlob` to save the file.
-  if ('msSaveBlob' in global.navigator) {
+  if (typeof global.navigator.msSaveBlob === 'function') {
     global.navigator.msSaveBlob(new Blob([file]), filename);
     return;
   }

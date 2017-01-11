@@ -1,3 +1,5 @@
+// @flow
+
 const createLogger = require('cf-util-logger');
 const {localStorage} = require('./storage');
 const {isArray, compact, now} = require('lodash');
@@ -5,23 +7,35 @@ const {isArray, compact, now} = require('lodash');
 const logInfo = createLogger('cache:info');
 const logWarning = createLogger('cache:warning');
 
-function buildKey(key) {
-  if (isArray(key)) {
-    key = compact(key).join(':');
-  }
+type Json =
+  | string
+  | number
+  | boolean
+  | null
+  | Array<Json>
+  | { [key: string]: Json };
 
-  return '' + key;
+function buildKey(key: string | Array<string>) {
+  if (isArray(key)) {
+    key = ((key: any): Array<string>); // Fix `any`, needs predicate types in flow
+    return compact(key).join(':');
+  } else {
+    key = ((key: any): string); // Fix `any`, needs predicate types in flow
+    return '' + key;
+  }
 }
 
-function maybeParse(item) {
+type Entry = { value?: Json, expires?: number };
+
+function maybeParse(item): Entry {
   try {
-    return JSON.parse(item);
+    return JSON.parse((item: any)); // Flow doesn't want this to error, but we do
   } catch (err) {
     return {};
   }
 }
 
-function get(key) {
+function get(key: string): Json | void {
   const name = buildKey(key);
   const {value, expires} = maybeParse(localStorage.getItem(name));
   const expired = expires && now() > expires;
@@ -39,7 +53,7 @@ function get(key) {
   return value;
 }
 
-function set(key, value, expires = false) {
+function set(key: string, value: Json, expires?: number | false = false) {
   const name = buildKey(key);
   logInfo(`Setting item: ${name}`);
   localStorage.setItem(name, JSON.stringify({
@@ -48,13 +62,13 @@ function set(key, value, expires = false) {
   }));
 }
 
-function remove(key) {
+function remove(key: string): void {
   const name = buildKey(key);
   logInfo(`Removing item: ${name}`);
   localStorage.removeItem(key);
 }
 
-function has(key) {
+function has(key: string): boolean {
   return get(key) !== undefined;
 }
 

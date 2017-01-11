@@ -1,10 +1,12 @@
-const ActionTypes = require('./CardActionTypes');
+// @flow
 
-const initialState = {};
+import type {CardAction, CardState} from './CardTypes';
 
-function cardReducer(state = initialState, action) {
+const initialState: CardState = {};
+
+function cardReducer(state: CardState = initialState, action: CardAction) {
   switch (action.type) {
-    case ActionTypes.CF_BUILDER_CARD_DRAWER_TOGGLE: {
+    case 'CF_BUILDER_CARD_DRAWER_TOGGLE': {
       const {cardName, drawerId} = action;
       const prevActiveDrawer = state[cardName] && state[cardName].activeDrawer;
 

@@ -1,0 +1,9 @@
+[ignore]
+.*/node_modules/.*
+
+[include]
+
+[libs]
+
+[options]
+module.name_mapper='^cf-\([a-zA-Z0-9_\-]+\)$' -> '<PROJECT_ROOT>/packages/cf-\1/src/index.js'

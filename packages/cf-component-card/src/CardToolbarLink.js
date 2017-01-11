@@ -1,18 +1,21 @@
+// @flow
+
 const React = require('react');
 const Link = require('cf-component-link');
 const {PropTypes} = React;
 
 class CardToolbarLink extends React.Component {
+  static propTypes = {
+    onClick: PropTypes.func.isRequired,
+    isActive: PropTypes.bool.isRequired,
+    id: PropTypes.string,
+    children: PropTypes.node
+  };
 
-  constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(e) {
+  handleClick = (e: Event) => {
     e.preventDefault();
     this.props.onClick();
-  }
+  };
 
   render() {
     let className = 'cf-card__toolbar_link';
@@ -28,12 +31,5 @@ class CardToolbarLink extends React.Component {
     );
   }
 }
-
-CardToolbarLink.propTypes = {
-  onClick: PropTypes.func.isRequired,
-  isActive: PropTypes.bool.isRequired,
-  id: PropTypes.string,
-  children: PropTypes.node
-};
 
 module.exports = CardToolbarLink;

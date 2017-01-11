@@ -1,41 +1,43 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
+const requiredIf = require('react-required-if');
 const Link = require('cf-component-link');
 const DropdownRegistry = require('./DropdownRegistry');
 
 class DropdownLink extends React.Component {
-  constructor(props, context) {
-    if (!props.to && !props.onClick) {
-      throw new Error('<DropdownLink/> requires either a `to` or `onClick` prop');
-    }
+  link: Link;
 
-    super(props, context);
-    this.dropdownRegistry = context.dropdownRegistry;
+  static propTypes = {
+    to: requiredIf(PropTypes.string, props => !props.onClick),
+    onClick: requiredIf(PropTypes.func, props => !props.to),
+    children: PropTypes.node
+  };
 
-    this.handleLinkBlur = this.handleLinkBlur.bind(this);
-    this.handleLinkFocus = this.handleLinkFocus.bind(this);
-    this.focus = this.focus.bind(this);
-  }
+  static contextTypes = {
+    dropdownRegistry: PropTypes.instanceOf(DropdownRegistry).isRequired
+  };
 
   componentDidMount() {
-    this.dropdownRegistry.addChild(this);
+    this.context.dropdownRegistry.addChild(this);
   }
 
   componentWillUnmount() {
-    this.dropdownRegistry.removeChild(this);
+    this.context.dropdownRegistry.removeChild(this);
   }
 
   focus() {
     this.link.focus();
   }
 
-  handleLinkFocus() {
-    this.dropdownRegistry.setFocusedChild(this);
-  }
+  handleLinkFocus = () => {
+    this.context.dropdownRegistry.setFocusedChild(this);
+  };
 
-  handleLinkBlur() {
-    this.dropdownRegistry.removeFocusedChild();
-  }
+  handleLinkBlur = () => {
+    this.context.dropdownRegistry.removeFocusedChild();
+  };
 
   render() {
     return (
@@ -51,15 +53,5 @@ class DropdownLink extends React.Component {
     );
   }
 }
-
-DropdownLink.propTypes = {
-  to: PropTypes.string,
-  onClick: PropTypes.func,
-  children: PropTypes.node
-};
-
-DropdownLink.contextTypes = {
-  dropdownRegistry: PropTypes.instanceOf(DropdownRegistry).isRequired
-};
 
 module.exports = DropdownLink;

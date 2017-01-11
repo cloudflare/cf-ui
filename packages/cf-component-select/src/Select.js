@@ -1,8 +1,38 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 const ReactSelect = require('react-select');
 
 class Select extends React.Component {
+  static propTypes = {
+    label: PropTypes.string,
+
+    onChange: PropTypes.func.isRequired,
+    onBlur: PropTypes.func,
+    onFocus: PropTypes.func,
+    loadOptions: PropTypes.func,
+
+    multi: PropTypes.bool,
+    searchable: PropTypes.bool,
+    async: PropTypes.bool,
+    disabled: PropTypes.bool,
+
+    value: PropTypes.any,
+    options: PropTypes.arrayOf(PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      value: PropTypes.any.isRequired,
+      disabled: PropTypes.bool
+    })),
+    placeholder: PropTypes.string
+  };
+
+  static defaultProps = {
+    multi: false,
+    searchable: false,
+    async: false
+  };
+
   render() {
     const SelectClass = this.props.async ? ReactSelect.Async : ReactSelect;
     return (
@@ -28,33 +58,5 @@ class Select extends React.Component {
     );
   }
 }
-
-Select.propTypes = {
-  label: PropTypes.string,
-
-  onChange: PropTypes.func.isRequired,
-  onBlur: PropTypes.func,
-  onFocus: PropTypes.func,
-  loadOptions: PropTypes.func,
-
-  multi: PropTypes.bool,
-  searchable: PropTypes.bool,
-  async: PropTypes.bool,
-  disabled: PropTypes.bool,
-
-  value: PropTypes.any,
-  options: PropTypes.arrayOf(PropTypes.shape({
-    label: PropTypes.string.isRequired,
-    value: PropTypes.any.isRequired,
-    disabled: PropTypes.bool
-  })),
-  placeholder: PropTypes.string
-};
-
-Select.defaultProps = {
-  multi: false,
-  searchable: false,
-  async: false
-};
 
 module.exports = Select;

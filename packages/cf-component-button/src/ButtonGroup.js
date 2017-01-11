@@ -1,7 +1,13 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class ButtonGroup extends React.Component {
+  static propTypes = {
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <div className='cf-btn__group'>
@@ -10,9 +16,5 @@ class ButtonGroup extends React.Component {
     );
   }
 }
-
-ButtonGroup.propTypes = {
-  children: PropTypes.node
-};
 
 module.exports = ButtonGroup;

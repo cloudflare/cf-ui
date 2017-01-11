@@ -1,7 +1,13 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class NotificationList extends React.Component {
+  static propTypes = {
+    children: PropTypes.node
+  };
+
   render() {
     return (
       <div className="cf-notifications">
@@ -10,9 +16,5 @@ class NotificationList extends React.Component {
     );
   }
 }
-
-NotificationList.propTypes = {
-  children: PropTypes.node
-};
 
 module.exports = NotificationList;

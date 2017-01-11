@@ -1,3 +1,5 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 const CardSection = require('./CardSection');
@@ -8,11 +10,17 @@ const CardPropTypes = require('./CardPropTypes');
 let UNIQUE_ID = 0;
 
 class CardDrawers extends React.Component {
+  static propTypes = {
+    onClick: PropTypes.func.isRequired,
 
-  constructor(props) {
-    super(props);
-    this._cardId = UNIQUE_ID++;
-  }
+    active: PropTypes.string,
+    drawers: CardPropTypes.cardDrawers.isRequired,
+
+    // for an optional control to put on the left side of the toolbar
+    controls: PropTypes.any
+  };
+
+  _cardId = UNIQUE_ID++;
 
   render() {
     const links = [];
@@ -66,15 +74,5 @@ class CardDrawers extends React.Component {
     );
   }
 }
-
-CardDrawers.propTypes = {
-  onClick: PropTypes.func.isRequired,
-
-  active: PropTypes.string,
-  drawers: CardPropTypes.cardDrawers.isRequired,
-
-  // for an optional control to put on the left side of the toolbar
-  controls: PropTypes.any
-};
 
 module.exports = CardDrawers;

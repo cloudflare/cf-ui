@@ -1,6 +1,10 @@
-let handler;
+// @flow
 
-function handleRoutes(callback) {
+type Handler = (url: string) => mixed;
+
+let handler: Handler | null = null;
+
+function handleRoutes(callback: Handler): void {
   if (handler) {
     console.error('Warning: Route Handler: Only one handler is allowed at a time');
     return;
@@ -9,7 +13,7 @@ function handleRoutes(callback) {
   handler = callback;
 }
 
-function routeTo(url) {
+function routeTo(url: string): void {
   if (!handler) {
     console.error('Warning: Route Handler: A handler needs to be setup before you can route');
     return;
@@ -18,7 +22,7 @@ function routeTo(url) {
   handler(url);
 }
 
-function __resetRouteHandler() {
+function __resetRouteHandler(): void {
   handler = null;
 }
 

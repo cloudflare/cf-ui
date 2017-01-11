@@ -1,7 +1,14 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 
 class LayoutColumn extends React.Component {
+  static propTypes = {
+    width: PropTypes.number.isRequired,
+    children: PropTypes.node
+  };
+
   render() {
     const width = (this.props.width * 100).toPrecision(5) + '%';
     return (
@@ -11,10 +18,5 @@ class LayoutColumn extends React.Component {
     );
   }
 }
-
-LayoutColumn.propTypes = {
-  width: PropTypes.number.isRequired,
-  children: PropTypes.node
-};
 
 module.exports = LayoutColumn;

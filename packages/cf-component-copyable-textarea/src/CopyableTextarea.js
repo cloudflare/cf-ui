@@ -1,19 +1,31 @@
+// @flow
+
 const React = require('react');
 const {PropTypes} = React;
 const Textarea = require('cf-component-textarea');
 
 class CopyableTextarea extends React.Component {
+  textarea: HTMLTextAreaElement;
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      helpText: this.props.clickToCopyText,
-      copied: false
-    };
+  static propTypes = {
+    name: PropTypes.string.isRequired,
+    value: PropTypes.string.isRequired,
+    onCopy: PropTypes.func,
+    clickToCopyText: PropTypes.string,
+    copiedTextToClipboardText: PropTypes.string,
+    pressCommandOrCtrlCToCopyText: PropTypes.string
+  };
 
-    this.handleFocus = this.handleFocus.bind(this);
-    this.handleBlur = this.handleBlur.bind(this);
-  }
+  static defaultProps = {
+    clickToCopyText: 'Click to copy',
+    copiedTextToClipboardText: 'Copied text to clipboard',
+    pressCommandOrCtrlCToCopyText: 'Press Command/Ctrl+C to copy'
+  };
+
+  state = {
+    helpText: this.props.clickToCopyText,
+    copied: false
+  };
 
   handleFocus(e) {
     e.target.select();
@@ -39,12 +51,12 @@ class CopyableTextarea extends React.Component {
     });
   }
 
-  handleBlur() {
+  handleBlur = () => {
     this.setState({
       helpText: this.props.clickToCopyText,
       copied: false
     });
-  }
+  };
 
   render() {
     return (
@@ -61,20 +73,5 @@ class CopyableTextarea extends React.Component {
     );
   }
 }
-
-CopyableTextarea.propTypes = {
-  name: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-  onCopy: PropTypes.func,
-  clickToCopyText: PropTypes.string,
-  copiedTextToClipboardText: PropTypes.string,
-  pressCommandOrCtrlCToCopyText: PropTypes.string
-};
-
-CopyableTextarea.defaultProps = {
-  clickToCopyText: 'Click to copy',
-  copiedTextToClipboardText: 'Copied text to clipboard',
-  pressCommandOrCtrlCToCopyText: 'Press Command/Ctrl+C to copy'
-};
 
 module.exports = CopyableTextarea;
