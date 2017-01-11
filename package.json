@@ -11,7 +11,7 @@
     "lint": "gulp lint",
     "test": "gulp test",
     "updated": "lerna updated",
-    "publish": "git pull --rebase && check-installed-dependencies && npm run build && lerna publish",
+    "publish": "git pull --rebase && check-installed-dependencies && npm run build && lerna publish --only-explicit-updates",
     "examples:build:internal": "gulp examplesBuild --view internal",
     "examples:dev:internal": "gulp examplesDev --view internal",
     "examples:build:external": "gulp examplesBuild --view external",

@@ -1,14 +1,12 @@
 const React = require('react');
 const assertEqualJSX = require('assert-equal-jsx');
+const expect = require('chai').expect;
+const renderToStaticMarkup = require('react-dom/server').renderToStaticMarkup;
 const FormFieldError = require('../src/FormFieldError');
 
 describe('FormFieldError', function() {
   it('should render valid state', function() {
-    assertEqualJSX(
-      <FormFieldError field={{}} validations={{}}></FormFieldError>,
-      // should equal
-      <noscript/>
-    );
+    expect(renderToStaticMarkup(<FormFieldError field={{}} validations={{}}></FormFieldError>)).to.be.equal('');
   });
 
   it('should render invalid state', function() {

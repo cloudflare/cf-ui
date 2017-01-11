@@ -8,3 +8,4 @@ exports.CardLoadingText = require('./CardLoadingText');
 exports.CardMessages = require('./CardMessages');
 exports.CardPropTypes = require('./CardPropTypes');
 exports.CardSection = require('./CardSection');
+exports.CardBlock = require('./CardBlock');

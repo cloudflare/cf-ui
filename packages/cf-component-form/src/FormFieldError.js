@@ -11,8 +11,7 @@ class FormFieldError extends React.Component {
 
   render() {
     if (!this.props.field.invalid) {
-      // Turn this into "null" after upgraded to React 15+
-      return <noscript/>;
+      return null;
     }
 
     return (

@@ -5,12 +5,20 @@ const {PropTypes} = React;
 
 class TableHeadCell extends React.Component {
   static propTypes = {
-    children: PropTypes.node
+    className: PropTypes.string,
+   children: PropTypes.node
+  };
+
+  static defaultProps = {
+    className: ''
   };
 
   render() {
+    let className = 'cf-table__cell cf-table__cell--head';
+    if (this.props.className.trim()) className += ' ' + this.props.className.trim();
+
     return (
-      <th className="cf-table__cell cf-table__cell--head">
+      <th className={className}>
         {this.props.children}
       </th>
     );

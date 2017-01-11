@@ -3,19 +3,6 @@
 const React = require('react');
 const {PropTypes} = React;
 const Textarea = require('cf-component-textarea');
-const {getText} = require('cf-util-text');
-
-const containerStyles = {
-  position: 'relative'
-};
-
-const overlayStyles = {
-  position: 'absolute',
-  top: 0,
-  bottom: 0,
-  left: 0,
-  right: 0
-};
 
 class CopyableTextarea extends React.Component {
   textarea: HTMLTextAreaElement;
@@ -23,21 +10,27 @@ class CopyableTextarea extends React.Component {
   static propTypes = {
     name: PropTypes.string.isRequired,
     value: PropTypes.string.isRequired,
-    onCopy: PropTypes.func
+    onCopy: PropTypes.func,
+    clickToCopyText: PropTypes.string,
+    copiedTextToClipboardText: PropTypes.string,
+    pressCommandOrCtrlCToCopyText: PropTypes.string
+  };
+
+  static defaultProps = {
+    clickToCopyText: 'Click to copy',
+    copiedTextToClipboardText: 'Copied text to clipboard',
+    pressCommandOrCtrlCToCopyText: 'Press Command/Ctrl+C to copy'
   };
 
   state = {
-    focused: false,
+    helpText: this.props.clickToCopyText,
     copied: false
   };
 
-  handleOverlayClick = (e: Event) => {
-    e.preventDefault();
+  handleFocus(e) {
+    e.target.select();
 
-    const target = this.textarea;
     const {onCopy} = this.props;
-    target.focus();
-    target.select();
 
     let success;
     try {
@@ -51,43 +44,31 @@ class CopyableTextarea extends React.Component {
     }
 
     this.setState({
-      focused: true,
+      helpText: (success ?
+                 this.props.copiedTextToClipboardText :
+                 this.props.pressCommandOrCtrlCToCopyText),
       copied: success
     });
   }
 
   handleBlur = () => {
     this.setState({
-      focused: false,
+      helpText: this.props.clickToCopyText,
       copied: false
     });
   };
 
   render() {
-    let helpText;
-
-    if (!this.state.focused) {
-      helpText = getText('Click to copy');
-    } else if (this.state.copied) {
-      helpText = getText('Copied text to clipboard');
-    } else {
-      helpText = getText('Press Command/Ctrl+C to copy');
-    }
-
     return (
-      <div className="cf-copyable-textarea" style={containerStyles}>
-        {!this.state.focused && (
-          <div style={overlayStyles} onClick={this.handleOverlayClick}></div>
-        )}
+      <div className="cf-copyable-textarea">
         <Textarea
           ref={node => this.textarea = node}
           readOnly
           name={this.props.name}
           value={this.props.value}
-          onBlur={this.handleBlur}/>
-        <p className="cf-copyable-textarea__help-text">
-          {helpText}
-        </p>
+          onFocus={this.handleFocus}
+          onBlur={this.handleBlur} />
+        <p className="cf-copyable-textarea__help-text">{this.state.helpText}</p>
       </div>
     );
   }

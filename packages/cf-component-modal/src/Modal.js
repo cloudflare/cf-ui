@@ -9,13 +9,16 @@ const ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 class Modal extends React.Component {
   static propTypes = {
     type: PropTypes.oneOf([
-      'confirm'
+    'confirm'
     ]),
     isOpen: PropTypes.bool.isRequired,
     onRequestClose: PropTypes.func.isRequired,
     closeOnEsc: PropTypes.bool,
     closeOnBackdropClick: PropTypes.bool,
-    children: PropTypes.node
+    children: PropTypes.node,
+    width: PropTypes.oneOf([
+      'wide'
+    ])
   };
 
   static defaultProps = {
@@ -28,6 +31,10 @@ class Modal extends React.Component {
 
     if (this.props.type === 'confirm') {
       modalClassName += ' cf-modal--confirm';
+    }
+
+    if (this.props.width === 'wide') {
+      modalClassName += ' cf-modal--wide';
     }
 
     return (
