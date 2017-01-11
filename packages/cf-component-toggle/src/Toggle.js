@@ -17,11 +17,14 @@ class Toggle extends React.Component {
     value: PropTypes.bool,
     onChange: PropTypes.func,
     onFocus: PropTypes.func,
-    onBlur: PropTypes.func
+    onBlur: PropTypes.func,
+    disabled: PropTypes.bool
   };
 
   handleChange = (e: InputElementEvent) => {
-    this.props.onChange(e.target.checked);
+    if (!this.props.disabled) {
+      this.props.onChange(e.target.checked);
+    }
   };
 
   render() {
@@ -31,11 +34,16 @@ class Toggle extends React.Component {
       className += ' cf-toggle--active';
     }
 
+    if (this.props.disabled) {
+      className += ' cf-toggle--disabled';
+    }
+
     return (
       <label htmlFor={this.props.name} className={className}>
         <input
           className="cf-toggle__checkbox"
           type="checkbox"
+          disabled={this.props.disabled}
           id={this.props.name}
           name={this.props.name}
           checked={this.props.value}

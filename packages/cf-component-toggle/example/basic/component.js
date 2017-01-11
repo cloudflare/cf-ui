@@ -20,11 +20,20 @@ class Component extends React.Component {
 
   render() {
     return (
-      <Toggle
-        label="Example Toggle"
-        name="example"
-        value={this.state.toggleValue}
-        onChange={this.handleToggle.bind(this)}/>
+      <div>
+        <p>Example Toggle</p>
+        <Toggle
+          label="Example Toggle"
+          name="example"
+          value={this.state.toggleValue}
+          onChange={this.handleToggle.bind(this)}/>
+        <p>Disabled</p>
+        <Toggle disabled
+          label="Disabled Toggle"
+          name="example-disabled"
+          value={this.state.toggleValue}
+          onChange={this.handleToggle.bind(this)}/>
+      </div>
     );
   }
 }
