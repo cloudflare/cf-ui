@@ -56,6 +56,16 @@ class Component extends React.Component {
             { value: 3, label: 'Three' }
           ]}
           onChange={this.handleMultiChange.bind(this)}/>
+
+        <Select disabled
+          label="Disabled"
+          value={this.state.value}
+          options={[
+            { value: 1, label: 'One' },
+            { value: 2, label: 'Two' },
+            { value: 3, label: 'Three' }
+          ]}
+          onChange={this.handleChange.bind(this)}/>
       </div>
     );
   }

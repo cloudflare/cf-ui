@@ -22,7 +22,8 @@ class Select extends React.Component {
           multi={this.props.multi}
           value={this.props.value}
           options={this.props.options}
-          placeholder={this.props.placeholder}/>
+          placeholder={this.props.placeholder}
+          disabled={this.props.disabled}/>
       </div>
     );
   }
@@ -39,6 +40,7 @@ Select.propTypes = {
   multi: PropTypes.bool,
   searchable: PropTypes.bool,
   async: PropTypes.bool,
+  disabled: PropTypes.bool,
 
   value: PropTypes.any,
   options: PropTypes.arrayOf(PropTypes.shape({
