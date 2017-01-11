@@ -2040,6 +2040,28 @@ a.cf-link--disabled {
   outline-offset: -2px;
 }
 
+.cf-toggle--disabled {
+  cursor: not-allowed;
+  border-color: #888;
+}
+
+.cf-toggle--disabled:before,
+.cf-toggle--disabled:after {
+  color: #ddd;
+}
+
+.cf-toggle--disabled:before {
+  background: #888;
+}
+
+.cf-toggle--disabled .cf-toggle__handle {
+  background: #ddd;
+}
+
+.cf-toggle--disabled .cf-toggle__handle:before {
+  color: #888;
+}
+
 /**
  * Tooltip
  */

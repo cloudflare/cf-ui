@@ -36,4 +36,23 @@ describe('Toggle', function() {
       </label>
     );
   });
+
+  it('should render disabled', function() {
+    assertEqualJSX(
+      <Toggle disabled label="Test Toggle" name="test" value={true}/>,
+      // should equal
+      <label htmlFor="test" className="cf-toggle cf-toggle--active cf-toggle--disabled">
+        <input
+          className="cf-toggle__checkbox"
+          type="checkbox"
+          disabled={true}
+          id="test"
+          name="test"
+          checked={true}
+          onChange={() => {}}/>
+        <span className="cf-toggle__label">Test Toggle</span>
+        <span className="cf-toggle__handle"/>
+      </label>
+    );
+  });
 });
