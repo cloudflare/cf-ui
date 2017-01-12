@@ -23,7 +23,8 @@ class Select extends React.Component {
           value={this.props.value}
           options={this.props.options}
           placeholder={this.props.placeholder}
-          disabled={this.props.disabled}/>
+          disabled={this.props.disabled}
+          cache={this.props.cache}/>
       </div>
     );
   }
@@ -41,6 +42,7 @@ Select.propTypes = {
   searchable: PropTypes.bool,
   async: PropTypes.bool,
   disabled: PropTypes.bool,
+  cache: PropTypes.bool,
 
   value: PropTypes.any,
   options: PropTypes.arrayOf(PropTypes.shape({
@@ -54,7 +56,8 @@ Select.propTypes = {
 Select.defaultProps = {
   multi: false,
   searchable: false,
-  async: false
+  async: false,
+  cache: true
 };
 
 module.exports = Select;
