@@ -19,6 +19,7 @@
     "examples:publish": "gulp examplesPublish"
   },
   "devDependencies": {
+    "assert-equal-jsx": "^1.0.3",
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.18.0",
     "babel-generator": "^6.18.0",
@@ -79,6 +80,7 @@
     "path-exists": "^2.1.0",
     "react": "^15.0.0-0",
     "react-addons-css-transition-group": "^15.0.0-0",
+    "react-addons-test-utils": "^15.4.1",
     "react-dom": "^15.0.0-0",
     "react-redux": "^3.1.0",
     "redux": "^3.1.0",
