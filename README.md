@@ -11,10 +11,11 @@ projects such as [React](https://facebook.github.io/react/),
 
 **[Interested in more of our technical decisions? See `cf-ui/discussions` &rarr;](discussions)**
 
-## Installation
+## Getting Started
 
 ```bash
 $ npm install [package-name]
+$ npm run build
 $ npm run bootstrap
 ```
 ## Viewing the Examples
