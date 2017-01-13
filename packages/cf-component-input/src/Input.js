@@ -19,14 +19,7 @@ class Input extends React.Component {
     }
 
     return (
-      <input
-        type={this.props.type}
-        className={className}
-        name={this.props.name}
-        value={this.props.value}
-        onChange={this.handleChange}
-        placeholder={this.props.placeholder}
-        autoComplete={this.props.autoComplete}/>
+      <input className={className} onChange={this.handleChange} {...this.props} />
     );
   }
 }
