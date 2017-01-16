@@ -2,31 +2,22 @@ const React = require('react');
 const {PropTypes} = React;
 
 class Input extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleChange = this.handleChange.bind(this);
-  }
-
-  handleChange(e) {
-    this.props.onChange(e.target.value);
-  }
 
   render() {
-    let className = 'cf-input cf-input--' + this.props.type;
+    let {className, type, invalid, ...props} = this.props;
 
-    if (this.props.invalid) {
-      className += ' cf-input--invalid';
+    let _className = 'cf-input cf-input--' + type;
+
+    if (invalid) {
+      _className += ' cf-input--invalid';
+    }
+
+    if (className) {
+      _className += ' ' + className;
     }
 
     return (
-      <input
-        type={this.props.type}
-        className={className}
-        name={this.props.name}
-        value={this.props.value}
-        onChange={this.handleChange}
-        placeholder={this.props.placeholder}
-        autoComplete={this.props.autoComplete}/>
+      <input className={_className} type={type} {...props} />
     );
   }
 }
@@ -44,7 +35,8 @@ Input.propTypes = {
   onChange: PropTypes.func.isRequired,
   placeholder: PropTypes.string,
   autoComplete: PropTypes.string,
-  invalid: PropTypes.bool
+  invalid: PropTypes.bool,
+  className: PropTypes.string
 };
 
 Input.defaultProps = {
