@@ -2,9 +2,6 @@ const React = require('react');
 const {PropTypes} = React;
 
 class Input extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     let {className, type, invalid, ...props} = this.props;
