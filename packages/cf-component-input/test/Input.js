@@ -88,4 +88,22 @@ describe('Input', function() {
     );
   });
 
+  it('should pass all props down to the inner input', function() {
+    assertEqualJSX(
+      <Input
+        disabled
+        type="number"
+        data-shadowed={true}
+        min={3}
+      />,
+      <input
+        className="cf-input cf-input--number"
+        disabled="true"
+        type="number"
+        data-shadowed="true"
+        min="3"
+      />
+    );
+  });
+
 });
