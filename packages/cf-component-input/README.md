@@ -23,7 +23,8 @@ class Application extends React.Component {
     this.handleChange = this.handleChange.bind(this);
   }
 
-  handleChange(value) {
+  handleChange(e) {
+    const value = e.target.value;
     this.setState({
       inputValue: value
     });
