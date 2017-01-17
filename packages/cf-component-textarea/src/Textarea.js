@@ -16,13 +16,16 @@ class Textarea extends React.Component {
   }
 
   render() {
-    const {className, ...props} = this.props;
+    // Note that we destruct the props object to get the onChange
+    // event handler and don't do anything with it. This is so we don't override it
+    // later when we spread the props down to the inner component.
+    const {className, onChange, ...props} = this.props;
     const classes = ['cf-textarea', className];
 
     if (this.props.disabled) classes.push('cf-textarea--disabled');
     if (this.props.readOnly) classes.push('cf-textarea--readonly');
 
-    return <textarea className={classes.join(' ')} {...props} />;
+    return <textarea className={classes.join(' ')} onChange={this.handleChange} {...props} />;
   }
 }
 
