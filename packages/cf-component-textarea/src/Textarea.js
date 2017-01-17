@@ -16,22 +16,14 @@ class Textarea extends React.Component {
   }
 
   render() {
-    let className = 'cf-textarea';
+    let {className, ...props} = this.props;
+    
+    className = 'cf-textarea';
 
     if (this.props.disabled) className += ' cf-textarea--disabled';
     if (this.props.readOnly) className += ' cf-textarea--readonly';
 
-    return (
-      <textarea
-        className={className}
-        name={this.props.name}
-        value={this.props.value}
-        disabled={this.props.disabled}
-        readOnly={this.props.readOnly}
-        onChange={this.handleChange}
-        onFocus={this.props.onFocus}
-        onBlur={this.props.onBlur}/>
-    );
+    return <textarea className={className} {...props} />;
   }
 }
 
