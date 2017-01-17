@@ -23,9 +23,9 @@ class Application extends React.Component {
     };
   }
 
-  handleTextareaChange(value) {
+  handleTextareaChange(e) {
     this.setState({
-      textareaValue: value
+      textareaValue: e.target.value
     });
   }
 
