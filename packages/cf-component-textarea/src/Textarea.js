@@ -4,35 +4,16 @@ const requiredIf = require('react-required-if');
 
 class Textarea extends React.Component {
 
-  constructor(props) {
-    super(props);
-    this.handleChange = this.handleChange.bind(this);
-  }
-
-  handleChange(e) {
-    if (this.props.onChange) {
-      this.props.onChange(e.target.value);
-    }
-  }
-
   render() {
-    let className = 'cf-textarea';
+    const {className, ...props} = this.props;
+    const classes = ['cf-textarea', className];
 
-    if (this.props.disabled) className += ' cf-textarea--disabled';
-    if (this.props.readOnly) className += ' cf-textarea--readonly';
+    if (this.props.disabled) classes.push('cf-textarea--disabled');
+    if (this.props.readOnly) classes.push('cf-textarea--readonly');
 
-    return (
-      <textarea
-        className={className}
-        name={this.props.name}
-        value={this.props.value}
-        disabled={this.props.disabled}
-        readOnly={this.props.readOnly}
-        onChange={this.handleChange}
-        onFocus={this.props.onFocus}
-        onBlur={this.props.onBlur}/>
-    );
+    return <textarea className={classes.join(' ')} {...props} />;
   }
+  
 }
 
 Textarea.propTypes = {
