@@ -19,6 +19,7 @@ class Textarea extends React.Component {
 Textarea.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
+  className: PropTypes.string,
   disabled: PropTypes.bool,
   readOnly: PropTypes.bool,
   onChange: requiredIf(PropTypes.func, props => !props.disabled && !props.readOnly),
