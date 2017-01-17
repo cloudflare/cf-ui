@@ -30,7 +30,9 @@ class Textarea extends React.Component {
         readOnly={this.props.readOnly}
         onChange={this.handleChange}
         onFocus={this.props.onFocus}
-        onBlur={this.props.onBlur}/>
+        onBlur={this.props.onBlur}
+        rows={this.props.rows}
+      />
     );
   }
 }
@@ -42,7 +44,8 @@ Textarea.propTypes = {
   readOnly: PropTypes.bool,
   onChange: requiredIf(PropTypes.func, props => !props.disabled && !props.readOnly),
   onFocus: PropTypes.func,
-  onBlur: PropTypes.func
+  onBlur: PropTypes.func,
+  rows: PropTypes.number
 };
 
 module.exports = Textarea;
