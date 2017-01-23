@@ -25,7 +25,7 @@ describe('Notification', function() {
 
     let onClose = () => {
       let end = Date.now();
-      expect(end - start).to.be.closeTo(200, 50);
+      expect(end - start).to.be.closeTo(300, 50);
       done();
     };
 
