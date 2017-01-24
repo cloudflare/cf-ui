@@ -6,8 +6,9 @@ class Textarea extends React.Component {
 
   render() {
     const {className, ...props} = this.props;
-    const classes = ['cf-textarea', className];
+    const classes = ['cf-textarea'];
 
+    if (className) classes.push(className);
     if (this.props.disabled) classes.push('cf-textarea--disabled');
     if (this.props.readOnly) classes.push('cf-textarea--readonly');
 

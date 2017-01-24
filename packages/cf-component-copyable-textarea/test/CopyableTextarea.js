@@ -19,8 +19,8 @@ describe('CopyableTextarea', () => {
       <div className="cf-copyable-textarea">
         <textarea
           className="cf-textarea cf-textarea--readonly"
-          name="example"
           readOnly
+          name="example"
           value="content"
           onChange={() => {}} />
           <p className="cf-copyable-textarea__help-text">click here</p>
