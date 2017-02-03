@@ -12,8 +12,8 @@ class Modal extends React.Component {
       modalClassName += ' cf-modal--confirm';
     }
 
-    if (this.props.width === 'wide') {
-      modalClassName += ' cf-modal--wide';
+    if (this.props.width) {
+      modalClassName += ` cf-modal--${this.props.width}`;
     }
 
     return (
@@ -55,9 +55,7 @@ Modal.propTypes = {
   closeOnEsc: PropTypes.bool,
   closeOnBackdropClick: PropTypes.bool,
   children: PropTypes.node,
-  width: PropTypes.oneOf([
-    'wide'
-  ])
+  width: PropTypes.string
 };
 
 Modal.defaultProps = {
