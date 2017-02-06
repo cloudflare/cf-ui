@@ -14,6 +14,7 @@
   },
   "devDependencies": {
     "assert-equal-jsx": "^1.0.0",
+    "react-addons-test-utils": "^15.0.0-0",
     "react-dom": "^15.0.0-0"
   }
 }
