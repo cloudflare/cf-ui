@@ -7,7 +7,7 @@ const TestUtils = require('react-addons-test-utils');
 
 describe('Checkbox', function() {
   beforeEach(function() {
-    this.root = global.document.createElement('div');
+    this.root = document.createElement('div');
     document.body.appendChild(this.root);
   });
 
