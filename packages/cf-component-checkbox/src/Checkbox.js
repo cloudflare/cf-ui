@@ -21,7 +21,7 @@ class Checkbox extends React.Component {
           name={this.props.name}
           value={this.props.value}
           checked={this.props.checked}
-          onChange={this.handleChange}/>
+          onChange={this.handleChange.bind(this)}/>
         {this.props.label && (
           <span className="cf-checkbox__label">
             {this.props.label}
