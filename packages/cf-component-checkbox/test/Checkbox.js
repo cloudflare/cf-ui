@@ -21,20 +21,13 @@ describe('Checkbox', function() {
     );
 
     setTimeout(() => {
-      TestUtils.Simulate.mouseEnter(
+      TestUtils.Simulate.change(
         TestUtils.findRenderedDOMComponentWithClass(instance, 'cf-checkbox__input')
       );
 
       setTimeout(() => {
-        expect(called).to.be.false;
-        TestUtils.Simulate.mouseLeave(
-          TestUtils.findRenderedDOMComponentWithClass(instance, 'cf-checkbox__input')
-        );
-
-        setTimeout(() => {
-          expect(called).to.be.true;
-          done();
-        }, 150);
+        expect(called).to.be.true;
+        done();
       }, 150);
     }, 50);
   });
