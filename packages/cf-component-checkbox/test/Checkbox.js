@@ -5,31 +5,38 @@ const {expect} = require('chai');
 const {render, unmountComponentAtNode} = require('react-dom');
 const TestUtils = require('react-addons-test-utils');
 
+var then = function (callback, timeout) {
+  setTimeout(callback, timeout > 0 ? timeout : 0);
+  return {then: then};
+};
+
 describe('Checkbox', function() {
   beforeEach(function() {
     this.root = document.createElement('div');
     document.body.appendChild(this.root);
   });
 
+  afterEach(function() {
+    unmountComponentAtNode(this.root);
+    document.body.removeChild(this.root);
+  });
+
   it('should handle onChange', function() {
-    let called = false;
+    var called = false;
     let onChange = () => called = true;
 
-    render(
-      <Checkbox label="false" name="name" value="value" checked="false" onChange={onChange}/>,
+    let instance = render(
+      <Checkbox label="false" name="name" value="value" checked={false} onChange={this.onChange}/>,
       this.root
     );
 
-    setTimeout(() => {
-      TestUtils.Simulate.change(
-        TestUtils.findRenderedDOMComponentWithClass(instance, 'cf-checkbox__input')
-      );
-
-      setTimeout(() => {
-        expect(called).to.be.true;
-        done();
-      }, 150);
-    }, 50);
+    TestUtils.Simulate.change(
+      TestUtils.findRenderedDOMComponentWithClass(instance, 'cf-checkbox__input')
+    );
+    then(() => {
+      expect(called).to.be.true;
+      done();
+    });
   });
 
   it('should render', function() {
