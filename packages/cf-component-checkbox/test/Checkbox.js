@@ -1,38 +1,19 @@
 const React = require('react');
 const assertEqualJSX = require('assert-equal-jsx');
 const Checkbox = require('../src/Checkbox');
-const {expect} = require('chai');
-const {render, unmountComponentAtNode} = require('react-dom');
-const TestUtils = require('react-addons-test-utils');
-const { then } = require('../../../testUtils');
+const { expect } = require('chai');
+const { shallow } = require('enzyme');
 
 describe('Checkbox', function() {
-  beforeEach(function() {
-    this.root = document.createElement('div');
-    document.body.appendChild(this.root);
-  });
-
-  afterEach(function() {
-    unmountComponentAtNode(this.root);
-    document.body.removeChild(this.root);
-  });
-
   it('should handle onChange', function() {
-    var called = false;
-    let onChange = () => called = true;
+    let called = false;
 
-    let instance = render(
-      <Checkbox label="false" name="name" value="value" checked={false} onChange={this.onChange}/>,
-      this.root
+    let wrapper = shallow(
+      <Checkbox onChange={ () => called = true } />
     );
 
-    TestUtils.Simulate.change(
-      TestUtils.findRenderedDOMComponentWithClass(instance, 'cf-checkbox__input')
-    );
-    then(() => {
-      expect(called).to.be.true;
-      done();
-    });
+    wrapper.find('input').simulate('change');
+    expect(called).to.be.true;
   });
 
   it('should render', function() {
