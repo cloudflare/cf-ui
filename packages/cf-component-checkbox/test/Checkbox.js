@@ -9,7 +9,7 @@ describe('Checkbox', function() {
     let called = false;
 
     let wrapper = shallow(
-      <Checkbox onChange={ () => called = true } />
+      <Checkbox onChange={ () => called = true }/>
     );
 
     wrapper.find('input').simulate('change');
