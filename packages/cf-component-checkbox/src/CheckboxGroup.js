@@ -34,7 +34,7 @@ class CheckboxGroup extends React.Component {
             name={option.name}
             value={option.value}
             checked={includes(this.props.values, option.value)}
-            onChange={val => this.handleChange(option.value, val)}/>;
+            onChange={e => this.handleChange(option.value, e.target.checked)}/>;
         })}
       </div>
     );

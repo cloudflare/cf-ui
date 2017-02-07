@@ -2,10 +2,6 @@ const React = require('react');
 const {PropTypes} = React;
 
 class Checkbox extends React.Component {
-  handleChange(e) {
-    this.props.onChange(e.target.checked);
-  }
-
   render() {
     let className = 'cf-checkbox';
 
@@ -21,7 +17,7 @@ class Checkbox extends React.Component {
           name={this.props.name}
           value={this.props.value}
           checked={this.props.checked}
-          onChange={this.handleChange}/>
+          onChange={this.props.onChange}/>
         {this.props.label && (
           <span className="cf-checkbox__label">
             {this.props.label}

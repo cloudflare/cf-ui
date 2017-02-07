@@ -1,8 +1,21 @@
 const React = require('react');
 const assertEqualJSX = require('assert-equal-jsx');
 const Checkbox = require('../src/Checkbox');
+const { expect } = require('chai');
+const { shallow } = require('enzyme');
 
 describe('Checkbox', function() {
+  it('should handle onChange', function() {
+    let called = false;
+
+    let wrapper = shallow(
+      <Checkbox onChange={ () => called = true }/>
+    );
+
+    wrapper.find('input').simulate('change');
+    expect(called).to.be.true;
+  });
+
   it('should render', function() {
     assertEqualJSX(
       <Checkbox
