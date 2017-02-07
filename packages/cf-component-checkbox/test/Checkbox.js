@@ -4,11 +4,7 @@ const Checkbox = require('../src/Checkbox');
 const {expect} = require('chai');
 const {render, unmountComponentAtNode} = require('react-dom');
 const TestUtils = require('react-addons-test-utils');
-
-var then = function (callback, timeout) {
-  setTimeout(callback, timeout > 0 ? timeout : 0);
-  return {then: then};
-};
+const { then } = require('../../../testUtils');
 
 describe('Checkbox', function() {
   beforeEach(function() {
