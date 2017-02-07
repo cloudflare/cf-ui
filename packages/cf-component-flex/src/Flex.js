@@ -1,16 +1,30 @@
 const React = require('react');
 const {PropTypes} = React;
+const prefixAll = require('inline-style-prefixer/static');
+
+
+function styles (props) {
+  return {
+    flexDirection: props.direction,
+    flexWrap: props.wrap,
+    justifyContent: props.justifyContent,
+    alignItems: props.alignItems,
+    alignContent: props.alignContent
+  };
+}
 
 class Flex extends React.Component {
   render() {
-    let className = 'cf-flex';
+    let className = 'cf-flex', style;
 
     if (this.props.spacing) {
       className += ' cf-flex--' + this.props.spacing;
+    } else {
+      style = prefixAll(styles(this.props));
     }
 
     return (
-      <div className={className}>
+      <div className={className} style={style}>
         {this.props.children}
       </div>
     );
@@ -19,10 +33,42 @@ class Flex extends React.Component {
 
 Flex.propTypes = {
   spacing: PropTypes.oneOf([
-    false,
     'thin',
     'wide'
-  ]).isRequired,
+  ]),
+  direction: PropTypes.oneOf([
+    'row',
+    'row-reverse',
+    'column',
+    'column-reverse'
+  ]),
+  wrap: PropTypes.oneOf([
+    'nowrap',
+    'wrap',
+    'wrap-reverse'
+  ]),
+  justifyContent: PropTypes.oneOf([
+    'flex-start',
+    'flex-end',
+    'center',
+    'space-between',
+    'space-around'
+  ]),
+  alignItems: PropTypes.oneOf([
+    'flex-start',
+    'flex-end',
+    'center',
+    'baseline',
+    'stretch'
+  ]),
+  alignContent: PropTypes.oneOf([
+    'flex-start',
+    'flex-end',
+    'center',
+    'space-between',
+    'space-around',
+    'stretch'
+  ]),
   children: PropTypes.node
 };
 
