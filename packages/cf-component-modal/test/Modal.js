@@ -74,4 +74,26 @@ describe('Modal', function() {
       </div>
     );
   });
+
+  it('should add a `className` if `width` is defined', function() {
+    assertEqualJSX(
+      <Application>
+        <Modal width="wide" isOpen={true} onRequestClose={function() {}}/>
+      </Application>,
+      // should equal
+      <div>
+        <div>
+          <span>
+            <div className="cf-modal__backdrop-scroller">
+              <div className="cf-modal__backdrop-outer">
+                <div className="cf-modal__backdrop">
+                  <div className="cf-modal cf-modal--wide" tabIndex="-1"></div>
+                </div>
+              </div>
+            </div>
+          </span>
+        </div>
+      </div>
+    );
+  });
 });
