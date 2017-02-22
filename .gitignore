@@ -2,5 +2,4 @@ node_modules
 *.log
 lib
 coverage
-dist
 packages/*/npm-debug.log.*
