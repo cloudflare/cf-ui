@@ -1,19 +1,27 @@
 import React, {PropTypes} from 'react';
 import {createComponent} from 'cf-style-container';
 
+const getRadius = (borderRadius, group) => {
+  if (group) {
+    return {
+      borderTopRightRadius: group === 'last' ? borderRadius : 0,
+      borderTopLeftRadius: group === 'first' ? borderRadius : 0,
+      borderBottomLeftRadius: group === 'first' ? borderRadius : 0,
+      borderBottomRightRadius: group === 'last' ? borderRadius : 0
+    };
+  }
+  return { borderRadius };
+};
+
 const styles = props => {
   const theme = props.theme;
-  return ({
+  return Object.assign({
     font: theme.font,
     fontWeight: theme.fontWeight,
     borderTop: theme.border,
     borderLeft: (props.group && props.group !== 'first') ? 0 : theme.border,
     borderRight: theme.border,
     borderBottom: theme.border,
-    borderTopRightRadius: props.group !== 'last' ? theme.borderRadius : 0,
-    borderTopLeftRadius: props.group !== 'first' ? theme.borderRadius : 0,
-    borderBottomLeftRadius: props.group !== 'first' ? theme.borderRadius : 0,
-    borderBottomRightRadius: props.group !== 'last' ? theme.borderRadius : 0,
     paddingTop: theme.paddingTop,
     paddingRight: theme.paddingRight,
     paddingBottom: theme.paddingBottom,
@@ -30,7 +38,7 @@ const styles = props => {
     borderBottomWidth: theme.borderBottomWidth,
     boxShadow: theme.boxShadow,
     background: theme[`background${props.type.charAt(0).toUpperCase() + props.type.slice(1)}`]
-  });
+  }, getRadius(theme.borderRadius, props.group));
 };
 
 const Button = ({

@@ -28,7 +28,10 @@ export default {
         plugins: [
           'transform-object-rest-spread'
         ],
-        presets: ['es2015', 'react']
+        presets: [
+          ['es2015', { modules: false}],
+          'react'
+        ]
       }
     }]
   },
