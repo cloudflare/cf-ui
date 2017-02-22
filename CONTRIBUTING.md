@@ -34,7 +34,7 @@ To build the examples:
 ```sh
 $ npm run examples:build:internal # Build the example site with CloudFlare's internal styles (employees only)
 $ npm run examples:build:external # Build the example site with CloudFlare's external styles
-$ open dist/index.html
+$ open docs/index.html
 ```
 
 Or if you want to continuously work on the examples:
