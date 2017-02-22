@@ -178,7 +178,7 @@ function initBrowserify(files, output, externals, requires, transforms, watch) {
       }))
       .pipe(watch ? gutil.noop() : uglify())
       .pipe(sourcemaps.write('./'))
-      .pipe(gulp.dest('dist'));
+      .pipe(gulp.dest('docs'));
   }
 
   return update();
@@ -441,8 +441,8 @@ export function examplesBuildHtml(cb) {
     '</html>'
   );
 
-  mkdirp.sync(path.resolve(__dirname, 'dist'));
-  fs.writeFileSync(path.resolve(__dirname, 'dist/index.html'), html);
+  mkdirp.sync(path.resolve(__dirname, 'docs'));
+  fs.writeFileSync(path.resolve(__dirname, 'docs/index.html'), html);
   cb();
 }
 
@@ -476,15 +476,15 @@ export function examplesBuildCss() {
       require('cssnano')()
     ]))
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('docs'));
 }
 
 export function examplesBuildAssets() {
   return gulp.src(exampleAssets)
-    .pipe(gulp.dest('dist/assets'));
+    .pipe(gulp.dest('docs/assets'));
 }
 
-export const examplesClean = () => del(['dist']);
+export const examplesClean = () => del(['docs']);
 
 export const examplesBuildBundle = () => initBrowserifyBundle(false);
 export const examplesBuildVendor = () => initBrowserifyVendor(false);
@@ -492,7 +492,7 @@ export const examplesDevBundle = () => initBrowserifyBundle(true);
 export const examplesDevVendor = () => initBrowserifyVendor(true);
 
 function logLocation(cb) {
-  gutil.log('Open "file://' + path.resolve(__dirname, 'dist/index.html') + '" in your browser');
+  gutil.log('Open "file://' + path.resolve(__dirname, 'docs/index.html') + '" in your browser');
   cb();
 }
 
@@ -540,7 +540,7 @@ export const examplesPublish =
     examplesBuild,
     function examplesPublisher(cb) {
       execSync([
-        'cd dist',
+        'cd docs',
         'git init',
         'git remote add origin git@github.com:cloudflare/cf-ui.git',
         'git add -A',
