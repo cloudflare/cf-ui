@@ -26,10 +26,12 @@ const addGroupProps = children =>
     })
   );
 
-const ButtonGroup = ({children}) => <div>{addGroupProps(children)}</div>;
+const ButtonGroup = ({children, className}) =>
+  <div className={className}>{addGroupProps(children)}</div>;
 
 ButtonGroup.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
+  className: PropTypes.string.isRequired
 };
 
 export default createComponent(styles, ButtonGroup);

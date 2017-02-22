@@ -13,6 +13,7 @@ const Html = () =>
     <head>
       <meta charSet="utf-8" />
       <title>cf-ui styleguide</title>
+      <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css" />
       <style id="stylesheet"></style>
       <style id="font-stylesheet"></style>
     </head>

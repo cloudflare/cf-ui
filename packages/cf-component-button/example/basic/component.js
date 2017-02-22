@@ -1,34 +1,25 @@
-const React = require('react');
-const {render} = require('react-dom');
-const {
+import React from 'react';
+import { ThemeProvider } from 'cf-style-container';
+import {
   ButtonGroup,
-  Button
-} = require('../../src/index');
+  ButtonGroupTheme,
+  Button,
+  ButtonTheme
+} from 'cf-component-button';
 
-class Component extends React.Component {
-  handleButtonOneClick() {
-    console.log('Clicked Button One!');
-  }
-
-  handleButtonTwoClick() {
-    console.log('Clicked Button Two!');
-  }
-
-  render() {
-    return (
+export default () =>
+  <ThemeProvider theme={ButtonGroupTheme}>
+    <ThemeProvider theme={ButtonTheme}>
       <ButtonGroup>
-        <Button type="primary" onClick={this.handleButtonOneClick.bind(this)}>
+        <Button type="primary" onClick={() => console.log('Clicked One!')}>
           Button One
         </Button>
-        <Button type="primary" onClick={this.handleButtonTwoClick.bind(this)}>
+        <Button type="default" onClick={() => console.log('Clicked Two!')}>
           Button Two
         </Button>
+        <Button type="success" onClick={() => console.log('Clicked Three!')}>
+          Button Three
+        </Button>
       </ButtonGroup>
-    );
-  }
-}
-
-render(
-  <Component/>,
-  document.getElementById('cf-component-button--basic')
-);
+    </ThemeProvider>
+  </ThemeProvider>;

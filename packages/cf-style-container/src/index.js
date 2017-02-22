@@ -1,4 +1,6 @@
-import { createComponent as createFelaComponent } from 'react-fela';
+import {
+	createComponent as createFelaComponent
+} from 'react-fela';
 
 export const createComponent = (rule, type = 'div', passThroughProps = []) =>
   createFelaComponent(
@@ -7,3 +9,4 @@ export const createComponent = (rule, type = 'div', passThroughProps = []) =>
     type.propTypes ? passThroughProps.concat(Object.keys(type.propTypes)) : passThroughProps
   );
 
+export { ThemeProvider } from 'react-fela';

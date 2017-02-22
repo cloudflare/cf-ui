@@ -61,4 +61,5 @@ rules:
     - 2
     - vars: "all"
       args: "after-used"
-  no-undef: 2
+  no-undef: 2,
+  react/displayName: 0
