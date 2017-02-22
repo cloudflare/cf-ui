@@ -1,0 +1,14 @@
+{
+  "name": "cf-style-container",
+  "description": "CloudFlare Style Container",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "author": "Vojtech Miksu <vojtech@cloudflare.com>",
+  "license": "BSD-3-Clause",
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "fela": "^4.2.5"
+  }
+}
