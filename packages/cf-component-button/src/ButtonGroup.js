@@ -1,18 +1,35 @@
-const React = require('react');
-const {PropTypes} = React;
+import React, {PropTypes} from 'react';
+import {createComponent} from 'cf-style-container';
 
-class ButtonGroup extends React.Component {
-  render() {
-    return (
-      <div className='cf-btn__group'>
-        {this.props.children}
-      </div>
-    );
+const styles = props => {
+  const theme = props.theme;
+  return ({
+    display: theme.display,
+    position: theme.position
+  });
+};
+
+const getGroupByIndex = (index, length) => {
+  if (index === length - 1) {
+    return 'last';
   }
-}
+  if (index === 0) {
+    return 'first';
+  }
+  return 'inbetween';
+};
+
+const addGroupProps = children =>
+  React.Children.map(children, (child, index) =>
+    React.cloneElement(child, {
+      group: getGroupByIndex(index, React.Children.count(children))
+    })
+  );
+
+const ButtonGroup = ({children}) => <div>{addGroupProps(children)}</div>;
 
 ButtonGroup.propTypes = {
   children: PropTypes.node
 };
 
-module.exports = ButtonGroup;
+export default createComponent(styles, ButtonGroup);

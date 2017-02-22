@@ -1,34 +1,64 @@
-const React = require('react');
-const {PropTypes} = React;
+import React, {PropTypes} from 'react';
+import {createComponent} from 'cf-style-container';
 
-class Button extends React.Component {
-  render() {
-    const {disabled, loading} = this.props;
-    const type = this.props.submit ? 'submit' : 'button';
-    let className = 'cf-btn cf-btn--' + this.props.type;
+const styles = props => {
+  const theme = props.theme;
+  return ({
+    font: theme.font,
+    fontWeight: theme.fontWeight,
+    borderTop: theme.border,
+    borderLeft: (props.group && props.group !== 'first') ? 0 : theme.border,
+    borderRight: theme.border,
+    borderBottom: theme.border,
+    borderTopRightRadius: props.group !== 'last' ? theme.borderRadius : 0,
+    borderTopLeftRadius: props.group !== 'first' ? theme.borderRadius : 0,
+    borderBottomLeftRadius: props.group !== 'first' ? theme.borderRadius : 0,
+    borderBottomRightRadius: props.group !== 'last' ? theme.borderRadius : 0,
+    paddingTop: theme.paddingTop,
+    paddingRight: theme.paddingRight,
+    paddingBottom: theme.paddingBottom,
+    paddingLeft: theme.paddingLeft,
+    marginTop: props.group ? 0 : theme.marginTop,
+    marginRight: props.group ? 0 : theme.marginRight,
+    marginBottom: props.group ? 0 : theme.marginBottom,
+    marginLeft: props.group ? 0 : theme.marginLeft,
+    cursor: theme.cursor,
+    color: theme.color,
+    borderWidth: theme.borderWidth,
+    borderStyle: theme.borderStyle,
+    borderColor: theme.borderColor,
+    borderBottomWidth: theme.borderBottomWidth,
+    boxShadow: theme.boxShadow,
+    background: theme[`background${props.type.charAt(0).toUpperCase() + props.type.slice(1)}`]
+  });
+};
 
-    if (loading) {
-      className += ' cf-btn--loading';
-    }
-
-    // Unless the disabled state is explicitly set, the button is disabled when loading.
-    const isDisabled = (disabled !== undefined ? disabled : loading) || false;
-
-    return (
-      <button
-        type={type}
-        className={className}
-        disabled={isDisabled}
-        onClick={this.props.onClick}>
-        {this.props.children}
-      </button>
-    );
-  }
-}
+const Button = ({
+  onClick,
+  submit,
+  className,
+  disabled,
+  loading,
+  children
+}) =>
+  <button
+    type={submit ? 'submit' : 'button'}
+    disabled={disabled || loading}
+    className={className}
+    onClick={onClick}
+  >
+    {children}
+  </button>;
 
 Button.propTypes = {
   onClick: PropTypes.func.isRequired,
   submit: PropTypes.bool,
+  className: PropTypes.string.isRequired,
+  group: PropTypes.oneOf([
+    'first',
+    'inbetween',
+    'last'
+  ]),
   type: PropTypes.oneOf([
     'default',
     'primary',
@@ -46,4 +76,4 @@ Button.defaultProps = {
   submit: false
 };
 
-module.exports = Button;
+export default createComponent(styles, Button);
