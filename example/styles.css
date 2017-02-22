@@ -1102,6 +1102,20 @@ a.cf-link--disabled {
 }
 
 /**
+ * Wizard
+ */
+
+.cf-wizard .cf-modal__footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cf-wizard__step-content {
+  margin: 20px 0;
+}
+
+
+/**
  * Notifications
  */
 
