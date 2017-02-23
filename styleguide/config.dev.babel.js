@@ -1,13 +1,8 @@
 import webpack from 'webpack';
 import path from 'path';
 import ip from 'ip';
-import fs from 'fs';
+import { alias } from './alias';
 import { HOT_RELOAD_PORT, SRC_DIR, BUILD_DIR } from './constants';
-
-const alias = {};
-fs.readdirSync(path.resolve(__dirname, '../packages'))
-  .forEach(file => alias[file] = path.resolve(__dirname, `../packages/${file}/src/index.js`));
-console.log(alias);
 
 export default {
   cache: true,
@@ -49,7 +44,6 @@ export default {
   resolve: {
     alias,
     extensions: ['.js', '.json'],
-    modules: ['node_modules'],
-    symlinks: false
+    modules: ['node_modules']
   }
 };
