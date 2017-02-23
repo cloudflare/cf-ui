@@ -23,7 +23,6 @@
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
-    "babel-cli": "^6.23.0",
     "babel-core": "^6.18.0",
     "babel-generator": "^6.18.0",
     "babel-loader": "^6.3.2",
