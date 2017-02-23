@@ -31,6 +31,10 @@ const del = require('del');
 const fs = require('fs');
 const _ = require('lodash');
 
+const exludedNewPackages = [
+  'cf-component-button'
+];
+
 const highlighter = new Highlights();
 
 highlighter.requireGrammarsSync({
@@ -185,7 +189,9 @@ function initBrowserify(files, output, externals, requires, transforms, watch) {
 }
 
 function initBrowserifyBundle(watch) {
-  const files = glob.sync(path.resolve(__dirname, exampleComponents));
+  const files = glob.sync(path.resolve(__dirname, exampleComponents), {
+    ignore: exludedNewPackages.map(pkg => '**/' + pkg + '/**')
+  });
   return initBrowserify(files, 'bundle.js', vendors, null, [babelify], watch);
 }
 
@@ -358,9 +364,9 @@ function generatePropTypeDocs(packagesPath, pkg) {
 
 export function examplesBuildHtml(cb) {
   const packagesPath = path.resolve(__dirname, 'packages');
-  const packages = fs.readdirSync(packagesPath).filter(pkg => {
+  const packages = _.xor(exludedNewPackages, fs.readdirSync(packagesPath).filter(pkg => {
     return pkg.indexOf('cf-component-') > -1 || pkg.indexOf('cf-builder-') > -1;
-  });
+  }));
 
   let componentsHtml = '';
   let sidebarHtml = '';
