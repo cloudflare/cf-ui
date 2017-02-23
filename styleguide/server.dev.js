@@ -15,5 +15,5 @@ app.use(webpackDev(compiler, {
 app.use(webpackHot(compiler));
 
 app.listen(HOT_RELOAD_PORT, () => {
-  console.log('Dev server started at port %d', HOT_RELOAD_PORT); // eslint-disable-line
+  console.log('Dev server started at port %d', HOT_RELOAD_PORT);
 });
