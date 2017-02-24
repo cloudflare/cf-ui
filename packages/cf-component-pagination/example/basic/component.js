@@ -1,5 +1,5 @@
 const React = require('react');
-const {render} = require('react-dom');
+const { render } = require('react-dom');
 
 const {
   Pagination,
@@ -8,7 +8,6 @@ const {
 const Icon = require('cf-component-icon');
 
 class Component extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -45,7 +44,8 @@ class Component extends React.Component {
           type="number"
           label={'Page ' + i}
           active={this.state.active === i}
-          onClick={this.handleClickItem.bind(this, i)}>
+          onClick={this.handleClickItem.bind(this, i)}
+        >
           {i}
         </PaginationItem>
       );
@@ -57,16 +57,18 @@ class Component extends React.Component {
           type="prev"
           label="Previous Page"
           disabled={this.state.active === 1}
-          onClick={this.handleClickPrev.bind(this)}>
-          <Icon type="caret-left" label={false}/>
+          onClick={this.handleClickPrev.bind(this)}
+        >
+          <Icon type="caret-left" label={false} />
         </PaginationItem>
         {items}
         <PaginationItem
           type="next"
           label="Next Page"
           disabled={this.state.active === this.state.pages}
-          onClick={this.handleClickNext}>
-          <Icon type="caret-right" label={false}/>
+          onClick={this.handleClickNext}
+        >
+          <Icon type="caret-right" label={false} />
         </PaginationItem>
       </Pagination>
     );
@@ -74,6 +76,6 @@ class Component extends React.Component {
 }
 
 render(
-  <Component/>,
+  <Component />,
   document.getElementById('cf-component-pagination--basic')
 );

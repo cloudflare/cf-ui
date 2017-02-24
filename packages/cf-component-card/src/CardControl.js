@@ -1,9 +1,10 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 
 class CardControl extends React.Component {
   render() {
-    const className = 'cf-card__control' + (this.props.wide ? ' cf-card__control--wide' : '');
+    const className = 'cf-card__control' +
+      (this.props.wide ? ' cf-card__control--wide' : '');
 
     return (
       <div className={className}>

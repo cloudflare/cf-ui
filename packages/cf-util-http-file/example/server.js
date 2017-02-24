@@ -6,8 +6,10 @@ const fs = require('fs');
 const app = express();
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
-app.get('/bundle.js', (req, res) => res.sendFile(path.join(__dirname, 'bundle.js')));
-app.get('/styles.css', (req, res) => res.sendFile(path.join(__dirname, 'styles.css')));
+app.get('/bundle.js', (req, res) =>
+  res.sendFile(path.join(__dirname, 'bundle.js')));
+app.get('/styles.css', (req, res) =>
+  res.sendFile(path.join(__dirname, 'styles.css')));
 
 const tmp = path.join(__dirname, 'tmp');
 const upload = multer({ dest: tmp });
@@ -20,9 +22,7 @@ app.post('/upload', upload.single('file'), function(req, res, next) {
 });
 
 app.get('/download/:id', function(req, res, next) {
-  fs.createReadStream(
-    path.join(tmp, req.params.id)
-  ).pipe(res);
+  fs.createReadStream(path.join(tmp, req.params.id)).pipe(res);
 });
 
 app.listen(3000);

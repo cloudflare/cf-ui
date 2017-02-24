@@ -1,9 +1,9 @@
 const assert = require('assert');
 const React = require('react');
-const {mount} = require('enzyme');
-const {createStore, combineReducers, applyMiddleware} = require('redux');
+const { mount } = require('enzyme');
+const { createStore, combineReducers, applyMiddleware } = require('redux');
 const thunk = require('redux-thunk').default;
-const {Provider} = require('react-redux');
+const { Provider } = require('react-redux');
 const {
   tableActions,
   tableReducer,
@@ -31,10 +31,7 @@ describe('TableBuilderTest', () => {
   it('should render a table', () => {
     const wrapper = mount(
       <Provider store={store}>
-        <TableBuilder
-          tableName="test-table"
-          rows={[]}
-          columns={[]}/>
+        <TableBuilder tableName="test-table" rows={[]} columns={[]} />
       </Provider>
     );
 
@@ -50,17 +47,21 @@ describe('TableBuilderTest', () => {
             { id: '1', cells: { name: 'Foo', value: 'foo' } },
             { id: '2', cells: { name: 'Bar', value: 'bar' } }
           ]}
-          columns={[{
-            label: 'Name',
-            cell: (cells) => {
-              return <TableCell key="name">{cells.name}</TableCell>;
+          columns={[
+            {
+              label: 'Name',
+              cell: cells => {
+                return <TableCell key="name">{cells.name}</TableCell>;
+              }
+            },
+            {
+              label: 'Value',
+              cell: cells => {
+                return <TableCell key="value">{cells.value}</TableCell>;
+              }
             }
-          }, {
-            label: 'Value',
-            cell: (cells) => {
-              return <TableCell key="value">{cells.value}</TableCell>;
-            }
-          }]}/>
+          ]}
+        />
       </Provider>
     );
 
@@ -83,8 +84,14 @@ describe('TableBuilderTest', () => {
     const wrapper = mount(
       <Provider store={store}>
         <TableBuilder
-          tableName="test-table" rows={[]} columns={[]}
-          striped hover bordered condensed/>
+          tableName="test-table"
+          rows={[]}
+          columns={[]}
+          striped
+          hover
+          bordered
+          condensed
+        />
       </Provider>
     );
 
@@ -105,7 +112,8 @@ describe('TableBuilderTest', () => {
             { id: '1', type: 'success', cells: {} },
             { id: '2', accent: 'red', cells: {} }
           ]}
-          columns={[]}/>
+          columns={[]}
+        />
       </Provider>
     );
 
@@ -120,20 +128,15 @@ describe('TableBuilderTest', () => {
       <Provider store={store}>
         <TableBuilder
           tableName="test-table"
-          rows={[
-            { id: '1', cells: {} },
-            { id: '2', cells: {} }
-          ]}
-          columns={[]}/>
+          rows={[{ id: '1', cells: {} }, { id: '2', cells: {} }]}
+          columns={[]}
+        />
       </Provider>
     );
 
     store.dispatch(tableActions.flashRow('test-table', '1', 'success'));
 
-    const row = wrapper
-      .find(TableBody)
-      .find(TableRow)
-      .at(0);
+    const row = wrapper.find(TableBody).find(TableRow).at(0);
 
     assert.equal(row.prop('type'), 'success');
   });

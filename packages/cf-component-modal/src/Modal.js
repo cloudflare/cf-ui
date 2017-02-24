@@ -1,7 +1,7 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 const ReactModal2 = require('react-modal2').default;
-const {Gateway} = require('react-gateway');
+const { Gateway } = require('react-gateway');
 const ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 
 class Modal extends React.Component {
@@ -23,8 +23,9 @@ class Modal extends React.Component {
           transitionAppear={true}
           transitionAppearTimeout={200}
           transitionEnterTimeout={200}
-          transitionLeaveTimeout={200}>
-          {this.props.isOpen && (
+          transitionLeaveTimeout={200}
+        >
+          {this.props.isOpen &&
             <div className="cf-modal__backdrop-scroller">
               <div className="cf-modal__backdrop-outer">
                 <ReactModal2
@@ -34,12 +35,12 @@ class Modal extends React.Component {
                   modalClassName={modalClassName}
                   closeOnEsc={this.props.closeOnEsc}
                   closeOnBackdropClick={this.props.closeOnBackdropClick}
-                  onClose={this.props.onRequestClose}>
+                  onClose={this.props.onRequestClose}
+                >
                   {this.props.children}
                 </ReactModal2>
               </div>
-            </div>
-          )}
+            </div>}
         </ReactCSSTransitionGroup>
       </Gateway>
     );
@@ -47,9 +48,7 @@ class Modal extends React.Component {
 }
 
 Modal.propTypes = {
-  type: PropTypes.oneOf([
-    'confirm'
-  ]),
+  type: PropTypes.oneOf(['confirm']),
   isOpen: PropTypes.bool.isRequired,
   onRequestClose: PropTypes.func.isRequired,
   closeOnEsc: PropTypes.bool,

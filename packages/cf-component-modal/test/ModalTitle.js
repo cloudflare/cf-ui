@@ -1,7 +1,7 @@
 const React = require('react');
 const assertEqualJSX = require('assert-equal-jsx');
 const ModalTitle = require('../src/ModalTitle');
-const {Heading} = require('cf-component-heading');
+const { Heading } = require('cf-component-heading');
 
 describe('ModalTitle', function() {
   it('should render', function() {

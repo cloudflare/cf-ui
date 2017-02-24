@@ -1,5 +1,5 @@
-const {PropTypes} = require('react');
-const {TablePropTypes} = require('cf-component-table');
+const { PropTypes } = require('react');
+const { TablePropTypes } = require('cf-component-table');
 
 const row = PropTypes.shape({
   id: PropTypes.string.isRequired,

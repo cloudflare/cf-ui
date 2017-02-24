@@ -1,5 +1,5 @@
 const assert = require('assert');
-const {createStub} = require('../src/index');
+const { createStub } = require('../src/index');
 
 describe('createStub()', () => {
   it('should create a callable function', () => {
@@ -28,19 +28,24 @@ describe('createStub()', () => {
     const stub = createStub();
     assert.deepEqual(stub.calls, []);
     stub.call(1, 2, 3);
-    assert.deepEqual(stub.calls, [{
-      context: 1,
-      args: [2, 3]
-    }]);
+    assert.deepEqual(stub.calls, [
+      {
+        context: 1,
+        args: [2, 3]
+      }
+    ]);
 
     stub.call(4, 5, 6);
-    assert.deepEqual(stub.calls, [{
-      context: 1,
-      args: [2, 3]
-    }, {
-      context: 4,
-      args: [5, 6]
-    }]);
+    assert.deepEqual(stub.calls, [
+      {
+        context: 1,
+        args: [2, 3]
+      },
+      {
+        context: 4,
+        args: [5, 6]
+      }
+    ]);
   });
 
   const outsideStub = createStub();

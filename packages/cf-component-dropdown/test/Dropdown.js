@@ -1,8 +1,8 @@
 const React = require('react');
 const assertEqualJSX = require('assert-equal-jsx');
-const {trackFocus, getCurrentFocus} = require('cf-test-focus');
-const {equal: assertEqual} = require('assert');
-const {render, unmountComponentAtNode} = require('react-dom');
+const { trackFocus, getCurrentFocus } = require('cf-test-focus');
+const { equal: assertEqual } = require('assert');
+const { render, unmountComponentAtNode } = require('react-dom');
 
 const Dropdown = require('../src/Dropdown');
 const DropdownLink = require('../src/DropdownLink');
@@ -50,7 +50,7 @@ describe('Dropdown', function() {
         called = true;
       };
 
-      var dom = <Dropdown onClose={onClose}/>;
+      var dom = <Dropdown onClose={onClose} />;
       var instance = render(dom, this.root);
 
       instance.handleDocumentKeydown({ keyCode: 27 });
@@ -67,9 +67,9 @@ describe('Dropdown', function() {
 
       const dom = (
         <Dropdown onClose={() => {}}>
-          <DropdownLink to="one"/>
-          <DropdownLink to="two"/>
-          <DropdownLink to="three"/>
+          <DropdownLink to="one" />
+          <DropdownLink to="two" />
+          <DropdownLink to="three" />
         </Dropdown>
       );
       const instance = render(dom, this.root);

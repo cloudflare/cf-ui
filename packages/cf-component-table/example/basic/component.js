@@ -1,5 +1,5 @@
 const React = require('react');
-const {render} = require('react-dom');
+const { render } = require('react-dom');
 
 const {
   Table,
@@ -13,11 +13,7 @@ const {
 
 class Component extends React.Component {
   render() {
-    const data = [
-      [1, 2, 3],
-      [4, 5, 6],
-      [7, 8, 9]
-    ];
+    const data = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
     return (
       <Table>
@@ -29,22 +25,19 @@ class Component extends React.Component {
           </TableRow>
         </TableHead>
         <TableBody>
-          {data.map((row, r) =>
+          {data.map((row, r) => (
             <TableRow key={r}>
-              {row.map((cell, c) =>
+              {row.map((cell, c) => (
                 <TableCell key={c}>
                   {cell}
                 </TableCell>
-              )}
+              ))}
             </TableRow>
-          )}
+          ))}
         </TableBody>
       </Table>
     );
   }
 }
 
-render(
-  <Component/>,
-  document.getElementById('cf-component-table--basic')
-);
+render(<Component />, document.getElementById('cf-component-table--basic'));

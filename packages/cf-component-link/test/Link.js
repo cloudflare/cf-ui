@@ -47,7 +47,9 @@ describe('Link', function() {
     assertEqualJSX(
       <Link to="/route" disabled>Hello World</Link>,
       // should equal
-      <a href="/route" className="cf-link cf-link--disabled" disabled>Hello World</a>
+      <a href="/route" className="cf-link cf-link--disabled" disabled>
+        Hello World
+      </a>
     );
   });
 });

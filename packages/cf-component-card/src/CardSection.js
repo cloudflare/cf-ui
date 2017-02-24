@@ -1,10 +1,12 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 
 class CardSection extends React.Component {
   render() {
     return (
-      <div className={'cf-card__section cf-card__section--' + this.props.status}>
+      <div
+        className={'cf-card__section cf-card__section--' + this.props.status}
+      >
         {this.props.children}
       </div>
     );
@@ -12,10 +14,7 @@ class CardSection extends React.Component {
 }
 
 CardSection.propTypes = {
-  status: PropTypes.oneOf([
-    'default',
-    'error'
-  ]),
+  status: PropTypes.oneOf(['default', 'error']),
   children: PropTypes.node
 };
 

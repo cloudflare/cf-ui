@@ -1,6 +1,6 @@
 const React = require('react');
-const {PropTypes} = React;
-const {connect} = require('react-redux');
+const { PropTypes } = React;
+const { connect } = require('react-redux');
 const TableBuilderPropTypes = require('./TableBuilderPropTypes');
 const {
   Table,
@@ -12,13 +12,22 @@ const {
 
 class TableBuilder extends React.Component {
   render() {
-    const {rows, columns, striped, hover, bordered, condensed, flashes} = this.props;
+    const {
+      rows,
+      columns,
+      striped,
+      hover,
+      bordered,
+      condensed,
+      flashes
+    } = this.props;
     return (
       <Table
         striped={striped}
         hover={hover}
         bordered={bordered}
-        condensed={condensed}>
+        condensed={condensed}
+      >
         <TableHead>
           <TableRow>
             {columns.map((column, index) => {
@@ -35,7 +44,7 @@ class TableBuilder extends React.Component {
             const type = flashes[row.id] || row.type;
             return (
               <TableRow key={row.id} type={type} accent={row.accent}>
-                {columns.map((column) => {
+                {columns.map(column => {
                   return column.cell(row.cells);
                 })}
               </TableRow>
@@ -65,7 +74,7 @@ function mapStateToProps(state, ownProps) {
   const tableName = ownProps.tableName;
   const tableState = state.tables[tableName];
   return {
-    flashes: tableState && tableState.flashes || {}
+    flashes: (tableState && tableState.flashes) || {}
   };
 }
 

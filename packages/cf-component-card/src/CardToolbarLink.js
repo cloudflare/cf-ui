@@ -1,9 +1,8 @@
 const React = require('react');
 const Link = require('cf-component-link');
-const {PropTypes} = React;
+const { PropTypes } = React;
 
 class CardToolbarLink extends React.Component {
-
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
@@ -22,7 +21,12 @@ class CardToolbarLink extends React.Component {
     }
 
     return (
-      <Link role="tab" id={this.props.id} className={className} onClick={this.handleClick}>
+      <Link
+        role="tab"
+        id={this.props.id}
+        className={className}
+        onClick={this.handleClick}
+      >
         {this.props.children}
       </Link>
     );

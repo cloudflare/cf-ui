@@ -1,14 +1,14 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 
 class FormHeader extends React.Component {
   render() {
     return (
-        <div className="cf-form__header">
+      <div className="cf-form__header">
         <h3 className="cf-form__title">
-        {this.props.title}
-      </h3>
-        </div>
+          {this.props.title}
+        </h3>
+      </div>
     );
   }
 }

@@ -7,11 +7,11 @@ const logSuccess = createLogger('http:success');
 
 // Mapping of http request types to superagent methods.
 const METHODS = {
-  GET    : 'get',
-  POST   : 'post',
-  PUT    : 'put',
-  PATCH  : 'patch',
-  DELETE : 'del'
+  GET: 'get',
+  POST: 'post',
+  PUT: 'put',
+  PATCH: 'patch',
+  DELETE: 'del'
 };
 
 // Store beforeSend callbacks.
@@ -148,4 +148,4 @@ function del(...args) {
   return request('DELETE', ...args);
 }
 
-module.exports = {beforeSend, request, get, post, put, patch, del};
+module.exports = { beforeSend, request, get, post, put, patch, del };

@@ -1,10 +1,9 @@
 const React = require('react');
-const {render} = require('react-dom');
+const { render } = require('react-dom');
 
 const Toggle = require('../../src/index');
 
 class Component extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -26,19 +25,19 @@ class Component extends React.Component {
           label="Example Toggle"
           name="example"
           value={this.state.toggleValue}
-          onChange={this.handleToggle.bind(this)}/>
+          onChange={this.handleToggle.bind(this)}
+        />
         <p>Disabled</p>
-        <Toggle disabled
+        <Toggle
+          disabled
           label="Disabled Toggle"
           name="example-disabled"
           value={this.state.toggleValue}
-          onChange={this.handleToggle.bind(this)}/>
+          onChange={this.handleToggle.bind(this)}
+        />
       </div>
     );
   }
 }
 
-render(
-  <Component/>,
-  document.getElementById('cf-component-toggle--basic')
-);
+render(<Component />, document.getElementById('cf-component-toggle--basic'));

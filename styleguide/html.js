@@ -2,12 +2,15 @@ import React, { PropTypes } from 'react';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
-const Html = ({ body, hash, cssStyles, fontStyles }) =>
+const Html = ({ body, hash, cssStyles, fontStyles }) => (
   <html lang="en-US">
     <head>
       <meta charSet="utf-8" />
       <title>cf-ui styleguide</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css" />
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css"
+      />
       <style id="stylesheet">{cssStyles}</style>
       <style id="font-stylesheet">{fontStyles}</style>
     </head>
@@ -18,7 +21,8 @@ const Html = ({ body, hash, cssStyles, fontStyles }) =>
         type="text/javascript"
       />
     </body>
-  </html>;
+  </html>
+);
 
 Html.displayName = 'Html';
 Html.propTypes = {
@@ -26,5 +30,5 @@ Html.propTypes = {
   hash: PropTypes.string,
   cssStyles: PropTypes.string,
   fontStyles: PropTypes.string
-}
+};
 export default Html;

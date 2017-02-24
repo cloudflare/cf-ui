@@ -1,10 +1,9 @@
 const React = require('react');
-const {render} = require('react-dom');
+const { render } = require('react-dom');
 
 const Progress = require('../../src/index');
 
 class Component extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -16,7 +15,7 @@ class Component extends React.Component {
     this.setState({
       activeStep: step
     });
-  };
+  }
 
   render() {
     return (
@@ -26,13 +25,11 @@ class Component extends React.Component {
         steps={[
           { id: 'foo', label: 'Foo', disabled: false },
           { id: 'bar', label: 'Bar', disabled: false },
-          { id: 'baz', label: 'Baz', disabled: true  }
-        ]}/>
+          { id: 'baz', label: 'Baz', disabled: true }
+        ]}
+      />
     );
   }
 }
 
-render(
-  <Component/>,
-  document.getElementById('cf-component-progress--basic')
-);
+render(<Component />, document.getElementById('cf-component-progress--basic'));

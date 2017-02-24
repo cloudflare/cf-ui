@@ -1,5 +1,5 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 const Viewport = require('cf-component-viewport');
 const Select = require('cf-component-select');
 
@@ -34,7 +34,8 @@ class Tabs extends React.Component {
                 value: tab.id,
                 label: tab.label
               };
-            })}/>
+            })}
+          />
         </Viewport>
         <Viewport not size="mobile">
           <ul className="cf-tabs__group" role="tablist">
@@ -47,14 +48,16 @@ class Tabs extends React.Component {
               }
 
               return (
-                <li key={tab.id}
+                <li
+                  key={tab.id}
                   role="tab"
                   tabIndex={0}
                   aria-controls={tab.id}
                   aria-selected={selected}
                   className={className}
                   onKeyDown={this.handleKeyDown.bind(this, tab.id)}
-                  onClick={this.handleChange.bind(this, tab.id)}>
+                  onClick={this.handleChange.bind(this, tab.id)}
+                >
                   {tab.label}
                 </li>
               );
@@ -71,10 +74,12 @@ Tabs.propTypes = {
   onChange: PropTypes.func.isRequired,
   active: PropTypes.string.isRequired,
   activeTab: PropTypes.string.isRequired,
-  tabs: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired
-  })).isRequired,
+  tabs: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired
+    })
+  ).isRequired,
   children: PropTypes.node
 };
 

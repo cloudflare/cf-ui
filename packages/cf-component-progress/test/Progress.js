@@ -12,19 +12,26 @@ describe('Progress', function() {
         steps={[
           { id: 'foo', label: 'Foo', disabled: false },
           { id: 'bar', label: 'Bar', disabled: false },
-          { id: 'baz', label: 'Baz', disabled: true  }
-        ]}/>,
+          { id: 'baz', label: 'Baz', disabled: true }
+        ]}
+      />,
       // should equal:
       <div className="cf-progress">
-        <progress className="cf-progress__bar" max={3} value={1}/>
+        <progress className="cf-progress__bar" max={3} value={1} />
         <ol className="cf-progress__items">
-          <li className="cf-progress__item cf-progress__item--active" style={{ width: '33.3333%' }}>
+          <li
+            className="cf-progress__item cf-progress__item--active"
+            style={{ width: '33.3333%' }}
+          >
             <Link onClick={() => {}}>Foo</Link>
           </li>
           <li className="cf-progress__item" style={{ width: '33.3333%' }}>
             <Link onClick={() => {}}>Bar</Link>
           </li>
-          <li className="cf-progress__item cf-progress__item--disabled" style={{ width: '33.3333%' }}>
+          <li
+            className="cf-progress__item cf-progress__item--disabled"
+            style={{ width: '33.3333%' }}
+          >
             <Link onClick={() => {}} disabled>Baz</Link>
           </li>
         </ol>

@@ -1,6 +1,6 @@
 const React = require('react');
-const {PropTypes} = React;
-const {TYPES, SIZES} = require('./options');
+const { PropTypes } = React;
+const { TYPES, SIZES } = require('./options');
 
 class Icon extends React.Component {
   render() {
@@ -17,9 +17,8 @@ class Icon extends React.Component {
 
     return (
       <i className={className} role={this.props.role}>
-        {this.props.label && (
-          <span className="cf-icon__label">{this.props.label}</span>
-        )}
+        {this.props.label &&
+          <span className="cf-icon__label">{this.props.label}</span>}
       </i>
     );
   }

@@ -1,10 +1,9 @@
 const React = require('react');
-const {render} = require('react-dom');
+const { render } = require('react-dom');
 
 const Textarea = require('../../src/index');
 
 class Component extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -23,12 +22,10 @@ class Component extends React.Component {
       <Textarea
         name="example"
         value={this.state.textareaValue}
-        onChange={this.handleTextareaChange.bind(this)}/>
+        onChange={this.handleTextareaChange.bind(this)}
+      />
     );
   }
 }
 
-render(
-  <Component/>,
-  document.getElementById('cf-component-textarea--basic')
-);
+render(<Component />, document.getElementById('cf-component-textarea--basic'));

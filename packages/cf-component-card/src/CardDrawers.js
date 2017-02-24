@@ -1,5 +1,5 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 const CardSection = require('./CardSection');
 const CardToolbar = require('./CardToolbar');
 const CardToolbarLink = require('./CardToolbarLink');
@@ -8,7 +8,6 @@ const CardPropTypes = require('./CardPropTypes');
 let UNIQUE_ID = 0;
 
 class CardDrawers extends React.Component {
-
   constructor(props) {
     super(props);
     this._cardId = UNIQUE_ID++;
@@ -27,7 +26,8 @@ class CardDrawers extends React.Component {
           key={drawer.id}
           id={id}
           isActive={isActive}
-          onClick={this.props.onClick.bind(null, drawer.id)}>
+          onClick={this.props.onClick.bind(null, drawer.id)}
+        >
           {drawer.name}
         </CardToolbarLink>
       );
@@ -44,7 +44,8 @@ class CardDrawers extends React.Component {
           role="tabpanel"
           aria-labelledby={id}
           aria-hidden={isActive ? 'false' : 'true'}
-          className={className}>
+          className={className}
+        >
           {isActive && drawer.content}
         </div>
       );
@@ -58,7 +59,7 @@ class CardDrawers extends React.Component {
 
     return (
       <CardSection>
-        <CardToolbar controls={this.props.controls} links={links}/>
+        <CardToolbar controls={this.props.controls} links={links} />
         <div className={containerClassName}>
           {drawers}
         </div>

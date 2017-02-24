@@ -20,14 +20,18 @@ describe('Table', function() {
   it('should render striped', function() {
     assertEqualJSX(
       <Table striped>Table</Table>,
-      <table className="cf-table cf-table--striped cf-table--bordered">Table</table>
+      <table className="cf-table cf-table--striped cf-table--bordered">
+        Table
+      </table>
     );
   });
 
   it('should render hover', function() {
     assertEqualJSX(
       <Table hover>Table</Table>,
-      <table className="cf-table cf-table--hover cf-table--bordered">Table</table>
+      <table className="cf-table cf-table--hover cf-table--bordered">
+        Table
+      </table>
     );
   });
 
@@ -41,7 +45,9 @@ describe('Table', function() {
   it('should render condensed', function() {
     assertEqualJSX(
       <Table condensed>Table</Table>,
-      <table className="cf-table cf-table--bordered cf-table--condensed">Table</table>
+      <table className="cf-table cf-table--bordered cf-table--condensed">
+        Table
+      </table>
     );
   });
 });

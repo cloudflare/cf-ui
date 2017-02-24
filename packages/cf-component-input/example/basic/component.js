@@ -1,10 +1,9 @@
 const React = require('react');
-const {render} = require('react-dom');
+const { render } = require('react-dom');
 
 const Input = require('../../src/index');
 
 class Component extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -26,19 +25,18 @@ class Component extends React.Component {
         <Input
           name="example"
           value={this.state.inputValue}
-          onChange={this.handleChange}/>
+          onChange={this.handleChange}
+        />
 
         <Input
           type="search"
           name="example"
           value={this.state.inputValue}
-          onChange={this.handleChange}/>
+          onChange={this.handleChange}
+        />
       </div>
     );
   }
 }
 
-render(
-  <Component/>,
-  document.getElementById('cf-component-input--basic')
-);
+render(<Component />, document.getElementById('cf-component-input--basic'));

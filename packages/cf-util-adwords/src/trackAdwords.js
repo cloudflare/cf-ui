@@ -23,4 +23,4 @@ function track(id, label, params, remarketingOnly = false) {
   });
 }
 
-module.exports = {track};
+module.exports = { track };

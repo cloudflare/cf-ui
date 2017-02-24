@@ -1,4 +1,4 @@
-const {fakeServer} = require('sinon');
+const { fakeServer } = require('sinon');
 
 let server = null;
 
@@ -13,7 +13,10 @@ function initServer() {
 }
 
 function getServer() {
-  if (!server) throw new Error('Fake servers cannot be reused after the test that created them');
+  if (!server)
+    throw new Error(
+      'Fake servers cannot be reused after the test that created them'
+    );
   return server;
 }
 
@@ -28,7 +31,11 @@ function createFakeServer() {
 
   return {
     respondWith(method, url, status, headers, body) {
-      getServer().respondWith(method, url, [status, headers, JSON.stringify(body)]);
+      getServer().respondWith(method, url, [
+        status,
+        headers,
+        JSON.stringify(body)
+      ]);
     },
     respond() {
       getServer().respond();

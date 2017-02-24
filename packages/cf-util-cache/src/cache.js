@@ -1,6 +1,6 @@
 const createLogger = require('cf-util-logger');
-const {localStorage} = require('./storage');
-const {isArray, compact, now} = require('lodash');
+const { localStorage } = require('./storage');
+const { isArray, compact, now } = require('lodash');
 
 const logInfo = createLogger('cache:info');
 const logWarning = createLogger('cache:warning');
@@ -23,7 +23,7 @@ function maybeParse(item) {
 
 function get(key) {
   const name = buildKey(key);
-  const {value, expires} = maybeParse(localStorage.getItem(name));
+  const { value, expires } = maybeParse(localStorage.getItem(name));
   const expired = expires && now() > expires;
 
   if (expired) {
@@ -42,10 +42,13 @@ function get(key) {
 function set(key, value, expires = false) {
   const name = buildKey(key);
   logInfo(`Setting item: ${name}`);
-  localStorage.setItem(name, JSON.stringify({
-    value,
-    expires: expires && now() + expires
-  }));
+  localStorage.setItem(
+    name,
+    JSON.stringify({
+      value,
+      expires: expires && now() + expires
+    })
+  );
 }
 
 function remove(key) {
@@ -62,4 +65,4 @@ function clear() {
   localStorage.clear();
 }
 
-module.exports = {get, set, remove, has, clear};
+module.exports = { get, set, remove, has, clear };

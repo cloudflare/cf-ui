@@ -31,9 +31,7 @@ const del = require('del');
 const fs = require('fs');
 const _ = require('lodash');
 
-const exludedNewPackages = [
-  'cf-component-button'
-];
+const exludedNewPackages = ['cf-component-button'];
 
 const highlighter = new Highlights();
 
@@ -68,9 +66,11 @@ if (path.win32 === path) {
 }
 
 function execSync(cmd) {
-  return child.execSync(cmd, {
-    encoding: 'utf8'
-  }).trim();
+  return child
+    .execSync(cmd, {
+      encoding: 'utf8'
+    })
+    .trim();
 }
 
 function fixErrorHandling() {
@@ -94,40 +94,54 @@ function initKarmaServer(singleRun, cb) {
   require('babel-register')({
     only: configFile
   });
-  new karma.Server({
-    configFile,
-    singleRun
-  }, exitCode => {
-    if (exitCode > 0) {
-      cb(new Error(`Karma exited with status code ${exitCode}`));
-    } else {
-      cb();
+  new karma.Server(
+    {
+      configFile,
+      singleRun
+    },
+    exitCode => {
+      if (exitCode > 0) {
+        cb(new Error(`Karma exited with status code ${exitCode}`));
+      } else {
+        cb();
+      }
     }
-  }).start();
+  ).start();
 }
 
 function compile(watch) {
-  return gulp.src(scripts)
+  return gulp
+    .src(scripts)
     .pipe(fixErrorHandling())
     .pipe(renameSrcToLib())
     .pipe(watch ? newer(dest) : gutil.noop())
-    .pipe(through.obj((file, enc, callback) => {
-      const filepath = path.relative(path.resolve(__dirname, 'packages'), file._path);
-      gutil.log('Compiling', '\'' + chalk.cyan(filepath) + '\'...');
-      callback(null, file);
-    }))
+    .pipe(
+      through.obj((file, enc, callback) => {
+        const filepath = path.relative(
+          path.resolve(__dirname, 'packages'),
+          file._path
+        );
+        gutil.log('Compiling', "'" + chalk.cyan(filepath) + "'...");
+        callback(null, file);
+      })
+    )
     .pipe(babel())
     .pipe(gulp.dest(dest));
 }
 
 function isLocalPropTypeRequire(node) {
-  let isPropType = node.id && node.id.name && _.includes(node.id.name, 'PropTypes');
+  let isPropType = node.id &&
+    node.id.name &&
+    _.includes(node.id.name, 'PropTypes');
   let isLocalRequire = false;
 
   if (node.init && node.init.callee) {
     let isRequire = node.init.callee.name === 'require';
     let args = node.init.arguments;
-    isLocalRequire = isRequire && args && args.length && _.includes(args[0].value, './');
+    isLocalRequire = isRequire &&
+      args &&
+      args.length &&
+      _.includes(args[0].value, './');
   }
   return isPropType && isLocalRequire;
 }
@@ -152,11 +166,14 @@ function initBrowserify(files, output, externals, requires, transforms, watch) {
   }
 
   if (!watch) {
-    bundler.transform(envify({
-      NODE_ENV: 'production'
-    }), {
-      global: true
-    });
+    bundler.transform(
+      envify({
+        NODE_ENV: 'production'
+      }),
+      {
+        global: true
+      }
+    );
   }
 
   if (watch) {
@@ -170,16 +187,19 @@ function initBrowserify(files, output, externals, requires, transforms, watch) {
   }
 
   function update() {
-    return bundler.bundle()
+    return bundler
+      .bundle()
       .on('error', function(err) {
         gutil.log(err.stack);
         this.emit('end');
       })
       .pipe(source(output))
       .pipe(buffer())
-      .pipe(sourcemaps.init({
-        loadMaps: true
-      }))
+      .pipe(
+        sourcemaps.init({
+          loadMaps: true
+        })
+      )
       .pipe(watch ? gutil.noop() : uglify())
       .pipe(sourcemaps.write('./'))
       .pipe(gulp.dest('docs'));
@@ -200,39 +220,48 @@ function initBrowserifyVendor(watch) {
 }
 
 function createPropTypesSection(id, title, props) {
-  return (
-    '<h4 class="cf-example__proptypes_name" id="' + id + '">' + title + '</h3>' +
+  return '<h4 class="cf-example__proptypes_name" id="' +
+    id +
+    '">' +
+    title +
+    '</h3>' +
     '<div class="cf-example__proptypes_table">' +
-      '<table>' +
-        '<thead>' +
-          '<tr>' +
-            '<th>Prop Name</th>' +
-            '<th>Prop Validation</th>' +
-          '</tr>' +
-        '</thead>' +
-        '<tbody>' +
-          props.map(prop => {
-            let value = highlighter.highlightSync({
-              fileContents: prop.value,
-              filePath: prop.name,
-              scopeName: 'source.js'
-            });
+    '<table>' +
+    '<thead>' +
+    '<tr>' +
+    '<th>Prop Name</th>' +
+    '<th>Prop Validation</th>' +
+    '</tr>' +
+    '</thead>' +
+    '<tbody>' +
+    props
+      .map(prop => {
+        let value = highlighter.highlightSync({
+          fileContents: prop.value,
+          filePath: prop.name,
+          scopeName: 'source.js'
+        });
 
-            if (prop.link) {
-              value = value.replace(prop.link, '<a href="#' + prop.link + '">' + prop.link + '</a>');
-            }
+        if (prop.link) {
+          value = value.replace(
+            prop.link,
+            '<a href="#' + prop.link + '">' + prop.link + '</a>'
+          );
+        }
 
-            return (
-              '<tr>' +
-                '<th><code>' + prop.name + '</code></th>' +
-                '<td>' + value + '</td>' +
-              '</tr>'
-            );
-          }).join('') +
-        '</tbody>' +
-      '</table>' +
-    '</div>'
-  );
+        return '<tr>' +
+          '<th><code>' +
+          prop.name +
+          '</code></th>' +
+          '<td>' +
+          value +
+          '</td>' +
+          '</tr>';
+      })
+      .join('') +
+    '</tbody>' +
+    '</table>' +
+    '</div>';
 }
 
 function parseSourceFile(source, fileName) {
@@ -240,7 +269,7 @@ function parseSourceFile(source, fileName) {
 
   const ast = babylon.parse(source, {
     sourceType: 'module',
-    plugins: ['jsx' , 'objectRestSpread']
+    plugins: ['jsx', 'objectRestSpread']
   });
 
   let propTypes = [];
@@ -255,7 +284,10 @@ function parseSourceFile(source, fileName) {
 
       // iterate over each prop and populate an array containing the name of
       // the prop and its value
-      if (t.isClassProperty(path.node) && t.isIdentifier(path.node.key, { name: 'propTypes' } )) {
+      if (
+        t.isClassProperty(path.node) &&
+        t.isIdentifier(path.node.key, { name: 'propTypes' })
+      ) {
         path.node.value.properties.forEach(prop => {
           let propValue = generate(prop.value, {}, source).code;
           const propName = prop.key.name;
@@ -266,7 +298,9 @@ function parseSourceFile(source, fileName) {
           // jump to the proptype definition on the page.
           let variableName = prop.value.object ? prop.value.object.name : null;
           if (!variableName && prop.value.object) {
-            variableName = prop.value.object.object ? prop.value.object.object.name : null;
+            variableName = prop.value.object.object
+              ? prop.value.object.object.name
+              : null;
           }
           const binding = variableName && path.scope.getBinding(variableName);
           if (binding && isLocalPropTypeRequire(binding.path.node)) {
@@ -285,7 +319,12 @@ function parseSourceFile(source, fileName) {
   });
 
   if (propTypes.length) {
-    proptypesHtml += createPropTypesSection(componentName, '<code>&lt;' + componentName + '/&gt;</code>', propTypes, false);
+    proptypesHtml += createPropTypesSection(
+      componentName,
+      '<code>&lt;' + componentName + '/&gt;</code>',
+      propTypes,
+      false
+    );
   }
 
   return proptypesHtml;
@@ -298,7 +337,7 @@ function parsePropTypeFile(source, fileName) {
 
   const ast = babylon.parse(source, {
     sourceType: 'module',
-    plugins: ['jsx' , 'objectRestSpread']
+    plugins: ['jsx', 'objectRestSpread']
   });
 
   traverse(ast, {
@@ -327,7 +366,12 @@ function parsePropTypeFile(source, fileName) {
   });
 
   if (props.length) {
-    proptypesHtml += createPropTypesSection(fileName, '<code>' + fileName + '</code>', props, true);
+    proptypesHtml += createPropTypesSection(
+      fileName,
+      '<code>' + fileName + '</code>',
+      props,
+      true
+    );
   }
 
   return proptypesHtml;
@@ -364,9 +408,13 @@ function generatePropTypeDocs(packagesPath, pkg) {
 
 export function examplesBuildHtml(cb) {
   const packagesPath = path.resolve(__dirname, 'packages');
-  const packages = _.xor(exludedNewPackages, fs.readdirSync(packagesPath).filter(pkg => {
-    return pkg.indexOf('cf-component-') > -1 || pkg.indexOf('cf-builder-') > -1;
-  }));
+  const packages = _.xor(
+    exludedNewPackages,
+    fs.readdirSync(packagesPath).filter(pkg => {
+      return pkg.indexOf('cf-component-') > -1 ||
+        pkg.indexOf('cf-builder-') > -1;
+    })
+  );
 
   let componentsHtml = '';
   let sidebarHtml = '';
@@ -380,7 +428,11 @@ export function examplesBuildHtml(cb) {
 
     const examples = fs.readdirSync(examplesPath);
 
-    componentsHtml += '<h2 class="cf-example__heading" id="' + pkg + '">' + pkg + '</h2>';
+    componentsHtml += '<h2 class="cf-example__heading" id="' +
+      pkg +
+      '">' +
+      pkg +
+      '</h2>';
 
     examples.forEach(example => {
       const contentPath = path.join(examplesPath, example, 'component.js');
@@ -396,12 +448,16 @@ export function examplesBuildHtml(cb) {
         componentsHtml += '<p>' + example + '</p>';
       }
 
-      componentsHtml += (
-        '<div class="cf-example">' +
-        '<div class="cf-example__content" id="' + pkg + '--' + example + '"></div>' +
-        '<div class="cf-example__code">' + higlightedContent + '</div>' +
-        '</div>'
-      );
+      componentsHtml += '<div class="cf-example">' +
+        '<div class="cf-example__content" id="' +
+        pkg +
+        '--' +
+        example +
+        '"></div>' +
+        '<div class="cf-example__code">' +
+        higlightedContent +
+        '</div>' +
+        '</div>';
     });
 
     sidebarHtml += '<a href="#' + pkg + '">' + pkg + '</a>';
@@ -409,7 +465,9 @@ export function examplesBuildHtml(cb) {
     const propTypesHtml = generatePropTypeDocs(packagesPath, pkg);
 
     if (propTypesHtml.length) {
-      componentsHtml += '<div class="cf-example__proptypes">' + propTypesHtml + '</div>';
+      componentsHtml += '<div class="cf-example__proptypes">' +
+        propTypesHtml +
+        '</div>';
     }
   });
 
@@ -420,18 +478,21 @@ export function examplesBuildHtml(cb) {
   } else if (gutil.env.view === 'external') {
     styles = 'styles.css';
   } else {
-    throw new Error('Not a valid view for styles. Needs --view [internal,external]');
+    throw new Error(
+      'Not a valid view for styles. Needs --view [internal,external]'
+    );
   }
 
-  const html = (
-    '<!doctype html>' +
+  const html = '<!doctype html>' +
     '<html>' +
     '<head>' +
     '<meta charset="utf-8">' +
     '<meta name="viewport" content="width=device-width">' +
     '<title>CloudFlare Components</title>' +
     '<link rel="stylesheet" href="base.css">' +
-    '<link rel="stylesheet" href="' + styles + '">' +
+    '<link rel="stylesheet" href="' +
+    styles +
+    '">' +
     '</head>' +
     '<body>' +
     '<header class="cf-example-header">' +
@@ -439,13 +500,16 @@ export function examplesBuildHtml(cb) {
     '<img src="assets/logo.png" alt="cf-ui" height="50"/>' +
     '</a>' +
     '</header>' +
-    '<nav class="cf-example-sidebar">' + sidebarHtml + '</nav>' +
-    '<div class="cf-example-content">' + componentsHtml + '</div>' +
+    '<nav class="cf-example-sidebar">' +
+    sidebarHtml +
+    '</nav>' +
+    '<div class="cf-example-content">' +
+    componentsHtml +
+    '</div>' +
     '<script type="text/javascript" src="vendor.js"></script>' +
     '<script type="text/javascript" src="bundle.js"></script>' +
     '</body>' +
-    '</html>'
-  );
+    '</html>';
 
   mkdirp.sync(path.resolve(__dirname, 'docs'));
   fs.writeFileSync(path.resolve(__dirname, 'docs/index.html'), html);
@@ -455,7 +519,8 @@ export function examplesBuildHtml(cb) {
 export const build = () => compile(false);
 
 export function lint() {
-  return gulp.src('./packages/*/src/**/*.js')
+  return gulp
+    .src('./packages/*/src/**/*.js')
     .pipe(fixErrorHandling())
     .pipe(eslint())
     .pipe(eslint.format())
@@ -475,19 +540,16 @@ export function dev(cb) {
 }
 
 export function examplesBuildCss() {
-  return gulp.src(exampleStyles)
+  return gulp
+    .src(exampleStyles)
     .pipe(sourcemaps.init())
-    .pipe(postcss([
-      require('autoprefixer'),
-      require('cssnano')()
-    ]))
+    .pipe(postcss([require('autoprefixer'), require('cssnano')()]))
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('docs'));
 }
 
 export function examplesBuildAssets() {
-  return gulp.src(exampleAssets)
-    .pipe(gulp.dest('docs/assets'));
+  return gulp.src(exampleAssets).pipe(gulp.dest('docs/assets'));
 }
 
 export const examplesClean = () => del(['docs']);
@@ -498,61 +560,64 @@ export const examplesDevBundle = () => initBrowserifyBundle(true);
 export const examplesDevVendor = () => initBrowserifyVendor(true);
 
 function logLocation(cb) {
-  gutil.log('Open "file://' + path.resolve(__dirname, 'docs/index.html') + '" in your browser');
+  gutil.log(
+    'Open "file://' +
+      path.resolve(__dirname, 'docs/index.html') +
+      '" in your browser'
+  );
   cb();
 }
 
-export const examplesBuild =
-  gulp.series(
-    examplesClean,
-    gulp.parallel(
-      examplesBuildHtml,
-      examplesBuildCss,
-      examplesBuildAssets,
-      examplesBuildBundle,
-      examplesBuildVendor
-    ),
-    logLocation
-  );
+export const examplesBuild = gulp.series(
+  examplesClean,
+  gulp.parallel(
+    examplesBuildHtml,
+    examplesBuildCss,
+    examplesBuildAssets,
+    examplesBuildBundle,
+    examplesBuildVendor
+  ),
+  logLocation
+);
 
-export const examplesDev =
-  gulp.series(
-    examplesClean,
-    build,
-    gulp.parallel(
-      examplesBuildHtml,
-      examplesBuildCss,
-      examplesBuildAssets,
-      examplesDevBundle,
-      examplesDevVendor
-    ),
-    logLocation,
-    function examplesWatcher() {
-      gulp.watch(exampleComponents, examplesBuildHtml);
-      gulp.watch(exampleStyles, examplesBuildCss);
-      gulp.watch(exampleAssets, examplesBuildAssets);
-      gulp.watch(scripts, () => compile(true));
-    }
-  );
+export const examplesDev = gulp.series(
+  examplesClean,
+  build,
+  gulp.parallel(
+    examplesBuildHtml,
+    examplesBuildCss,
+    examplesBuildAssets,
+    examplesDevBundle,
+    examplesDevVendor
+  ),
+  logLocation,
+  function examplesWatcher() {
+    gulp.watch(exampleComponents, examplesBuildHtml);
+    gulp.watch(exampleStyles, examplesBuildCss);
+    gulp.watch(exampleAssets, examplesBuildAssets);
+    gulp.watch(scripts, () => compile(true));
+  }
+);
 
 function setViewExternal(cb) {
   gutil.env.view = 'external';
   cb();
 }
 
-export const examplesPublish =
-  gulp.series(
-    setViewExternal,
-    examplesBuild,
-    function examplesPublisher(cb) {
-      execSync([
+export const examplesPublish = gulp.series(
+  setViewExternal,
+  examplesBuild,
+  function examplesPublisher(cb) {
+    execSync(
+      [
         'cd docs',
         'git init',
         'git remote add origin git@github.com:cloudflare/cf-ui.git',
         'git add -A',
         'git commit -m "[Deploy]"',
         'git push origin master:gh-pages --force'
-      ].join(' && '));
-      cb();
-    }
-  );
+      ].join(' && ')
+    );
+    cb();
+  }
+);

@@ -1,4 +1,4 @@
-const {PropTypes} = require('react');
+const { PropTypes } = require('react');
 
 const rowType = PropTypes.oneOf([
   'default',

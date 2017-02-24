@@ -1,6 +1,6 @@
 const React = require('react');
-const {PropTypes} = React;
-const {connect} = require('react-redux');
+const { PropTypes } = React;
+const { connect } = require('react-redux');
 const {
   Card,
   CardSection,
@@ -19,30 +19,30 @@ class CardBuilder extends React.Component {
       <Card>
         <CardSection>
           <CardContent title={this.props.title}>
-            <DynamicContent dangerouslySetInnerHTML={{
-              __html: markdown(this.props.description)
-            }}/>
+            <DynamicContent
+              dangerouslySetInnerHTML={{
+                __html: markdown(this.props.description)
+              }}
+            />
           </CardContent>
 
-          {this.props.control && (
+          {this.props.control &&
             <CardControl>
               {this.props.control}
-            </CardControl>
-          )}
+            </CardControl>}
         </CardSection>
 
-        {this.props.table && (
+        {this.props.table &&
           <CardSection>
             {this.props.table}
-          </CardSection>
-        )}
+          </CardSection>}
 
-        {this.props.drawers && (
+        {this.props.drawers &&
           <CardDrawers
             onClick={this.props.onDrawerClick}
             active={this.props.activeDrawer}
-            drawers={this.props.drawers}/>
-        )}
+            drawers={this.props.drawers}
+          />}
       </Card>
     );
   }

@@ -1,5 +1,5 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 const uniqueId = require('lodash/uniqueId');
 
 class Pagination extends React.Component {
@@ -8,14 +8,17 @@ class Pagination extends React.Component {
 
     return (
       <div className="cf-pagination">
-        <ul className="cf-pagination__list" role="navigation" aria-describedby={id}>
+        <ul
+          className="cf-pagination__list"
+          role="navigation"
+          aria-describedby={id}
+        >
           {this.props.children}
         </ul>
-        {this.props.info && (
+        {this.props.info &&
           <span id={id}>
             {this.props.info}
-          </span>
-        )}
+          </span>}
       </div>
     );
   }

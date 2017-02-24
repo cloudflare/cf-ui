@@ -1,5 +1,5 @@
 const React = require('react');
-const {render} = require('react-dom');
+const { render } = require('react-dom');
 const {
   Card,
   CardContent,
@@ -8,10 +8,9 @@ const {
   CardMessages,
   CardSection
 } = require('../../src/index');
-const {Button} = require('cf-component-button');
+const { Button } = require('cf-component-button');
 
 class Component extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -24,18 +23,23 @@ class Component extends React.Component {
     this.setState({
       activeDrawer: id === this.state.activeDrawer ? null : id
     });
-  };
+  }
 
   render() {
     return (
       <Card>
         <CardSection>
-          <CardContent title="Hello World" footerMessage="This is a footer message.">
+          <CardContent
+            title="Hello World"
+            footerMessage="This is a footer message."
+          >
             <p>Here is some content.</p>
-            <CardMessages messages={[
-              { type: 'info', content: 'Info Message'},
-              { type: 'error', content: 'Error Message'}
-            ]}/>
+            <CardMessages
+              messages={[
+                { type: 'info', content: 'Info Message' },
+                { type: 'error', content: 'Error Message' }
+              ]}
+            />
           </CardContent>
           <CardControl>
             <Button onClick={() => {}}>Example Control</Button>
@@ -44,21 +48,22 @@ class Component extends React.Component {
         <CardDrawers
           onClick={this.handleDrawerClick}
           active={this.state.activeDrawer}
-          drawers={[{
-            id: 'one',
-            name: 'One',
-            content: <p>One</p>
-          }, {
-            id: 'two',
-            name: 'Two',
-            content: <p>Two</p>
-          }]}/>
+          drawers={[
+            {
+              id: 'one',
+              name: 'One',
+              content: <p>One</p>
+            },
+            {
+              id: 'two',
+              name: 'Two',
+              content: <p>Two</p>
+            }
+          ]}
+        />
       </Card>
     );
   }
 }
 
-render(
-  <Component/>,
-  document.getElementById('cf-component-card--basic')
-);
+render(<Component />, document.getElementById('cf-component-card--basic'));

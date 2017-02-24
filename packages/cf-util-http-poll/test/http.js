@@ -1,5 +1,5 @@
-const {equal: assertEqual} = require('assert');
-const {createFakeServer} = require('cf-test-server');
+const { equal: assertEqual } = require('assert');
+const { createFakeServer } = require('cf-test-server');
 const httpPoll = require('../src/httpPoll');
 
 describe('httpPoll', function() {
@@ -9,12 +9,21 @@ describe('httpPoll', function() {
     this.timeout(10000);
 
     function setupResponse(active) {
-      server.respondWith('GET', '/status', 200, { 'Content-Type': 'application/json' }, {
-        active
-      });
-      setTimeout(() => {
-        server.respond();
-      }, 5);
+      server.respondWith(
+        'GET',
+        '/status',
+        200,
+        { 'Content-Type': 'application/json' },
+        {
+          active
+        }
+      );
+      setTimeout(
+        () => {
+          server.respond();
+        },
+        5
+      );
     }
 
     let count = 0;

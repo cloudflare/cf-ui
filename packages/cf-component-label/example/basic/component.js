@@ -1,5 +1,5 @@
 const React = require('react');
-const {render} = require('react-dom');
+const { render } = require('react-dom');
 
 const Label = require('../../src/index');
 
@@ -17,7 +17,4 @@ class Component extends React.Component {
   }
 }
 
-render(
-  <Component/>,
-  document.getElementById('cf-component-label--basic')
-);
+render(<Component />, document.getElementById('cf-component-label--basic'));

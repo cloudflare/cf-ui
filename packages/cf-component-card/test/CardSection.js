@@ -7,7 +7,9 @@ describe('CardSection', function() {
     assertEqualJSX(
       <CardSection>CardSection</CardSection>,
       // should equal
-      <div className="cf-card__section cf-card__section--default">CardSection</div>
+      <div className="cf-card__section cf-card__section--default">
+        CardSection
+      </div>
     );
   });
 
@@ -15,7 +17,9 @@ describe('CardSection', function() {
     assertEqualJSX(
       <CardSection status="error">CardSection</CardSection>,
       // should equal
-      <div className="cf-card__section cf-card__section--error">CardSection</div>
+      <div className="cf-card__section cf-card__section--error">
+        CardSection
+      </div>
     );
   });
 });

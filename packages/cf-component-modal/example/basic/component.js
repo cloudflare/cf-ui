@@ -1,5 +1,5 @@
 const React = require('react');
-const {render} = require('react-dom');
+const { render } = require('react-dom');
 
 const {
   Modal,
@@ -15,10 +15,9 @@ const {
   GatewayProvider
 } = require('react-gateway');
 const ReactModal2 = require('react-modal2');
-const {Button} = require('cf-component-button');
+const { Button } = require('cf-component-button');
 
 class Component extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -38,7 +37,7 @@ class Component extends React.Component {
   }
 
   handleWidthToggle() {
-    this.setState((oldState) => ({
+    this.setState(oldState => ({
       width: oldState.width === 'wide' ? null : 'wide'
     }));
   }
@@ -50,18 +49,23 @@ class Component extends React.Component {
         <Modal
           width={this.state.width}
           isOpen={this.state.isModalOpen}
-          onRequestClose={this.handleRequestClose}>
+          onRequestClose={this.handleRequestClose}
+        >
           <ModalHeader>
             <ModalTitle>Hello from Modal</ModalTitle>
-            <ModalClose onClick={this.handleRequestClose}/>
+            <ModalClose onClick={this.handleRequestClose} />
           </ModalHeader>
           <ModalBody>
             <p>Look at this awesome modal!</p>
           </ModalBody>
           <ModalFooter>
             <ModalActions>
-              <button onClick={this.handleWidthToggle.bind(this)}>Toggle width</button>
-              <button onClick={this.handleRequestClose.bind(this)}>Close Modal</button>
+              <button onClick={this.handleWidthToggle.bind(this)}>
+                Toggle width
+              </button>
+              <button onClick={this.handleRequestClose.bind(this)}>
+                Close Modal
+              </button>
             </ModalActions>
           </ModalFooter>
         </Modal>
@@ -76,7 +80,7 @@ class Application extends React.Component {
       <GatewayProvider>
         <div>
           {this.props.children}
-          <GatewayDest name="modal"/>
+          <GatewayDest name="modal" />
         </div>
       </GatewayProvider>
     );
@@ -89,7 +93,7 @@ ReactModal2.getApplicationElement = () => root;
 
 render(
   <Application>
-    <Component/>
+    <Component />
   </Application>,
   root
 );

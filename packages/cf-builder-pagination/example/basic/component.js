@@ -1,6 +1,6 @@
 const React = require('react');
-const {render} = require('react-dom');
-const {PaginationBuilder} = require('../../src/index');
+const { render } = require('react-dom');
+const { PaginationBuilder } = require('../../src/index');
 
 function getStartAndEnd(page, pageSize) {
   const start = (page - 1) * pageSize;
@@ -19,7 +19,6 @@ function hasAllItems(items, start, end) {
 }
 
 class Component extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -60,15 +59,18 @@ class Component extends React.Component {
 
     this.setState({ page, items });
 
-    setTimeout(() => {
-      const items = this.state.items.slice();
+    setTimeout(
+      () => {
+        const items = this.state.items.slice();
 
-      for (let i = start; i <= end; i++) {
-        items[i].isRequesting = false;
-      }
+        for (let i = start; i <= end; i++) {
+          items[i].isRequesting = false;
+        }
 
-      this.setState({ items });
-    }, 500);
+        this.setState({ items });
+      },
+      500
+    );
   }
 
   render() {
@@ -81,12 +83,10 @@ class Component extends React.Component {
         loading={loading}
         totalCount={this.state.totalCount}
         page={this.state.page}
-        perPage={this.state.perPage}/>
+        perPage={this.state.perPage}
+      />
     );
   }
 }
 
-render(
-  <Component/>,
-  document.getElementById('cf-builder-pagination--basic')
-);
+render(<Component />, document.getElementById('cf-builder-pagination--basic'));

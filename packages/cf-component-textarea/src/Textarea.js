@@ -1,11 +1,10 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 const requiredIf = require('react-required-if');
 
 class Textarea extends React.Component {
-
   render() {
-    const {className, ...props} = this.props;
+    const { className, ...props } = this.props;
     const classes = ['cf-textarea'];
 
     if (className) classes.push(className);
@@ -14,7 +13,6 @@ class Textarea extends React.Component {
 
     return <textarea className={classes.join(' ')} {...props} />;
   }
-  
 }
 
 Textarea.propTypes = {
@@ -23,7 +21,10 @@ Textarea.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
   readOnly: PropTypes.bool,
-  onChange: requiredIf(PropTypes.func, props => !props.disabled && !props.readOnly),
+  onChange: requiredIf(
+    PropTypes.func,
+    props => !props.disabled && !props.readOnly
+  ),
   onFocus: PropTypes.func,
   onBlur: PropTypes.func
 };

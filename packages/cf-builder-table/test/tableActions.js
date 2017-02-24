@@ -1,8 +1,8 @@
 const assert = require('assert');
-const {createMockStore} = require('cf-test-store');
+const { createMockStore } = require('cf-test-store');
 
 const cf = require('cf-pony');
-const {tableActions, TableActionTypes} = require('../src/index');
+const { tableActions, TableActionTypes } = require('../src/index');
 
 describe('tableActionsTest', function() {
   describe('.flashRow()', function() {
@@ -17,16 +17,19 @@ describe('tableActionsTest', function() {
         assert.equal(store.getActions().length, 1, 'should wait two frames');
 
         cf.requestAnimationFrame(() => {
-          assert.deepEqual(store.getActions(), [{
-            type: TableActionTypes.CF_BUILDER_TABLE_FLASH_ROW_ON,
-            tableName,
-            rowId,
-            rowType: 'success'
-          }, {
-            type: TableActionTypes.CF_BUILDER_TABLE_FLASH_ROW_OFF,
-            tableName: tableName,
-            rowId: rowId
-          }]);
+          assert.deepEqual(store.getActions(), [
+            {
+              type: TableActionTypes.CF_BUILDER_TABLE_FLASH_ROW_ON,
+              tableName,
+              rowId,
+              rowType: 'success'
+            },
+            {
+              type: TableActionTypes.CF_BUILDER_TABLE_FLASH_ROW_OFF,
+              tableName: tableName,
+              rowId: rowId
+            }
+          ]);
           done();
         });
       });

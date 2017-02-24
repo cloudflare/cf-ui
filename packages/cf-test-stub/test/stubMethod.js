@@ -1,5 +1,5 @@
 const assert = require('assert');
-const {stubMethod} = require('../src/index');
+const { stubMethod } = require('../src/index');
 
 describe('stubMethod()', () => {
   it('should create an object', () => {
@@ -31,19 +31,24 @@ describe('stubMethod()', () => {
     const stub = stubMethod(obj, 'method', () => {});
     assert.deepEqual(stub.calls, []);
     obj.method.call(1, 2, 3);
-    assert.deepEqual(stub.calls, [{
-      context: 1,
-      args: [2, 3]
-    }]);
+    assert.deepEqual(stub.calls, [
+      {
+        context: 1,
+        args: [2, 3]
+      }
+    ]);
 
     obj.method.call(4, 5, 6);
-    assert.deepEqual(stub.calls, [{
-      context: 1,
-      args: [2, 3]
-    }, {
-      context: 4,
-      args: [5, 6]
-    }]);
+    assert.deepEqual(stub.calls, [
+      {
+        context: 1,
+        args: [2, 3]
+      },
+      {
+        context: 4,
+        args: [5, 6]
+      }
+    ]);
   });
 
   it('should not call the original method', () => {

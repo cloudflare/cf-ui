@@ -24,7 +24,11 @@ describe('Pagination', function() {
       <Pagination info="Pagination Info">Pagination</Pagination>,
       // should equal
       <div className="cf-pagination">
-        <ul className="cf-pagination__list" role="navigation" aria-describedby="%id%">
+        <ul
+          className="cf-pagination__list"
+          role="navigation"
+          aria-describedby="%id%"
+        >
           Pagination
         </ul>
         <span id="%id%">

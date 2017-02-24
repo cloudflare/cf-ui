@@ -1,8 +1,7 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 
 class Radio extends React.Component {
-
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
@@ -21,18 +20,19 @@ class Radio extends React.Component {
 
     return (
       <label htmlFor={this.props.name} className={className}>
-        <input type="radio"
+        <input
+          type="radio"
           className="cf-radio__input"
           id={this.props.name}
           name={this.props.name}
           value={this.props.value}
           checked={this.props.checked}
-          onChange={this.handleChange}/>
-        {this.props.label && (
+          onChange={this.handleChange}
+        />
+        {this.props.label &&
           <span className="cf-radio__label">
             {this.props.label}
-          </span>
-        )}
+          </span>}
       </label>
     );
   }

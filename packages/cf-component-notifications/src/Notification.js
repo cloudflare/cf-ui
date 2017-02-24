@@ -1,9 +1,8 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 const raf = require('raf');
 
 class Notification extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -83,15 +82,18 @@ class Notification extends React.Component {
         progressStyles.transitionDuration = this.props.delay + 'ms';
       }
 
-      progress = <span className={progressClassName} style={progressStyles}/>;
+      progress = <span className={progressClassName} style={progressStyles} />;
     }
 
     let close;
 
     if (this.props.closable) {
-      close = <span
-        className="cf-notifications__item_close"
-        onClick={this.handleClickClose.bind(this)}/>;
+      close = (
+        <span
+          className="cf-notifications__item_close"
+          onClick={this.handleClickClose.bind(this)}
+        />
+      );
     }
 
     return (
@@ -100,7 +102,8 @@ class Notification extends React.Component {
         className={className}
         onClick={this.handleClick.bind(this)}
         onMouseEnter={this.handleMouseEnter.bind(this)}
-        onMouseLeave={this.handleMouseLeave.bind(this)}>
+        onMouseLeave={this.handleMouseLeave.bind(this)}
+      >
 
         {progress}
         {close}

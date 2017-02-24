@@ -1,5 +1,5 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 
 class CardMessages extends React.Component {
   render() {
@@ -7,7 +7,11 @@ class CardMessages extends React.Component {
       <div className="cf-card__messages">
         {this.props.messages.map((message, index) => {
           return (
-            <div key={index} role="alert" className={'cf-card__message cf-card__message--' + message.type}>
+            <div
+              key={index}
+              role="alert"
+              className={'cf-card__message cf-card__message--' + message.type}
+            >
               {message.content}
             </div>
           );
@@ -18,10 +22,12 @@ class CardMessages extends React.Component {
 }
 
 CardMessages.propTypes = {
-  messages: PropTypes.arrayOf(PropTypes.shape({
-    type: PropTypes.oneOf(['info', 'success', 'error', 'warning']),
-    content: PropTypes.any.isRequired
-  })).isRequired
+  messages: PropTypes.arrayOf(
+    PropTypes.shape({
+      type: PropTypes.oneOf(['info', 'success', 'error', 'warning']),
+      content: PropTypes.any.isRequired
+    })
+  ).isRequired
 };
 
 module.exports = CardMessages;

@@ -1,4 +1,4 @@
-const {equal: assertEqual} = require('assert');
+const { equal: assertEqual } = require('assert');
 const markdown = require('../src/markdown');
 
 describe('renderMarkdown', function() {
@@ -21,8 +21,11 @@ describe('renderMarkdown', function() {
   it('should not memoize when options are being passed', function() {
     var str = '<div></div>';
     assertEqual(markdown(str), '<p>&lt;div&gt;&lt;/div&gt;</p>\n');
-    assertEqual(markdown(str, {
-      __dangerouslyDontSanitizeMarkdown: true
-    }), str);
+    assertEqual(
+      markdown(str, {
+        __dangerouslyDontSanitizeMarkdown: true
+      }),
+      str
+    );
   });
 });

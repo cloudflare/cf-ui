@@ -1,8 +1,7 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 
 class Toggle extends React.Component {
-
   constructor(props) {
     super(props);
     this.handleChange = this.handleChange.bind(this);
@@ -36,11 +35,12 @@ class Toggle extends React.Component {
           checked={this.props.value}
           onChange={this.handleChange}
           onFocus={this.props.onFocus}
-          onBlur={this.props.onBlur}/>
+          onBlur={this.props.onBlur}
+        />
         <span className="cf-toggle__label">
           {this.props.label}
         </span>
-        <span className="cf-toggle__handle"/>
+        <span className="cf-toggle__handle" />
       </label>
     );
   }

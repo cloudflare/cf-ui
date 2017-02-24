@@ -1,10 +1,9 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 
 class Input extends React.Component {
-
   render() {
-    let {className, type, invalid, ...props} = this.props;
+    let { className, type, invalid, ...props } = this.props;
 
     let _className = 'cf-input cf-input--' + type;
 
@@ -16,20 +15,12 @@ class Input extends React.Component {
       _className += ' ' + className;
     }
 
-    return (
-      <input className={_className} type={type} {...props} />
-    );
+    return <input className={_className} type={type} {...props} />;
   }
 }
 
 Input.propTypes = {
-  type: PropTypes.oneOf([
-    'text',
-    'email',
-    'number',
-    'password',
-    'search'
-  ]),
+  type: PropTypes.oneOf(['text', 'email', 'number', 'password', 'search']),
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,

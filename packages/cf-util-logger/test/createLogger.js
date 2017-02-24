@@ -1,4 +1,4 @@
-const {equal: assertEqual} = require('assert');
+const { equal: assertEqual } = require('assert');
 const createLogger = require('../src/createLogger');
 
 describe('createLogger', function() {

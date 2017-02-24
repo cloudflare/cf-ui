@@ -8,16 +8,7 @@ import beautifier from 'fela-beautifier';
 import fontRenderer from 'fela-font-renderer';
 
 export const createRenderer = fontNode => createFelaRenderer({
-  plugins: [
-    prefixer(),
-    fallbackValue(),
-    unit(),
-    lvha(),
-    validator()
-  ],
-  enhancers: [
-    beautifier(),
-    fontRenderer(fontNode)
-  ],
+  plugins: [prefixer(), fallbackValue(), unit(), lvha(), validator()],
+  enhancers: [beautifier(), fontRenderer(fontNode)],
   selectorPrefix: ['cf-']
 });

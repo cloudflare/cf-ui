@@ -1,6 +1,6 @@
 const React = require('react');
-const {PropTypes} = React;
-const {routeTo} = require('cf-util-route-handler');
+const { PropTypes } = React;
+const { routeTo } = require('cf-util-route-handler');
 
 class Link extends React.Component {
   constructor(props, context) {
@@ -33,7 +33,7 @@ class Link extends React.Component {
   }
 
   render() {
-    const {tagName, to, children, className, disabled, ...props} = this.props;
+    const { tagName, to, children, className, disabled, ...props } = this.props;
 
     if (!props.href && tagName === 'a') {
       props.href = to || '#!';

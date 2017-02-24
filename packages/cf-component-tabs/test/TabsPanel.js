@@ -1,5 +1,5 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 const assertEqualJSX = require('assert-equal-jsx');
 const TabsPanel = require('../src/TabsPanel');
 
@@ -28,7 +28,13 @@ describe('TabsPanel', function() {
         <TabsPanel id="tab">TabsPanel</TabsPanel>
       </Context>,
       // should equal
-      <div className="cf-tabs__panel" role="tabpanel" aria-labelledby="tab" aria-hidden="true" style={{ display: 'none' }}>
+      <div
+        className="cf-tabs__panel"
+        role="tabpanel"
+        aria-labelledby="tab"
+        aria-hidden="true"
+        style={{ display: 'none' }}
+      >
         TabsPanel
       </div>
     );
@@ -40,7 +46,13 @@ describe('TabsPanel', function() {
         <TabsPanel id="tab">TabsPanel</TabsPanel>
       </Context>,
       // should equal
-      <div className="cf-tabs__panel" role="tabpanel" aria-labelledby="tab" aria-hidden="false" style={{ display: 'block' }}>
+      <div
+        className="cf-tabs__panel"
+        role="tabpanel"
+        aria-labelledby="tab"
+        aria-hidden="false"
+        style={{ display: 'block' }}
+      >
         TabsPanel
       </div>
     );

@@ -8,9 +8,7 @@ describe('Checkbox', function() {
   it('should handle onChange', function() {
     let called = false;
 
-    let wrapper = shallow(
-      <Checkbox onChange={ () => called = true }/>
-    );
+    let wrapper = shallow(<Checkbox onChange={() => called = true} />);
 
     wrapper.find('input').simulate('change');
     expect(called).to.be.true;
@@ -23,14 +21,17 @@ describe('Checkbox', function() {
         name="checkbox-option-1"
         value="option1"
         checked={false}
-        onChange={() => {}}/>,
+        onChange={() => {}}
+      />,
       // should equal
       <label htmlFor="checkbox-option-1" className="cf-checkbox">
-        <input type="checkbox"
+        <input
+          type="checkbox"
           className="cf-checkbox__input"
           id="checkbox-option-1"
           name="checkbox-option-1"
-          value="option1"/>
+          value="option1"
+        />
         <span className="cf-checkbox__label">
           Option 1
         </span>
@@ -45,16 +46,22 @@ describe('Checkbox', function() {
         name="checkbox-option-1"
         value="option1"
         checked={true}
-        onChange={() => {}}/>,
+        onChange={() => {}}
+      />,
       // should equal
-      <label htmlFor="checkbox-option-1" className="cf-checkbox cf-checkbox--checked">
-        <input type="checkbox"
+      <label
+        htmlFor="checkbox-option-1"
+        className="cf-checkbox cf-checkbox--checked"
+      >
+        <input
+          type="checkbox"
           className="cf-checkbox__input"
           id="checkbox-option-1"
           name="checkbox-option-1"
           value="option1"
           checked={true}
-          onChange={() => {}}/>
+          onChange={() => {}}
+        />
         <span className="cf-checkbox__label">
           Option 1
         </span>
@@ -69,14 +76,17 @@ describe('Checkbox', function() {
         name="checkbox-option-1"
         value="option1"
         checked={false}
-        onChange={() => {}}/>,
+        onChange={() => {}}
+      />,
       // should equal
       <label htmlFor="checkbox-option-1" className="cf-checkbox">
-        <input type="checkbox"
+        <input
+          type="checkbox"
           className="cf-checkbox__input"
           id="checkbox-option-1"
           name="checkbox-option-1"
-          value="option1"/>
+          value="option1"
+        />
       </label>
     );
   });

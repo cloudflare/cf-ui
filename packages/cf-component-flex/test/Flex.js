@@ -5,7 +5,6 @@ const assertEqualJSX = require('assert-equal-jsx');
 const Flex = require('../src/Flex');
 
 describe('Flex', function() {
-
   it('should render', function() {
     assertEqualJSX(
       <Flex>Hello</Flex>,
@@ -28,14 +27,15 @@ describe('Flex', function() {
     );
   });
 
-  it('should render flex container styles', function () {
+  it('should render flex container styles', function() {
     const wrapper = enzyme.render(
       <Flex
         direction="row"
         wrap="wrap"
         justifyContent="flex-start"
         alignItems="center"
-        alignContent="stretch">
+        alignContent="stretch"
+      >
         Hello
       </Flex>
     );
@@ -47,5 +47,4 @@ describe('Flex', function() {
     expect(css['align-items']).to.equal('center');
     expect(css['align-content']).to.equal('stretch');
   });
-
 });

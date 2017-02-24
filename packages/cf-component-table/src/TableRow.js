@@ -1,5 +1,5 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 const TablePropTypes = require('./TablePropTypes');
 
 class TableRow extends React.Component {

@@ -1,5 +1,5 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 
 const cardDrawer = PropTypes.shape({
   id: PropTypes.string.isRequired,

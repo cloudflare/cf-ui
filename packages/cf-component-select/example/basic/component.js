@@ -1,10 +1,9 @@
 const React = require('react');
-const {render} = require('react-dom');
+const { render } = require('react-dom');
 
 const Select = require('../../src/index');
 
 class Component extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -13,16 +12,15 @@ class Component extends React.Component {
     };
   }
 
-
   handleChange(value) {
     this.setState({ value });
-  };
+  }
 
   handleMultiChange(values) {
     this.setState({
-      multiValue: values.map((selected) => selected.value)
+      multiValue: values.map(selected => selected.value)
     });
-  };
+  }
 
   render() {
     return (
@@ -35,9 +33,11 @@ class Component extends React.Component {
             { value: 2, label: 'Two', disabled: true },
             { value: 3, label: 'Three' }
           ]}
-          onChange={this.handleChange.bind(this)}/>
+          onChange={this.handleChange.bind(this)}
+        />
 
-        <Select searchable
+        <Select
+          searchable
           label="Searchable"
           value={this.state.value}
           options={[
@@ -45,9 +45,12 @@ class Component extends React.Component {
             { value: 2, label: 'Two' },
             { value: 3, label: 'Three' }
           ]}
-          onChange={this.handleChange.bind(this)}/>
+          onChange={this.handleChange.bind(this)}
+        />
 
-        <Select searchable multi
+        <Select
+          searchable
+          multi
           label="Searchable Multi"
           value={this.state.multiValue}
           options={[
@@ -55,9 +58,11 @@ class Component extends React.Component {
             { value: 2, label: 'Two' },
             { value: 3, label: 'Three' }
           ]}
-          onChange={this.handleMultiChange.bind(this)}/>
+          onChange={this.handleMultiChange.bind(this)}
+        />
 
-        <Select disabled
+        <Select
+          disabled
           label="Disabled"
           value={this.state.value}
           options={[
@@ -65,13 +70,11 @@ class Component extends React.Component {
             { value: 2, label: 'Two' },
             { value: 3, label: 'Three' }
           ]}
-          onChange={this.handleChange.bind(this)}/>
+          onChange={this.handleChange.bind(this)}
+        />
       </div>
     );
   }
 }
 
-render(
-  <Component/>,
-  document.getElementById('cf-component-select--basic')
-);
+render(<Component />, document.getElementById('cf-component-select--basic'));

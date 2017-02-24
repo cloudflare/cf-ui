@@ -1,9 +1,8 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 const Textarea = require('cf-component-textarea');
 
 class CopyableTextarea extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -18,12 +17,12 @@ class CopyableTextarea extends React.Component {
   handleFocus(e) {
     e.target.select();
 
-    const {onCopy} = this.props;
+    const { onCopy } = this.props;
 
     let success;
     try {
       success = document.execCommand('copy');
-    } catch(err) {
+    } catch (err) {
       success = false;
     }
 
@@ -32,9 +31,9 @@ class CopyableTextarea extends React.Component {
     }
 
     this.setState({
-      helpText: (success ?
-                 this.props.copiedTextToClipboardText :
-                 this.props.pressCommandOrCtrlCToCopyText),
+      helpText: success
+        ? this.props.copiedTextToClipboardText
+        : this.props.pressCommandOrCtrlCToCopyText,
       copied: success
     });
   }
@@ -55,7 +54,8 @@ class CopyableTextarea extends React.Component {
           name={this.props.name}
           value={this.props.value}
           onFocus={this.handleFocus}
-          onBlur={this.handleBlur} />
+          onBlur={this.handleBlur}
+        />
         <p className="cf-copyable-textarea__help-text">{this.state.helpText}</p>
       </div>
     );
