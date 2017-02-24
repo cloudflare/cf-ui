@@ -10,7 +10,11 @@ describe('PaginationItem', function() {
       </PaginationItem>,
       // should equal
       <li className="cf-pagination__item cf-pagination__item--number">
-        <a className="cf-pagination__link" href="#" aria-label="PaginationLabel">
+        <a
+          className="cf-pagination__link"
+          href="#"
+          aria-label="PaginationLabel"
+        >
           PaginationItem
         </a>
       </li>
@@ -19,11 +23,18 @@ describe('PaginationItem', function() {
 
   it('should render active', function() {
     assertEqualJSX(
-      <PaginationItem active type="number" label="PaginationLabel" onClick={() => {}}>
+      <PaginationItem
+        active
+        type="number"
+        label="PaginationLabel"
+        onClick={() => {}}
+      >
         PaginationItem
       </PaginationItem>,
       // should equal
-      <li className="cf-pagination__item cf-pagination__item--number cf-pagination__item--active">
+      <li
+        className="cf-pagination__item cf-pagination__item--number cf-pagination__item--active"
+      >
         <span className="cf-pagination__link" aria-label="PaginationLabel">
           PaginationItem
         </span>
@@ -33,11 +44,18 @@ describe('PaginationItem', function() {
 
   it('should render disabled', function() {
     assertEqualJSX(
-      <PaginationItem disabled type="number" label="PaginationLabel" onClick={() => {}}>
+      <PaginationItem
+        disabled
+        type="number"
+        label="PaginationLabel"
+        onClick={() => {}}
+      >
         PaginationItem
       </PaginationItem>,
       // should equal
-      <li className="cf-pagination__item cf-pagination__item--number cf-pagination__item--disabled">
+      <li
+        className="cf-pagination__item cf-pagination__item--number cf-pagination__item--disabled"
+      >
         <span className="cf-pagination__link" aria-label="PaginationLabel">
           PaginationItem
         </span>

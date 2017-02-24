@@ -5,9 +5,9 @@ const DropdownSeparator = require('../src/DropdownSeparator');
 describe('DropdownSeparator', function() {
   it('should render with to', function() {
     assertEqualJSX(
-      <DropdownSeparator/>,
+      <DropdownSeparator />,
       // should equal
-      <div className="cf-dropdown__separator" role="separator"/>
+      <div className="cf-dropdown__separator" role="separator" />
     );
   });
 });

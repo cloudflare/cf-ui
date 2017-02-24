@@ -5,7 +5,7 @@ const PageHeader = require('../src/PageHeader');
 describe('PageHeader', function() {
   it('should render title', function() {
     assertEqualJSX(
-      <PageHeader title="Title"/>,
+      <PageHeader title="Title" />,
       // should equal
       <header className="cf-page__header">
         <h1 className="cf-page__title">Title</h1>
@@ -15,7 +15,7 @@ describe('PageHeader', function() {
 
   it('should render title/subtitle', function() {
     assertEqualJSX(
-      <PageHeader title="Title" subtitle="Subtitle"/>,
+      <PageHeader title="Title" subtitle="Subtitle" />,
       // should equal
       <header className="cf-page__header">
         <h1 className="cf-page__title">Title</h1>

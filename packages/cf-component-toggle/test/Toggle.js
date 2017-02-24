@@ -5,23 +5,24 @@ const Toggle = require('../src/Toggle');
 describe('Toggle', function() {
   it('should render', function() {
     assertEqualJSX(
-      <Toggle label="Test Toggle" name="test"/>,
+      <Toggle label="Test Toggle" name="test" />,
       // should equal
       <label htmlFor="test" className="cf-toggle">
         <input
           className="cf-toggle__checkbox"
           type="checkbox"
           id="test"
-          name="test"/>
+          name="test"
+        />
         <span className="cf-toggle__label">Test Toggle</span>
-        <span className="cf-toggle__handle"/>
+        <span className="cf-toggle__handle" />
       </label>
     );
   });
 
   it('should render checked', function() {
     assertEqualJSX(
-      <Toggle label="Test Toggle" name="test" value={true}/>,
+      <Toggle label="Test Toggle" name="test" value={true} />,
       // should equal
       <label htmlFor="test" className="cf-toggle cf-toggle--active">
         <input
@@ -30,18 +31,22 @@ describe('Toggle', function() {
           id="test"
           name="test"
           checked={true}
-          onChange={() => {}}/>
+          onChange={() => {}}
+        />
         <span className="cf-toggle__label">Test Toggle</span>
-        <span className="cf-toggle__handle"/>
+        <span className="cf-toggle__handle" />
       </label>
     );
   });
 
   it('should render disabled', function() {
     assertEqualJSX(
-      <Toggle disabled label="Test Toggle" name="test" value={true}/>,
+      <Toggle disabled label="Test Toggle" name="test" value={true} />,
       // should equal
-      <label htmlFor="test" className="cf-toggle cf-toggle--active cf-toggle--disabled">
+      <label
+        htmlFor="test"
+        className="cf-toggle cf-toggle--active cf-toggle--disabled"
+      >
         <input
           className="cf-toggle__checkbox"
           type="checkbox"
@@ -49,9 +54,10 @@ describe('Toggle', function() {
           id="test"
           name="test"
           checked={true}
-          onChange={() => {}}/>
+          onChange={() => {}}
+        />
         <span className="cf-toggle__label">Test Toggle</span>
-        <span className="cf-toggle__handle"/>
+        <span className="cf-toggle__handle" />
       </label>
     );
   });

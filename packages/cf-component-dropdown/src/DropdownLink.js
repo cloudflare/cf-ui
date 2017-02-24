@@ -1,12 +1,14 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 const Link = require('cf-component-link');
 const DropdownRegistry = require('./DropdownRegistry');
 
 class DropdownLink extends React.Component {
   constructor(props, context) {
     if (!props.to && !props.onClick) {
-      throw new Error('<DropdownLink/> requires either a `to` or `onClick` prop');
+      throw new Error(
+        '<DropdownLink/> requires either a `to` or `onClick` prop'
+      );
     }
 
     super(props, context);
@@ -40,11 +42,13 @@ class DropdownLink extends React.Component {
   render() {
     return (
       <li className="cf-dropdown__link" role="menuitem">
-        <Link ref={node => this.link = node}
+        <Link
+          ref={node => this.link = node}
           to={this.props.to}
           onClick={this.props.onClick}
           onFocus={this.handleLinkFocus}
-          onBlur={this.handleLinkBlur}>
+          onBlur={this.handleLinkBlur}
+        >
           {this.props.children}
         </Link>
       </li>

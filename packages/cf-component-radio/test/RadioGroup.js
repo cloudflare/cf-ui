@@ -12,7 +12,8 @@ describe('RadioGroup', function() {
         options={[
           { label: 'Option 1', name: 'group-option-1', value: 'option1' },
           { label: 'Option 2', name: 'group-option-2', value: 'option2' }
-        ]}/>,
+        ]}
+      />,
       // should equal
       <div className="cf-radio__group">
         <Radio
@@ -20,13 +21,15 @@ describe('RadioGroup', function() {
           name="group-option-1"
           value="option1"
           checked={true}
-          onChange={() => {}}/>
+          onChange={() => {}}
+        />
         <Radio
           label="Option 2"
           name="group-option-2"
           value="option2"
           checked={false}
-          onChange={() => {}}/>
+          onChange={() => {}}
+        />
       </div>
     );
   });

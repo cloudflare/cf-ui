@@ -1,6 +1,6 @@
 const React = require('react');
-const {PropTypes} = React;
-const {findDOMNode} = require('react-dom');
+const { PropTypes } = React;
+const { findDOMNode } = require('react-dom');
 const createTooltip = require('./createTooltip');
 
 class Tooltip extends React.Component {

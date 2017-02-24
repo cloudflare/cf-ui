@@ -1,11 +1,13 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 
 class TableCell extends React.Component {
   render() {
     let className = 'cf-table__cell';
-    if (this.props.align) className += ' cf-table__cell--align-' + this.props.align;
-    if (this.props.className.trim()) className += ' ' + this.props.className.trim();
+    if (this.props.align)
+      className += ' cf-table__cell--align-' + this.props.align;
+    if (this.props.className.trim())
+      className += ' ' + this.props.className.trim();
 
     return (
       <td className={className}>

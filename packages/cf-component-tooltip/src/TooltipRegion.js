@@ -1,5 +1,5 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 const createTooltip = require('./createTooltip');
 
 class TooltipRegion extends React.Component {

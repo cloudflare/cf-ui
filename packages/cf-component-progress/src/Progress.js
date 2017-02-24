@@ -1,9 +1,8 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 const Link = require('cf-component-link');
 
 class Progress extends React.Component {
-
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
@@ -17,7 +16,7 @@ class Progress extends React.Component {
 
   render() {
     const max = this.props.steps.length;
-    const itemWidth = ((1 / max) * 100).toFixed(4) + '%';
+    const itemWidth = (1 / max * 100).toFixed(4) + '%';
 
     let value;
 
@@ -35,7 +34,10 @@ class Progress extends React.Component {
 
       return (
         <li key={step.id} className={className} style={{ width: itemWidth }}>
-          <Link onClick={this.handleClick.bind(null, step)} disabled={step.disabled}>
+          <Link
+            onClick={this.handleClick.bind(null, step)}
+            disabled={step.disabled}
+          >
             {step.label}
           </Link>
         </li>
@@ -44,7 +46,7 @@ class Progress extends React.Component {
 
     return (
       <div className="cf-progress">
-        <progress className="cf-progress__bar" max={max} value={value}/>
+        <progress className="cf-progress__bar" max={max} value={value} />
         <ol className="cf-progress__items">
           {items}
         </ol>
@@ -56,11 +58,13 @@ class Progress extends React.Component {
 Progress.propTypes = {
   active: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  steps: PropTypes.arrayOf(PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    label: PropTypes.string.isRequired,
-    disabled: PropTypes.bool.isRequired
-  })).isRequired
+  steps: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      disabled: PropTypes.bool.isRequired
+    })
+  ).isRequired
 };
 
 Progress.defaultProps = {

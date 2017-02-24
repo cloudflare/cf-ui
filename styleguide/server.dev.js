@@ -8,9 +8,11 @@ import { HOT_RELOAD_PORT } from './constants';
 const app = express();
 const compiler = webpack(configDev);
 
-app.use(webpackDev(compiler, {
-  publicPath: configDev.output.publicPath
-}));
+app.use(
+  webpackDev(compiler, {
+    publicPath: configDev.output.publicPath
+  })
+);
 
 app.use(webpackHot(compiler));
 

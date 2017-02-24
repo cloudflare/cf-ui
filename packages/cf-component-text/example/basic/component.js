@@ -1,5 +1,5 @@
 const React = require('react');
-const {render} = require('react-dom');
+const { render } = require('react-dom');
 
 const Text = require('../../src/index');
 
@@ -34,7 +34,4 @@ class Component extends React.Component {
   }
 }
 
-render(
-  <Component/>,
-  document.getElementById('cf-component-text--basic')
-);
+render(<Component />, document.getElementById('cf-component-text--basic'));

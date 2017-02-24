@@ -1,8 +1,8 @@
 const assert = require('assert');
 const React = require('react');
-const {mount} = require('enzyme');
-const {createStore, combineReducers} = require('redux');
-const {Provider} = require('react-redux');
+const { mount } = require('enzyme');
+const { createStore, combineReducers } = require('redux');
+const { Provider } = require('react-redux');
 const {
   cardActions,
   cardReducer,
@@ -13,9 +13,11 @@ describe('CardBuilderTest', () => {
   let store;
 
   beforeEach(() => {
-    store = createStore(combineReducers({
-      cards: cardReducer
-    }));
+    store = createStore(
+      combineReducers({
+        cards: cardReducer
+      })
+    );
   });
 
   it('should render a card', () => {
@@ -24,7 +26,8 @@ describe('CardBuilderTest', () => {
         <CardBuilder
           cardName="test-card"
           title="This is a Card"
-          description="This is the description of a card."/>
+          description="This is the description of a card."
+        />
       </Provider>
     );
 
@@ -38,7 +41,8 @@ describe('CardBuilderTest', () => {
         <CardBuilder
           cardName="test-card"
           title="This is a Card"
-          description="This is the *description* of a card."/>
+          description="This is the *description* of a card."
+        />
       </Provider>
     );
 
@@ -61,18 +65,18 @@ describe('CardBuilderTest', () => {
           cardName="test-card"
           title="This is a Card"
           description="This is the *description* of a card."
-          control={button}/>
+          control={button}
+        />
       </Provider>
     );
 
-    const control = wrapper
-      .find('.cf-card__control');
+    const control = wrapper.find('.cf-card__control');
 
     assert.ok(control.contains(button));
   });
 
   it('should render a table', () => {
-    const table = <table/>;
+    const table = <table />;
 
     const wrapper = mount(
       <Provider store={store}>
@@ -80,13 +84,12 @@ describe('CardBuilderTest', () => {
           cardName="test-card"
           title="This is a Card"
           description="This is the *description* of a card."
-          table={table}/>
+          table={table}
+        />
       </Provider>
     );
 
-    const section = wrapper
-      .find('.cf-card__section')
-      .at(1);
+    const section = wrapper.find('.cf-card__section').at(1);
 
     assert.ok(section.contains(table));
   });
@@ -98,15 +101,19 @@ describe('CardBuilderTest', () => {
           cardName="test-card"
           title="This is a Card"
           description="This is the *description* of a card."
-          drawers={[{
-            id: 'help',
-            name: 'Help',
-            content: 'Help Content'
-          }, {
-            id: 'api',
-            name: 'API',
-            content: 'API Content'
-          }]}/>
+          drawers={[
+            {
+              id: 'help',
+              name: 'Help',
+              content: 'Help Content'
+            },
+            {
+              id: 'api',
+              name: 'API',
+              content: 'API Content'
+            }
+          ]}
+        />
       </Provider>
     );
 
@@ -123,15 +130,19 @@ describe('CardBuilderTest', () => {
           cardName="test-card"
           title="This is a Card"
           description="This is the *description* of a card."
-          drawers={[{
-            id: 'help',
-            name: 'Help',
-            content: 'Help Content'
-          }, {
-            id: 'api',
-            name: 'API',
-            content: 'API Content'
-          }]}/>
+          drawers={[
+            {
+              id: 'help',
+              name: 'Help',
+              content: 'Help Content'
+            },
+            {
+              id: 'api',
+              name: 'API',
+              content: 'API Content'
+            }
+          ]}
+        />
       </Provider>
     );
 
@@ -140,10 +151,16 @@ describe('CardBuilderTest', () => {
     const apiLink = links.at(1);
 
     helpLink.simulate('click');
-    assert.equal(wrapper.find('.cf-card__drawer--active').text(), 'Help Content');
+    assert.equal(
+      wrapper.find('.cf-card__drawer--active').text(),
+      'Help Content'
+    );
 
     apiLink.simulate('click');
-    assert.equal(wrapper.find('.cf-card__drawer--active').text(), 'API Content');
+    assert.equal(
+      wrapper.find('.cf-card__drawer--active').text(),
+      'API Content'
+    );
 
     apiLink.simulate('click');
     assert.ok(!wrapper.find('.cf-card__drawer--active').length);

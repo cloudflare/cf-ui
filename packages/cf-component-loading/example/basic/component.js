@@ -1,5 +1,5 @@
 const React = require('react');
-const {render} = require('react-dom');
+const { render } = require('react-dom');
 
 const Loading = require('../../src/index');
 
@@ -7,13 +7,10 @@ class Component extends React.Component {
   render() {
     return (
       <div>
-        <Loading/>
+        <Loading />
       </div>
     );
   }
 }
 
-render(
-  <Component/>,
-  document.getElementById('cf-component-loading--basic')
-);
+render(<Component />, document.getElementById('cf-component-loading--basic'));

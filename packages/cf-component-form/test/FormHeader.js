@@ -5,7 +5,7 @@ const FormHeader = require('../src/FormHeader');
 describe('FormHeader', function() {
   it('should render', function() {
     assertEqualJSX(
-      <FormHeader title="FormHeader"/>,
+      <FormHeader title="FormHeader" />,
       // should equal
       <div className="cf-form__header">
         <h3 className="cf-form__title">

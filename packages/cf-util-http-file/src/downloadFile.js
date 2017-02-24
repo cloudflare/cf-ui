@@ -1,4 +1,4 @@
-const {get: httpGet} = require('cf-util-http');
+const { get: httpGet } = require('cf-util-http');
 const saveFile = require('./saveFile');
 
 function downloadFile(url, filename, callback) {

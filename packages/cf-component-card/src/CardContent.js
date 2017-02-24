@@ -1,5 +1,5 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 
 class CardContent extends React.Component {
   render() {
@@ -9,11 +9,11 @@ class CardContent extends React.Component {
           {this.props.title}
         </h3>
         {this.props.children}
-        { this.props.footerMessage ? (
-          <div className="cf-card__footer_message">
-            {this.props.footerMessage}
-          </div> ) : null
-        }
+        {this.props.footerMessage
+          ? <div className="cf-card__footer_message">
+              {this.props.footerMessage}
+            </div>
+          : null}
       </div>
     );
   }

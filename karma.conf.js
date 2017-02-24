@@ -5,7 +5,13 @@ import path from 'path';
 const customLaunchers = {};
 
 const args = minimist(process.argv.slice(2), {
-  string: ['env', 'build-branch', 'build-number', 'sauce-username', 'sauce-key'],
+  string: [
+    'env',
+    'build-branch',
+    'build-number',
+    'sauce-username',
+    'sauce-key'
+  ],
   default: {
     env: process.env.NODE_ENV,
     'build-branch': process.env.BUILD_BRANCH,
@@ -64,11 +70,13 @@ if (typeof args.browsers === 'string') {
 } else if (typeof args.browsers === 'boolean') {
   browsers = [];
 } else {
-  browsers = args['sauce-labs'] ? Object.keys(customLaunchers) : [
-    'Chrome',
-    // 'Firefox',
-    // 'Safari'
-  ];
+  browsers = args['sauce-labs']
+    ? Object.keys(customLaunchers)
+    : [
+        'Chrome'
+        // 'Firefox',
+        // 'Safari'
+      ];
 }
 
 module.exports = function(config) {
@@ -118,17 +126,17 @@ module.exports = function(config) {
 
     browserify: {
       debug: true,
-      transform: [
-        'babelify'
-      ].concat(args.istanbul && [
-        ['browserify-istanbul', {
-          instrumenter: require('isparta'),
-          ignore: [
-            '**/lib/**',
-            path.resolve(__dirname, 'utils/**')
+      transform: ['babelify'].concat(
+        (args.istanbul && [
+          [
+            'browserify-istanbul',
+            {
+              instrumenter: require('isparta'),
+              ignore: ['**/lib/**', path.resolve(__dirname, 'utils/**')]
+            }
           ]
-        }]
-      ] || []),
+        ]) || []
+      ),
       configure(bundle) {
         bundle.external('react/addons');
         bundle.external('react/lib/ReactContext');

@@ -1,5 +1,5 @@
 const React = require('react');
-const {render} = require('react-dom');
+const { render } = require('react-dom');
 
 const {
   Flex,
@@ -32,7 +32,4 @@ class Component extends React.Component {
   }
 }
 
-render(
-  <Component/>,
-  document.getElementById('cf-component-flex--basic')
-);
+render(<Component />, document.getElementById('cf-component-flex--basic'));

@@ -1,5 +1,5 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 
 class FormFieldError extends React.Component {
   render() {

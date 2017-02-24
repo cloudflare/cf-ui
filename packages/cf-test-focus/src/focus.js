@@ -1,4 +1,4 @@
-const {stubMethod} = require('cf-test-stub');
+const { stubMethod } = require('cf-test-stub');
 
 const originalFocus = global.HTMLElement.prototype.focus;
 

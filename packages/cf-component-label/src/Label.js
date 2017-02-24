@@ -1,11 +1,15 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 
 class Label extends React.Component {
   render() {
-    return React.createElement(this.props.tagName, {
-      className: 'cf-label cf-label--' + this.props.type
-    }, this.props.children);
+    return React.createElement(
+      this.props.tagName,
+      {
+        className: 'cf-label cf-label--' + this.props.type
+      },
+      this.props.children
+    );
   }
 }
 

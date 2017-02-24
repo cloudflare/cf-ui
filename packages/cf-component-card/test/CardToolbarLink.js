@@ -9,7 +9,12 @@ describe('CardToolbarLink', function() {
         CardToolbarLink
       </CardToolbarLink>,
       // should equal
-      <a role="tab" id="link" href="#!" className="cf-link cf-card__toolbar_link">
+      <a
+        role="tab"
+        id="link"
+        href="#!"
+        className="cf-link cf-card__toolbar_link"
+      >
         CardToolbarLink
       </a>
     );
@@ -21,7 +26,12 @@ describe('CardToolbarLink', function() {
         CardToolbarLink
       </CardToolbarLink>,
       // should equal
-      <a role="tab" id="link" href="#!" className="cf-link cf-card__toolbar_link cf-card__toolbar_link--open">
+      <a
+        role="tab"
+        id="link"
+        href="#!"
+        className="cf-link cf-card__toolbar_link cf-card__toolbar_link--open"
+      >
         CardToolbarLink
       </a>
     );

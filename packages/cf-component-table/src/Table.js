@@ -1,5 +1,5 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 
 class Table extends React.Component {
   render() {
@@ -9,7 +9,8 @@ class Table extends React.Component {
     if (this.props.hover) className += ' cf-table--hover';
     if (this.props.bordered) className += ' cf-table--bordered';
     if (this.props.condensed) className += ' cf-table--condensed';
-    if (this.props.className.trim()) className += ' ' + this.props.className.trim();
+    if (this.props.className.trim())
+      className += ' ' + this.props.className.trim();
 
     return (
       <table className={className}>

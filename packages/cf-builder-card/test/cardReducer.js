@@ -1,5 +1,5 @@
 const assert = require('assert');
-const {cardReducer, CardActionTypes} = require('../src/index');
+const { cardReducer, CardActionTypes } = require('../src/index');
 
 describe('cardReducerTest', () => {
   it('should have initial state', () => {
@@ -12,30 +12,39 @@ describe('cardReducerTest', () => {
       const drawerId = 'TEST_DRAWER_ID';
 
       // Active
-      assert.deepEqual(cardReducer({}, {
-        type: CardActionTypes.CF_BUILDER_CARD_DRAWER_TOGGLE,
-        cardName: cardName,
-        drawerId: drawerId
-      }), {
-        [cardName]: {
-          activeDrawer: drawerId
+      assert.deepEqual(
+        cardReducer({}, {
+          type: CardActionTypes.CF_BUILDER_CARD_DRAWER_TOGGLE,
+          cardName: cardName,
+          drawerId: drawerId
+        }),
+        {
+          [cardName]: {
+            activeDrawer: drawerId
+          }
         }
-      });
+      );
 
       // Inactive
-      assert.deepEqual(cardReducer({
-        [cardName]: {
-          activeDrawer: drawerId
+      assert.deepEqual(
+        cardReducer(
+          {
+            [cardName]: {
+              activeDrawer: drawerId
+            }
+          },
+          {
+            type: CardActionTypes.CF_BUILDER_CARD_DRAWER_TOGGLE,
+            cardName: cardName,
+            drawerId: drawerId
+          }
+        ),
+        {
+          [cardName]: {
+            activeDrawer: null
+          }
         }
-      }, {
-        type: CardActionTypes.CF_BUILDER_CARD_DRAWER_TOGGLE,
-        cardName: cardName,
-        drawerId: drawerId
-      }), {
-        [cardName]: {
-          activeDrawer: null
-        }
-      });
+      );
     });
   });
 });

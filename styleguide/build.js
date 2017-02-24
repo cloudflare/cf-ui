@@ -14,17 +14,13 @@ export default (locals, callback) => {
     </Provider>
   );
 
-  const cssStyles = renderer.renderToString()
-  const fontStyles = renderer.fontRenderer.renderToString()
+  const cssStyles = renderer.renderToString();
+  const fontStyles = renderer.fontRenderer.renderToString();
 
-  callback(null, `
-    <!DOCTYPE html>${ReactDOMServer.renderToStaticMarkup(
-      <Html
-        body={body}
-        hash={locals.webpackStats.hash}
-        cssStyles={cssStyles}
-        fontStyles={fontStyles}
-      />
-    )}
-  `);
+  callback(
+    null,
+    `
+    <!DOCTYPE html>${ReactDOMServer.renderToStaticMarkup(<Html body={body} hash={locals.webpackStats.hash} cssStyles={cssStyles} fontStyles={fontStyles} />)}
+  `
+  );
 };

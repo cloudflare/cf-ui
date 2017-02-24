@@ -5,7 +5,7 @@ const Callout = require('../src/Callout');
 describe('Callout', function() {
   it('should render "default" by default', function() {
     assertEqualJSX(
-      <Callout title="Hello" content="World"/>,
+      <Callout title="Hello" content="World" />,
       // should equal
       <div className="cf-callout cf-callout--default">
         <h3 className="cf-callout__heading">Hello</h3>
@@ -16,7 +16,7 @@ describe('Callout', function() {
 
   it('should render "type"', function() {
     assertEqualJSX(
-      <Callout type="info" title="Hello" content="World"/>,
+      <Callout type="info" title="Hello" content="World" />,
       // should equal
       <div className="cf-callout cf-callout--info">
         <h3 className="cf-callout__heading">Hello</h3>

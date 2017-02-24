@@ -1,12 +1,12 @@
-import React, {PropTypes} from 'react';
-import {createComponent} from 'cf-style-container';
+import React, { PropTypes } from 'react';
+import { createComponent } from 'cf-style-container';
 
 const styles = props => {
   const theme = props.theme;
-  return ({
+  return {
     display: theme.display,
     position: theme.position
-  });
+  };
 };
 
 const getGroupByIndex = (index, length) => {
@@ -19,15 +19,14 @@ const getGroupByIndex = (index, length) => {
   return 'inbetween';
 };
 
-const addGroupProps = children =>
-  React.Children.map(children, (child, index) =>
-    React.cloneElement(child, {
-      group: getGroupByIndex(index, React.Children.count(children))
-    })
-  );
+const addGroupProps = children => React.Children.map(children, (child, index) =>
+  React.cloneElement(child, {
+    group: getGroupByIndex(index, React.Children.count(children))
+  }));
 
-const ButtonGroup = ({children, className}) =>
-  <div className={className}>{addGroupProps(children)}</div>;
+const ButtonGroup = ({ children, className }) => (
+  <div className={className}>{addGroupProps(children)}</div>
+);
 
 ButtonGroup.propTypes = {
   children: PropTypes.node,

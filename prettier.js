@@ -49,11 +49,10 @@ files.forEach(file => {
       parser: 'babylon'
     });
     if (data !== formatted) {
-      fs.writeFile(file, formatted, (err) => {
+      fs.writeFile(file, formatted, err => {
         if (err) throw err;
         console.log(file + ' was updated!');
       });
     }
   });
 });
-

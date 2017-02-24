@@ -1,5 +1,5 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 
 class Form extends React.Component {
   render() {

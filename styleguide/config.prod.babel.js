@@ -10,42 +10,41 @@ export default {
   cache: false,
   entry: {
     app: [path.join(SRC_DIR, 'index.js')],
-    static: [path.join(__dirname, 'build.js')],
+    static: [path.join(__dirname, 'build.js')]
   },
   module: {
-    rules: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'babel-loader',
-      options: {
-        plugins: [
-          'transform-object-rest-spread'
-        ],
-        presets: [
-          ['es2015', { modules: false}],
-          'react'
-        ]
-      },
-    }],
+    rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        options: {
+          plugins: ['transform-object-rest-spread'],
+          presets: [['es2015', { modules: false }], 'react']
+        }
+      }
+    ]
   },
   output: {
     path: BUILD_DIR,
     filename: '[name]-[hash].js',
     chunkFilename: '[name]-[chunkhash].js',
-    libraryTarget: 'umd',
+    libraryTarget: 'umd'
   },
   plugins: [
     new StaticSiteGeneratorPlugin('static', ['/index.html']),
     new ProgressBarPlugin({
       format: `  build [:bar] ${chalk.green.bold(':percent')} (:elapsed seconds)`,
-      clear: false,
+      clear: false
     }),
-    new webpack.DefinePlugin({ 'process.env': { NODE_ENV: JSON.stringify('production') } }),
+    new webpack.DefinePlugin({
+      'process.env': { NODE_ENV: JSON.stringify('production') }
+    }),
     new webpack.optimize.UglifyJsPlugin()
   ],
   resolve: {
     alias,
     extensions: ['.js', '.json'],
     modules: ['node_modules']
-  },
+  }
 };

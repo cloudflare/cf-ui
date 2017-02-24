@@ -1,5 +1,5 @@
 const assert = require('assert');
-const {tableReducer, TableActionTypes} = require('../src/index');
+const { tableReducer, TableActionTypes } = require('../src/index');
 
 describe('tableReducerTest', () => {
   it('should have initial state', () => {
@@ -12,18 +12,21 @@ describe('tableReducerTest', () => {
       const rowId = 'TEST_DRAWER_ID';
       const rowType = 'success';
 
-      assert.deepEqual(tableReducer({}, {
-        type: TableActionTypes.CF_BUILDER_TABLE_FLASH_ROW_ON,
-        tableName,
-        rowId,
-        rowType
-      }), {
-        [tableName]: {
-          flashes: {
-            [rowId]: rowType
+      assert.deepEqual(
+        tableReducer({}, {
+          type: TableActionTypes.CF_BUILDER_TABLE_FLASH_ROW_ON,
+          tableName,
+          rowId,
+          rowType
+        }),
+        {
+          [tableName]: {
+            flashes: {
+              [rowId]: rowType
+            }
           }
         }
-      });
+      );
     });
   });
 
@@ -33,23 +36,29 @@ describe('tableReducerTest', () => {
       const rowId = 'TEST_DRAWER_ID';
       const rowType = 'success';
 
-      assert.deepEqual(tableReducer({
-        [tableName]: {
-          flashes: {
-            [rowId]: rowType
+      assert.deepEqual(
+        tableReducer(
+          {
+            [tableName]: {
+              flashes: {
+                [rowId]: rowType
+              }
+            }
+          },
+          {
+            type: TableActionTypes.CF_BUILDER_TABLE_FLASH_ROW_ON,
+            tableName,
+            rowId
+          }
+        ),
+        {
+          [tableName]: {
+            flashes: {
+              [rowId]: null
+            }
           }
         }
-      }, {
-        type: TableActionTypes.CF_BUILDER_TABLE_FLASH_ROW_ON,
-        tableName,
-        rowId
-      }), {
-        [tableName]: {
-          flashes: {
-            [rowId]: null
-          }
-        }
-      });
+      );
     });
   });
 });

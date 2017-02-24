@@ -7,7 +7,7 @@ import {
   ButtonTheme
 } from 'cf-component-button';
 
-export default () =>
+export default () => (
   <ThemeProvider theme={ButtonGroupTheme}>
     <ThemeProvider theme={ButtonTheme}>
       <ButtonGroup>
@@ -22,4 +22,5 @@ export default () =>
         </Button>
       </ButtonGroup>
     </ThemeProvider>
-  </ThemeProvider>;
+  </ThemeProvider>
+);

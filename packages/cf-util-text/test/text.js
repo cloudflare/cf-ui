@@ -1,1 +1,1 @@
-console.warn('No text tests')
+console.warn('No text tests');

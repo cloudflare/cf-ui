@@ -1,5 +1,5 @@
 const React = require('react');
-const {render} = require('react-dom');
+const { render } = require('react-dom');
 
 const {
   Tabs,
@@ -7,7 +7,6 @@ const {
 } = require('../../src/index');
 
 class Component extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -17,18 +16,19 @@ class Component extends React.Component {
 
   handleTabChange(id) {
     this.setState({ activeTab: id });
-  };
+  }
 
   render() {
     return (
       <Tabs
         activeTab={this.state.activeTab}
         tabs={[
-          { id: 'one',   label: 'Tab One'   },
-          { id: 'two',   label: 'Tab Two'   },
+          { id: 'one', label: 'Tab One' },
+          { id: 'two', label: 'Tab Two' },
           { id: 'three', label: 'Tab Three' }
         ]}
-        onChange={this.handleTabChange.bind(this)}>
+        onChange={this.handleTabChange.bind(this)}
+      >
 
         <TabsPanel id="one">
           <h1>Tab One</h1>
@@ -46,7 +46,4 @@ class Component extends React.Component {
   }
 }
 
-render(
-  <Component/>,
-  document.getElementById('cf-component-tabs--basic')
-);
+render(<Component />, document.getElementById('cf-component-tabs--basic'));

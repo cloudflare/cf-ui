@@ -1,5 +1,5 @@
 const React = require('react');
-const {render} = require('react-dom');
+const { render } = require('react-dom');
 
 const {
   Radio,
@@ -7,7 +7,6 @@ const {
 } = require('../../src/index');
 
 class Component extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
@@ -20,7 +19,7 @@ class Component extends React.Component {
     this.setState({
       radioValue: val
     });
-  };
+  }
 
   render() {
     return (
@@ -28,18 +27,20 @@ class Component extends React.Component {
         <p>You can create them individually with <code>Radio</code></p>
 
         <Radio
-          label='Option 1'
-          name='radio-option-1'
-          value='option1'
+          label="Option 1"
+          name="radio-option-1"
+          value="option1"
           checked={this.state.radioValue === 'option1'}
-          onChange={this.onRadioChange}/>
+          onChange={this.onRadioChange}
+        />
 
         <Radio
-          label='Option 2'
-          name='radio-option-2'
-          value='option2'
+          label="Option 2"
+          name="radio-option-2"
+          value="option2"
           checked={this.state.radioValue === 'option2'}
-          onChange={this.onRadioChange}/>
+          onChange={this.onRadioChange}
+        />
 
         <p>Or as a group with <code>RadioGroup</code></p>
 
@@ -49,22 +50,23 @@ class Component extends React.Component {
           options={[
             { label: 'Option 1', name: 'group-option-1', value: 'option1' },
             { label: 'Option 2', name: 'group-option-2', value: 'option2' }
-          ]}/>
+          ]}
+        />
 
-        <p>You can also disable a label by passing <code>false</code> explicitly</p>
+        <p>
+          You can also disable a label by passing <code>false</code> explicitly
+        </p>
 
         <Radio
           label={false}
-          name='radio-option-1-no-label'
-          value='option1'
+          name="radio-option-1-no-label"
+          value="option1"
           checked={this.state.radioValue === 'option1'}
-          onChange={this.onRadioChange}/>
+          onChange={this.onRadioChange}
+        />
       </div>
     );
   }
 }
 
-render(
-  <Component/>,
-  document.getElementById('cf-component-radio--basic')
-);
+render(<Component />, document.getElementById('cf-component-radio--basic'));

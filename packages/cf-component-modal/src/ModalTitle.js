@@ -1,6 +1,6 @@
 const React = require('react');
-const {Heading} = require('cf-component-heading');
-const {PropTypes} = React;
+const { Heading } = require('cf-component-heading');
+const { PropTypes } = React;
 
 class ModalTitle extends React.Component {
   render() {

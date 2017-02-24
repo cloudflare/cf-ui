@@ -16,7 +16,9 @@ describe('CardContent', function() {
 
   it('should render with footer message', function() {
     assertEqualJSX(
-      <CardContent title="Title" footerMessage="Footer Message">CardContent</CardContent>,
+      <CardContent title="Title" footerMessage="Footer Message">
+        CardContent
+      </CardContent>,
       // should equal
       <div className="cf-card__content">
         <h3 className="cf-card__title">Title</h3>

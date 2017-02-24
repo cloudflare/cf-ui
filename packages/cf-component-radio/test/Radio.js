@@ -10,14 +10,17 @@ describe('Radio', function() {
         name="radio-option-1"
         value="option1"
         checked={false}
-        onChange={() => {}}/>,
+        onChange={() => {}}
+      />,
       // should equal
       <label htmlFor="radio-option-1" className="cf-radio">
-        <input type="radio"
+        <input
+          type="radio"
           className="cf-radio__input"
           id="radio-option-1"
           name="radio-option-1"
-          value="option1"/>
+          value="option1"
+        />
         <span className="cf-radio__label">
           Option 1
         </span>
@@ -32,16 +35,19 @@ describe('Radio', function() {
         name="radio-option-1"
         value="option1"
         checked={true}
-        onChange={() => {}}/>,
+        onChange={() => {}}
+      />,
       // should equal
       <label htmlFor="radio-option-1" className="cf-radio cf-radio--checked">
-        <input type="radio"
+        <input
+          type="radio"
           className="cf-radio__input"
           id="radio-option-1"
           name="radio-option-1"
           value="option1"
           checked={true}
-          onChange={() => {}}/>
+          onChange={() => {}}
+        />
         <span className="cf-radio__label">
           Option 1
         </span>
@@ -56,14 +62,17 @@ describe('Radio', function() {
         name="radio-option-1"
         value="option1"
         checked={false}
-        onChange={() => {}}/>,
+        onChange={() => {}}
+      />,
       // should equal
       <label htmlFor="radio-option-1" className="cf-radio">
-        <input type="radio"
+        <input
+          type="radio"
           className="cf-radio__input"
           id="radio-option-1"
           name="radio-option-1"
-          value="option1"/>
+          value="option1"
+        />
       </label>
     );
   });

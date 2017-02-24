@@ -1,10 +1,9 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 const DropdownRegistry = require('./DropdownRegistry');
-const {canUseDOM} = require('exenv');
+const { canUseDOM } = require('exenv');
 
 class Dropdown extends React.Component {
-
   getChildContext() {
     return {
       dropdownRegistry: this.dropdownRegistry
@@ -27,7 +26,10 @@ class Dropdown extends React.Component {
 
   componentWillUnmount() {
     if (canUseDOM) {
-      global.document.removeEventListener('keydown', this.handleDocumentKeydown);
+      global.document.removeEventListener(
+        'keydown',
+        this.handleDocumentKeydown
+      );
       global.document.removeEventListener('click', this.handleDocumentClick);
     }
   }
@@ -35,13 +37,16 @@ class Dropdown extends React.Component {
   handleDocumentKeydown(event) {
     const keyCode = event.keyCode;
 
-    if (keyCode === 40) { // down
+    if (keyCode === 40) {
+      // down
       event.preventDefault();
       this.dropdownRegistry.focusNext();
-    } else if (keyCode === 38) { // up
+    } else if (keyCode === 38) {
+      // up
       event.preventDefault();
       this.dropdownRegistry.focusPrev();
-    } else if (keyCode === 27) { // esc
+    } else if (keyCode === 27) {
+      // esc
       this.props.onClose();
     }
   }
@@ -52,7 +57,10 @@ class Dropdown extends React.Component {
 
   render() {
     return (
-      <ul role="menu" className={`cf-dropdown cf-dropdown--${this.props.align}`}>
+      <ul
+        role="menu"
+        className={`cf-dropdown cf-dropdown--${this.props.align}`}
+      >
         {this.props.children}
       </ul>
     );

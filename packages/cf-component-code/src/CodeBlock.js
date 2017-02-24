@@ -1,5 +1,5 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 const Code = require('./Code');
 
 class CodeBlock extends React.Component {

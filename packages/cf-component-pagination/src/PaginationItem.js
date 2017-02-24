@@ -1,5 +1,5 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 const Icon = require('cf-component-icon');
 
 class PaginationItem extends React.Component {
@@ -14,7 +14,8 @@ class PaginationItem extends React.Component {
   }
 
   render() {
-    let className = 'cf-pagination__item cf-pagination__item--' + this.props.type;
+    let className = 'cf-pagination__item cf-pagination__item--' +
+      this.props.type;
 
     if (this.props.active) className += ' cf-pagination__item--active';
     if (this.props.disabled) className += ' cf-pagination__item--disabled';
@@ -27,31 +28,40 @@ class PaginationItem extends React.Component {
     let children;
 
     if (isEllipsis) {
-      children = <span>&hellip;</span>;
+      children = <span>…</span>;
     } else if (isLoading) {
-      children = <Icon type="loading"/>;
+      children = <Icon type="loading" />;
     } else {
       children = this.props.children;
     }
 
     return (
       <li className={className} role={role}>
-        {(this.props.active || this.props.disabled || isEllipsis) ? (
-          <span className="cf-pagination__link" aria-label={this.props.label}>
-            {children}
-          </span>
-        ) : (
-          <a className="cf-pagination__link" href="#" onClick={this.handleClick} aria-label={this.props.label}>
-            {children}
-          </a>
-        )}
+        {this.props.active || this.props.disabled || isEllipsis
+          ? <span className="cf-pagination__link" aria-label={this.props.label}>
+              {children}
+            </span>
+          : <a
+              className="cf-pagination__link"
+              href="#"
+              onClick={this.handleClick}
+              aria-label={this.props.label}
+            >
+              {children}
+            </a>}
       </li>
     );
   }
 }
 
 PaginationItem.propTypes = {
-  type: PropTypes.oneOf(['number', 'next', 'prev', 'ellipsis', 'loading']).isRequired,
+  type: PropTypes.oneOf([
+    'number',
+    'next',
+    'prev',
+    'ellipsis',
+    'loading'
+  ]).isRequired,
   label: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,
   active: PropTypes.bool,

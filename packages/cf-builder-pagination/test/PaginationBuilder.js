@@ -1,9 +1,9 @@
 const assert = require('assert');
 const React = require('react');
-const {mount} = require('enzyme');
-const {PaginationBuilder} = require('../src/index');
-const {PaginationItem} = require('cf-component-pagination');
-const {createStub} = require('cf-test-stub');
+const { mount } = require('enzyme');
+const { PaginationBuilder } = require('../src/index');
+const { PaginationItem } = require('cf-component-pagination');
+const { createStub } = require('cf-test-stub');
 
 describe('PaginationBuilderTest', () => {
   it('should render pagination', () => {
@@ -12,7 +12,8 @@ describe('PaginationBuilderTest', () => {
         onPageChange={() => {}}
         totalCount={100}
         page={1}
-        perPage={20}/>
+        perPage={20}
+      />
     );
 
     assert.ok(wrapper.find('.cf-pagination').length);
@@ -44,7 +45,8 @@ describe('PaginationBuilderTest', () => {
         onPageChange={() => {}}
         totalCount={100}
         page={5}
-        perPage={20}/>
+        perPage={20}
+      />
     );
 
     const items = wrapper.find(PaginationItem);
@@ -61,7 +63,8 @@ describe('PaginationBuilderTest', () => {
         onPageChange={() => {}}
         totalCount={20}
         page={6}
-        perPage={1}/>
+        perPage={1}
+      />
     );
 
     const items = wrapper.find(PaginationItem);
@@ -92,7 +95,8 @@ describe('PaginationBuilderTest', () => {
         totalCount={100}
         page={1}
         perPage={20}
-        loading={true}/>
+        loading={true}
+      />
     );
 
     const items = wrapper.find(PaginationItem);
@@ -114,7 +118,8 @@ describe('PaginationBuilderTest', () => {
           assert.equal(end, 40);
           assert.equal(totalItems, 100);
           called = true;
-        }}/>
+        }}
+      />
     );
 
     assert.ok(called);
@@ -128,7 +133,8 @@ describe('PaginationBuilderTest', () => {
         onPageChange={onPageChange}
         totalCount={20}
         page={1}
-        perPage={1}/>
+        perPage={1}
+      />
     );
 
     const items = wrapper.find(PaginationItem);

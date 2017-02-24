@@ -1,5 +1,5 @@
 const React = require('react');
-const {render} = require('react-dom');
+const { render } = require('react-dom');
 
 const Viewport = require('../../src/index');
 
@@ -48,7 +48,4 @@ class Component extends React.Component {
   }
 }
 
-render(
-  <Component/>,
-  document.getElementById('cf-component-viewport--basic')
-);
+render(<Component />, document.getElementById('cf-component-viewport--basic'));

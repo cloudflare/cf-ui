@@ -1,4 +1,4 @@
-function buildMediaQuery({minWidth, maxWidth}, not) {
+function buildMediaQuery({ minWidth, maxWidth }, not) {
   let query = '';
 
   if (minWidth) {

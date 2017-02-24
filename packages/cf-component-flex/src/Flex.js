@@ -1,9 +1,8 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 const prefixAll = require('inline-style-prefixer/static');
 
-
-function styles (props) {
+function styles(props) {
   return {
     flexDirection: props.direction,
     flexWrap: props.wrap,
@@ -32,21 +31,14 @@ class Flex extends React.Component {
 }
 
 Flex.propTypes = {
-  spacing: PropTypes.oneOf([
-    'thin',
-    'wide'
-  ]),
+  spacing: PropTypes.oneOf(['thin', 'wide']),
   direction: PropTypes.oneOf([
     'row',
     'row-reverse',
     'column',
     'column-reverse'
   ]),
-  wrap: PropTypes.oneOf([
-    'nowrap',
-    'wrap',
-    'wrap-reverse'
-  ]),
+  wrap: PropTypes.oneOf(['nowrap', 'wrap', 'wrap-reverse']),
   justifyContent: PropTypes.oneOf([
     'flex-start',
     'flex-end',

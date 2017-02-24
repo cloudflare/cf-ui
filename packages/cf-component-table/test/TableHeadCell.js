@@ -15,7 +15,9 @@ describe('TableHeadCell', function() {
     assertEqualJSX(
       <TableHeadCell className="extra">TableHeadCell</TableHeadCell>,
       // should equal
-      <th className="cf-table__cell cf-table__cell--head extra">TableHeadCell</th>
+      <th className="cf-table__cell cf-table__cell--head extra">
+        TableHeadCell
+      </th>
     );
   });
 });

@@ -12,7 +12,8 @@ describe('CheckboxGroup', function() {
         options={[
           { label: 'Option 1', name: 'group-option-1', value: 'option1' },
           { label: 'Option 2', name: 'group-option-2', value: 'option2' }
-        ]}/>,
+        ]}
+      />,
       // should equal
       <div className="cf-checkbox__group">
         <Checkbox
@@ -20,13 +21,15 @@ describe('CheckboxGroup', function() {
           name="group-option-1"
           value="option1"
           checked={true}
-          onChange={() => {}}/>
+          onChange={() => {}}
+        />
         <Checkbox
           label="Option 2"
           name="group-option-2"
           value="option2"
           checked={false}
-          onChange={() => {}}/>
+          onChange={() => {}}
+        />
       </div>
     );
   });

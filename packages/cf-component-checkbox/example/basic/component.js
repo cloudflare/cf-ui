@@ -1,5 +1,5 @@
 const React = require('react');
-const {render} = require('react-dom');
+const { render } = require('react-dom');
 
 const {
   Checkbox,
@@ -33,14 +33,16 @@ class Component extends React.Component {
           name="checkbox-1"
           value="checkbox1"
           checked={this.state.checkbox1}
-          onChange={checked => this.setState({ checkbox1: checked })}/>
+          onChange={checked => this.setState({ checkbox1: checked })}
+        />
 
         <Checkbox
           label="Checkbox 2"
           name="checkbox-2"
           value="checkbox2"
           checked={this.state.checkbox2}
-          onChange={checked => this.setState({ checkbox2: checked })}/>
+          onChange={checked => this.setState({ checkbox2: checked })}
+        />
 
         <p>Or as a group with <code>CheckboxGroup</code></p>
 
@@ -50,22 +52,23 @@ class Component extends React.Component {
           options={[
             { label: 'Option 1', name: 'group-option-1', value: 'option1' },
             { label: 'Option 2', name: 'group-option-2', value: 'option2' }
-          ]}/>
+          ]}
+        />
 
-        <p>You can also disable a label by passing <code>false</code> explicitly</p>
+        <p>
+          You can also disable a label by passing <code>false</code> explicitly
+        </p>
 
         <Checkbox
           label={false}
           name="checkbox-1-no-label"
           value="checkbox1"
           checked={this.state.checkbox1}
-          onChange={checked => this.setState({ checkbox1: checked })}/>
+          onChange={checked => this.setState({ checkbox1: checked })}
+        />
       </div>
     );
   }
 }
 
-render(
-  <Component/>,
-  document.getElementById('cf-component-checkbox--basic')
-);
+render(<Component />, document.getElementById('cf-component-checkbox--basic'));

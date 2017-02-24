@@ -1,5 +1,5 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 
 class Checkbox extends React.Component {
   render() {
@@ -11,18 +11,19 @@ class Checkbox extends React.Component {
 
     return (
       <label htmlFor={this.props.name} className={className}>
-        <input type="checkbox"
+        <input
+          type="checkbox"
           className="cf-checkbox__input"
           id={this.props.name}
           name={this.props.name}
           value={this.props.value}
           checked={this.props.checked}
-          onChange={this.props.onChange}/>
-        {this.props.label && (
+          onChange={this.props.onChange}
+        />
+        {this.props.label &&
           <span className="cf-checkbox__label">
             {this.props.label}
-          </span>
-        )}
+          </span>}
       </label>
     );
   }

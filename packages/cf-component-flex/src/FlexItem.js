@@ -1,9 +1,8 @@
 const React = require('react');
-const {PropTypes} = React;
+const { PropTypes } = React;
 const prefixAll = require('inline-style-prefixer/static');
 
-
-function styles (props) {
+function styles(props) {
   return {
     order: props.order,
     flexGrow: props.grow,
@@ -12,7 +11,6 @@ function styles (props) {
     alignSelf: props.alignSelf
   };
 }
-
 
 class FlexItem extends React.Component {
   render() {
