@@ -9,7 +9,6 @@ const postcss = require('gulp-postcss');
 const through = require('through2');
 const source = require('vinyl-source-stream');
 const buffer = require('vinyl-buffer');
-const eslint = require('gulp-eslint');
 const uglify = require('gulp-uglify');
 const mkdirp = require('mkdirp');
 const envify = require('envify/custom');
@@ -518,23 +517,12 @@ export function examplesBuildHtml(cb) {
 
 export const build = () => compile(false);
 
-export function lint() {
-  return gulp
-    .src('./packages/*/src/**/*.js')
-    .pipe(fixErrorHandling())
-    .pipe(eslint())
-    .pipe(eslint.format())
-    // for some reason eslint doesn't work without this
-    .on('data', () => {});
-}
-
 export const test = cb => initKarmaServer(true, cb);
 const testWatch = cb => initKarmaServer(false, cb);
 
 export function dev(cb) {
   watch(scripts, () => {
     compile(true);
-    lint();
   });
   testWatch(cb);
 }
