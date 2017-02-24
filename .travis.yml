@@ -11,3 +11,6 @@ addons:
 before_script:
   - npm run build
   - npm run bootstrap
+script:
+  - npm run lint
+  - npm run examples:new
