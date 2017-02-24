@@ -11,7 +11,7 @@ class Tabs extends React.Component {
   }
 
   handleChange(id) {
-    if (id !== this.props.active) {
+    if (id !== this.props.activeTab) {
       this.props.onChange(id);
     }
   }
@@ -69,7 +69,6 @@ class Tabs extends React.Component {
 
 Tabs.propTypes = {
   onChange: PropTypes.func.isRequired,
-  active: PropTypes.string.isRequired,
   activeTab: PropTypes.string.isRequired,
   tabs: PropTypes.arrayOf(PropTypes.shape({
     id: PropTypes.string.isRequired,
