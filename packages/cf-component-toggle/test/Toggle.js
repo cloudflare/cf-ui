@@ -61,4 +61,26 @@ describe('Toggle', function() {
       </label>
     );
   });
+
+  it('should render centered', function() {
+    assertEqualJSX(
+      <Toggle centered label="Test Toggle" name="test" value={true} />,
+      // should equal
+      <label
+        htmlFor="test"
+        className="cf-toggle cf-toggle--active cf-toggle--centered"
+      >
+        <input
+          className="cf-toggle__checkbox"
+          type="checkbox"
+          id="test"
+          name="test"
+          checked={true}
+          onChange={() => {}}
+        />
+        <span className="cf-toggle__label">Test Toggle</span>
+        <span className="cf-toggle__handle" />
+      </label>
+    );
+  });
 });

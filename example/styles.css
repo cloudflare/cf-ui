@@ -2062,6 +2062,10 @@ a.cf-link--disabled {
   color: #888;
 }
 
+.cf-toggle--centered {
+  margin: 0 auto;
+}
+
 /**
  * Tooltip
  */
