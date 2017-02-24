@@ -1,11 +1,11 @@
 {
-	"folders":
-	[
-		{
-			"path": "."
-		}
-	],
-	"settings": {
+  "folders":
+  [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
     "js_prettier": {
       "prettier_cli_path": "",
       "auto_format_on_save": true,
