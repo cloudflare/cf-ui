@@ -22,8 +22,7 @@ class Select extends React.Component {
 Select.defaultProps = {
   multi: false,
   searchable: false,
-  async: false,
-  cache: true
+  async: false
 };
 
 module.exports = Select;
