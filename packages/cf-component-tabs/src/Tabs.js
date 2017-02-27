@@ -6,12 +6,12 @@ const Select = require('cf-component-select');
 class Tabs extends React.Component {
   getChildContext() {
     return {
-      activeTab: this.props.activeTab
+      active: this.props.active
     };
   }
 
   handleChange(id) {
-    if (id !== this.props.activeTab) {
+    if (id !== this.props.active) {
       this.props.onChange(id);
     }
   }
@@ -28,7 +28,7 @@ class Tabs extends React.Component {
         <Viewport size="mobile">
           <Select
             onChange={this.handleChange.bind(this)}
-            value={this.props.activeTab}
+            value={this.props.active}
             options={this.props.tabs.map(tab => {
               return {
                 value: tab.id,
@@ -40,7 +40,7 @@ class Tabs extends React.Component {
         <Viewport not size="mobile">
           <ul className="cf-tabs__group" role="tablist">
             {this.props.tabs.map(tab => {
-              const selected = tab.id === this.props.activeTab;
+              const selected = tab.id === this.props.active;
 
               let className = 'cf-tabs__item';
               if (selected) {
@@ -72,7 +72,7 @@ class Tabs extends React.Component {
 
 Tabs.propTypes = {
   onChange: PropTypes.func.isRequired,
-  activeTab: PropTypes.string.isRequired,
+  active: PropTypes.string.isRequired,
   tabs: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
@@ -83,7 +83,7 @@ Tabs.propTypes = {
 };
 
 Tabs.childContextTypes = {
-  activeTab: PropTypes.string.isRequired
+  active: PropTypes.string.isRequired
 };
 
 module.exports = Tabs;

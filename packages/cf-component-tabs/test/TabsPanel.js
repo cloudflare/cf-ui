@@ -5,7 +5,7 @@ const TabsPanel = require('../src/TabsPanel');
 
 class Context extends React.Component {
   getChildContext() {
-    return { activeTab: this.props.activeTab };
+    return { active: this.props.active };
   }
   render() {
     return this.props.children;
@@ -13,18 +13,18 @@ class Context extends React.Component {
 }
 
 Context.propTypes = {
-  activeTab: PropTypes.string.isRequired,
+  active: PropTypes.string.isRequired,
   children: PropTypes.node
 };
 
 Context.childContextTypes = {
-  activeTab: PropTypes.string.isRequired
+  active: PropTypes.string.isRequired
 };
 
 describe('TabsPanel', function() {
   it('should render', function() {
     assertEqualJSX(
-      <Context activeTab="something-else">
+      <Context active="something-else">
         <TabsPanel id="tab">TabsPanel</TabsPanel>
       </Context>,
       // should equal
@@ -42,7 +42,7 @@ describe('TabsPanel', function() {
 
   it('should render active', function() {
     assertEqualJSX(
-      <Context activeTab="tab">
+      <Context active="tab">
         <TabsPanel id="tab">TabsPanel</TabsPanel>
       </Context>,
       // should equal

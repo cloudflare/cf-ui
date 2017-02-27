@@ -10,18 +10,18 @@ class Component extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeTab: 'one'
+      active: 'one'
     };
   }
 
   handleTabChange(id) {
-    this.setState({ activeTab: id });
+    this.setState({ active: id });
   }
 
   render() {
     return (
       <Tabs
-        activeTab={this.state.activeTab}
+        active={this.state.active}
         tabs={[
           { id: 'one', label: 'Tab One' },
           { id: 'two', label: 'Tab Two' },

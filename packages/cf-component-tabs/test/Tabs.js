@@ -7,7 +7,7 @@ describe('Tabs', function() {
   it('should render', function() {
     assertEqualJSX(
       <Tabs
-        activeTab="2"
+        active="2"
         tabs={[{ id: '1', label: 'One' }, { id: '2', label: 'Two' }]}
         onChange={function() {}}
       >
