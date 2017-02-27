@@ -23,6 +23,7 @@
     "examples:new": "rimraf build && NODE_ENV=production webpack --config styleguide/config.prod.babel.js && rm build/static-*"
   },
   "devDependencies": {
+    "assert-equal-jsx": "^1.0.3",
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.18.0",
     "babel-eslint": "^7.1.1",
@@ -97,6 +98,7 @@
     "progress-bar-webpack-plugin": "^1.9.3",
     "react": "^15.0.0-0",
     "react-addons-css-transition-group": "^15.0.0-0",
+    "react-addons-test-utils": "^15.4.1",
     "react-dom": "^15.0.0-0",
     "react-fela": "^4.2.5",
     "react-redux": "^3.1.0",
