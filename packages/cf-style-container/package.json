@@ -1,7 +1,7 @@
 {
   "name": "cf-style-container",
   "description": "CloudFlare Style Container",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "lib/index.js",
   "author": "Vojtech Miksu <vojtech@cloudflare.com>",
   "license": "BSD-3-Clause",

@@ -1,7 +1,7 @@
 {
   "name": "cf-component-card",
   "description": "CloudFlare Card Component",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
@@ -9,7 +9,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-component-link": "^4.0.0",
+    "cf-component-link": "^4.0.1",
     "react": "^0.14.2 || ^15.0.0-0"
   },
   "devDependencies": {

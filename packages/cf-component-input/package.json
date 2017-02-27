@@ -1,7 +1,7 @@
 {
   "name": "cf-component-input",
   "description": "CloudFlare Input Component",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",

@@ -1,7 +1,7 @@
 {
   "name": "cf-component-modal",
   "description": "CloudFlare Modal Component",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
@@ -9,8 +9,8 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-component-heading": "^2.0.0",
-    "cf-component-icon": "^2.0.0",
+    "cf-component-heading": "^2.0.1",
+    "cf-component-icon": "^2.0.1",
     "react": "^0.14.2 || ^15.0.0-0",
     "react-addons-css-transition-group": "^0.14.2 || ^15.0.0-0",
     "react-gateway": "^2.2.0",
