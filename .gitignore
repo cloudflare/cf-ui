@@ -4,4 +4,3 @@ lib
 coverage
 build
 packages/*/npm-debug.log.*
-*.sublime-workspace

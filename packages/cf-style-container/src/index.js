@@ -9,4 +9,4 @@ export const createComponent = (rule, type = 'div', passThroughProps = []) =>
       : passThroughProps
   );
 
-export { ThemeProvider } from 'react-fela';
+export { ThemeProvider } from './ThemeProvider';
