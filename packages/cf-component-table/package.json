@@ -1,7 +1,7 @@
 {
   "name": "cf-component-table",
   "description": "CloudFlare Table Component",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "main": "lib/index.js",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
