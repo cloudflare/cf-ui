@@ -4,19 +4,21 @@ const TablePropTypes = require('./TablePropTypes');
 
 class TableRow extends React.Component {
   render() {
-    let className = `cf-table__row cf-table__row--${this.props.type}`;
+    const { className, type, accent, children, ...props } = this.props;
 
-    if (this.props.accent) {
-      className += ` cf-table__row--accent-${this.props.accent}`;
+    let _className = `cf-table__row cf-table__row--${type}`;
+
+    if (accent) {
+      _className += ` cf-table__row--accent-${accent}`;
     }
 
-    if (this.props.className.trim()) {
-      className += ' ' + this.props.className;
+    if (className && className.trim()) {
+      _className += ' ' + className.trim();
     }
 
     return (
-      <tr className={className}>
-        {this.props.children}
+      <tr className={_className} {...props}>
+        {children}
       </tr>
     );
   }
