@@ -62,14 +62,3 @@ $ git tag -a "[[version]]"
 $ npm publish
 $ git push origin master --follow-tags
 ```
-
-## Managing npm owners
-
-If you want to add, remove, or update owners you can use the scripts in the
-`scripts/` directory which manipulates the NPM_OWNERS file.
-
-```sh
-$ ./scripts/npm-owner-grant.sh  # Add a new owner
-$ ./scripts/npm-owner-revoke.sh # Remove an owner
-$ ./scripts/npm-owner-update.sh # Update the owners to what is in NPM_OWNERS (does not remove any existing owners, only adds missing ones)
-```
