@@ -5,8 +5,6 @@ class TabsPanel extends React.Component {
   render() {
     const selected = this.context.active === this.props.id;
 
-    console.log(`Rendering tab ${this.props.id}`);
-
     return (
       <div
         className="cf-tabs__panel"
