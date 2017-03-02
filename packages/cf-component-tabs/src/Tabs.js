@@ -92,7 +92,7 @@ Tabs.propTypes = {
       label: PropTypes.string.isRequired
     })
   ).isRequired,
-  children: PropTypes.node
+  children: PropTypes.arrayOf(PropTypes.element).isRequired
 };
 
 Tabs.childContextTypes = {
