@@ -33,7 +33,6 @@ describe('TabsPanel', function() {
         role="tabpanel"
         aria-labelledby="tab"
         aria-hidden="true"
-        style={{ display: 'none' }}
       >
         TabsPanel
       </div>
@@ -51,7 +50,6 @@ describe('TabsPanel', function() {
         role="tabpanel"
         aria-labelledby="tab"
         aria-hidden="false"
-        style={{ display: 'block' }}
       >
         TabsPanel
       </div>

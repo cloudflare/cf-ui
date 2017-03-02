@@ -11,7 +11,6 @@ class TabsPanel extends React.Component {
         role="tabpanel"
         aria-labelledby={this.props.id}
         aria-hidden={!selected}
-        style={{ display: selected ? 'block' : 'none' }}
       >
         {this.props.children}
       </div>

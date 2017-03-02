@@ -3,6 +3,16 @@ const { PropTypes } = React;
 const Viewport = require('cf-component-viewport');
 const Select = require('cf-component-select');
 
+const find = (list, condition) => {
+  let foundElement = undefined;
+  list.forEach(element => {
+    if (condition(element)) {
+      foundElement = element;
+    }
+  });
+  return foundElement;
+};
+
 class Tabs extends React.Component {
   getChildContext() {
     return {
@@ -64,7 +74,9 @@ class Tabs extends React.Component {
             })}
           </ul>
         </Viewport>
-        {this.props.children}
+        {find(this.props.children, child => {
+          return child.props.id === this.props.active;
+        })}
       </section>
     );
   }
@@ -79,7 +91,7 @@ Tabs.propTypes = {
       label: PropTypes.string.isRequired
     })
   ).isRequired,
-  children: PropTypes.node
+  children: PropTypes.arrayOf(PropTypes.element).isRequired
 };
 
 Tabs.childContextTypes = {
