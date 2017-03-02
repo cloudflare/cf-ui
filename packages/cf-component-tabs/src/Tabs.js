@@ -8,7 +8,6 @@ const find = (list, condition) => {
   list.forEach(element => {
     if (condition(element)) {
       foundElement = element;
-      return;
     }
   });
   return foundElement;
