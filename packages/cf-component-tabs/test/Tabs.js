@@ -39,18 +39,8 @@ describe('Tabs', function() {
         <div
           className="cf-tabs__panel"
           role="tabpanel"
-          aria-labelledby="1"
-          aria-hidden="true"
-          style={{ display: 'none' }}
-        >
-          One
-        </div>
-        <div
-          className="cf-tabs__panel"
-          role="tabpanel"
           aria-labelledby="2"
           aria-hidden="false"
-          style={{ display: 'block' }}
         >
           Two
         </div>
