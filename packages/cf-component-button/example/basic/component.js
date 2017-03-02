@@ -1,15 +1,19 @@
 import React from 'react';
-import { ThemeProvider } from 'cf-style-container';
+import { applyTheme, ThemeProvider } from 'cf-style-container';
+import { variables } from 'cf-style-const';
 import {
-  ButtonGroup,
-  ButtonGroupTheme,
-  Button,
-  ButtonTheme
+  ButtonGroup as ButtonGroupUnstyled,
+  Button as ButtonUnstyled,
+  ButtonTheme,
+  ButtonGroupTheme
 } from 'cf-component-button';
 
+const Button = applyTheme(ButtonUnstyled, ButtonTheme);
+const ButtonGroup = applyTheme(ButtonGroupUnstyled, ButtonGroupTheme);
+
 export default () => (
-  <ThemeProvider theme={ButtonGroupTheme}>
-    <ThemeProvider theme={ButtonTheme}>
+  <ThemeProvider theme={variables}>
+    <div>
       <ButtonGroup>
         <Button type="primary" onClick={() => console.log('Clicked One!')}>
           Button One
@@ -21,6 +25,11 @@ export default () => (
           Button Three
         </Button>
       </ButtonGroup>
-    </ThemeProvider>
+      <p>
+        <Button type="primary" onClick={() => console.log('Clicked Single!')}>
+          Single Button
+        </Button>
+      </p>
+    </div>
   </ThemeProvider>
 );

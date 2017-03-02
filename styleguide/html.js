@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import variables from '../packages/cf-style-const/src/variables';
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -11,6 +12,9 @@ const Html = ({ body, hash, cssStyles, fontStyles }) => (
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css"
       />
+      <style>
+        {`html { font-size: ${variables.fontSize} }`}
+      </style>
       <style id="stylesheet">{cssStyles}</style>
       <style id="font-stylesheet">{fontStyles}</style>
     </head>
