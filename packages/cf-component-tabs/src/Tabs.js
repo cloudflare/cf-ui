@@ -64,7 +64,9 @@ class Tabs extends React.Component {
             })}
           </ul>
         </Viewport>
-        {this.props.children}
+        {this.props.children.find(child => {
+          return child.props.id === this.props.active;
+        })}
       </section>
     );
   }
