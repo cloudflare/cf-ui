@@ -13,36 +13,104 @@ const getRadius = (borderRadius, group) => {
   return { borderRadius };
 };
 
+const getOpacity = props => {
+  if (props.loading) {
+    return 0.8;
+  }
+  if (props.disabled) {
+    return 0.5;
+  }
+  return 'inherit';
+};
+
+const getLoadingBefore = (fadeZoomIn, loading) => {
+  if (!loading) {
+    return null;
+  }
+  // this needs something better (e.g. a rotating icon)
+  return {
+    '&::before': {
+      content: '"…"',
+      color: 'black',
+      display: 'block',
+      position: 'absolute',
+      top: '0.6em',
+      left: 0,
+      height: '100%',
+      width: '100%',
+      opacity: 1
+    }
+  };
+};
+
 const styles = props => {
   const theme = props.theme;
   return Object.assign(
     {
-      font: theme.font,
+      '&:hover': {
+        backgroundColor: props.loading
+          ? theme.disabledBackground
+          : theme[`${props.type}HoverBackground`],
+        borderColor: theme[`${props.type}HoverBorder`],
+        color: props.loading
+          ? theme.disabledBackground
+          : theme[`${props.type}HoverColor`]
+      },
+      '&:active': {
+        backgroundColor: theme[`${props.type}ActiveBackground`],
+        borderColor: theme[`${props.type}ActiveBorder`],
+        color: theme[`${props.type}ActiveColor`]
+      },
+      '&:focus': {
+        backgroundColor: props.loading
+          ? theme.backgroundColor
+          : theme[`${props.type}Background`],
+        boxShadow: `inset 0px 0px 0px ${theme.borderSize} ${theme[`${props.type}focusOutlineColor`]}`,
+        color: props.loading
+          ? theme.disabledBackground
+          : theme[`${props.type}FocusColor`],
+        outline: props.loading ? 'none' : 'inherit'
+      },
+      '&[title]': {
+        pointerEvents: props.disabled ? 'auto' : 'none'
+      },
+      backgroundColor: props.loading
+        ? theme.disabledBackground
+        : theme[`${props.type}Background`],
+      borderBottom: theme.borderBottom,
+      borderBottomWidth: theme.borderBottomWidth,
+      borderColor: theme[`${props.type}Border`],
+      borderLeft: props.group && props.group !== 'first' ? 0 : theme.borderLeft,
+      borderRight: theme.borderRight,
+      borderStyle: theme.borderStyle,
+      borderTop: theme.borderTop,
+      borderWidth: theme.borderWidth,
+      color: props.loading
+        ? theme.disabledBackground
+        : theme[`${props.type}Color`],
+      cursor: props.disabled || props.loading ? 'default' : theme.cursor,
+      display: theme.display,
+      fontFamily: theme.fontFamily,
+      fontSize: theme.fontSize,
       fontWeight: theme.fontWeight,
-      borderTop: theme.border,
-      borderLeft: props.group && props.group !== 'first' ? 0 : theme.border,
-      borderRight: theme.border,
-      borderBottom: theme.border,
-      paddingTop: theme.paddingTop,
-      paddingRight: theme.paddingRight,
-      paddingBottom: theme.paddingBottom,
-      paddingLeft: theme.paddingLeft,
-      marginTop: props.group ? 0 : theme.marginTop,
-      marginRight: props.group ? 0 : theme.marginRight,
+      lineHeight: theme.lineHeight,
       marginBottom: props.group ? 0 : theme.marginBottom,
       marginLeft: props.group ? 0 : theme.marginLeft,
-      cursor: theme.cursor,
-      color: theme.color,
-      borderWidth: theme.borderWidth,
-      borderStyle: theme.borderStyle,
-      borderColor: theme.borderColor,
-      borderBottomWidth: theme.borderBottomWidth,
-      boxShadow: theme.boxShadow,
-      background: theme[
-        `background${props.type.charAt(0).toUpperCase() + props.type.slice(1)}`
-      ]
+      marginRight: props.group ? 0 : theme.marginRight,
+      marginTop: props.group ? 0 : theme.marginTop,
+      opacity: getOpacity(props),
+      paddingBottom: theme.paddingBottom,
+      paddingLeft: theme.paddingLeft,
+      paddingRight: theme.paddingRight,
+      paddingTop: theme.paddingTop,
+      pointerEvents: props.disabled ? 'none' : 'auto',
+      position: theme.position,
+      textAlign: theme.textAlign,
+      transition: theme.transition,
+      userSelect: theme.userSelect
     },
-    getRadius(theme.borderRadius, props.group)
+    getRadius(theme.borderRadius, props.group),
+    getLoadingBefore(theme.fadeZoomIn, props.loading)
   );
 };
 

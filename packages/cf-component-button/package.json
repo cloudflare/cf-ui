@@ -10,7 +10,8 @@
   },
   "dependencies": {
     "cf-style-container": "^0.0.2",
-    "react": "^0.14.2 || ^15.0.0-0"
+    "css-color-function": "^1.3.0",
+    "react": "^15.0.0-0"
   },
   "devDependencies": {
     "assert-equal-jsx": "^1.0.0",

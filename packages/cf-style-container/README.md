@@ -2,16 +2,10 @@
 
 > Cloudflare Style Container
 
-Description.
+Set of high order components for fela based applications.
 
 ## Installation
 
 ```sh
 $ npm install cf-style-container
-```
-
-## Usage
-
-```js
-const Container = require('cf-style-container');
 ```

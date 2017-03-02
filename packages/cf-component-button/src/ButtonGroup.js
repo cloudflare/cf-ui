@@ -5,7 +5,9 @@ const styles = props => {
   const theme = props.theme;
   return {
     display: theme.display,
-    position: theme.position
+    position: theme.position,
+    verticalAlign: theme.verticalAlign,
+    whiteSpace: theme.whiteSpace
   };
 };
 
