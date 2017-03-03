@@ -24,6 +24,10 @@ class Toggle extends React.Component {
       className += ' cf-toggle--disabled';
     }
 
+    if (this.props.centered) {
+        className += ' cf-toggle--centered';
+    }
+
     return (
       <label htmlFor={this.props.name} className={className}>
         <input
@@ -56,7 +60,8 @@ Toggle.propTypes = {
   onChange: PropTypes.func,
   onFocus: PropTypes.func,
   onBlur: PropTypes.func,
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
+  centered: PropTypes.bool
 };
 
 module.exports = Toggle;

@@ -35,6 +35,15 @@ class Component extends React.Component {
           value={this.state.toggleValue}
           onChange={this.handleToggle.bind(this)}
         />
+
+      <p>centered</p>
+        <Toggle
+          centered
+          label="Centered Toggle"
+          name="example-centered"
+          value={this.state.toggleValue}
+          onChange={this.handleToggle.bind(this)}
+        />
       </div>
     );
   }
