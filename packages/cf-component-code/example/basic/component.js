@@ -1,8 +1,7 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { Code, CodeBlock } from '../../src/index';
+import { Code, CodeBlock } from 'cf-component-code';
 
-class Component extends React.Component {
+class CodeComponent extends React.Component {
   render() {
     return (
       <div>
@@ -13,4 +12,4 @@ class Component extends React.Component {
   }
 }
 
-render(<Component />, document.getElementById('cf-component-code--basic'));
+export default CodeComponent;

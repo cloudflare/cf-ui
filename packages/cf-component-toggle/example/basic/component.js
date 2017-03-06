@@ -1,8 +1,7 @@
 import React from 'react';
-import { render } from 'react-dom';
-import Toggle from '../../src/index';
+import Toggle from 'cf-component-toggle';
 
-class Component extends React.Component {
+class ToggleComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -39,4 +38,4 @@ class Component extends React.Component {
   }
 }
 
-render(<Component />, document.getElementById('cf-component-toggle--basic'));
+export default ToggleComponent;

@@ -1,8 +1,7 @@
 import React from 'react';
-import { render } from 'react-dom';
 import { Radio, RadioGroup } from '../../src/index';
 
-class Component extends React.Component {
+class RadioComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -65,4 +64,4 @@ class Component extends React.Component {
   }
 }
 
-render(<Component />, document.getElementById('cf-component-radio--basic'));
+export default RadioComponent;

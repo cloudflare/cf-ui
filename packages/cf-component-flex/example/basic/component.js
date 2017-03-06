@@ -1,8 +1,7 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { Flex, FlexItem } from '../../src/index';
+import { Flex, FlexItem } from 'cf-component-flex';
 
-class Component extends React.Component {
+class FlexComponent extends React.Component {
   render() {
     return (
       <div>
@@ -28,4 +27,4 @@ class Component extends React.Component {
   }
 }
 
-render(<Component />, document.getElementById('cf-component-flex--basic'));
+export default FlexComponent;

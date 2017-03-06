@@ -1,5 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
 import {
   Modal,
   ModalHeader,
@@ -8,12 +7,12 @@ import {
   ModalBody,
   ModalFooter,
   ModalActions
-} from '../../src/index';
+} from 'cf-component-modal';
 import { GatewayDest, GatewayProvider } from 'react-gateway';
 import ReactModal2 from 'react-modal2';
 import { Button } from 'cf-component-button';
 
-class Component extends React.Component {
+class ModalComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -83,13 +82,13 @@ class Application extends React.Component {
   }
 }
 
-const root = document.getElementById('cf-component-modal--basic');
-
+const root = document.body;
 ReactModal2.getApplicationElement = () => root;
 
-render(
+const finalComponent = () => (
   <Application>
-    <Component />
-  </Application>,
-  root
+    <ModalComponent />
+  </Application>
 );
+
+export default finalComponent;

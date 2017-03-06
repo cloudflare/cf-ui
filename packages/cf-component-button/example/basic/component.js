@@ -11,7 +11,7 @@ import {
 const Button = applyTheme(ButtonUnstyled, ButtonTheme);
 const ButtonGroup = applyTheme(ButtonGroupUnstyled, ButtonGroupTheme);
 
-export default () => (
+const ButtonComponent = () => (
   <ThemeProvider theme={variables}>
     <div>
       <ButtonGroup>
@@ -33,3 +33,5 @@ export default () => (
     </div>
   </ThemeProvider>
 );
+
+export default ButtonComponent;

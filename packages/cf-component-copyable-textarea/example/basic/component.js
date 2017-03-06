@@ -1,8 +1,7 @@
 import React from 'react';
-import { render } from 'react-dom';
-import CopyableTextarea from '../../src/index';
+import CopyableTextarea from 'cf-component-copyable-textarea';
 
-class Component extends React.Component {
+class CopyableTextareaComponent extends React.Component {
   render() {
     return (
       <CopyableTextarea
@@ -16,7 +15,4 @@ class Component extends React.Component {
   }
 }
 
-render(
-  <Component />,
-  document.getElementById('cf-component-copyable-textarea--basic')
-);
+export default CopyableTextareaComponent;

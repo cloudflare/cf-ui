@@ -1,8 +1,7 @@
 import React from 'react';
-import { render } from 'react-dom';
-import Textarea from '../../src/index';
+import Textarea from 'cf-component-textarea';
 
-class Component extends React.Component {
+class TextareaComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -27,4 +26,4 @@ class Component extends React.Component {
   }
 }
 
-render(<Component />, document.getElementById('cf-component-textarea--basic'));
+export default TextareaComponent;

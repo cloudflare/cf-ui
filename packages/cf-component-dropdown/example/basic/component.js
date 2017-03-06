@@ -1,13 +1,16 @@
 import React from 'react';
-import { render } from 'react-dom';
 import { handleRoutes } from 'cf-util-route-handler';
 
 handleRoutes(route => console.log(route));
 
 import { Button, ButtonGroup } from 'cf-component-button';
-import { Dropdown, DropdownLink, DropdownSeparator } from '../../src/index';
+import {
+  Dropdown,
+  DropdownLink,
+  DropdownSeparator
+} from 'cf-component-dropdown';
 
-class Component extends React.Component {
+class DropdownComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -58,4 +61,4 @@ class Component extends React.Component {
   }
 }
 
-render(<Component />, document.getElementById('cf-component-dropdown--basic'));
+export default DropdownComponent;

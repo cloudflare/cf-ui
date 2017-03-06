@@ -1,15 +1,10 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { Page, PageHeader } from '../../src/index';
+import { Page, PageHeader } from 'cf-component-page';
 
-class Component extends React.Component {
-  render() {
-    return (
-      <Page>
-        <PageHeader title="Title" subtitle="Subtitle" />
-      </Page>
-    );
-  }
-}
+const PageComponent = () => (
+  <Page>
+    <PageHeader title="Title" subtitle="Subtitle" />
+  </Page>
+);
 
-render(<Component />, document.getElementById('cf-component-page--basic'));
+export default PageComponent;

@@ -1,15 +1,10 @@
 import React from 'react';
-import { render } from 'react-dom';
-import Loading from '../../src/index';
+import Loading from 'cf-component-loading';
 
-class Component extends React.Component {
-  render() {
-    return (
-      <div>
-        <Loading />
-      </div>
-    );
-  }
-}
+const LoadingComponent = () => (
+  <div>
+    <Loading />
+  </div>
+);
 
-render(<Component />, document.getElementById('cf-component-loading--basic'));
+export default LoadingComponent;
