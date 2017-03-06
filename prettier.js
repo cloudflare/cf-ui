@@ -11,6 +11,8 @@ const files = glob.sync(args[0] ? args[0] : '**/*.js', {
     'build/**',
     'coverage/**',
     'packages/*/lib/**',
+    'packages/*/es/**',
+    'packages/*/dist/**',
     'docs/**'
   ]
 });
