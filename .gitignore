@@ -4,3 +4,5 @@ lib
 coverage
 build
 packages/*/npm-debug.log.*
+es
+dist
