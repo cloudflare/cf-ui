@@ -9,7 +9,8 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "lodash": "^4.1.0"
+    "lodash": "^4.1.0",
+    "promisescript": "^1.2.0"
   },
   "devDependencies": {}
 }
