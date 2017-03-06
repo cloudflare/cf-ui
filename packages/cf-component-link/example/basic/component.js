@@ -1,8 +1,7 @@
 import React from 'react';
-import { render } from 'react-dom';
 import { handleRoutes } from 'cf-util-route-handler';
 import Backbone from 'backbone';
-import Link from '../../src/index';
+import Link from 'cf-component-link';
 
 // setup the router
 handleRoutes(function(url) {
@@ -18,7 +17,7 @@ new Backbone.Router({
 });
 Backbone.history.start();
 
-class Component extends React.Component {
+class LinkComponent extends React.Component {
   handleClick() {
     console.log('handleClick!');
   }
@@ -45,4 +44,4 @@ class Component extends React.Component {
   }
 }
 
-render(<Component />, document.getElementById('cf-component-link--basic'));
+export default LinkComponent;

@@ -1,15 +1,14 @@
 import React from 'react';
-import { render } from 'react-dom';
 import {
   NotificationList,
   Notification,
   NotificationGlobalContainer
-} from '../../src/index';
+} from 'cf-component-notifications';
 import { Button } from 'cf-component-button';
 
 let UNIQUE_ID = 0;
 
-class Component extends React.Component {
+class NofiticationsComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -113,7 +112,4 @@ class Component extends React.Component {
   }
 }
 
-render(
-  <Component />,
-  document.getElementById('cf-component-notifications--basic')
-);
+export default NofiticationsComponent;

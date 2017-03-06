@@ -1,8 +1,7 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { Checkbox, CheckboxGroup } from '../../src/index';
+import { Checkbox, CheckboxGroup } from 'cf-component-checkbox';
 
-class Component extends React.Component {
+class CheckboxComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -67,4 +66,4 @@ class Component extends React.Component {
   }
 }
 
-render(<Component />, document.getElementById('cf-component-checkbox--basic'));
+export default CheckboxComponent;

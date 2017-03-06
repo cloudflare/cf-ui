@@ -1,9 +1,8 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { Pagination, PaginationItem } from '../../src/index';
+import { Pagination, PaginationItem } from 'cf-component-pagination';
 import Icon from 'cf-component-icon';
 
-class Component extends React.Component {
+class PaginationComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -71,7 +70,4 @@ class Component extends React.Component {
   }
 }
 
-render(
-  <Component />,
-  document.getElementById('cf-component-pagination--basic')
-);
+export default PaginationComponent;

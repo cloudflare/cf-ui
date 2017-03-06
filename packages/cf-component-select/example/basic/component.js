@@ -1,8 +1,7 @@
 import React from 'react';
-import { render } from 'react-dom';
-import Select from '../../src/index';
+import Select from 'cf-component-select';
 
-class Component extends React.Component {
+class SelectComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -76,4 +75,4 @@ class Component extends React.Component {
   }
 }
 
-render(<Component />, document.getElementById('cf-component-select--basic'));
+export default SelectComponent;

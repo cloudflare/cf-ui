@@ -1,8 +1,7 @@
 import React from 'react';
-import { render } from 'react-dom';
-import DynamicContent from '../../src/index';
+import DynamicContent from 'cf-component-dynamic-content';
 
-class Component extends React.Component {
+class DynamicContentComponent extends React.Component {
   render() {
     return (
       <DynamicContent
@@ -14,7 +13,4 @@ class Component extends React.Component {
   }
 }
 
-render(
-  <Component />,
-  document.getElementById('cf-component-dynamic-content--basic')
-);
+export default DynamicContentComponent;

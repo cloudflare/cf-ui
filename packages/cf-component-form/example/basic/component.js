@@ -1,5 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
 import {
   Form,
   FormHeader,
@@ -7,14 +6,14 @@ import {
   FormFieldset,
   FormLabel,
   FormFieldError
-} from '../../src/index';
+} from 'cf-component-form';
 import { Flex, FlexItem } from 'cf-component-flex';
 import { Button } from 'cf-component-button';
 import Input from 'cf-component-input';
 import Select from 'cf-component-select';
 import Textarea from 'cf-component-textarea';
 
-class Component extends React.Component {
+class FormComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -121,4 +120,4 @@ class Component extends React.Component {
   }
 }
 
-render(<Component />, document.getElementById('cf-component-form--basic'));
+export default FormComponent;

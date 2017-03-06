@@ -1,5 +1,4 @@
 import React from 'react';
-import { render } from 'react-dom';
 import {
   Card,
   CardContent,
@@ -7,10 +6,10 @@ import {
   CardDrawers,
   CardMessages,
   CardSection
-} from '../../src/index';
+} from 'cf-component-card';
 import { Button } from 'cf-component-button';
 
-class Component extends React.Component {
+class CardComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -66,4 +65,4 @@ class Component extends React.Component {
   }
 }
 
-render(<Component />, document.getElementById('cf-component-card--basic'));
+export default CardComponent;

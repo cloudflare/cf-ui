@@ -1,15 +1,12 @@
 import React from 'react';
-import { render } from 'react-dom';
-import { createStore, combineReducers, applyMiddleware } from 'redux';
-import { Provider, connect } from 'react-redux';
-import { default as thunk } from 'redux-thunk';
-import { TableBuilder, tableReducer, tableActions } from '../../src/index';
+import { connect } from 'react-redux';
+import { TableBuilder, tableReducer, tableActions } from 'cf-builder-table';
 import { TableCell } from 'cf-component-table';
 import { Button } from 'cf-component-button';
 
 const EXAMPLE_TABLE = 'EXAMPLE_TABLE';
 
-class Component extends React.Component {
+class BuilderTable extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -85,17 +82,4 @@ class Component extends React.Component {
   }
 }
 
-const ConnectedComponent = connect(() => ({}))(Component);
-
-const reducer = combineReducers({
-  tables: tableReducer
-});
-
-const store = createStore(reducer, {}, applyMiddleware(thunk));
-
-render(
-  <Provider store={store}>
-    <ConnectedComponent />
-  </Provider>,
-  document.getElementById('cf-builder-table--basic')
-);
+export default connect(() => ({}))(BuilderTable);

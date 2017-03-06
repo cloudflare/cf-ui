@@ -1,8 +1,7 @@
 import React from 'react';
-import { render } from 'react-dom';
-import Input from '../../src/index';
+import Input from 'cf-component-icon';
 
-class Component extends React.Component {
+class IconComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -38,4 +37,4 @@ class Component extends React.Component {
   }
 }
 
-render(<Component />, document.getElementById('cf-component-input--basic'));
+export default IconComponent;
