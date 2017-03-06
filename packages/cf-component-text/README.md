@@ -1,6 +1,6 @@
 # cf-component-text
 
-> CloudFlare Text Component
+> Cloudflare Text Component
 
 ## Installation
 
@@ -15,7 +15,7 @@ export default class Application extends React.Component {
   render() {
     return (
       <div>
-        <h1>CloudFlare Text Component Example</h1>
+        <h1>Cloudflare Text Component Example</h1>
 
         <p>Specify a <code>size</code></p>
         <Text size="normal">Hello World</Text>

@@ -2,7 +2,7 @@
 
 In this directory is a collection of documents that cover a number of the
 technical and architectural decisions that have been made while building
-front-end applications at CloudFlare.
+front-end applications at Cloudflare.
 
 The goal of this handbook is to both document internal best practices and share
 our opinions externally by publishing these documents in the open.

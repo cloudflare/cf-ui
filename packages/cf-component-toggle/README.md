@@ -1,6 +1,6 @@
 # cf-component-toggle
 
-> CloudFlare Toggle Component
+> Cloudflare Toggle Component
 
 ## Installation
 

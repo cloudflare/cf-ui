@@ -1,6 +1,6 @@
 # cf-util-markdown
 
-> CloudFlare Markdown Util
+> Cloudflare Markdown Util
 
 This utility library is a simple interface that hides away the markdown
 implementation being used so that it can easily be swapped out for something

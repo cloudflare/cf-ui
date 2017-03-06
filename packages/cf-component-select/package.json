@@ -1,6 +1,6 @@
 {
   "name": "cf-component-select",
-  "description": "CloudFlare Select Component",
+  "description": "Cloudflare Select Component",
   "version": "2.2.1",
   "main": "lib/index.js",
   "module": "es/index.js",

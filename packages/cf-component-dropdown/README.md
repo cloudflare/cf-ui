@@ -1,6 +1,6 @@
 # cf-component-dropdown
 
-> CloudFlare Dropdown Component
+> Cloudflare Dropdown Component
 
 ## Installation
 
@@ -34,7 +34,7 @@ class Application extends React.Component {
   render() {
     return (
       <div>
-        <h1>CloudFlare Dropdown Component Example</h1>
+        <h1>Cloudflare Dropdown Component Example</h1>
 
         <ButtonGroup>
           <Button type="primary" onClick={() => this.setState({ dropdownOpen: true })}>

@@ -1,6 +1,6 @@
 {
   "name": "cf-component-copyable-textarea",
-  "description": "CloudFlare Copyable Textarea Component",
+  "description": "Cloudflare Copyable Textarea Component",
   "version": "2.2.4",
   "main": "lib/index.js",
   "module": "es/index.js",

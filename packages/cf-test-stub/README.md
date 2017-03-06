@@ -1,6 +1,6 @@
 # cf-test-stub
 
-> CloudFlare Stub Test Util
+> Cloudflare Stub Test Util
 
 This module allows you to create stubs that get automatically restored between
 tests in Mocha.

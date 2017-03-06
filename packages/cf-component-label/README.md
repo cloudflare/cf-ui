@@ -1,6 +1,6 @@
 # cf-component-label
 
-> CloudFlare Label Component
+> Cloudflare Label Component
 
 ## Installation
 

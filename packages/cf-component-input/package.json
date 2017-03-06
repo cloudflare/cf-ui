@@ -1,6 +1,6 @@
 {
   "name": "cf-component-input",
-  "description": "CloudFlare Input Component",
+  "description": "Cloudflare Input Component",
   "version": "3.0.1",
   "main": "lib/index.js",
   "module": "es/index.js",

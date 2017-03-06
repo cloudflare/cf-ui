@@ -1,6 +1,6 @@
 # cf-component-input
 
-> CloudFlare Input Component
+> Cloudflare Input Component
 
 ## Installation
 
@@ -33,7 +33,7 @@ class Application extends React.Component {
   render() {
     return (
       <div>
-        <h1>CloudFlare Input Component Example</h1>
+        <h1>Cloudflare Input Component Example</h1>
 
         <Input
           name="example"

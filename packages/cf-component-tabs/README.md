@@ -1,6 +1,6 @@
 # cf-component-tabs
 
-> CloudFlare Tabs Component
+> Cloudflare Tabs Component
 
 ## Installation
 

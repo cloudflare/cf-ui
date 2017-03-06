@@ -1,6 +1,6 @@
 {
   "name": "cf-util-markdown",
-  "description": "CloudFlare Markdown Util",
+  "description": "Cloudflare Markdown Util",
   "version": "3.0.0",
   "main": "lib/index.js",
   "module": "es/index.js",

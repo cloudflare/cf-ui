@@ -1,6 +1,6 @@
 {
   "name": "cf-component-flex",
-  "description": "CloudFlare Flex Component",
+  "description": "Cloudflare Flex Component",
   "version": "3.0.1",
   "main": "lib/index.js",
   "module": "es/index.js",

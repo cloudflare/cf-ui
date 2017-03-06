@@ -1,6 +1,6 @@
 {
   "name": "cf-component-typography",
-  "description": "CloudFlare Typography Component",
+  "description": "Cloudflare Typography Component",
   "version": "2.0.1",
   "main": "lib/index.js",
   "module": "es/index.js",

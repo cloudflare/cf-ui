@@ -1,6 +1,6 @@
 {
   "name": "cf-util-http-file",
-  "description": "CloudFlare HTTP File Util",
+  "description": "Cloudflare HTTP File Util",
   "version": "4.0.1",
   "main": "lib/index.js",
   "module": "es/index.js",

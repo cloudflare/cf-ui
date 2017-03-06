@@ -487,7 +487,7 @@ export function examplesBuildHtml(cb) {
     '<head>' +
     '<meta charset="utf-8">' +
     '<meta name="viewport" content="width=device-width">' +
-    '<title>CloudFlare Components</title>' +
+    '<title>Cloudflare Components</title>' +
     '<link rel="stylesheet" href="base.css">' +
     '<link rel="stylesheet" href="' +
     styles +

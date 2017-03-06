@@ -1,6 +1,6 @@
 {
   "name": "cf-component-dynamic-content",
-  "description": "CloudFlare Dynamic Content Component",
+  "description": "Cloudflare Dynamic Content Component",
   "version": "2.0.1",
   "main": "lib/index.js",
   "module": "es/index.js",

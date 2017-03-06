@@ -13,7 +13,7 @@ version them independently so apps can move at different speeds.
 
 ### Thinking
 
-We have a bunch of separate JavaScript applications at CloudFlare both
+We have a bunch of separate JavaScript applications at Cloudflare both
 internal and external.
 
 Sharing code between all these applications is important– we don't want to

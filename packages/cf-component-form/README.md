@@ -1,6 +1,6 @@
 # cf-component-form
 
-> CloudFlare Form Component
+> Cloudflare Form Component
 
 ## Installation
 

@@ -1,6 +1,6 @@
 {
   "name": "cf-util-text",
-  "description": "CloudFlare Text Util",
+  "description": "Cloudflare Text Util",
   "version": "2.0.1",
   "main": "lib/index.js",
   "module": "es/index.js",

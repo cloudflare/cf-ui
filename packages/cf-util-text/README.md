@@ -1,6 +1,6 @@
 # cf-util-text
 
-> CloudFlare Text Util
+> Cloudflare Text Util
 
 ## Installation
 

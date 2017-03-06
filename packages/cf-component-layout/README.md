@@ -1,6 +1,6 @@
 # cf-component-layout
 
-> CloudFlare Layout Component
+> Cloudflare Layout Component
 
 ## Installation
 

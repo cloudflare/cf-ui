@@ -1,6 +1,6 @@
 # cf-test-focus
 
-> CloudFlare Focus Test Util
+> Cloudflare Focus Test Util
 
 ## Installation
 

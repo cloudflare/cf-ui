@@ -1,6 +1,6 @@
 # cf-component-link
 
-> CloudFlare Link Component
+> Cloudflare Link Component
 
 ## Installation
 
@@ -18,7 +18,7 @@ class Application extends React.Component {
   render() {
     return (
       <div>
-        <h1>CloudFlare Link Component Example</h1>
+        <h1>Cloudflare Link Component Example</h1>
 
         <p>Create a <code>Link</code> with a <code>to</code> prop:</p>
         <Link to="/">Link to /</Link>

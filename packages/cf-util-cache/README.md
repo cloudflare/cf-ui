@@ -1,6 +1,6 @@
 # cf-util-cache
 
-> CloudFlare Cache Util
+> Cloudflare Cache Util
 
 ## Installation
 

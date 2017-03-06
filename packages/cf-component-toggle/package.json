@@ -1,6 +1,6 @@
 {
   "name": "cf-component-toggle",
-  "description": "CloudFlare Toggle Component",
+  "description": "Cloudflare Toggle Component",
   "version": "2.0.2",
   "main": "lib/index.js",
   "module": "es/index.js",

@@ -1,6 +1,6 @@
 # cf-component-radio
 
-> CloudFlare Radio Component
+> Cloudflare Radio Component
 
 ## Installation
 
@@ -37,7 +37,7 @@ class Application extends React.Component {
   render() {
     return (
       <div>
-        <h1>CloudFlare Radio Component Example</h1>
+        <h1>Cloudflare Radio Component Example</h1>
 
         <p>You can create them individually with <code>Radio</code></p>
 

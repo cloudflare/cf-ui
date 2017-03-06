@@ -1,6 +1,6 @@
 # cf-component-typography
 
-> CloudFlare Typography Component
+> Cloudflare Typography Component
 
 ## Installation
 
@@ -34,7 +34,7 @@ class Application extends React.Component {
   render() {
     return (
       <div>
-        <h1>CloudFlare Typography Component Example</h1>
+        <h1>Cloudflare Typography Component Example</h1>
 
         <Abbr title="Abbreviation">Abbr</Abbr>
         <Cite>Cite</Cite>

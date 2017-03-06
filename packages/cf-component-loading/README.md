@@ -1,6 +1,6 @@
 # cf-component-loading
 
-> CloudFlare Loading Component
+> Cloudflare Loading Component
 
 ## Installation
 

@@ -1,6 +1,6 @@
 # cf-util-adwords
 
-> CloudFlare Google AdWords Util
+> Cloudflare Google AdWords Util
 
 ## Installation
 

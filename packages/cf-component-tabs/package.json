@@ -1,6 +1,6 @@
 {
   "name": "cf-component-tabs",
-  "description": "CloudFlare Tabs Component",
+  "description": "Cloudflare Tabs Component",
   "version": "5.0.0",
   "main": "lib/index.js",
   "module": "es/index.js",

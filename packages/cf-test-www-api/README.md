@@ -1,6 +1,6 @@
 # cf-test-www-api
 
-> CloudFlare WWW API Test Util
+> Cloudflare WWW API Test Util
 
 ## Installation
 

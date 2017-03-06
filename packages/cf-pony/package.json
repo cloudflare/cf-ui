@@ -1,6 +1,6 @@
 {
   "name": "cf-pony",
-  "description": "CloudFlare ponyfills and utility methods",
+  "description": "Cloudflare ponyfills and utility methods",
   "version": "1.1.0",
   "main": "lib/index.js",
   "module": "es/index.js",

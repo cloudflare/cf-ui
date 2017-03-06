@@ -1,6 +1,6 @@
 # cf-component-copyable-textarea
 
-> CloudFlare Copyable Textarea Component
+> Cloudflare Copyable Textarea Component
 
 ## Installation
 

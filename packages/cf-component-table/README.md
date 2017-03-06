@@ -1,6 +1,6 @@
 # cf-component-table
 
-> CloudFlare Table Component
+> Cloudflare Table Component
 
 ## Installation
 
@@ -32,7 +32,7 @@ export default class Application extends React.Component {
 
     return (
       <div>
-        <h1>CloudFlare Table Component Example</h1>
+        <h1>Cloudflare Table Component Example</h1>
         <Table>
           <TableHead>
             <TableRow>

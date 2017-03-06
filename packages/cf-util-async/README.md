@@ -1,6 +1,6 @@
 # cf-util-async
 
-> CloudFlare Async Util
+> Cloudflare Async Util
 
 ## Installation
 

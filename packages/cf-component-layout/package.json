@@ -1,6 +1,6 @@
 {
   "name": "cf-component-layout",
-  "description": "CloudFlare Layout Component",
+  "description": "Cloudflare Layout Component",
   "version": "1.0.1",
   "main": "lib/index.js",
   "module": "es/index.js",

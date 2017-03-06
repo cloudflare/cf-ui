@@ -1,6 +1,6 @@
 # cf-test-store
 
-> CloudFlare Store Test Util
+> Cloudflare Store Test Util
 
 ## Installation
 

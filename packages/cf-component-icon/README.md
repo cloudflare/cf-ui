@@ -1,6 +1,6 @@
 # cf-component-icon
 
-> CloudFlare Icon Component
+> Cloudflare Icon Component
 
 ## Installation
 

@@ -1,6 +1,6 @@
 # cf-component-heading
 
-> CloudFlare Heading Component
+> Cloudflare Heading Component
 
 ## Installation
 

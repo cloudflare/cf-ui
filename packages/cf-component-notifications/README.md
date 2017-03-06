@@ -1,6 +1,6 @@
 # cf-component-notifications
 
-> CloudFlare Notifications Component
+> Cloudflare Notifications Component
 
 ## Installation
 
