@@ -13,7 +13,7 @@
  *
  * 2) Wrap the method like this:
  *
- *   import arrayIncludes = wrapWarning('arrayIncludes', 'Array.prototype.includes', require('array-includes'));
+ *   exports.arrayIncludes = wrapWarning('arrayIncludes', 'Array.prototype.includes', require('array-includes'));
  */
 
 import setImmediate from './setImmediate';

@@ -21,7 +21,7 @@ function maybeParse(item) {
   }
 }
 
-export function get(key) {
+function get(key) {
   const name = buildKey(key);
   const { value, expires } = maybeParse(localStorage.getItem(name));
   const expired = expires && now() > expires;
@@ -39,7 +39,7 @@ export function get(key) {
   return value;
 }
 
-export function set(key, value, expires = false) {
+function set(key, value, expires = false) {
   const name = buildKey(key);
   logInfo(`Setting item: ${name}`);
   localStorage.setItem(
@@ -51,16 +51,18 @@ export function set(key, value, expires = false) {
   );
 }
 
-export function remove(key) {
+function remove(key) {
   const name = buildKey(key);
   logInfo(`Removing item: ${name}`);
   localStorage.removeItem(key);
 }
 
-export function has(key) {
+function has(key) {
   return get(key) !== undefined;
 }
 
-export function clear() {
+function clear() {
   localStorage.clear();
 }
+
+export default { get, set, remove, has, clear };

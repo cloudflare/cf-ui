@@ -1,6 +1,6 @@
 const text = {};
 
-export function getText(id) {
+function getText(id) {
   if (!text[id]) {
     console.error('Missing text for: "' + id + '"');
     return id;
@@ -9,6 +9,8 @@ export function getText(id) {
   return text[id];
 }
 
-export function setText(id, value) {
+function setText(id, value) {
   text[id] = value;
 }
+
+export default { getText, setText };
