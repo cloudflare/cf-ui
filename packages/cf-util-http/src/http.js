@@ -1,9 +1,9 @@
 import superagent from 'superagent';
 import createLogger from 'cf-util-logger';
 
-import logRequest from 'http:request';
-import logError from 'http:error';
-import logSuccess from 'http:success';
+const logRequest = createLogger('http:request');
+const logError = createLogger('http:error');
+const logSuccess = createLogger('http:success');
 
 // Mapping of http request types to superagent methods.
 const METHODS = {

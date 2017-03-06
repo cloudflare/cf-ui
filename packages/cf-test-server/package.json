@@ -9,7 +9,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "sinon": "^1.17.4"
+    "sinon": "^2.0.0-pre.6"
   },
   "devDependencies": {}
 }
