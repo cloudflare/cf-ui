@@ -1,6 +1,6 @@
-const Tooltip = require('tether-tooltip');
+import Tooltip from 'tether-tooltip';
 
-function createTooltip(el, content, position) {
+export default function createTooltip(el, content, position) {
   const instance = new Tooltip({
     target: el,
     classes: '',
@@ -12,5 +12,3 @@ function createTooltip(el, content, position) {
     instance.destroy();
   };
 }
-
-module.exports = createTooltip;

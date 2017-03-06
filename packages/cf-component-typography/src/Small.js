@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class Small extends React.Component {
   render() {
@@ -15,4 +14,4 @@ Small.propTypes = {
   children: PropTypes.node
 };
 
-module.exports = Small;
+export default Small;

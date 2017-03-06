@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class CardMessages extends React.Component {
   render() {
@@ -30,4 +29,4 @@ CardMessages.propTypes = {
   ).isRequired
 };
 
-module.exports = CardMessages;
+export default CardMessages;

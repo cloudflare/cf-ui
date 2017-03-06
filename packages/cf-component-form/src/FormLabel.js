@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class FormLabel extends React.Component {
   render() {
@@ -22,4 +21,4 @@ FormLabel.propTypes = {
   children: PropTypes.node
 };
 
-module.exports = FormLabel;
+export default FormLabel;

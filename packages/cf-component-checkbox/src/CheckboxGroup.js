@@ -1,7 +1,6 @@
-const React = require('react');
-const { PropTypes } = React;
-const Checkbox = require('./Checkbox');
-const includes = require('lodash/includes');
+import React, { PropTypes } from 'react';
+import Checkbox from './Checkbox';
+import includes from 'lodash/includes';
 
 class CheckboxGroup extends React.Component {
   constructor(props) {
@@ -60,4 +59,4 @@ CheckboxGroup.propTypes = {
   ).isRequired
 };
 
-module.exports = CheckboxGroup;
+export default CheckboxGroup;

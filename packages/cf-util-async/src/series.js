@@ -1,4 +1,4 @@
-function series(funcs, callback) {
+export default function series(funcs, callback) {
   const results = [];
   let index = 0;
 
@@ -30,5 +30,3 @@ function series(funcs, callback) {
 
   next();
 }
-
-module.exports = series;

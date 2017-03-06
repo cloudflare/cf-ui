@@ -1,1 +1,3 @@
-exports.createMockStore = require('./createMockStore');
+import createMockStore from './createMockStore';
+
+export { createMockStore };

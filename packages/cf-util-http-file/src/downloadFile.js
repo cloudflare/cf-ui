@@ -1,7 +1,7 @@
-const { get: httpGet } = require('cf-util-http');
-const saveFile = require('./saveFile');
+import { get as httpGet } from 'cf-util-http';
+import saveFile from './saveFile';
 
-function downloadFile(url, filename, callback) {
+export default function downloadFile(url, filename, callback) {
   return httpGet(url, null, (err, res) => {
     if (err) {
       callback(err);
@@ -11,5 +11,3 @@ function downloadFile(url, filename, callback) {
     }
   });
 }
-
-module.exports = downloadFile;

@@ -1,6 +1,5 @@
-const React = require('react');
-const { PropTypes } = React;
-const Textarea = require('cf-component-textarea');
+import React, { PropTypes } from 'react';
+import Textarea from 'cf-component-textarea';
 
 class CopyableTextarea extends React.Component {
   constructor(props) {
@@ -77,4 +76,4 @@ CopyableTextarea.defaultProps = {
   pressCommandOrCtrlCToCopyText: 'Press Command/Ctrl+C to copy'
 };
 
-module.exports = CopyableTextarea;
+export default CopyableTextarea;

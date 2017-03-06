@@ -1,6 +1,5 @@
-const React = require('react');
-const { PropTypes } = React;
-const prefixAll = require('inline-style-prefixer/static');
+import React, { PropTypes } from 'react';
+import prefixAll from 'inline-style-prefixer/static';
 
 function styles(props) {
   return {
@@ -64,4 +63,4 @@ Flex.propTypes = {
   children: PropTypes.node
 };
 
-module.exports = Flex;
+export default Flex;

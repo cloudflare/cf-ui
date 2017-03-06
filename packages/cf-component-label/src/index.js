@@ -1,1 +1,3 @@
-module.exports = require('./Label');
+import Label from './Label';
+
+export default Label;

@@ -1,1 +1,3 @@
-module.exports = require('./CopyableTextarea');
+import CopyableTextarea from './CopyableTextarea';
+
+export default CopyableTextarea;

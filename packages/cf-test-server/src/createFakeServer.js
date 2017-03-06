@@ -1,4 +1,4 @@
-const { fakeServer } = require('sinon');
+import { fakeServer } from 'sinon';
 
 let server = null;
 
@@ -46,4 +46,4 @@ function createFakeServer() {
   };
 }
 
-module.exports = createFakeServer;
+export default createFakeServer;

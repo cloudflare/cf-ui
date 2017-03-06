@@ -1,1 +1,3 @@
-module.exports = require('./focus');
+import focus from './focus';
+
+export default focus;

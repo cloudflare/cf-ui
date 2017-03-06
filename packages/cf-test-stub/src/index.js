@@ -1,1 +1,3 @@
-module.exports = require('./stub');
+import stub from './stub';
+
+export default stub;

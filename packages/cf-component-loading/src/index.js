@@ -1,1 +1,3 @@
-module.exports = require('./Loading');
+import Loading from './Loading';
+
+export default Loading;

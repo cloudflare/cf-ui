@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class Label extends React.Component {
   render() {
@@ -29,4 +28,4 @@ Label.defaultProps = {
   tagName: 'span'
 };
 
-module.exports = Label;
+export default Label;

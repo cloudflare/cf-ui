@@ -1,6 +1,5 @@
-const React = require('react');
-const { PropTypes } = React;
-const Radio = require('./Radio');
+import React, { PropTypes } from 'react';
+import Radio from './Radio';
 
 class RadioGroup extends React.Component {
   render() {
@@ -38,4 +37,4 @@ RadioGroup.propTypes = {
   ).isRequired
 };
 
-module.exports = RadioGroup;
+export default RadioGroup;

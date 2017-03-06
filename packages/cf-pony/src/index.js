@@ -13,19 +13,34 @@
  *
  * 2) Wrap the method like this:
  *
- *   exports.arrayIncludes = wrapWarning('arrayIncludes', 'Array.prototype.includes', require('array-includes'));
+ *   import arrayIncludes = wrapWarning('arrayIncludes', 'Array.prototype.includes', require('array-includes'));
  */
 
-exports.setImmediate = require('./setImmediate');
-exports.requestAnimationFrame = require('raf');
-exports.cancelAnimationFrame = require('raf').cancel;
-exports.arrayIncludes = require('array-includes');
-exports.arrayFind = require('array.prototype.find');
-exports.objectAssign = require('object-assign');
-exports.objectIs = require('object-is');
-exports.stringIncludes = require('string-includes');
-exports.stringTrim = require('string.prototype.trim');
-exports.stringTrimLeft = require('string.prototype.trimleft');
-exports.stringTrimRight = require('string.prototype.trimright');
-exports.stringStartsWith = require('string.prototype.startswith');
-exports.stringEndsWith = require('string.prototype.endswith');
+import setImmediate from './setImmediate';
+import requestAnimationFrame, { cancel as cancelAnimationFrame } from 'raf';
+import arrayIncludes from 'array-includes';
+import arrayFind from 'array.prototype.find';
+import objectAssign from 'object-assign';
+import objectIs from 'object-is';
+import stringIncludes from 'string-includes';
+import stringTrim from 'string.prototype.trim';
+import stringTrimLeft from 'string.prototype.trimleft';
+import stringTrimRight from 'string.prototype.trimright';
+import stringStartsWith from 'string.prototype.startswith';
+import stringEndsWith from 'string.prototype.endswith';
+
+export {
+  setImmediate,
+  requestAnimationFrame,
+  cancelAnimationFrame,
+  arrayIncludes,
+  arrayFind,
+  objectAssign,
+  objectIs,
+  stringIncludes,
+  stringTrim,
+  stringTrimLeft,
+  stringTrimRight,
+  stringStartsWith,
+  stringEndsWith
+};

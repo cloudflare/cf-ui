@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class FormFieldset extends React.Component {
   render() {
@@ -21,4 +20,4 @@ FormFieldset.propTypes = {
   children: PropTypes.node
 };
 
-module.exports = FormFieldset;
+export default FormFieldset;

@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class CardSection extends React.Component {
   render() {
@@ -22,4 +21,4 @@ CardSection.defaultProps = {
   status: 'default'
 };
 
-module.exports = CardSection;
+export default CardSection;

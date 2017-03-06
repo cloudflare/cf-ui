@@ -1,1 +1,3 @@
-module.exports = require('./createLogger');
+import createLogger from './createLogger';
+
+export default createLogger;

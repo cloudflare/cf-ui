@@ -1,6 +1,5 @@
-const React = require('react');
-const { PropTypes } = React;
-const { TYPES, SIZES } = require('./options');
+import React, { PropTypes } from 'react';
+import { TYPES, SIZES } from './options';
 
 class Icon extends React.Component {
   render() {
@@ -38,4 +37,4 @@ Icon.propTypes = {
   role: PropTypes.string
 };
 
-module.exports = Icon;
+export default Icon;

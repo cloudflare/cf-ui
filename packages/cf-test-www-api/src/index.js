@@ -1,1 +1,3 @@
-exports.createApiResponse = require('./createApiResponse');
+import createApiResponse from './createApiResponse';
+
+export { createApiResponse };

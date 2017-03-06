@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class CardToolbar extends React.Component {
   render() {
@@ -21,4 +20,4 @@ CardToolbar.propTypes = {
   links: PropTypes.any
 };
 
-module.exports = CardToolbar;
+export default CardToolbar;

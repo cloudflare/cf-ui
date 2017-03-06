@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class NotificationList extends React.Component {
   render() {
@@ -15,4 +14,4 @@ NotificationList.propTypes = {
   children: PropTypes.node
 };
 
-module.exports = NotificationList;
+export default NotificationList;

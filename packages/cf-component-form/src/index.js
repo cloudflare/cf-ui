@@ -1,6 +1,15 @@
-exports.Form = require('./Form');
-exports.FormHeader = require('./FormHeader');
-exports.FormFooter = require('./FormFooter');
-exports.FormFieldset = require('./FormFieldset');
-exports.FormLabel = require('./FormLabel');
-exports.FormFieldError = require('./FormFieldError');
+import Form from './Form';
+import FormHeader from './FormHeader';
+import FormFooter from './FormFooter';
+import FormFieldset from './FormFieldset';
+import FormLabel from './FormLabel';
+import FormFieldError from './FormFieldError';
+
+export {
+  Form,
+  FormHeader,
+  FormFooter,
+  FormFieldset,
+  FormLabel,
+  FormFieldError
+};

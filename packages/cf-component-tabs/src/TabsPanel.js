@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class TabsPanel extends React.Component {
   render() {
@@ -27,4 +26,4 @@ TabsPanel.contextTypes = {
   active: PropTypes.string.isRequired
 };
 
-module.exports = TabsPanel;
+export default TabsPanel;

@@ -1,1 +1,3 @@
-module.exports = require('./http');
+import http from './http';
+
+export default http;

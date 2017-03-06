@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class CardBlock extends React.Component {
   render() {
@@ -17,4 +16,4 @@ CardBlock.propTypes = {
   children: PropTypes.node
 };
 
-module.exports = CardBlock;
+export default CardBlock;

@@ -1,8 +1,8 @@
-const ActionTypes = require('./CardActionTypes');
+import ActionTypes from './CardActionTypes';
 
 const initialState = {};
 
-function cardReducer(state = initialState, action) {
+export default function cardReducer(state = initialState, action) {
   switch (action.type) {
     case ActionTypes.CF_BUILDER_CARD_DRAWER_TOGGLE: {
       const { cardName, drawerId } = action;
@@ -21,5 +21,3 @@ function cardReducer(state = initialState, action) {
     }
   }
 }
-
-module.exports = cardReducer;

@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class FormHeader extends React.Component {
   render() {
@@ -17,4 +16,4 @@ FormHeader.propTypes = {
   title: PropTypes.string.isRequired
 };
 
-module.exports = FormHeader;
+export default FormHeader;

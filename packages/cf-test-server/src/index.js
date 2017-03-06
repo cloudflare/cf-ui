@@ -1,1 +1,3 @@
-exports.createFakeServer = require('./createFakeServer');
+import createFakeServer from './createFakeServer';
+
+export { createFakeServer };

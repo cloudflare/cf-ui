@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class TableCell extends React.Component {
   render() {
@@ -33,4 +32,4 @@ TableCell.defaultProps = {
   className: ''
 };
 
-module.exports = TableCell;
+export default TableCell;

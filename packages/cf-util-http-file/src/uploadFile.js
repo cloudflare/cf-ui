@@ -1,9 +1,7 @@
-const { post: httpPost } = require('cf-util-http');
+import { post as httpPost } from 'cf-util-http';
 
-function uploadFile(url, file, callback) {
+export default function uploadFile(url, file, callback) {
   const formData = new FormData();
   formData.append('file', file);
   return httpPost(url, { body: formData }, callback);
 }
-
-module.exports = uploadFile;

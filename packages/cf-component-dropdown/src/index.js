@@ -1,3 +1,5 @@
-exports.Dropdown = require('./Dropdown');
-exports.DropdownLink = require('./DropdownLink');
-exports.DropdownSeparator = require('./DropdownSeparator');
+import Dropdown from './Dropdown';
+import DropdownLink from './DropdownLink';
+import DropdownSeparator from './DropdownSeparator';
+
+export { Dropdown, DropdownLink, DropdownSeparator };

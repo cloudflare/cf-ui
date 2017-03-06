@@ -1,6 +1,5 @@
-const React = require('react');
-const { PropTypes } = React;
-const requiredIf = require('react-required-if');
+import React, { PropTypes } from 'react';
+import requiredIf from 'react-required-if';
 
 class Textarea extends React.Component {
   render() {
@@ -29,4 +28,4 @@ Textarea.propTypes = {
   onBlur: PropTypes.func
 };
 
-module.exports = Textarea;
+export default Textarea;

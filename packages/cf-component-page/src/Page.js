@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class Page extends React.Component {
   render() {
@@ -15,4 +14,4 @@ Page.propTypes = {
   children: PropTypes.node
 };
 
-module.exports = Page;
+export default Page;

@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class Checkbox extends React.Component {
   render() {
@@ -40,4 +39,4 @@ Checkbox.propTypes = {
   onChange: PropTypes.func.isRequired
 };
 
-module.exports = Checkbox;
+export default Checkbox;

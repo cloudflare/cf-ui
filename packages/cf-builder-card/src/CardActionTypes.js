@@ -1,3 +1,3 @@
-module.exports = {
+export default {
   CF_BUILDER_CARD_DRAWER_TOGGLE: 'CF_BUILDER_CARD_DRAWER_TOGGLE'
 };

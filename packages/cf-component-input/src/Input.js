@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class Input extends React.Component {
   render() {
@@ -34,4 +33,4 @@ Input.defaultProps = {
   type: 'text'
 };
 
-module.exports = Input;
+export default Input;

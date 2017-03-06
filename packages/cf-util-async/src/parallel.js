@@ -1,4 +1,4 @@
-function parallel(funcs, callback) {
+export default function parallel(funcs, callback) {
   const results = [];
 
   let index = 0;
@@ -33,5 +33,3 @@ function parallel(funcs, callback) {
     });
   }
 }
-
-module.exports = parallel;

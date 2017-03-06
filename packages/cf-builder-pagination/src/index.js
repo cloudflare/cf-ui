@@ -1,1 +1,3 @@
-exports.PaginationBuilder = require('./PaginationBuilder');
+import PaginationBuilder from './PaginationBuilder';
+
+export { PaginationBuilder };

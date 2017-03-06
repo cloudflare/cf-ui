@@ -1,2 +1,4 @@
-exports.Pagination = require('./Pagination');
-exports.PaginationItem = require('./PaginationItem');
+import Pagination from './Pagination';
+import PaginationItem from './PaginationItem';
+
+export { Pagination, PaginationItem };

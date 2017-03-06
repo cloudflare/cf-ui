@@ -1,1 +1,3 @@
-module.exports = require('./text');
+import text from './text';
+
+export default text;

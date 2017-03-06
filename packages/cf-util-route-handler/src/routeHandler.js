@@ -1,6 +1,6 @@
 let handler;
 
-function handleRoutes(callback) {
+export function handleRoutes(callback) {
   if (handler) {
     console.error(
       'Warning: Route Handler: Only one handler is allowed at a time'
@@ -11,7 +11,7 @@ function handleRoutes(callback) {
   handler = callback;
 }
 
-function routeTo(url) {
+export function routeTo(url) {
   if (!handler) {
     console.error(
       'Warning: Route Handler: A handler needs to be setup before you can route'
@@ -22,8 +22,6 @@ function routeTo(url) {
   handler(url);
 }
 
-function __resetRouteHandler() {
+export function __resetRouteHandler() {
   handler = null;
 }
-
-module.exports = { handleRoutes, routeTo, __resetRouteHandler };

@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class HeadingCaption extends React.Component {
   render() {
@@ -15,4 +14,4 @@ HeadingCaption.propTypes = {
   children: PropTypes.node
 };
 
-module.exports = HeadingCaption;
+export default HeadingCaption;

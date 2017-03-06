@@ -1,6 +1,6 @@
-const { PropTypes } = require('react');
+import { PropTypes } from 'react';
 
-const rowType = PropTypes.oneOf([
+export const rowType = PropTypes.oneOf([
   'default',
   'info',
   'success',
@@ -8,7 +8,7 @@ const rowType = PropTypes.oneOf([
   'error'
 ]);
 
-const rowAccent = PropTypes.oneOf([
+export const rowAccent = PropTypes.oneOf([
   false,
   'gray',
   'orange',
@@ -17,8 +17,3 @@ const rowAccent = PropTypes.oneOf([
   'green',
   'purple'
 ]);
-
-module.exports = {
-  rowType,
-  rowAccent
-};

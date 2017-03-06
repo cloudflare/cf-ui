@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class ListItem extends React.Component {
   render() {
@@ -15,4 +14,4 @@ ListItem.propTypes = {
   children: PropTypes.node
 };
 
-module.exports = ListItem;
+export default ListItem;

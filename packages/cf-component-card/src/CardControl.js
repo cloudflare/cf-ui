@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class CardControl extends React.Component {
   render() {
@@ -19,4 +18,4 @@ CardControl.propTypes = {
   wide: PropTypes.bool
 };
 
-module.exports = CardControl;
+export default CardControl;

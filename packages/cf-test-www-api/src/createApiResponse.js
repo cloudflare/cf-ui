@@ -1,4 +1,8 @@
-function createApiResponse(result = null, errors = null, messages = []) {
+export default function createApiResponse(
+  result = null,
+  errors = null,
+  messages = []
+) {
   let resultInfo = null;
 
   if (Array.isArray(result)) {
@@ -20,5 +24,3 @@ function createApiResponse(result = null, errors = null, messages = []) {
     }
   };
 }
-
-module.exports = createApiResponse;

@@ -1,6 +1,5 @@
-const React = require('react');
-const { PropTypes } = React;
-const { routeTo } = require('cf-util-route-handler');
+import React, { PropTypes } from 'react';
+import { routeTo } from 'cf-util-route-handler';
 
 class Link extends React.Component {
   constructor(props, context) {
@@ -79,4 +78,4 @@ Link.defaultProps = {
   tagName: 'a'
 };
 
-module.exports = Link;
+export default Link;

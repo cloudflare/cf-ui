@@ -1,6 +1,5 @@
-const React = require('react');
-const { Heading } = require('cf-component-heading');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
+import { Heading } from 'cf-component-heading';
 
 class ModalTitle extends React.Component {
   render() {
@@ -18,4 +17,4 @@ ModalTitle.propTypes = {
   children: PropTypes.node
 };
 
-module.exports = ModalTitle;
+export default ModalTitle;

@@ -1,5 +1,5 @@
-const { PropTypes } = require('react');
-const { TablePropTypes } = require('cf-component-table');
+import { PropTypes } from 'react';
+import { TablePropTypes } from 'cf-component-table';
 
 const row = PropTypes.shape({
   id: PropTypes.string.isRequired,
@@ -18,7 +18,7 @@ const column = PropTypes.shape({
 
 const columns = PropTypes.arrayOf(column);
 
-module.exports = {
+export default {
   row,
   rows,
   column,

@@ -1,1 +1,3 @@
-module.exports = require('./Link');
+import Link from './Link';
+
+export default Link;

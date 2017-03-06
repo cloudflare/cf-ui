@@ -1,6 +1,5 @@
-const React = require('react');
-const { PropTypes } = React;
-const raf = require('raf');
+import React, { PropTypes } from 'react';
+import raf from 'raf';
 
 class Notification extends React.Component {
   constructor(props) {
@@ -133,4 +132,4 @@ Notification.defaultProps = {
   persist: false
 };
 
-module.exports = Notification;
+export default Notification;

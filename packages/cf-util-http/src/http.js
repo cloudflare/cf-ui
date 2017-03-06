@@ -1,9 +1,9 @@
-const superagent = require('superagent');
-const createLogger = require('cf-util-logger');
+import superagent from 'superagent';
+import createLogger from 'cf-util-logger';
 
-const logRequest = createLogger('http:request');
-const logError = createLogger('http:error');
-const logSuccess = createLogger('http:success');
+import logRequest from 'http:request';
+import logError from 'http:error';
+import logSuccess from 'http:success';
 
 // Mapping of http request types to superagent methods.
 const METHODS = {
@@ -29,7 +29,7 @@ const beforeSendCallbacks = [];
  *
  * @param {Function} callback
  */
-function beforeSend(callback) {
+export function beforeSend(callback) {
   beforeSendCallbacks.push(callback);
 }
 
@@ -58,7 +58,7 @@ function beforeSend(callback) {
  * @param {Function} [callback]
  * @returns {Function} Abort request.
  */
-function request(method, url, opts, callback) {
+export function request(method, url, opts, callback) {
   opts = opts || {};
 
   opts.method = method;
@@ -116,36 +116,34 @@ function request(method, url, opts, callback) {
 /**
  * Perform a GET request.
  */
-function get(...args) {
+export function get(...args) {
   return request('GET', ...args);
 }
 
 /**
  * Perform a POST request.
  */
-function post(...args) {
+export function post(...args) {
   return request('POST', ...args);
 }
 
 /**
  * Perform a PUT request.
  */
-function put(...args) {
+export function put(...args) {
   return request('PUT', ...args);
 }
 
 /**
  * Perform a PATCH request.
  */
-function patch(...args) {
+export function patch(...args) {
   return request('PATCH', ...args);
 }
 
 /**
  * Perform a DELETE request.
  */
-function del(...args) {
+export function del(...args) {
   return request('DELETE', ...args);
 }
-
-module.exports = { beforeSend, request, get, post, put, patch, del };

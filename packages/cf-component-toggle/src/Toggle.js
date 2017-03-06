@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class Toggle extends React.Component {
   constructor(props) {
@@ -59,4 +58,4 @@ Toggle.propTypes = {
   disabled: PropTypes.bool
 };
 
-module.exports = Toggle;
+export default Toggle;

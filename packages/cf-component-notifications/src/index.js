@@ -1,3 +1,5 @@
-exports.NotificationList = require('./NotificationList');
-exports.Notification = require('./Notification');
-exports.NotificationGlobalContainer = require('./NotificationGlobalContainer');
+import NotificationList from './NotificationList';
+import Notification from './Notification';
+import NotificationGlobalContainer from './NotificationGlobalContainer';
+
+export { NotificationList, Notification, NotificationGlobalContainer };

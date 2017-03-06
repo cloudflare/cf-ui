@@ -13,5 +13,7 @@ function getStorage(storageType) {
   };
 }
 
-exports.localStorage = getStorage('localStorage');
-exports.sessionStorage = getStorage('sessionStorage');
+const localStorage = getStorage('localStorage');
+const sessionStorage = getStorage('sessionStorage');
+
+export { localStorage, sessionStorage };
