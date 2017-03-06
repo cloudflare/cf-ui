@@ -1,10 +1,6 @@
-const React = require('react');
-const { render } = require('react-dom');
-
-const {
-  TooltipRegion,
-  Tooltip
-} = require('../../src/index');
+import React from 'react';
+import { render } from 'react-dom';
+import { TooltipRegion, Tooltip } from '../../src/index';
 
 class Component extends React.Component {
   render() {

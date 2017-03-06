@@ -1,7 +1,4 @@
-const {
-  upload,
-  download
-} = require('../../src/index');
+import { upload, download } from '../../src/index';
 
 const fileInput = global.document.getElementById('file');
 const uploadButton = global.document.getElementById('upload');

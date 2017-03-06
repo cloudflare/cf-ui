@@ -1,7 +1,7 @@
-const express = require('express');
-const path = require('path');
-const multer = require('multer');
-const fs = require('fs');
+import express from 'express';
+import path from 'path';
+import multer from 'multer';
+import fs from 'fs';
 
 const app = express();
 

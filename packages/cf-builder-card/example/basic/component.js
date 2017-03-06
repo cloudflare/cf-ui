@@ -1,18 +1,10 @@
-const React = require('react');
-const { render } = require('react-dom');
-const { createStore, combineReducers } = require('redux');
-const { Provider } = require('react-redux');
-const {
-  CardBuilder,
-  cardReducer
-} = require('../../src/index');
-const { Button } = require('cf-component-button');
-const {
-  Table,
-  TableBody,
-  TableRow,
-  TableCell
-} = require('cf-component-table');
+import React from 'react';
+import { render } from 'react-dom';
+import { createStore, combineReducers } from 'redux';
+import { Provider } from 'react-redux';
+import { CardBuilder, cardReducer } from '../../src/index';
+import { Button } from 'cf-component-button';
+import { Table, TableBody, TableRow, TableCell } from 'cf-component-table';
 
 const EXAMPLE_CARD = 'EXAMPLE_CARD';
 

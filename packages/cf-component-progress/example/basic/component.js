@@ -1,7 +1,6 @@
-const React = require('react');
-const { render } = require('react-dom');
-
-const Progress = require('../../src/index');
+import React from 'react';
+import { render } from 'react-dom';
+import Progress from '../../src/index';
 
 class Component extends React.Component {
   constructor(props) {

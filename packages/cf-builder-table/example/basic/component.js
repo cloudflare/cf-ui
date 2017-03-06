@@ -1,15 +1,11 @@
-const React = require('react');
-const { render } = require('react-dom');
-const { createStore, combineReducers, applyMiddleware } = require('redux');
-const { Provider, connect } = require('react-redux');
-const thunk = require('redux-thunk').default;
-const {
-  TableBuilder,
-  tableReducer,
-  tableActions
-} = require('../../src/index');
-const { TableCell } = require('cf-component-table');
-const { Button } = require('cf-component-button');
+import React from 'react';
+import { render } from 'react-dom';
+import { createStore, combineReducers, applyMiddleware } from 'redux';
+import { Provider, connect } from 'react-redux';
+import { default as thunk } from 'redux-thunk';
+import { TableBuilder, tableReducer, tableActions } from '../../src/index';
+import { TableCell } from 'cf-component-table';
+import { Button } from 'cf-component-button';
 
 const EXAMPLE_TABLE = 'EXAMPLE_TABLE';
 
