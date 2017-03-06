@@ -3,6 +3,8 @@
   "description": "Cloudflare Style Constants",
   "version": "0.0.1",
   "main": "lib/index.js",
+  "module": "es/index.js",
+  "jsnext:main": "es/index.js",
   "author": "Vojtech Miksu <vojtech@cloudflare.com>",
   "license": "BSD-3-Clause",
   "publishConfig": {
