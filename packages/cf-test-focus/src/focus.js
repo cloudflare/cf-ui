@@ -4,13 +4,15 @@ const originalFocus = global.HTMLElement.prototype.focus;
 
 let currentFocus;
 
-export function trackFocus() {
+function trackFocus() {
   return stubMethod(global.HTMLElement.prototype, 'focus', function() {
     currentFocus = this;
     return originalFocus.apply(this, arguments);
   });
 }
 
-export function getCurrentFocus() {
+function getCurrentFocus() {
   return currentFocus;
 }
+
+export default { trackFocus, getCurrentFocus };

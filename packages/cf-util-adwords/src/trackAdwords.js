@@ -10,7 +10,7 @@ const getScript = once(() => promisescript({
   exposed: ADWORDS_GLOBAL
 }));
 
-export function track(id, label, params, remarketingOnly = false) {
+function track(id, label, params, remarketingOnly = false) {
   return getScript().then(() => {
     // AdWords exposes an onload callback but not an onerror callback so we
     // can't wait for this to be successful. (shrug)
@@ -22,3 +22,5 @@ export function track(id, label, params, remarketingOnly = false) {
     });
   });
 }
+
+export default { track };

@@ -8,4 +8,4 @@ const cardDrawer = PropTypes.shape({
 
 const cardDrawers = PropTypes.arrayOf(cardDrawer);
 
-export { cardDrawer, cardDrawers };
+export default { cardDrawer, cardDrawers };

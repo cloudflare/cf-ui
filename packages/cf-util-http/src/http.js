@@ -29,7 +29,7 @@ const beforeSendCallbacks = [];
  *
  * @param {Function} callback
  */
-export function beforeSend(callback) {
+function beforeSend(callback) {
   beforeSendCallbacks.push(callback);
 }
 
@@ -58,7 +58,7 @@ export function beforeSend(callback) {
  * @param {Function} [callback]
  * @returns {Function} Abort request.
  */
-export function request(method, url, opts, callback) {
+function request(method, url, opts, callback) {
   opts = opts || {};
 
   opts.method = method;
@@ -116,34 +116,36 @@ export function request(method, url, opts, callback) {
 /**
  * Perform a GET request.
  */
-export function get(...args) {
+function get(...args) {
   return request('GET', ...args);
 }
 
 /**
  * Perform a POST request.
  */
-export function post(...args) {
+function post(...args) {
   return request('POST', ...args);
 }
 
 /**
  * Perform a PUT request.
  */
-export function put(...args) {
+function put(...args) {
   return request('PUT', ...args);
 }
 
 /**
  * Perform a PATCH request.
  */
-export function patch(...args) {
+function patch(...args) {
   return request('PATCH', ...args);
 }
 
 /**
  * Perform a DELETE request.
  */
-export function del(...args) {
+function del(...args) {
   return request('DELETE', ...args);
 }
+
+export default { beforeSend, request, get, post, put, patch, del };

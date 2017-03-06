@@ -1,3 +1,3 @@
 import routeHandler from './routeHandler';
 
-export default { routeHandler };
+export default routeHandler;

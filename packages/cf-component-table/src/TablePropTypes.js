@@ -1,6 +1,6 @@
 import { PropTypes } from 'react';
 
-export const rowType = PropTypes.oneOf([
+const rowType = PropTypes.oneOf([
   'default',
   'info',
   'success',
@@ -8,7 +8,7 @@ export const rowType = PropTypes.oneOf([
   'error'
 ]);
 
-export const rowAccent = PropTypes.oneOf([
+const rowAccent = PropTypes.oneOf([
   false,
   'gray',
   'orange',
@@ -17,3 +17,5 @@ export const rowAccent = PropTypes.oneOf([
   'green',
   'purple'
 ]);
+
+export default { rowType, rowAccent };
