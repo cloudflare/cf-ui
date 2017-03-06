@@ -9,6 +9,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
+    "css-color-function": "^1.3.0",
     "react-fela": "^4.2.5"
   },
   "peerDependencies": {
