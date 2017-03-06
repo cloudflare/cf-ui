@@ -1,10 +1,6 @@
-const React = require('react');
-const { render } = require('react-dom');
-
-const {
-  Tabs,
-  TabsPanel
-} = require('../../src/index');
+import React from 'react';
+import { render } from 'react-dom';
+import { Tabs, TabsPanel } from '../../src/index';
 
 class Component extends React.Component {
   constructor(props) {

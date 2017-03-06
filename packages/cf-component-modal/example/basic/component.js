@@ -1,7 +1,6 @@
-const React = require('react');
-const { render } = require('react-dom');
-
-const {
+import React from 'react';
+import { render } from 'react-dom';
+import {
   Modal,
   ModalHeader,
   ModalTitle,
@@ -9,13 +8,10 @@ const {
   ModalBody,
   ModalFooter,
   ModalActions
-} = require('../../src/index');
-const {
-  GatewayDest,
-  GatewayProvider
-} = require('react-gateway');
-const ReactModal2 = require('react-modal2');
-const { Button } = require('cf-component-button');
+} from '../../src/index';
+import { GatewayDest, GatewayProvider } from 'react-gateway';
+import ReactModal2 from 'react-modal2';
+import { Button } from 'cf-component-button';
 
 class Component extends React.Component {
   constructor(props) {

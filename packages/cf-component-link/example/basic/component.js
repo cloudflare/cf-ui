@@ -1,10 +1,8 @@
-const React = require('react');
-const { render } = require('react-dom');
-
-const { handleRoutes } = require('cf-util-route-handler');
-const Backbone = require('backbone');
-
-const Link = require('../../src/index');
+import React from 'react';
+import { render } from 'react-dom';
+import { handleRoutes } from 'cf-util-route-handler';
+import Backbone from 'backbone';
+import Link from '../../src/index';
 
 // setup the router
 handleRoutes(function(url) {

@@ -1,10 +1,6 @@
-const React = require('react');
-const { render } = require('react-dom');
-
-const {
-  Radio,
-  RadioGroup
-} = require('../../src/index');
+import React from 'react';
+import { render } from 'react-dom';
+import { Radio, RadioGroup } from '../../src/index';
 
 class Component extends React.Component {
   constructor(props) {

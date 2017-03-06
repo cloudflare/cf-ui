@@ -1,7 +1,6 @@
-const React = require('react');
-const { render } = require('react-dom');
-
-const Viewport = require('../../src/index');
+import React from 'react';
+import { render } from 'react-dom';
+import Viewport from '../../src/index';
 
 class Component extends React.Component {
   render() {

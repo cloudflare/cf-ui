@@ -1,11 +1,7 @@
-const React = require('react');
-const { render } = require('react-dom');
-
-const {
-  Pagination,
-  PaginationItem
-} = require('../../src/index');
-const Icon = require('cf-component-icon');
+import React from 'react';
+import { render } from 'react-dom';
+import { Pagination, PaginationItem } from '../../src/index';
+import Icon from 'cf-component-icon';
 
 class Component extends React.Component {
   constructor(props) {

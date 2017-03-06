@@ -1,14 +1,14 @@
-const React = require('react');
-const { render } = require('react-dom');
-const {
+import React from 'react';
+import { render } from 'react-dom';
+import {
   Card,
   CardContent,
   CardControl,
   CardDrawers,
   CardMessages,
   CardSection
-} = require('../../src/index');
-const { Button } = require('cf-component-button');
+} from '../../src/index';
+import { Button } from 'cf-component-button';
 
 class Component extends React.Component {
   constructor(props) {
