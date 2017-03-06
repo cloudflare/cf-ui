@@ -1,6 +1,4 @@
-import cssColorFunction from 'css-color-function';
-
-const color = input => cssColorFunction.convert(`color(${input})`);
+import { color } from 'cf-style-container';
 
 export default baseTheme => ({
   fontSize: `${(parseFloat(baseTheme.fontSize) - 1) / parseFloat(baseTheme.fontSize)}rem`,

@@ -30,6 +30,12 @@ export default {
       commonjs2: 'react',
       commonjs: 'react',
       amd: 'react'
+    },
+    'cf-style-container': {
+      root: 'cf-style-container',
+      commonjs2: 'cf-style-container',
+      commonjs: 'cf-style-container',
+      amd: 'cf-style-container'
     }
   },
   module: {
