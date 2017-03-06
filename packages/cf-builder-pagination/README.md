@@ -1,6 +1,6 @@
 # cf-builder-pagination
 
-> CloudFlare Pagination Builder
+> Cloudflare Pagination Builder
 
 ## Installation
 

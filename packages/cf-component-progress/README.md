@@ -1,6 +1,6 @@
 # cf-component-progress
 
-> CloudFlare Progress Component
+> Cloudflare Progress Component
 
 ## Installation
 
@@ -34,7 +34,7 @@ export default class Application extends React.Component {
   render() {
     return (
       <div>
-        <h1>CloudFlare Progress Component Example</h1>
+        <h1>Cloudflare Progress Component Example</h1>
 
         <Progress
           active={this.state.activeStep}

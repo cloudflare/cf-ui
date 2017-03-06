@@ -1,6 +1,6 @@
 # cf-component-viewport
 
-> CloudFlare Viewport Component
+> Cloudflare Viewport Component
 
 ## Installation
 

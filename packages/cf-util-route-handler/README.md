@@ -1,6 +1,6 @@
 # cf-util-route-handler
 
-> CloudFlare Route Handler Util
+> Cloudflare Route Handler Util
 
 ## Installation
 

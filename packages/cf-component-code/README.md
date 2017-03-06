@@ -1,6 +1,6 @@
 # cf-component-code
 
-> CloudFlare Code Component
+> Cloudflare Code Component
 
 ## Installation
 

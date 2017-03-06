@@ -1,6 +1,6 @@
 # cf-component-dynamic-content
 
-> CloudFlare Dynamic Content Component
+> Cloudflare Dynamic Content Component
 
 ## Installation
 
@@ -18,7 +18,7 @@ export default class Application extends React.Component {
   render() {
     return (
       <div>
-        <h1>CloudFlare Dynamic Content Component Example</h1>
+        <h1>Cloudflare Dynamic Content Component Example</h1>
 
         <DynamicContent dangerouslySetInnerHTML={{
           __html: '<p>Not an XSS attack, I swear.</p>'

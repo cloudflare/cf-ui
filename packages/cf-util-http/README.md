@@ -1,6 +1,6 @@
 # cf-util-http
 
-> CloudFlare HTTP Util
+> Cloudflare HTTP Util
 
 This utility library is a simple interface that hides away the client-side http
 implementation being used so that it can easily be swapped out for something

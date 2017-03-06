@@ -1,6 +1,6 @@
 # cf-component-page
 
-> CloudFlare Page Component
+> Cloudflare Page Component
 
 ## Installation
 

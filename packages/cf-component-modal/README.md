@@ -1,6 +1,6 @@
 # cf-component-modal
 
-> CloudFlare Modal Component
+> Cloudflare Modal Component
 
 ## Installation
 
@@ -74,7 +74,7 @@ class Application extends React.Component {
       <GatewayProvider>
         <div className="application">
           <div className="application__content">
-            <h1>CloudFlare Modal Component Example</h1>
+            <h1>Cloudflare Modal Component Example</h1>
             <MyComponentWithModal/>
           </div>
           <GatewayDest name="modal"/>

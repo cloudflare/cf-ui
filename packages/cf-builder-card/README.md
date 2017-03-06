@@ -1,6 +1,6 @@
 # cf-builder-card
 
-> CloudFlare Card Builder
+> Cloudflare Card Builder
 
 ## Installation
 

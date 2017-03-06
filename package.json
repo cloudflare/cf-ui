@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "cf-ui",
-  "description": "CloudFlare UI Framework",
+  "description": "Cloudflare UI Framework",
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
   "scripts": {

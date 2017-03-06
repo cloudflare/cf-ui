@@ -1,6 +1,6 @@
 # cf-util-http-file
 
-> CloudFlare HTTP File Util
+> Cloudflare HTTP File Util
 
 ## Installation
 

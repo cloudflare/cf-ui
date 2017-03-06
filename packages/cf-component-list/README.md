@@ -1,6 +1,6 @@
 # cf-component-list
 
-> CloudFlare List Component
+> Cloudflare List Component
 
 ## Installation
 
@@ -18,7 +18,7 @@ export default class Application extends React.Component {
   render() {
     return (
       <div>
-        <h1>CloudFlare List Component Example</h1>
+        <h1>Cloudflare List Component Example</h1>
 
         <p>Basic usage:</p>
         <List>

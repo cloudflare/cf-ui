@@ -1,6 +1,6 @@
 {
   "name": "cf-builder-table",
-  "description": "CloudFlare Table Builder",
+  "description": "Cloudflare Table Builder",
   "version": "2.0.1",
   "main": "lib/index.js",
   "module": "es/index.js",

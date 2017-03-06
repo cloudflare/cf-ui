@@ -1,6 +1,6 @@
 # cf-builder-table
 
-> CloudFlare Table Builder
+> Cloudflare Table Builder
 
 ## Installation
 

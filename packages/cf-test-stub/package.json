@@ -1,6 +1,6 @@
 {
   "name": "cf-test-stub",
-  "description": "CloudFlare Stub Test Util",
+  "description": "Cloudflare Stub Test Util",
   "version": "2.0.0",
   "main": "lib/index.js",
   "module": "es/index.js",

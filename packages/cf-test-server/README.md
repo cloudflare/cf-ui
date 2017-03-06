@@ -1,6 +1,6 @@
 # cf-test-server
 
-> CloudFlare Server Test Util
+> Cloudflare Server Test Util
 
 ## Installation
 
@@ -18,13 +18,13 @@ const http = require('cf-util-http');
 describe('apiEndpoints', () => {
   it('should do something', done => {
     const server = createFakeServer();
-    
+
     server.respondWith('GET', '/api/endpoint', 200, {
       'Content-Type': 'application/json'
     }, {
       value: 'foo'
     });
-    
+
     http.get('/api/endpoint', null, (err, res) => {
       if (err) {
         done(err);
@@ -39,7 +39,7 @@ describe('apiEndpoints', () => {
         }
       }
     });
-    
+
     server.respond();
   });
 });

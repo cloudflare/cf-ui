@@ -1,6 +1,6 @@
 # cf-component-textarea
 
-> CloudFlare Textarea Component
+> Cloudflare Textarea Component
 
 ## Installation
 

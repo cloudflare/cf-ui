@@ -1,6 +1,6 @@
 {
   "name": "cf-component-pagination",
-  "description": "CloudFlare Pagination Component",
+  "description": "Cloudflare Pagination Component",
   "version": "3.0.1",
   "main": "lib/index.js",
   "module": "es/index.js",

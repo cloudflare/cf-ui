@@ -1,6 +1,6 @@
 {
   "name": "cf-component-checkbox",
-  "description": "CloudFlare Checkbox Component",
+  "description": "Cloudflare Checkbox Component",
   "version": "3.0.1",
   "main": "lib/index.js",
   "module": "es/index.js",

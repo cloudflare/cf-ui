@@ -1,6 +1,6 @@
 {
   "name": "cf-component-form",
-  "description": "CloudFlare Form Component",
+  "description": "Cloudflare Form Component",
   "version": "3.0.4",
   "main": "lib/index.js",
   "module": "es/index.js",

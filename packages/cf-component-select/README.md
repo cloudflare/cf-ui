@@ -1,6 +1,6 @@
 # cf-component-select
 
-> CloudFlare Select Component
+> Cloudflare Select Component
 
 Note: This implementation is just enough to get by for now, we'll be adding more
 when we need it `react-select` supports everything we need.

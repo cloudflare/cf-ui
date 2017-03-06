@@ -49,7 +49,7 @@ it. They all have well designed, useable APIs that are documented and can be
 used by anyone.
 
 Then as an additional benefit we were also able to open source two of these
-layers as their own libraries that are being used outside of CloudFlare.
+layers as their own libraries that are being used outside of Cloudflare.
 
 ##### Bad Example
 

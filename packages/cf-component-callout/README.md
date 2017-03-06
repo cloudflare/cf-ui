@@ -1,6 +1,6 @@
 # cf-component-callout
 
-> CloudFlare Callout Component
+> Cloudflare Callout Component
 
 ## Installation
 

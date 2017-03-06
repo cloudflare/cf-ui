@@ -1,6 +1,6 @@
 # cf-util-http-poll
 
-> CloudFlare HTTP Polling Util
+> Cloudflare HTTP Polling Util
 
 ## Installation
 

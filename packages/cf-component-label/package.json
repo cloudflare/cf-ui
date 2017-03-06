@@ -1,6 +1,6 @@
 {
   "name": "cf-component-label",
-  "description": "CloudFlare Label Component",
+  "description": "Cloudflare Label Component",
   "version": "2.0.1",
   "main": "lib/index.js",
   "module": "es/index.js",

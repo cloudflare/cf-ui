@@ -1,6 +1,6 @@
 {
   "name": "cf-component-table",
-  "description": "CloudFlare Table Component",
+  "description": "Cloudflare Table Component",
   "version": "2.2.0",
   "main": "lib/index.js",
   "module": "es/index.js",

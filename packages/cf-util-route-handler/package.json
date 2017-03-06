@@ -1,6 +1,6 @@
 {
   "name": "cf-util-route-handler",
-  "description": "CloudFlare Route Handler Util",
+  "description": "Cloudflare Route Handler Util",
   "version": "4.0.1",
   "main": "lib/index.js",
   "module": "es/index.js",

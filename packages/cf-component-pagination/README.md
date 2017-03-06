@@ -1,6 +1,6 @@
 # cf-component-pagination
 
-> CloudFlare Pagination Component
+> Cloudflare Pagination Component
 
 ## Installation
 

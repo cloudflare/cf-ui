@@ -1,6 +1,6 @@
 # cf-util-logger
 
-> CloudFlare Logger Util
+> Cloudflare Logger Util
 
 ## Installation
 

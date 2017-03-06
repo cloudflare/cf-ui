@@ -1,6 +1,6 @@
 # cf-component-flex
 
-> CloudFlare Flex Component
+> Cloudflare Flex Component
 
 ## Installation
 

@@ -1,6 +1,6 @@
 # cf-component-tooltip
 
-> CloudFlare Tooltip Component
+> Cloudflare Tooltip Component
 
 ## Installation
 

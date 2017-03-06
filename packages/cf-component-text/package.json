@@ -1,6 +1,6 @@
 {
   "name": "cf-component-text",
-  "description": "CloudFlare Text Component",
+  "description": "Cloudflare Text Component",
   "version": "2.0.1",
   "main": "lib/index.js",
   "module": "es/index.js",

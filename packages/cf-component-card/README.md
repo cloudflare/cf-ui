@@ -1,6 +1,6 @@
 # cf-component-card
 
-> CloudFlare Card Component
+> Cloudflare Card Component
 
 ## Installation
 

@@ -1,6 +1,6 @@
 # cf-component-checkbox
 
-> CloudFlare Checkbox Component
+> Cloudflare Checkbox Component
 
 ## Installation
 
@@ -37,7 +37,7 @@ class Application extends React.Component {
   render() {
     return (
       <div>
-        <h1>CloudFlare Checkbox Component Example</h1>
+        <h1>Cloudflare Checkbox Component Example</h1>
 
         <p>You can create them individually with <code>Checkbox</code></p>
 

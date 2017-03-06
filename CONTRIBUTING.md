@@ -32,16 +32,16 @@ $ npm run lint # Run the linter a single time
 To build the examples:
 
 ```sh
-$ npm run examples:build:internal # Build the example site with CloudFlare's internal styles (employees only)
-$ npm run examples:build:external # Build the example site with CloudFlare's external styles
+$ npm run examples:build:internal # Build the example site with Cloudflare's internal styles (employees only)
+$ npm run examples:build:external # Build the example site with Cloudflare's external styles
 $ open docs/index.html
 ```
 
 Or if you want to continuously work on the examples:
 
 ```sh
-$ npm run examples:dev:internal # Dev on the example site with CloudFlare's internal styles (employees only)
-$ npm run examples:dev:external # Dev on the example site with CloudFlare's external styles
+$ npm run examples:dev:internal # Dev on the example site with Cloudflare's internal styles (employees only)
+$ npm run examples:dev:external # Dev on the example site with Cloudflare's external styles
 ```
 
 ## Publishing packages
