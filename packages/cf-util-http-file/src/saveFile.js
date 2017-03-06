@@ -1,4 +1,4 @@
-function saveFile(filename, file, mimeType) {
+export default function saveFile(filename, file, mimeType) {
   mimeType = mimeType || 'data:application/octet-stream';
   // Data URIs cannot be used for navigation, for scripting, or to
   // populate frame or iframe elements in IE. Instead for IE specifically,
@@ -20,5 +20,3 @@ function saveFile(filename, file, mimeType) {
   event.initEvent('click', true, true);
   link.dispatchEvent(event);
 }
-
-module.exports = saveFile;

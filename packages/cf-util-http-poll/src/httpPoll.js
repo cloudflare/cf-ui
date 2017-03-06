@@ -1,4 +1,4 @@
-const { get: httpGet } = require('cf-util-http');
+import { get as httpGet } from 'cf-util-http';
 
 function validateOptions(opts) {
   if (!opts.isComplete) {
@@ -14,7 +14,7 @@ function validateOptions(opts) {
   }
 }
 
-function httpPoll(url, opts) {
+export default function httpPoll(url, opts) {
   opts = opts || {};
 
   validateOptions(opts);
@@ -82,5 +82,3 @@ function httpPoll(url, opts) {
 
   return cancel;
 }
-
-module.exports = httpPoll;

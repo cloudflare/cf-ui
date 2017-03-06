@@ -1,6 +1,5 @@
-const React = require('react');
-const { PropTypes } = React;
-const TablePropTypes = require('./TablePropTypes');
+import React, { PropTypes } from 'react';
+import TablePropTypes from './TablePropTypes';
 
 class TableRow extends React.Component {
   render() {
@@ -37,4 +36,4 @@ TableRow.defaultProps = {
   accent: false
 };
 
-module.exports = TableRow;
+export default TableRow;

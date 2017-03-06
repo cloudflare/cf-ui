@@ -1,1 +1,3 @@
-module.exports = require('./Toggle');
+import Toggle from './Toggle';
+
+export default Toggle;

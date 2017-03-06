@@ -1,2 +1,4 @@
-exports.parallel = require('./parallel');
-exports.series = require('./series');
+import parallel from './parallel';
+import series from './series';
+
+export { parallel, series };

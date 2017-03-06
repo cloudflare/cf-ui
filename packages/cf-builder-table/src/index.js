@@ -1,5 +1,13 @@
-exports.tableActions = require('./tableActions');
-exports.TableActionTypes = require('./TableActionTypes');
-exports.TableBuilder = require('./TableBuilder');
-exports.TableBuilderPropTypes = require('./TableBuilderPropTypes');
-exports.tableReducer = require('./tableReducer');
+import tableActions from './tableActions';
+import TableActionTypes from './TableActionTypes';
+import TableBuilder from './TableBuilder';
+import TableBuilderPropTypes from './TableBuilderPropTypes';
+import tableReducer from './tableReducer';
+
+export {
+  tableActions,
+  TableActionTypes,
+  TableBuilder,
+  TableBuilderPropTypes,
+  tableReducer
+};

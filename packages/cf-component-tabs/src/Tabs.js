@@ -1,7 +1,6 @@
-const React = require('react');
-const { PropTypes } = React;
-const Viewport = require('cf-component-viewport');
-const Select = require('cf-component-select');
+import React, { PropTypes } from 'react';
+import Viewport from 'cf-component-viewport';
+import Select from 'cf-component-select';
 
 const find = (list, condition) => {
   let foundElement = undefined;
@@ -98,4 +97,4 @@ Tabs.childContextTypes = {
   active: PropTypes.string.isRequired
 };
 
-module.exports = Tabs;
+export default Tabs;

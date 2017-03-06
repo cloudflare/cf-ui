@@ -1,6 +1,5 @@
-const React = require('react');
-const { PropTypes } = React;
-const Link = require('cf-component-link');
+import React, { PropTypes } from 'react';
+import Link from 'cf-component-link';
 
 class Progress extends React.Component {
   constructor(props) {
@@ -71,4 +70,4 @@ Progress.defaultProps = {
   steps: []
 };
 
-module.exports = Progress;
+export default Progress;

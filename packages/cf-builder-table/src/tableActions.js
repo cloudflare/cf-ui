@@ -1,5 +1,5 @@
-const ActionTypes = require('./TableActionTypes');
-const cf = require('cf-pony');
+import ActionTypes from './TableActionTypes';
+import cf from 'cf-pony';
 
 function flashRowOn(tableName, rowId, rowType) {
   return {
@@ -18,7 +18,7 @@ function flashRowOff(tableName, rowId) {
   };
 }
 
-exports.flashRow = function(tableName, rowId, rowType) {
+export const flashRow = function(tableName, rowId, rowType) {
   return dispatch => {
     dispatch(flashRowOn(tableName, rowId, rowType));
 

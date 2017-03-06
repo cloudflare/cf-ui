@@ -1,2 +1,4 @@
-exports.Tooltip = require('./Tooltip');
-exports.TooltipRegion = require('./TooltipRegion');
+import Tooltip from './Tooltip';
+import TooltipRegion from './TooltipRegion';
+
+export { Tooltip, TooltipRegion };

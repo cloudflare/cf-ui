@@ -1,4 +1,4 @@
-const React = require('react');
+import React from 'react';
 
 class CardLoadingText extends React.Component {
   render() {
@@ -6,4 +6,4 @@ class CardLoadingText extends React.Component {
   }
 }
 
-module.exports = CardLoadingText;
+export default CardLoadingText;

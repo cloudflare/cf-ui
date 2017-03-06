@@ -1,6 +1,5 @@
-const React = require('react');
-const { PropTypes } = React;
-const createTooltip = require('./createTooltip');
+import React, { PropTypes } from 'react';
+import createTooltip from './createTooltip';
 
 class TooltipRegion extends React.Component {
   componentDidMount() {
@@ -37,4 +36,4 @@ TooltipRegion.defaultProps = {
   querySelector: '[title]'
 };
 
-module.exports = TooltipRegion;
+export default TooltipRegion;

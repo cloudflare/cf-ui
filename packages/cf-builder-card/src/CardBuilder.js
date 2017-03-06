@@ -1,17 +1,16 @@
-const React = require('react');
-const { PropTypes } = React;
-const { connect } = require('react-redux');
-const {
+import React, { PropTypes } from 'react';
+import { connect } from 'react-redux';
+import {
   Card,
   CardSection,
   CardContent,
   CardControl,
   CardDrawers,
   CardPropTypes
-} = require('cf-component-card');
-const DynamicContent = require('cf-component-dynamic-content');
-const markdown = require('cf-util-markdown');
-const cardActions = require('./cardActions');
+} from 'cf-component-card';
+import DynamicContent from 'cf-component-dynamic-content';
+import markdown from 'cf-util-markdown';
+import cardActions from './cardActions';
 
 class CardBuilder extends React.Component {
   render() {
@@ -79,4 +78,4 @@ function mapDispatchToProps(dispatch, ownProps) {
   };
 }
 
-module.exports = connect(mapStateToProps, mapDispatchToProps)(CardBuilder);
+export default connect(mapStateToProps, mapDispatchToProps)(CardBuilder);

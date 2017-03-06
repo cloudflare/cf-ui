@@ -1,1 +1,3 @@
-module.exports = require('./DynamicContent');
+import DynamicContent from './DynamicContent';
+
+export default DynamicContent;

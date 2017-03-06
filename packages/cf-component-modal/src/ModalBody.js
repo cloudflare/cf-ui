@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class ModalBody extends React.Component {
   render() {
@@ -15,4 +14,4 @@ ModalBody.propTypes = {
   children: PropTypes.node
 };
 
-module.exports = ModalBody;
+export default ModalBody;

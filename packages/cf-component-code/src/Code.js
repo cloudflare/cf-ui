@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class Code extends React.Component {
   render() {
@@ -15,4 +14,4 @@ Code.propTypes = {
   children: PropTypes.node
 };
 
-module.exports = Code;
+export default Code;

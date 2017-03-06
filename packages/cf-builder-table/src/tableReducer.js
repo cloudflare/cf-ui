@@ -1,8 +1,8 @@
-const ActionTypes = require('./TableActionTypes');
+import ActionTypes from './TableActionTypes';
 
 const initialState = {};
 
-function tableReducer(state = initialState, action) {
+export default function tableReducer(state = initialState, action) {
   switch (action.type) {
     case ActionTypes.CF_BUILDER_TABLE_FLASH_ROW_ON:
       return {
@@ -32,5 +32,3 @@ function tableReducer(state = initialState, action) {
       return state;
   }
 }
-
-module.exports = tableReducer;

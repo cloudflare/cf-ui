@@ -1,7 +1,6 @@
-const React = require('react');
-const { PropTypes } = React;
-const DropdownRegistry = require('./DropdownRegistry');
-const { canUseDOM } = require('exenv');
+import React, { PropTypes } from 'react';
+import DropdownRegistry from './DropdownRegistry';
+import { canUseDOM } from 'exenv';
 
 class Dropdown extends React.Component {
   getChildContext() {
@@ -81,4 +80,4 @@ Dropdown.childContextTypes = {
   dropdownRegistry: PropTypes.instanceOf(DropdownRegistry).isRequired
 };
 
-module.exports = Dropdown;
+export default Dropdown;

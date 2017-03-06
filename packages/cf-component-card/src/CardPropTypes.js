@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 const cardDrawer = PropTypes.shape({
   id: PropTypes.string.isRequired,
@@ -9,7 +8,4 @@ const cardDrawer = PropTypes.shape({
 
 const cardDrawers = PropTypes.arrayOf(cardDrawer);
 
-module.exports = {
-  cardDrawer,
-  cardDrawers
-};
+export { cardDrawer, cardDrawers };

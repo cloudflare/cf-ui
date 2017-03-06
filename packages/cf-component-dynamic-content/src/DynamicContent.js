@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class DynamicContent extends React.Component {
   render() {
@@ -18,4 +17,4 @@ DynamicContent.propTypes = {
   }).isRequired
 };
 
-module.exports = DynamicContent;
+export default DynamicContent;

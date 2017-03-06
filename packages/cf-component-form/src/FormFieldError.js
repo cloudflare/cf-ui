@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class FormFieldError extends React.Component {
   render() {
@@ -26,4 +25,4 @@ FormFieldError.propTypes = {
   validations: PropTypes.object.isRequired
 };
 
-module.exports = FormFieldError;
+export default FormFieldError;

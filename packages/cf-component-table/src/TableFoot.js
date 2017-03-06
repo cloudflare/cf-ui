@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class TableFoot extends React.Component {
   render() {
@@ -24,4 +23,4 @@ TableFoot.defaultProps = {
   className: ''
 };
 
-module.exports = TableFoot;
+export default TableFoot;

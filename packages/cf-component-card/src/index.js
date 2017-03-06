@@ -1,9 +1,21 @@
-exports.Card = require('./Card');
-exports.CardContent = require('./CardContent');
-exports.CardControl = require('./CardControl');
-exports.CardDrawers = require('./CardDrawers');
-exports.CardLoadingText = require('./CardLoadingText');
-exports.CardMessages = require('./CardMessages');
-exports.CardPropTypes = require('./CardPropTypes');
-exports.CardSection = require('./CardSection');
-exports.CardBlock = require('./CardBlock');
+import Card from './Card';
+import CardContent from './CardContent';
+import CardControl from './CardControl';
+import CardDrawers from './CardDrawers';
+import CardLoadingText from './CardLoadingText';
+import CardMessages from './CardMessages';
+import CardPropTypes from './CardPropTypes';
+import CardSection from './CardSection';
+import CardBlock from './CardBlock';
+
+export {
+  Card,
+  CardContent,
+  CardControl,
+  CardDrawers,
+  CardLoadingText,
+  CardMessages,
+  CardPropTypes,
+  CardSection,
+  CardBlock
+};

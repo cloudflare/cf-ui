@@ -1,1 +1,3 @@
-module.exports = require('./httpPoll');
+import httpPoll from './httpPoll';
+
+export default httpPoll;

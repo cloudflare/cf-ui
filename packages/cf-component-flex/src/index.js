@@ -1,2 +1,4 @@
-exports.Flex = require('./Flex');
-exports.FlexItem = require('./FlexItem');
+import Flex from './Flex';
+import FlexItem from './FlexItem';
+
+export { Flex, FlexItem };

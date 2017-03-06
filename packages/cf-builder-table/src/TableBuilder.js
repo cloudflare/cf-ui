@@ -1,14 +1,13 @@
-const React = require('react');
-const { PropTypes } = React;
-const { connect } = require('react-redux');
-const TableBuilderPropTypes = require('./TableBuilderPropTypes');
-const {
+import React, { PropTypes } from 'react';
+import { connect } from 'react-redux';
+import TableBuilderPropTypes from './TableBuilderPropTypes';
+import {
   Table,
   TableBody,
   TableHead,
   TableHeadCell,
   TableRow
-} = require('cf-component-table');
+} from 'cf-component-table';
 
 class TableBuilder extends React.Component {
   render() {
@@ -78,4 +77,4 @@ function mapStateToProps(state, ownProps) {
   };
 }
 
-module.exports = connect(mapStateToProps)(TableBuilder);
+export default connect(mapStateToProps)(TableBuilder);

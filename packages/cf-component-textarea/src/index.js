@@ -1,1 +1,3 @@
-module.exports = require('./Textarea');
+import Textarea from './Textarea';
+
+export default Textarea;

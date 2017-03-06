@@ -1,5 +1,5 @@
-const once = require('lodash/once');
-const promisescript = require('promisescript');
+import once from 'lodash/once';
+import promisescript from 'promisescript';
 
 const ADWORDS_ASYNC_SCRIPT = 'https://www.googleadservices.com/pagead/conversion_async.js';
 const ADWORDS_GLOBAL = 'google_trackConversion';
@@ -10,7 +10,7 @@ const getScript = once(() => promisescript({
   exposed: ADWORDS_GLOBAL
 }));
 
-function track(id, label, params, remarketingOnly = false) {
+export function track(id, label, params, remarketingOnly = false) {
   return getScript().then(() => {
     // AdWords exposes an onload callback but not an onerror callback so we
     // can't wait for this to be successful. (shrug)
@@ -22,5 +22,3 @@ function track(id, label, params, remarketingOnly = false) {
     });
   });
 }
-
-module.exports = { track };

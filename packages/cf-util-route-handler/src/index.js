@@ -1,1 +1,3 @@
-module.exports = require('./routeHandler');
+import routeHandler from './routeHandler';
+
+export default { routeHandler };

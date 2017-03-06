@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class Radio extends React.Component {
   constructor(props) {
@@ -49,4 +48,4 @@ Radio.propTypes = {
   onChange: PropTypes.func.isRequired
 };
 
-module.exports = Radio;
+export default Radio;

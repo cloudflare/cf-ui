@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class PageHeader extends React.Component {
   render() {
@@ -18,4 +17,4 @@ PageHeader.propTypes = {
   subtitle: PropTypes.string
 };
 
-module.exports = PageHeader;
+export default PageHeader;

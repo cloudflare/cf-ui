@@ -1,1 +1,3 @@
-module.exports = require('./markdown');
+import markdown from './markdown';
+
+export default markdown;

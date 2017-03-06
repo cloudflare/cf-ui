@@ -1,6 +1,5 @@
-const React = require('react');
-const { PropTypes } = React;
-const uniqueId = require('lodash/uniqueId');
+import React, { PropTypes } from 'react';
+import uniqueId from 'lodash/uniqueId';
 
 class Pagination extends React.Component {
   render() {
@@ -29,4 +28,4 @@ Pagination.propTypes = {
   children: PropTypes.node
 };
 
-module.exports = Pagination;
+export default Pagination;

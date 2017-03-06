@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class ModalFooter extends React.Component {
   render() {
@@ -26,4 +25,4 @@ ModalFooter.defaultProps = {
   simple: false
 };
 
-module.exports = ModalFooter;
+export default ModalFooter;

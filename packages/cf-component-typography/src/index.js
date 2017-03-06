@@ -1,15 +1,33 @@
-exports.Abbr = require('./Abbr');
-exports.Cite = require('./Cite');
-exports.Del = require('./Del');
-exports.Em = require('./Em');
-exports.Ins = require('./Ins');
-exports.Kbd = require('./Kbd');
-exports.Mark = require('./Mark');
-exports.Samp = require('./Samp');
-exports.Small = require('./Small');
-exports.Strike = require('./Strike');
-exports.Strong = require('./Strong');
-exports.Sub = require('./Sub');
-exports.Sup = require('./Sup');
-exports.Underline = require('./Underline');
-exports.Var = require('./Var');
+import Abbr from './Abbr';
+import Cite from './Cite';
+import Del from './Del';
+import Em from './Em';
+import Ins from './Ins';
+import Kbd from './Kbd';
+import Mark from './Mark';
+import Samp from './Samp';
+import Small from './Small';
+import Strike from './Strike';
+import Strong from './Strong';
+import Sub from './Sub';
+import Sup from './Sup';
+import Underline from './Underline';
+import Var from './Var';
+
+export {
+  Abbr,
+  Cite,
+  Del,
+  Em,
+  Ins,
+  Kbd,
+  Mark,
+  Samp,
+  Small,
+  Strike,
+  Strong,
+  Sub,
+  Sup,
+  Underline,
+  Var
+};

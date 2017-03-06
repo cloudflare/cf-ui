@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class Callout extends React.Component {
   render() {
@@ -26,4 +25,4 @@ Callout.defaultProps = {
   type: 'default'
 };
 
-module.exports = Callout;
+export default Callout;

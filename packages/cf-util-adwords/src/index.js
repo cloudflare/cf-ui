@@ -1,1 +1,3 @@
-module.exports = require('./trackAdwords');
+import trackAdwords from './trackAdwords';
+
+export default trackAdwords;

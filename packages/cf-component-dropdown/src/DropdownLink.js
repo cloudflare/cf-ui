@@ -1,7 +1,6 @@
-const React = require('react');
-const { PropTypes } = React;
-const Link = require('cf-component-link');
-const DropdownRegistry = require('./DropdownRegistry');
+import React, { PropTypes } from 'react';
+import Link from 'cf-component-link';
+import DropdownRegistry from './DropdownRegistry';
 
 class DropdownLink extends React.Component {
   constructor(props, context) {
@@ -66,4 +65,4 @@ DropdownLink.contextTypes = {
   dropdownRegistry: PropTypes.instanceOf(DropdownRegistry).isRequired
 };
 
-module.exports = DropdownLink;
+export default DropdownLink;

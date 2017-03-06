@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class Table extends React.Component {
   render() {
@@ -37,4 +36,4 @@ Table.defaultProps = {
   condensed: false
 };
 
-module.exports = Table;
+export default Table;

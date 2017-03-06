@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class LayoutColumn extends React.Component {
   render() {
@@ -17,4 +16,4 @@ LayoutColumn.propTypes = {
   children: PropTypes.node
 };
 
-module.exports = LayoutColumn;
+export default LayoutColumn;

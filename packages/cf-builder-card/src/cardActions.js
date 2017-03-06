@@ -1,6 +1,6 @@
-const ActionTypes = require('./CardActionTypes');
+import ActionTypes from './CardActionTypes';
 
-exports.toggleDrawer = function(cardName, drawerId) {
+export const toggleDrawer = function(cardName, drawerId) {
   return {
     type: ActionTypes.CF_BUILDER_CARD_DRAWER_TOGGLE,
     cardName: cardName,

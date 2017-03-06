@@ -1,6 +1,5 @@
-const React = require('react');
-const { PropTypes } = React;
-const Icon = require('cf-component-icon');
+import React, { PropTypes } from 'react';
+import Icon from 'cf-component-icon';
 
 class ModalClose extends React.Component {
   render() {
@@ -21,4 +20,4 @@ ModalClose.defaultProps = {
   label: false
 };
 
-module.exports = ModalClose;
+export default ModalClose;

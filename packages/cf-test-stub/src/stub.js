@@ -22,7 +22,7 @@ function defineGetter(test, stub, methodName, method) {
   });
 }
 
-function createStub() {
+export function createStub() {
   const test = current;
 
   let called = false;
@@ -46,7 +46,7 @@ function createStub() {
   return stub;
 }
 
-function stubMethod(obj, methodName, method) {
+export function stubMethod(obj, methodName, method) {
   const test = current;
   const prev = obj[methodName];
 
@@ -88,6 +88,3 @@ function stubMethod(obj, methodName, method) {
 
   return stub;
 }
-
-exports.createStub = createStub;
-exports.stubMethod = stubMethod;

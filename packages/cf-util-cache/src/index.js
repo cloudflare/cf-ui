@@ -1,1 +1,3 @@
-module.exports = require('./cache');
+import cache from './cache';
+
+export default cache;

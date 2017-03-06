@@ -1,2 +1,4 @@
-exports.Code = require('./Code');
-exports.CodeBlock = require('./CodeBlock');
+import Code from './Code';
+import CodeBlock from './CodeBlock';
+
+export { Code, CodeBlock };

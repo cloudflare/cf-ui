@@ -1,6 +1,5 @@
-const React = require('react');
-const { PropTypes } = React;
-const Code = require('./Code');
+import React, { PropTypes } from 'react';
+import Code from './Code';
 
 class CodeBlock extends React.Component {
   render() {
@@ -18,4 +17,4 @@ CodeBlock.propTypes = {
   children: PropTypes.node
 };
 
-module.exports = CodeBlock;
+export default CodeBlock;

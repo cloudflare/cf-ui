@@ -1,10 +1,8 @@
-const React = require('react');
-const Icon = require('cf-component-icon');
+import React from 'react';
+import Icon from 'cf-component-icon';
 
-class Loading extends React.Component {
+export default class Loading extends React.Component {
   render() {
     return <Icon type="loading" label="Loading" role="status" />;
   }
 }
-
-module.exports = Loading;

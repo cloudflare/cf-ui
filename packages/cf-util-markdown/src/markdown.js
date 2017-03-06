@@ -1,5 +1,5 @@
-const marked = require('marked');
-const memoize = require('lodash.memoize');
+import marked from 'marked';
+import memoize from 'lodash.memoize';
 
 // Setup default options.
 marked.setOptions({
@@ -31,4 +31,4 @@ function markdown(str, opts) {
   return opts ? marked(str, markedOpts) : memoizedMarked(str);
 }
 
-module.exports = markdown;
+export default markdown;

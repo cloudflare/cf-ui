@@ -1,6 +1,5 @@
-const React = require('react');
-const { PropTypes } = React;
-const ReactSelect = require('react-select');
+import React, { PropTypes } from 'react';
+import ReactSelect from 'react-select';
 
 class Select extends React.Component {
   render() {
@@ -25,4 +24,4 @@ Select.defaultProps = {
   async: false
 };
 
-module.exports = Select;
+export default Select;

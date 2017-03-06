@@ -1,1 +1,3 @@
-module.exports = require('./Callout');
+import Callout from './Callout';
+
+export { Callout };

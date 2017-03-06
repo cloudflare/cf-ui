@@ -1,1 +1,3 @@
-module.exports = require('./Progress');
+import Progress from './Progress';
+
+export default Progress;

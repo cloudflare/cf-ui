@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class List extends React.Component {
   render() {
@@ -30,4 +29,4 @@ List.defaultProps = {
   unstyled: false
 };
 
-module.exports = List;
+export default List;

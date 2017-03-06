@@ -1,4 +1,6 @@
-exports.cardActions = require('./cardActions');
-exports.CardActionTypes = require('./CardActionTypes');
-exports.CardBuilder = require('./CardBuilder');
-exports.cardReducer = require('./cardReducer');
+import cardActions from './cardActions';
+import CardActionTypes from './CardActionTypes';
+import CardBuilder from './CardBuilder';
+import cardReducer from './cardReducer';
+
+export { cardActions, CardActionTypes, CardBuilder, cardReducer };

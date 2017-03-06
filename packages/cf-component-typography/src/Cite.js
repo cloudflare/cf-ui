@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class Cite extends React.Component {
   render() {
@@ -15,4 +14,4 @@ Cite.propTypes = {
   children: PropTypes.node
 };
 
-module.exports = Cite;
+export default Cite;

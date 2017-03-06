@@ -1,10 +1,6 @@
-const React = require('react');
-const { PropTypes } = React;
-const {
-  Pagination,
-  PaginationItem
-} = require('cf-component-pagination');
-const Icon = require('cf-component-icon');
+import React, { PropTypes } from 'react';
+import { Pagination, PaginationItem } from 'cf-component-pagination';
+import Icon from 'cf-component-icon';
 
 class PaginationBuilder extends React.Component {
   render() {
@@ -100,4 +96,4 @@ PaginationBuilder.propTypes = {
   infoFormatter: PropTypes.func
 };
 
-module.exports = PaginationBuilder;
+export default PaginationBuilder;

@@ -1,9 +1,8 @@
-const React = require('react');
-const { PropTypes } = React;
-const CardSection = require('./CardSection');
-const CardToolbar = require('./CardToolbar');
-const CardToolbarLink = require('./CardToolbarLink');
-const CardPropTypes = require('./CardPropTypes');
+import React, { PropTypes } from 'react';
+import CardSection from './CardSection';
+import CardToolbar from './CardToolbar';
+import CardToolbarLink from './CardToolbarLink';
+import CardPropTypes from './CardPropTypes';
 
 let UNIQUE_ID = 0;
 
@@ -78,4 +77,4 @@ CardDrawers.propTypes = {
   controls: PropTypes.any
 };
 
-module.exports = CardDrawers;
+export default CardDrawers;

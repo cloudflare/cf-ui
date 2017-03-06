@@ -1,5 +1,4 @@
-const React = require('react');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
 
 class Text extends React.Component {
   render() {
@@ -37,4 +36,4 @@ Text.propTypes = {
   children: PropTypes.node
 };
 
-module.exports = Text;
+export default Text;

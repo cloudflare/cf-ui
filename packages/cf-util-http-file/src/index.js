@@ -1,3 +1,5 @@
-exports.uploadFile = require('./uploadFile');
-exports.saveFile = require('./saveFile');
-exports.downloadFile = require('./downloadFile');
+import uploadFile from './uploadFile';
+import saveFile from './saveFile';
+import downloadFile from './downloadFile';
+
+export { uploadFile, saveFile, downloadFile };

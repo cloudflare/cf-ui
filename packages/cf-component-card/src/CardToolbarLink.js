@@ -1,6 +1,5 @@
-const React = require('react');
-const Link = require('cf-component-link');
-const { PropTypes } = React;
+import React, { PropTypes } from 'react';
+import Link from 'cf-component-link';
 
 class CardToolbarLink extends React.Component {
   constructor(props) {
@@ -40,4 +39,4 @@ CardToolbarLink.propTypes = {
   children: PropTypes.node
 };
 
-module.exports = CardToolbarLink;
+export default CardToolbarLink;

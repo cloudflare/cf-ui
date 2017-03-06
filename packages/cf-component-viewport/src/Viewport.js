@@ -1,7 +1,6 @@
-const React = require('react');
-const { PropTypes } = React;
-const MediaQuery = require('react-responsive');
-const buildMediaQuery = require('./buildMediaQuery');
+import React, { PropTypes } from 'react';
+import MediaQuery from 'react-responsive';
+import buildMediaQuery from './buildMediaQuery';
 
 const SIZES = {
   mobile: { minWidth: null, maxWidth: '15.6em' },
@@ -40,4 +39,4 @@ Viewport.defaultProps = {
   not: false
 };
 
-module.exports = Viewport;
+export default Viewport;
