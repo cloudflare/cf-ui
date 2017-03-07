@@ -37,7 +37,7 @@ const content = packages.reduce(
         ${folder}
       </h2>
       <div className="cf-example">
-        <div className="cf-example__content">
+        <div className="cf-example__content" id="${folder}--basic">
           <${name} />
         </div>
         <div className="cf-example__code">
