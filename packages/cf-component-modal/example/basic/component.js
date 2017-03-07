@@ -10,7 +10,10 @@ import {
 } from 'cf-component-modal';
 import { GatewayDest, GatewayProvider } from 'react-gateway';
 import ReactModal2 from 'react-modal2';
-import { Button } from 'cf-component-button';
+import { Button as ButtonUnstyled, ButtonTheme } from 'cf-component-button';
+import { applyTheme } from 'cf-style-container';
+
+const Button = applyTheme(ButtonUnstyled, ButtonTheme);
 
 class ModalComponent extends React.Component {
   constructor(props) {
@@ -40,7 +43,9 @@ class ModalComponent extends React.Component {
   render() {
     return (
       <div>
-        <Button onClick={this.handleRequestOpen}>Open Modal</Button>
+        <Button type="default" onClick={this.handleRequestOpen}>
+          Open Modal
+        </Button>
         <Modal
           width={this.state.width}
           isOpen={this.state.isModalOpen}

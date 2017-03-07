@@ -8,10 +8,13 @@ import {
   FormFieldError
 } from 'cf-component-form';
 import { Flex, FlexItem } from 'cf-component-flex';
-import { Button } from 'cf-component-button';
 import Input from 'cf-component-input';
 import Select from 'cf-component-select';
 import Textarea from 'cf-component-textarea';
+import { Button as ButtonUnstyled, ButtonTheme } from 'cf-component-button';
+import { applyTheme } from 'cf-style-container';
+
+const Button = applyTheme(ButtonUnstyled, ButtonTheme);
 
 class FormComponent extends React.Component {
   constructor(props) {
