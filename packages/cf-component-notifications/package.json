@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "assert-equal-jsx": "^1.0.0",
-    "cf-component-button": "^3.0.0",
+    "cf-component-button": "^4.0.0",
     "react-addons-test-utils": "^15.0.0-0",
     "react-dom": "^15.0.0-0"
   },

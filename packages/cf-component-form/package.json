@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "assert-equal-jsx": "^1.0.0",
-    "cf-component-button": "^3.0.0",
+    "cf-component-button": "^4.0.0",
     "cf-component-flex": "^2.0.0",
     "cf-component-input": "^3.0.1",
     "cf-component-select": "^2.1.2",

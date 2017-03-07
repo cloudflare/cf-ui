@@ -149,6 +149,17 @@ import highlightedViewportComponent
 
 const Examples = () => (
   <div className="cf-example-content">
+    <h2 className="cf-example__heading" id="cf-builder-card">
+      cf-builder-card
+    </h2>
+    <div className="cf-example">
+      <div className="cf-example__content">
+        <CardBuilder />
+      </div>
+      <div className="cf-example__code">
+        <pre dangerouslySetInnerHTML={{ __html: highlightedCardBuilder }} />
+      </div>
+    </div>
 
     <h2 className="cf-example__heading" id="cf-builder-pagination">
       cf-builder-pagination
