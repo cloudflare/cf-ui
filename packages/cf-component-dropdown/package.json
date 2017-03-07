@@ -16,7 +16,7 @@
   },
   "devDependencies": {
     "assert-equal-jsx": "^1.0.0",
-    "cf-component-button": "^3.0.0",
+    "cf-component-button": "^4.0.0",
     "cf-test-focus": "^2.0.1",
     "cf-util-route-handler": "^4.0.1",
     "react-dom": "^15.0.0-0"

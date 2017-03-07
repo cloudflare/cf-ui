@@ -17,7 +17,7 @@
     "react-redux": "^3.1.0"
   },
   "devDependencies": {
-    "cf-component-button": "^3.0.0",
+    "cf-component-button": "^4.0.0",
     "cf-component-table": "^2.1.1",
     "cf-test-store": "^2.0.1",
     "enzyme": "^2.3.0",
