@@ -1,8 +1,8 @@
 import React, { PropTypes } from 'react';
 import ReactDOMServer from 'react-dom/server';
 import { Provider } from 'react-fela';
-import Html from './html';
-import Main from './main';
+import Html from './components/html';
+import Main from './components/main';
 import { createRenderer } from './felaRenderer';
 
 const renderer = createRenderer();
@@ -20,7 +20,8 @@ export default (locals, callback) => {
   callback(
     null,
     `
-    <!DOCTYPE html>${ReactDOMServer.renderToStaticMarkup(<Html body={body} hash={locals.webpackStats.hash} cssStyles={cssStyles} fontStyles={fontStyles} />)}
+    <!DOCTYPE html>
+    ${ReactDOMServer.renderToStaticMarkup(<Html body={body} hash={locals.webpackStats.hash} cssStyles={cssStyles} fontStyles={fontStyles} />)}
   `
   );
 };

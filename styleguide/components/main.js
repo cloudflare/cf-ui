@@ -1,9 +1,11 @@
 import React from 'react';
 import { ThemeProvider } from 'react-fela';
 import ButtonExample
-  from '../packages/cf-component-button/example/basic/component';
+  from '../../packages/cf-component-button/example/basic/component';
 import highlightedButtonExample
-  from '!highlight-loader?raw=true&lang=jsx!../packages/cf-component-button/example/basic/component';
+  from '!highlight-loader?raw=true&lang=jsx!../../packages/cf-component-button/example/basic/component';
+import '../assets/base.css';
+import '../assets/styles.css';
 
 const Main = () => (
   <div>
