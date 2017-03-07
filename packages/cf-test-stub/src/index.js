@@ -1,3 +1,3 @@
-import stub from './stub';
+import { createStub, stubMethod } from './stub';
 
-export default stub;
+export { createStub, stubMethod };
