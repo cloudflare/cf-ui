@@ -1,12 +1,16 @@
 import React from 'react';
 import { CardBuilder } from 'cf-builder-card';
-import { Button } from 'cf-component-button';
 import { Table, TableBody, TableRow, TableCell } from 'cf-component-table';
+import { Button as ButtonUnstyled, ButtonTheme } from 'cf-component-button';
+import { applyTheme } from 'cf-style-container';
 
+const Button = applyTheme(ButtonUnstyled, ButtonTheme);
 const EXAMPLE_CARD = 'EXAMPLE_CARD';
 
 const MyButton = (
-  <Button onClick={() => console.log('Button clicked!')}>Click me!</Button>
+  <Button type="default" onClick={() => console.log('Button clicked!')}>
+    Click me!
+  </Button>
 );
 
 const BuilderCard = () => (

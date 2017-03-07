@@ -2,7 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { TableBuilder, tableReducer, tableActions } from 'cf-builder-table';
 import { TableCell } from 'cf-component-table';
-import { Button } from 'cf-component-button';
+import { Button as ButtonUnstyled, ButtonTheme } from 'cf-component-button';
+import { applyTheme } from 'cf-style-container';
+
+const Button = applyTheme(ButtonUnstyled, ButtonTheme);
 
 const EXAMPLE_TABLE = 'EXAMPLE_TABLE';
 
@@ -69,7 +72,10 @@ class BuilderTable extends React.Component {
             cell: cells => {
               return (
                 <TableCell key="actions">
-                  <Button onClick={this.handleClick.bind(null, cells.id)}>
+                  <Button
+                    type="default"
+                    onClick={this.handleClick.bind(null, cells.id)}
+                  >
                     Update
                   </Button>
                 </TableCell>

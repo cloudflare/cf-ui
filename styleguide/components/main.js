@@ -1,6 +1,8 @@
 import React from 'react';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
+import { ThemeProvider } from 'cf-style-container';
+import { variables } from 'cf-style-const';
 import Examples, { packages } from './examples';
 import logo from '../assets/logo.png';
 
@@ -19,23 +21,25 @@ const reducer = combineReducers({
 const store = createStore(reducer);
 
 const Main = () => (
-  <div>
-    <header className="cf-example-header">
-      <a href="https://github.com/cloudflare/cf-ui">
-        <img src={logo} alt="cf-ui" height="50" />
-      </a>
-    </header>
-    <nav className="cf-example-sidebar">
-      {packages.map(pack => (
-        <a key={pack} href={`#${pack}`}>
-          {pack}
+  <ThemeProvider theme={variables}>
+    <div>
+      <header className="cf-example-header">
+        <a href="https://github.com/cloudflare/cf-ui">
+          <img src={logo} alt="cf-ui" height="50" />
         </a>
-      ))}
-    </nav>
-    <Provider store={store}>
-      <Examples />
-    </Provider>
-  </div>
+      </header>
+      <nav className="cf-example-sidebar">
+        {packages.map(pack => (
+          <a key={pack} href={`#${pack}`}>
+            {pack}
+          </a>
+        ))}
+      </nav>
+      <Provider store={store}>
+        <Examples />
+      </Provider>
+    </div>
+  </ThemeProvider>
 );
 
 Main.displayName = 'Main';

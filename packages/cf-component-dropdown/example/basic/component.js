@@ -1,10 +1,19 @@
 import React from 'react';
-import { Button, ButtonGroup } from 'cf-component-button';
 import {
   Dropdown,
   DropdownLink,
   DropdownSeparator
 } from 'cf-component-dropdown';
+import {
+  Button as ButtonUnstyled,
+  ButtonTheme,
+  ButtonGroup as ButtonGroupUnstyled,
+  ButtonGroupTheme
+} from 'cf-component-button';
+import { applyTheme } from 'cf-style-container';
+
+const Button = applyTheme(ButtonUnstyled, ButtonTheme);
+const ButtonGroup = applyTheme(ButtonGroupUnstyled, ButtonGroupTheme);
 
 class DropdownComponent extends React.Component {
   constructor(props) {
@@ -35,7 +44,7 @@ class DropdownComponent extends React.Component {
           </Dropdown>}
 
         <Button
-          type="primary"
+          type="success"
           onClick={() => this.setState({ dropdown2Open: true })}
         >
           Open Dropdown 2

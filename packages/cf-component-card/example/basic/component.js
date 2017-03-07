@@ -7,7 +7,10 @@ import {
   CardMessages,
   CardSection
 } from 'cf-component-card';
-import { Button } from 'cf-component-button';
+import { Button as ButtonUnstyled, ButtonTheme } from 'cf-component-button';
+import { applyTheme } from 'cf-style-container';
+
+const Button = applyTheme(ButtonUnstyled, ButtonTheme);
 
 class CardComponent extends React.Component {
   constructor(props) {
@@ -41,7 +44,7 @@ class CardComponent extends React.Component {
             />
           </CardContent>
           <CardControl>
-            <Button onClick={() => {}}>Example Control</Button>
+            <Button type="default" onClick={() => {}}>Example Control</Button>
           </CardControl>
         </CardSection>
         <CardDrawers

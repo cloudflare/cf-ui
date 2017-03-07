@@ -4,7 +4,10 @@ import {
   Notification,
   NotificationGlobalContainer
 } from 'cf-component-notifications';
-import { Button } from 'cf-component-button';
+import { Button as ButtonUnstyled, ButtonTheme } from 'cf-component-button';
+import { applyTheme } from 'cf-style-container';
+
+const Button = applyTheme(ButtonUnstyled, ButtonTheme);
 
 let UNIQUE_ID = 0;
 
