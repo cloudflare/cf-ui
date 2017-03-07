@@ -1,8 +1,4 @@
 import React from 'react';
-import { handleRoutes } from 'cf-util-route-handler';
-
-handleRoutes(route => console.log(route));
-
 import { Button, ButtonGroup } from 'cf-component-button';
 import {
   Dropdown,
