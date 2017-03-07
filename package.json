@@ -24,7 +24,8 @@
     "examples:publish": "cross-env BABEL_ENV=commonjs gulp examplesPublish",
     "start": "npm run start:devserver | npm run start:server",
     "start:devserver": "cross-env BABEL_ENV=commonjs node styleguide/server.dev.hook",
-    "start:server": "cross-env BABEL_ENV=commonjs NODE_ENV=development node styleguide/server.hook"
+    "start:server": "cross-env BABEL_ENV=commonjs NODE_ENV=development node styleguide/server.hook",
+    "gen": "node ./styleguide/generateList"
   },
   "devDependencies": {
     "assert-equal-jsx": "^1.0.3",
@@ -112,8 +113,8 @@
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.0.0-0",
     "react-fela": "^4.2.5",
-    "react-redux": "^3.1.0",
-    "redux": "^3.1.0",
+    "react-redux": "^5.0.3",
+    "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
     "rimraf": "^2.5.4",
     "sinon": "^1.17.6",

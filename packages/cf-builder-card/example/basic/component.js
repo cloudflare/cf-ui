@@ -5,12 +5,16 @@ import { Table, TableBody, TableRow, TableCell } from 'cf-component-table';
 
 const EXAMPLE_CARD = 'EXAMPLE_CARD';
 
+const MyButton = (
+  <Button onClick={() => console.log('Button clicked!')}>Click me!</Button>
+);
+
 const BuilderCard = () => (
   <CardBuilder
     cardName={EXAMPLE_CARD}
     title="This is a Card"
     description="This is the description of a card."
-    control={<Button>Click me!</Button>}
+    control={MyButton}
     table={
       (
         <Table striped>

@@ -1,3 +1,3 @@
-import routeHandler from './routeHandler';
+import { handleRoutes, routeTo, __resetRouteHandler } from './routeHandler';
 
-export default routeHandler;
+export { handleRoutes, routeTo, __resetRouteHandler };

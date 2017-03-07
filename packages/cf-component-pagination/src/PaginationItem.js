@@ -29,7 +29,7 @@ class PaginationItem extends React.Component {
     if (isEllipsis) {
       children = <span>…</span>;
     } else if (isLoading) {
-      children = <Icon type="loading" />;
+      children = <Icon type="loading" label={false} />;
     } else {
       children = this.props.children;
     }

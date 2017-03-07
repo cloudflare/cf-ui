@@ -55,7 +55,14 @@ class PaginationBuilder extends React.Component {
         );
       } else if (!prevWasEllipsis) {
         prevWasEllipsis = true;
-        items.push(<PaginationItem key={i} type="ellipsis" />);
+        items.push(
+          <PaginationItem
+            key={i}
+            type="ellipsis"
+            label={'Page ' + i}
+            onClick={() => null}
+          />
+        );
       }
     }
 
