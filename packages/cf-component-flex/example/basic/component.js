@@ -5,7 +5,7 @@ class FlexComponent extends React.Component {
   render() {
     return (
       <div>
-        <Flex spacing={false}>
+        <Flex spacing="wide">
           <FlexItem>FlexItem 1</FlexItem>
           <FlexItem>FlexItem 2</FlexItem>
           <FlexItem>FlexItem 3</FlexItem>

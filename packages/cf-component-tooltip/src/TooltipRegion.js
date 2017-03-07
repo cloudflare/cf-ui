@@ -3,9 +3,7 @@ import createTooltip from './createTooltip';
 
 class TooltipRegion extends React.Component {
   componentDidMount() {
-    const els = this.refs.tooltipRegion.querySelectorAll(
-      this.props.querySelector
-    );
+    const els = this.tooltipRegion.querySelectorAll(this.props.querySelector);
 
     this.destroyTooltips = [].map.call(els, el => {
       return createTooltip(el, el.title, this.props.position);
@@ -18,7 +16,10 @@ class TooltipRegion extends React.Component {
 
   render() {
     return (
-      <div className="cf-tooltip__region" ref="tooltipRegion">
+      <div
+        className="cf-tooltip__region"
+        ref={tooltip => this.tooltipRegion = tooltip}
+      >
         {this.props.children}
       </div>
     );

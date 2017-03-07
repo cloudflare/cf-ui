@@ -61,7 +61,7 @@ class NofiticationsComponent extends React.Component {
     return (
       <div>
         <Button
-          type="error"
+          type="danger"
           onClick={this.handleAdd.bind(this, 'error', false, 4000)}
         >
           Add Error Notification

@@ -10,10 +10,10 @@
   "publishConfig": {
     "registry": "http://registry.npmjs.org/"
   },
-  "dependencies": {
-    "react": "^0.14.2 || ^15.0.0-0"
-  },
   "devDependencies": {
     "react-dom": "^15.0.0-0"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
   }
 }

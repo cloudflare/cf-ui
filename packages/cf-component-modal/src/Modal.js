@@ -28,7 +28,6 @@ class Modal extends React.Component {
             <div className="cf-modal__backdrop-scroller">
               <div className="cf-modal__backdrop-outer">
                 <ReactModal2
-                  ref="modal"
                   key="modal"
                   backdropClassName="cf-modal__backdrop"
                   modalClassName={modalClassName}

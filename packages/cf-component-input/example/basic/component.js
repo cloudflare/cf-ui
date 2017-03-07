@@ -1,7 +1,7 @@
 import React from 'react';
-import Input from 'cf-component-icon';
+import Input from 'cf-component-input';
 
-class IconComponent extends React.Component {
+class InputComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -37,4 +37,4 @@ class IconComponent extends React.Component {
   }
 }
 
-export default IconComponent;
+export default InputComponent;
