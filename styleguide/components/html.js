@@ -8,11 +8,11 @@ const Html = ({ body, hash, cssStyles, fontStyles }) => (
     <head>
       <meta charSet="utf-8" />
       <title>cf-ui styleguide</title>
-      {cssStyles && <link rel="stylesheet" href={`app-${hash}.css`} />}
       <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/styles/default.min.css"
       />
+      {cssStyles && <link rel="stylesheet" href={`app-${hash}.css`} />}
       <style>
         {`html { font-size: ${variables.fontSize} }`}
       </style>

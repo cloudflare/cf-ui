@@ -322,11 +322,11 @@ body {
 }
 
 .cf-example__code .markdown .link,
-.cf-example__code .markdown .link .string {
+.cf-example__code .markdown .link .hljs-string {
     color: #555
 }
 
-.cf-example__code .markdown .link .string.title {
+.cf-example__code .markdown .link .hljs-string.title {
     color: #ddd
 }
 
@@ -360,7 +360,7 @@ body {
     color: #cfcb90
 }
 
-.storage.modifier {
+.hljs-keyword {
     color: #96cbfe
 }
 
@@ -386,44 +386,44 @@ body {
     background-color: rgba(86, 45, 86, .75)
 }
 
-.string .meta.embedded.line,
-.string .source {
+.hljs-string .meta.embedded.line,
+.hljs-string .source {
     color: #ededed
 }
 
-.string .punctuation.section.embedded,
-.string .punctuation.section.embedded .source {
+.hljs-string .punctuation.section.embedded,
+.hljs-string .punctuation.section.embedded .source {
     color: #00a0a0
 }
 
-.string {
+.hljs-string {
     color: #a8ff60
 }
 
-.string .constant {
+.hljs-string .constant {
     color: #00a0a0
 }
 
-.string.regexp {
+.hljs-string.regexp {
     color: #e9c062
 }
 
-.string.regexp .constant.character.escape,
-.string.regexp .source.ruby.embedded,
-.string.regexp .string.regexp.arbitrary-repetition {
+.hljs-string.regexp .constant.character.escape,
+.hljs-string.regexp .source.ruby.embedded,
+.hljs-string.regexp .hljs-string.regexp.arbitrary-repetition {
     color: #ff8000
 }
 
-.string.regexp.group {
+.hljs-string.regexp.group {
     color: #c6a24f;
     background-color: hsla(0, 0%, 100%, .06)
 }
 
-.string.regexp.character-class {
+.hljs-string.regexp.character-class {
     color: #b18a3d
 }
 
-.string .variable {
+.hljs-string .variable {
     color: #8a9a95
 }
 
@@ -431,7 +431,7 @@ body {
     color: #ffffb6
 }
 
-.support.function {
+.hljs-function {
     color: #dad085
 }
 
@@ -472,10 +472,10 @@ body {
 
 .meta.sgml.html .meta.doctype,
 .meta.sgml.html .meta.doctype .entity,
-.meta.sgml.html .meta.doctype .string,
+.meta.sgml.html .meta.doctype .hljs-string,
 .meta.xml-processing,
 .meta.xml-processing .entity,
-.meta.xml-processing .string {
+.meta.xml-processing .hljs-string {
     color: #494949
 }
 
