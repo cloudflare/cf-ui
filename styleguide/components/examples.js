@@ -149,6 +149,7 @@ import highlightedViewportComponent
 
 const Examples = () => (
   <div className="cf-example-content">
+
     <h2 className="cf-example__heading" id="cf-builder-card">
       cf-builder-card
     </h2>
@@ -261,6 +262,20 @@ const Examples = () => (
       <div className="cf-example__code">
         <pre
           dangerouslySetInnerHTML={{ __html: highlightedCopyableComponent }}
+        />
+      </div>
+    </div>
+
+    <h2 className="cf-example__heading" id="cf-component-dropdown">
+      cf-component-dropdown
+    </h2>
+    <div className="cf-example">
+      <div className="cf-example__content">
+        <DropdownComponent />
+      </div>
+      <div className="cf-example__code">
+        <pre
+          dangerouslySetInnerHTML={{ __html: highlightedDropdownComponent }}
         />
       </div>
     </div>
@@ -483,6 +498,18 @@ const Examples = () => (
       </div>
     </div>
 
+    <h2 className="cf-example__heading" id="cf-component-select">
+      cf-component-select
+    </h2>
+    <div className="cf-example">
+      <div className="cf-example__content">
+        <SelectComponent />
+      </div>
+      <div className="cf-example__code">
+        <pre dangerouslySetInnerHTML={{ __html: highlightedSelectComponent }} />
+      </div>
+    </div>
+
     <h2 className="cf-example__heading" id="cf-component-table">
       cf-component-table
     </h2>
@@ -545,6 +572,20 @@ const Examples = () => (
       </div>
     </div>
 
+    <h2 className="cf-example__heading" id="cf-component-tooltip">
+      cf-component-tooltip
+    </h2>
+    <div className="cf-example">
+      <div className="cf-example__content">
+        <TooltipComponent />
+      </div>
+      <div className="cf-example__code">
+        <pre
+          dangerouslySetInnerHTML={{ __html: highlightedTooltipComponent }}
+        />
+      </div>
+    </div>
+
     <h2 className="cf-example__heading" id="cf-component-typography">
       cf-component-typography
     </h2>
@@ -570,32 +611,6 @@ const Examples = () => (
         <pre
           dangerouslySetInnerHTML={{ __html: highlightedViewportComponent }}
         />
-      </div>
-    </div>
-
-    <h2 className="cf-example__heading" id="cf-component-tooltip">
-      cf-component-tooltip
-    </h2>
-    <div className="cf-example">
-      <div className="cf-example__content">
-        <TooltipComponent />
-      </div>
-      <div className="cf-example__code">
-        <pre
-          dangerouslySetInnerHTML={{ __html: highlightedTooltipComponent }}
-        />
-      </div>
-    </div>
-
-    <h2 className="cf-example__heading" id="cf-component-select">
-      cf-component-select
-    </h2>
-    <div className="cf-example">
-      <div className="cf-example__content">
-        <SelectComponent />
-      </div>
-      <div className="cf-example__code">
-        <pre dangerouslySetInnerHTML={{ __html: highlightedSelectComponent }} />
       </div>
     </div>
 
