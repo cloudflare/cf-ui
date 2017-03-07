@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOMServer from 'react-dom/server';
 import express from 'express';
 import compression from 'compression';
-import Html from './html';
+import Html from './components/html';
 
 const app = express();
 const port = process.env.PORT || 8000;
