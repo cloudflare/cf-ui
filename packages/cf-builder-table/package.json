@@ -13,7 +13,6 @@
   "dependencies": {
     "cf-component-table": "^2.1.1",
     "cf-pony": "^1.1.0",
-    "react": "^0.14.2 || ^15.0.0-0",
     "react-redux": "^3.1.0"
   },
   "devDependencies": {
@@ -24,5 +23,8 @@
     "react-dom": "^15.0.0-0",
     "redux": "^3.0.2",
     "redux-thunk": "^2.0.1"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
   }
 }

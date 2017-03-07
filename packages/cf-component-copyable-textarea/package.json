@@ -12,11 +12,13 @@
   },
   "dependencies": {
     "cf-component-textarea": "^3.1.1",
-    "react": "^0.14.2 || ^15.0.0-0",
     "react-dom": "^0.14.2 || ^15.0.0-0"
   },
   "devDependencies": {
     "assert-equal-jsx": "^1.0.3",
     "react-addons-test-utils": "^15.4.1"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
   }
 }
