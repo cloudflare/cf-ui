@@ -1,7 +1,6 @@
 import webpack from 'webpack';
 import path from 'path';
 import ip from 'ip';
-import { alias } from './alias';
 import { HOT_RELOAD_PORT, SRC_DIR, BUILD_DIR } from './constants';
 
 export default {
@@ -48,7 +47,6 @@ export default {
     //new webpack.NoEmitOnErrorsPlugin()
   ],
   resolve: {
-    alias,
     extensions: ['.js', '.json'],
     modules: ['styleguide', 'node_modules']
   }

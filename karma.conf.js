@@ -1,7 +1,6 @@
 import minimist from 'minimist';
 import defined from 'defined';
 import path from 'path';
-import webpackConfig from './webpack.babel.js';
 
 const customLaunchers = {};
 
@@ -82,7 +81,7 @@ if (typeof args.browsers === 'string') {
 
 module.exports = function(config) {
   config.set({
-    frameworks: ['mocha'],
+    frameworks: ['browserify', 'mocha'],
 
     files: [
       {
@@ -94,10 +93,8 @@ module.exports = function(config) {
     ],
 
     preprocessors: {
-      'packages/*/test/**/*.js': ['webpack']
+      'packages/*/test/**/*.js': ['browserify']
     },
-
-    webpack: webpackConfig,
 
     // Overridable with a comma-separated list with `--reporters`
     reporters: reporters,

@@ -134,10 +134,6 @@ import ToggleComponent
   from '../../packages/cf-component-toggle/example/basic/component';
 import highlightedToggleComponent
   from '!highlight-loader?raw=true&lang=jsx!../../packages/cf-component-toggle/example/basic/component';
-import TooltipComponent
-  from '../../packages/cf-component-tooltip/example/basic/component';
-import highlightedTooltipComponent
-  from '!highlight-loader?raw=true&lang=jsx!../../packages/cf-component-tooltip/example/basic/component';
 import TypographyComponent
   from '../../packages/cf-component-typography/example/basic/component';
 import highlightedTypographyComponent
@@ -581,20 +577,6 @@ const Examples = () => (
       </div>
     </div>
 
-    <h2 className="cf-example__heading" id="cf-component-tooltip">
-      cf-component-tooltip
-    </h2>
-    <div className="cf-example">
-      <div className="cf-example__content" id="cf-component-tooltip--basic">
-        <TooltipComponent />
-      </div>
-      <div className="cf-example__code">
-        <pre
-          dangerouslySetInnerHTML={{ __html: highlightedTooltipComponent }}
-        />
-      </div>
-    </div>
-
     <h2 className="cf-example__heading" id="cf-component-typography">
       cf-component-typography
     </h2>
@@ -660,7 +642,6 @@ export const packages = [
   'cf-component-text',
   'cf-component-textarea',
   'cf-component-toggle',
-  'cf-component-tooltip',
   'cf-component-typography',
   'cf-component-viewport'
 ];
