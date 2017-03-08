@@ -10,13 +10,8 @@
   "publishConfig": {
     "registry": "http://registry.npmjs.org/"
   },
-  "dependencies": {
-    "cf-util-route-handler": "^4.0.1"
-  },
   "devDependencies": {
     "assert-equal-jsx": "^1.0.0",
-    "backbone": "^1.2.3",
-    "jquery": "^2.2.0",
     "react-dom": "^15.0.0-0"
   },
   "peerDependencies": {

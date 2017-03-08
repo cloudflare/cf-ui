@@ -4,7 +4,6 @@ import path from 'path';
 import webpack from 'webpack';
 import ProgressBarPlugin from 'progress-bar-webpack-plugin';
 import chalk from 'chalk';
-import { alias } from './alias';
 import { SRC_DIR, BUILD_DIR } from './constants';
 
 export default {
@@ -44,7 +43,13 @@ export default {
     libraryTarget: 'umd'
   },
   plugins: [
-    new StaticSiteGeneratorPlugin('static', ['/index.html']),
+    new StaticSiteGeneratorPlugin({
+      entry: 'static',
+      paths: ['/index.html'],
+      globals: {
+        document: {}
+      }
+    }),
     new ProgressBarPlugin({
       format: `  build [:bar] ${chalk.green.bold(':percent')} (:elapsed seconds)`,
       clear: false
@@ -59,7 +64,6 @@ export default {
     new webpack.optimize.UglifyJsPlugin()
   ],
   resolve: {
-    alias,
     extensions: ['.js', '.json'],
     modules: ['node_modules']
   }

@@ -2,6 +2,10 @@ const fs = require('fs');
 const path = require('path');
 const prettier = require('prettier');
 
+const ignoredPackages = [
+  'cf-component-tooltip' // because it doesn't support server-side rendering
+];
+
 function capitalize(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
@@ -11,7 +15,8 @@ const packages = fs
   .filter(
     file =>
       file.indexOf('cf-builder-') === 0 || file.indexOf('cf-component-') === 0
-  );
+  )
+  .filter(file => !ignoredPackages.some(ignored => ignored === file));
 
 console.log(packages);
 
