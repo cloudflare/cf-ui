@@ -13,12 +13,15 @@ describe('tableReducerTest', () => {
       const rowType = 'success';
 
       assert.deepEqual(
-        tableReducer({}, {
-          type: TableActionTypes.CF_BUILDER_TABLE_FLASH_ROW_ON,
-          tableName,
-          rowId,
-          rowType
-        }),
+        tableReducer(
+          {},
+          {
+            type: TableActionTypes.CF_BUILDER_TABLE_FLASH_ROW_ON,
+            tableName,
+            rowId,
+            rowType
+          }
+        ),
         {
           [tableName]: {
             flashes: {
