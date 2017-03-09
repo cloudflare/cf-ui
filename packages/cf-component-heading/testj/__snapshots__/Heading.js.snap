@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render size 1`] = `
+<h2
+  className="cf-heading cf-heading--2"
+>
+  Heading
+</h2>
+`;
