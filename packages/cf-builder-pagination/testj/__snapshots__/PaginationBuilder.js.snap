@@ -1,0 +1,590 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render pagination 1`] = `
+<div
+  className="cf-pagination"
+>
+  <ul
+    aria-describedby={null}
+    className="cf-pagination__list"
+    role="navigation"
+  >
+    <li
+      className="cf-pagination__item cf-pagination__item--prev cf-pagination__item--disabled"
+      role={null}
+    >
+      <span
+        aria-label="Previous Page"
+        className="cf-pagination__link"
+      >
+        <i
+          className="cf-icon cf-icon--caret-left"
+          role={undefined}
+        />
+      </span>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number cf-pagination__item--active"
+      role={null}
+    >
+      <span
+        aria-label="Page 1"
+        className="cf-pagination__link"
+      >
+        1
+      </span>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 2"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        2
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 3"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        3
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 4"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        4
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 5"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        5
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--next"
+      role={null}
+    >
+      <a
+        aria-label="Next Page"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        <i
+          className="cf-icon cf-icon--caret-right"
+          role={undefined}
+        />
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`should render pagination loading 1`] = `
+<div
+  className="cf-pagination"
+>
+  <ul
+    aria-describedby={null}
+    className="cf-pagination__list"
+    role="navigation"
+  >
+    <li
+      className="cf-pagination__item cf-pagination__item--prev cf-pagination__item--disabled"
+      role={null}
+    >
+      <span
+        aria-label="Previous Page"
+        className="cf-pagination__link"
+      >
+        <i
+          className="cf-icon cf-icon--caret-left"
+          role={undefined}
+        />
+      </span>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--loading cf-pagination__item--active"
+      role={null}
+    >
+      <span
+        aria-label="Page 1"
+        className="cf-pagination__link"
+      >
+        <i
+          className="cf-icon cf-icon--loading"
+          role={undefined}
+        />
+      </span>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 2"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        2
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 3"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        3
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 4"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        4
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 5"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        5
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--next"
+      role={null}
+    >
+      <a
+        aria-label="Next Page"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        <i
+          className="cf-icon cf-icon--caret-right"
+          role={undefined}
+        />
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`should render pagination with an infoFormatter 1`] = `
+<div
+  className="cf-pagination"
+>
+  <ul
+    aria-describedby={null}
+    className="cf-pagination__list"
+    role="navigation"
+  >
+    <li
+      className="cf-pagination__item cf-pagination__item--prev"
+      role={null}
+    >
+      <a
+        aria-label="Previous Page"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        <i
+          className="cf-icon cf-icon--caret-left"
+          role={undefined}
+        />
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 1"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        1
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number cf-pagination__item--active"
+      role={null}
+    >
+      <span
+        aria-label="Page 2"
+        className="cf-pagination__link"
+      >
+        2
+      </span>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 3"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        3
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 4"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        4
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 5"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        5
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--next"
+      role={null}
+    >
+      <a
+        aria-label="Next Page"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        <i
+          className="cf-icon cf-icon--caret-right"
+          role={undefined}
+        />
+      </a>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`should render pagination with the last page active 1`] = `
+<div
+  className="cf-pagination"
+>
+  <ul
+    aria-describedby={null}
+    className="cf-pagination__list"
+    role="navigation"
+  >
+    <li
+      className="cf-pagination__item cf-pagination__item--prev"
+      role={null}
+    >
+      <a
+        aria-label="Previous Page"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        <i
+          className="cf-icon cf-icon--caret-left"
+          role={undefined}
+        />
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 1"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        1
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 2"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        2
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 3"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        3
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 4"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        4
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number cf-pagination__item--active"
+      role={null}
+    >
+      <span
+        aria-label="Page 5"
+        className="cf-pagination__link"
+      >
+        5
+      </span>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--next cf-pagination__item--disabled"
+      role={null}
+    >
+      <span
+        aria-label="Next Page"
+        className="cf-pagination__link"
+      >
+        <i
+          className="cf-icon cf-icon--caret-right"
+          role={undefined}
+        />
+      </span>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`should render with collapsed items 1`] = `
+<div
+  className="cf-pagination"
+>
+  <ul
+    aria-describedby={null}
+    className="cf-pagination__list"
+    role="navigation"
+  >
+    <li
+      className="cf-pagination__item cf-pagination__item--prev"
+      role={null}
+    >
+      <a
+        aria-label="Previous Page"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        <i
+          className="cf-icon cf-icon--caret-left"
+          role={undefined}
+        />
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 1"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        1
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--ellipsis"
+      role="presentation"
+    >
+      <span
+        aria-label="Page 2"
+        className="cf-pagination__link"
+      >
+        <span>
+          …
+        </span>
+      </span>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 4"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        4
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 5"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        5
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number cf-pagination__item--active"
+      role={null}
+    >
+      <span
+        aria-label="Page 6"
+        className="cf-pagination__link"
+      >
+        6
+      </span>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 7"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        7
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 8"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        8
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--ellipsis"
+      role="presentation"
+    >
+      <span
+        aria-label="Page 9"
+        className="cf-pagination__link"
+      >
+        <span>
+          …
+        </span>
+      </span>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--number"
+      role={null}
+    >
+      <a
+        aria-label="Page 20"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        20
+      </a>
+    </li>
+    <li
+      className="cf-pagination__item cf-pagination__item--next"
+      role={null}
+    >
+      <a
+        aria-label="Next Page"
+        className="cf-pagination__link"
+        href="#"
+        onClick={[Function]}
+      >
+        <i
+          className="cf-icon cf-icon--caret-right"
+          role={undefined}
+        />
+      </a>
+    </li>
+  </ul>
+</div>
+`;
