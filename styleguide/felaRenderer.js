@@ -6,9 +6,19 @@ import lvha from 'fela-plugin-lvha';
 import validator from 'fela-plugin-validator';
 import beautifier from 'fela-beautifier';
 import fontRenderer from 'fela-font-renderer';
+import monolithic from 'fela-monolithic';
 
-export const createRenderer = fontNode => createFelaRenderer({
-  plugins: [prefixer(), fallbackValue(), unit(), lvha(), validator()],
-  enhancers: [beautifier(), fontRenderer(fontNode)],
-  selectorPrefix: ['cf-']
-});
+export const createRenderer = opts => {
+  const enhancers = [beautifier()];
+  if (opts && opts.fontNode) {
+    enhancers.push(fontRenderer(opts.fontNode));
+  }
+  if (opts && opts.useMonolithic) {
+    enhancers.push(monolithic());
+  }
+  return createFelaRenderer({
+    plugins: [prefixer(), fallbackValue(), unit(), lvha(), validator()],
+    enhancers,
+    selectorPrefix: ['cf-']
+  });
+};

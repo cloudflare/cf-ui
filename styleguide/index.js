@@ -8,7 +8,7 @@ const fontNode = document.getElementById('font-stylesheet');
 const cssNode = document.getElementById('stylesheet');
 const htmlNode = document.getElementById('app-root');
 
-const renderer = createRenderer(fontNode);
+const renderer = createRenderer({ fontNode });
 
 ReactDOM.render(
   <Provider renderer={renderer} mountNode={cssNode}>
@@ -21,7 +21,7 @@ if (module.hot) {
   module.hot.accept('./components/main', () => {
     const NextApp = require('./components/main').default; // eslint-disable-line
     ReactDOM.render(
-      <Provider renderer={renderer} mountNode={htmlNode}>
+      <Provider renderer={renderer} mountNode={cssNode}>
         <NextApp />
       </Provider>,
       htmlNode

@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render as submit 1`] = `
+<button
+  className="cf-1a3vdkd"
+  disabled={undefined}
+  onClick={[Function]}
+  type="submit"
+>
+  Button
+</button>
+`;
+
+exports[`should render with loading 1`] = `
+<button
+  className="cf-1wncsk4"
+  disabled={true}
+  onClick={[Function]}
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`should render with loading and disabled overridden 1`] = `
+<button
+  className="cf-1wncsk4"
+  disabled={true}
+  onClick={[Function]}
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`should render with type 1`] = `
+<button
+  className="cf-1a3vdkd"
+  disabled={undefined}
+  onClick={[Function]}
+  type="button"
+>
+  Button
+</button>
+`;
+
+exports[`should render with type/disabled 1`] = `
+<button
+  className="cf-cb2rle"
+  disabled={true}
+  onClick={[Function]}
+  type="button"
+>
+  Button
+</button>
+`;

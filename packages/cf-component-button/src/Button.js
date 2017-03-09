@@ -156,4 +156,6 @@ Button.defaultProps = {
   submit: false
 };
 
+Button.displayName = 'Button';
+
 export default createComponent(styles, Button);
