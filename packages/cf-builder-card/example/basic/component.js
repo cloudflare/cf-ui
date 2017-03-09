@@ -20,20 +20,18 @@ const BuilderCard = () => (
     description="This is the description of a card."
     control={MyButton}
     table={
-      (
-        <Table striped>
-          <TableBody>
-            <TableRow>
-              <TableCell>One</TableCell>
-              <TableCell>Two</TableCell>
-            </TableRow>
-            <TableRow>
-              <TableCell>Three</TableCell>
-              <TableCell>Four</TableCell>
-            </TableRow>
-          </TableBody>
-        </Table>
-      )
+      <Table striped>
+        <TableBody>
+          <TableRow>
+            <TableCell>One</TableCell>
+            <TableCell>Two</TableCell>
+          </TableRow>
+          <TableRow>
+            <TableCell>Three</TableCell>
+            <TableCell>Four</TableCell>
+          </TableRow>
+        </TableBody>
+      </Table>
     }
     drawers={[
       {

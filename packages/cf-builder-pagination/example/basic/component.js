@@ -89,4 +89,3 @@ class BuilderPagination extends React.Component {
 }
 
 export default BuilderPagination;
-

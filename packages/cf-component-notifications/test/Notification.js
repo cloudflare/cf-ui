@@ -56,24 +56,26 @@ describe('Notification', function() {
     });
   });
 
-  it(
-    'should pause the timeout while the mouse is hovering the notification',
-    function(done) {
-      let called = false;
-      let onClose = () => called = true;
+  it('should pause the timeout while the mouse is hovering the notification', function(done) {
+    let called = false;
+    let onClose = () => called = true;
 
-      let instance = render(
-        <Notification
-          type="info"
-          message="Baz"
-          delay={100}
-          onClose={onClose}
-        />,
-        this.root
+    let instance = render(
+      <Notification type="info" message="Baz" delay={100} onClose={onClose} />,
+      this.root
+    );
+
+    delay(50, () => {
+      TestUtils.Simulate.mouseEnter(
+        TestUtils.findRenderedDOMComponentWithClass(
+          instance,
+          'cf-notifications__item'
+        )
       );
 
-      delay(50, () => {
-        TestUtils.Simulate.mouseEnter(
+      delay(150, () => {
+        expect(called).to.be.false;
+        TestUtils.Simulate.mouseLeave(
           TestUtils.findRenderedDOMComponentWithClass(
             instance,
             'cf-notifications__item'
@@ -81,22 +83,12 @@ describe('Notification', function() {
         );
 
         delay(150, () => {
-          expect(called).to.be.false;
-          TestUtils.Simulate.mouseLeave(
-            TestUtils.findRenderedDOMComponentWithClass(
-              instance,
-              'cf-notifications__item'
-            )
-          );
-
-          delay(150, () => {
-            expect(called).to.be.true;
-            done();
-          });
+          expect(called).to.be.true;
+          done();
         });
       });
-    }
-  );
+    });
+  });
 
   it('should close on click', function(done) {
     let called = false;

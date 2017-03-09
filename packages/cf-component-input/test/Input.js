@@ -84,26 +84,23 @@ describe('Input', function() {
     );
   });
 
-  it(
-    'should pass all props down to the inner input and merge classnames',
-    function() {
-      assertEqualJSX(
-        <Input
-          className="klass"
-          disabled
-          invalid
-          type="number"
-          data-shadowed={true}
-          min={3}
-        />,
-        <input
-          className="cf-input cf-input--number cf-input--invalid klass"
-          disabled="true"
-          type="number"
-          data-shadowed="true"
-          min="3"
-        />
-      );
-    }
-  );
+  it('should pass all props down to the inner input and merge classnames', function() {
+    assertEqualJSX(
+      <Input
+        className="klass"
+        disabled
+        invalid
+        type="number"
+        data-shadowed={true}
+        min={3}
+      />,
+      <input
+        className="cf-input cf-input--number cf-input--invalid klass"
+        disabled="true"
+        type="number"
+        data-shadowed="true"
+        min="3"
+      />
+    );
+  });
 });

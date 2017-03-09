@@ -23,26 +23,22 @@ describe('CardDrawers', function() {
       <div className="cf-card__section cf-card__section--default">
         <CardToolbar
           links={[
-            (
-              <CardToolbarLink
-                key="one"
-                id="%id%-one"
-                isActive={true}
-                onClick={() => {}}
-              >
-                One
-              </CardToolbarLink>
-            ),
-            (
-              <CardToolbarLink
-                key="two"
-                id="%id%-two"
-                isActive={false}
-                onClick={() => {}}
-              >
-                Two
-              </CardToolbarLink>
-            )
+            <CardToolbarLink
+              key="one"
+              id="%id%-one"
+              isActive={true}
+              onClick={() => {}}
+            >
+              One
+            </CardToolbarLink>,
+            <CardToolbarLink
+              key="two"
+              id="%id%-two"
+              isActive={false}
+              onClick={() => {}}
+            >
+              Two
+            </CardToolbarLink>
           ]}
         />
         <div

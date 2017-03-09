@@ -1,7 +1,9 @@
 const assert = require('assert');
-const { handleRoutes, routeTo, __resetRouteHandler } = require(
-  '../src/routeHandler'
-);
+const {
+  handleRoutes,
+  routeTo,
+  __resetRouteHandler
+} = require('../src/routeHandler');
 
 describe('routeHandler', function() {
   afterEach(function() {
