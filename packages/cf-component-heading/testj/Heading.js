@@ -1,5 +1,5 @@
 import React from 'react';
-import Heading from '../src/Heading';
+import { Heading } from 'cf-component-heading';
 import renderer from 'react-test-renderer';
 
 test('should render size', () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import HeadingCaption from '../src/HeadingCaption';
+import { HeadingCaption } from 'cf-component-heading';
 import renderer from 'react-test-renderer';
 
 test('should render', () => {

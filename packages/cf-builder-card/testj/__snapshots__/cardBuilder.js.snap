@@ -1,0 +1,179 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a card 1`] = `
+<section
+  className="cf-card"
+>
+  <div
+    className="cf-card__section cf-card__section--default"
+  >
+    <div
+      className="cf-card__content"
+    >
+      <h3
+        className="cf-card__title"
+      >
+        This is a Card
+      </h3>
+      <div
+        className="cf-dynamic-content"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p>This is the description of a card.</p>
+          ",
+          }
+        }
+      />
+    </div>
+  </div>
+</section>
+`;
+
+exports[`should render a table 1`] = `
+<section
+  className="cf-card"
+>
+  <div
+    className="cf-card__section cf-card__section--default"
+  >
+    <div
+      className="cf-card__content"
+    >
+      <h3
+        className="cf-card__title"
+      >
+        This is a Card
+      </h3>
+      <div
+        className="cf-dynamic-content"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p>This is the <em>description</em> of a card.</p>
+          ",
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    className="cf-card__section cf-card__section--default"
+  >
+    <table />
+  </div>
+</section>
+`;
+
+exports[`should render button 1`] = `
+<section
+  className="cf-card"
+>
+  <div
+    className="cf-card__section cf-card__section--default"
+  >
+    <div
+      className="cf-card__content"
+    >
+      <h3
+        className="cf-card__title"
+      >
+        This is a Card
+      </h3>
+      <div
+        className="cf-dynamic-content"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p>This is the <em>description</em> of a card.</p>
+          ",
+          }
+        }
+      />
+    </div>
+    <div
+      className="cf-card__control"
+    >
+      <button>
+        Click Me
+      </button>
+    </div>
+  </div>
+</section>
+`;
+
+exports[`should render drawers 1`] = `
+<section
+  className="cf-card"
+>
+  <div
+    className="cf-card__section cf-card__section--default"
+  >
+    <div
+      className="cf-card__content"
+    >
+      <h3
+        className="cf-card__title"
+      >
+        This is a Card
+      </h3>
+      <div
+        className="cf-dynamic-content"
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "<p>This is the <em>description</em> of a card.</p>
+          ",
+          }
+        }
+      />
+    </div>
+  </div>
+  <div
+    className="cf-card__section cf-card__section--default"
+  >
+    <div
+      className="cf-card__toolbar"
+    >
+      <div
+        className="cf-card__toolbar_controls"
+      />
+      <div
+        className="cf-card__toolbar_links"
+        role="tablist"
+      >
+        <a
+          className="cf-link cf-card__toolbar_link"
+          href="#!"
+          id="card-0-drawer-help"
+          onClick={[Function]}
+          role="tab"
+        >
+          Help
+        </a>
+        <a
+          className="cf-link cf-card__toolbar_link"
+          href="#!"
+          id="card-0-drawer-api"
+          onClick={[Function]}
+          role="tab"
+        >
+          API
+        </a>
+      </div>
+    </div>
+    <div
+      className="cf-card__drawers_container"
+    >
+      <div
+        aria-hidden="true"
+        aria-labelledby="card-0-drawer-help"
+        className="cf-card__drawer"
+        role="tabpanel"
+      />
+      <div
+        aria-hidden="true"
+        aria-labelledby="card-0-drawer-api"
+        className="cf-card__drawer"
+        role="tabpanel"
+      />
+    </div>
+  </div>
+</section>
+`;
