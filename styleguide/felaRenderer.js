@@ -12,6 +12,8 @@ export const createRenderer = opts => {
   const enhancers = [beautifier()];
   if (opts && opts.fontNode) {
     enhancers.push(fontRenderer(opts.fontNode));
+  } else {
+    enhancers.push(fontRenderer());
   }
   if (opts && opts.useMonolithic) {
     enhancers.push(monolithic());
