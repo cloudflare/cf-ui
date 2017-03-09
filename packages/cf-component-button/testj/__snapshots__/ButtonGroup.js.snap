@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<div
+  className="cf-1h509s9"
+>
+  Hello
+</div>
+`;
+
+exports[`should render 1 button 1`] = `
+<div
+  className="cf-1h509s9"
+>
+  <button
+    className="cf-1vjm3g0"
+    disabled={undefined}
+    onClick={[Function]}
+    type="button"
+  >
+    Button
+  </button>
+</div>
+`;
+
+exports[`should render 2 buttons 1`] = `
+<div
+  className="cf-1h509s9"
+>
+  <button
+    className="cf-1x4ts34"
+    disabled={undefined}
+    onClick={[Function]}
+    type="button"
+  >
+    Button
+  </button>
+  <button
+    className="cf-1vjm3g0"
+    disabled={undefined}
+    onClick={[Function]}
+    type="button"
+  >
+    Button
+  </button>
+</div>
+`;
+
+exports[`should render 3 buttons 1`] = `
+<div
+  className="cf-1h509s9"
+>
+  <button
+    className="cf-1x4ts34"
+    disabled={undefined}
+    onClick={[Function]}
+    type="button"
+  >
+    Button
+  </button>
+  <button
+    className="cf-ijegj4"
+    disabled={undefined}
+    onClick={[Function]}
+    type="button"
+  >
+    Button
+  </button>
+  <button
+    className="cf-1vjm3g0"
+    disabled={undefined}
+    onClick={[Function]}
+    type="button"
+  >
+    Button
+  </button>
+</div>
+`;
