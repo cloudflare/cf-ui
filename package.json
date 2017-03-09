@@ -14,7 +14,7 @@
     "build": "./build.sh && npm run build:umd && npm run build:umd:min",
     "build:umd": "cross-env BABEL_ENV=commonjs NODE_ENV=development webpack --config webpack.babel.js",
     "build:umd:min": "cross-env BABEL_ENV=commonjs NODE_ENV=production webpack --config webpack.babel.js",
-    "build:examples": "rimraf build && cross-env BABEL_ENV=commonjs NODE_ENV=production webpack --config styleguide/config.prod.babel.js && rm build/static-*",
+    "build:styleguide": "rimraf docs && cross-env BABEL_ENV=commonjs NODE_ENV=production webpack --config styleguide/config.prod.babel.js && rm docs/static-*",
     "lint": "eslint packages/*/src/**/*.js packages/*/example/**/*.js packages/*/test/**/*.js styleguide *.js || true",
     "test": "cross-env BABEL_ENV=commonjs jest",
     "updated": "lerna updated --only-explicit-updates",
