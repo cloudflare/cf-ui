@@ -25,10 +25,10 @@ npm run prettier # Reformats the whole JS codebase, look for an on-save integrat
 npm test # Run the tests
 npm test -- --testPathPattern cf-component-button # Run the tests on a single package
 npm test -- --watchAll # Run the tests in watch mode
-npm run gen # Autogenerate the styleguide (imports all components into one page)
+npm run gen # Autogenerate the style guide (imports all components into one page)
 ```
 
-## Styleguide
+## Style Guide
 
 ### To build
 

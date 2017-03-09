@@ -25,7 +25,7 @@ npm install
 npm run bootstrap
 ```
 
-## Viewing the styleguide
+## Viewing the Style Guide
 
 ```bash
 npm run build:styleguide
