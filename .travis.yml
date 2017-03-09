@@ -13,4 +13,5 @@ before_script:
   - npm run bootstrap
 script:
   - npm run lint
-  - npm run examples:new
+  - npm test
+  - npm run build:examples
