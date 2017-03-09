@@ -42,28 +42,7 @@ There's a bunch of benefits to this:
   each other so that it's easier to dev on them.
 - You can now make cross-dependency changes within a single commit/pull request
 - You can run tests across all of the packages at once (note you can still test
-  a single package with `npm test -- --package cf-component-button`)
+  a single package with `npm test -- --testPathPattern cf-component-button`)
 - We only have to install the ~300 modules that make up the build system once
 - We only have one build system for them all
 - We can get a high level sense of code coverage across all packages
-
-ONE MORE THING... (omg I'm basically Steve Jobs)
-
-Since all of the repos have examples in them, I've adapted them into one giant
-living example (styles pending):
-
-![Examples](https://cloud.githubusercontent.com/assets/952783/15877704/5f78b1b0-2cca-11e6-8a5e-065b7f6a65d8.gif)
-
-Eventually I'll set this up with our styles repo so that we can view our styles
-in a living breathing style guide which is far less likely to go out of date
-because it's directly tied to the packages.
-
-**So what's the holdup?**
-
-Lerna, the module we use to manage all of this, doesn't support independent
-versioning (don't worry about what that means), but I got push access to the
-repo and free reign to do whatever I want to, so I'm going to add this:
-https://github.com/kittens/lerna/issues/20
-
-Once, that's done, we'll be good. I'm already started on it:
-https://github.com/kittens/lerna/pull/26
