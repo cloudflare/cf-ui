@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<a
+  className="cf-link cf-card__toolbar_link"
+  href="#!"
+  id="link"
+  onClick={[Function]}
+  role="tab"
+>
+  CardToolbarLink
+</a>
+`;
+
+exports[`should render with isActive 1`] = `
+<a
+  className="cf-link cf-card__toolbar_link cf-card__toolbar_link--open"
+  href="#!"
+  id="link"
+  onClick={[Function]}
+  role="tab"
+>
+  CardToolbarLink
+</a>
+`;
