@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<span
+  className="cf-label cf-label--default"
+>
+  A Label
+</span>
+`;
+
+exports[`should render with custom tagName 1`] = `
+<small
+  className="cf-label cf-label--default"
+>
+  A Label
+</small>
+`;
