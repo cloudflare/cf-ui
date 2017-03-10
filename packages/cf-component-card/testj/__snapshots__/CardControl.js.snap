@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<div
+  className="cf-card__control"
+>
+  CardControl
+</div>
+`;
+
+exports[`should render wide 1`] = `
+<div
+  className="cf-card__control cf-card__control--wide"
+>
+  CardControl
+</div>
+`;

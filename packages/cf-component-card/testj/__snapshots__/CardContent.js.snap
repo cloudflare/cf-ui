@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render with footer message 1`] = `
+<div
+  className="cf-card__content"
+>
+  <h3
+    className="cf-card__title"
+  >
+    Title
+  </h3>
+  CardContent
+  <div
+    className="cf-card__footer_message"
+  >
+    Footer Message
+  </div>
+</div>
+`;
+
+exports[`should render without footer message 1`] = `
+<div
+  className="cf-card__content"
+>
+  <h3
+    className="cf-card__title"
+  >
+    Title
+  </h3>
+  CardContent
+</div>
+`;

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<div
+  className="cf-card__messages"
+>
+  <div
+    className="cf-card__message cf-card__message--info"
+    role="alert"
+  >
+    Message One
+  </div>
+  <div
+    className="cf-card__message cf-card__message--error"
+    role="alert"
+  >
+    Message Two
+  </div>
+</div>
+`;
