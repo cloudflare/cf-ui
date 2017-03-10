@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RadioGroup should render 1`] = `
+<div
+  className="cf-radio__group"
+>
+  <label
+    className="cf-radio cf-radio--checked"
+    htmlFor="group-option-1"
+  >
+    <input
+      checked={true}
+      className="cf-radio__input"
+      id="group-option-1"
+      name="group-option-1"
+      onChange={[Function]}
+      type="radio"
+      value="option1"
+    />
+    <span
+      className="cf-radio__label"
+    >
+      Option 1
+    </span>
+  </label>
+  <label
+    className="cf-radio"
+    htmlFor="group-option-2"
+  >
+    <input
+      checked={false}
+      className="cf-radio__input"
+      id="group-option-2"
+      name="group-option-2"
+      onChange={[Function]}
+      type="radio"
+      value="option2"
+    />
+    <span
+      className="cf-radio__label"
+    >
+      Option 2
+    </span>
+  </label>
+</div>
+`;
