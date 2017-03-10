@@ -10,7 +10,7 @@ describe('routeHandler', function() {
     __resetRouteHandler();
   });
 
-  it('should handle routes', function() {
+  test('should handle routes', function() {
     let called = false;
     handleRoutes(url => {
       called = true;
@@ -20,13 +20,13 @@ describe('routeHandler', function() {
     assert.equal(called, true);
   });
 
-  it('should not throw an error when no handler has been setup', function() {
+  test('should not throw an error when no handler has been setup', function() {
     assert.doesNotThrow(() => {
       routeTo('/route');
     });
   });
 
-  it('should only ever allow one handler', function() {
+  test('should only ever allow one handler', function() {
     let called = false;
     handleRoutes(url => called = true);
     handleRoutes(url => {});
