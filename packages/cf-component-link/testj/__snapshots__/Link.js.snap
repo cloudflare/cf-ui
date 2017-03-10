@@ -1,0 +1,63 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<a
+  className="cf-link"
+  href="/route"
+  onClick={[Function]}
+>
+  Hello World
+</a>
+`;
+
+exports[`should render with className 1`] = `
+<a
+  className="cf-link special-link"
+  href="/route"
+  onClick={[Function]}
+>
+  Hello World
+</a>
+`;
+
+exports[`should render with disabled 1`] = `
+<a
+  className="cf-link cf-link--disabled"
+  disabled={true}
+  href="/route"
+  onClick={[Function]}
+>
+  Hello World
+</a>
+`;
+
+exports[`should render with onClick 1`] = `
+<a
+  className="cf-link"
+  href="#!"
+  onClick={[Function]}
+  role="button"
+>
+  Hello World
+</a>
+`;
+
+exports[`should render with role 1`] = `
+<div
+  className="cf-link"
+  onClick={[Function]}
+  role="button"
+>
+  Hello World
+</div>
+`;
+
+exports[`should render with tagName 1`] = `
+<button
+  className="cf-link"
+  onClick={[Function]}
+  role="link"
+>
+  Hello World
+</button>
+`;
