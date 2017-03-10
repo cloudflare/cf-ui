@@ -4,7 +4,7 @@ import jsdom from 'jsdom';
 import { mount } from 'enzyme';
 import CopyableTextarea from 'cf-component-copyable-textarea';
 
-beforeAll(() => {
+beforeEach(() => {
   const doc = jsdom.jsdom('<!doctype html><html><body></body></html>');
   global.document = doc;
   global.window = doc.defaultView;

@@ -15,4 +15,4 @@ function getCurrentFocus() {
   return currentFocus;
 }
 
-export default { trackFocus, getCurrentFocus };
+export { trackFocus, getCurrentFocus };

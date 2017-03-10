@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<ul
+  className="cf-dropdown cf-dropdown--left"
+  role="menu"
+>
+  Dropdown
+</ul>
+`;

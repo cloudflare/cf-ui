@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render with to 1`] = `
+<div
+  className="cf-dropdown__separator"
+  role="separator"
+/>
+`;
