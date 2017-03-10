@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<label
+  className="cf-checkbox"
+  htmlFor="checkbox-option-1"
+>
+  <input
+    checked={false}
+    className="cf-checkbox__input"
+    id="checkbox-option-1"
+    name="checkbox-option-1"
+    onChange={[Function]}
+    type="checkbox"
+    value="option1"
+  />
+  <span
+    className="cf-checkbox__label"
+  >
+    Option 1
+  </span>
+</label>
+`;
+
+exports[`should render checked 1`] = `
+<label
+  className="cf-checkbox cf-checkbox--checked"
+  htmlFor="checkbox-option-1"
+>
+  <input
+    checked={true}
+    className="cf-checkbox__input"
+    id="checkbox-option-1"
+    name="checkbox-option-1"
+    onChange={[Function]}
+    type="checkbox"
+    value="option1"
+  />
+  <span
+    className="cf-checkbox__label"
+  >
+    Option 1
+  </span>
+</label>
+`;
+
+exports[`should render without a label 1`] = `
+<label
+  className="cf-checkbox"
+  htmlFor="checkbox-option-1"
+>
+  <input
+    checked={false}
+    className="cf-checkbox__input"
+    id="checkbox-option-1"
+    name="checkbox-option-1"
+    onChange={[Function]}
+    type="checkbox"
+    value="option1"
+  />
+</label>
+`;

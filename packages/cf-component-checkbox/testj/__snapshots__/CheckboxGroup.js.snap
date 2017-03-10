@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<div
+  className="cf-checkbox__group"
+>
+  <label
+    className="cf-checkbox cf-checkbox--checked"
+    htmlFor="group-option-1"
+  >
+    <input
+      checked={true}
+      className="cf-checkbox__input"
+      id="group-option-1"
+      name="group-option-1"
+      onChange={[Function]}
+      type="checkbox"
+      value="option1"
+    />
+    <span
+      className="cf-checkbox__label"
+    >
+      Option 1
+    </span>
+  </label>
+  <label
+    className="cf-checkbox"
+    htmlFor="group-option-2"
+  >
+    <input
+      checked={false}
+      className="cf-checkbox__input"
+      id="group-option-2"
+      name="group-option-2"
+      onChange={[Function]}
+      type="checkbox"
+      value="option2"
+    />
+    <span
+      className="cf-checkbox__label"
+    >
+      Option 2
+    </span>
+  </label>
+</div>
+`;
