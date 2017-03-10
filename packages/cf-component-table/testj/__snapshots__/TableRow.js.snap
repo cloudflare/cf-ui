@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableRow should render 1`] = `
+<tr
+  className="cf-table__row cf-table__row--default"
+>
+  TableRow
+</tr>
+`;
+
+exports[`TableRow should render extra class name 1`] = `
+<tr
+  className="cf-table__row cf-table__row--default extra"
+>
+  TableRow
+</tr>
+`;
+
+exports[`TableRow should render with accent 1`] = `
+<tr
+  className="cf-table__row cf-table__row--default cf-table__row--accent-orange"
+>
+  TableRow
+</tr>
+`;
+
+exports[`TableRow should render with type 1`] = `
+<tr
+  className="cf-table__row cf-table__row--error"
+>
+  TableRow
+</tr>
+`;

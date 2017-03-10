@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableHead should render 1`] = `
+<thead
+  className="cf-table__head"
+>
+  TableHead
+</thead>
+`;
+
+exports[`TableHead should render extra class name 1`] = `
+<thead
+  className="cf-table__head extra"
+>
+  TableHead
+</thead>
+`;
