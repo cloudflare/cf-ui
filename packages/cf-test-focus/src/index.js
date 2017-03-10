@@ -1,3 +1,3 @@
-import focus from './focus';
+import { trackFocus, getCurrentFocus } from './focus';
 
-export default focus;
+export { trackFocus, getCurrentFocus };

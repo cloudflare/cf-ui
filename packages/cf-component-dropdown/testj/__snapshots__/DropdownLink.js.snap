@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render with onClick 1`] = `
+<ul
+  className="cf-dropdown cf-dropdown--left"
+  role="menu"
+>
+  <li
+    className="cf-dropdown__link"
+    role="menuitem"
+  >
+    <a
+      className="cf-link"
+      href="#!"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      role="button"
+    >
+      onClick handler
+    </a>
+  </li>
+</ul>
+`;
+
+exports[`should render with to 1`] = `
+<ul
+  className="cf-dropdown cf-dropdown--left"
+  role="menu"
+>
+  <li
+    className="cf-dropdown__link"
+    role="menuitem"
+  >
+    <a
+      className="cf-link"
+      href="/foo"
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+    >
+      Route to /foo
+    </a>
+  </li>
+</ul>
+`;
