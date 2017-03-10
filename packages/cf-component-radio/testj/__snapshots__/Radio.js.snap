@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio should render 1`] = `
+<label
+  className="cf-radio"
+  htmlFor="radio-option-1"
+>
+  <input
+    checked={false}
+    className="cf-radio__input"
+    id="radio-option-1"
+    name="radio-option-1"
+    onChange={[Function]}
+    type="radio"
+    value="option1"
+  />
+  <span
+    className="cf-radio__label"
+  >
+    Option 1
+  </span>
+</label>
+`;
+
+exports[`Radio should render checked 1`] = `
+<label
+  className="cf-radio cf-radio--checked"
+  htmlFor="radio-option-1"
+>
+  <input
+    checked={true}
+    className="cf-radio__input"
+    id="radio-option-1"
+    name="radio-option-1"
+    onChange={[Function]}
+    type="radio"
+    value="option1"
+  />
+  <span
+    className="cf-radio__label"
+  >
+    Option 1
+  </span>
+</label>
+`;
+
+exports[`Radio should render without a label 1`] = `
+<label
+  className="cf-radio"
+  htmlFor="radio-option-1"
+>
+  <input
+    checked={false}
+    className="cf-radio__input"
+    id="radio-option-1"
+    name="radio-option-1"
+    onChange={[Function]}
+    type="radio"
+    value="option1"
+  />
+</label>
+`;
