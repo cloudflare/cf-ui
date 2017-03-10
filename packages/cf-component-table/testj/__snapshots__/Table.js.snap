@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table should render 1`] = `
+<table
+  className="cf-table cf-table--bordered"
+>
+  Table
+</table>
+`;
+
+exports[`Table should render condensed 1`] = `
+<table
+  className="cf-table cf-table--bordered cf-table--condensed"
+>
+  Table
+</table>
+`;
+
+exports[`Table should render extra class names 1`] = `
+<table
+  className="cf-table cf-table--bordered extra"
+>
+  Table
+</table>
+`;
+
+exports[`Table should render hover 1`] = `
+<table
+  className="cf-table cf-table--hover cf-table--bordered"
+>
+  Table
+</table>
+`;
+
+exports[`Table should render not bordered 1`] = `
+<table
+  className="cf-table"
+>
+  Table
+</table>
+`;
+
+exports[`Table should render striped 1`] = `
+<table
+  className="cf-table cf-table--striped cf-table--bordered"
+>
+  Table
+</table>
+`;
