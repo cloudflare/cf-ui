@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<span
+  className="cf-modal__close"
+  onClick={[Function]}
+>
+  <i
+    className="cf-icon cf-icon--close cf-icon--2x"
+    role={undefined}
+  />
+</span>
+`;
+
+exports[`should render with a label 1`] = `
+<span
+  className="cf-modal__close"
+  onClick={[Function]}
+>
+  <i
+    className="cf-icon cf-icon--close cf-icon--2x"
+    role={undefined}
+  >
+    <span
+      className="cf-icon__label"
+    >
+      label
+    </span>
+  </i>
+</span>
+`;
