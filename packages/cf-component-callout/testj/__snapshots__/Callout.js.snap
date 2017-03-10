@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render "default" by default 1`] = `
+<div
+  className="cf-callout cf-callout--default"
+>
+  <h3
+    className="cf-callout__heading"
+  >
+    Hello
+  </h3>
+  <p
+    className="cf-callout__content"
+  >
+    World
+  </p>
+</div>
+`;
+
+exports[`should render "type" 1`] = `
+<div
+  className="cf-callout cf-callout--info"
+>
+  <h3
+    className="cf-callout__heading"
+  >
+    Hello
+  </h3>
+  <p
+    className="cf-callout__content"
+  >
+    World
+  </p>
+</div>
+`;
