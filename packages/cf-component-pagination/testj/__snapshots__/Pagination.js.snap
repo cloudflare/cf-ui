@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination should render 1`] = `
+<div
+  className="cf-pagination"
+>
+  <ul
+    aria-describedby={null}
+    className="cf-pagination__list"
+    role="navigation"
+  >
+    Pagination
+  </ul>
+</div>
+`;
+
+exports[`Pagination should render with info 1`] = `
+<div
+  className="cf-pagination"
+>
+  <ul
+    aria-describedby="cf-pagination-1"
+    className="cf-pagination__list"
+    role="navigation"
+  >
+    Pagination
+  </ul>
+  <span
+    id="cf-pagination-1"
+  >
+    Pagination Info
+  </span>
+</div>
+`;
