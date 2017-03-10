@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<label
+  className="cf-form__label"
+>
+  FormLabel
+</label>
+`;
+
+exports[`should render hidden 1`] = `
+<label
+  className="cf-form__label cf-form__label--hidden"
+>
+  FormLabel
+</label>
+`;
