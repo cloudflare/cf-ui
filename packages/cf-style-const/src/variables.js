@@ -1,41 +1,25 @@
-import cssColorFunction from 'css-color-function';
-
-const color = input => cssColorFunction.convert(`color(${input})`);
-
-const t = {};
-
-// Typography
-t.fontSize = '15px';
-t.inputFontSize = '13px';
-t.lineHeight = 1.5;
-t.inputLineHeight = 1.4;
-t.em = '1em';
-t.rem = '1rem';
-t.fontFamily = 'inherit';
-
-//Font Weights
-t.weightLight = 300;
-t.weightNormal = 400;
-t.weightSemiBold = 600;
-t.weightBold = 700;
-
-t.fontWeight = t.weightNormal;
-
-// Misc
-t.borderRadius = '2px';
-t.arrowSize = '5px';
-
-// Colors
-t.colorWhite = 'white';
-
-t.colorOffsetLight = '+15%';
-t.colorOffsetDark = '-7%';
-
-t.defaultBackground = 'gray';
-t.primaryBackground = '#00a9eb';
-t.successBackground = '#68970f';
-t.warningBackground = '#fca520';
-t.dangerBackground = '#ff3100';
-t.disabledBackground = '#ededed';
-
-export default t;
+export default {
+  fontSize: '15px',
+  inputFontSize: '13px',
+  lineHeight: 1.5,
+  inputLineHeight: 1.4,
+  em: '1em',
+  rem: '1rem',
+  fontFamily: 'inherit',
+  weightLight: 300,
+  weightNormal: 400,
+  weightSemiBold: 600,
+  weightBold: 700,
+  fontWeight: 400,
+  borderRadius: '2px',
+  arrowSize: '5px',
+  colorWhite: 'white',
+  colorOffsetLight: '+15%',
+  colorOffsetDark: '-7%',
+  defaultBackground: 'gray',
+  primaryBackground: '#00a9eb',
+  successBackground: '#68970f',
+  warningBackground: '#fca520',
+  dangerBackground: '#ff3100',
+  disabledBackground: '#ededed'
+};
