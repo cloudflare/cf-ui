@@ -5,7 +5,7 @@ import {
 } from 'cf-util-route-handler';
 
 beforeEach(() => {
-  // do litter test's output with console.error
+  // don't litter test's output with console.error
   global.console.error = () => null;
   __resetRouteHandler();
 });
