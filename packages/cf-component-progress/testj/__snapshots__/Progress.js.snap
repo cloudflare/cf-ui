@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Progress should render 1`] = `
+<div
+  className="cf-progress"
+>
+  <progress
+    className="cf-progress__bar"
+    max={3}
+    value={1}
+  />
+  <ol
+    className="cf-progress__items"
+  >
+    <li
+      className="cf-progress__item cf-progress__item--active"
+      style={
+        Object {
+          "width": "33.3333%",
+        }
+      }
+    >
+      <a
+        className="cf-link"
+        href="#!"
+        onClick={[Function]}
+        role="button"
+      >
+        Foo
+      </a>
+    </li>
+    <li
+      className="cf-progress__item"
+      style={
+        Object {
+          "width": "33.3333%",
+        }
+      }
+    >
+      <a
+        className="cf-link"
+        href="#!"
+        onClick={[Function]}
+        role="button"
+      >
+        Bar
+      </a>
+    </li>
+    <li
+      className="cf-progress__item cf-progress__item--disabled"
+      style={
+        Object {
+          "width": "33.3333%",
+        }
+      }
+    >
+      <a
+        className="cf-link cf-link--disabled"
+        disabled={true}
+        href="#!"
+        onClick={[Function]}
+        role="button"
+      >
+        Baz
+      </a>
+    </li>
+  </ol>
+</div>
+`;
