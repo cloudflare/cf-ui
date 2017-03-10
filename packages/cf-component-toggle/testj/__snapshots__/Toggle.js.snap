@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toggle should render 1`] = `
+<label
+  className="cf-toggle"
+  htmlFor="test"
+>
+  <input
+    checked={undefined}
+    className="cf-toggle__checkbox"
+    disabled={undefined}
+    id="test"
+    name="test"
+    onBlur={undefined}
+    onChange={[Function]}
+    onFocus={undefined}
+    type="checkbox"
+  />
+  <span
+    className="cf-toggle__label"
+  >
+    Test Toggle
+  </span>
+  <span
+    className="cf-toggle__handle"
+  />
+</label>
+`;
+
+exports[`Toggle should render checked 1`] = `
+<label
+  className="cf-toggle cf-toggle--active"
+  htmlFor="test"
+>
+  <input
+    checked={true}
+    className="cf-toggle__checkbox"
+    disabled={undefined}
+    id="test"
+    name="test"
+    onBlur={undefined}
+    onChange={[Function]}
+    onFocus={undefined}
+    type="checkbox"
+  />
+  <span
+    className="cf-toggle__label"
+  >
+    Test Toggle
+  </span>
+  <span
+    className="cf-toggle__handle"
+  />
+</label>
+`;
+
+exports[`Toggle should render disabled 1`] = `
+<label
+  className="cf-toggle cf-toggle--active cf-toggle--disabled"
+  htmlFor="test"
+>
+  <input
+    checked={true}
+    className="cf-toggle__checkbox"
+    disabled={true}
+    id="test"
+    name="test"
+    onBlur={undefined}
+    onChange={[Function]}
+    onFocus={undefined}
+    type="checkbox"
+  />
+  <span
+    className="cf-toggle__label"
+  >
+    Test Toggle
+  </span>
+  <span
+    className="cf-toggle__handle"
+  />
+</label>
+`;

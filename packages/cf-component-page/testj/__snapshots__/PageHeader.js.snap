@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PageHeader should render title 1`] = `
+<header
+  className="cf-page__header"
+>
+  <h1
+    className="cf-page__title"
+  >
+    Title
+  </h1>
+</header>
+`;
+
+exports[`PageHeader should render title/subtitle 1`] = `
+<header
+  className="cf-page__header"
+>
+  <h1
+    className="cf-page__title"
+  >
+    Title
+  </h1>
+  <p
+    className="cf-page__subtitle"
+  >
+    Subtitle
+  </p>
+</header>
+`;
