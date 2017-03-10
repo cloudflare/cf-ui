@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<pre
+  className="cf-code__block"
+>
+  <code
+    className="cf-code"
+  >
+    Hello
+  </code>
+</pre>
+`;
