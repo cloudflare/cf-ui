@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Var should render 1`] = `
+<var
+  className="cf-var"
+>
+  Var
+</var>
+`;

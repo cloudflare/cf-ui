@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Abbr should render 1`] = `
+<abbr
+  className="cf-abbr"
+  title="Abbreviation"
+>
+  Abbr
+</abbr>
+`;
