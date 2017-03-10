@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<div
+  className="cf-flex__item"
+  style={
+    Object {
+      "WebkitAlignSelf": undefined,
+      "WebkitFlexBasis": undefined,
+      "WebkitFlexGrow": undefined,
+      "WebkitFlexShrink": undefined,
+      "WebkitOrder": undefined,
+      "alignSelf": undefined,
+      "flexBasis": undefined,
+      "flexGrow": undefined,
+      "flexShrink": undefined,
+      "msFlexItemAlign": undefined,
+      "msFlexNegative": undefined,
+      "msFlexOrder": undefined,
+      "msFlexPositive": undefined,
+      "msPreferredSize": undefined,
+      "order": undefined,
+    }
+  }
+>
+  Hello
+</div>
+`;
+
+exports[`should render collapsed 1`] = `
+<div
+  className="cf-flex__item cf-flex__item--collapse"
+  style={undefined}
+>
+  Hello
+</div>
+`;
