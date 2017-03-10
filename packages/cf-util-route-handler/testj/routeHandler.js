@@ -1,36 +1,35 @@
-const assert = require('assert');
-const {
+import {
   handleRoutes,
   routeTo,
   __resetRouteHandler
-} = require('../src/routeHandler');
+} from 'cf-util-route-handler';
 
-describe('routeHandler', function() {
-  afterEach(function() {
-    __resetRouteHandler();
+beforeEach(() => {
+  // do litter test's output with console.error
+  global.console.error = () => null;
+  __resetRouteHandler();
+});
+
+test('should handle routes', () => {
+  let called = false;
+  handleRoutes(url => {
+    called = true;
+    expect(url).toBe('/route');
   });
+  routeTo('/route');
+  expect(called).toBeTruthy();
+});
 
-  test('should handle routes', function() {
-    let called = false;
-    handleRoutes(url => {
-      called = true;
-      assert.equal(url, '/route');
-    });
+test('should not throw an error when no handler has been setup', () => {
+  expect(() => {
     routeTo('/route');
-    assert.equal(called, true);
-  });
+  }).not.toThrow();
+});
 
-  test('should not throw an error when no handler has been setup', function() {
-    assert.doesNotThrow(() => {
-      routeTo('/route');
-    });
-  });
-
-  test('should only ever allow one handler', function() {
-    let called = false;
-    handleRoutes(url => called = true);
-    handleRoutes(url => {});
-    routeTo('/route');
-    assert.ok(called);
-  });
+test('should only ever allow one handler', () => {
+  let called = false;
+  handleRoutes(url => called = true);
+  handleRoutes(url => {});
+  routeTo('/route');
+  expect(called).toBeTruthy();
 });
