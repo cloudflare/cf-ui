@@ -1,0 +1,66 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should pass all props down to the inner input and merge classnames 1`] = `
+<input
+  className="cf-input cf-input--number cf-input--invalid klass"
+  data-shadowed={true}
+  disabled={true}
+  min={3}
+  name="example"
+  onChange={[Function]}
+  type="number"
+  value=""
+/>
+`;
+
+exports[`should render 1`] = `
+<input
+  className="cf-input cf-input--text"
+  name="example"
+  onChange={[Function]}
+  type="text"
+  value="content"
+/>
+`;
+
+exports[`should render with autocomplete 1`] = `
+<input
+  autoComplete="off"
+  className="cf-input cf-input--text"
+  name="example"
+  onChange={[Function]}
+  type="text"
+  value=""
+/>
+`;
+
+exports[`should render with error 1`] = `
+<input
+  className="cf-input cf-input--text cf-input--invalid"
+  name="example"
+  onChange={[Function]}
+  type="text"
+  value=""
+/>
+`;
+
+exports[`should render with placeholder 1`] = `
+<input
+  className="cf-input cf-input--text"
+  name="example"
+  onChange={[Function]}
+  placeholder="placeholder"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`should render with type 1`] = `
+<input
+  className="cf-input cf-input--search"
+  name="example"
+  onChange={[Function]}
+  type="search"
+  value="content"
+/>
+`;
