@@ -29,7 +29,7 @@ import stringTrimRight from 'string.prototype.trimright';
 import stringStartsWith from 'string.prototype.startswith';
 import stringEndsWith from 'string.prototype.endswith';
 
-export {
+export default {
   setImmediate,
   requestAnimationFrame,
   cancelAnimationFrame,

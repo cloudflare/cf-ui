@@ -18,7 +18,7 @@ function flashRowOff(tableName, rowId) {
   };
 }
 
-export const flashRow = function(tableName, rowId, rowType) {
+const flashRow = function(tableName, rowId, rowType) {
   return dispatch => {
     dispatch(flashRowOn(tableName, rowId, rowType));
 
@@ -29,3 +29,5 @@ export const flashRow = function(tableName, rowId, rowType) {
     });
   };
 };
+
+export default { flashRow };
