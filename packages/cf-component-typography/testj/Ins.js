@@ -2,9 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import Ins from '../src/Ins';
 
-describe('Ins', () => {
-  test('should render', () => {
-    const component = renderer.create(<Ins>Ins</Ins>);
-    expect(component.toJSON()).toMatchSnapshot();
-  });
+test('should render', () => {
+  const component = renderer.create(<Ins>Ins</Ins>);
+  expect(component.toJSON()).toMatchSnapshot();
 });

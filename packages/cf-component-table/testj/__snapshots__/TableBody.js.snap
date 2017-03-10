@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TableBody should render 1`] = `
+exports[`should render 1`] = `
 <tbody
   className="cf-table__body"
 >
@@ -8,7 +8,7 @@ exports[`TableBody should render 1`] = `
 </tbody>
 `;
 
-exports[`TableBody should render extra class names 1`] = `
+exports[`should render extra class names 1`] = `
 <tbody
   className="cf-table__body extra"
 >

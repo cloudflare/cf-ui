@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TableCell should render 1`] = `
+exports[`should render 1`] = `
 <td
   className="cf-table__cell"
 >
@@ -8,7 +8,7 @@ exports[`TableCell should render 1`] = `
 </td>
 `;
 
-exports[`TableCell should render extra class name 1`] = `
+exports[`should render extra class name 1`] = `
 <td
   className="cf-table__cell extra"
 >
@@ -16,7 +16,7 @@ exports[`TableCell should render extra class name 1`] = `
 </td>
 `;
 
-exports[`TableCell should render with align 1`] = `
+exports[`should render with align 1`] = `
 <td
   className="cf-table__cell cf-table__cell--align-center"
 >

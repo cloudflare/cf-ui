@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TableHeadCell should render 1`] = `
+exports[`should render 1`] = `
 <th
   className="cf-table__cell cf-table__cell--head"
 >
@@ -8,7 +8,7 @@ exports[`TableHeadCell should render 1`] = `
 </th>
 `;
 
-exports[`TableHeadCell should render extra class name 1`] = `
+exports[`should render extra class name 1`] = `
 <th
   className="cf-table__cell cf-table__cell--head extra"
 >

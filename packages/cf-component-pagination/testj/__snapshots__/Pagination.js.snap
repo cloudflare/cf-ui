@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Pagination should render 1`] = `
+exports[`should render 1`] = `
 <div
   className="cf-pagination"
 >
@@ -14,7 +14,7 @@ exports[`Pagination should render 1`] = `
 </div>
 `;
 
-exports[`Pagination should render with info 1`] = `
+exports[`should render with info 1`] = `
 <div
   className="cf-pagination"
 >

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Radio should render 1`] = `
+exports[`should render 1`] = `
 <label
   className="cf-radio"
   htmlFor="radio-option-1"
@@ -22,7 +22,7 @@ exports[`Radio should render 1`] = `
 </label>
 `;
 
-exports[`Radio should render checked 1`] = `
+exports[`should render checked 1`] = `
 <label
   className="cf-radio cf-radio--checked"
   htmlFor="radio-option-1"
@@ -44,7 +44,7 @@ exports[`Radio should render checked 1`] = `
 </label>
 `;
 
-exports[`Radio should render without a label 1`] = `
+exports[`should render without a label 1`] = `
 <label
   className="cf-radio"
   htmlFor="radio-option-1"

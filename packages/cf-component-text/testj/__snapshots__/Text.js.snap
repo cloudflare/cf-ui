@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Text should render align 1`] = `
+exports[`should render align 1`] = `
 <div
   className="cf-text--center"
 >
@@ -8,7 +8,7 @@ exports[`Text should render align 1`] = `
 </div>
 `;
 
-exports[`Text should render case 1`] = `
+exports[`should render case 1`] = `
 <div
   className="cf-text--uppercase"
 >
@@ -16,7 +16,7 @@ exports[`Text should render case 1`] = `
 </div>
 `;
 
-exports[`Text should render size 1`] = `
+exports[`should render size 1`] = `
 <div
   className="cf-text--normal"
 >
@@ -24,7 +24,7 @@ exports[`Text should render size 1`] = `
 </div>
 `;
 
-exports[`Text should render type 1`] = `
+exports[`should render type 1`] = `
 <div
   className="cf-text--info"
 >
