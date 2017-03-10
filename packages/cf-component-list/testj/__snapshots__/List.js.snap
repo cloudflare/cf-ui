@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<ul
+  className="cf-list"
+>
+  List
+</ul>
+`;
+
+exports[`should render ordered 1`] = `
+<ol
+  className="cf-list cf-list--ordered"
+>
+  List
+</ol>
+`;
+
+exports[`should render unstyled 1`] = `
+<ul
+  className="cf-list cf-list--unstyled"
+>
+  List
+</ul>
+`;
