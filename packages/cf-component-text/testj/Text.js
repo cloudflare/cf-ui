@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import renderer from 'react-test-renderer';
 import Text from 'cf-component-text';
 
