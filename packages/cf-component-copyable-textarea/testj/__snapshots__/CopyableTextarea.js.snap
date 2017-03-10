@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<div
+  className="cf-copyable-textarea"
+>
+  <textarea
+    className="cf-textarea cf-textarea--readonly"
+    name="example"
+    onBlur={[Function]}
+    onFocus={[Function]}
+    readOnly={true}
+    value="content"
+  />
+  <p
+    className="cf-copyable-textarea__help-text"
+  >
+    click here
+  </p>
+</div>
+`;
