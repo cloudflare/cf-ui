@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<fieldset
+  className="cf-form__fieldset"
+>
+  <legend
+    className="cf-form__fieldset_legend"
+  >
+    Legend
+  </legend>
+  <div
+    className="cf-form__fieldset_content"
+  >
+    FormFieldset
+  </div>
+</fieldset>
+`;

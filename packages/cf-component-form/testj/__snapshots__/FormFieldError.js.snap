@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render invalid state 1`] = `
+<div
+  className="cf-form__field-error"
+/>
+`;
+
+exports[`should render invalid state with validation errors 1`] = `
+<div
+  className="cf-form__field-error"
+>
+  <p>
+    This is required
+  </p>
+</div>
+`;

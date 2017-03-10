@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render horizontal layout 1`] = `
+<form
+  className="cf-form cf-form--horizontal"
+  onSubmit={[Function]}
+>
+  Form
+</form>
+`;
+
+exports[`should render vertical layout 1`] = `
+<form
+  className="cf-form cf-form--vertical"
+  onSubmit={[Function]}
+>
+  Form
+</form>
+`;
