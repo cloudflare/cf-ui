@@ -3,8 +3,8 @@ import renderer from 'react-test-renderer';
 import Progress from 'cf-component-progress';
 import Link from 'cf-component-link';
 
-describe('Progress', function() {
-  test('should render', function() {
+describe('Progress', () => {
+  test('should render', () => {
     const component = renderer.create(
       <Progress
         active="foo"
