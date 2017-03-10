@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Kbd should render 1`] = `
+<kbd
+  className="cf-kbd"
+>
+  Kbd
+</kbd>
+`;
