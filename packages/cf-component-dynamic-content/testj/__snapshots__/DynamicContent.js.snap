@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<div
+  className="cf-dynamic-content"
+  dangerouslySetInnerHTML={
+    Object {
+      "__html": "<p>Hello World</p>",
+    }
+  }
+/>
+`;
