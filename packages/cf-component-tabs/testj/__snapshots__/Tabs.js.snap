@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs should render 1`] = `
+<section
+  className="cf-tabs"
+>
+  <div
+    aria-hidden={false}
+    aria-labelledby="2"
+    className="cf-tabs__panel"
+    role="tabpanel"
+  >
+    Two
+  </div>
+</section>
+`;
