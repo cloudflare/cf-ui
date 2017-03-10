@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PaginationItem should render 1`] = `
+exports[`should render 1`] = `
 <li
   className="cf-pagination__item cf-pagination__item--number"
   role={null}
@@ -16,7 +16,7 @@ exports[`PaginationItem should render 1`] = `
 </li>
 `;
 
-exports[`PaginationItem should render active 1`] = `
+exports[`should render active 1`] = `
 <li
   className="cf-pagination__item cf-pagination__item--number cf-pagination__item--active"
   role={null}
@@ -30,7 +30,7 @@ exports[`PaginationItem should render active 1`] = `
 </li>
 `;
 
-exports[`PaginationItem should render disabled 1`] = `
+exports[`should render disabled 1`] = `
 <li
   className="cf-pagination__item cf-pagination__item--number cf-pagination__item--disabled"
   role={null}

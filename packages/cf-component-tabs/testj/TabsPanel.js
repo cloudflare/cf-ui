@@ -20,22 +20,20 @@ Context.childContextTypes = {
   active: PropTypes.string.isRequired
 };
 
-describe('TabsPanel', () => {
-  test('should render', () => {
-    const component = renderer.create(
-      <Context active="something-else">
-        <TabsPanel id="tab">TabsPanel</TabsPanel>
-      </Context>
-    );
-    expect(component.toJSON()).toMatchSnapshot();
-  });
+test('should render', () => {
+  const component = renderer.create(
+    <Context active="something-else">
+      <TabsPanel id="tab">TabsPanel</TabsPanel>
+    </Context>
+  );
+  expect(component.toJSON()).toMatchSnapshot();
+});
 
-  test('should render active', () => {
-    const component = renderer.create(
-      <Context active="tab">
-        <TabsPanel id="tab">TabsPanel</TabsPanel>
-      </Context>
-    );
-    expect(component.toJSON()).toMatchSnapshot();
-  });
+test('should render active', () => {
+  const component = renderer.create(
+    <Context active="tab">
+      <TabsPanel id="tab">TabsPanel</TabsPanel>
+    </Context>
+  );
+  expect(component.toJSON()).toMatchSnapshot();
 });

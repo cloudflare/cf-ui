@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Underline should render 1`] = `
+exports[`should render 1`] = `
 <u
   className="cf-underline"
 >

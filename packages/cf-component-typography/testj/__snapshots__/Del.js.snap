@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Del should render 1`] = `
+exports[`should render 1`] = `
 <del
   className="cf-del"
 >

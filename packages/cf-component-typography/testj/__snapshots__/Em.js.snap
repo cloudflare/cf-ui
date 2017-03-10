@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Em should render 1`] = `
+exports[`should render 1`] = `
 <em
   className="cf-em"
 >

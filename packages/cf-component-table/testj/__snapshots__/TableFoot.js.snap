@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TableFoot should render 1`] = `
+exports[`should render 1`] = `
 <tfoot
   className="cf-table__foot"
 >
@@ -8,7 +8,7 @@ exports[`TableFoot should render 1`] = `
 </tfoot>
 `;
 
-exports[`TableFoot should render extra class name 1`] = `
+exports[`should render extra class name 1`] = `
 <tfoot
   className="cf-table__foot extra"
 >

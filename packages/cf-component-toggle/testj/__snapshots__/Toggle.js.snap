@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Toggle should render 1`] = `
+exports[`should render 1`] = `
 <label
   className="cf-toggle"
   htmlFor="test"
@@ -27,7 +27,7 @@ exports[`Toggle should render 1`] = `
 </label>
 `;
 
-exports[`Toggle should render checked 1`] = `
+exports[`should render checked 1`] = `
 <label
   className="cf-toggle cf-toggle--active"
   htmlFor="test"
@@ -54,7 +54,7 @@ exports[`Toggle should render checked 1`] = `
 </label>
 `;
 
-exports[`Toggle should render disabled 1`] = `
+exports[`should render disabled 1`] = `
 <label
   className="cf-toggle cf-toggle--active cf-toggle--disabled"
   htmlFor="test"
