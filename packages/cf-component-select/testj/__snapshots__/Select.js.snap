@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<div
+  className="cf-select"
+>
+  <div
+    className="Select Select--single"
+    style={undefined}
+  >
+    <div
+      className="Select-control"
+      onKeyDown={[Function]}
+      onMouseDown={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      style={undefined}
+    >
+      <span
+        className="Select-multi-value-wrapper"
+        id="react-select-2--value"
+      >
+        <div
+          className="Select-placeholder"
+        >
+          Select...
+        </div>
+        <div
+          aria-activedescendant="react-select-2--value"
+          aria-expanded={false}
+          aria-owns="react-select-2--value"
+          aria-readonly="false"
+          className="Select-input"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          role="combobox"
+          style={
+            Object {
+              "border": 0,
+              "display": "inline-block",
+              "width": 1,
+            }
+          }
+          tabIndex={0}
+        />
+      </span>
+      <span
+        className="Select-arrow-zone"
+        onMouseDown={[Function]}
+      >
+        <span
+          className="Select-arrow"
+          onMouseDown={[Function]}
+        />
+      </span>
+    </div>
+  </div>
+</div>
+`;
