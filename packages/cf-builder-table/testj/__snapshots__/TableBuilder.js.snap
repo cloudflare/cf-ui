@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render a table 1`] = `
+<table
+  className="cf-table cf-table--bordered"
+>
+  <thead
+    className="cf-table__head"
+  >
+    <tr
+      className="cf-table__row cf-table__row--default"
+    />
+  </thead>
+  <tbody
+    className="cf-table__body"
+  />
+</table>
+`;
+
+exports[`should render the dataset in columns 1`] = `
+<table
+  className="cf-table cf-table--bordered"
+>
+  <thead
+    className="cf-table__head"
+  >
+    <tr
+      className="cf-table__row cf-table__row--default"
+    >
+      <th
+        className="cf-table__cell cf-table__cell--head"
+      >
+        Name
+      </th>
+      <th
+        className="cf-table__cell cf-table__cell--head"
+      >
+        Value
+      </th>
+    </tr>
+  </thead>
+  <tbody
+    className="cf-table__body"
+  >
+    <tr
+      className="cf-table__row cf-table__row--default"
+    >
+      <td
+        className="cf-table__cell"
+      >
+        Foo
+      </td>
+      <td
+        className="cf-table__cell"
+      >
+        foo
+      </td>
+    </tr>
+    <tr
+      className="cf-table__row cf-table__row--default"
+    >
+      <td
+        className="cf-table__cell"
+      >
+        Bar
+      </td>
+      <td
+        className="cf-table__cell"
+      >
+        bar
+      </td>
+    </tr>
+  </tbody>
+</table>
+`;
+
+exports[`should support row type/accent 1`] = `
+<table
+  className="cf-table cf-table--bordered"
+>
+  <thead
+    className="cf-table__head"
+  >
+    <tr
+      className="cf-table__row cf-table__row--default"
+    />
+  </thead>
+  <tbody
+    className="cf-table__body"
+  >
+    <tr
+      className="cf-table__row cf-table__row--success"
+    />
+    <tr
+      className="cf-table__row cf-table__row--default cf-table__row--accent-red"
+    />
+  </tbody>
+</table>
+`;
+
+exports[`should support table props 1`] = `
+<table
+  className="cf-table cf-table--striped cf-table--hover cf-table--bordered cf-table--condensed"
+>
+  <thead
+    className="cf-table__head"
+  >
+    <tr
+      className="cf-table__row cf-table__row--default"
+    />
+  </thead>
+  <tbody
+    className="cf-table__body"
+  />
+</table>
+`;
