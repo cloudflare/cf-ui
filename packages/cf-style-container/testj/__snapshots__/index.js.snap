@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`applyTheme should overwrite the baseTheme and update the context 1`] = `
+<div
+  className="cf-iy1jc0"
+  id={undefined}
+  style={undefined}
+/>
+`;
+
+exports[`createComponent creates empty component 1`] = `
+<div
+  className=""
+  id={undefined}
+  style={undefined}
+/>
+`;
