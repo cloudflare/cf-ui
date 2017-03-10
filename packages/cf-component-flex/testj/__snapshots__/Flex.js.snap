@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<div
+  className="cf-flex"
+  style={
+    Object {
+      "WebkitAlignContent": undefined,
+      "WebkitAlignItems": undefined,
+      "WebkitBoxAlign": undefined,
+      "WebkitBoxLines": undefined,
+      "WebkitBoxPack": undefined,
+      "WebkitFlexDirection": undefined,
+      "WebkitFlexWrap": undefined,
+      "WebkitJustifyContent": undefined,
+      "alignContent": undefined,
+      "alignItems": undefined,
+      "flexDirection": undefined,
+      "flexWrap": undefined,
+      "justifyContent": undefined,
+      "msFlexAlign": undefined,
+      "msFlexDirection": undefined,
+      "msFlexLinePack": undefined,
+      "msFlexPack": undefined,
+      "msFlexWrap": undefined,
+    }
+  }
+>
+  Hello
+</div>
+`;
+
+exports[`should render thin spacing 1`] = `
+<div
+  className="cf-flex cf-flex--thin"
+  style={undefined}
+>
+  Hello
+</div>
+`;
+
+exports[`should render wide spacing 1`] = `
+<div
+  className="cf-flex cf-flex--wide"
+  style={undefined}
+>
+  Hello
+</div>
+`;
