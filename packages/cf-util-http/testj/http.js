@@ -1,7 +1,7 @@
 import { createFakeServer } from 'cf-test-server';
 import http from 'cf-util-http';
 
-describe('request', () => {
+describe.skip('request', () => {
   test('should call the success handler on success', done => {
     const server = createFakeServer();
 
@@ -51,7 +51,7 @@ describe('request', () => {
   });
 });
 
-describe('get', () => {
+describe.skip('get', () => {
   test('should make a GET request', done => {
     const server = createFakeServer();
 
@@ -76,7 +76,7 @@ describe('get', () => {
   });
 });
 
-describe('post', () => {
+describe.skip('post', () => {
   test('should make a POST request', done => {
     const server = createFakeServer();
 
@@ -106,7 +106,7 @@ describe('post', () => {
   });
 });
 
-describe('http.put', () => {
+describe.skip('http.put', () => {
   test('should make a PUT request', done => {
     const server = createFakeServer();
 
@@ -138,7 +138,7 @@ describe('http.put', () => {
   });
 });
 
-test('http.patch', () => {
+describe.skip('http.patch', () => {
   test('should make a PATCH request', done => {
     const server = createFakeServer();
 
@@ -168,7 +168,7 @@ test('http.patch', () => {
   });
 });
 
-describe('http.del', () => {
+describe.skip('http.del', () => {
   test('should make a DELETE request', done => {
     const server = createFakeServer();
 

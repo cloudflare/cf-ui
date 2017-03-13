@@ -1,7 +1,7 @@
 import { createFakeServer } from 'cf-test-server';
 import httpPoll from 'cf-util-http-poll';
 
-test('should poll until `isComplete` returns `true`', done => {
+test.skip('should poll until `isComplete` returns `true`', done => {
   const server = createFakeServer();
 
   function setupResponse(active) {
