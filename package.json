@@ -6,7 +6,7 @@
   "license": "BSD-3-Clause",
   "jest": {
     "testMatch": [
-      "**/testj/**/*.js"
+      "**/test/**/*.js"
     ]
   },
   "scripts": {
