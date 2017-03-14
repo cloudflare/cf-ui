@@ -44,7 +44,6 @@ export default {
       'process.env': { NODE_ENV: JSON.stringify('development') }
     }),
     new webpack.HotModuleReplacementPlugin()
-    //new webpack.NoEmitOnErrorsPlugin()
   ],
   resolve: {
     extensions: ['.js', '.json'],
