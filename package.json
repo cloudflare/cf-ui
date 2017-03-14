@@ -11,7 +11,7 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "build": "./build.sh && npm run build:umd && npm run build:umd:min",
+    "build": "./scripts/build.sh && npm run build:umd && npm run build:umd:min",
     "build:umd": "cross-env BABEL_ENV=commonjs NODE_ENV=development webpack --config webpack.babel.js",
     "build:umd:min": "cross-env BABEL_ENV=commonjs NODE_ENV=production webpack --config webpack.babel.js",
     "build:styleguide": "rimraf docs && cross-env BABEL_ENV=commonjs NODE_ENV=production webpack --config styleguide/config.prod.babel.js && rm docs/static-*",
