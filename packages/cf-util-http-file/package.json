@@ -12,9 +12,5 @@
   },
   "dependencies": {
     "cf-util-http": "^3.0.1"
-  },
-  "devDependencies": {
-    "express": "^4.13.3",
-    "multer": "^1.1.0"
   }
 }

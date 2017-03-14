@@ -12,6 +12,5 @@
   },
   "dependencies": {
     "cf-util-logger": "^2.0.0"
-  },
-  "devDependencies": {}
+  }
 }

@@ -13,6 +13,5 @@
   "dependencies": {
     "redux-mock-store": "^1.2.0",
     "redux-thunk": "^2.1.0"
-  },
-  "devDependencies": {}
+  }
 }

@@ -79,7 +79,6 @@
     "rimraf": "^2.6.1",
     "sinon": "^2.0.0-pre.6",
     "static-site-generator-webpack-plugin": "^3.3.0",
-    "stream-combiner": "^0.2.2",
     "style-loader": "^0.13.2",
     "url-loader": "^0.5.8",
     "webpack": "^2.2.1",

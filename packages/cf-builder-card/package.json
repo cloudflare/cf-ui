@@ -16,15 +16,6 @@
     "cf-util-markdown": "^3.0.0",
     "react-redux": "^3.1.0"
   },
-  "devDependencies": {
-    "cf-component-button": "^4.0.0",
-    "cf-component-table": "^2.1.1",
-    "cf-test-store": "^2.0.1",
-    "enzyme": "^2.3.0",
-    "react-addons-test-utils": "^15.0.0-0",
-    "react-dom": "^15.0.0-0",
-    "redux": "^3.0.2"
-  },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
   }

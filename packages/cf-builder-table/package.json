@@ -15,15 +15,6 @@
     "cf-pony": "^1.1.0",
     "react-redux": "^3.1.0"
   },
-  "devDependencies": {
-    "cf-component-button": "^4.0.0",
-    "cf-test-store": "^2.0.1",
-    "enzyme": "^2.3.0",
-    "react-addons-test-utils": "^15.0.0-0",
-    "react-dom": "^15.0.0-0",
-    "redux": "^3.0.2",
-    "redux-thunk": "^2.0.1"
-  },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
   }
