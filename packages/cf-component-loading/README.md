@@ -10,19 +10,15 @@ $ npm install cf-component-loading
 
 ## Usage
 
-```js
-const React = require('react');
-const Loading = require('cf-component-loading');
+```jsx
+import React from 'react';
+import Loading from 'cf-component-loading';
 
-class MyComponent extends React.Component {
-  render() {
-    return (
-      <div>
-        {this.props.isLoading ? <Loading/> : (
-          <p>Done Loading.</p>
-        )}
-      </div>
-    );
-  }
-}
+const LoadingComponent = () => (
+  <div>
+    <Loading />
+  </div>
+);
+
+export default LoadingComponent;
 ```

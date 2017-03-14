@@ -10,12 +10,11 @@ $ npm install cf-component-textarea
 
 ## Usage
 
-```js
-const React = require('react');
-const Textarea = require('../../src/index');
+```jsx
+import React from 'react';
+import Textarea from 'cf-component-textarea';
 
-class Application extends React.Component {
-
+class TextareaComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -34,8 +33,11 @@ class Application extends React.Component {
       <Textarea
         name="example"
         value={this.state.textareaValue}
-        onChange={this.handleTextareaChange.bind(this)}/>
+        onChange={this.handleTextareaChange.bind(this)}
+      />
     );
   }
 }
+
+export default TextareaComponent;
 ```

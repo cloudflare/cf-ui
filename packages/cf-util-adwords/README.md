@@ -11,7 +11,7 @@ $ npm install cf-util-adwords
 ## Usage
 
 ```js
-const adwords = require('cf-util-adwords');
+import adwords from 'cf-util-adwords';
 
 adwords.track(process.env.ADWORDS_CONVERSION_ID, {
   // parameters...

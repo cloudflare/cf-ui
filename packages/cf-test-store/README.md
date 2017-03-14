@@ -11,8 +11,8 @@ $ npm install cf-test-store
 ## Usage
 
 ```js
-const assert = require('assert');
-const {createMockStore} = require('cf-test-store');
+import assert from 'assert';
+import {createMockStore} from 'cf-test-store';
 
 describe('exampleActions', () => {
   it('should do something', () => {

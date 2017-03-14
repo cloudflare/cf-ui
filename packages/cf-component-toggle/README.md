@@ -10,12 +10,11 @@ $ npm install cf-component-toggle
 
 ## Usage
 
-```js
-const React = require('react');
-const Toggle = require('../../src/index');
+```jsx
+import React from 'react';
+import Toggle from 'cf-component-toggle';
 
-class Application extends React.Component {
-
+class ToggleComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -27,16 +26,32 @@ class Application extends React.Component {
     this.setState({
       toggleValue: value
     });
-  };
+  }
 
   render() {
-    return <Toggle
-      label="Example Toggle"
-      name="example"
-      value={this.state.toggleValue}
-      onChange={this.handleToggle.bind(this)}/>;
+    return (
+      <div>
+        <p>Example Toggle</p>
+        <Toggle
+          label="Example Toggle"
+          name="example"
+          value={this.state.toggleValue}
+          onChange={this.handleToggle.bind(this)}
+        />
+        <p>Disabled</p>
+        <Toggle
+          disabled
+          label="Disabled Toggle"
+          name="example-disabled"
+          value={this.state.toggleValue}
+          onChange={this.handleToggle.bind(this)}
+        />
+      </div>
+    );
   }
 }
+
+export default ToggleComponent;
 ```
 
 > Note: Designed to work with `redux-form`

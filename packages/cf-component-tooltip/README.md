@@ -10,38 +10,38 @@ $ npm install cf-component-tooltip
 
 ## Usage
 
-```js
-const React = require('react');
-const {
-  Tooltip,
-  TooltipRegion
-} = require('cf-component-tooltip');
+```jsx
+import React from 'react';
+import { TooltipRegion, Tooltip } from 'cf-component-tooltip';
 
-class Application extends React.Component {
-  render() {
-    return (
-      <div>
-        <TooltipRegion>
-          <p>
-            Here is some content that will have tooltips applied to any
-            children that have a <code>title</code> attribute. Like
-            <a title="This will be shown in a tooltip">this one</a>.
-          </p>
-          <p>
-            This is useful for dynamic content from translations or markdown.
-          </p>
-        </TooltipRegion>
+const TooltipComponent = () => (
+  <div>
+    <TooltipRegion>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsam
+        {' '}
+        <a href="#" title="Title of link">nice link</a>
+        {' '}
+        quae sint totam dolor distinctio quia eos ipsum porro quam nulla aut sapiente sed quasi aspernatur sit nisi provident, aliquid?
+      </p>
+    </TooltipRegion>
 
-        <Tooltip content="This will be shown when the element is hovered">
-          <p>
-            Alternatively, you can wrap an element in a <code>Tooltip</code>
-            and it will have a tooltip directly applied to it.
-          </p>
-        </Tooltip>
-      </div>
-    );
-  }
-}
+    <TooltipRegion position="bottom left">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti ipsam quae sint totam dolor distinctio quia eos ipsum porro quam nulla aut sapiente
+        {' '}
+        <a href="#" title="Title of link">nice link</a>
+        {' '}sed quasi aspernatur sit nisi provident, aliquid?
+      </p>
+    </TooltipRegion>
+
+    <Tooltip content="This is a button">
+      <button>A nice button</button>
+    </Tooltip>
+  </div>
+);
+
+export default TooltipComponent;
 ```
 
 You can specify an optional `position` to either component.

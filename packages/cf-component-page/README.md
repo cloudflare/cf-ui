@@ -10,21 +10,15 @@ $ npm install cf-component-page
 
 ## Usage
 
-```js
-const React = require('react');
-const {
-  Page,
-  PageHeader
-} = require('cf-component-page');
+```jsx
+import React from 'react';
+import { Page, PageHeader } from 'cf-component-page';
 
-export default class MyComponent extends React.Component {
-  render() {
-    return (
-      <Page>
-        <PageHeader title="Title" subtitle="Subtitle"/>
-        ...
-      </Page>
-    );
-  }
-}
+const PageComponent = () => (
+  <Page>
+    <PageHeader title="Title" subtitle="Subtitle" />
+  </Page>
+);
+
+export default PageComponent;
 ```

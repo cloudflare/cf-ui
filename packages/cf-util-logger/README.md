@@ -11,7 +11,7 @@ $ npm install cf-util-logger
 ## Usage
 
 ```js
-const createLogger = require('cf-util-logger');
+import createLogger from 'cf-util-logger';
 const warning = createLogger('application:warning');
 const error = createLogger('application:error');
 

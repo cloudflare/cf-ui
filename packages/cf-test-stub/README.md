@@ -16,8 +16,8 @@ $ npm install --save-dev cf-test-stub
 ## Usage
 
 ```js
-const assert = require('assert');
-const {createStub, stubMethod} = require('cf-test-stub');
+import assert from 'assert';
+import {createStub, stubMethod} from 'cf-test-stub';
 
 describe('exampleModule', () => {
   it('should do something', () => {

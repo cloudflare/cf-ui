@@ -11,7 +11,7 @@ $ npm install cf-util-text
 ## Usage
 
 ```js
-const {getText, setText} = require('cf-util-text');
+import {getText, setText} from 'cf-util-text';
 
 getText('Some Text Value'); // >> Some Text Value
 // console.error(Missing text value for: Some Text Value);

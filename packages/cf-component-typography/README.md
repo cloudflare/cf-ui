@@ -10,9 +10,9 @@ $ npm install cf-component-typography
 
 ## Usage
 
-```js
-const React = require('react');
-const {
+```jsx
+import React from 'react';
+import {
   Abbr,
   Cite,
   Del,
@@ -28,31 +28,27 @@ const {
   Sup,
   Underline,
   Var
-} = require('../../src/index');
+} from 'cf-component-typography';
 
-class Application extends React.Component {
-  render() {
-    return (
-      <div>
-        <h1>Cloudflare Typography Component Example</h1>
+const TypographyComponent = () => (
+  <div>
+    <Abbr title="Abbreviation">Abbr</Abbr>
+    <Cite>Cite</Cite>
+    <Del>Del</Del>
+    <Em>Em</Em>
+    <Ins>Ins</Ins>
+    <Kbd>Kbd</Kbd>
+    <Mark>Mark</Mark>
+    <Samp>Samp</Samp>
+    <Small>Small</Small>
+    <Strike>Strike</Strike>
+    <Strong>Strong</Strong>
+    <Sub>Sub</Sub>
+    <Sup>Sup</Sup>
+    <Underline>Underline</Underline>
+    <Var>Var</Var>
+  </div>
+);
 
-        <Abbr title="Abbreviation">Abbr</Abbr>
-        <Cite>Cite</Cite>
-        <Del>Del</Del>
-        <Em>Em</Em>
-        <Ins>Ins</Ins>
-        <Kbd>Kbd</Kbd>
-        <Mark>Mark</Mark>
-        <Samp>Samp</Samp>
-        <Small>Small</Small>
-        <Strike>Strike</Strike>
-        <Strong>Strong</Strong>
-        <Sub>Sub</Sub>
-        <Sup>Sup</Sup>
-        <Underline>Underline</Underline>
-        <Var>Var</Var>
-      </div>
-    );
-  }
-}
+export default TypographyComponent;
 ```
