@@ -16,5 +16,5 @@ before_script:
 script:
   - npm run lint
   - npm test
-  - npm run build:examples
+  - npm run build:styleguide
   - npm run build
