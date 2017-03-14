@@ -21,7 +21,7 @@ functions that take state and render UI.
 A unit test for state => ui looks something like this:
 
 ```js
-test('should render the list of items', function() {
+test('should render the list of items', () => {
   var items = [1, 2, 3];
 
   var listItems = render(<MyComponent items={items}/>)
@@ -54,7 +54,7 @@ class AppComponent extends React.Component {
 ```
 
 ```js
-test('should do something', function() {
+test('should do something', () => {
   var onClickStub = stub();
 
   render(<AppComponent onClick={onClickStub}/>)
@@ -76,7 +76,7 @@ technically a unit test because we are re-testing that `<UiComponent/>` calls
 Okay, so what is the actual unit test to write here if we're being pedantic?
 
 ```js
-test('should do something', function() {
+test('should do something', () => {
   var onClickStub = stub();
 
   var onClickProp = render(<AppComponent onClick={onClickStub}/>)
@@ -110,7 +110,7 @@ app, and instead we focus on writing functional tests for our containers.
 These tests would look something like:
 
 ```js
-test('should do something', function() {
+test('should do something', () => {
   var mockStore = createMockStore();
 
   var container = render(
@@ -119,7 +119,7 @@ test('should do something', function() {
     </Provider>
   );
 
-  stubMethod(api, 'resourceGet', function(onSuccess) {
+  stubMethod(api, 'resourceGet', onSuccess => {
     onSuccess(createApiResponse({...}));
   });
 
