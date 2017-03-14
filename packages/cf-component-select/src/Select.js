@@ -3,15 +3,22 @@ import ReactSelect from 'react-select';
 
 class Select extends React.Component {
   render() {
-    const { async, label, ...props } = this.props;
-    const SelectClass = async ? ReactSelect.Async : ReactSelect;
+    const { async, creatable, searchable, label, ...props } = this.props;
+
+    let SelectClass;
+    if (async) {
+      SelectClass = creatable ? ReactSelect.AsyncCreatable : ReactSelect.Async;
+    } else {
+      SelectClass = creatable ? ReactSelect.Creatable : ReactSelect;
+    }
+
     return (
       <div className="cf-select">
         {label && <label>{label}</label>}
         <SelectClass
           {...props}
-          clearable={this.props.searchable}
-          backspaceRemoves={this.props.searchable}
+          clearable={searchable || creatable}
+          backspaceRemoves={searchable || creatable}
         />
       </div>
     );
@@ -21,7 +28,8 @@ class Select extends React.Component {
 Select.defaultProps = {
   multi: false,
   searchable: false,
-  async: false
+  async: false,
+  creatable: false
 };
 
 export default Select;
