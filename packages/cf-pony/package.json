@@ -23,6 +23,5 @@
     "string.prototype.trim": "^1.1.2",
     "string.prototype.trimleft": "^2.0.0",
     "string.prototype.trimright": "^2.0.0"
-  },
-  "devDependencies": {}
+  }
 }

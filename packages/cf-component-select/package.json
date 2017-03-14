@@ -13,10 +13,6 @@
   "dependencies": {
     "react-select": "1.0.0-rc.3 || 1.x"
   },
-  "devDependencies": {
-    "assert-equal-jsx": "^1.0.0",
-    "react-dom": "^15.0.0-0"
-  },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
   }
