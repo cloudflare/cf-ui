@@ -13,8 +13,8 @@ $ npm install cf-util-async
 Running async functions in a series:
 
 ```js
-const http = require('cf-util-http');
-const {series} = require('cf-util-async');
+import http from 'cf-util-http';
+import {series} from 'cf-util-async';
 
 series([
   cb => http.get('endpoint-1.json', null, cb), // If an error occurs, then the rest of the callbacks are not called.
@@ -31,8 +31,8 @@ series([
 Running async functions in parallel:
 
 ```js
-const http = require('cf-util-http');
-const {parallel} = require('cf-util-async');
+import http from 'cf-util-http';
+import {parallel} from 'cf-util-async';
 
 parallel([
   cb => http.get('endpoint-1.json', null, cb),

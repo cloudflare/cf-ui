@@ -10,12 +10,15 @@ $ npm install cf-component-flex
 
 ## Usage
 
-```js
-class Component extends React.Component {
+```jsx
+import React from 'react';
+import { Flex, FlexItem } from 'cf-component-flex';
+
+class FlexComponent extends React.Component {
   render() {
     return (
       <div>
-        <Flex spacing={false}>
+        <Flex spacing="wide">
           <FlexItem>FlexItem 1</FlexItem>
           <FlexItem>FlexItem 2</FlexItem>
           <FlexItem>FlexItem 3</FlexItem>
@@ -36,4 +39,6 @@ class Component extends React.Component {
     );
   }
 }
+
+export default FlexComponent;
 ```

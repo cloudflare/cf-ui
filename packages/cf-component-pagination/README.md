@@ -10,15 +10,12 @@ $ npm install cf-component-pagination
 
 ## Usage
 
-```js
-const {
-  Pagination,
-  PaginationItem
-} = require('../../src/index');
-const Icon = require('cf-component-icon');
+```jsx
+import React from 'react';
+import { Pagination, PaginationItem } from 'cf-component-pagination';
+import Icon from 'cf-component-icon';
 
-class Component extends React.Component {
-
+class PaginationComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -55,7 +52,8 @@ class Component extends React.Component {
           type="number"
           label={'Page ' + i}
           active={this.state.active === i}
-          onClick={this.handleClickItem.bind(this, i)}>
+          onClick={this.handleClickItem.bind(this, i)}
+        >
           {i}
         </PaginationItem>
       );
@@ -67,19 +65,23 @@ class Component extends React.Component {
           type="prev"
           label="Previous Page"
           disabled={this.state.active === 1}
-          onClick={this.handleClickPrev.bind(this)}>
-          <Icon type="caret-left" label={false}/>
+          onClick={this.handleClickPrev.bind(this)}
+        >
+          <Icon type="caret-left" label={false} />
         </PaginationItem>
         {items}
         <PaginationItem
           type="next"
           label="Next Page"
           disabled={this.state.active === this.state.pages}
-          onClick={this.handleClickNext.bind(this)}>
-          <Icon type="caret-right" label={false}/>
+          onClick={this.handleClickNext}
+        >
+          <Icon type="caret-right" label={false} />
         </PaginationItem>
       </Pagination>
     );
   }
 }
+
+export default PaginationComponent;
 ```

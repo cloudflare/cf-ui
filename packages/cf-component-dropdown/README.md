@@ -10,51 +10,76 @@ $ npm install cf-component-dropdown
 
 ## Usage
 
-```js
-const React = require('react');
-const {
-  Button,
-  ButtonGroup
-} = require('cf-component-button');
-const {
+```jsx
+import React from 'react';
+import {
   Dropdown,
   DropdownLink,
   DropdownSeparator
-} = require('../../src/index');
+} from 'cf-component-dropdown';
+import {
+  Button as ButtonUnstyled,
+  ButtonTheme,
+  ButtonGroup as ButtonGroupUnstyled,
+  ButtonGroupTheme
+} from 'cf-component-button';
+import { applyTheme } from 'cf-style-container';
 
-class Application extends React.Component {
+const Button = applyTheme(ButtonUnstyled, ButtonTheme);
+const ButtonGroup = applyTheme(ButtonGroupUnstyled, ButtonGroupTheme);
 
+class DropdownComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      dropdownOpen: false
+      dropdown1Open: false,
+      dropdown2Open: false
     };
   }
 
   render() {
     return (
-      <div>
-        <h1>Cloudflare Dropdown Component Example</h1>
+      <ButtonGroup>
+        <Button
+          type="primary"
+          onClick={() => this.setState({ dropdown1Open: true })}
+        >
+          Open Dropdown 1
+        </Button>
 
-        <ButtonGroup>
-          <Button type="primary" onClick={() => this.setState({ dropdownOpen: true })}>
-            Open Dropdown
-          </Button>
+        {this.state.dropdown1Open &&
+          <Dropdown onClose={() => this.setState({ dropdown1Open: false })}>
+            <DropdownLink to="/foo">Link to /foo</DropdownLink>
+            <DropdownLink to="/bar">Link to /bar</DropdownLink>
+            <DropdownSeparator />
+            <DropdownLink to="/baz">Link to /baz</DropdownLink>
+            <DropdownLink to="/bat">Link to /bat</DropdownLink>
+          </Dropdown>}
 
-          {this.state.dropdownOpen && (
-            <Dropdown onClose={() => this.setState({ dropdownOpen: false })}>
-              <DropdownLink to="/foo">Link to /foo</DropdownLink>
-              <DropdownLink to="/bar">Link to /bar</DropdownLink>
-              <DropdownSeparator/>
-              <DropdownLink to="/baz">Link to /baz</DropdownLink>
-              <DropdownLink to="/bat">Link to /bat</DropdownLink>
-            </Dropdown>
-          )}
-        </ButtonGroup>
-      </div>
+        <Button
+          type="success"
+          onClick={() => this.setState({ dropdown2Open: true })}
+        >
+          Open Dropdown 2
+        </Button>
+
+        {this.state.dropdown2Open &&
+          <Dropdown
+            align="right"
+            onClose={() => this.setState({ dropdown2Open: false })}
+          >
+            <DropdownLink to="/foo">Link to /foo</DropdownLink>
+            <DropdownLink to="/bar">Link to /bar</DropdownLink>
+            <DropdownSeparator />
+            <DropdownLink to="/baz">Link to /baz</DropdownLink>
+            <DropdownLink to="/bat">Link to /bat</DropdownLink>
+          </Dropdown>}
+      </ButtonGroup>
     );
   }
 }
+
+export default DropdownComponent;
 ```
 
 You can also optionally pass an `align` prop with either `"left"` or `"right"`.

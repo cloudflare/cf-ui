@@ -10,11 +10,11 @@ $ npm install cf-component-input
 
 ## Usage
 
-```js
-const React = require('react');
-const Input = require('../../src/index');
+```jsx
+import React from 'react';
+import Input from 'cf-component-input';
 
-class Application extends React.Component {
+class InputComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -33,20 +33,22 @@ class Application extends React.Component {
   render() {
     return (
       <div>
-        <h1>Cloudflare Input Component Example</h1>
-
         <Input
           name="example"
           value={this.state.inputValue}
-          onChange={this.handleChange}/>
+          onChange={this.handleChange}
+        />
 
         <Input
           type="search"
           name="example"
           value={this.state.inputValue}
-          onChange={this.handleChange}/>
+          onChange={this.handleChange}
+        />
       </div>
     );
   }
 }
+
+export default InputComponent;
 ```

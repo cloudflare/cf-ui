@@ -10,19 +10,23 @@ $ npm install cf-component-copyable-textarea
 
 ## Usage
 
-```js
-const React = require('react');
-const CopyableTextarea = require('cf-component-copyable-textarea');
+```jsx
+import React from 'react';
+import CopyableTextarea from 'cf-component-copyable-textarea';
 
-export default class Application extends React.Component {
+class CopyableTextareaComponent extends React.Component {
   render() {
     return (
       <CopyableTextarea
-        value="Text to copy"
+        name="copyable-textarea-example"
+        value="Some nice text that needs to be copied"
         clickToCopyText="Click to copy"
         copiedTextToClipboardText="Copied text to clipboard"
-        pressCommandOrCtrlCToCopyText="Press Command/Ctrl+C to copy"/>
+        pressCommandOrCtrlCToCopyText="Press Command/Ctrl+C to copy"
+      />
     );
   }
 }
+
+export default CopyableTextareaComponent;
 ```

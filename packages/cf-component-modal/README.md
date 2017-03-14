@@ -10,9 +10,9 @@ $ npm install --save cf-component-modal react-gateway
 
 ## Usage
 
-```js
-const React = require('react');
-const {
+```jsx
+import React from 'react';
+import {
   Modal,
   ModalHeader,
   ModalTitle,
@@ -20,19 +20,23 @@ const {
   ModalBody,
   ModalFooter,
   ModalActions
-} = require('cf-component-modal');
-const {
-  GatewayDest,
-  GatewayProvider
-} = require('react-gateway');
+} from 'cf-component-modal';
+import { GatewayDest, GatewayProvider } from 'react-gateway';
+import ReactModal2 from 'react-modal2';
+import { Button as ButtonUnstyled, ButtonTheme } from 'cf-component-button';
+import { applyTheme } from 'cf-style-container';
 
-class MyComponentWithModal extends React.Component {
+const Button = applyTheme(ButtonUnstyled, ButtonTheme);
 
+class ModalComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isModalOpen: false
+      isModalOpen: false,
+      width: null
     };
+    this.handleRequestOpen = this.handleRequestOpen.bind(this);
+    this.handleRequestClose = this.handleRequestClose.bind(this);
   }
 
   handleRequestOpen() {
@@ -43,23 +47,38 @@ class MyComponentWithModal extends React.Component {
     this.setState({ isModalOpen: false });
   }
 
+  handleWidthToggle() {
+    this.setState(oldState => ({
+      width: oldState.width === 'wide' ? null : 'wide'
+    }));
+  }
+
   render() {
     return (
       <div>
-        <button onClick={this.handleRequestOpen.bind(this)}>Open Modal</button>
+        <Button type="default" onClick={this.handleRequestOpen}>
+          Open Modal
+        </Button>
         <Modal
+          width={this.state.width}
           isOpen={this.state.isModalOpen}
-          onRequestClose={this.handleRequestClose.bind(this)}>
+          onRequestClose={this.handleRequestClose}
+        >
           <ModalHeader>
             <ModalTitle>Hello from Modal</ModalTitle>
-            <ModalClose onClick={this.handleRequestClose.bind(this)}/>
+            <ModalClose onClick={this.handleRequestClose} />
           </ModalHeader>
           <ModalBody>
             <p>Look at this awesome modal!</p>
           </ModalBody>
           <ModalFooter>
             <ModalActions>
-              <button onClick={this.handleRequestClose.bind(this)}>Close Modal</button>
+              <button onClick={this.handleWidthToggle.bind(this)}>
+                Toggle width
+              </button>
+              <button onClick={this.handleRequestClose.bind(this)}>
+                Close Modal
+              </button>
             </ModalActions>
           </ModalFooter>
         </Modal>
@@ -72,15 +91,23 @@ class Application extends React.Component {
   render() {
     return (
       <GatewayProvider>
-        <div className="application">
-          <div className="application__content">
-            <h1>Cloudflare Modal Component Example</h1>
-            <MyComponentWithModal/>
-          </div>
-          <GatewayDest name="modal"/>
+        <div>
+          {this.props.children}
+          <GatewayDest name="modal" />
         </div>
       </GatewayProvider>
     );
   }
 }
+
+const root = document.body;
+ReactModal2.getApplicationElement = () => root;
+
+const finalComponent = () => (
+  <Application>
+    <ModalComponent />
+  </Application>
+);
+
+export default finalComponent;
 ```

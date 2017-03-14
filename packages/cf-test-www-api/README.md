@@ -11,8 +11,8 @@ $ npm install cf-test-www-api
 ## Usage
 
 ```js
-const assert = require('assert');
-const {createApiResponse} = require('cf-test-www-api');
+import assert from 'assert';
+import {createApiResponse} from 'cf-test-www-api';
 
 describe('exampleModule', () => {
   it('should do something', () => {

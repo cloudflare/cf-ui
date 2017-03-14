@@ -11,9 +11,9 @@ $ npm install cf-test-server
 ## Usage
 
 ```js
-const assert = require('assert');
-const {createFakeServer} = require('cf-test-server');
-const http = require('cf-util-http');
+import assert from 'assert';
+import {createFakeServer} from 'cf-test-server';
+import http from 'cf-util-http';
 
 describe('apiEndpoints', () => {
   it('should do something', done => {

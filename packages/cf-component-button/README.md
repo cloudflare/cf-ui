@@ -10,10 +10,9 @@ $ npm install cf-component-button
 
 ## Usage
 
-```js
+```jsx
 import React from 'react';
-import { applyTheme, ThemeProvider } from 'cf-style-container';
-import { variables } from 'cf-style-const';
+import { applyTheme } from 'cf-style-container';
 import {
   ButtonGroup as ButtonGroupUnstyled,
   Button as ButtonUnstyled,
@@ -24,26 +23,19 @@ import {
 const Button = applyTheme(ButtonUnstyled, ButtonTheme);
 const ButtonGroup = applyTheme(ButtonGroupUnstyled, ButtonGroupTheme);
 
-export default () => (
-  <ThemeProvider theme={variables}>
-    <div>
-      <ButtonGroup>
-        <Button type="primary" onClick={() => console.log('Clicked One!')}>
-          Button One
-        </Button>
-        <Button type="default" onClick={() => console.log('Clicked Two!')}>
-          Button Two
-        </Button>
-        <Button type="success" onClick={() => console.log('Clicked Three!')}>
-          Button Three
-        </Button>
-      </ButtonGroup>
-      <p>
-        <Button type="primary" onClick={() => console.log('Clicked Single!')}>
-          Single Button
-        </Button>
-      </p>
-    </div>
-  </ThemeProvider>
+const ButtonComponent = () => (
+  <ButtonGroup>
+    <Button type="primary" onClick={() => console.log('Clicked One!')}>
+      Button One
+    </Button>
+    <Button type="default" onClick={() => console.log('Clicked Two!')}>
+      Button Two
+    </Button>
+    <Button type="success" onClick={() => console.log('Clicked Three!')}>
+      Button Three
+    </Button>
+  </ButtonGroup>
 );
+
+export default ButtonComponent;
 ```

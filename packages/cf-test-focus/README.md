@@ -11,8 +11,8 @@ $ npm install cf-test-focus
 ## Usage
 
 ```js
-const assert = require('assert');
-const {trackFocus, getCurrentFocus} = require('cf-test-focus');
+import assert from 'assert';
+import {trackFocus, getCurrentFocus} from 'cf-test-focus';
 
 describe('exampleModule', () => {
   it('should do something with focus', () => {

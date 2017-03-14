@@ -10,9 +10,9 @@ $ npm install cf-component-table
 
 ## Usage
 
-```js
-const React = require('react');
-const {
+```jsx
+import React from 'react';
+import {
   Table,
   TableHead,
   TableBody,
@@ -20,39 +20,32 @@ const {
   TableRow,
   TableHeadCell,
   TableCell
-} = require('../../src/index');
+} from 'cf-component-table';
 
-export default class Application extends React.Component {
-  render() {
-    const data = [
-      [1, 2, 3],
-      [4, 5, 6],
-      [7, 8, 9]
-    ];
+const data = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
 
-    return (
-      <div>
-        <h1>Cloudflare Table Component Example</h1>
-        <Table>
-          <TableHead>
-            <TableRow>
-              <TableHeadCell>One</TableHeadCell>
-              <TableHeadCell>Two</TableHeadCell>
-              <TableHeadCell>Three</TableHeadCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {data.map(row =>
-              <TableRow>
-                {row.map(cell =>
-                  <TableCell>{cell}</TableCell>
-                )}
-              </TableRow>
-            )}
-          </TableBody>
-        </Table>
-      </div>
-    );
-  }
-}
+const TableComponent = () => (
+  <Table>
+    <TableHead>
+      <TableRow>
+        <TableHeadCell>One</TableHeadCell>
+        <TableHeadCell>Two</TableHeadCell>
+        <TableHeadCell>Three</TableHeadCell>
+      </TableRow>
+    </TableHead>
+    <TableBody>
+      {data.map((row, r) => (
+        <TableRow key={r}>
+          {row.map((cell, c) => (
+            <TableCell key={c}>
+              {cell}
+            </TableCell>
+          ))}
+        </TableRow>
+      ))}
+    </TableBody>
+  </Table>
+);
+
+export default TableComponent;
 ```

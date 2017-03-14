@@ -10,20 +10,17 @@ $ npm install cf-component-checkbox
 
 ## Usage
 
-```js
-const React = require('react');
-const {
-  Checkbox,
-  CheckboxGroup
-} = require('../../src/index');
+```jsx
+import React from 'react';
+import { Checkbox, CheckboxGroup } from 'cf-component-checkbox';
 
-class Application extends React.Component {
+class CheckboxComponent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       checkbox1: true,
       checkbox2: false,
-      checkboxValues: ["option1"]
+      checkboxValues: ['option1']
     };
     this.onCheckboxGroupChange = this.onCheckboxGroupChange.bind(this);
   }
@@ -32,13 +29,11 @@ class Application extends React.Component {
     this.setState({
       checkboxValues: values
     });
-  };
+  }
 
   render() {
     return (
       <div>
-        <h1>Cloudflare Checkbox Component Example</h1>
-
         <p>You can create them individually with <code>Checkbox</code></p>
 
         <Checkbox
@@ -46,14 +41,16 @@ class Application extends React.Component {
           name="checkbox-1"
           value="checkbox1"
           checked={this.state.checkbox1}
-          onChange={checked => this.setState({ checkbox1: checked })}/>
+          onChange={checked => this.setState({ checkbox1: checked })}
+        />
 
         <Checkbox
           label="Checkbox 2"
           name="checkbox-2"
           value="checkbox2"
           checked={this.state.checkbox2}
-          onChange={checked => this.setState({ checkbox2: checked })}/>
+          onChange={checked => this.setState({ checkbox2: checked })}
+        />
 
         <p>Or as a group with <code>CheckboxGroup</code></p>
 
@@ -63,18 +60,24 @@ class Application extends React.Component {
           options={[
             { label: 'Option 1', name: 'group-option-1', value: 'option1' },
             { label: 'Option 2', name: 'group-option-2', value: 'option2' }
-          ]}/>
+          ]}
+        />
 
-        <p>You can also disable a label by passing <code>false</code> explicitly</p>
+        <p>
+          You can also disable a label by passing <code>false</code> explicitly
+        </p>
 
         <Checkbox
           label={false}
           name="checkbox-1-no-label"
           value="checkbox1"
           checked={this.state.checkbox1}
-          onChange={checked => this.setState({ checkbox1: checked })}/>
+          onChange={checked => this.setState({ checkbox1: checked })}
+        />
       </div>
     );
   }
 }
+
+export default CheckboxComponent;
 ```
