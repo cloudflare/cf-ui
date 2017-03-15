@@ -17,3 +17,5 @@ script:
   - npm test
   - npm run build:styleguide
   - npm run build
+after_script:
+  - npm test -- -u
