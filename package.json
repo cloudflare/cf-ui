@@ -5,6 +5,7 @@
   "author": "James Kyle <jkyle@cloudflare.com>",
   "license": "BSD-3-Clause",
   "jest": {
+    "cacheDirectory": ".jest",
     "testMatch": [
       "**/test/**/*.js"
     ]
@@ -19,7 +20,7 @@
     "test": "cross-env BABEL_ENV=commonjs jest",
     "updated": "lerna updated --only-explicit-updates",
     "prettier": "node prettier.js",
-    "clean": "lerna clean && rimraf dist",
+    "clean": "lerna clean --yes && rimraf .jest dist",
     "publish": "git pull --rebase && check-installed-dependencies && npm run build && lerna publish --only-explicit-updates",
     "start": "npm run start:devserver | npm run start:server",
     "start:devserver": "cross-env BABEL_ENV=commonjs node styleguide/server.dev.hook",
