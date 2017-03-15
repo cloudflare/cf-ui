@@ -25,7 +25,8 @@
     "start": "npm run start:devserver | npm run start:server",
     "start:devserver": "cross-env BABEL_ENV=commonjs node styleguide/server.dev.hook",
     "start:server": "cross-env BABEL_ENV=commonjs NODE_ENV=development node styleguide/server.hook",
-    "gen": "node ./styleguide/generateList"
+    "gen": "node ./styleguide/generateList",
+    "update-snapshot": "cross-env BABEL_ENV=commonjs jest --no-cache --updateSnapshot"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.6",
