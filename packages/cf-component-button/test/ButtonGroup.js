@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import felaTestContext from '../../../styleguide/felaTestContext';
+import felaTestContext from '../../../felaTestContext';
 import { applyTheme } from 'cf-style-container';
 import {
   ButtonGroup as ButtonGroupUnstyled,

@@ -7,7 +7,7 @@ import {
 } from 'cf-style-container';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
-import felaTestContext from '../../../styleguide/felaTestContext';
+import felaTestContext from '../../../felaTestContext';
 
 test('color should return correct value', () => {
   expect(color('red a(90%)')).toBe('rgba(255, 0, 0, 0.9)');
