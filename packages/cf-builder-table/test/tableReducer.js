@@ -1,4 +1,4 @@
-import { tableReducer, TableActionTypes } from 'cf-builder-table';
+import { tableReducer, TableActionTypes } from '../../cf-builder-table/src/index';
 
 test('should have initial state', () => {
   expect(tableReducer(undefined, {})).toEqual({});

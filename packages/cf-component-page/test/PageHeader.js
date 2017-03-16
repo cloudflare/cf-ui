@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { PageHeader } from 'cf-component-page';
+import { PageHeader } from '../../cf-component-page/src/index';
 
 test('should render title', () => {
   const component = renderer.create(<PageHeader title="Title" />);

@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Input from 'cf-component-input';
+import Input from '../../cf-component-input/src/index';
 
 test('should render', () => {
   const component = renderer.create(

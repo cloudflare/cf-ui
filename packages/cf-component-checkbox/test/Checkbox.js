@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { Checkbox } from 'cf-component-checkbox';
+import { Checkbox } from '../../cf-component-checkbox/src/index';
 import { shallow } from 'enzyme';
 
 test('should handle onChange', () => {

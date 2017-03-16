@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { CardDrawers, CardToolbar, CardToolbarLink } from 'cf-component-card';
+import { CardDrawers, CardToolbar, CardToolbarLink } from '../../cf-component-card/src/index';
 
 test('should render', () => {
   const component = renderer.create(

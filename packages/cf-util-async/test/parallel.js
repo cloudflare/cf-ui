@@ -1,4 +1,4 @@
-import { parallel } from 'cf-util-async';
+import { parallel } from '../../cf-util-async/src/index';
 
 test('should call each function', done => {
   let count = 0;

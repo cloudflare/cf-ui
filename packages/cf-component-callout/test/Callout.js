@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Callout from 'cf-component-callout';
+import Callout from '../../cf-component-callout/src/index';
 
 test('should render "default" by default', () => {
   const component = renderer.create(

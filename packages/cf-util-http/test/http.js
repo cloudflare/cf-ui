@@ -1,5 +1,5 @@
-import { createFakeServer } from 'cf-test-server';
-import http from 'cf-util-http';
+import { createFakeServer } from '../../cf-test-server/src/index';
+import http from '../../cf-util-http/src/index';
 
 describe.skip('request', () => {
   test('should call the success handler on success', done => {

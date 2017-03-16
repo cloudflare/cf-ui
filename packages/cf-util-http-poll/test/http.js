@@ -1,5 +1,5 @@
-import { createFakeServer } from 'cf-test-server';
-import httpPoll from 'cf-util-http-poll';
+import { createFakeServer } from '../../cf-test-server/src/index';
+import httpPoll from '../../cf-util-http-poll/src/index';
 
 test.skip('should poll until `isComplete` returns `true`', done => {
   const server = createFakeServer();

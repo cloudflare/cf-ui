@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { CheckboxGroup } from 'cf-component-checkbox';
+import { CheckboxGroup } from '../../cf-component-checkbox/src/index';
 
 test('should render', () => {
   const component = renderer.create(

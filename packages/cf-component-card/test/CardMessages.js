@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { CardMessages } from 'cf-component-card';
+import { CardMessages } from '../../cf-component-card/src/index';
 
 test('should render', () => {
   const component = renderer.create(

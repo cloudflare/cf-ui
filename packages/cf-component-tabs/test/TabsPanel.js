@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import renderer from 'react-test-renderer';
-import { TabsPanel } from 'cf-component-tabs';
+import { TabsPanel } from '../../cf-component-tabs/src/index';
 
 class Context extends React.Component {
   getChildContext() {

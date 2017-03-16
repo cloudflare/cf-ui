@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { createMockStore } from 'cf-test-store';
-import { cardActions, CardActionTypes } from 'cf-builder-card';
+import { createMockStore } from '../../cf-test-store/src/index';
+import { cardActions, CardActionTypes } from '../../cf-builder-card/src/index';
 
 test('.toggleDrawer() should create an action', () => {
   const store = createMockStore();

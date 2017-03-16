@@ -4,7 +4,7 @@ import {
   applyTheme,
   ThemeProvider,
   color
-} from 'cf-style-container';
+} from '../../cf-style-container/src/index';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 import felaTestContext from '../../../felaTestContext';

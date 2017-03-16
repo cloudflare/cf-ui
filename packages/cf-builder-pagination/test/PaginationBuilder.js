@@ -1,9 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
-import { PaginationBuilder } from 'cf-builder-pagination';
-import { PaginationItem } from 'cf-component-pagination';
-import { createStub } from 'cf-test-stub';
+import { PaginationBuilder } from '../../cf-builder-pagination/src/index';
+import { createStub } from '../../cf-test-stub/src/index';
 
 test('should render pagination', () => {
   const component = renderer.create(
@@ -86,7 +85,7 @@ test('should should call onPageChange when clicking another page', () => {
     />
   );
 
-  const items = wrapper.find(PaginationItem);
+  const items = wrapper.find('li');
 
   items.at(2).find('a').simulate('click');
   expect(onPageChange.called).toBeTruthy();

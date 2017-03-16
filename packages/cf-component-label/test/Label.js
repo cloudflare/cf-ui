@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Label from 'cf-component-label';
+import Label from '../../cf-component-label/src/index';
 
 test('should render', () => {
   const component = renderer.create(<Label type="default">A Label</Label>);
