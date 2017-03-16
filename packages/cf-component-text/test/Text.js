@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Text from 'cf-component-text';
+import { Text } from 'cf-component-text';
 import felaTestContext from '../../../styleguide/felaTestContext';
 import { applyTheme } from 'cf-style-container';
 
@@ -29,7 +29,7 @@ test('should render align', () => {
 
 test('should render type', () => {
   const StyledText = applyTheme(Text, () => ({
-    'colorType--info': '#434148'
+    'color--info': '#434148'
   }));
 
   const component = renderer.create(

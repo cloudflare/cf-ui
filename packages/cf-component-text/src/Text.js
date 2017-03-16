@@ -4,8 +4,12 @@ import { createComponent } from 'cf-style-container';
 const styles = ({ theme, size, align, type, case: textCase }) => {
   const t = {};
 
-  if (theme[`colorType--${type}`]) {
-    t.color = theme[`colorType--${type}`];
+  if (theme[`color--${type}`]) {
+    t.color = theme[`color--${type}`];
+  }
+
+  if (theme[`lineHeight--${type}`]) {
+    t.color = theme[`lineHeight--${type}`];
   }
 
   if (theme[`fontSize--${size}`]) {

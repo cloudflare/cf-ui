@@ -1,3 +1,4 @@
 import Text from './Text';
+import TextTheme from './TextTheme';
 
-export default Text;
+export { Text, TextTheme };
