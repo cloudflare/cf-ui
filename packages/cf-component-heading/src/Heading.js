@@ -2,11 +2,24 @@ import React, { PropTypes } from 'react';
 import { createComponent } from 'cf-style-container';
 
 const styles = ({ theme, size }) => {
-  return {
-    fontWeight: theme[`fontWeight${size}`] || theme.fontWeight,
-    fontSize: theme[`fontSize${size}`] || theme.fontSize,
-    lineHeight: theme[`lineHeight${size}`] || theme.lineHeight
-  };
+  const t = {};
+
+  if (theme[`fontWeight${size}`]) {
+    t.fontWeight = theme[`fontWeight${size}`];
+  }
+
+  if (theme[`fontSize${size}`]) {
+    t.fontSize = theme[`fontSize${size}`];
+  }
+
+  if (theme[`lineHeight${size}`]) {
+    t.lineHeight = theme[`lineHeight${size}`];
+  }
+
+  if (theme[`marginTop${size}`]) {
+    t.marginTop = theme[`marginTop${size}`];
+  }
+  return t;
 };
 
 const Heading = ({ size, className, children }) => {
