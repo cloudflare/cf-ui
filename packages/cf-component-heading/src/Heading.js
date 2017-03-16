@@ -1,16 +1,23 @@
 import React, { PropTypes } from 'react';
+import { createComponent } from 'cf-style-container';
 
-class Heading extends React.Component {
-  render() {
-    const tagName = 'h' + this.props.size;
-    const className = 'cf-heading cf-heading--' + this.props.size;
-    return React.createElement(tagName, { className }, this.props.children);
-  }
-}
+const styles = ({ theme, size }) => {
+  return {
+    fontWeight: theme[`fontWeight${size}`] || theme.fontWeight,
+    fontSize: theme[`fontSize${size}`] || theme.fontSize,
+    lineHeight: theme[`lineHeight${size}`] || theme.lineHeight
+  };
+};
+
+const Heading = ({ size, className, children }) => {
+  const tagName = 'h' + size;
+  return React.createElement(tagName, { className }, children);
+};
 
 Heading.propTypes = {
   size: PropTypes.oneOf([1, 2, 3, 4, 5, 6]).isRequired,
+  className: PropTypes.string.isRequired,
   children: PropTypes.node
 };
 
-export default Heading;
+export default createComponent(styles, Heading);
