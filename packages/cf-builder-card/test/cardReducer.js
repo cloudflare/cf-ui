@@ -1,4 +1,4 @@
-import { cardReducer, CardActionTypes } from 'cf-builder-card';
+import { cardReducer, CardActionTypes } from '../../cf-builder-card/src/index';
 
 test('should have initial state', () => {
   expect(cardReducer(undefined, {})).toEqual({});

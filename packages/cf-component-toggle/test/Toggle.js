@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Toggle from 'cf-component-toggle';
+import Toggle from '../../cf-component-toggle/src/index';
 
 test('should render', () => {
   const component = renderer.create(<Toggle label="Test Toggle" name="test" />);

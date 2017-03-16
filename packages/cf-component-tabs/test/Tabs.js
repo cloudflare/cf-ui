@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { Tabs, TabsPanel } from 'cf-component-tabs';
+import { Tabs, TabsPanel } from '../../cf-component-tabs/src/index';
 
 test('should render', () => {
   const component = renderer.create(

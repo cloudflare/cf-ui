@@ -1,4 +1,4 @@
-import { stubMethod } from 'cf-test-stub';
+import { stubMethod } from '../../cf-test-stub/src/index';
 
 test('should create an object', () => {
   const obj = { method() {} };

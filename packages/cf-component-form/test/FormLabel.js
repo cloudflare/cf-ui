@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { FormLabel } from 'cf-component-form';
+import { FormLabel } from '../../cf-component-form/src/index';
 
 test('should render', () => {
   const component = renderer.create(<FormLabel>FormLabel</FormLabel>);

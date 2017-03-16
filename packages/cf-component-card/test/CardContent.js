@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { CardContent } from 'cf-component-card';
+import { CardContent } from '../../cf-component-card/src/index';
 
 test('should render without footer message', () => {
   const component = renderer.create(

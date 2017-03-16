@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Link from 'cf-component-link';
+import Link from '../../cf-component-link/src/index';
 
 test('should render', () => {
   const component = renderer.create(<Link to="/route">Hello World</Link>);

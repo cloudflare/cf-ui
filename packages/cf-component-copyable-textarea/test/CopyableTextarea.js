@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import jsdom from 'jsdom';
 import { mount } from 'enzyme';
-import CopyableTextarea from 'cf-component-copyable-textarea';
+import CopyableTextarea from '../../cf-component-copyable-textarea/src/index';
 
 beforeEach(() => {
   const doc = jsdom.jsdom('<!doctype html><html><body></body></html>');

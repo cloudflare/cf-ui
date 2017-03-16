@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Icon from 'cf-component-icon';
+import Icon from '../../cf-component-icon/src/index';
 
 test('should render type', () => {
   const component = renderer.create(<Icon type="info-sign" label="Info" />);

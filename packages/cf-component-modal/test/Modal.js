@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { Modal } from 'cf-component-modal';
+import { Modal } from '../../cf-component-modal/src/index';
 import { GatewayProvider, Gateway, GatewayDest } from 'react-gateway';
 import { shallow, render } from 'enzyme';
 import toJson from 'enzyme-to-json';

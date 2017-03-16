@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
-import { cardActions, cardReducer, CardBuilder } from 'cf-builder-card';
+import { cardActions, cardReducer, CardBuilder } from '../../cf-builder-card/src/index';
 import { mount } from 'enzyme';
 
 let store;

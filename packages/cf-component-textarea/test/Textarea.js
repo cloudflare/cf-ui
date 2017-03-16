@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Textarea from 'cf-component-textarea';
+import Textarea from '../../cf-component-textarea/src/index';
 
 test('should render', () => {
   const component = renderer.create(
