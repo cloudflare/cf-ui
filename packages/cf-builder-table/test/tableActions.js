@@ -6,7 +6,7 @@ import {
 } from '../../cf-builder-table/src/index';
 
 // this test is flaky, in 1/4 cases it just time outs
-test.skip('.flashRow() should dispatch actions for flashing the row', done => {
+test('.flashRow() should dispatch actions for flashing the row', done => {
   const store = createMockStore();
   const tableName = 'TEST_TABLE_NAME';
   const rowId = 'TEST_ROW_ID';

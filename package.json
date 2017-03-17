@@ -19,7 +19,7 @@
     "test": "cross-env BABEL_ENV=commonjs jest",
     "updated": "lerna updated --only-explicit-updates",
     "prettier": "node prettier.js",
-    "clean": "lerna clean && rimraf dist",
+    "clean": "lerna clean --yes && rimraf .jest",
     "publish": "git pull --rebase && check-installed-dependencies && npm run build && lerna publish --only-explicit-updates",
     "update-snapshot": "cross-env BABEL_ENV=commonjs jest --no-cache --updateSnapshot"
   },
