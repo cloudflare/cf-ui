@@ -1,13 +1,13 @@
-import React, { PropTypes } from "react";
-import { createComponent } from "cf-style-container";
+import React, { PropTypes } from 'react';
+import { createComponent } from 'cf-style-container';
 
 const styles = props => {
   const theme = props.theme;
   return {
-    "& h1": {
+    '& h1': {
       marginBottom: theme.marginBottom
     },
-    "& p": {
+    '& p': {
       marginTop: theme.marginTop,
       fontSize: theme.fontSize,
       color: theme.defaultColor

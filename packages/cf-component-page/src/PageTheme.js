@@ -1,6 +1,6 @@
-import { checkBaseTheme } from "cf-style-const";
+import { checkBaseTheme } from 'cf-style-const';
 
 export default baseTheme => {
-  checkBaseTheme(baseTheme, "PageTheme");
+  checkBaseTheme(baseTheme, 'PageTheme');
   return {};
 };

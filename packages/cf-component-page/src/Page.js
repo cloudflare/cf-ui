@@ -1,5 +1,5 @@
-import React, { PropTypes } from "react";
-import { createComponent } from "cf-style-container";
+import React, { PropTypes } from 'react';
+import { createComponent } from 'cf-style-container';
 
 const styles = props => {
   return {};
