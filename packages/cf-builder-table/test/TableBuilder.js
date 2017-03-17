@@ -4,8 +4,17 @@ import { mount } from 'enzyme';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
-import { tableActions, tableReducer, TableBuilder } from '../../cf-builder-table/src/index';
-import { Table, TableBody, TableRow, TableCell } from '../../cf-component-table/src/index';
+import {
+  tableActions,
+  tableReducer,
+  TableBuilder
+} from '../../cf-builder-table/src/index';
+import {
+  Table,
+  TableBody,
+  TableRow,
+  TableCell
+} from '../../cf-component-table/src/index';
 
 let store;
 
