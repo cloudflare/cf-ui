@@ -6,8 +6,8 @@ import { applyTheme } from 'cf-style-container';
 
 test('should render size', () => {
   const StyledText = applyTheme(Text, () => ({
-    'fontSize--normal': '1rem',
-    'fontWeight--normal': 400
+    fontSizeNormal: '1rem',
+    fontWeightNormal: 400
   }));
 
   const component = renderer.create(
@@ -18,7 +18,7 @@ test('should render size', () => {
 
 test('should render align', () => {
   const StyledText = applyTheme(Text, () => ({
-    'textAlign--center': 'center'
+    textAlignCenter: 'center'
   }));
 
   const component = renderer.create(
@@ -29,7 +29,7 @@ test('should render align', () => {
 
 test('should render type', () => {
   const StyledText = applyTheme(Text, () => ({
-    'color--info': '#434148'
+    colorInfo: '#434148'
   }));
 
   const component = renderer.create(
@@ -40,7 +40,7 @@ test('should render type', () => {
 
 test('should render case', () => {
   const StyledText = applyTheme(Text, () => ({
-    'textTransform--lowercase': 'lowercase'
+    textTransformLowercase: 'lowercase'
   }));
 
   const component = renderer.create(

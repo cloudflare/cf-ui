@@ -1,35 +1,43 @@
 import React, { PropTypes } from 'react';
 import { createComponent } from 'cf-style-container';
 
+const capitalize = str =>
+  str
+    ? String.prototype.concat(
+        str.substring(0, 1).toUpperCase(),
+        str.substring(1)
+      )
+    : str;
+
 const styles = ({ theme, size, align, type, case: textCase }) => {
   const t = {};
 
-  if (theme[`color--${type}`]) {
-    t.color = theme[`color--${type}`];
+  if (theme[`color${capitalize(type)}`]) {
+    t.color = theme[`color${capitalize(type)}`];
   }
 
-  if (theme[`lineHeight--${type}`]) {
-    t.color = theme[`lineHeight--${type}`];
+  if (theme[`lineHeight${capitalize(type)}`]) {
+    t.color = theme[`lineHeight${capitalize(type)}`];
   }
 
-  if (theme[`fontSize--${size}`]) {
-    t.fontSize = theme[`fontSize--${size}`];
+  if (theme[`fontSize${capitalize(size)}`]) {
+    t.fontSize = theme[`fontSize${capitalize(size)}`];
   }
 
-  if (theme[`fontWeight--${size}`]) {
-    t.fontWeight = theme[`fontWeight--${size}`];
+  if (theme[`fontWeight${capitalize(size)}`]) {
+    t.fontWeight = theme[`fontWeight${capitalize(size)}`];
   }
 
-  if (theme[`textAlign--${align}`]) {
-    t.textAlign = theme[`textAlign--${align}`];
+  if (theme[`textAlign${capitalize(align)}`]) {
+    t.textAlign = theme[`textAlign${capitalize(align)}`];
   }
 
-  if (theme[`textTransform--${textCase}`]) {
-    t.textTransform = theme[`textTransform--${textCase}`];
+  if (theme[`textTransform${capitalize(textCase)}`]) {
+    t.textTransform = theme[`textTransform${capitalize(textCase)}`];
   }
 
-  if (theme[`textTransform--${textCase}:first-word`]) {
-    t.textTransform = theme[`textTransform--${textCase}:first-word`];
+  if (theme[`textTransform${capitalize(textCase)}:first-word`]) {
+    t.textTransform = theme[`textTransform${capitalize(textCase)}:first-word`];
   }
 
   return t;
