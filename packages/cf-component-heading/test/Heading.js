@@ -1,7 +1,7 @@
 import React from 'react';
-import { Heading, HeadingTheme } from 'cf-component-heading';
+import { Heading, HeadingTheme } from '../../cf-component-heading/src/index';
 import renderer from 'react-test-renderer';
-import felaTestContext from '../../../styleguide/felaTestContext';
+import felaTestContext from '../../../felaTestContext';
 import { applyTheme } from 'cf-style-container';
 
 const StyledHeading = applyTheme(Heading, HeadingTheme);

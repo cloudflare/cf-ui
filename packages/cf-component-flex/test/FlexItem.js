@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { render } from 'enzyme';
-import { FlexItem } from 'cf-component-flex';
+import { FlexItem } from '../../cf-component-flex/src/index';
 
 test('should render', () => {
   const component = renderer.create(<FlexItem>Hello</FlexItem>);

@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { Pagination } from 'cf-component-pagination';
+import { Pagination } from '../../cf-component-pagination/src/index';
 
 test('should render', () => {
   const component = renderer.create(<Pagination>Pagination</Pagination>);

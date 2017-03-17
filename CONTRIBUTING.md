@@ -25,38 +25,12 @@ npm run prettier # Reformats the whole JS codebase, look for an on-save integrat
 npm test # Run the tests
 npm test -- --testPathPattern cf-component-button # Run the tests on a single package
 npm test -- --watchAll # Run the tests in watch mode
-npm run gen # Autogenerate the style guide (imports all components into one page)
 ```
-
-## Style Guide
-
-### To build
-
-```sh
-npm run build:styleguide
-open docs/index.html
-```
-
-### To work continuously
-
-```sh
-npm start
-open http://localhost:8000
-```
-
-### To publish
-
-```sh
-npm run build:styleguide
-```
-
-and commit the changed `/docs` folder.
 
 ## Publishing packages
 
 cf-ui uses [Lerna](https://lernajs.io) in order to publish new versions of
 packages.
-
 
 ```sh
 npm run publish

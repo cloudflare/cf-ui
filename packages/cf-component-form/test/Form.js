@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { Form } from 'cf-component-form';
+import { Form } from '../../cf-component-form/src/index';
 
 test('should render horizontal layout', () => {
   const component = renderer.create(

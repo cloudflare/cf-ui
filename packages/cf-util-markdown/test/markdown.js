@@ -1,4 +1,4 @@
-import markdown from 'cf-util-markdown';
+import markdown from '../../cf-util-markdown/src/index';
 
 test('should render markdown', () => {
   expect(markdown('# Hello World')).toBe(

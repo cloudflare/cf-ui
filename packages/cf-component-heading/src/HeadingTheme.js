@@ -5,4 +5,3 @@ export default () => ({
   fontSize4: '1.2em',
   marginTop2: '10px'
 });
-

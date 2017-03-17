@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { TableRow } from 'cf-component-table';
+import { TableRow } from '../../cf-component-table/src/index';
 
 test('should render', () => {
   const component = renderer.create(<TableRow>TableRow</TableRow>);

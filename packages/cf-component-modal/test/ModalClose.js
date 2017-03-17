@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { ModalClose } from 'cf-component-modal';
-import Icon from 'cf-component-icon';
+import { ModalClose } from '../../cf-component-modal/src/index';
+import Icon from '../../cf-component-icon/src/index';
 
 test('should render', () => {
   const component = renderer.create(<ModalClose onClick={() => {}} />);

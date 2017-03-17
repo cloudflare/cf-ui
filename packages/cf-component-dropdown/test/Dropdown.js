@@ -1,8 +1,8 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { trackFocus, getCurrentFocus } from 'cf-test-focus';
+import { trackFocus, getCurrentFocus } from '../../cf-test-focus/src/index';
 import { render, unmountComponentAtNode } from 'react-dom';
-import { Dropdown, DropdownLink } from 'cf-component-dropdown';
+import { Dropdown, DropdownLink } from '../../cf-component-dropdown/src/index';
 import jsdom from 'jsdom';
 
 test('should render', () => {

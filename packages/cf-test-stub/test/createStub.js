@@ -1,4 +1,4 @@
-import { createStub } from 'cf-test-stub';
+import { createStub } from '../../cf-test-stub/src/index';
 
 test('should create a callable function', () => {
   const stub = createStub();

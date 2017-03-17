@@ -2,7 +2,7 @@ import {
   handleRoutes,
   routeTo,
   __resetRouteHandler
-} from 'cf-util-route-handler';
+} from '../../cf-util-route-handler/src/index';
 
 beforeEach(() => {
   // don't litter test's output with console.error

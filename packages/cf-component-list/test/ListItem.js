@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { ListItem } from 'cf-component-list';
+import { ListItem } from '../../cf-component-list/src/index';
 
 test('should render', () => {
   const component = renderer.create(<ListItem>ListItem</ListItem>);

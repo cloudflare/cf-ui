@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { Dropdown, DropdownLink } from 'cf-component-dropdown';
+import { Dropdown, DropdownLink } from '../../cf-component-dropdown/src/index';
 
 test('should render with to', () => {
   const component = renderer.create(

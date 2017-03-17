@@ -1,13 +1,13 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import felaTestContext from '../../../styleguide/felaTestContext';
-import { applyTheme } from 'cf-style-container';
+import felaTestContext from '../../../felaTestContext';
+import { applyTheme } from '../../cf-style-container/src/index';
 import {
   ButtonGroup as ButtonGroupUnstyled,
   ButtonGroupTheme,
   Button as ButtonUnstyled,
   ButtonTheme
-} from 'cf-component-button';
+} from '../../cf-component-button/src/index';
 
 const Button = applyTheme(ButtonUnstyled, ButtonTheme);
 const ButtonGroup = applyTheme(ButtonGroupUnstyled, ButtonGroupTheme);

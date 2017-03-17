@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { Radio } from 'cf-component-radio';
+import { Radio } from '../../cf-component-radio/src/index';
 
 test('should render', () => {
   const component = renderer.create(

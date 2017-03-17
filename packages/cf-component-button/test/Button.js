@@ -1,8 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import felaTestContext from '../../../styleguide/felaTestContext';
-import { applyTheme } from 'cf-style-container';
-import { Button as ButtonUnstyled, ButtonTheme } from 'cf-component-button';
+import felaTestContext from '../../../felaTestContext';
+import { applyTheme } from '../../cf-style-container/src/index';
+import {
+  Button as ButtonUnstyled,
+  ButtonTheme
+} from '../../cf-component-button/src/index';
 
 const Button = applyTheme(ButtonUnstyled, ButtonTheme);
 

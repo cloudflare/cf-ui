@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { renderToStaticMarkup } from 'react-dom/server';
-import { FormFieldError } from 'cf-component-form';
+import { FormFieldError } from '../../cf-component-form/src/index';
 
 test('should render valid state', () => {
   expect(

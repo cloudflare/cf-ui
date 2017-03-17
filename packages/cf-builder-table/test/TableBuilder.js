@@ -4,8 +4,17 @@ import { mount } from 'enzyme';
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
-import { tableActions, tableReducer, TableBuilder } from 'cf-builder-table';
-import { Table, TableBody, TableRow, TableCell } from 'cf-component-table';
+import {
+  tableActions,
+  tableReducer,
+  TableBuilder
+} from '../../cf-builder-table/src/index';
+import {
+  Table,
+  TableBody,
+  TableRow,
+  TableCell
+} from '../../cf-component-table/src/index';
 
 let store;
 
@@ -101,6 +110,6 @@ test('should support flashes', () => {
     </Provider>
   );
   store.dispatch(tableActions.flashRow('test-table', '1', 'success'));
-  const row = wrapper.find(TableBody).find(TableRow).at(0);
-  expect(row.prop('type')).toBe('success');
+  const row = wrapper.find('tbody').find('tr').at(0);
+  expect(row.prop('className')).toBe('cf-table__row cf-table__row--success');
 });
