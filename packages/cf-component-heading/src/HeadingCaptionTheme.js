@@ -1,7 +1,12 @@
-export default () => ({
-  color: '#434148',
-  fontSize: '1rem',
-  fontColor: '#888',
-  fontWeight: 'lighter',
-  marginLeft: '.3rem'
-});
+import { checkBaseTheme } from 'cf-style-const';
+
+export default baseTheme => {
+  checkBaseTheme(baseTheme, 'HeadingCaptionTheme');
+  return {
+    color: baseTheme.colorDarkGray,
+    fontSize: '1rem',
+    fontColor: baseTheme.fontColorHeadingCaption,
+    fontWeight: 'lighter',
+    marginLeft: '.3rem'
+  };
+};
