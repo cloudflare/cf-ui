@@ -1,10 +1,16 @@
 import React from 'react';
-import { HeadingCaption } from 'cf-component-heading';
+import { HeadingCaption, HeadingCaptionTheme } from 'cf-component-heading';
 import renderer from 'react-test-renderer';
+import felaTestContext from '../../../styleguide/felaTestContext';
+import { applyTheme } from 'cf-style-container';
+
+const StyledHeadingCaption = applyTheme(HeadingCaption, HeadingCaptionTheme);
 
 test('should render', () => {
   const component = renderer.create(
-    <HeadingCaption>Heading Caption</HeadingCaption>
+    felaTestContext(
+      <StyledHeadingCaption>Heading Caption</StyledHeadingCaption>
+    )
   );
   expect(component.toJSON()).toMatchSnapshot();
 });

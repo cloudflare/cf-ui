@@ -5,7 +5,7 @@ exports[`should render 1`] = `
   className="cf-modal__title"
 >
   <h3
-    className="cf-heading cf-heading--3"
+    className=""
   >
     ModalTitle
   </h3>
