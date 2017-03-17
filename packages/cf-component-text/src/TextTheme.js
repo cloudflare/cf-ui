@@ -15,7 +15,7 @@ export default baseTheme => {
     'textTransformCapitalize:first-word': 'capitalize',
     textTransformLowercase: 'lowercase',
     textTransformUppercase: 'uppercase',
-    colorInfo: '#00a9eb',
+    colorInfo: baseTheme.colorInfo,
     colorSuccess: baseTheme.colorSuccess,
     colorWarning: baseTheme.colorWarning,
     colorError: baseTheme.colorError,
