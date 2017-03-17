@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Text from '../../cf-component-text/src/index';
+import { Text } from '../../cf-component-text/src/index';
 import felaTestContext from '../../../felaTestContext';
 import { applyTheme } from 'cf-style-container';
 
