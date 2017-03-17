@@ -1,6 +1,9 @@
 import { createMockStore } from '../../cf-test-store/src/index';
 import cf from '../../cf-pony/src/index';
-import { tableActions, TableActionTypes } from '../../cf-builder-table/src/index';
+import {
+  tableActions,
+  TableActionTypes
+} from '../../cf-builder-table/src/index';
 
 // this test is flaky, in 1/4 cases it just time outs
 test.skip('.flashRow() should dispatch actions for flashing the row', done => {
