@@ -11,6 +11,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
+    "cf-style-const": "^0.0.1",
     "cf-style-container": "^0.0.2"
   },
   "peerDependencies": {
