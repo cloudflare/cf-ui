@@ -2,7 +2,7 @@
 
 exports[`should render align 1`] = `
 <div
-  className="cf-text--center"
+  className="cf-12to336"
 >
   Hello
 </div>
@@ -10,7 +10,7 @@ exports[`should render align 1`] = `
 
 exports[`should render case 1`] = `
 <div
-  className="cf-text--uppercase"
+  className="cf-56txr3"
 >
   Hello
 </div>
@@ -18,7 +18,7 @@ exports[`should render case 1`] = `
 
 exports[`should render size 1`] = `
 <div
-  className="cf-text--normal"
+  className="cf-14kf5yt"
 >
   Hello
 </div>
@@ -26,7 +26,7 @@ exports[`should render size 1`] = `
 
 exports[`should render type 1`] = `
 <div
-  className="cf-text--info"
+  className="cf-1lbcix5"
 >
   Hello
 </div>

@@ -1,39 +1,61 @@
 import React, { PropTypes } from 'react';
+import { createComponent } from 'cf-style-container';
 
-class Text extends React.Component {
-  render() {
-    let classNames = [];
+const capitalize = str =>
+  str
+    ? String.prototype.concat(
+        str.substring(0, 1).toUpperCase(),
+        str.substring(1)
+      )
+    : str;
 
-    if (this.props.size) {
-      classNames.push('cf-text--' + this.props.size);
-    }
+const styles = ({ theme, size, align, type, case: textCase }) => {
+  const t = {};
 
-    if (this.props.align) {
-      classNames.push('cf-text--' + this.props.align);
-    }
-
-    if (this.props.type) {
-      classNames.push('cf-text--' + this.props.type);
-    }
-
-    if (this.props.case) {
-      classNames.push('cf-text--' + this.props.case);
-    }
-
-    return (
-      <div className={classNames.join(' ')}>
-        {this.props.children}
-      </div>
-    );
+  if (theme[`color${capitalize(type)}`]) {
+    t.color = theme[`color${capitalize(type)}`];
   }
-}
+
+  if (theme[`lineHeight${capitalize(type)}`]) {
+    t.color = theme[`lineHeight${capitalize(type)}`];
+  }
+
+  if (theme[`fontSize${capitalize(size)}`]) {
+    t.fontSize = theme[`fontSize${capitalize(size)}`];
+  }
+
+  if (theme[`fontWeight${capitalize(size)}`]) {
+    t.fontWeight = theme[`fontWeight${capitalize(size)}`];
+  }
+
+  if (theme[`textAlign${capitalize(align)}`]) {
+    t.textAlign = theme[`textAlign${capitalize(align)}`];
+  }
+
+  if (theme[`textTransform${capitalize(textCase)}`]) {
+    t.textTransform = theme[`textTransform${capitalize(textCase)}`];
+  }
+
+  if (theme[`textTransform${capitalize(textCase)}:first-word`]) {
+    t.textTransform = theme[`textTransform${capitalize(textCase)}:first-word`];
+  }
+
+  return t;
+};
+
+const Text = ({ className, children }) => (
+  <div className={className}>
+    {children}
+  </div>
+);
 
 Text.propTypes = {
   size: PropTypes.oneOf(['normal', 'small']),
   align: PropTypes.oneOf(['start', 'center', 'justify', 'end']),
   type: PropTypes.oneOf(['info', 'success', 'warning', 'error', 'muted']),
   case: PropTypes.oneOf(['capitalize', 'titlecase', 'lowercase', 'uppercase']),
+  className: PropTypes.string.isRequired,
   children: PropTypes.node
 };
 
-export default Text;
+export default createComponent(styles, Text);
