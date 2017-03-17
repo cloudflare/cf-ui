@@ -2,6 +2,15 @@ import webpack from 'webpack';
 import path from 'path';
 import fs from 'fs';
 
+// alias cf-ui packages
+const alias = {};
+fs
+  .readdirSync(path.resolve(__dirname, './packages'))
+  .forEach(
+    file =>
+      alias[file] = path.resolve(__dirname, `./packages/${file}/src/index.js`)
+  );
+
 const isMin = process.env.NODE_ENV === 'production';
 const entry = {};
 fs.readdirSync(path.resolve(__dirname, './packages')).forEach(file => {
@@ -62,6 +71,7 @@ export default {
   },
   plugins,
   resolve: {
+    alias,
     extensions: ['.js', '.json'],
     modules: ['node_modules']
   }
