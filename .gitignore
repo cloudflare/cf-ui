@@ -6,4 +6,3 @@ build
 packages/*/npm-debug.log.*
 es
 dist
-.DS_Store
