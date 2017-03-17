@@ -1,20 +1,29 @@
-import React, { PropTypes } from 'react';
+import React, { PropTypes } from "react";
+import { createComponent } from "cf-style-container";
 
-class PageHeader extends React.Component {
-  render() {
-    return (
-      <header className="cf-page__header">
-        <h1 className="cf-page__title">{this.props.title}</h1>
-        {this.props.subtitle &&
-          <p className="cf-page__subtitle">{this.props.subtitle}</p>}
-      </header>
-    );
-  }
-}
+const styles = props => {
+  const theme = props.theme;
+  return {
+    "& h1": {
+      marginBottom: theme.marginBottom
+    },
+    "& p": {
+      marginTop: theme.marginTop,
+      fontSize: theme.fontSize,
+      color: theme.defaultColor
+    }
+  };
+};
+const PageHeader = ({ title, subtitle, className }) => (
+  <header className={className}>
+    <h1 className={className}>{title}</h1>
+    {subtitle && <p className={className}>{subtitle}</p>}
+  </header>
+);
 
 PageHeader.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string
 };
 
-export default PageHeader;
+export default createComponent(styles, PageHeader);

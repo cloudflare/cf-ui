@@ -1,4 +1,6 @@
-import Page from './Page';
-import PageHeader from './PageHeader';
+import Page from "./Page";
+import PageTheme from "./PageTheme";
+import PageHeader from "./PageHeader";
+import PageHeaderTheme from "./PageHeaderTheme";
 
-export { Page, PageHeader };
+export { Page, PageTheme, PageHeader, PageHeaderTheme };
