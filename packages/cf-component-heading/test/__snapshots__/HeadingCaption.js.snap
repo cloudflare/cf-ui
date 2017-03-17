@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <small
-  className="cf-heading__caption"
+  className="cf-vp4lxk"
 >
   Heading Caption
 </small>

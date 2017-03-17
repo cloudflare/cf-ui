@@ -1,17 +1,26 @@
 import React, { PropTypes } from 'react';
+import { createComponent } from 'cf-style-container';
 
-class HeadingCaption extends React.Component {
-  render() {
-    return (
-      <small className="cf-heading__caption">
-        {this.props.children}
-      </small>
-    );
-  }
-}
+const styles = props => {
+  const theme = props.theme;
+  return {
+    color: theme.color,
+    fontSize: theme.fontFize,
+    fontColor: theme.fontColor,
+    fontWeight: theme.fontWeight,
+    marginLeft: theme.marginLeft
+  };
+};
+
+const HeadingCaption = ({ className, children }) => (
+  <small className={className}>
+    {children}
+  </small>
+);
 
 HeadingCaption.propTypes = {
+  className: PropTypes.string.isRequired,
   children: PropTypes.node
 };
 
-export default HeadingCaption;
+export default createComponent(styles, HeadingCaption);

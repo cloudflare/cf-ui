@@ -1,11 +1,22 @@
 import React from 'react';
-import { Heading, HeadingCaption } from 'cf-component-heading';
+import {
+  Heading,
+  HeadingCaption,
+  HeadingTheme,
+  HeadingCaptionTheme
+} from 'cf-component-heading';
+import { applyTheme } from 'cf-style-container';
+
+const StyledHeading = applyTheme(Heading, HeadingTheme);
+const StyledHeadingCaption = applyTheme(HeadingCaption, HeadingCaptionTheme);
 
 const HeadingComponent = () => (
-  <Heading size={2}>
+  <StyledHeading size={2}>
     Look at this nice heading!
-    <HeadingCaption>It even has a nice HeadingCaption</HeadingCaption>
-  </Heading>
+    <StyledHeadingCaption>
+      It even has a nice HeadingCaption
+    </StyledHeadingCaption>
+  </StyledHeading>
 );
 
 export default HeadingComponent;
