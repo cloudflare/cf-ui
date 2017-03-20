@@ -21,10 +21,10 @@ exports[`should render title/subtitle 1`] = `
   >
     Title
   </h1>
-  <p
+  <h2
     className="cf-page__subtitle"
   >
     Subtitle
-  </p>
+  </h2>
 </header>
 `;
