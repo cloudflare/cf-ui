@@ -1,7 +1,7 @@
 {
   "name": "cf-component-modal",
   "description": "Cloudflare Modal Component",
-  "version": "5.2.0",
+  "version": "5.3.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -11,7 +11,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-component-heading": "^3.1.0",
+    "cf-component-heading": "^2.0.1",
     "cf-component-icon": "^2.2.0",
     "react-addons-css-transition-group": "^0.14.2 || ^15.0.0-0",
     "react-gateway": "^2.2.0",
