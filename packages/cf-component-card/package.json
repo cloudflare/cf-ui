@@ -1,7 +1,7 @@
 {
   "name": "cf-component-card",
   "description": "Cloudflare Card Component",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -11,7 +11,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-component-link": "^4.0.1"
+    "cf-component-link": "^4.1.0"
   },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"

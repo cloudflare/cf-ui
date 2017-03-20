@@ -1,7 +1,7 @@
 {
   "name": "cf-util-async",
   "description": "Cloudflare Async Util",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",

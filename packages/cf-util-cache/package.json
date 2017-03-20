@@ -1,7 +1,7 @@
 {
   "name": "cf-util-cache",
   "description": "Cloudflare Cache Util",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -11,6 +11,6 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-util-logger": "^2.0.0"
+    "cf-util-logger": "^2.1.0"
   }
 }
