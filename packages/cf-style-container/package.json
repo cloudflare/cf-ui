@@ -1,7 +1,7 @@
 {
   "name": "cf-style-container",
   "description": "Cloudflare Style Container",
-  "version": "0.0.2",
+  "version": "0.2.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
