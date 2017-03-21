@@ -12,9 +12,7 @@
   },
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "build": "./scripts/build.sh && npm run build:umd && npm run build:umd:min",
-    "build:umd": "cross-env BABEL_ENV=commonjs NODE_ENV=development webpack --config webpack.babel.js",
-    "build:umd:min": "cross-env BABEL_ENV=commonjs NODE_ENV=production webpack --config webpack.babel.js",
+    "build": "./scripts/build.sh",
     "lint": "eslint packages/*/src/**/*.js packages/*/example/**/*.js packages/*/test/**/*.js || true",
     "test": "cross-env BABEL_ENV=commonjs jest",
     "updated": "lerna updated --only-explicit-updates",
@@ -65,7 +63,6 @@
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
     "rimraf": "^2.6.1",
-    "sinon": "^2.0.0-pre.6",
-    "webpack": "^2.2.1"
+    "sinon": "^2.0.0-pre.6"
   }
 }
