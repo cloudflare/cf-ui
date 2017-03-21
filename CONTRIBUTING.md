@@ -19,10 +19,11 @@ npm run bootstrap
 
 ```sh
 npm start # Start the dev server, open http://localhost:8000 and start deving
-npm run build # Build all the packages using Babel (targets: commonjs, ES6) and Webpack (umd)
+npm run build # Build all the packages using Babel (targets: commonjs, ES6)
+npm run build -- cf-component-button # Build one package (targets: commonjs, ES6)
 npm run lint # Run the eslint
 npm run prettier # Reformats the whole JS codebase, look for an on-save integration for your editor
-npm test # Run the tests
+npm test # Run the tests, you need to run 'npm run build' first
 npm test -- --testPathPattern cf-component-button # Run the tests on a single package
 npm test -- --watchAll # Run the tests in watch mode
 ```
