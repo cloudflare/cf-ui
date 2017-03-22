@@ -12,7 +12,7 @@ export default baseTheme => {
     textAlignJustify: 'justify',
     textAlignEnd: 'right',
     textTransformCapitalize: 'capitalize',
-    'textTransformCapitalize:first-word': 'capitalize',
+    'textTransformTitlecase:first-letter': 'capitalize',
     textTransformLowercase: 'lowercase',
     textTransformUppercase: 'uppercase',
     colorInfo: baseTheme.colorInfo,

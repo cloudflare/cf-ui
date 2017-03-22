@@ -9,39 +9,17 @@ const capitalize = str =>
       )
     : str;
 
-const styles = ({ theme, size, align, type, case: textCase }) => {
-  const t = {};
-
-  if (theme[`color${capitalize(type)}`]) {
-    t.color = theme[`color${capitalize(type)}`];
+const styles = ({ theme, size, align, type, case: textCase }) => ({
+  color: theme[`color${capitalize(type)}`],
+  lineHeight: theme[`lineHeight${capitalize(size)}`],
+  fontSize: theme[`fontSize${capitalize(size)}`],
+  fontWeight: theme[`fontWeight${capitalize(size)}`],
+  textAlign: theme[`textAlign${capitalize(align)}`],
+  textTransform: theme[`textTransform${capitalize(textCase)}`],
+  '&:first-letter': {
+    textTransform: theme[`textTransform${capitalize(textCase)}:first-letter`]
   }
-
-  if (theme[`lineHeight${capitalize(size)}`]) {
-    t.lineHeight = theme[`lineHeight${capitalize(size)}`];
-  }
-
-  if (theme[`fontSize${capitalize(size)}`]) {
-    t.fontSize = theme[`fontSize${capitalize(size)}`];
-  }
-
-  if (theme[`fontWeight${capitalize(size)}`]) {
-    t.fontWeight = theme[`fontWeight${capitalize(size)}`];
-  }
-
-  if (theme[`textAlign${capitalize(align)}`]) {
-    t.textAlign = theme[`textAlign${capitalize(align)}`];
-  }
-
-  if (theme[`textTransform${capitalize(textCase)}`]) {
-    t.textTransform = theme[`textTransform${capitalize(textCase)}`];
-  }
-
-  if (theme[`textTransform${capitalize(textCase)}:first-word`]) {
-    t.textTransform = theme[`textTransform${capitalize(textCase)}:first-word`];
-  }
-
-  return t;
-};
+});
 
 const Text = ({ className, children }) => (
   <div className={className}>
