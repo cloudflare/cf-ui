@@ -16,9 +16,17 @@ exports[`should render case 1`] = `
 </div>
 `;
 
-exports[`should render size 1`] = `
+exports[`should render normal size 1`] = `
 <div
   className="cf-1v2y3xx"
+>
+  Hello
+</div>
+`;
+
+exports[`should render small size 1`] = `
+<div
+  className="cf-d6ndc4"
 >
   Hello
 </div>

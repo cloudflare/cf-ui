@@ -16,8 +16,8 @@ const styles = ({ theme, size, align, type, case: textCase }) => {
     t.color = theme[`color${capitalize(type)}`];
   }
 
-  if (theme[`lineHeight${capitalize(type)}`]) {
-    t.color = theme[`lineHeight${capitalize(type)}`];
+  if (theme[`lineHeight${capitalize(size)}`]) {
+    t.lineHeight = theme[`lineHeight${capitalize(size)}`];
   }
 
   if (theme[`fontSize${capitalize(size)}`]) {

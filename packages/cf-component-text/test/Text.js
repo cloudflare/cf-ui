@@ -4,7 +4,7 @@ import { Text } from '../../cf-component-text/src/index';
 import felaTestContext from '../../../felaTestContext';
 import { applyTheme } from 'cf-style-container';
 
-test('should render size', () => {
+test('should render normal size', () => {
   const StyledText = applyTheme(Text, () => ({
     fontSizeNormal: '1rem',
     fontWeightNormal: 400
@@ -12,6 +12,18 @@ test('should render size', () => {
 
   const component = renderer.create(
     felaTestContext(<StyledText size="normal">Hello</StyledText>)
+  );
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('should render small size', () => {
+  const StyledText = applyTheme(Text, () => ({
+    fontSizeSmallß: '0.8em',
+    lineHeightSmall: 1.3
+  }));
+
+  const component = renderer.create(
+    felaTestContext(<StyledText size="small">Hello</StyledText>)
   );
   expect(component.toJSON()).toMatchSnapshot();
 });
