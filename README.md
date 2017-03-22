@@ -19,9 +19,12 @@ We are currently migrating cf-ui to CSS in JS using [Fela](https://github.com/ro
 
 ## Getting Started
 
+Build using [Yarn](https://yarnpkg.com/en/docs/install)
+
 ```bash
-npm install
-npm run bootstrap
+yarn install
+yarn run bootstrap
+yarn run build
 ```
 
 To view all of the available packages, see the [`packages/` directory](packages).
