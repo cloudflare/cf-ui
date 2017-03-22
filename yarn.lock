@@ -902,8 +902,8 @@ chalk@1.1.3, chalk@^1.0.0, chalk@^1.1.0, chalk@^1.1.1, chalk@^1.1.3:
     supports-color "^2.0.0"
 
 check-installed-dependencies@^1.0.0:
-  version "1.0.0"
-  resolved "http://npmjs.cfops.it:5984/check-installed-dependencies/-/check-installed-dependencies-1.0.0.tgz#bea55ce27c929130e8e0982fc699c34082065ec7"
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/check-installed-dependencies/-/check-installed-dependencies-1.0.1.tgz#0d0d385b3caece9500df901147ed9836051a47f3"
   dependencies:
     cross-spawn "^3.0.1"
     lodash.startswith "^4.1.0"
