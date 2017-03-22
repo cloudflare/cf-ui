@@ -18,7 +18,6 @@ yarn run bootstrap
 ## Development tasks
 
 ```sh
-yarn start # Start the dev server, open http://localhost:8000 and start deving
 yarn run build # Build all the packages using Babel (targets: commonjs, ES6)
 yarn run build -- cf-component-button # Build one package (targets: commonjs, ES6)
 yarn run lint # Run the eslint
