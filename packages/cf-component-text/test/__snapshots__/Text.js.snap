@@ -18,7 +18,7 @@ exports[`should render case 1`] = `
 
 exports[`should render size 1`] = `
 <div
-  className="cf-14kf5yt"
+  className="cf-1v2y3xx"
 >
   Hello
 </div>
