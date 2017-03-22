@@ -11,8 +11,8 @@ addons:
     packages:
       - g++-4.8
 before_script:
-  - npm run bootstrap
+  - yarn run bootstrap
 script:
-  - npm run build
-  - npm run lint
-  - npm test
+  - yarn run build
+  - yarn run lint
+  - yarn test
