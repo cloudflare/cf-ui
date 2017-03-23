@@ -3,10 +3,10 @@ import { checkBaseTheme } from 'cf-style-const';
 export default baseTheme => {
   checkBaseTheme(baseTheme, 'HeadingCaptionTheme');
   return {
-    color: baseTheme.colorDarkGray,
-    fontSize: '1rem',
-    fontColor: baseTheme.fontColorHeadingCaption,
-    fontWeight: 'lighter',
-    marginLeft: '.3rem'
+    marginLeft: '.5em',
+    color: baseTheme.colorGray,
+    fontSize: '80%',
+    fontColor: baseTheme.fontColor,
+    fontWeight: baseTheme.fontWeight
   };
 };
