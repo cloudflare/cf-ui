@@ -2,7 +2,7 @@
 
 exports[`should render align 1`] = `
 <div
-  className="cf-12kp2av"
+  className="cf-1w7btnm"
 >
   Hello
 </div>
@@ -10,7 +10,7 @@ exports[`should render align 1`] = `
 
 exports[`should render lowercase 1`] = `
 <div
-  className="cf-1ez8i2i"
+  className="cf-y1tq1q"
 >
   Hello
 </div>
@@ -18,7 +18,7 @@ exports[`should render lowercase 1`] = `
 
 exports[`should render normal size 1`] = `
 <div
-  className="cf-1wd7cvk"
+  className="cf-1i7qq6k"
 >
   Hello
 </div>
@@ -26,7 +26,7 @@ exports[`should render normal size 1`] = `
 
 exports[`should render small size 1`] = `
 <div
-  className="cf-xk5sq7"
+  className="cf-ypvnxt"
 >
   Hello
 </div>
@@ -34,7 +34,7 @@ exports[`should render small size 1`] = `
 
 exports[`should render titlecase case 1`] = `
 <div
-  className="cf-w04jx1"
+  className="cf-1vzpvz1"
 >
   Hello
 </div>
@@ -42,7 +42,7 @@ exports[`should render titlecase case 1`] = `
 
 exports[`should render type 1`] = `
 <div
-  className="cf-1vjexbg"
+  className="cf-1k7zb1g"
 >
   Hello
 </div>

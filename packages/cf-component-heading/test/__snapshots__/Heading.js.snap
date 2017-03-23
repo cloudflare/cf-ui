@@ -2,7 +2,7 @@
 
 exports[`should render size 1`] = `
 <h2
-  className="cf-46exok"
+  className="cf-iykrzl"
 >
   Heading
 </h2>
