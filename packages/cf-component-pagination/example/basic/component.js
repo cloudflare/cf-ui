@@ -1,6 +1,14 @@
 import React from 'react';
-import { Pagination, PaginationItem } from 'cf-component-pagination';
+import {
+  Pagination as PaginationUnstyled,
+  PaginationTheme,
+  PaginationItem
+} from 'cf-component-pagination';
 import Icon from 'cf-component-icon';
+import './component.css';
+import { applyTheme } from 'cf-style-container';
+
+const Pagination = applyTheme(PaginationUnstyled, PaginationTheme);
 
 class PaginationComponent extends React.Component {
   constructor(props) {
@@ -61,7 +69,7 @@ class PaginationComponent extends React.Component {
           type="next"
           label="Next Page"
           disabled={this.state.active === this.state.pages}
-          onClick={this.handleClickNext}
+          onClick={this.handleClickNext.bind(this)}
         >
           <Icon type="caret-right" label={false} />
         </PaginationItem>
