@@ -1,11 +1,8 @@
 language: node_js
 node_js:
-  - "node"
   - "6"
-
 before_script:
   - yarn run bootstrap
-
 script:
   - yarn run build
   - yarn run lint

@@ -12,6 +12,9 @@
   },
   "dependencies": {
     "cf-util-logger": "^2.2.0",
-    "superagent": "^1.4.0"
+    "isomorphic-fetch": "^2.2.1"
+  },
+  "optionalDependencies": {
+    "es6-promise": "^4.1.0"
   }
 }

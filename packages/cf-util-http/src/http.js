@@ -1,21 +1,13 @@
-import superagent from 'superagent';
+import 'isomorphic-fetch';
+
 import createLogger from 'cf-util-logger';
 
 const logRequest = createLogger('http:request');
 const logError = createLogger('http:error');
 const logSuccess = createLogger('http:success');
 
-// Mapping of http request types to superagent methods.
-const METHODS = {
-  GET: 'get',
-  POST: 'post',
-  PUT: 'put',
-  PATCH: 'patch',
-  DELETE: 'del'
-};
-
 // Store beforeSend callbacks.
-const beforeSendCallbacks = [];
+let beforeSendCallbacks = [];
 
 /**
  * Modify request options before they are sent.
@@ -33,8 +25,64 @@ export function beforeSend(callback) {
   beforeSendCallbacks.push(callback);
 }
 
+export function clearBeforeSend() {
+  beforeSendCallbacks = [];
+}
+
+function toQueryParams(kvs) {
+  const queryParams = [];
+  // Clones the input
+  if (Array.isArray(kvs) || kvs instanceof Map) {
+    for (let [k, v] of kvs) {
+      queryParams.push([k, v]);
+    }
+  } else {
+    for (let k in kvs) {
+      if (kvs.hasOwnProperty(k)) {
+        queryParams.push([k, kvs[k]]);
+      }
+    }
+  }
+  return queryParams
+    .map(([k, v]) => `${encodeURIComponent(k)}=${encodeURIComponent(v)}`)
+    .join('&');
+}
+
+function toHash(headers) {
+  const hash = {};
+  for (let [k, v] of headers) {
+    hash[k] = v;
+    hash[k.toLowerCase()] = v;
+  }
+  return hash;
+}
+
+function wrapResponse(headers, status, body, text, response) {
+  return {
+    headers,
+    status,
+    body: headers['content-type'] === 'application/json'
+      ? JSON.parse(text)
+      : text,
+    text,
+    response
+  };
+}
+
 /**
- * Perform an http request.
+ * Perform an http request. This method uses WHATWG's fetch API and returns a
+ * promise that **resolves on any HTTP status**, and rejects on anything else,
+ * such as a malformed URL or a network error.
+
+ * If a callback is provided, and `response.ok` is true, the node-style callback
+ * will be called with an undefined error and a hash that contains the headers
+ * key-value pairs, status code, deserializes body (JSON or plain-text only for
+ * now), the body text, and the original `Response` object. Otherwise the
+ * callback is called with a single argument containing the above hash as the
+ * error value.
+ *
+ * This function also returns a promise that contains the fetched response
+ * object.
  *
  * ```js
  * request('POST', '/posts', {
@@ -42,75 +90,76 @@ export function beforeSend(callback) {
  *     title: 'A New Post',
  *     content: 'Contents of the new post.'
  *   }
- * }, function(res) {
- *   console.log(res.body); // > { result: { id: 1, title: 'A New Post', content: 'Contents of the new post.' } }
- * }, function(err) {
- *   console.log(res.body); // > { errors: [{ message: 'Error!' }] }
+ * }).then(function(res) {
+ *   res.json().then(console.log); // > { result: { id: 1, title: 'A New Post', content: 'Contents of the new post.' } }
  * });
  * ```
  *
  * @param {String} method - GET/POST/PUT/PATCH/DELETE
  * @param {String} url
- * @param {Object} [opts]
- * @param {Object} [opts.parameters]
- * @param {Object} [opts.headers]
- * @param {Object} [opts.body]
- * @param {Function} [callback]
- * @returns {Function} Abort request.
+ * @param {Object} [opts] Any options fetch()'s second parameter accepts
+ * @param {Object|Array<Array>|Map} [opts.parameters] Query parameters to add to `url`
+ * @returns {Promise} Fetch promise
+ *
+ * @see [Global Fetch on MDN](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch)
+ * @see [WHATWG Fetch API Spec](https://fetch.spec.whatwg.org/)
  */
-export function request(method, url, opts, callback) {
-  opts = opts || {};
-
-  opts.method = method;
+export function request(method, url, opts = {}, callback) {
+  opts.method = method.toUpperCase();
   opts.url = url;
   opts.callback = callback;
 
   // Allow beforeSend to modify request options.
   beforeSendCallbacks.forEach(cb => cb(opts));
 
-  // Configure request
-  const req = superagent[METHODS[opts.method]](opts.url);
+  method = opts.method;
+  url = opts.url;
+  callback = opts.callback;
 
   if (opts.parameters) {
-    req.query(opts.parameters);
+    if (url.indexOf('?') === -1) {
+      url = `${url}?${toQueryParams(opts.parameters)}`;
+    }
   }
 
-  if (opts.headers) {
-    req.set(opts.headers);
-  }
-
-  if (opts.body) {
-    req.send(opts.body);
-  }
-
-  let logMessage = `${opts.method} ${opts.url}`;
+  let logMessage = `${method} ${url}`;
 
   logRequest(logMessage);
 
-  // Send request
-  req.end((err, res) => {
-    logMessage = `${logMessage} (${res.status} ${res.statusText})`;
+  return fetch(url, opts)
+    .then(response => {
+      const headers = toHash(response.headers);
+      const status = response.status;
+      logMessage = `${logMessage} (${status} ${response.statusText})`;
 
-    const result = {
-      headers: res.headers,
-      status: res.status,
-      body: res.body,
-      text: res.text
-    };
+      if (response.ok) {
+        logSuccess(logMessage);
 
-    if (err) {
+        return response.text().then(text => {
+          if (callback) {
+            callback(
+              undefined,
+              wrapResponse(headers, status, text, text, response)
+            );
+          }
+          return response;
+        });
+      }
+
       logError(logMessage);
-      opts.callback(result);
-    } else {
-      logSuccess(logMessage);
-      opts.callback(null, result);
-    }
-  });
-
-  // Return abort function
-  return function() {
-    req.abort();
-  };
+      return response.text().then(text => {
+        if (callback) {
+          callback(wrapResponse(headers, status, text, text, response));
+        }
+        return response;
+      });
+    })
+    .catch(err => {
+      // Unrecoverable errors
+      callback(err);
+      console.trace(err);
+      throw err;
+    });
 }
 
 /**
