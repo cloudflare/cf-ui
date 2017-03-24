@@ -1,7 +1,7 @@
 {
   "name": "cf-component-heading",
   "description": "Cloudflare Heading Component",
-  "version": "3.1.0",
+  "version": "3.2.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "cf-style-container": "^0.2.0",
-    "cf-style-const": "^0.2.0"
+    "cf-style-const": "^0.3.0"
   },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
