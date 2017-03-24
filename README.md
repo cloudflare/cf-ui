@@ -4,30 +4,22 @@
 
 cf-ui is a set of over 50 packages used to build UIs at Cloudflare using
 projects such as [React](https://facebook.github.io/react/),
-[Redux](http://redux.js.org), [npm](https://www.npmjs.com),
-[Lerna](https://lernajs.io), and more.
+[Fela](http://fela.js.org), [Lerna](https://lernajs.io) and more.
 
-## Important note
+## cf-ui meets CSS in JS
 
-We are currently migrating cf-ui to CSS in JS using [Fela](https://github.com/rofrischmann/fela). That means that our components will include styles so you can use them out of the box! However, you need to start using Fela in your project. No worries, [it's pretty easy](http://fela.js.org/)! We will share more exciting info once the migration is done. So far, these components are migrated:
-
-- cf-component-button
+We are currently migrating cf-ui to CSS in JS powered by [Fela](https://github.com/rofrischmann/fela). That means that our components include styles written in JavaScript so you can use them out of the box! However, you need to start using Fela in your project. [Follow our migration here](https://github.com/cloudflare/cf-ui/issues/100).
 
 **[Read the introductory blog post &rarr;](https://blog.cloudflare.com/cf-ui/)**
-
 **[Interested in more of our technical decisions? See `cf-ui/discussions` &rarr;](discussions)**
 
 ## Getting Started
 
-Build using [Yarn](https://yarnpkg.com/en/docs/install)
+To view all of the available components and packages, see the [`packages/` directory](packages). Do you want to see examples? Check out our [documentation](https://cloudflare.github.io/cf-ui/).
 
-```bash
-yarn install
-yarn run bootstrap
-yarn run build
-```
+## CSS in JS setup
 
-To view all of the available packages, see the [`packages/` directory](packages).
+cf-ui components expect that there is [Fela Renderer](http://fela.js.org/docs/basics/Renderer.html) in the context of your React app. It's the way how to render styles that come with our components into the `<style></style>` node. **You have to use Fela in your project if you want to use use cf-ui.**
 
 ## Contributing
 
