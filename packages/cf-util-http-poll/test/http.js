@@ -1,22 +1,20 @@
-import { createFakeServer } from '../../cf-test-server/src/index';
 import httpPoll from '../../cf-util-http-poll/src/index';
 
-test.skip('should poll until `isComplete` returns `true`', done => {
-  const server = createFakeServer();
+afterEach(() => fetch.mockClear());
 
+test('should poll until `isComplete` returns `true`', done => {
   function setupResponse(active) {
-    server.respondWith(
-      'GET',
-      '/status',
-      200,
-      { 'Content-Type': 'application/json' },
-      {
-        active
-      }
-    );
     setTimeout(
       () => {
-        server.respond();
+        fetch.mochResponse(
+          JSON.stringify({
+            active
+          }),
+          {
+            headers: { 'Content-Type': 'application/json' },
+            status: 200
+          }
+        );
       },
       5
     );
