@@ -105,6 +105,11 @@ function wrapResponse(headers, status, body, text, response) {
  * @see [WHATWG Fetch API Spec](https://fetch.spec.whatwg.org/)
  */
 export function request(method, url, opts = {}, callback) {
+  if (typeof opts === 'function') {
+    callback = opts;
+    opts = {};
+  }
+
   opts.method = method.toUpperCase();
   opts.url = url;
   opts.callback = callback;
