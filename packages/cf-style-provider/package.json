@@ -1,0 +1,32 @@
+{
+  "name": "cf-style-provider",
+  "description": "Cloudflare Style Provider",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "jsnext:main": "es/index.js",
+  "author": "Vojtech Miksu <vojtech@cloudflare.com>",
+  "license": "BSD-3-Clause",
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "cf-style-const": "^0.3.0",
+    "cf-style-container": "^0.2.0",
+    "css-color-function": "^1.3.0",
+    "fela": "^4.3.2",
+    "fela-beautifier": "^4.3.2",
+    "fela-font-renderer": "^4.3.2",
+    "fela-monolithic": "^4.3.2",
+    "fela-plugin-fallback-value": "^4.3.2",
+    "fela-plugin-lvha": "^4.3.2",
+    "fela-plugin-prefixer": "^4.3.2",
+    "fela-plugin-unit": "^4.3.2",
+    "fela-plugin-validator": "^4.3.2",
+    "react": "^15.4.2",
+    "react-fela": "^4.3.2"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
+  }
+}
