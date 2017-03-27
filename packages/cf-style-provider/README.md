@@ -20,7 +20,7 @@ const StyleProvider = createProvider({
   cssNode: null, // where to render CSS styles (DOM node)
   fontNode: null, // where to render CSS styles related to fonts (DOM node)
   dev: false, // in dev mode it applies more Fela plugins (validator, ...)
-  selectorPrefix: 'cf-ui' // prefix for CSS classnames
+  selectorPrefix: 'cf-' // prefix for CSS classnames
 });
 
 render(<StyleProvider><YourApp /></StyleProvider>);
@@ -38,7 +38,7 @@ const renderer = createRenderer({
   cssNode: null, // where to render CSS styles (DOM node)
   fontNode: null, // where to render CSS styles related to fonts (DOM node)
   dev: false, // in dev mode it applies more Fela plugins (validator, ...)
-  selectorPrefix: 'cf-ui' // prefix for CSS classnames
+  selectorPrefix: 'cf-' // prefix for CSS classnames
 });
 
 const body = ReactDOMServer.renderToString(
