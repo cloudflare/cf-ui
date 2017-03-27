@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "css-color-function": "^1.3.0",
+    "fela": "^4.3.2",
     "react-fela": "^4.2.5"
   },
   "peerDependencies": {
