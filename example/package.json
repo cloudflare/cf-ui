@@ -14,15 +14,8 @@
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-react": "^6.23.0",
     "cf-component-button": "^4.2.0",
-    "cf-style-const": "^0.2.0",
     "cf-style-container": "^0.2.0",
-    "fela": "^4.3.2",
-    "fela-font-renderer": "^4.3.2",
-    "fela-plugin-fallback-value": "^4.3.2",
-    "fela-plugin-lvha": "^4.3.2",
-    "fela-plugin-prefixer": "^4.3.2",
-    "fela-plugin-unit": "^4.3.2",
-    "react-fela": "^4.3.2",
+    "react": "^15.4.2",
     "webpack": "^2.3.1"
   }
 }
