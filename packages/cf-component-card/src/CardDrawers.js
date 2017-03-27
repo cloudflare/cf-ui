@@ -26,7 +26,9 @@ class CardDrawers extends React.Component {
   }
 
   render() {
-    const active = this.props.active || this.state.active;
+    const active = this.props.hasOwnProperty('active')
+      ? this.props.active
+      : this.state.active;
 
     const links = [];
     const drawers = [];
