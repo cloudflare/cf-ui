@@ -1,5 +1,5 @@
 import ActionTypes from './TableActionTypes';
-import cf from 'cf-pony';
+import requestAnimationFrame from 'raf';
 
 function flashRowOn(tableName, rowId, rowType) {
   return {
@@ -22,8 +22,8 @@ const flashRow = function(tableName, rowId, rowType) {
   return dispatch => {
     dispatch(flashRowOn(tableName, rowId, rowType));
 
-    cf.requestAnimationFrame(() => {
-      cf.requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
         dispatch(flashRowOff(tableName, rowId));
       });
     });

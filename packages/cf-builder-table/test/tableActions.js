@@ -1,5 +1,5 @@
 import { createMockStore } from '../../cf-test-store/src/index';
-import cf from '../../cf-pony/src/index';
+import requestAnimationFrame from 'raf';
 import {
   tableActions,
   TableActionTypes
@@ -13,10 +13,10 @@ test('.flashRow() should dispatch actions for flashing the row', done => {
   store.dispatch(tableActions.flashRow(tableName, rowId, 'success'));
   expect(store.getActions().length).toBe(1);
 
-  cf.requestAnimationFrame(() => {
+  requestAnimationFrame(() => {
     expect(store.getActions().length).toBe(1);
 
-    cf.requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
       expect(store.getActions()).toEqual([
         {
           type: TableActionTypes.CF_BUILDER_TABLE_FLASH_ROW_ON,
