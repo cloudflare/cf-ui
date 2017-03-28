@@ -37,15 +37,12 @@ export const createRenderer = opts => {
 export const createProvider = opts => {
   const renderer = createRenderer(opts);
   const cssNode = opts && opts.cssNode ? opts.cssNode : undefined;
-  return class StyleProvider extends Component {
-    render() {
-      return (
-        <Provider renderer={renderer} mountNode={cssNode}>
-          <ThemeProvider theme={variables}>
-            {Children.only(this.props.children)}
-          </ThemeProvider>
-        </Provider>
-      );
-    }
-  };
+  const StyleProvider = ({ children }) => (
+    <Provider renderer={renderer} mountNode={cssNode}>
+      <ThemeProvider theme={variables}>
+        {Children.only(children)}
+      </ThemeProvider>
+    </Provider>
+  );
+  return StyleProvider;
 };
