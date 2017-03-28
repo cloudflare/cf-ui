@@ -63,6 +63,19 @@ describe('request', () => {
     });
   });
 
+  test('should accept null as the 3rd parameter', done => {
+    fetch.mockResponse('', {
+      headers: { 'Content-Type': 'text/plain' },
+      status: 200
+    });
+
+    http.request('/GET', '/somewhere', null, (err, res) => {
+      expect(err).toBeUndefined();
+      expect(res).toBeDefined();
+      done();
+    });
+  });
+
   test('should call the success handler on success', done => {
     fetch.mockResponse(
       JSON.stringify({
