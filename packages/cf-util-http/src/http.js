@@ -104,9 +104,11 @@ function wrapResponse(headers, status, body, text, response) {
  * @see [Global Fetch on MDN](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch)
  * @see [WHATWG Fetch API Spec](https://fetch.spec.whatwg.org/)
  */
-export function request(method, url, opts = {}, callback) {
+export function request(method, url, opts, callback) {
   if (typeof opts === 'function') {
     callback = opts;
+    opts = {};
+  } else if (opts == null) {
     opts = {};
   }
 
