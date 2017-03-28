@@ -12,11 +12,14 @@ import { Provider } from 'react-fela';
 import { variables } from 'cf-style-const';
 import { ThemeProvider } from 'cf-style-container';
 
+const defaultOpts = {
+  selectorPrefix: 'cf-',
+  dev: false,
+  fontNode: undefined,
+  cssNode: undefined
+};
+
 export const createRenderer = opts => {
-  const defaultOpts = {
-    selectorPrefix: 'cf-',
-    dev: false
-  };
   const usedOpts = Object.assign({}, defaultOpts, opts);
   const plugins = [prefixer(), fallbackValue(), unit(), lvha()];
   const enhancers = [fontRenderer(usedOpts.fontNode)];
@@ -34,15 +37,28 @@ export const createRenderer = opts => {
   });
 };
 
-export const createProvider = opts => {
-  const renderer = createRenderer(opts);
-  const cssNode = opts && opts.cssNode ? opts.cssNode : undefined;
-  const StyleProvider = ({ children }) => (
+export const StyleProvider = (
+  { selectorPrefix, dev, cssNode, fontNode, children }
+) => {
+  const renderer = createRenderer({
+    selectorPrefix,
+    dev,
+    fontNode
+  });
+  return (
     <Provider renderer={renderer} mountNode={cssNode}>
       <ThemeProvider theme={variables}>
         {Children.only(children)}
       </ThemeProvider>
     </Provider>
   );
-  return StyleProvider;
+};
+
+StyleProvider.defaultProps = defaultOpts;
+StyleProvider.propTypes = {
+  dev: React.PropTypes.bool,
+  selectorPrefix: React.PropTypes.string,
+  cssNode: React.PropTypes.object,
+  fontNode: React.PropTypes.object,
+  children: PropTypes.node.isRequired
 };
