@@ -19,12 +19,14 @@ import { createProvider } from 'cf-style-provider';
 const StyleProvider = createProvider({
   cssNode: null, // where to render CSS styles (DOM node)
   fontNode: null, // where to render CSS styles related to fonts (DOM node)
-  dev: false, // in dev mode it applies more Fela plugins (validator, ...)
+  dev: false, // in dev mode it applies more Fela plugins (validator, beautifier, monolithic)
   selectorPrefix: 'cf-' // prefix for CSS classnames
 });
 
 render(<StyleProvider><YourApp /></StyleProvider>);
 ```
+
+Dev mode produces developer friendly output (CSS is formatted), validates all rules and merges atomic classNames into one. That's important for snapshot testing as well.
 
 Or you can just get Fela's renderer (useful for server-side rendering)
 
