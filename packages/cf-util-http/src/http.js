@@ -69,6 +69,8 @@ function wrapResponse(headers, status, body, text, response) {
   };
 }
 
+const BODYLESS_METHODS = ['GET', 'HEAD'];
+
 /**
  * Perform an http request. This method uses WHATWG's fetch API and returns a
  * promise that **resolves on any HTTP status**, and rejects on anything else,
@@ -112,6 +114,8 @@ export function request(method, url, opts, callback) {
     opts = {};
   }
 
+  opts = Object.assign({}, opts);
+
   opts.method = method.toUpperCase();
   opts.url = url;
   opts.callback = callback;
@@ -123,6 +127,16 @@ export function request(method, url, opts, callback) {
   url = opts.url;
   callback = opts.callback;
 
+  // Emulate superagent's ability to automatically encode JSON body and set the
+  // Content-Type
+  if (BODYLESS_METHODS.every(m => method.toUpperCase() !== m) && opts.body) {
+    opts.body = JSON.stringify(opts.body);
+    opts.headers = new Headers(opts.headers || {});
+    if (!opts.headers.has('Content-Type')) {
+      opts.headers.set('Content-Type', 'application/json');
+    }
+  }
+
   if (opts.parameters) {
     if (url.indexOf('?') === -1) {
       url = `${url}?${toQueryParams(opts.parameters)}`;
@@ -130,7 +144,6 @@ export function request(method, url, opts, callback) {
   }
 
   let logMessage = `${method} ${url}`;
-
   logRequest(logMessage);
 
   return fetch(url, opts)

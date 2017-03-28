@@ -56,7 +56,7 @@ describe('request', () => {
       status: 200
     });
 
-    http.request('/GET', '/somewhere', (err, res) => {
+    http.request('GET', '/somewhere', (err, res) => {
       expect(err).toBeUndefined();
       expect(res).toBeDefined();
       done();
@@ -69,11 +69,20 @@ describe('request', () => {
       status: 200
     });
 
-    http.request('/GET', '/somewhere', null, (err, res) => {
+    http.request('GET', '/somewhere', null, (err, res) => {
       expect(err).toBeUndefined();
       expect(res).toBeDefined();
       done();
     });
+  });
+
+  test('should JSON.stringify the body when appropriate', done => {
+    http.request('POST', '/somewhere', { body: { foo: 1 } }, (err, res) => {});
+    expect(fetch.mock.calls[0][1].headers.get('content-type')).toBe(
+      'application/json'
+    );
+    expect(typeof fetch.mock.calls[0][1].body === 'string').toBeTruthy();
+    done();
   });
 
   test('should call the success handler on success', done => {
