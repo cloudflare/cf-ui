@@ -13,18 +13,26 @@ $ npm install cf-style-provider
 ## Usage
 
 ```jsx
-import { createProvider } from 'cf-style-provider';
+import { StyleProvider } from 'cf-style-provider';
 
-// default values
-const StyleProvider = createProvider({
-  cssNode: null, // where to render CSS styles (DOM node)
-  fontNode: null, // where to render CSS styles related to fonts (DOM node)
-  dev: false, // in dev mode it applies more Fela plugins (validator, beautifier, monolithic)
-  selectorPrefix: 'cf-' // prefix for CSS classnames
-});
-
-render(<StyleProvider><YourApp /></StyleProvider>);
+render(
+  <StyleProvider
+    cssNode={null}
+    fontNode={null}
+    dev={false}
+    selectorPrefix="cf-"
+  >
+    <YourApp />
+  </StyleProvider>
+);
 ```
+
+### props and default values
+
+- **cssNode**: *null*, where to render CSS styles (DOM node)
+- **fontNode**: *null*, where to render CSS styles related to fonts (DOM node)
+- **dev**: *false*, in dev mode it applies more Fela plugins (validator, beautifier, monolithic)
+- **selectorPrefix**: *'cf-'*, prefix for CSS classnames
 
 Dev mode produces developer friendly output (CSS is formatted), validates all rules and merges atomic classNames into one. That's important for snapshot testing as well.
 
@@ -37,7 +45,6 @@ import { createRenderer } from 'cf-style-provider';
 
 // default values
 const renderer = createRenderer({
-  cssNode: null, // where to render CSS styles (DOM node)
   fontNode: null, // where to render CSS styles related to fonts (DOM node)
   dev: false, // in dev mode it applies more Fela plugins (validator, ...)
   selectorPrefix: 'cf-' // prefix for CSS classnames
@@ -49,5 +56,5 @@ const body = ReactDOMServer.renderToString(
   </Provider>
 );
 
-renderer.renderToString();
+renderer.renderToString(); // returns CSS as a string
 ```
