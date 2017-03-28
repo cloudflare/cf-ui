@@ -50,6 +50,19 @@ describe('beforeSend', () => {
 });
 
 describe('request', () => {
+  test('should accept 3-args form where the opts is optional', done => {
+    fetch.mockResponse('', {
+      headers: { 'Content-Type': 'text/plain' },
+      status: 200
+    });
+
+    http.request('/GET', '/somewhere', (err, res) => {
+      expect(err).toBeUndefined();
+      expect(res).toBeDefined();
+      done();
+    });
+  });
+
   test('should call the success handler on success', done => {
     fetch.mockResponse(
       JSON.stringify({
