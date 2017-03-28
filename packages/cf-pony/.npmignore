@@ -1,7 +1,0 @@
-node_modules
-*.log
-src
-coverage
-test
-example
-karma.conf.js
