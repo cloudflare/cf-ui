@@ -1,8 +1,8 @@
 import React from 'react';
 import {
   Pagination as PaginationUnstyled,
-  PaginationTheme,
-  PaginationItem
+  PaginationItem,
+  PaginationTheme
 } from 'cf-component-pagination';
 import Icon from 'cf-component-icon';
 import './component.css';

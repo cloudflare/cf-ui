@@ -1,27 +1,36 @@
 import React, { PropTypes } from 'react';
 import uniqueId from 'lodash/uniqueId';
-import { createComponent } from 'cf-style-container';
+import { createComponent, applyTheme } from 'cf-style-container';
+import PaginationRootUnstyled from './PaginationRoot';
+import PaginationRootTheme from './PaginationRootTheme';
 
-const paginationRootStyles = ({ theme }) => ({
+const PaginationRoot = applyTheme(PaginationRootUnstyled, PaginationRootTheme);
+
+const styles = ({ theme }) => ({
   '&:after': {
-    content: theme['content:after'],
-    display: theme['display:after'],
-    clear: theme['clear:after']
-  }
+    content: theme.content,
+    display: theme.display,
+    clear: theme.clear
+  },
+  listStyle: theme.listStyle,
+  marginTop: theme.marginTop,
+  marginLeft: theme.marginLeft,
+  marginRight: theme.marginRight,
+  marginBottom: theme.marginBottom,
+  paddingTop: theme.paddingTop,
+  paddingLeft: theme.paddingLeft,
+  paddingRight: theme.paddingRight,
+  paddingBottom: theme.paddingBottom,
+  float: theme.float,
+  borderRadius: theme.borderRadius,
+  boxShadow: theme.boxShadow
 });
 
-const PaginationRoot = createComponent(paginationRootStyles, 'div');
-
-const Pagination = ({ info, children }) => {
+const Pagination = ({ info, children, className }) => {
   const id = info ? uniqueId('cf-pagination-') : null;
-
   return (
     <PaginationRoot>
-      <ul
-        className="cf-pagination__list"
-        role="navigation"
-        aria-describedby={id}
-      >
+      <ul className={className} role="navigation" aria-describedby={id}>
         {children}
       </ul>
       {info &&
@@ -33,8 +42,9 @@ const Pagination = ({ info, children }) => {
 };
 
 Pagination.propTypes = {
+  className: PropTypes.string.isRequired,
   info: PropTypes.string,
   children: PropTypes.node
 };
 
-export default Pagination;
+export default createComponent(styles, Pagination);
