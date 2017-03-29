@@ -104,11 +104,12 @@ describe('request', () => {
     http.request(
       'GET',
       '/somewhere',
-      { headers: { foo: null, bar: 'bar' } },
+      { headers: { foo: null, bar: 'bar', baz: undefined } },
       (err, res) => {}
     );
     expect(fetch.mock.calls[0][1].headers.has('foo')).toBeFalsy();
     expect(fetch.mock.calls[0][1].headers.has('bar')).toBeTruthy();
+    expect(fetch.mock.calls[0][1].headers.has('baz')).toBeFalsy();
     done();
   });
 
