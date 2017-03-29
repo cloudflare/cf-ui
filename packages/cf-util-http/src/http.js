@@ -127,11 +127,21 @@ export function request(method, url, opts, callback) {
   url = opts.url;
   callback = opts.callback;
 
+  // Normalize the headers
+  opts.headers = new Headers(opts.headers || {});
+
+  // Emuluate superagent's questionable ability to filter out headers that's
+  // been set to null or undefined.
+  for (let [k, v] of opts.headers.entries()) {
+    if (v === 'null' || v === 'undefined') {
+      opts.headers.delete(k);
+    }
+  }
+
   // Emulate superagent's ability to automatically encode JSON body and set the
   // Content-Type
   if (BODYLESS_METHODS.every(m => method.toUpperCase() !== m) && opts.body) {
     opts.body = JSON.stringify(opts.body);
-    opts.headers = new Headers(opts.headers || {});
     if (!opts.headers.has('Content-Type')) {
       opts.headers.set('Content-Type', 'application/json');
     }

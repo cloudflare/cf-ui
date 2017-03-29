@@ -85,6 +85,18 @@ describe('request', () => {
     done();
   });
 
+  test('should ignore null header values', done => {
+    http.request(
+      'GET',
+      '/somewhere',
+      { headers: { foo: null, bar: 'bar' } },
+      (err, res) => {}
+    );
+    expect(fetch.mock.calls[0][1].headers.has('foo')).toBeFalsy();
+    expect(fetch.mock.calls[0][1].headers.has('bar')).toBeTruthy();
+    done();
+  });
+
   test('should call the success handler on success', done => {
     fetch.mockResponse(
       JSON.stringify({
