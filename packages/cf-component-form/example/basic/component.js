@@ -1,11 +1,13 @@
 import React from 'react';
 import {
-  Form,
+  Form as FormUnstyled,
+  FormTheme,
   FormHeader,
   FormFooter,
   FormFieldset,
   FormLabel,
-  FormFieldError
+  FormFieldError as FormFieldErrorUnstyled,
+  FormFieldErrorTheme
 } from 'cf-component-form';
 import { Flex, FlexItem } from 'cf-component-flex';
 import Input from 'cf-component-input';
@@ -14,6 +16,8 @@ import Textarea from 'cf-component-textarea';
 import { Button as ButtonUnstyled, ButtonTheme } from 'cf-component-button';
 import { applyTheme } from 'cf-style-container';
 
+const Form = applyTheme(FormUnstyled, FormTheme);
+const FormFieldError = applyTheme(FormFieldErrorUnstyled, FormFieldErrorTheme);
 const Button = applyTheme(ButtonUnstyled, ButtonTheme);
 
 class FormComponent extends React.Component {
