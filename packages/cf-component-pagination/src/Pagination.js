@@ -1,10 +1,7 @@
 import React, { PropTypes } from 'react';
 import uniqueId from 'lodash/uniqueId';
 import { createComponent, applyTheme } from 'cf-style-container';
-import PaginationRootUnstyled from './PaginationRoot';
-import PaginationRootTheme from './PaginationRootTheme';
-
-const PaginationRoot = applyTheme(PaginationRootUnstyled, PaginationRootTheme);
+import PaginationRoot from './PaginationRoot';
 
 const styles = ({ theme }) => ({
   '&:after': {
@@ -44,7 +41,8 @@ const Pagination = ({ info, children, className }) => {
 Pagination.propTypes = {
   className: PropTypes.string.isRequired,
   info: PropTypes.string,
-  children: PropTypes.node
+  children: PropTypes.node,
+  PaginationRoot: PropTypes.func.isRequired
 };
 
 export default createComponent(styles, Pagination);
