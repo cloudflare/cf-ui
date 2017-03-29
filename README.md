@@ -26,7 +26,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Button as ButtonUnstyled, ButtonTheme } from 'cf-component-button';
 import { applyTheme } from 'cf-style-container';
-import { StyleProvider } from '../packages/cf-style-provider/src/';
+import { StyleProvider } from 'cf-style-provider';
 
 // cf-ui components export React components and themes, you have to combine
 // them together first, we have our private set of wrapper components (cf-ux)

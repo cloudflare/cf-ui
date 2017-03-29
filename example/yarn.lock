@@ -649,6 +649,10 @@ boom@2.x.x:
   dependencies:
     hoek "2.x.x"
 
+bowser@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/bowser/-/bowser-1.6.0.tgz#37fc387b616cb6aef370dab4d6bd402b74c5c54d"
+
 brace-expansion@^1.0.0:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/brace-expansion/-/brace-expansion-1.1.6.tgz#7197d7eaa9b87e648390ea61fc66c84427420df9"
@@ -702,8 +706,8 @@ browserify-rsa@^4.0.0:
     randombytes "^2.0.1"
 
 browserify-sign@^4.0.0:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/browserify-sign/-/browserify-sign-4.0.3.tgz#b41d5330ba52d5c67855773e273dd3cf14a7e497"
+  version "4.0.4"
+  resolved "https://registry.yarnpkg.com/browserify-sign/-/browserify-sign-4.0.4.tgz#aa4eb68e5d7b658baa6bf6a57e630cbd7a93d298"
   dependencies:
     bn.js "^4.1.1"
     browserify-rsa "^4.0.0"
@@ -763,24 +767,43 @@ center-align@^0.1.1:
     lazy-cache "^1.0.3"
 
 cf-component-button@^4.2.0:
-  version "4.3.1"
-  resolved "https://registry.yarnpkg.com/cf-component-button/-/cf-component-button-4.3.1.tgz#16a78269da87ab0afb1550d1d2c44e6102a1142c"
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/cf-component-button/-/cf-component-button-4.3.2.tgz#b0e7c20a4ddb2ebd580c8bc8fecf0c81e669f8a9"
   dependencies:
-    cf-style-const "^0.3.0"
-    cf-style-container "^0.2.0"
+    cf-style-const "^0.3.1"
+    cf-style-container "^0.2.1"
 
-cf-style-const@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/cf-style-const/-/cf-style-const-0.3.0.tgz#7be8f796738ac0b2e559bb8113d5f92d2529318e"
+cf-style-const@^0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/cf-style-const/-/cf-style-const-0.3.1.tgz#1b899509c32ca80daac86c2f6d0a12141e38e665"
   dependencies:
-    cf-style-container "^0.2.0"
+    cf-style-container "^0.2.1"
 
-cf-style-container@^0.2.0:
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/cf-style-container/-/cf-style-container-0.2.0.tgz#a47806a944dc7307df9b2ecde3a7aed34159fcb4"
+cf-style-container@^0.2.0, cf-style-container@^0.2.1:
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/cf-style-container/-/cf-style-container-0.2.1.tgz#33076f69b95d09c3117f62cc2af9a181e0ff4732"
   dependencies:
     css-color-function "^1.3.0"
+    fela "^4.3.2"
     react-fela "^4.2.5"
+
+cf-style-provider@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/cf-style-provider/-/cf-style-provider-0.1.1.tgz#c50edf5ef822de0a086fab8de0d859429cd4ec64"
+  dependencies:
+    cf-style-const "^0.3.1"
+    cf-style-container "^0.2.1"
+    fela "^4.3.2"
+    fela-beautifier "^4.3.2"
+    fela-font-renderer "^4.3.2"
+    fela-monolithic "^4.3.2"
+    fela-plugin-fallback-value "^4.3.2"
+    fela-plugin-lvha "^4.3.2"
+    fela-plugin-prefixer "^4.3.2"
+    fela-plugin-unit "^4.3.2"
+    fela-plugin-validator "^4.3.2"
+    react "^15.4.2"
+    react-fela "^4.3.2"
 
 chalk@^1.1.0:
   version "1.1.3"
@@ -894,8 +917,8 @@ constants-browserify@^1.0.0:
   resolved "https://registry.yarnpkg.com/constants-browserify/-/constants-browserify-1.0.0.tgz#c20b96d8c617748aaf1c16021760cd27fcb8cb75"
 
 convert-source-map@^1.1.0:
-  version "1.4.0"
-  resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.4.0.tgz#e3dad195bf61bfe13a7a3c73e9876ec14a0268f3"
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.5.0.tgz#9acd70851c6d5dfdd93d9282e5edf94a03ff46b5"
 
 core-js@^1.0.0:
   version "1.2.7"
@@ -961,6 +984,16 @@ css-color-function@^1.3.0:
     color "^0.11.0"
     debug "~0.7.4"
     rgb "~0.1.0"
+
+css-in-js-utils@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/css-in-js-utils/-/css-in-js-utils-1.0.3.tgz#9ac7e02f763cf85d94017666565ed68a5b5f3215"
+  dependencies:
+    hyphenate-style-name "^1.0.2"
+
+cssbeautify@0.3.1:
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/cssbeautify/-/cssbeautify-0.3.1.tgz#12dd1f734035c2e6faca67dcbdcef74e42811397"
 
 dashdash@^1.12.0:
   version "1.14.1"
@@ -1127,6 +1160,55 @@ fbjs@^0.8.4:
     promise "^7.1.1"
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.9"
+
+fela-beautifier@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/fela-beautifier/-/fela-beautifier-4.3.2.tgz#4612902481216d2ac941e18f38166bc0cc76e38c"
+  dependencies:
+    cssbeautify "0.3.1"
+
+fela-font-renderer@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/fela-font-renderer/-/fela-font-renderer-4.3.2.tgz#d0afe027f69209c1afd7403f28787e2c2bd7ac64"
+
+fela-monolithic@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/fela-monolithic/-/fela-monolithic-4.3.2.tgz#bf90f4b4fb9326bdc910cf7a0d15cce8a001b697"
+  dependencies:
+    css-in-js-utils "^1.0.3"
+
+fela-plugin-fallback-value@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/fela-plugin-fallback-value/-/fela-plugin-fallback-value-4.3.2.tgz#e1e7cb3ffc992f5898265d6a9f06f8eb325060e7"
+  dependencies:
+    css-in-js-utils "^1.0.3"
+
+fela-plugin-lvha@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/fela-plugin-lvha/-/fela-plugin-lvha-4.3.2.tgz#5d9920f3bdb9f96be11c0744b658e70a14d8774f"
+
+fela-plugin-prefixer@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/fela-plugin-prefixer/-/fela-plugin-prefixer-4.3.2.tgz#118715b553d65212ce523935e767a83383dcc257"
+  dependencies:
+    css-in-js-utils "^1.0.3"
+    inline-style-prefixer "^3.0.0"
+
+fela-plugin-unit@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/fela-plugin-unit/-/fela-plugin-unit-4.3.2.tgz#278260ad793cf97045f6fdf154bef80c7f0b4445"
+  dependencies:
+    css-in-js-utils "^1.0.3"
+
+fela-plugin-validator@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/fela-plugin-validator/-/fela-plugin-validator-4.3.2.tgz#491f52c0e94cd36c4dccc04013a5ee286e0963ff"
+
+fela@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/fela/-/fela-4.3.2.tgz#1e407351bf26d618665bc1bc19708cfbce78bd03"
+  dependencies:
+    css-in-js-utils "^1.0.3"
 
 filename-regex@^2.0.0:
   version "2.0.0"
@@ -1337,6 +1419,10 @@ https-browserify@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-0.0.1.tgz#3f91365cabe60b77ed0ebba24b454e3e09d95a82"
 
+hyphenate-style-name@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.2.tgz#31160a36930adaf1fc04c6074f7eb41465d4ec4b"
+
 iconv-lite@~0.4.13:
   version "0.4.15"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.15.tgz#fe265a218ac6a57cfe854927e9d04c19825eddeb"
@@ -1368,9 +1454,16 @@ ini@~1.3.0:
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.4.tgz#0537cb79daf59b59a1a517dff706c86ec039162e"
 
+inline-style-prefixer@^3.0.0:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/inline-style-prefixer/-/inline-style-prefixer-3.0.2.tgz#989865e0c5de7a946acbea71e16e02741efe0dd7"
+  dependencies:
+    bowser "^1.6.0"
+    css-in-js-utils "^1.0.3"
+
 interpret@^1.0.0:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.0.1.tgz#d579fb7f693b858004947af39fa0db49f795602c"
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/interpret/-/interpret-1.0.2.tgz#f4f623f0bb7122f15f5717c8e254b8161b5c5b2d"
 
 invariant@^2.2.0:
   version "2.2.2"
@@ -1739,8 +1832,10 @@ normalize-package-data@^2.3.2:
     validate-npm-package-license "^3.0.1"
 
 normalize-path@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-2.0.1.tgz#47886ac1662760d4261b7d979d241709d3ce3f7a"
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/normalize-path/-/normalize-path-2.1.1.tgz#1ab28b556e198363a8c1a6f7e6fa20137fe6aed9"
+  dependencies:
+    remove-trailing-separator "^1.0.1"
 
 npmlog@^4.0.2:
   version "4.0.2"
@@ -1950,15 +2045,15 @@ randombytes@^2.0.0, randombytes@^2.0.1:
   resolved "https://registry.yarnpkg.com/randombytes/-/randombytes-2.0.3.tgz#674c99760901c3c4112771a31e521dc349cc09ec"
 
 rc@^1.1.7:
-  version "1.1.7"
-  resolved "https://registry.yarnpkg.com/rc/-/rc-1.1.7.tgz#c5ea564bb07aff9fd3a5b32e906c1d3a65940fea"
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.0.tgz#c7de973b7b46297c041366b2fd3d2363b1697c66"
   dependencies:
     deep-extend "~0.4.0"
     ini "~1.3.0"
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-fela@^4.2.5:
+react-fela@^4.2.5, react-fela@^4.3.2:
   version "4.3.2"
   resolved "https://registry.yarnpkg.com/react-fela/-/react-fela-4.3.2.tgz#12703afceacca43fb8dcb093917ba6793a5d149e"
 
@@ -2046,6 +2141,10 @@ regjsparser@^0.1.4:
   resolved "https://registry.yarnpkg.com/regjsparser/-/regjsparser-0.1.5.tgz#7ee8f84dc6fa792d3fd0ae228d24bd949ead205c"
   dependencies:
     jsesc "~0.5.0"
+
+remove-trailing-separator@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/remove-trailing-separator/-/remove-trailing-separator-1.0.1.tgz#615ebb96af559552d4bf4057c8436d486ab63cc4"
 
 repeat-element@^1.1.2:
   version "1.1.2"
@@ -2326,8 +2425,8 @@ ua-parser-js@^0.7.9:
   resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.12.tgz#04c81a99bdd5dc52263ea29d24c6bf8d4818a4bb"
 
 uglify-js@^2.8.5:
-  version "2.8.16"
-  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.16.tgz#d286190b6eefc6fd65eb0ecac6551e0b0e8839a4"
+  version "2.8.18"
+  resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-2.8.18.tgz#925d14bae48ab62d1883b41afe6e2261662adb8e"
   dependencies:
     source-map "~0.5.1"
     yargs "~3.10.0"
