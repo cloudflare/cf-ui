@@ -2,13 +2,16 @@ import React from 'react';
 import {
   Pagination as PaginationUnstyled,
   PaginationItem,
-  PaginationTheme
+  PaginationTheme,
+  PaginationRoot as PaginationRootUnstyled,
+  PaginationRootTheme
 } from 'cf-component-pagination';
 import Icon from 'cf-component-icon';
 import './component.css';
 import { applyTheme } from 'cf-style-container';
 
 const Pagination = applyTheme(PaginationUnstyled, PaginationTheme);
+const PaginationRoot = applyTheme(PaginationRootUnstyled, PaginationRootTheme);
 
 class PaginationComponent extends React.Component {
   constructor(props) {
@@ -55,7 +58,7 @@ class PaginationComponent extends React.Component {
     }
 
     return (
-      <Pagination>
+      <Pagination PaginationRoot={PaginationRoot}>
         <PaginationItem
           type="prev"
           label="Previous Page"
