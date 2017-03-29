@@ -82,6 +82,21 @@ describe('request', () => {
       'application/json'
     );
     expect(typeof fetch.mock.calls[0][1].body === 'string').toBeTruthy();
+    expect(fetch.mock.calls[0][1].body).toBe(JSON.stringify({ foo: 1 }));
+    done();
+  });
+
+  test("should not JSON.stringify the body if it's not an object", done => {
+    http.request(
+      'POST',
+      '/somewhere',
+      { body: 'hello world' },
+      (err, res) => {}
+    );
+    expect(fetch.mock.calls[0][1].headers.get('content-type')).not.toBe(
+      'application/json'
+    );
+    expect(fetch.mock.calls[0][1].body).toBe('hello world');
     done();
   });
 

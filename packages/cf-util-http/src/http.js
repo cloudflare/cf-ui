@@ -140,7 +140,11 @@ export function request(method, url, opts, callback) {
 
   // Emulate superagent's ability to automatically encode JSON body and set the
   // Content-Type
-  if (BODYLESS_METHODS.every(m => method.toUpperCase() !== m) && opts.body) {
+  if (
+    BODYLESS_METHODS.every(m => method.toUpperCase() !== m) &&
+    opts.body &&
+    typeof opts.body === 'object'
+  ) {
     opts.body = JSON.stringify(opts.body);
     if (!opts.headers.has('Content-Type')) {
       opts.headers.set('Content-Type', 'application/json');
