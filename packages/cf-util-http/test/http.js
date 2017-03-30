@@ -100,6 +100,22 @@ describe('request', () => {
     done();
   });
 
+  test('should parse the response body as JSON when appripriate', done => {
+    fetch.mockResponse(
+      JSON.stringify({
+        message: 'hello'
+      }),
+      {
+        headers: { 'Content-Type': 'application/json; charset=utf-8' },
+        status: 200
+      }
+    );
+    http.request('GET', '/somewhere', (err, res) => {
+      expect(res.body).toMatchObject({ message: 'hello' });
+      done();
+    });
+  });
+
   test('should ignore null header values', done => {
     http.request(
       'GET',
@@ -110,6 +126,12 @@ describe('request', () => {
     expect(fetch.mock.calls[0][1].headers.has('foo')).toBeFalsy();
     expect(fetch.mock.calls[0][1].headers.has('bar')).toBeTruthy();
     expect(fetch.mock.calls[0][1].headers.has('baz')).toBeFalsy();
+    done();
+  });
+
+  test('should send cookies to same origin by default', done => {
+    http.request('GET', '/somewhere', (err, res) => {});
+    expect(fetch.mock.calls[0][1].credentials).toBe('same-origin');
     done();
   });
 
