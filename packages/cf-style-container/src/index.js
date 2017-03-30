@@ -4,6 +4,7 @@ import {
   createComponent as createFelaComponent,
   ThemeProvider
 } from 'react-fela';
+import { combineRules } from 'fela';
 
 const color = input => cssColorFunction.convert(`color(${input})`);
 
@@ -37,4 +38,4 @@ const applyTheme = (ComponentToWrap, theme) => {
   return ThemedComponent;
 };
 
-export { createComponent, applyTheme, ThemeProvider, color };
+export { createComponent, applyTheme, ThemeProvider, color, combineRules };
