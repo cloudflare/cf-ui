@@ -1,10 +1,5 @@
 import React, { PropTypes } from 'react';
-import {
-  Pagination,
-  PaginationItem,
-  PaginationRoot,
-  PaginationLink
-} from 'cf-component-pagination';
+import { Pagination, PaginationItem } from 'cf-component-pagination';
 import Icon from 'cf-component-icon';
 
 class PaginationBuilder extends React.Component {
@@ -54,7 +49,6 @@ class PaginationBuilder extends React.Component {
             label={'Page ' + i}
             active={page === i}
             onClick={() => handleClickItem(i)}
-            PaginationLink={PaginationLink}
           >
             {i}
           </PaginationItem>
@@ -67,7 +61,6 @@ class PaginationBuilder extends React.Component {
             type="ellipsis"
             label={'Page ' + i}
             onClick={() => null}
-            PaginationLink={PaginationLink}
           />
         );
       }
@@ -76,13 +69,12 @@ class PaginationBuilder extends React.Component {
     const info = infoFormatter && infoFormatter(start, end, totalItems);
 
     return (
-      <Pagination info={info} PaginationRoot={PaginationRoot}>
+      <Pagination info={info}>
         <PaginationItem
           type="prev"
           label="Previous Page"
           disabled={page === 1}
           onClick={() => handleClickItem(page - 1)}
-          PaginationLink={PaginationLink}
         >
           <Icon type="caret-left" label={false} />
         </PaginationItem>
@@ -92,7 +84,6 @@ class PaginationBuilder extends React.Component {
           label="Next Page"
           disabled={page === totalPages}
           onClick={() => handleClickItem(page + 1)}
-          PaginationLink={PaginationLink}
         >
           <Icon type="caret-right" label={false} />
         </PaginationItem>

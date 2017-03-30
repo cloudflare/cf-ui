@@ -1,4 +1,6 @@
 import { createComponent } from 'cf-style-container';
+import PaginationRootTheme from './PaginationRootTheme';
+import { applyTheme } from 'cf-style-container';
 
 const paginationRootStyles = ({ theme }) => ({
   '&:after': {
@@ -8,4 +10,8 @@ const paginationRootStyles = ({ theme }) => ({
   }
 });
 
-export default createComponent(paginationRootStyles, 'div');
+const PaginationRootUnstyled = createComponent(paginationRootStyles, 'div');
+
+export { PaginationRootUnstyled };
+
+export default applyTheme(PaginationRootUnstyled, PaginationRootTheme);
