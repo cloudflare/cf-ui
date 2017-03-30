@@ -129,6 +129,10 @@ export function request(method, url, opts, callback) {
   url = opts.url;
   callback = opts.callback;
 
+  // Fetch does not send cookies by default, this take fetch back to the
+  // behavior similar to XHR
+  if (!opts.credentials) opts.credentials = 'same-origin';
+
   // Normalize the headers
   opts.headers = new Headers(opts.headers || {});
 
