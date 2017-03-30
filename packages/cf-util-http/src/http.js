@@ -29,6 +29,10 @@ export function clearBeforeSend() {
   beforeSendCallbacks = [];
 }
 
+function isJSON(contentType) {
+  return /[\/+]json\b/.test(contentType);
+}
+
 function toQueryParams(kvs) {
   const queryParams = [];
   // Clones the input
@@ -61,9 +65,7 @@ function wrapResponse(headers, status, body, text, response) {
   return {
     headers,
     status,
-    body: headers['content-type'] === 'application/json'
-      ? JSON.parse(text)
-      : text,
+    body: isJSON(headers['content-type']) ? JSON.parse(text) : text,
     text,
     response
   };
