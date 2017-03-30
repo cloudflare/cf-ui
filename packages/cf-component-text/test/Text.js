@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { Text as TextUnstyled } from '../../cf-component-text/src/index';
+import { Text, TextUnstyled } from '../../cf-component-text/src/index';
 import felaTestContext from '../../../felaTestContext';
 import { applyTheme } from 'cf-style-container';
 

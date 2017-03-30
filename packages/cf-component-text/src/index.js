@@ -1,4 +1,8 @@
-import Text from './Text';
+import TextUnstyled from './Text';
 import TextTheme from './TextTheme';
 
-export { Text, TextTheme };
+import { applyTheme } from 'cf-style-container';
+
+const Text = applyTheme(TextUnstyled, TextTheme);
+
+export { Text, TextUnstyled, TextTheme };

@@ -12,7 +12,7 @@ $ npm install cf-component-text
 
 ```jsx
 import React from 'react';
-import Text from 'cf-component-text';
+import { Text } from 'cf-component-text';
 
 const TextComponent = () => (
   <div>
