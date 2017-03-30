@@ -1,23 +1,17 @@
 import React, { PropTypes } from 'react';
 import { createComponent } from 'cf-style-container';
-
-const capitalize = str =>
-  str
-    ? String.prototype.concat(
-        str.substring(0, 1).toUpperCase(),
-        str.substring(1)
-      )
-    : str;
+import capitalize from 'capitalize';
 
 const styles = ({ theme, size, align, type, case: textCase }) => ({
-  color: theme[`color${capitalize(type)}`],
-  lineHeight: theme[`lineHeight${capitalize(size)}`],
-  fontSize: theme[`fontSize${capitalize(size)}`],
-  fontWeight: theme[`fontWeight${capitalize(size)}`],
-  textAlign: theme[`textAlign${capitalize(align)}`],
-  textTransform: theme[`textTransform${capitalize(textCase)}`],
+  color: type && theme[`color${capitalize(type)}`],
+  lineHeight: size && theme[`lineHeight${capitalize(size)}`],
+  fontSize: size && theme[`fontSize${capitalize(size)}`],
+  fontWeight: size && theme[`fontWeight${capitalize(size)}`],
+  textAlign: align && theme[`textAlign${capitalize(align)}`],
+  textTransform: textCase && theme[`textTransform${capitalize(textCase)}`],
   '&:first-letter': {
-    textTransform: theme[`textTransform${capitalize(textCase)}:first-letter`]
+    textTransform: textCase &&
+      theme[`textTransform${capitalize(textCase)}:first-letter`]
   }
 });
 
