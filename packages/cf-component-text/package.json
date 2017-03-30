@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "cf-style-container": "^0.2.1",
-    "cf-style-const": "^0.3.1"
+    "cf-style-const": "^0.3.1",
+    "capitalize": "^1.0.0"
   },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
