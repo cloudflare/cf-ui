@@ -1,6 +1,9 @@
 import React, { PropTypes } from 'react';
 import Icon from 'cf-component-icon';
 import { combineRules, createComponent } from 'cf-style-container';
+import PaginationLink from './PaginationLink';
+import PaginationItemTheme from './PaginationItemTheme';
+import { applyTheme } from 'cf-style-container';
 
 const active = ({ active, theme }) => {
   if (!active) return {};
@@ -49,7 +52,6 @@ const PaginationItem = props => {
   const isLoading = props.type === 'loading';
 
   const role = isEllipsis ? 'presentation' : null;
-  const PaginationLink = props.PaginationLink;
 
   let children;
 
@@ -87,8 +89,11 @@ PaginationItem.propTypes = {
   onClick: PropTypes.func.isRequired,
   active: PropTypes.bool,
   disabled: PropTypes.bool,
-  children: PropTypes.node,
-  PaginationLink: PropTypes.func.isRequired
+  children: PropTypes.node
 };
 
-export default createComponent(styles, PaginationItem);
+const PaginationItemUnstyled = createComponent(styles, PaginationItem);
+
+export { PaginationItemUnstyled };
+
+export default applyTheme(PaginationItemUnstyled, PaginationItemTheme);

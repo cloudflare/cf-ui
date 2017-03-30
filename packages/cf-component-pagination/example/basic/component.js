@@ -1,12 +1,6 @@
 import React from 'react';
-import {
-  Pagination,
-  PaginationItem,
-  PaginationLink,
-  PaginationRoot
-} from 'cf-component-pagination';
+import { Pagination, PaginationItem } from 'cf-component-pagination';
 import Icon from 'cf-component-icon';
-import './component.css';
 import { applyTheme } from 'cf-style-container';
 
 class PaginationComponent extends React.Component {
@@ -47,7 +41,6 @@ class PaginationComponent extends React.Component {
           label={'Page ' + i}
           active={this.state.active === i}
           onClick={this.handleClickItem.bind(this, i)}
-          PaginationLink={PaginationLink}
         >
           {i}
         </PaginationItem>
@@ -55,13 +48,12 @@ class PaginationComponent extends React.Component {
     }
 
     return (
-      <Pagination PaginationRoot={PaginationRoot}>
+      <Pagination>
         <PaginationItem
           type="prev"
           label="Previous Page"
           disabled={this.state.active === 1}
           onClick={this.handleClickPrev.bind(this)}
-          PaginationLink={PaginationLink}
         >
           <Icon type="caret-left" label={false} />
         </PaginationItem>
@@ -71,7 +63,6 @@ class PaginationComponent extends React.Component {
           label="Next Page"
           disabled={this.state.active === this.state.pages}
           onClick={this.handleClickNext.bind(this)}
-          PaginationLink={PaginationLink}
         >
           <Icon type="caret-right" label={false} />
         </PaginationItem>
