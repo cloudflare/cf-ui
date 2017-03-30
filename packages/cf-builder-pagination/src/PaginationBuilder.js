@@ -1,10 +1,11 @@
-import React, { PropTypes } from "react";
+import React, { PropTypes } from 'react';
 import {
   Pagination,
   PaginationItem,
-  PaginationRoot
-} from "cf-component-pagination";
-import Icon from "cf-component-icon";
+  PaginationRoot,
+  PaginationLink
+} from 'cf-component-pagination';
+import Icon from 'cf-component-icon';
 
 class PaginationBuilder extends React.Component {
   render() {
@@ -49,10 +50,11 @@ class PaginationBuilder extends React.Component {
         items.push(
           <PaginationItem
             key={i}
-            type={loading && page === i ? "loading" : "number"}
-            label={"Page " + i}
+            type={loading && page === i ? 'loading' : 'number'}
+            label={'Page ' + i}
             active={page === i}
             onClick={() => handleClickItem(i)}
+            PaginationLink={PaginationLink}
           >
             {i}
           </PaginationItem>
@@ -63,8 +65,9 @@ class PaginationBuilder extends React.Component {
           <PaginationItem
             key={i}
             type="ellipsis"
-            label={"Page " + i}
+            label={'Page ' + i}
             onClick={() => null}
+            PaginationLink={PaginationLink}
           />
         );
       }
@@ -79,6 +82,7 @@ class PaginationBuilder extends React.Component {
           label="Previous Page"
           disabled={page === 1}
           onClick={() => handleClickItem(page - 1)}
+          PaginationLink={PaginationLink}
         >
           <Icon type="caret-left" label={false} />
         </PaginationItem>
@@ -88,6 +92,7 @@ class PaginationBuilder extends React.Component {
           label="Next Page"
           disabled={page === totalPages}
           onClick={() => handleClickItem(page + 1)}
+          PaginationLink={PaginationLink}
         >
           <Icon type="caret-right" label={false} />
         </PaginationItem>
