@@ -12,7 +12,7 @@ exports[`should render pagination 1`] = `
     role="navigation"
   >
     <li
-      className="cf-tn889k"
+      className="cf-19kgvty"
       role={null}
     >
       <span
@@ -26,7 +26,7 @@ exports[`should render pagination 1`] = `
       </span>
     </li>
     <li
-      className="cf-1j1psy1"
+      className="cf-9nha49"
       role={null}
     >
       <span
@@ -120,7 +120,7 @@ exports[`should render pagination loading 1`] = `
     role="navigation"
   >
     <li
-      className="cf-tn889k"
+      className="cf-19kgvty"
       role={null}
     >
       <span
@@ -134,7 +134,7 @@ exports[`should render pagination loading 1`] = `
       </span>
     </li>
     <li
-      className="cf-1j1psy1"
+      className="cf-9nha49"
       role={null}
     >
       <span
@@ -260,7 +260,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="cf-1j1psy1"
+      className="cf-9nha49"
       role={null}
     >
       <span
@@ -409,7 +409,7 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="cf-1j1psy1"
+      className="cf-9nha49"
       role={null}
     >
       <span
@@ -420,7 +420,7 @@ exports[`should render pagination with the last page active 1`] = `
       </span>
     </li>
     <li
-      className="cf-tn889k"
+      className="cf-19kgvty"
       role={null}
     >
       <span
@@ -517,7 +517,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-1j1psy1"
+      className="cf-9nha49"
       role={null}
     >
       <span
