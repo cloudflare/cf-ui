@@ -1,17 +1,12 @@
-import React from 'react';
+import React from "react";
 import {
-  Pagination as PaginationUnstyled,
+  Pagination,
   PaginationItem,
-  PaginationTheme,
-  PaginationRoot as PaginationRootUnstyled,
-  PaginationRootTheme
-} from 'cf-component-pagination';
-import Icon from 'cf-component-icon';
-import './component.css';
-import { applyTheme } from 'cf-style-container';
-
-const Pagination = applyTheme(PaginationUnstyled, PaginationTheme);
-const PaginationRoot = applyTheme(PaginationRootUnstyled, PaginationRootTheme);
+  PaginationRoot
+} from "cf-component-pagination";
+import Icon from "cf-component-icon";
+import "./component.css";
+import { applyTheme } from "cf-style-container";
 
 class PaginationComponent extends React.Component {
   constructor(props) {
@@ -48,7 +43,7 @@ class PaginationComponent extends React.Component {
         <PaginationItem
           key={i}
           type="number"
-          label={'Page ' + i}
+          label={"Page " + i}
           active={this.state.active === i}
           onClick={this.handleClickItem.bind(this, i)}
         >

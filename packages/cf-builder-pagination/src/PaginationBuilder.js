@@ -1,6 +1,10 @@
-import React, { PropTypes } from 'react';
-import { Pagination, PaginationItem } from 'cf-component-pagination';
-import Icon from 'cf-component-icon';
+import React, { PropTypes } from "react";
+import {
+  Pagination,
+  PaginationItem,
+  PaginationRoot
+} from "cf-component-pagination";
+import Icon from "cf-component-icon";
 
 class PaginationBuilder extends React.Component {
   render() {
@@ -45,8 +49,8 @@ class PaginationBuilder extends React.Component {
         items.push(
           <PaginationItem
             key={i}
-            type={loading && page === i ? 'loading' : 'number'}
-            label={'Page ' + i}
+            type={loading && page === i ? "loading" : "number"}
+            label={"Page " + i}
             active={page === i}
             onClick={() => handleClickItem(i)}
           >
@@ -59,7 +63,7 @@ class PaginationBuilder extends React.Component {
           <PaginationItem
             key={i}
             type="ellipsis"
-            label={'Page ' + i}
+            label={"Page " + i}
             onClick={() => null}
           />
         );
@@ -69,7 +73,7 @@ class PaginationBuilder extends React.Component {
     const info = infoFormatter && infoFormatter(start, end, totalItems);
 
     return (
-      <Pagination info={info}>
+      <Pagination info={info} PaginationRoot={PaginationRoot}>
         <PaginationItem
           type="prev"
           label="Previous Page"
