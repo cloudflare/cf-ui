@@ -2,11 +2,13 @@
 
 exports[`should render 1`] = `
 <div
-  className="cf-pagination"
+  className="cf-1bek1ug"
+  id={undefined}
+  style={undefined}
 >
   <ul
     aria-describedby={null}
-    className="cf-pagination__list"
+    className="cf-123w5k0"
     role="navigation"
   >
     Pagination
@@ -16,11 +18,13 @@ exports[`should render 1`] = `
 
 exports[`should render with info 1`] = `
 <div
-  className="cf-pagination"
+  className="cf-1bek1ug"
+  id={undefined}
+  style={undefined}
 >
   <ul
     aria-describedby="cf-pagination-1"
-    className="cf-pagination__list"
+    className="cf-123w5k0"
     role="navigation"
   >
     Pagination
