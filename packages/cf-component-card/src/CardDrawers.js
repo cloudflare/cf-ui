@@ -9,15 +9,32 @@ let UNIQUE_ID = 0;
 class CardDrawers extends React.Component {
   constructor(props) {
     super(props);
+
     this._cardId = UNIQUE_ID++;
+
+    this.state = {
+      active: null
+    };
+  }
+
+  handleLinkClick(id) {
+    this.props.onClick && this.props.onClick();
+
+    this.setState(state => ({
+      active: state.active === id ? null : id
+    }));
   }
 
   render() {
+    const active = this.props.hasOwnProperty('active')
+      ? this.props.active
+      : this.state.active;
+
     const links = [];
     const drawers = [];
 
     this.props.drawers.forEach(drawer => {
-      const isActive = drawer.id === this.props.active;
+      const isActive = drawer.id === active;
       const id = `card-${this._cardId}-drawer-${drawer.id}`;
 
       links.push(
@@ -25,7 +42,7 @@ class CardDrawers extends React.Component {
           key={drawer.id}
           id={id}
           isActive={isActive}
-          onClick={this.props.onClick.bind(null, drawer.id)}
+          onClick={() => this.handleLinkClick(drawer.id)}
         >
           {drawer.name}
         </CardToolbarLink>
@@ -52,7 +69,7 @@ class CardDrawers extends React.Component {
 
     let containerClassName = 'cf-card__drawers_container';
 
-    if (this.props.active) {
+    if (active) {
       containerClassName += ' cf-card__drawers_container--open';
     }
 
@@ -68,7 +85,7 @@ class CardDrawers extends React.Component {
 }
 
 CardDrawers.propTypes = {
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
 
   active: PropTypes.string,
   drawers: CardPropTypes.cardDrawers.isRequired,
