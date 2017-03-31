@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import { createComponentStyles, combineRules } from 'cf-style-container';
+import { createComponentStyles } from 'cf-style-container';
 import { clearFix } from 'polished';
 
 const mainStyles = ({ theme }) => ({
