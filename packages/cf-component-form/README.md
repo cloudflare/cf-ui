@@ -14,20 +14,17 @@ $ npm install cf-component-form
 import React from 'react';
 import {
   Form,
-  FormTheme,
   FormHeader,
   FormFooter,
   FormFieldset,
   FormLabel,
-  FormFieldError,
-  FormFieldErrorTheme
+  FormFieldError
 } from 'cf-component-form';
 import { Flex, FlexItem } from 'cf-component-flex';
 import Input from 'cf-component-input';
 import Select from 'cf-component-select';
 import Textarea from 'cf-component-textarea';
 import { Button } from 'cf-component-button';
-import { applyTheme } from 'cf-style-container';
 
 class FormComponent extends React.Component {
   constructor(props) {
