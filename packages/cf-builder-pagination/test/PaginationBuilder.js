@@ -84,35 +84,35 @@ test('should render pagination with an infoFormatter', () => {
   expect(component.toJSON()).toMatchSnapshot();
 });
 
-// StyleProvider does not pass props
-// test('should call onPageChange when clicking another page', () => {
-//   const onPageChange = createStub();
+// StyleProvider doesn't pass props through, Enzyme setProps() has no effect
+test.skip('should call onPageChange when clicking another page', () => {
+  const onPageChange = createStub();
 
-//   const wrapper = mount(
-//     felaTestContext(
-//       <PaginationBuilder
-//         onPageChange={onPageChange}
-//         totalCount={20}
-//         page={1}
-//         perPage={1}
-//       />
-//     )
-//   );
+  const wrapper = mount(
+    felaTestContext(
+      <PaginationBuilder
+        onPageChange={onPageChange}
+        totalCount={20}
+        page={1}
+        perPage={1}
+      />
+    )
+  );
 
-//   const items = wrapper.find('li');
+  const items = wrapper.find('li');
 
-//   items.at(2).find('a').simulate('click');
-//   expect(onPageChange.called).toBeTruthy();
-//   expect(onPageChange.calls[0].args[0]).toBe(2);
+  items.at(2).find('a').simulate('click');
+  expect(onPageChange.called).toBeTruthy();
+  expect(onPageChange.calls[0].args[0]).toBe(2);
 
-//   wrapper.setProps({ page: 2 });
-//   console.log(items.debug());
-//   items.at(0).find('a').simulate('click');
-//   expect(onPageChange.called).toBeTruthy;
-//   expect(onPageChange.calls[1].args[0]).toBe(1);
+  wrapper.setProps({ page: 2 });
+  console.log(items.debug());
+  items.at(0).find('a').simulate('click');
+  expect(onPageChange.called).toBeTruthy;
+  expect(onPageChange.calls[1].args[0]).toBe(1);
 
-//   wrapper.setProps({ page: 1 });
-//   items.at(items.length - 1).find('a').simulate('click');
-//   expect(onPageChange.called).toBeTruthy;
-//   expect(onPageChange.calls[2].args[0]).toBe(2);
-// });
+  wrapper.setProps({ page: 1 });
+  items.at(items.length - 1).find('a').simulate('click');
+  expect(onPageChange.called).toBeTruthy;
+  expect(onPageChange.calls[2].args[0]).toBe(2);
+});
