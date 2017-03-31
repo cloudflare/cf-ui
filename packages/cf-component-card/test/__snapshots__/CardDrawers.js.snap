@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render 1`] = `
+exports[`should render when given all the props 1`] = `
 <div
   className="cf-card__section cf-card__section--default"
 >
@@ -48,6 +48,59 @@ exports[`should render 1`] = `
     <div
       aria-hidden="true"
       aria-labelledby="card-0-drawer-two"
+      className="cf-card__drawer"
+      role="tabpanel"
+    />
+  </div>
+</div>
+`;
+
+exports[`should render when not given props 1`] = `
+<div
+  className="cf-card__section cf-card__section--default"
+>
+  <div
+    className="cf-card__toolbar"
+  >
+    <div
+      className="cf-card__toolbar_controls"
+    />
+    <div
+      className="cf-card__toolbar_links"
+      role="tablist"
+    >
+      <a
+        className="cf-link cf-card__toolbar_link"
+        href="#!"
+        id="card-1-drawer-one"
+        onClick={[Function]}
+        role="tab"
+      >
+        One
+      </a>
+      <a
+        className="cf-link cf-card__toolbar_link"
+        href="#!"
+        id="card-1-drawer-two"
+        onClick={[Function]}
+        role="tab"
+      >
+        Two
+      </a>
+    </div>
+  </div>
+  <div
+    className="cf-card__drawers_container"
+  >
+    <div
+      aria-hidden="true"
+      aria-labelledby="card-1-drawer-one"
+      className="cf-card__drawer"
+      role="tabpanel"
+    />
+    <div
+      aria-hidden="true"
+      aria-labelledby="card-1-drawer-two"
       className="cf-card__drawer"
       role="tabpanel"
     />
