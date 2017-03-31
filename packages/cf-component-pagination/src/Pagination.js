@@ -1,9 +1,7 @@
 import React, { PropTypes } from 'react';
 import uniqueId from 'lodash/uniqueId';
 import { createComponent } from 'cf-style-container';
-import PaginationRoot from './PaginationRoot';
-import PaginationTheme from './PaginationTheme';
-import { applyTheme } from 'cf-style-container';
+import { PaginationRoot } from './index';
 
 const styles = ({ theme }) => ({
   '&:after': {
@@ -46,8 +44,4 @@ Pagination.propTypes = {
   children: PropTypes.node
 };
 
-const PaginationUnstyled = createComponent(styles, Pagination);
-
-export { PaginationUnstyled };
-
-export default applyTheme(PaginationUnstyled, PaginationTheme);
+export default createComponent(styles, Pagination);

@@ -1,7 +1,5 @@
 import React, { PropTypes, Component } from 'react';
 import { createComponent } from 'cf-style-container';
-import PaginationLinkTheme from './PaginationLinkTheme';
-import { applyTheme } from 'cf-style-container';
 
 const styles = ({ theme, disabled, active }) => ({
   position: theme.position,
@@ -63,8 +61,4 @@ PaginationLink.propTypes = {
   label: PropTypes.string.isRequired
 };
 
-const PaginationLinkUnstyled = createComponent(styles, PaginationLink);
-
-export default applyTheme(PaginationLinkUnstyled, PaginationLinkTheme);
-
-export { PaginationLinkUnstyled };
+export default createComponent(styles, PaginationLink);

@@ -1,9 +1,7 @@
 import React, { PropTypes } from 'react';
 import Icon from 'cf-component-icon';
 import { combineRules, createComponent } from 'cf-style-container';
-import PaginationLink from './PaginationLink';
-import PaginationItemTheme from './PaginationItemTheme';
-import { applyTheme } from 'cf-style-container';
+import { PaginationLink } from './index';
 
 const active = ({ active, theme }) => {
   if (!active) return {};
@@ -92,8 +90,4 @@ PaginationItem.propTypes = {
   children: PropTypes.node
 };
 
-const PaginationItemUnstyled = createComponent(styles, PaginationItem);
-
-export { PaginationItemUnstyled };
-
-export default applyTheme(PaginationItemUnstyled, PaginationItemTheme);
+export default createComponent(styles, PaginationItem);
