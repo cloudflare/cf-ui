@@ -1,17 +1,21 @@
 import React, { PropTypes } from 'react';
+import { createComponent } from 'cf-style-container';
 
-class FormFooter extends React.Component {
-  render() {
-    return (
-      <div className="cf-form__footer">
-        {this.props.children}
-      </div>
-    );
-  }
-}
+const styles = ({ theme }) => ({
+  padding: theme.padding,
+  borderTop: theme.borderTop,
+  textAlign: theme.textAlign
+});
+
+const FormFooter = ({ className, children }) => (
+  <div className={className}>
+    {children}
+  </div>
+);
 
 FormFooter.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
+  className: PropTypes.string
 };
 
-export default FormFooter;
+export default createComponent(styles, FormFooter);
