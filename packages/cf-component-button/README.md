@@ -12,16 +12,7 @@ $ npm install cf-component-button
 
 ```jsx
 import React from 'react';
-import { applyTheme } from 'cf-style-container';
-import {
-  ButtonGroup as ButtonGroupUnstyled,
-  Button as ButtonUnstyled,
-  ButtonTheme,
-  ButtonGroupTheme
-} from 'cf-component-button';
-
-const Button = applyTheme(ButtonUnstyled, ButtonTheme);
-const ButtonGroup = applyTheme(ButtonGroupUnstyled, ButtonGroupTheme);
+import { Button, ButtonGroup } from 'cf-component-button';
 
 const ButtonComponent = () => (
   <ButtonGroup>

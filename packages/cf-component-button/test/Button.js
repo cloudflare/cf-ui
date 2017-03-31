@@ -1,13 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import felaTestContext from '../../../felaTestContext';
-import { applyTheme } from '../../cf-style-container/src/index';
-import {
-  Button as ButtonUnstyled,
-  ButtonTheme
-} from '../../cf-component-button/src/index';
-
-const Button = applyTheme(ButtonUnstyled, ButtonTheme);
+import { Button } from '../../cf-component-button/src/index';
 
 test('should render with type', () => {
   const component = renderer.create(
