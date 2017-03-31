@@ -2,15 +2,16 @@
 
 exports[`should render 1`] = `
 <fieldset
-  className="cf-form__fieldset"
+  className="cf-rh3plk"
 >
+   
   <legend
-    className="cf-form__fieldset_legend"
+    className="cf-yhpbj6"
   >
     Legend
   </legend>
   <div
-    className="cf-form__fieldset_content"
+    className="cf-d8a5q9"
   >
     FormFieldset
   </div>

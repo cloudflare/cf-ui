@@ -2,13 +2,13 @@
 
 exports[`should render invalid state 1`] = `
 <div
-  className="cf-form__field-error"
+  className="cf-12y5tyj"
 />
 `;
 
 exports[`should render invalid state with validation errors 1`] = `
 <div
-  className="cf-form__field-error"
+  className="cf-12y5tyj"
 >
   <p>
     This is required
