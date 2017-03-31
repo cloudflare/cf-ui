@@ -1,23 +1,67 @@
 import React, { PropTypes } from 'react';
+import { createComponentStyles, combineRules } from 'cf-style-container';
+import { clearFix } from 'polished';
 
-class FormFieldset extends React.Component {
-  render() {
-    return (
-      <fieldset className="cf-form__fieldset">
-        <legend className="cf-form__fieldset_legend">
-          {this.props.legend}
-        </legend>
-        <div className="cf-form__fieldset_content">
-          {this.props.children}
-        </div>
-      </fieldset>
-    );
-  }
-}
+const mainStyles = ({ theme }) => ({
+  margin: theme.main.margin,
+  padding: theme.main.padding,
+  borderTop: theme.main.borderTop,
+  borderLeft: theme.main.borderLeft,
+  borderRight: theme.main.borderRight,
+  borderBottom: theme.main.borderBottom,
+  ...clearFix()
+});
+
+const legendStyles = ({ theme, layout }) => ({
+  padding: theme.legend.padding,
+  marginBottom: theme.legend.marginBottom,
+  borderBottom: theme.legend.borderBottom,
+  '@media (min-width: 720px)': layout === 'horizontal'
+    ? {
+        width: '30%',
+        float: 'left',
+        padding: '1.7em 1rem',
+        color: theme.colorGrayDark,
+        textAlign: 'right'
+      }
+    : {}
+});
+
+const contentStyles = ({ theme, layout }) => ({
+  padding: theme.content.padding,
+  border: theme.content.border,
+  borderTopWidth: theme.content.borderTopWidth,
+  background: theme.content.background,
+  '@media (min-width: 720px)': layout === 'horizontal'
+    ? {
+        width: '70%',
+        float: 'left',
+        borderTopWidth: 0,
+        borderLeftWidth: 0
+      }
+    : {}
+});
+
+const FormFieldset = ({ legend, children, styles }) => (
+  <fieldset className={styles.mainStyles}>
+    {' '}
+    <legend className={styles.legendStyles}>
+      {legend}
+    </legend>
+    <div className={styles.contentStyles}>
+      {children}
+    </div>
+  </fieldset>
+);
 
 FormFieldset.propTypes = {
+  layout: PropTypes.oneOf(['horizontal', 'vertical']).isRequired,
+  styles: PropTypes.object.isRequired,
   legend: PropTypes.string.isRequired,
   children: PropTypes.node
 };
 
-export default FormFieldset;
+export default createComponentStyles(
+  { mainStyles, legendStyles, contentStyles },
+  FormFieldset
+);
