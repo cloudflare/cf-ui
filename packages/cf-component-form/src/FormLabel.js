@@ -1,24 +1,23 @@
 import React, { PropTypes } from 'react';
+import { createComponent } from 'cf-style-container';
 
-class FormLabel extends React.Component {
-  render() {
-    let className = 'cf-form__label';
+const styles = ({ theme, hidden }) => ({
+  fontSize: theme.fontSize,
+  display: hidden ? 'none' : 'block',
+  marginBottom: theme.marginBottom,
+  color: theme.color
+});
 
-    if (this.props.hidden) {
-      className += ' cf-form__label--hidden';
-    }
-
-    return (
-      <label className={className}>
-        {this.props.children}
-      </label>
-    );
-  }
-}
+const FormLabel = ({ children, className }) => (
+  <label className={className}>
+    {children}
+  </label>
+);
 
 FormLabel.propTypes = {
   hidden: PropTypes.bool,
-  children: PropTypes.node
+  children: PropTypes.node,
+  className: PropTypes.string
 };
 
-export default FormLabel;
+export default createComponent(styles, FormLabel);
