@@ -1,8 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { FormFooter } from '../../cf-component-form/src/index';
+import { FormFooter } from '../src/index';
+import felaTestContext from '../../../felaTestContext';
 
 test('should render', () => {
-  const component = renderer.create(<FormFooter>FormFooter</FormFooter>);
+  const component = renderer.create(
+    felaTestContext(<FormFooter>FormFooter</FormFooter>)
+  );
   expect(component.toJSON()).toMatchSnapshot();
 });

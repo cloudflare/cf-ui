@@ -4,7 +4,7 @@ export default baseTheme => {
   checkBaseTheme(baseTheme, 'FormFieldErrorTheme');
   return {
     position: 'relative',
-    marginTop: '0.2em',
+    marginTop: '-0.75em',
     padding: '0.5em 1em',
     border: `1px solid  ${baseTheme.colorRedDark}`,
     fontSize: '0.8em',

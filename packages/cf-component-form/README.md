@@ -14,20 +14,20 @@ $ npm install cf-component-form
 import React from 'react';
 import {
   Form,
+  FormTheme,
   FormHeader,
   FormFooter,
   FormFieldset,
   FormLabel,
-  FormFieldError
+  FormFieldError,
+  FormFieldErrorTheme
 } from 'cf-component-form';
 import { Flex, FlexItem } from 'cf-component-flex';
 import Input from 'cf-component-input';
 import Select from 'cf-component-select';
 import Textarea from 'cf-component-textarea';
-import { Button as ButtonUnstyled, ButtonTheme } from 'cf-component-button';
+import { Button } from 'cf-component-button';
 import { applyTheme } from 'cf-style-container';
-
-const Button = applyTheme(ButtonUnstyled, ButtonTheme);
 
 class FormComponent extends React.Component {
   constructor(props) {
@@ -46,20 +46,20 @@ class FormComponent extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  handleFirstNameChange(firstName) {
-    this.setState({ firstName });
+  handleFirstNameChange(e) {
+    this.setState({ firstName: e.value });
   }
 
-  handleLastNameChange(lastName) {
-    this.setState({ lastName });
+  handleLastNameChange(e) {
+    this.setState({ lastName: e.value });
   }
 
   handleTypeChange(type) {
     this.setState({ type });
   }
 
-  handleMessageChange(message) {
-    this.setState({ message });
+  handleMessageChange(e) {
+    this.setState({ message: e.value });
   }
 
   handleSubmit() {
