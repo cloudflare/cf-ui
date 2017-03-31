@@ -1,19 +1,23 @@
 import React, { PropTypes } from 'react';
+import { Heading } from 'cf-component-heading';
+import { createComponent } from 'cf-style-container';
 
-class FormHeader extends React.Component {
-  render() {
-    return (
-      <div className="cf-form__header">
-        <h3 className="cf-form__title">
-          {this.props.title}
-        </h3>
-      </div>
-    );
-  }
-}
+const styles = ({ theme }) => ({
+  padding: theme.padding,
+  borderBottom: theme.borderBottom
+});
+
+const FormHeader = ({ className, title }) => (
+  <div className={className}>
+    <Heading size={4}>
+      {title}
+    </Heading>
+  </div>
+);
 
 FormHeader.propTypes = {
-  title: PropTypes.string.isRequired
+  title: PropTypes.string.isRequired,
+  className: PropTypes.string
 };
 
-export default FormHeader;
+export default createComponent(styles, FormHeader);
