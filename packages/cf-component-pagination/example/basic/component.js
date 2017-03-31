@@ -1,7 +1,6 @@
 import React from 'react';
 import { Pagination, PaginationItem } from 'cf-component-pagination';
 import Icon from 'cf-component-icon';
-import { applyTheme } from 'cf-style-container';
 
 class PaginationComponent extends React.Component {
   constructor(props) {
