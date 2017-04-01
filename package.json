@@ -55,6 +55,8 @@
     "react-test-renderer": "^15.4.2",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
-    "rimraf": "^2.6.1"
-  }
+    "rimraf": "^2.6.1",
+    "babel-plugin-polished": "^1.0.3"
+  },
+  "dependencies": {}
 }
