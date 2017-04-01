@@ -1,10 +1,8 @@
 import React from 'react';
 import { CardBuilder } from 'cf-builder-card';
 import { Table, TableBody, TableRow, TableCell } from 'cf-component-table';
-import { Button as ButtonUnstyled, ButtonTheme } from 'cf-component-button';
-import { applyTheme } from 'cf-style-container';
+import { Button } from 'cf-component-button';
 
-const Button = applyTheme(ButtonUnstyled, ButtonTheme);
 const EXAMPLE_CARD = 'EXAMPLE_CARD';
 
 const MyButton = (
