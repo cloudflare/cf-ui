@@ -23,10 +23,7 @@ import {
 } from 'cf-component-modal';
 import { GatewayDest, GatewayProvider } from 'react-gateway';
 import ReactModal2 from 'react-modal2';
-import { Button as ButtonUnstyled, ButtonTheme } from 'cf-component-button';
-import { applyTheme } from 'cf-style-container';
-
-const Button = applyTheme(ButtonUnstyled, ButtonTheme);
+import { Button } from 'cf-component-button';
 
 class ModalComponent extends React.Component {
   constructor(props) {
