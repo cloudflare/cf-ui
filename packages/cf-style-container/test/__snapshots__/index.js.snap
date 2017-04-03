@@ -21,7 +21,7 @@ exports[`createComponentStyles creates a component 1`] = `
   className="cf-dxtwdx"
 >
   <i
-    classNames="cf-18oup6l"
+    className="cf-18oup6l"
   />
 </div>
 `;
