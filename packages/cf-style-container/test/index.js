@@ -35,7 +35,7 @@ test('createComponent creates empty component', () => {
 
 test('createComponentStyles creates a component', () => {
   const Foo = ({ styles }) => (
-    <div className={styles.class1}><i classNames={styles.class2} /></div>
+    <div className={styles.class1}><i className={styles.class2} /></div>
   );
   const FelaComponent = createComponentStyles(
     {
