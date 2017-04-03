@@ -134,15 +134,16 @@ export function request(method, url, opts, callback) {
   if (!opts.credentials) opts.credentials = 'same-origin';
 
   // Normalize the headers
-  opts.headers = new Headers(opts.headers || {});
+  opts.headers = Object.assign({}, opts.headers);
 
   // Emuluate superagent's questionable ability to filter out headers that's
   // been set to null or undefined.
-  for (let [k, v] of opts.headers.entries()) {
-    if (v === 'null' || v === 'undefined') {
-      opts.headers.delete(k);
+  for (const h in opts.headers) {
+    if (opts.headers[h] === null || opts.headers[h] === undefined) {
+      delete opts.headers[h];
     }
   }
+  opts.headers = new Headers(opts.headers || {});
 
   // Emulate superagent's ability to automatically encode JSON body and set the
   // Content-Type
@@ -168,7 +169,7 @@ export function request(method, url, opts, callback) {
 
   return fetch(url, opts)
     .then(response => {
-      const headers = toHash(response.headers);
+      const headers = toHash(new Map(response.headers));
       const status = response.status;
       logMessage = `${logMessage} (${status} ${response.statusText})`;
 
