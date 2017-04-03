@@ -114,6 +114,11 @@ const styles = props => {
   );
 };
 
+/**
+ * Component is described here.
+ *
+ * @example ../example/Button.md
+ */
 const Button = (
   {
     onClick,

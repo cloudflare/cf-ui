@@ -22,9 +22,12 @@
     "prettier": "node prettier.js",
     "clean": "lerna clean --yes && rimraf .jest",
     "publish": "git pull --rebase && check-installed-dependencies && npm run build && lerna publish",
-    "update-snapshot": "cross-env BABEL_ENV=commonjs jest --no-cache --updateSnapshot"
+    "update-snapshot": "cross-env BABEL_ENV=commonjs jest --no-cache --updateSnapshot",
+    "styleguide": "styleguidist server"
   },
   "devDependencies": {
+    "@webpack-blocks/babel6": "^0.4.1",
+    "@webpack-blocks/webpack2": "^0.4.0",
     "autoprefixer": "^6.7.6",
     "babel-cli": "^6.23.0",
     "babel-core": "^6.18.0",
@@ -52,9 +55,14 @@
     "react-addons-test-utils": "^15.4.2",
     "react-dom": "^15.0.0-0",
     "react-redux": "^5.0.3",
+    "react-styleguidist": "^5.0.3",
     "react-test-renderer": "^15.4.2",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
     "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "fela": "^4.3.2",
+    "react-fela": "^4.3.2"
   }
 }
