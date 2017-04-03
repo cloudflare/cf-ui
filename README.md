@@ -4,27 +4,60 @@
 
 cf-ui is a set of over 50 packages used to build UIs at Cloudflare using
 projects such as [React](https://facebook.github.io/react/),
-[Redux](http://redux.js.org), [npm](https://www.npmjs.com),
-[Lerna](https://lernajs.io), and more.
+[Fela](http://fela.js.org), [Lerna](https://lernajs.io) and more.
 
-## Important note
+- **[Read the introductory blog post &rarr;](https://blog.cloudflare.com/cf-ui/)**
+- **[Interested in more of our technical decisions? See `cf-ui/discussions` &rarr;](discussions)**
 
-We are currently migrating cf-ui to CSS in JS using [Fela](https://github.com/rofrischmann/fela). That means that our components will include styles so you can use them out of the box! However, you need to start using Fela in your project. No worries, [it's pretty easy](http://fela.js.org/)! We will share more exciting info once the migration is done. So far, these components are migrated:
+## cf-ui meets CSS in JS
 
-- cf-component-button
-
-**[Read the introductory blog post &rarr;](https://blog.cloudflare.com/cf-ui/)**
-
-**[Interested in more of our technical decisions? See `cf-ui/discussions` &rarr;](discussions)**
+We are currently migrating cf-ui to CSS in JS powered by [Fela](https://github.com/rofrischmann/fela). That means that our components include styles written in JavaScript and you can use them out of the box! However, you need to start using Fela in your project. [Follow our migration here](https://github.com/cloudflare/cf-ui/issues/100).
 
 ## Getting Started
 
-```bash
-npm install
-npm run bootstrap
+To view all of the available components and packages, see the [`packages/` directory](packages). Do you want to see examples? Check out our [documentation](https://cloudflare.github.io/cf-ui/).
+
+## CSS in JS setup
+
+cf-ui components expect that there is [Fela Renderer](http://fela.js.org/docs/basics/Renderer.html) in the context of your React app. It's the way how to render styles that come with our components into the `<style></style>` node. **You have to use Fela in your project if you want to use cf-ui.** Here's the code example how:
+
+```jsx
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Button as ButtonUnstyled, ButtonTheme } from 'cf-component-button';
+import { applyTheme } from 'cf-style-container';
+import { StyleProvider } from 'cf-style-provider';
+
+// cf-ui components export React components and themes, you have to combine
+// them together first, we have our private set of wrapper components (cf-ux)
+// that do just that, you might want to use your own theme
+const Button = applyTheme(ButtonUnstyled, ButtonTheme);
+
+// Empty DOM nodes for styles and React, note that everything can be server
+// side rendered if you wish
+const fontNode = document.getElementById('font-stylesheet');
+const cssNode = document.getElementById('stylesheet');
+const htmlNode = document.getElementById('react-app');
+
+ReactDOM.render(
+  <StyleProvider cssNode={cssNode} fontNode={fontNode}>
+    <Button type="primary" onClick={() => console.log('clicked')}>
+      Primary Button
+    </Button>
+  </StyleProvider>,
+  htmlNode
+);
 ```
 
-To view all of the available packages, see the [`packages/` directory](packages).
+Do you want to try for yourself?
+
+```sh
+git clone git@github.com:cloudflare/cf-ui.git
+cd cf-ui/example
+yarn install
+yarn run build
+open index.html
+```
 
 ## Contributing
 

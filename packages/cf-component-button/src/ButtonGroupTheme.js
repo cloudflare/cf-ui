@@ -1,4 +1,6 @@
 export default () => ({
+  position: 'relative',
   display: 'inline-block',
-  position: 'relative'
+  verticalAlign: 'middle',
+  whiteSpace: 'nowrap'
 });

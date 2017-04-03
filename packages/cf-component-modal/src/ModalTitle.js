@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Heading } from 'cf-component-heading';
+import { applyTheme } from 'cf-style-container';
 
 class ModalTitle extends React.Component {
   render() {

@@ -2,14 +2,6 @@
 // components fela's renderer and global theme
 
 import React from 'react';
-import { Provider, ThemeProvider } from 'react-fela';
-import { createRenderer } from './felaRenderer';
-import { variables } from 'cf-style-const';
+import { StyleProvider } from './packages/cf-style-provider/src/';
 
-const renderer = createRenderer({ useMonolithic: true });
-
-export default component => (
-  <Provider renderer={renderer}>
-    <ThemeProvider theme={variables}>{component}</ThemeProvider>
-  </Provider>
-);
+export default component => <StyleProvider dev>{component}</StyleProvider>;

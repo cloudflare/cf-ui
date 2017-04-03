@@ -1,7 +1,7 @@
 {
   "name": "cf-util-http",
   "description": "Cloudflare HTTP Util",
-  "version": "3.0.1",
+  "version": "3.5.3",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -11,7 +11,10 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-util-logger": "^2.0.0",
-    "superagent": "^1.4.0"
+    "cf-util-logger": "^2.2.0",
+    "isomorphic-fetch": "^2.2.1"
+  },
+  "optionalDependencies": {
+    "es6-promise": "^4.1.0"
   }
 }

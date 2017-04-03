@@ -1,6 +1,18 @@
-import Button from './Button';
+import ButtonUnstyled from './Button';
 import ButtonTheme from './ButtonTheme';
-import ButtonGroup from './ButtonGroup';
+import ButtonGroupUnstyled from './ButtonGroup';
 import ButtonGroupTheme from './ButtonGroupTheme';
 
-export { Button, ButtonTheme, ButtonGroup, ButtonGroupTheme };
+import { applyTheme } from 'cf-style-container';
+
+const Button = applyTheme(ButtonUnstyled, ButtonTheme);
+const ButtonGroup = applyTheme(ButtonGroupUnstyled, ButtonGroupTheme);
+
+export {
+  Button,
+  ButtonTheme,
+  ButtonUnstyled,
+  ButtonGroup,
+  ButtonGroupTheme,
+  ButtonGroupUnstyled
+};

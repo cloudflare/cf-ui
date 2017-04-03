@@ -1,7 +1,7 @@
 {
   "name": "cf-test-www-api",
   "description": "Cloudflare WWW API Test Util",
-  "version": "2.0.0",
+  "version": "2.2.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",

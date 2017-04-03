@@ -17,8 +17,8 @@ class Callout extends React.Component {
 
 Callout.propTypes = {
   type: PropTypes.oneOf(['default', 'info']),
-  title: PropTypes.string.isRequired,
-  content: PropTypes.string.isRequired
+  title: PropTypes.string,
+  content: PropTypes.node.isRequired
 };
 
 Callout.defaultProps = {

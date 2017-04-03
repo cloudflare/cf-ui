@@ -1,7 +1,7 @@
 {
   "name": "cf-component-link",
   "description": "Cloudflare Link Component",
-  "version": "4.0.1",
+  "version": "4.2.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -14,6 +14,6 @@
     "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
   },
   "dependencies": {
-    "cf-util-route-handler": "^4.0.1"
+    "cf-util-route-handler": "^4.2.0"
   }
 }

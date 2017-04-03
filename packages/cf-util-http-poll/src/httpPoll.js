@@ -23,7 +23,6 @@ export default function httpPoll(url, opts) {
   const timeout = opts.timeout || 60000;
 
   let isCancelled = false;
-  let currentAbort = null;
   let intervalId = null;
   let timeoutId = null;
 
@@ -31,10 +30,6 @@ export default function httpPoll(url, opts) {
   function cleanup() {
     clearTimeout(intervalId);
     clearTimeout(timeoutId);
-    if (currentAbort) {
-      currentAbort();
-      currentAbort = null;
-    }
   }
 
   // Cancel polling
@@ -46,7 +41,6 @@ export default function httpPoll(url, opts) {
 
   // Request success handler
   function onSuccess(res) {
-    currentAbort = null;
     if (isCancelled) return;
     if (!opts.isComplete(res)) {
       intervalId = setTimeout(next, interval);
@@ -58,14 +52,13 @@ export default function httpPoll(url, opts) {
 
   // Request error handler
   function onError(res) {
-    currentAbort = null;
     if (isCancelled) return;
     cleanup();
     opts.onError(res);
   }
 
   function next() {
-    currentAbort = httpGet(url, opts.requestOpts, (err, res) => {
+    httpGet(url, opts.requestOpts, (err, res) => {
       if (err) {
         onError(err);
       } else {

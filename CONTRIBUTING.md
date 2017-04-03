@@ -7,24 +7,24 @@ To get started run:
 ```sh
 git clone git@github.com:cloudflare/cf-ui.git
 cd cf-ui
-npm install
-npm run bootstrap
+yarn install
+yarn run bootstrap
 ```
 
 > Because we use [Lerna](https://lernajs.io) you'll also need to run
-> `npm run bootstrap` anytime that you have changed the dependencies within a
+> `yarn run bootstrap` anytime that you have changed the dependencies within a
 > package.
 
 ## Development tasks
 
 ```sh
-npm start # Start the dev server, open http://localhost:8000 and start deving
-npm run build # Build all the packages using Babel (targets: commonjs, ES6) and Webpack (umd)
-npm run lint # Run the eslint
-npm run prettier # Reformats the whole JS codebase, look for an on-save integration for your editor
-npm test # Run the tests
-npm test -- --testPathPattern cf-component-button # Run the tests on a single package
-npm test -- --watchAll # Run the tests in watch mode
+yarn run build # Build all the packages using Babel (targets: commonjs, ES6)
+yarn run build -- cf-component-button # Build one package (targets: commonjs, ES6)
+yarn run lint # Run the eslint
+yarn run prettier # Reformats the whole JS codebase, look for an on-save integration for your editor
+yarn test # Run the tests, you need to run 'yarn run build' first
+yarn test -- --testPathPattern cf-component-button # Run the tests on a single package
+yarn test -- --watchAll # Run the tests in watch mode
 ```
 
 ## Publishing packages
@@ -33,5 +33,5 @@ cf-ui uses [Lerna](https://lernajs.io) in order to publish new versions of
 packages.
 
 ```sh
-npm run publish
+yarn run publish
 ```
