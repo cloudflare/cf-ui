@@ -54,7 +54,9 @@ function toQueryParams(kvs) {
 
 function toHash(headers) {
   const hash = {};
-  for (let [k, v] of headers) {
+  // converting to Map allows for .. of in Edge
+  const headersMap = new Map(headers);
+  for (let [k, v] of headersMap) {
     hash[k] = v;
     hash[k.toLowerCase()] = v;
   }
@@ -139,7 +141,7 @@ export function request(method, url, opts, callback) {
   // Emuluate superagent's questionable ability to filter out headers that's
   // been set to null or undefined.
   for (const h in opts.headers) {
-    if (opts.headers[h] === null || opts.headers[h] === undefined) {
+    if (opts.headers[h] == null) {
       delete opts.headers[h];
     }
   }
@@ -169,7 +171,7 @@ export function request(method, url, opts, callback) {
 
   return fetch(url, opts)
     .then(response => {
-      const headers = toHash(new Map(response.headers));
+      const headers = toHash(response.headers);
       const status = response.status;
       logMessage = `${logMessage} (${status} ${response.statusText})`;
 
