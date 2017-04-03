@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import {
   createComponent,
+  createComponentStyles,
   applyTheme,
   ThemeProvider,
   color
@@ -28,6 +29,25 @@ test('applyTheme should overwrite the baseTheme and update the context', () => {
 
 test('createComponent creates empty component', () => {
   const FelaComponent = createComponent(() => {});
+  const component = renderer.create(felaTestContext(<FelaComponent />));
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('createComponentStyles creates a component', () => {
+  const Foo = ({ styles }) => (
+    <div className={styles.class1}><i classNames={styles.class2} /></div>
+  );
+  const FelaComponent = createComponentStyles(
+    {
+      class1: () => ({
+        padding: '5px'
+      }),
+      class2: () => ({
+        margin: '2px'
+      })
+    },
+    Foo
+  );
   const component = renderer.create(felaTestContext(<FelaComponent />));
   expect(component.toJSON()).toMatchSnapshot();
 });
