@@ -1,17 +1,18 @@
 import React, { PropTypes } from 'react';
-import { Heading } from 'cf-component-heading';
-import { createComponent } from 'cf-style-container';
+import { createComponentStyles } from 'cf-style-container';
 
-const styles = ({ theme }) => ({
+const mainStyles = ({ theme }) => ({
   padding: theme.padding,
   borderBottom: theme.borderBottom
 });
 
-const FormHeader = ({ className, title }) => (
-  <div className={className}>
-    <Heading size={4}>
-      {title}
-    </Heading>
+const titleStyles = () => ({
+  margin: 0
+});
+
+const FormHeader = ({ styles, title }) => (
+  <div className={styles.mainStyles}>
+    <h3 className={styles.titleStyles}>{title}</h3>
   </div>
 );
 
@@ -20,4 +21,4 @@ FormHeader.propTypes = {
   className: PropTypes.string
 };
 
-export default createComponent(styles, FormHeader);
+export default createComponentStyles({ mainStyles, titleStyles }, FormHeader);
