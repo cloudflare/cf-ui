@@ -43,6 +43,7 @@ export default {
   colorGray: color('white lightness(-51.25%)'),
   colorGrayLight: color('white lightness(-13%)'),
   colorGrayDark: color('white lightness(-80%)'),
+  colorGrayBorder: '#666',
   colorGreen: '#9bca3e',
   colorGreenLight: color(`#9bca3e lightness(${colorOffsetLight})`),
   colorGreenDark: color(`#9bca3e lightness(${colorOffsetDark})`),

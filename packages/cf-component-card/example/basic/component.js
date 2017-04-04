@@ -7,10 +7,7 @@ import {
   CardMessages,
   CardSection
 } from 'cf-component-card';
-import { Button as ButtonUnstyled, ButtonTheme } from 'cf-component-button';
-import { applyTheme } from 'cf-style-container';
-
-const Button = applyTheme(ButtonUnstyled, ButtonTheme);
+import { Button } from 'cf-component-button';
 
 class CardComponent extends React.Component {
   constructor(props) {

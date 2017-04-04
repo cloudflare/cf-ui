@@ -2,20 +2,22 @@
 
 exports[`should render pagination 1`] = `
 <div
-  className="cf-pagination"
+  className="cf-1bek1ug"
+  id={undefined}
+  style={undefined}
 >
   <ul
     aria-describedby={null}
-    className="cf-pagination__list"
+    className="cf-123w5k0"
     role="navigation"
   >
     <li
-      className="cf-pagination__item cf-pagination__item--prev cf-pagination__item--disabled"
+      className="cf-19kgvty"
       role={null}
     >
       <span
         aria-label="Previous Page"
-        className="cf-pagination__link"
+        className="cf-3opov"
       >
         <i
           className="cf-icon cf-icon--caret-left"
@@ -24,23 +26,23 @@ exports[`should render pagination 1`] = `
       </span>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number cf-pagination__item--active"
+      className="cf-9nha49"
       role={null}
     >
       <span
         aria-label="Page 1"
-        className="cf-pagination__link"
+        className="cf-3opov"
       >
         1
       </span>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 2"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -48,12 +50,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 3"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -61,12 +63,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 4"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -74,12 +76,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 5"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -87,12 +89,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--next"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Next Page"
-        className="cf-pagination__link"
+        className="cf-1ex7c60"
         href="#"
         onClick={[Function]}
       >
@@ -108,20 +110,22 @@ exports[`should render pagination 1`] = `
 
 exports[`should render pagination loading 1`] = `
 <div
-  className="cf-pagination"
+  className="cf-1bek1ug"
+  id={undefined}
+  style={undefined}
 >
   <ul
     aria-describedby={null}
-    className="cf-pagination__list"
+    className="cf-123w5k0"
     role="navigation"
   >
     <li
-      className="cf-pagination__item cf-pagination__item--prev cf-pagination__item--disabled"
+      className="cf-19kgvty"
       role={null}
     >
       <span
         aria-label="Previous Page"
-        className="cf-pagination__link"
+        className="cf-3opov"
       >
         <i
           className="cf-icon cf-icon--caret-left"
@@ -130,12 +134,12 @@ exports[`should render pagination loading 1`] = `
       </span>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--loading cf-pagination__item--active"
+      className="cf-9nha49"
       role={null}
     >
       <span
         aria-label="Page 1"
-        className="cf-pagination__link"
+        className="cf-3opov"
       >
         <i
           className="cf-icon cf-icon--loading"
@@ -144,12 +148,12 @@ exports[`should render pagination loading 1`] = `
       </span>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 2"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -157,12 +161,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 3"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -170,12 +174,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 4"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -183,12 +187,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 5"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -196,12 +200,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--next"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Next Page"
-        className="cf-pagination__link"
+        className="cf-1ex7c60"
         href="#"
         onClick={[Function]}
       >
@@ -217,20 +221,22 @@ exports[`should render pagination loading 1`] = `
 
 exports[`should render pagination with an infoFormatter 1`] = `
 <div
-  className="cf-pagination"
+  className="cf-1bek1ug"
+  id={undefined}
+  style={undefined}
 >
   <ul
     aria-describedby={null}
-    className="cf-pagination__list"
+    className="cf-123w5k0"
     role="navigation"
   >
     <li
-      className="cf-pagination__item cf-pagination__item--prev"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Previous Page"
-        className="cf-pagination__link"
+        className="cf-1ex7c60"
         href="#"
         onClick={[Function]}
       >
@@ -241,12 +247,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 1"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -254,23 +260,23 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number cf-pagination__item--active"
+      className="cf-9nha49"
       role={null}
     >
       <span
         aria-label="Page 2"
-        className="cf-pagination__link"
+        className="cf-3opov"
       >
         2
       </span>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 3"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -278,12 +284,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 4"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -291,12 +297,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 5"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -304,12 +310,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--next"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Next Page"
-        className="cf-pagination__link"
+        className="cf-1ex7c60"
         href="#"
         onClick={[Function]}
       >
@@ -325,20 +331,22 @@ exports[`should render pagination with an infoFormatter 1`] = `
 
 exports[`should render pagination with the last page active 1`] = `
 <div
-  className="cf-pagination"
+  className="cf-1bek1ug"
+  id={undefined}
+  style={undefined}
 >
   <ul
     aria-describedby={null}
-    className="cf-pagination__list"
+    className="cf-123w5k0"
     role="navigation"
   >
     <li
-      className="cf-pagination__item cf-pagination__item--prev"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Previous Page"
-        className="cf-pagination__link"
+        className="cf-1ex7c60"
         href="#"
         onClick={[Function]}
       >
@@ -349,12 +357,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 1"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -362,12 +370,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 2"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -375,12 +383,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 3"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -388,12 +396,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 4"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -401,23 +409,23 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number cf-pagination__item--active"
+      className="cf-9nha49"
       role={null}
     >
       <span
         aria-label="Page 5"
-        className="cf-pagination__link"
+        className="cf-3opov"
       >
         5
       </span>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--next cf-pagination__item--disabled"
+      className="cf-19kgvty"
       role={null}
     >
       <span
         aria-label="Next Page"
-        className="cf-pagination__link"
+        className="cf-3opov"
       >
         <i
           className="cf-icon cf-icon--caret-right"
@@ -431,20 +439,22 @@ exports[`should render pagination with the last page active 1`] = `
 
 exports[`should render with collapsed items 1`] = `
 <div
-  className="cf-pagination"
+  className="cf-1bek1ug"
+  id={undefined}
+  style={undefined}
 >
   <ul
     aria-describedby={null}
-    className="cf-pagination__list"
+    className="cf-123w5k0"
     role="navigation"
   >
     <li
-      className="cf-pagination__item cf-pagination__item--prev"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Previous Page"
-        className="cf-pagination__link"
+        className="cf-1ex7c60"
         href="#"
         onClick={[Function]}
       >
@@ -455,12 +465,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 1"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -468,12 +478,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--ellipsis"
+      className="cf-1hg1ctm"
       role="presentation"
     >
       <span
         aria-label="Page 2"
-        className="cf-pagination__link"
+        className="cf-1ex7c60"
       >
         <span>
           …
@@ -481,12 +491,12 @@ exports[`should render with collapsed items 1`] = `
       </span>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 4"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -494,12 +504,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 5"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -507,23 +517,23 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number cf-pagination__item--active"
+      className="cf-9nha49"
       role={null}
     >
       <span
         aria-label="Page 6"
-        className="cf-pagination__link"
+        className="cf-3opov"
       >
         6
       </span>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 7"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -531,12 +541,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 8"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -544,12 +554,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--ellipsis"
+      className="cf-1hg1ctm"
       role="presentation"
     >
       <span
         aria-label="Page 9"
-        className="cf-pagination__link"
+        className="cf-1ex7c60"
       >
         <span>
           …
@@ -557,12 +567,12 @@ exports[`should render with collapsed items 1`] = `
       </span>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--number"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Page 20"
-        className="cf-pagination__link"
+        className="cf-p16ik9"
         href="#"
         onClick={[Function]}
       >
@@ -570,12 +580,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-pagination__item cf-pagination__item--next"
+      className="cf-1hg1ctm"
       role={null}
     >
       <a
         aria-label="Next Page"
-        className="cf-pagination__link"
+        className="cf-1ex7c60"
         href="#"
         onClick={[Function]}
       >

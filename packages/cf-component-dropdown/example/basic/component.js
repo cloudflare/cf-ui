@@ -4,16 +4,7 @@ import {
   DropdownLink,
   DropdownSeparator
 } from 'cf-component-dropdown';
-import {
-  Button as ButtonUnstyled,
-  ButtonTheme,
-  ButtonGroup as ButtonGroupUnstyled,
-  ButtonGroupTheme
-} from 'cf-component-button';
-import { applyTheme } from 'cf-style-container';
-
-const Button = applyTheme(ButtonUnstyled, ButtonTheme);
-const ButtonGroup = applyTheme(ButtonGroupUnstyled, ButtonGroupTheme);
+import { Button, ButtonGroup } from 'cf-component-button';
 
 class DropdownComponent extends React.Component {
   constructor(props) {
