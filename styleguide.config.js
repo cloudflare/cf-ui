@@ -3,5 +3,6 @@ const babel = require('@webpack-blocks/babel6');
 
 module.exports = {
   components: './packages/*/src/[A-Z]*.js',
-  webpackConfig: createConfig([babel()])
+  webpackConfig: createConfig([babel()]),
+  template: 'styleguide/index.html'
 };

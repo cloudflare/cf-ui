@@ -1,12 +1,21 @@
 Button example:
 
 ```
-const { createRenderer } = require('fela');
-const { Provider } = require('react-fela');
+const { StyleProvider } = require('cf-style-provider');
+const { applyTheme } = require('cf-style-container');
 
-const renderer = createRenderer();
+const ButtonTheme = require('../src/ButtonTheme').default;
 
-<Provider renderer={renderer}>
-  <Button>hello world</Button>
-</Provider>
+const StyledButton = applyTheme(Button, ButtonTheme);
+
+<StyleProvider
+  cssNode={document.querySelector('#fela-style')}
+  fontNode={document.querySelector('#fela-fonts')}
+  dev={true}
+  selectorPrefix="cf-"
+>
+  <StyledButton onClick={() => console.log('clicked')}>
+    Hello world
+  </StyledButton>
+</StyleProvider>
 ```
