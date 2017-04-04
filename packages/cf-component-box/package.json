@@ -1,7 +1,7 @@
 {
   "name": "cf-component-box",
   "description": "Cloudflare Box Component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
