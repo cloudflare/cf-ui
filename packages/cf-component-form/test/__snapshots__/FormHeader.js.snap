@@ -4,10 +4,10 @@ exports[`should render 1`] = `
 <div
   className="cf-yf2q2s"
 >
-  <h4
-    className="cf-1ro6qjl"
+  <h3
+    className="cf-oxs2bj"
   >
     FormHeader
-  </h4>
+  </h3>
 </div>
 `;
