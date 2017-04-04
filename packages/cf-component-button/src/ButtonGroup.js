@@ -21,11 +21,12 @@ const getGroupByIndex = (index, length) => {
   return 'inbetween';
 };
 
-const addGroupProps = children =>
+const addGroupProps = (children, spaced) =>
   React.Children.map(children, (child, index) => {
     if (React.isValidElement(child)) {
       return React.cloneElement(child, {
-        group: getGroupByIndex(index, React.Children.count(children))
+        group: getGroupByIndex(index, React.Children.count(children)),
+        spaced
       });
     }
     return child;
@@ -33,13 +34,14 @@ const addGroupProps = children =>
 
 class ButtonGroup extends React.Component {
   render() {
-    const { className, children } = this.props;
-    return <div className={className}>{addGroupProps(children)}</div>;
+    const { className, children, spaced } = this.props;
+    return <div className={className}>{addGroupProps(children, spaced)}</div>;
   }
 }
 
 ButtonGroup.propTypes = {
   children: PropTypes.node,
+  spaced: PropTypes.bool,
   className: PropTypes.string.isRequired
 };
 
