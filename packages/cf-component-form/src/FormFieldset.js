@@ -44,7 +44,6 @@ const contentStyles = ({ theme, layout }) => ({
 
 const FormFieldset = ({ legend, children, styles }) => (
   <fieldset className={styles.mainStyles}>
-    {' '}
     <legend className={styles.legendStyles}>
       {legend}
     </legend>
