@@ -119,6 +119,27 @@ export default {
     ])
   },
 
+  border: {
+    propType: PropTypes.string,
+    conflictsWith: [
+      'borderStyle',
+      'borderColor',
+      'borderWidth',
+      'borderTopColor',
+      'borderBottomColor',
+      'borderLeftColor',
+      'borderRightColor',
+      'borderTopStyle',
+      'borderBottomStyle',
+      'borderLeftStyle',
+      'borderRightStyle',
+      'borderTopWidth',
+      'borderBottomWidth',
+      'borderLeftWidth',
+      'borderRightWidth'
+    ]
+  },
+
   borderColor: {
     propType: PropTypes.string,
     conflictsWith: [
@@ -293,6 +314,11 @@ export default {
     propType: numberOrString,
     default: 0,
     preprocessWith: [pxToRem]
+  },
+
+  verticalAlign: {
+    propType: numberOrString,
+    default: 'baseline'
   },
 
   transform: {
