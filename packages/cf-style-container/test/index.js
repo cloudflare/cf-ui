@@ -3,16 +3,11 @@ import {
   createComponent,
   createComponentStyles,
   applyTheme,
-  ThemeProvider,
-  color
+  ThemeProvider
 } from '../../cf-style-container/src/index';
 import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 import felaTestContext from '../../../felaTestContext';
-
-test('color should return correct value', () => {
-  expect(color('red a(90%)')).toBe('rgba(255, 0, 0, 0.9)');
-});
 
 test('applyTheme should overwrite the baseTheme and update the context', () => {
   const ThemedFoo = applyTheme(

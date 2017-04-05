@@ -1,13 +1,10 @@
 import React, { Component, PropTypes } from 'react';
-import cssColorFunction from 'css-color-function';
 import { combineRules } from 'fela';
 import {
   createComponent as createFelaComponent,
   ThemeProvider,
   connect
 } from 'react-fela';
-
-const color = input => cssColorFunction.convert(`color(${input})`);
 
 const createComponent = (rule, type = 'div', passThroughProps = []) =>
   createFelaComponent(
@@ -55,7 +52,6 @@ export {
   createComponent,
   applyTheme,
   ThemeProvider,
-  color,
   connect,
   combineRules,
   createComponentStyles
