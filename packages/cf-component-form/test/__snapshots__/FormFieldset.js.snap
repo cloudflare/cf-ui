@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <fieldset
-  className="cf-rh3plk"
+  className="cf-cy1e5a"
 >
   <legend
     className="cf-yhpbj6"
@@ -10,7 +10,7 @@ exports[`should render 1`] = `
     Legend
   </legend>
   <div
-    className="cf-d8a5q9"
+    className="cf-ak4xtz"
   >
     FormFieldset
   </div>

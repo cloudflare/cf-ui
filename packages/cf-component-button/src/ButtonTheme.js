@@ -1,40 +1,42 @@
-import { color } from 'cf-style-container';
+import { darken, lighten } from 'polished';
 import { checkBaseTheme } from 'cf-style-const';
 
 export default baseTheme => {
   checkBaseTheme(baseTheme, 'ButtonTheme');
-  const defaultBorder = color(
-    `${baseTheme.colorGrayLight} lightness(${baseTheme.colorOffsetDark})`
+  const defaultBorder = darken(
+    baseTheme.colorOffsetDark,
+    baseTheme.colorGrayLight
   );
-  const primaryBorder = color(
-    `${baseTheme.colorBlue} lightness(${baseTheme.colorOffsetDark})`
+  const primaryBorder = darken(baseTheme.colorOffsetDark, baseTheme.colorBlue);
+  const successBorder = darken(baseTheme.colorOffsetDark, baseTheme.colorGreen);
+  const warningBorder = darken(
+    baseTheme.colorOffsetDark,
+    baseTheme.colorOrange
   );
-  const successBorder = color(
-    `${baseTheme.colorGreen} lightness(${baseTheme.colorOffsetDark})`
+  const dangerBorder = darken(baseTheme.colorOffsetDark, baseTheme.colorRed);
+  const defaultHoverBackground = darken(
+    baseTheme.colorOffsetDark,
+    baseTheme.colorGrayLight
   );
-  const warningBorder = color(
-    `${baseTheme.colorOrange} lightness(${baseTheme.colorOffsetDark})`
+  const defaultActiveBackground = darken(
+    baseTheme.colorOffsetDark,
+    defaultHoverBackground
   );
-  const dangerBorder = color(
-    `${baseTheme.colorRed}  lightness(${baseTheme.colorOffsetDark})`
+  const primaryActiveBackground = darken(
+    baseTheme.colorOffsetDark,
+    baseTheme.colorBlueDark
   );
-  const defaultHoverBackground = color(
-    `${baseTheme.colorGrayLight} lightness(${baseTheme.colorOffsetDark})`
+  const successActiveBackground = darken(
+    baseTheme.colorOffsetDark,
+    baseTheme.colorGreenDark
   );
-  const defaultActiveBackground = color(
-    `${defaultHoverBackground} lightness(${baseTheme.colorOffsetDark})`
+  const warningActiveBackground = darken(
+    baseTheme.colorOffsetDark,
+    baseTheme.colorOrangeDark
   );
-  const primaryActiveBackground = color(
-    `${baseTheme.colorBlueDark} lightness(${baseTheme.colorOffsetDark})`
-  );
-  const successActiveBackground = color(
-    `${baseTheme.colorGreenDark} lightness(${baseTheme.colorOffsetDark})`
-  );
-  const warningActiveBackground = color(
-    `${baseTheme.colorOrangeDark} lightness(${baseTheme.colorOffsetDark})`
-  );
-  const dangerActiveBackground = color(
-    `${baseTheme.colorRedDark} lightness(${baseTheme.colorOffsetDark})`
+  const dangerActiveBackground = darken(
+    baseTheme.colorOffsetDark,
+    baseTheme.colorRedDark
   );
 
   return {
@@ -67,10 +69,11 @@ export default baseTheme => {
     borderRight: 0,
 
     // Disabled
-    disabledBorder: color(
-      `${baseTheme.disabledBackground} lightness(${baseTheme.colorOffsetDark})`
+    disabledBorder: darken(
+      baseTheme.colorOffsetDark,
+      baseTheme.disabledBackground
     ),
-    disabledColor: color(`${baseTheme.disabledBackground} lightness(30%)`),
+    disabledColor: lighten(0.3, baseTheme.disabledBackground),
 
     // Normal
     defaultBackground: baseTheme.colorGrayLight,
@@ -98,20 +101,19 @@ export default baseTheme => {
     warningHoverBackground: baseTheme.colorOrangeDark,
     dangerHoverBackground: baseTheme.colorRedDark,
 
-    defaultHoverBorder: color(
-      `${defaultBorder} lightness(${baseTheme.colorOffsetDark})`
+    defaultHoverBorder: darken(baseTheme.colorOffsetDark, defaultBorder),
+    primaryHoverBorder: darken(baseTheme.colorOffsetDark, primaryBorder),
+    successHoverBorder: darken(
+      baseTheme.colorOffsetDark,
+      baseTheme.colorGreenDark
     ),
-    primaryHoverBorder: color(
-      `${primaryBorder} lightness(${baseTheme.colorOffsetDark})`
+    warningHoverBorder: darken(
+      baseTheme.colorOffsetDark,
+      baseTheme.colorOrangeDark
     ),
-    successHoverBorder: color(
-      `${baseTheme.colorGreenDark} lightness(${baseTheme.colorOffsetDark})`
-    ),
-    warningHoverBorder: color(
-      `${baseTheme.colorOrangeDark} lightness(${baseTheme.colorOffsetDark})`
-    ),
-    dangerHoverBorder: color(
-      `${baseTheme.colorRedDark}  lightness(${baseTheme.colorOffsetDark})`
+    dangerHoverBorder: darken(
+      baseTheme.colorOffsetDark,
+      baseTheme.colorRedDark
     ),
 
     defaultHoverColor: baseTheme.colorGrayDark,
@@ -127,20 +129,25 @@ export default baseTheme => {
     warningActiveBackground,
     dangerActiveBackground,
 
-    defaultActiveBorder: color(
-      `${defaultActiveBackground} lightness(${baseTheme.colorOffsetDark})`
+    defaultActiveBorder: darken(
+      baseTheme.colorOffsetDark,
+      defaultActiveBackground
     ),
-    primaryActiveBorder: color(
-      `${primaryActiveBackground} lightness(${baseTheme.colorOffsetDark})`
+    primaryActiveBorder: darken(
+      baseTheme.colorOffsetDark,
+      primaryActiveBackground
     ),
-    successActiveBorder: color(
-      `${successActiveBackground} lightness(${baseTheme.colorOffsetDark})`
+    successActiveBorder: darken(
+      baseTheme.colorOffsetDark,
+      successActiveBackground
     ),
-    warningActiveBorder: color(
-      `${warningActiveBackground} lightness(${baseTheme.colorOffsetDark})`
+    warningActiveBorder: darken(
+      baseTheme.colorOffsetDark,
+      warningActiveBackground
     ),
-    dangerActiveBorder: color(
-      `${dangerActiveBackground}  lightness(${baseTheme.colorOffsetDark})`
+    dangerActiveBorder: darken(
+      baseTheme.colorOffsetDark,
+      dangerActiveBackground
     ),
 
     defaultActiveColor: baseTheme.colorGrayDark,
@@ -156,20 +163,25 @@ export default baseTheme => {
     warningFocusColor: baseTheme.colorWhite,
     dangerFocusColor: baseTheme.colorWhite,
 
-    defaultFocusOutlineColor: color(
-      `${defaultActiveBackground} lightness(${baseTheme.colorOffsetDark})`
+    defaultFocusOutlineColor: darken(
+      baseTheme.colorOffsetDark,
+      defaultActiveBackground
     ),
-    primaryFocusOutlineColor: color(
-      `${primaryActiveBackground} lightness(${baseTheme.colorOffsetDark})`
+    primaryFocusOutlineColor: darken(
+      baseTheme.colorOffsetDark,
+      primaryActiveBackground
     ),
-    successFocusOutlineColor: color(
-      `${successActiveBackground} lightness(${baseTheme.colorOffsetDark})`
+    successFocusOutlineColor: darken(
+      baseTheme.colorOffsetDark,
+      successActiveBackground
     ),
-    warningFocusOutlineColor: color(
-      `${warningActiveBackground} lightness(${baseTheme.colorOffsetDark})`
+    warningFocusOutlineColor: darken(
+      baseTheme.colorOffsetDark,
+      warningActiveBackground
     ),
-    dangerFocusOutlineColor: color(
-      `${dangerActiveBackground} lightness(${baseTheme.colorOffsetDark})`
+    dangerFocusOutlineColor: darken(
+      baseTheme.colorOffsetDark,
+      dangerActiveBackground
     )
   };
 };
