@@ -13,7 +13,7 @@ exports[`should render 1 button 1`] = `
   className="cf-cmkk1"
 >
   <button
-    className="cf-m4tcot"
+    className="cf-p3cuuj"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -28,7 +28,7 @@ exports[`should render 2 buttons 1`] = `
   className="cf-cmkk1"
 >
   <button
-    className="cf-nq2399"
+    className="cf-zpemqz"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -36,7 +36,7 @@ exports[`should render 2 buttons 1`] = `
     Button
   </button>
   <button
-    className="cf-m4tcot"
+    className="cf-p3cuuj"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -51,7 +51,7 @@ exports[`should render 3 buttons 1`] = `
   className="cf-cmkk1"
 >
   <button
-    className="cf-nq2399"
+    className="cf-zpemqz"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -59,7 +59,7 @@ exports[`should render 3 buttons 1`] = `
     Button
   </button>
   <button
-    className="cf-1gci5vh"
+    className="cf-1p3fv1n"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -67,7 +67,7 @@ exports[`should render 3 buttons 1`] = `
     Button
   </button>
   <button
-    className="cf-m4tcot"
+    className="cf-p3cuuj"
     disabled={undefined}
     onClick={[Function]}
     type="button"

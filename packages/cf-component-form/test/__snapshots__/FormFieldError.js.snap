@@ -2,13 +2,13 @@
 
 exports[`should render invalid state 1`] = `
 <div
-  className="cf-12y5tyj"
+  className="cf-lzhvgp"
 />
 `;
 
 exports[`should render invalid state with validation errors 1`] = `
 <div
-  className="cf-12y5tyj"
+  className="cf-lzhvgp"
 >
   <p>
     This is required

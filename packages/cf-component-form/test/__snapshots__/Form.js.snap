@@ -2,7 +2,7 @@
 
 exports[`should render horizontal layout 1`] = `
 <form
-  className="cf-1mzoq7j"
+  className="cf-od1cvd"
   onSubmit={[Function]}
 >
   Form
@@ -11,7 +11,7 @@ exports[`should render horizontal layout 1`] = `
 
 exports[`should render vertical layout 1`] = `
 <form
-  className="cf-1mzoq7j"
+  className="cf-od1cvd"
   onSubmit={[Function]}
 >
   Form

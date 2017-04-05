@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <li
-  className="cf-1hg1ctm"
+  className="cf-cng1d4"
   role={null}
 >
   <a
@@ -18,7 +18,7 @@ exports[`should render 1`] = `
 
 exports[`should render active 1`] = `
 <li
-  className="cf-9nha49"
+  className="cf-1qt7h5z"
   role={null}
 >
   <span
