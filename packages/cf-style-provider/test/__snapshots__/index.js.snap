@@ -1,3 +1,29 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StyleProvider should render 1`] = `<div />`;
+
+exports[`StyleProvider should render styles 1`] = `
+"<!DOCTYPE html>
+<html>
+
+<head>
+  <style id=\\"stylesheet\\" data-fela-stylesheet=\\"\\">
+    .cf-a {
+      margin: 10px
+    }
+
+    .cf-b {
+      color: red
+    }
+  </style>
+</head>
+
+<body>
+  <div id=\\"react-app\\">
+    <div data-reactroot=\\"\\" class=\\"cf-a cf-b\\"></div>
+  </div>
+
+</body>
+
+</html>"
+`;
