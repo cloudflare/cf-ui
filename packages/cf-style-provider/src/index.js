@@ -55,9 +55,7 @@ export const StyleProvider = (
   return (
     <Provider renderer={renderer} mountNode={cssNode}>
       <ThemeProvider theme={variables}>
-        {isValidElement(child)
-          ? cloneElement(child, { ...restProps })
-          : children}
+        {isValidElement(child) ? cloneElement(child, { ...restProps }) : child}
       </ThemeProvider>
     </Provider>
   );
