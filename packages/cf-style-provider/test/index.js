@@ -6,6 +6,7 @@ import renderer from 'react-test-renderer';
 import { render } from 'react-dom';
 import { mount } from 'enzyme';
 import jsdom from 'jsdom';
+import { html as beautify } from 'js-beautify';
 
 test('StyleProvider should render', () => {
   const component = renderer.create(<StyleProvider><div /></StyleProvider>);
@@ -14,24 +15,20 @@ test('StyleProvider should render', () => {
 
 test('StyleProvider should render styles', () => {
   const doc = jsdom.jsdom(
-    `
-	  <!doctype html>
-	  <html>
-	  <head>
-	    <style id="stylesheet"></style>
-	    <style id="font-stylesheet"></style>
-	  </head>
-	  <asd></asd>
-	  <body>
-	    <div id="react-app"></div>
-	  </body>
-	  </html>`
+    `<!doctype html>
+     <html>
+     <head>
+       <style id="stylesheet"></style>
+     </head>
+     <body>
+       <div id="react-app"></div>
+     </body>
+     </html>`
   );
 
   global.document = doc;
   global.window = doc.defaultView;
 
-  const fontNode = doc.getElementById('font-stylesheet');
   const cssNode = doc.getElementById('stylesheet');
   const htmlNode = doc.getElementById('react-app');
 
@@ -41,15 +38,15 @@ test('StyleProvider should render styles', () => {
   }));
 
   render(
-    <StyleProvider fontNode={fontNode} cssNode={cssNode}>
+    <StyleProvider cssNode={cssNode}>
       <Foo />
     </StyleProvider>,
     htmlNode
   );
 
-  expect(doc.documentElement.outerHTML).toMatch(
-    /.cf-a{margin:10px}.cf-b{color:red}/
-  );
+  expect(
+    beautify(jsdom.serializeDocument(doc), { indent_size: 2 })
+  ).toMatchSnapshot();
 });
 
 test('StyleProvider should pass custom props through', () => {
