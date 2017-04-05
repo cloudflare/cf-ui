@@ -14,7 +14,7 @@
     ]
   },
   "scripts": {
-    "bootstrap": "lerna bootstrap --npm-client=yarn",
+    "bootstrap": "lerna bootstrap",
     "build": "./scripts/build.sh",
     "lint": "eslint packages/*/src/**/*.js packages/*/example/**/*.js packages/*/test/**/*.js || true",
     "test": "cross-env BABEL_ENV=commonjs jest",

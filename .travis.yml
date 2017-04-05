@@ -2,7 +2,7 @@ language: node_js
 node_js:
   - "6"
 before_script:
-  - yarn run bootstrap
+  - yarn run bootstrap -- --concurrency=1
 script:
   - yarn run build
   - yarn run lint
