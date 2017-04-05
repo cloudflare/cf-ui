@@ -84,8 +84,7 @@ test('should render pagination with an infoFormatter', () => {
   expect(component.toJSON()).toMatchSnapshot();
 });
 
-// StyleProvider doesn't pass props through, Enzyme setProps() has no effect
-test.skip('should call onPageChange when clicking another page', () => {
+test('should call onPageChange when clicking another page', () => {
   const onPageChange = createStub();
 
   const wrapper = mount(
@@ -100,13 +99,11 @@ test.skip('should call onPageChange when clicking another page', () => {
   );
 
   const items = wrapper.find('li');
-
   items.at(2).find('a').simulate('click');
   expect(onPageChange.called).toBeTruthy();
   expect(onPageChange.calls[0].args[0]).toBe(2);
 
   wrapper.setProps({ page: 2 });
-  console.log(items.debug());
   items.at(0).find('a').simulate('click');
   expect(onPageChange.called).toBeTruthy;
   expect(onPageChange.calls[1].args[0]).toBe(1);
