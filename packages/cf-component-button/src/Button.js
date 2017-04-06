@@ -114,6 +114,11 @@ const styles = props => {
   );
 };
 
+/**
+ * A simple button. It has many states so make sure you try out some of the props
+ *
+ * @example ../README.md
+ */
 const Button = (
   {
     onClick,

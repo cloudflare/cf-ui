@@ -7,3 +7,5 @@ packages/*/npm-debug.log.*
 es
 dist
 \.jest
+styleguide/build/
+styleguide/index.html

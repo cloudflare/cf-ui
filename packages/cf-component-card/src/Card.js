@@ -1,5 +1,10 @@
 import React, { PropTypes } from 'react';
 
+/**
+ * Card component
+ *
+ * @example ../README.md
+ */
 class Card extends React.Component {
   render() {
     return (
