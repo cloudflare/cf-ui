@@ -15,11 +15,16 @@ const styles = ({ theme, size, align, type, case: textCase }) => ({
   }
 });
 
-const Text = ({ className, children }) => (
-  <div className={className}>
-    {children}
-  </div>
-);
+class Text extends React.Component {
+  render() {
+    const { className, children } = this.props;
+    return (
+      <div className={className}>
+        {children}
+      </div>
+    );
+  }
+}
 
 Text.propTypes = {
   size: PropTypes.oneOf(['normal', 'small']),

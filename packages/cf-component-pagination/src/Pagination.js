@@ -23,20 +23,23 @@ const styles = ({ theme }) => ({
   boxShadow: theme.boxShadow
 });
 
-const Pagination = ({ info, children, className }) => {
-  const id = info ? uniqueId('cf-pagination-') : null;
-  return (
-    <PaginationRoot>
-      <ul className={className} role="navigation" aria-describedby={id}>
-        {children}
-      </ul>
-      {info &&
-        <span id={id}>
-          {info}
-        </span>}
-    </PaginationRoot>
-  );
-};
+class Pagination extends React.Component {
+  render() {
+    const { info, children, className } = this.props;
+    const id = info ? uniqueId('cf-pagination-') : null;
+    return (
+      <PaginationRoot>
+        <ul className={className} role="navigation" aria-describedby={id}>
+          {children}
+        </ul>
+        {info &&
+          <span id={id}>
+            {info}
+          </span>}
+      </PaginationRoot>
+    );
+  }
+}
 
 Pagination.propTypes = {
   className: PropTypes.string.isRequired,
