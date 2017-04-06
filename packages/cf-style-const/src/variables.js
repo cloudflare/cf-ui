@@ -4,7 +4,7 @@ const colorOffsetLight = 0.15;
 const colorOffsetDark = 0.07;
 
 export default {
-  fontSize: '15px',
+  fontSize: '16px',
   inputFontSize: '13px',
   lineHeight: 1.5,
   inputLineHeight: 1.4,
