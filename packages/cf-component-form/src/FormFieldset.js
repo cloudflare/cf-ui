@@ -42,16 +42,21 @@ const contentStyles = ({ theme, layout }) => ({
     : {}
 });
 
-const FormFieldset = ({ legend, children, styles }) => (
-  <fieldset className={styles.mainStyles}>
-    <legend className={styles.legendStyles}>
-      {legend}
-    </legend>
-    <div className={styles.contentStyles}>
-      {children}
-    </div>
-  </fieldset>
-);
+class FormFieldset extends React.Component {
+  render() {
+    const { legend, children, styles } = this.props;
+    return (
+      <fieldset className={styles.mainStyles}>
+        <legend className={styles.legendStyles}>
+          {legend}
+        </legend>
+        <div className={styles.contentStyles}>
+          {children}
+        </div>
+      </fieldset>
+    );
+  }
+}
 
 FormFieldset.propTypes = {
   layout: PropTypes.oneOf(['horizontal', 'vertical']).isRequired,

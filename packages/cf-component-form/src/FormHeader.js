@@ -10,11 +10,16 @@ const titleStyles = () => ({
   margin: 0
 });
 
-const FormHeader = ({ styles, title }) => (
-  <div className={styles.mainStyles}>
-    <h3 className={styles.titleStyles}>{title}</h3>
-  </div>
-);
+class FormHeader extends React.Component {
+  render() {
+    const { styles, title } = this.props;
+    return (
+      <div className={styles.mainStyles}>
+        <h3 className={styles.titleStyles}>{title}</h3>
+      </div>
+    );
+  }
+}
 
 FormHeader.propTypes = {
   title: PropTypes.string.isRequired,

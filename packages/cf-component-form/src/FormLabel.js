@@ -8,11 +8,16 @@ const styles = ({ theme, hidden }) => ({
   color: theme.color
 });
 
-const FormLabel = ({ children, className }) => (
-  <label className={className}>
-    {children}
-  </label>
-);
+class FormLabel extends React.Component {
+  render() {
+    const { children, className } = this.props;
+    return (
+      <label className={className}>
+        {children}
+      </label>
+    );
+  }
+}
 
 FormLabel.propTypes = {
   hidden: PropTypes.bool,

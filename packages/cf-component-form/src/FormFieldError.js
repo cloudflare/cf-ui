@@ -45,23 +45,26 @@ const styles = ({ theme }) => ({
   }
 });
 
-const FormFieldError = ({ field, validations, className }) => {
-  if (!field.invalid) {
-    return null;
-  }
+class FormFieldError extends React.Component {
+  render() {
+    const { field, validations, className } = this.props;
+    if (!field.invalid) {
+      return null;
+    }
 
-  return (
-    <div className={className}>
-      {Object.keys(validations).map(validation => {
-        return (
-          <p key={validation}>
-            {validations[validation]}
-          </p>
-        );
-      })}
-    </div>
-  );
-};
+    return (
+      <div className={className}>
+        {Object.keys(validations).map(validation => {
+          return (
+            <p key={validation}>
+              {validations[validation]}
+            </p>
+          );
+        })}
+      </div>
+    );
+  }
+}
 
 FormFieldError.propTypes = {
   field: PropTypes.object.isRequired,

@@ -7,11 +7,16 @@ const styles = ({ theme }) => ({
   textAlign: theme.textAlign
 });
 
-const FormFooter = ({ className, children }) => (
-  <div className={className}>
-    {children}
-  </div>
-);
+class FormFooter extends React.Component {
+  render() {
+    const { className, children } = this.props;
+    return (
+      <div className={className}>
+        {children}
+      </div>
+    );
+  }
+}
 
 FormFooter.propTypes = {
   children: PropTypes.node,
