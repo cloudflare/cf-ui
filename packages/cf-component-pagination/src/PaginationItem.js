@@ -45,35 +45,38 @@ const normal = ({ theme }) => ({
 
 const styles = combineRules(normal, active, disabled);
 
-const PaginationItem = props => {
-  const isEllipsis = props.type === 'ellipsis';
-  const isLoading = props.type === 'loading';
+class PaginationItem extends React.Component {
+  render() {
+    const props = this.props;
+    const isEllipsis = props.type === 'ellipsis';
+    const isLoading = props.type === 'loading';
 
-  const role = isEllipsis ? 'presentation' : null;
+    const role = isEllipsis ? 'presentation' : null;
 
-  let children;
+    let children;
 
-  if (isEllipsis) {
-    children = <span>…</span>;
-  } else if (isLoading) {
-    children = <Icon type="loading" label={false} />;
-  } else {
-    children = props.children;
+    if (isEllipsis) {
+      children = <span>…</span>;
+    } else if (isLoading) {
+      children = <Icon type="loading" label={false} />;
+    } else {
+      children = props.children;
+    }
+    const clickable = !(props.active || props.disabled || isEllipsis);
+    return (
+      <li className={props.className} role={role}>
+        <PaginationLink
+          onClick={props.onClick}
+          clickable={clickable}
+          children={children}
+          label={props.label}
+          active={props.active}
+          disabled={props.disabled}
+        />
+      </li>
+    );
   }
-  const clickable = !(props.active || props.disabled || isEllipsis);
-  return (
-    <li className={props.className} role={role}>
-      <PaginationLink
-        onClick={props.onClick}
-        clickable={clickable}
-        children={children}
-        label={props.label}
-        active={props.active}
-        disabled={props.disabled}
-      />
-    </li>
-  );
-};
+}
 
 PaginationItem.propTypes = {
   type: PropTypes.oneOf([

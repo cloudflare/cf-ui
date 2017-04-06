@@ -114,25 +114,28 @@ const styles = props => {
   );
 };
 
-const Button = (
-  {
-    onClick,
-    submit,
-    className,
-    disabled,
-    loading,
-    children
+class Button extends React.Component {
+  render() {
+    const {
+      onClick,
+      submit,
+      className,
+      disabled,
+      loading,
+      children
+    } = this.props;
+    return (
+      <button
+        type={submit ? 'submit' : 'button'}
+        disabled={disabled || loading}
+        className={className}
+        onClick={onClick}
+      >
+        {children}
+      </button>
+    );
   }
-) => (
-  <button
-    type={submit ? 'submit' : 'button'}
-    disabled={disabled || loading}
-    className={className}
-    onClick={onClick}
-  >
-    {children}
-  </button>
-);
+}
 
 Button.propTypes = {
   onClick: PropTypes.func.isRequired,

@@ -31,9 +31,12 @@ const addGroupProps = children =>
     return child;
   });
 
-const ButtonGroup = ({ children, className }) => (
-  <div className={className}>{addGroupProps(children)}</div>
-);
+class ButtonGroup extends React.Component {
+  render() {
+    const { className, children } = this.props;
+    return <div className={className}>{addGroupProps(children)}</div>;
+  }
+}
 
 ButtonGroup.propTypes = {
   children: PropTypes.node,
