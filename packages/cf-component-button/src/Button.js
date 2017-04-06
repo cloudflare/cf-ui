@@ -115,9 +115,9 @@ const styles = props => {
 };
 
 /**
- * Component is described here.
+ * A simple button. It has many states so make sure you try out some of the props
  *
- * @example ../example/Button.md
+ * @example ../README.md
  */
 const Button = (
   {
