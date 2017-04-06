@@ -54,9 +54,7 @@ function toQueryParams(kvs) {
 
 function toHash(headers) {
   const hash = {};
-  // converting to Map allows for .. of in Edge
-  const headersMap = new Map(headers);
-  for (let [k, v] of headersMap) {
+  for (let [k, v] of headers) {
     hash[k] = v;
     hash[k.toLowerCase()] = v;
   }
@@ -136,16 +134,15 @@ export function request(method, url, opts, callback) {
   if (!opts.credentials) opts.credentials = 'same-origin';
 
   // Normalize the headers
-  opts.headers = Object.assign({}, opts.headers);
+  opts.headers = new Headers(opts.headers || {});
 
   // Emuluate superagent's questionable ability to filter out headers that's
   // been set to null or undefined.
-  for (const h in opts.headers) {
-    if (opts.headers[h] == null) {
-      delete opts.headers[h];
+  for (let [k, v] of opts.headers.entries()) {
+    if (v === 'null' || v === 'undefined') {
+      opts.headers.delete(k);
     }
   }
-  opts.headers = new Headers(opts.headers || {});
 
   // Emulate superagent's ability to automatically encode JSON body and set the
   // Content-Type
