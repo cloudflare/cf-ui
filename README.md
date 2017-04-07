@@ -9,6 +9,10 @@ projects such as [React](https://facebook.github.io/react/),
 - **[Read the introductory blog post &rarr;](https://blog.cloudflare.com/cf-ui/)**
 - **[Interested in more of our technical decisions? See `cf-ui/discussions` &rarr;](discussions)**
 
+## Usage
+
+Whilst cf-ui is used extensively within Cloudflare, it is also an evolving set of components and therefore can be unstable. **We reccommend only using this toolset to build interfaces for Cloudflare-internal products.** However, feel free to follow along and contribute as we continue to grow this library.
+
 ## cf-ui meets CSS in JS
 
 We are currently migrating cf-ui to CSS in JS powered by [Fela](https://github.com/rofrischmann/fela). That means that our components include styles written in JavaScript and you can use them out of the box! However, you need to start using Fela in your project. [Follow our migration here](https://github.com/cloudflare/cf-ui/issues/100).
