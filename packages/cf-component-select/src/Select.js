@@ -17,6 +17,7 @@ class Select extends React.Component {
         {label && <label>{label}</label>}
         <SelectClass
           {...props}
+          searchable={searchable}
           clearable={searchable || creatable}
           backspaceRemoves={searchable || creatable}
         />
