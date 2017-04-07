@@ -1,7 +1,7 @@
 {
   "name": "cf-style-provider",
   "description": "Cloudflare Style Provider",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -11,8 +11,8 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-style-const": "^0.3.1",
-    "cf-style-container": "^0.2.1",
+    "cf-style-const": "^0.3.4",
+    "cf-style-container": "^0.2.3",
     "fela": "^4.3.2",
     "fela-beautifier": "^4.3.2",
     "fela-font-renderer": "^4.3.2",

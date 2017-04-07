@@ -24,7 +24,6 @@ afterEach(function() {
 });
 
 test('should call onClose after a set delay', done => {
-
   let onClose = () => {
     done();
   };

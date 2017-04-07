@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <label
-  className="cf-form__label"
+  className="cf-1cshl9m"
 >
   FormLabel
 </label>
@@ -10,7 +10,7 @@ exports[`should render 1`] = `
 
 exports[`should render hidden 1`] = `
 <label
-  className="cf-form__label cf-form__label--hidden"
+  className="cf-1kmb73d"
 >
   FormLabel
 </label>

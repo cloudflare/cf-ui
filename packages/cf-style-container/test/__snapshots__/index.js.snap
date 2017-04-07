@@ -15,3 +15,13 @@ exports[`createComponent creates empty component 1`] = `
   style={undefined}
 />
 `;
+
+exports[`createComponentStyles creates a component 1`] = `
+<div
+  className="cf-dxtwdx"
+>
+  <i
+    className="cf-18oup6l"
+  />
+</div>
+`;

@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react';
 import { createComponent } from 'cf-style-container';
 
-const getRadius = (borderRadius, group) => {
+const radius = (borderRadius, group) => {
   if (group) {
     return {
       borderTopRightRadius: group === 'last' ? borderRadius : 0,
@@ -13,17 +13,17 @@ const getRadius = (borderRadius, group) => {
   return { borderRadius };
 };
 
-const getOpacity = props => {
-  if (props.loading) {
-    return 0.8;
+const opacity = (loading, disabled) => {
+  if (loading) {
+    return { opacity: 0.8 };
   }
-  if (props.disabled) {
-    return 0.5;
+  if (disabled) {
+    return { opacity: 0.5 };
   }
-  return 'inherit';
+  return { opacity: 'inherit' };
 };
 
-const getLoadingBefore = (fadeZoomIn, loading) => {
+const before = (fadeZoomIn, loading) => {
   if (!loading) {
     return null;
   }
@@ -43,100 +43,112 @@ const getLoadingBefore = (fadeZoomIn, loading) => {
   };
 };
 
-const styles = props => {
-  const theme = props.theme;
-  return Object.assign(
-    {
-      '&:hover': {
-        backgroundColor: props.loading
-          ? theme.disabledBackground
-          : theme[`${props.type}HoverBackground`],
-        borderColor: theme[`${props.type}HoverBorder`],
-        color: props.loading
-          ? theme.disabledBackground
-          : theme[`${props.type}HoverColor`]
-      },
-      '&:active': {
-        backgroundColor: theme[`${props.type}ActiveBackground`],
-        borderColor: theme[`${props.type}ActiveBorder`],
-        color: theme[`${props.type}ActiveColor`]
-      },
-      '&:focus': {
-        backgroundColor: props.loading
-          ? theme.backgroundColor
-          : theme[`${props.type}Background`],
-        boxShadow: `inset 0px 0px 0px ${theme.borderSize} ${theme[`${props.type}focusOutlineColor`]}`,
-        color: props.loading
-          ? theme.disabledBackground
-          : theme[`${props.type}FocusColor`],
-        outline: props.loading ? 'none' : 'inherit'
-      },
-      '&[title]': {
-        pointerEvents: props.disabled ? 'auto' : 'none'
-      },
-      backgroundColor: props.loading
-        ? theme.disabledBackground
-        : theme[`${props.type}Background`],
-      borderBottom: theme.borderBottom,
-      borderBottomWidth: theme.borderBottomWidth,
-      borderColor: theme[`${props.type}Border`],
-      borderLeft: props.group && props.group !== 'first' ? 0 : theme.borderLeft,
-      borderRight: theme.borderRight,
-      borderStyle: theme.borderStyle,
-      borderTop: theme.borderTop,
-      borderWidth: theme.borderWidth,
-      color: props.loading
-        ? theme.disabledBackground
-        : theme[`${props.type}Color`],
-      cursor: props.disabled || props.loading ? 'default' : theme.cursor,
-      display: theme.display,
-      fontFamily: theme.fontFamily,
-      fontSize: theme.fontSize,
-      fontWeight: theme.fontWeight,
-      lineHeight: theme.lineHeight,
-      marginBottom: props.group ? 0 : theme.marginBottom,
-      marginLeft: props.group ? 0 : theme.marginLeft,
-      marginRight: props.group ? 0 : theme.marginRight,
-      marginTop: props.group ? 0 : theme.marginTop,
-      opacity: getOpacity(props),
-      paddingBottom: theme.paddingBottom,
-      paddingLeft: theme.paddingLeft,
-      paddingRight: theme.paddingRight,
-      paddingTop: theme.paddingTop,
-      pointerEvents: props.disabled ? 'none' : 'auto',
-      position: theme.position,
-      textAlign: theme.textAlign,
-      transition: theme.transition,
-      userSelect: theme.userSelect
-    },
-    getRadius(theme.borderRadius, props.group),
-    getLoadingBefore(theme.fadeZoomIn, props.loading)
-  );
+const marginLeft = (marginLeft, group, spaced) => {
+  if (!group) {
+    return { marginLeft };
+  }
+  if (spaced && group !== 'first') {
+    return { marginLeft: '0.4rem' };
+  }
+  return { marginLeft: 0 };
 };
 
-const Button = (
-  {
-    onClick,
-    submit,
-    className,
-    disabled,
-    loading,
-    children
+const styles = props => {
+  const theme = props.theme;
+  return {
+    '&:hover': {
+      backgroundColor: props.loading
+        ? theme.disabledBackground
+        : theme[`${props.type}HoverBackground`],
+      borderColor: theme[`${props.type}HoverBorder`],
+      color: props.loading
+        ? theme.disabledBackground
+        : theme[`${props.type}HoverColor`]
+    },
+    '&:active': {
+      backgroundColor: theme[`${props.type}ActiveBackground`],
+      borderColor: theme[`${props.type}ActiveBorder`],
+      color: theme[`${props.type}ActiveColor`]
+    },
+    '&:focus': {
+      backgroundColor: props.loading
+        ? theme.backgroundColor
+        : theme[`${props.type}Background`],
+      boxShadow: `inset 0px 0px 0px ${theme.borderSize} ${theme[`${props.type}focusOutlineColor`]}`,
+      color: props.loading
+        ? theme.disabledBackground
+        : theme[`${props.type}FocusColor`],
+      outline: props.loading ? 'none' : 'inherit'
+    },
+    ...before(theme.fadeZoomIn, props.loading),
+    '&[title]': {
+      pointerEvents: props.disabled ? 'auto' : 'none'
+    },
+    backgroundColor: props.loading
+      ? theme.disabledBackground
+      : theme[`${props.type}Background`],
+    borderBottom: theme.borderBottom,
+    borderBottomWidth: theme.borderBottomWidth,
+    borderColor: theme[`${props.type}Border`],
+    borderLeft: props.group && props.group !== 'first' ? 0 : theme.borderLeft,
+    borderRight: theme.borderRight,
+    borderStyle: theme.borderStyle,
+    borderTop: theme.borderTop,
+    borderWidth: theme.borderWidth,
+    color: props.loading
+      ? theme.disabledBackground
+      : theme[`${props.type}Color`],
+    cursor: props.disabled || props.loading ? 'default' : theme.cursor,
+    display: theme.display,
+    fontFamily: theme.fontFamily,
+    fontSize: theme.fontSize,
+    fontWeight: theme.fontWeight,
+    lineHeight: theme.lineHeight,
+    marginBottom: props.group ? 0 : theme.marginBottom,
+    marginRight: props.group ? 0 : theme.marginRight,
+    marginTop: props.group ? 0 : theme.marginTop,
+    ...marginLeft(theme.marginLeft, props.group, props.spaced),
+    ...opacity(props.loading, props.disabled),
+    paddingBottom: theme.paddingBottom,
+    paddingLeft: theme.paddingLeft,
+    paddingRight: theme.paddingRight,
+    paddingTop: theme.paddingTop,
+    pointerEvents: props.disabled ? 'none' : 'auto',
+    position: theme.position,
+    ...radius(theme.borderRadius, props.group),
+    textAlign: theme.textAlign,
+    transition: theme.transition,
+    userSelect: theme.userSelect
+  };
+};
+
+class Button extends React.Component {
+  render() {
+    const {
+      onClick,
+      submit,
+      className,
+      disabled,
+      loading,
+      children
+    } = this.props;
+    return (
+      <button
+        type={submit ? 'submit' : 'button'}
+        disabled={disabled || loading}
+        className={className}
+        onClick={onClick}
+      >
+        {children}
+      </button>
+    );
   }
-) => (
-  <button
-    type={submit ? 'submit' : 'button'}
-    disabled={disabled || loading}
-    className={className}
-    onClick={onClick}
-  >
-    {children}
-  </button>
-);
+}
 
 Button.propTypes = {
   onClick: PropTypes.func.isRequired,
   submit: PropTypes.bool,
+  spaced: PropTypes.bool,
   className: PropTypes.string.isRequired,
   group: PropTypes.oneOf(['first', 'inbetween', 'last']),
   type: PropTypes.oneOf([

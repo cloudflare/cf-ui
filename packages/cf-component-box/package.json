@@ -1,0 +1,21 @@
+{
+  "name": "cf-component-box",
+  "description": "Cloudflare Box Component",
+  "version": "1.1.0",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "jsnext:main": "es/index.js",
+  "author": "James Culveyhouse <jculveyhouse@cloudflare.com>",
+  "license": "BSD-3-Clause",
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "cf-style-const": "^0.3.4",
+    "cf-style-container": "^0.2.3",
+    "polished": "^1.0.2"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
+  }
+}

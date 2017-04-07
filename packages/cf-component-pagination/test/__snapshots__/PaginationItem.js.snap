@@ -2,12 +2,12 @@
 
 exports[`should render 1`] = `
 <li
-  className="cf-pagination__item cf-pagination__item--number"
+  className="cf-cng1d4"
   role={null}
 >
   <a
     aria-label="PaginationLabel"
-    className="cf-pagination__link"
+    className="cf-1ex7c60"
     href="#"
     onClick={[Function]}
   >
@@ -18,12 +18,12 @@ exports[`should render 1`] = `
 
 exports[`should render active 1`] = `
 <li
-  className="cf-pagination__item cf-pagination__item--number cf-pagination__item--active"
+  className="cf-1qt7h5z"
   role={null}
 >
   <span
     aria-label="PaginationLabel"
-    className="cf-pagination__link"
+    className="cf-3opov"
   >
     PaginationItem
   </span>
@@ -32,12 +32,12 @@ exports[`should render active 1`] = `
 
 exports[`should render disabled 1`] = `
 <li
-  className="cf-pagination__item cf-pagination__item--number cf-pagination__item--disabled"
+  className="cf-19kgvty"
   role={null}
 >
   <span
     aria-label="PaginationLabel"
-    className="cf-pagination__link"
+    className="cf-3opov"
   >
     PaginationItem
   </span>

@@ -45,3 +45,16 @@ test('should render 3 buttons', () => {
   );
   expect(component.toJSON()).toMatchSnapshot();
 });
+
+test('should render 3 buttons with spacing', () => {
+  const component = renderer.create(
+    felaTestContext(
+      <ButtonGroup spaced>
+        <Button type="primary" onClick={() => {}}>Button</Button>
+        <Button type="primary" onClick={() => {}}>Button</Button>
+        <Button type="primary" onClick={() => {}}>Button</Button>
+      </ButtonGroup>
+    )
+  );
+  expect(component.toJSON()).toMatchSnapshot();
+});

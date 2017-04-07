@@ -2,10 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { TableBuilder, tableReducer, tableActions } from 'cf-builder-table';
 import { TableCell } from 'cf-component-table';
-import { Button as ButtonUnstyled, ButtonTheme } from 'cf-component-button';
-import { applyTheme } from 'cf-style-container';
-
-const Button = applyTheme(ButtonUnstyled, ButtonTheme);
+import { Button } from 'cf-component-button';
 
 const EXAMPLE_TABLE = 'EXAMPLE_TABLE';
 

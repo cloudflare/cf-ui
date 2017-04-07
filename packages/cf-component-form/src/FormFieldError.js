@@ -1,17 +1,63 @@
 import React, { PropTypes } from 'react';
+import { createComponent } from 'cf-style-container';
+
+const styles = ({ theme }) => ({
+  position: theme.position,
+  marginTop: theme.marginTop,
+  padding: theme.padding,
+  border: theme.border,
+  fontSize: theme.fontSize,
+  fontWeight: theme.fontWeight,
+  background: theme.background,
+  color: theme.color,
+  borderRadius: theme.borderRadius,
+  boxShadow: theme.boxShadow,
+  '-webkit-font-smoothing': 'antialiased',
+  '&::before': {
+    content: '""',
+    display: 'block',
+    position: 'absolute',
+    bottom: '100%',
+    borderStyle: 'solid',
+    borderColor: 'transparent',
+    left: '4px',
+    borderWidth: '6px',
+    borderBottomColor: theme.colorRed
+  },
+  '&::after': {
+    content: '""',
+    display: 'block',
+    position: 'absolute',
+    bottom: '100%',
+    borderStyle: 'solid',
+    borderColor: 'transparent',
+    left: '4px',
+    borderWidth: '4px',
+    borderBottomColor: theme.colorRed
+  },
+  '& p': {
+    marginTop: 0,
+    marginBottom: 0
+  },
+
+  '& p + p': {
+    marginTop: '0.5em'
+  }
+});
 
 class FormFieldError extends React.Component {
   render() {
-    if (!this.props.field.invalid) {
+    const { field, validations, className } = this.props;
+    if (!field.invalid) {
       return null;
     }
 
     return (
-      <div className="cf-form__field-error">
-        {Object.keys(this.props.validations).map(validation => {
+      <div className={className}>
+        {Object.keys(validations).map(validation => {
           return (
             <p key={validation}>
-              {this.props.validations[validation]}
+              {validations[validation]}
             </p>
           );
         })}
@@ -22,7 +68,8 @@ class FormFieldError extends React.Component {
 
 FormFieldError.propTypes = {
   field: PropTypes.object.isRequired,
-  validations: PropTypes.object.isRequired
+  validations: PropTypes.object.isRequired,
+  className: PropTypes.string
 };
 
-export default FormFieldError;
+export default createComponent(styles, FormFieldError);

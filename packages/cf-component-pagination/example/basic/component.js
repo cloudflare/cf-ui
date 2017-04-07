@@ -61,7 +61,7 @@ class PaginationComponent extends React.Component {
           type="next"
           label="Next Page"
           disabled={this.state.active === this.state.pages}
-          onClick={this.handleClickNext}
+          onClick={this.handleClickNext.bind(this)}
         >
           <Icon type="caret-right" label={false} />
         </PaginationItem>

@@ -2,10 +2,10 @@
 
 exports[`should render 1`] = `
 <div
-  className="cf-form__header"
+  className="cf-1sgbk2q"
 >
   <h3
-    className="cf-form__title"
+    className="cf-oxs2bj"
   >
     FormHeader
   </h3>

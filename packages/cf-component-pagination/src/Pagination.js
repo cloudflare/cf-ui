@@ -1,31 +1,50 @@
 import React, { PropTypes } from 'react';
 import uniqueId from 'lodash/uniqueId';
+import { createComponent } from 'cf-style-container';
+import { PaginationRoot } from './index';
+
+const styles = ({ theme }) => ({
+  '&:after': {
+    content: theme.content,
+    display: theme.display,
+    clear: theme.clear
+  },
+  listStyle: theme.listStyle,
+  marginTop: theme.marginTop,
+  marginLeft: theme.marginLeft,
+  marginRight: theme.marginRight,
+  marginBottom: theme.marginBottom,
+  paddingTop: theme.paddingTop,
+  paddingLeft: theme.paddingLeft,
+  paddingRight: theme.paddingRight,
+  paddingBottom: theme.paddingBottom,
+  float: theme.float,
+  borderRadius: theme.borderRadius,
+  boxShadow: theme.boxShadow
+});
 
 class Pagination extends React.Component {
   render() {
-    const id = this.props.info ? uniqueId('cf-pagination-') : null;
-
+    const { info, children, className } = this.props;
+    const id = info ? uniqueId('cf-pagination-') : null;
     return (
-      <div className="cf-pagination">
-        <ul
-          className="cf-pagination__list"
-          role="navigation"
-          aria-describedby={id}
-        >
-          {this.props.children}
+      <PaginationRoot>
+        <ul className={className} role="navigation" aria-describedby={id}>
+          {children}
         </ul>
-        {this.props.info &&
+        {info &&
           <span id={id}>
-            {this.props.info}
+            {info}
           </span>}
-      </div>
+      </PaginationRoot>
     );
   }
 }
 
 Pagination.propTypes = {
+  className: PropTypes.string.isRequired,
   info: PropTypes.string,
   children: PropTypes.node
 };
 
-export default Pagination;
+export default createComponent(styles, Pagination);

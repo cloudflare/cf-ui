@@ -1,4 +1,10 @@
-import React, { Component, PropTypes, Children } from 'react';
+import React, {
+  Component,
+  PropTypes,
+  Children,
+  isValidElement,
+  cloneElement
+} from 'react';
 import { createRenderer as createFelaRenderer } from 'fela';
 import prefixer from 'fela-plugin-prefixer';
 import fallbackValue from 'fela-plugin-fallback-value';
@@ -38,17 +44,18 @@ export const createRenderer = opts => {
 };
 
 export const StyleProvider = (
-  { selectorPrefix, dev, cssNode, fontNode, children }
+  { selectorPrefix, dev, cssNode, fontNode, children, ...restProps }
 ) => {
   const renderer = createRenderer({
     selectorPrefix,
     dev,
     fontNode
   });
+  const child = Children.only(children);
   return (
     <Provider renderer={renderer} mountNode={cssNode}>
       <ThemeProvider theme={variables}>
-        {Children.only(children)}
+        {isValidElement(child) ? cloneElement(child, { ...restProps }) : child}
       </ThemeProvider>
     </Provider>
   );

@@ -9,11 +9,16 @@ const styles = ({ theme }) => ({
   marginLeft: theme.marginLeft
 });
 
-const HeadingCaption = ({ className, children }) => (
-  <small className={className}>
-    {children}
-  </small>
-);
+class HeadingCaption extends React.Component {
+  render() {
+    const { className, children } = this.props;
+    return (
+      <small className={className}>
+        {children}
+      </small>
+    );
+  }
+}
 
 HeadingCaption.propTypes = {
   className: PropTypes.string.isRequired,

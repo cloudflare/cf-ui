@@ -1,26 +1,55 @@
 import React, { PropTypes } from 'react';
 import Icon from 'cf-component-icon';
+import { combineRules, createComponent } from 'cf-style-container';
+import { PaginationLink } from './index';
+
+const active = ({ active, theme }) => {
+  if (!active) return {};
+
+  return {
+    color: theme.colorActive,
+    borderColor: theme.borderColorActive,
+    backgroundColor: theme.backgroundColorActive,
+    zIndex: theme.zIndexActive
+  };
+};
+
+const disabled = ({ disabled, theme }) => {
+  if (!disabled) return {};
+
+  return {
+    color: theme.colorDisabled,
+    backgroundColor: theme.backgroundColorDisabled
+  };
+};
+
+const normal = ({ theme }) => ({
+  float: theme.float,
+  position: theme.position,
+  backgroundColor: theme.backgroundColor,
+  color: theme.color,
+  border: theme.border,
+  borderBottomWidth: theme.borderBottomWidth,
+  '&:first-child': {
+    borderTopLeftRadius: theme['borderTopLeftRadius:first-child'],
+    borderBottomLeftRadius: theme['borderBottomLeftRadius:first-child']
+  },
+  '&:last-child': {
+    borderTopLeftRadius: theme['borderTopLeftRadius:last-child'],
+    borderBottomLeftRadius: theme['borderBottomLeftRadius:last-child']
+  },
+  '&+&': {
+    marginLeft: theme['marginLeft&+&']
+  }
+});
+
+const styles = combineRules(normal, active, disabled);
 
 class PaginationItem extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(e) {
-    e.preventDefault();
-    this.props.onClick();
-  }
-
   render() {
-    let className = 'cf-pagination__item cf-pagination__item--' +
-      this.props.type;
-
-    if (this.props.active) className += ' cf-pagination__item--active';
-    if (this.props.disabled) className += ' cf-pagination__item--disabled';
-
-    const isEllipsis = this.props.type === 'ellipsis';
-    const isLoading = this.props.type === 'loading';
+    const props = this.props;
+    const isEllipsis = props.type === 'ellipsis';
+    const isLoading = props.type === 'loading';
 
     const role = isEllipsis ? 'presentation' : null;
 
@@ -31,23 +60,19 @@ class PaginationItem extends React.Component {
     } else if (isLoading) {
       children = <Icon type="loading" label={false} />;
     } else {
-      children = this.props.children;
+      children = props.children;
     }
-
+    const clickable = !(props.active || props.disabled || isEllipsis);
     return (
-      <li className={className} role={role}>
-        {this.props.active || this.props.disabled || isEllipsis
-          ? <span className="cf-pagination__link" aria-label={this.props.label}>
-              {children}
-            </span>
-          : <a
-              className="cf-pagination__link"
-              href="#"
-              onClick={this.handleClick}
-              aria-label={this.props.label}
-            >
-              {children}
-            </a>}
+      <li className={props.className} role={role}>
+        <PaginationLink
+          onClick={props.onClick}
+          clickable={clickable}
+          children={children}
+          label={props.label}
+          active={props.active}
+          disabled={props.disabled}
+        />
       </li>
     );
   }
@@ -68,4 +93,4 @@ PaginationItem.propTypes = {
   children: PropTypes.node
 };
 
-export default PaginationItem;
+export default createComponent(styles, PaginationItem);

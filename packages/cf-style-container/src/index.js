@@ -1,11 +1,10 @@
 import React, { Component, PropTypes } from 'react';
-import cssColorFunction from 'css-color-function';
+import { combineRules } from 'fela';
 import {
   createComponent as createFelaComponent,
-  ThemeProvider
+  ThemeProvider,
+  connect
 } from 'react-fela';
-
-const color = input => cssColorFunction.convert(`color(${input})`);
 
 const createComponent = (rule, type = 'div', passThroughProps = []) =>
   createFelaComponent(
@@ -37,4 +36,23 @@ const applyTheme = (ComponentToWrap, theme) => {
   return ThemedComponent;
 };
 
-export { createComponent, applyTheme, ThemeProvider, color };
+const createComponentStyles = (styleFunctions, component) => {
+  const mapStylesToProps = props =>
+    renderer => {
+      const toRender = {};
+      for (const style in styleFunctions) {
+        toRender[style] = renderer.renderRule(styleFunctions[style], props);
+      }
+      return toRender;
+    };
+  return connect(mapStylesToProps)(component);
+};
+
+export {
+  createComponent,
+  applyTheme,
+  ThemeProvider,
+  connect,
+  combineRules,
+  createComponentStyles
+};

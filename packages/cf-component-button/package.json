@@ -1,7 +1,7 @@
 {
   "name": "cf-component-button",
   "description": "Cloudflare Button Component",
-  "version": "5.0.0",
+  "version": "5.2.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -11,8 +11,9 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-style-const": "^0.3.1",
-    "cf-style-container": "^0.2.1"
+    "cf-style-const": "^0.3.4",
+    "cf-style-container": "^0.2.3",
+    "polished": "^1.0.2"
   },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
