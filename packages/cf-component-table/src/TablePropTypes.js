@@ -1,4 +1,5 @@
-import { PropTypes } from 'react';
+import 'react';
+import PropTypes from 'prop-types';
 
 const rowType = PropTypes.oneOf([
   'default',

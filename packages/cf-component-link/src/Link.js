@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { routeTo } from 'cf-util-route-handler';
 
 class Link extends React.Component {

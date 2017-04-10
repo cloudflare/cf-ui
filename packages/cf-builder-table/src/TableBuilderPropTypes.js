@@ -1,4 +1,5 @@
-import { PropTypes } from 'react';
+import 'react';
+import PropTypes from 'prop-types';
 import { TablePropTypes } from 'cf-component-table';
 
 const row = PropTypes.shape({
