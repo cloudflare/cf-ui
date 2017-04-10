@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { StyleProvider } from '../../cf-style-provider/src/index';
 import { createComponent } from '../../cf-style-container/src/index';
 import { Button } from '../../cf-component-button/src/index';

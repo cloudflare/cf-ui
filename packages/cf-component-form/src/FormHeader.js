@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { createComponentStyles } from 'cf-style-container';
 
 const mainStyles = ({ theme }) => ({
