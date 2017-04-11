@@ -5,14 +5,14 @@ const colorOffsetDark = 0.07;
 
 export default {
   gradient: {
-    primary: ['#76C4E2', '#85CBA8'],
-    two: ['#8176B5', '#85CBA8'],
-    three: ['#8176B5', '#76C4E2'],
-    four: ['#8176B5', '#BA77B1'],
-    five: ['#8176B5', '#F16975'],
-    six: ['#F16975', '#F69259'],
-    seven: ['#F69259', '#FFDB6F'],
-    eight: ['#85CBA8', '#FFDB6F']
+    primary: 'linear-gradient(left, #76C4E2, #85CBA8)',
+    two: 'linear-gradient(left, #8176B5, #85CBA8)',
+    three: 'linear-gradient(left, #8176B5, #76C4E2)',
+    four: 'linear-gradient(left, #8176B5, #BA77B1)',
+    five: 'linear-gradient(left, #8176B5, #F16975)',
+    six: 'linear-gradient(left, #F16975, #F69259)',
+    seven: 'linear-gradient(left, #F69259, #FFDB6F)',
+    eight: 'linear-gradient(left, #85CBA8, #FFDB6F)'
   },
   fontSize: '16px',
   boxShadow: '0 0 20px 0 rgba(136,136,136,0.50)',
@@ -72,5 +72,5 @@ export default {
   colorPurpleDark: darken(colorOffsetDark, '#d91698'),
   colorTwitterBlue: '#00aced',
   colorFacebookBlue: '#3b5998',
-  mainBackground: '#e6e6e6'
+  colorMainBackground: '#e6e6e6'
 };
