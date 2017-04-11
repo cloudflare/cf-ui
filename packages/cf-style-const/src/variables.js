@@ -4,7 +4,18 @@ const colorOffsetLight = 0.15;
 const colorOffsetDark = 0.07;
 
 export default {
+  gradient: {
+    primary: ['#76C4E2', '#85CBA8'],
+    two: ['#8176B5', '#85CBA8'],
+    three: ['#8176B5', '#76C4E2'],
+    four: ['#8176B5', '#BA77B1'],
+    five: ['#8176B5', '#F16975'],
+    six: ['#F16975', '#F69259'],
+    seven: ['#F69259', '#FFDB6F'],
+    eight: ['#85CBA8', '#FFDB6F']
+  },
   fontSize: '16px',
+  boxShadow: '0 0 20px 0 rgba(136,136,136,0.50)',
   inputFontSize: '13px',
   lineHeight: 1.5,
   inputLineHeight: 1.4,
@@ -60,5 +71,6 @@ export default {
   colorPurpleLight: lighten(colorOffsetLight, '#d91698'),
   colorPurpleDark: darken(colorOffsetDark, '#d91698'),
   colorTwitterBlue: '#00aced',
-  colorFacebookBlue: '#3b5998'
+  colorFacebookBlue: '#3b5998',
+  mainBackground: '#e6e6e6'
 };
