@@ -1,5 +1,5 @@
 import { darken, lighten } from 'polished';
-import { checkBaseTheme } from 'cf-style-const';
+import { checkBaseTheme } from 'cf-style-container';
 
 export default baseTheme => {
   checkBaseTheme(baseTheme, 'ButtonTheme');

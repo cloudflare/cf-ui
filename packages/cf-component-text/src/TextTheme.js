@@ -1,4 +1,4 @@
-import { checkBaseTheme } from 'cf-style-const';
+import { checkBaseTheme } from 'cf-style-container';
 
 export default baseTheme => {
   checkBaseTheme(baseTheme, 'TextTheme');
