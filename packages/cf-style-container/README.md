@@ -103,23 +103,3 @@ const Heading = applyTheme(HeadingUnstyled, HeadingTheme);
 // themed component
 <Heading />
 ```
-
-### checkBaseTheme(theme, name)
-
-Source code explains it
-
-```js
-const checkBaseTheme = (baseTheme, name) => {
-  if (!baseTheme) {
-    throw Error(
-      `
-      You can't use ${name} without providing global theme from
-      cf-style-consts. You should wrap your app by <StyleProvider />!
-    `
-    );
-  }
-};
-```
-
-It should be included in all component themes so if someone tries to use our Fela components without the proper setup, they should get a nice error message.
-
