@@ -1,7 +1,7 @@
 {
   "name": "cf-component-box",
   "description": "Cloudflare Box Component",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -11,8 +11,8 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-style-const": "^0.3.4",
-    "cf-style-container": "^0.2.3",
+    "cf-style-const": "^1.0.0",
+    "cf-style-container": "^1.0.0",
     "polished": "^1.0.2"
   },
   "peerDependencies": {
