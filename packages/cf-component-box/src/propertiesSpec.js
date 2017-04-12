@@ -211,7 +211,7 @@ export default {
     default: variables.lineHeight
   },
   fontSize: {
-    propType: PropTypes.number,
+    propType: numberOrString,
     default: variables.fontSize
   },
   fontWeight: {
