@@ -1,4 +1,4 @@
-import { checkBaseTheme } from 'cf-style-const';
+import { checkBaseTheme } from 'cf-style-container';
 import { em } from 'polished';
 
 export default baseTheme => {
