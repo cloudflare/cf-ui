@@ -1,5 +1,14 @@
 import React from 'react';
-import { Page, PageHeader } from 'cf-component-page';
+import { applyTheme } from 'cf-style-container';
+import {
+  Page as PageUnstyled,
+  PageTheme,
+  PageHeader as PageHeaderUnstyled,
+  PageHeaderTheme
+} from 'cf-component-page';
+
+const Page = applyTheme(PageUnstyled, PageTheme);
+const PageHeader = applyTheme(PageHeaderUnstyled, PageHeaderTheme);
 
 const PageComponent = () => (
   <Page>

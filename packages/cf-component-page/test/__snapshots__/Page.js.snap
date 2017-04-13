@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <article
-  className="cf-page"
+  className=""
 >
   Hello World
 </article>

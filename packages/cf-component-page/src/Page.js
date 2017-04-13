@@ -1,17 +1,18 @@
 import React, { PropTypes } from 'react';
+import { createComponent } from 'cf-style-container';
 
-class Page extends React.Component {
-  render() {
-    return (
-      <article className="cf-page">
-        {this.props.children}
-      </article>
-    );
-  }
-}
+const styles = props => {
+  return {};
+};
+
+const Page = ({ className, children }) => (
+  <article className={className}>
+    {children}
+  </article>
+);
 
 Page.propTypes = {
   children: PropTypes.node
 };
 
-export default Page;
+export default createComponent(styles, Page);

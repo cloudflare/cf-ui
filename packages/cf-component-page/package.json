@@ -10,6 +10,10 @@
   "publishConfig": {
     "registry": "http://registry.npmjs.org/"
   },
+  "dependencies": {
+    "cf-style-container": "^0.0.2",
+    "cf-style-const": "^0.0.1"
+  },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
   }
