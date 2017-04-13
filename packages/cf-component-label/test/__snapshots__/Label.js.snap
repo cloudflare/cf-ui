@@ -2,16 +2,8 @@
 
 exports[`should render 1`] = `
 <span
-  className="cf-label cf-label--default"
+  className="cf-1qqg2pt"
 >
   A Label
 </span>
-`;
-
-exports[`should render with custom tagName 1`] = `
-<small
-  className="cf-label cf-label--default"
->
-  A Label
-</small>
 `;

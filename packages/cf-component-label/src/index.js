@@ -1,3 +1,8 @@
-import Label from './Label';
+import LabelUnstyled from './Label';
+import LabelTheme from './LabelTheme';
 
-export default Label;
+import { applyTheme } from 'cf-style-container';
+
+const Label = applyTheme(LabelUnstyled, LabelTheme);
+
+export { Label, LabelTheme, LabelUnstyled };
