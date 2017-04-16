@@ -1,6 +1,8 @@
 export default baseTheme => ({
   fontSizeNormal: '1em',
   fontWeightNormal: 400,
+  fontSizeBold: '1em',
+  fontWeightBold: 600,
   fontSizeSmall: '.8em',
   lineHeightSmall: 1.3,
   textAlignStart: 'left',
