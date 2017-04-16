@@ -55,3 +55,105 @@ test('should render disabled', () => {
   );
   expect(component.toJSON()).toMatchSnapshot();
 });
+
+test('should render active dot', () => {
+  const component = renderer.create(
+    felaTestContext(
+      <PaginationItem
+        active
+        type="dot"
+        label="PaginationLabel"
+        onClick={() => {}}
+        PaginationLink={PaginationLink}
+      >
+        PaginationItem
+      </PaginationItem>
+    )
+  );
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('should render disabled dot', () => {
+  const component = renderer.create(
+    felaTestContext(
+      <PaginationItem
+        disabled
+        type="dot"
+        label="PaginationLabel"
+        onClick={() => {}}
+        PaginationLink={PaginationLink}
+      >
+        PaginationItem
+      </PaginationItem>
+    )
+  );
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('should render active next', () => {
+  const component = renderer.create(
+    felaTestContext(
+      <PaginationItem
+        active
+        type="next"
+        label="PaginationLabel"
+        onClick={() => {}}
+        PaginationLink={PaginationLink}
+      >
+        PaginationItem
+      </PaginationItem>
+    )
+  );
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('should render disabled next', () => {
+  const component = renderer.create(
+    felaTestContext(
+      <PaginationItem
+        disabled
+        type="next"
+        label="PaginationLabel"
+        onClick={() => {}}
+        PaginationLink={PaginationLink}
+      >
+        PaginationItem
+      </PaginationItem>
+    )
+  );
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('should render active prev', () => {
+  const component = renderer.create(
+    felaTestContext(
+      <PaginationItem
+        active
+        type="prev"
+        label="PaginationLabel"
+        onClick={() => {}}
+        PaginationLink={PaginationLink}
+      >
+        PaginationItem
+      </PaginationItem>
+    )
+  );
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('should render disabled prev', () => {
+  const component = renderer.create(
+    felaTestContext(
+      <PaginationItem
+        disabled
+        type="prev"
+        label="PaginationLabel"
+        onClick={() => {}}
+        PaginationLink={PaginationLink}
+      >
+        PaginationItem
+      </PaginationItem>
+    )
+  );
+  expect(component.toJSON()).toMatchSnapshot();
+});
