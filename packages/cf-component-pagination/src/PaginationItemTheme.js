@@ -15,5 +15,11 @@ export default baseTheme => ({
   'borderBottomLeftRadius:first-child': '3px',
   'borderTopLeftRadius:last-child': '3px',
   'borderBottomLeftRadius:last-child': '3px',
-  'marginLeft&+&': '-1px'
+  dot: {
+    width: '.5rem',
+    height: '.5rem',
+    margin: '1rem',
+    borderRadius: '50%',
+    borderBottomWidth: '1px'
+  }
 });

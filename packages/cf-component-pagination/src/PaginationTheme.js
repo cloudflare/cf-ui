@@ -13,5 +13,5 @@ export default baseTheme => ({
   paddingBottom: 0,
   float: 'left',
   borderRadius: '3px',
-  boxShadow: '0 1px 1px rgba(0, 0, 0, .05)'
+  boxShadow: 'none'
 });

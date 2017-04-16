@@ -10,5 +10,13 @@ export default baseTheme => ({
   color: 'inherit',
   'zIndex:focus': 1,
   cursorDisabled: 'default',
-  cursorActive: 'default'
+  cursorActive: 'default',
+  dot: {
+    marginLeft: '-1em',
+    marginTop: '-1em',
+    paddingTop: '1em',
+    paddingBottom: '1.5em',
+    paddingLeft: '1em',
+    paddingRight: '1.5em'
+  }
 });
