@@ -8,11 +8,11 @@ exports[`should render pagination 1`] = `
 >
   <ul
     aria-describedby={null}
-    className="cf-123w5k0"
+    className="cf-y1rhga"
     role="navigation"
   >
     <li
-      className="cf-19kgvty"
+      className="cf-16vpre1"
       role={null}
     >
       <span
@@ -26,7 +26,7 @@ exports[`should render pagination 1`] = `
       </span>
     </li>
     <li
-      className="cf-1qt7h5z"
+      className="cf-twatip"
       role={null}
     >
       <span
@@ -37,7 +37,7 @@ exports[`should render pagination 1`] = `
       </span>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -50,7 +50,7 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -63,7 +63,7 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -76,7 +76,7 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -89,7 +89,7 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-xqpbdc"
       role={null}
     >
       <a
@@ -116,11 +116,11 @@ exports[`should render pagination loading 1`] = `
 >
   <ul
     aria-describedby={null}
-    className="cf-123w5k0"
+    className="cf-y1rhga"
     role="navigation"
   >
     <li
-      className="cf-19kgvty"
+      className="cf-16vpre1"
       role={null}
     >
       <span
@@ -134,7 +134,7 @@ exports[`should render pagination loading 1`] = `
       </span>
     </li>
     <li
-      className="cf-1qt7h5z"
+      className="cf-twatip"
       role={null}
     >
       <span
@@ -148,7 +148,7 @@ exports[`should render pagination loading 1`] = `
       </span>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -161,7 +161,7 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -174,7 +174,7 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -187,7 +187,7 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -200,7 +200,7 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-xqpbdc"
       role={null}
     >
       <a
@@ -227,11 +227,11 @@ exports[`should render pagination with an infoFormatter 1`] = `
 >
   <ul
     aria-describedby={null}
-    className="cf-123w5k0"
+    className="cf-y1rhga"
     role="navigation"
   >
     <li
-      className="cf-cng1d4"
+      className="cf-xqpbdc"
       role={null}
     >
       <a
@@ -247,7 +247,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -260,7 +260,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="cf-1qt7h5z"
+      className="cf-twatip"
       role={null}
     >
       <span
@@ -271,7 +271,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </span>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -284,7 +284,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -297,7 +297,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -310,7 +310,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-xqpbdc"
       role={null}
     >
       <a
@@ -337,11 +337,11 @@ exports[`should render pagination with the last page active 1`] = `
 >
   <ul
     aria-describedby={null}
-    className="cf-123w5k0"
+    className="cf-y1rhga"
     role="navigation"
   >
     <li
-      className="cf-cng1d4"
+      className="cf-xqpbdc"
       role={null}
     >
       <a
@@ -357,7 +357,7 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -370,7 +370,7 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -383,7 +383,7 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -396,7 +396,7 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -409,7 +409,7 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="cf-1qt7h5z"
+      className="cf-twatip"
       role={null}
     >
       <span
@@ -420,7 +420,7 @@ exports[`should render pagination with the last page active 1`] = `
       </span>
     </li>
     <li
-      className="cf-19kgvty"
+      className="cf-16vpre1"
       role={null}
     >
       <span
@@ -445,11 +445,11 @@ exports[`should render with collapsed items 1`] = `
 >
   <ul
     aria-describedby={null}
-    className="cf-123w5k0"
+    className="cf-y1rhga"
     role="navigation"
   >
     <li
-      className="cf-cng1d4"
+      className="cf-xqpbdc"
       role={null}
     >
       <a
@@ -465,7 +465,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -478,7 +478,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role="presentation"
     >
       <span
@@ -491,7 +491,7 @@ exports[`should render with collapsed items 1`] = `
       </span>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -504,7 +504,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -517,7 +517,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-1qt7h5z"
+      className="cf-twatip"
       role={null}
     >
       <span
@@ -528,7 +528,7 @@ exports[`should render with collapsed items 1`] = `
       </span>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -541,7 +541,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -554,7 +554,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role="presentation"
     >
       <span
@@ -567,7 +567,7 @@ exports[`should render with collapsed items 1`] = `
       </span>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-1o2wowu"
       role={null}
     >
       <a
@@ -580,7 +580,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-cng1d4"
+      className="cf-xqpbdc"
       role={null}
     >
       <a

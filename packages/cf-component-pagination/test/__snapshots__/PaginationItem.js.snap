@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <li
-  className="cf-pqe0gs"
+  className="cf-1o2wowu"
   role={null}
 >
   <a
@@ -18,7 +18,7 @@ exports[`should render 1`] = `
 
 exports[`should render active 1`] = `
 <li
-  className="cf-n5qcfj"
+  className="cf-twatip"
   role={null}
 >
   <span
@@ -32,7 +32,7 @@ exports[`should render active 1`] = `
 
 exports[`should render active dot 1`] = `
 <li
-  className="cf-v754zs"
+  className="cf-1j3s92u"
   role={null}
 >
   <span
@@ -46,7 +46,7 @@ exports[`should render active dot 1`] = `
 
 exports[`should render active next 1`] = `
 <li
-  className="cf-nlid5i"
+  className="cf-1xiqso8"
   role={null}
 >
   <span
@@ -60,7 +60,7 @@ exports[`should render active next 1`] = `
 
 exports[`should render active prev 1`] = `
 <li
-  className="cf-nlid5i"
+  className="cf-1xiqso8"
   role={null}
 >
   <span
