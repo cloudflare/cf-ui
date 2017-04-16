@@ -9,17 +9,21 @@ export default baseTheme => ({
   colorActive: baseTheme.colorWhite,
   colorDisabled: baseTheme.colorGrayBorder,
   zIndexActive: 1,
-  border: '1px solid rgba(0, 0, 0, .15)',
-  borderBottomWidth: '2px',
-  'borderTopLeftRadius:first-child': '3px',
-  'borderBottomLeftRadius:first-child': '3px',
-  'borderTopLeftRadius:last-child': '3px',
-  'borderBottomLeftRadius:last-child': '3px',
   dot: {
     width: '.5rem',
     height: '.5rem',
     margin: '1rem',
     borderRadius: '50%',
-    borderBottomWidth: '1px'
+    border: '1px solid rgba(0, 0, 0, .15)'
+  },
+  next: {
+    backgroundColor: baseTheme.colorBlueLight,
+    color: baseTheme.colorWhite,
+    borderRadius: '3px'
+  },
+  prev: {
+    backgroundColor: baseTheme.colorBlueLight,
+    color: baseTheme.colorWhite,
+    borderRadius: '3px'
   }
 });

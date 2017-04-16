@@ -30,14 +30,6 @@ const normal = ({ theme, type: itemType }) => ({
   color: theme.color,
   border: theme.border,
   borderBottomWidth: theme.borderBottomWidth,
-  '&:first-child': {
-    borderTopLeftRadius: theme['borderTopLeftRadius:first-child'],
-    borderBottomLeftRadius: theme['borderBottomLeftRadius:first-child']
-  },
-  '&:last-child': {
-    borderTopLeftRadius: theme['borderTopLeftRadius:last-child'],
-    borderBottomLeftRadius: theme['borderBottomLeftRadius:last-child']
-  },
   ...theme[itemType]
 });
 
