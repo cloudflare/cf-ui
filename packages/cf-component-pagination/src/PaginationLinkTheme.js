@@ -18,5 +18,7 @@ export default baseTheme => ({
     paddingBottom: '1.5em',
     paddingLeft: '1em',
     paddingRight: '1.5em'
-  }
+  },
+  next: {},
+  prev: {}
 });
