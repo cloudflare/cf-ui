@@ -28,6 +28,18 @@ test('should render small size', () => {
   expect(component.toJSON()).toMatchSnapshot();
 });
 
+test('should render bold size', () => {
+  const Text = applyTheme(TextUnstyled, () => ({
+    fontSizeBold: '1rem',
+    fontWeightBold: 600
+  }));
+
+  const component = renderer.create(
+    felaTestContext(<Text size="bold">Hello</Text>)
+  );
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
 test('should render align', () => {
   const Text = applyTheme(TextUnstyled, () => ({
     textAlignCenter: 'center'

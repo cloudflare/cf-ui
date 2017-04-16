@@ -27,7 +27,7 @@ class Text extends React.Component {
 }
 
 Text.propTypes = {
-  size: PropTypes.oneOf(['normal', 'small']),
+  size: PropTypes.oneOf(['normal', 'small', 'bold']),
   align: PropTypes.oneOf(['start', 'center', 'justify', 'end']),
   type: PropTypes.oneOf(['info', 'success', 'warning', 'error', 'muted']),
   case: PropTypes.oneOf(['capitalize', 'titlecase', 'lowercase', 'uppercase']),

@@ -8,6 +8,14 @@ exports[`should render align 1`] = `
 </div>
 `;
 
+exports[`should render bold size 1`] = `
+<div
+  className="cf-z310y"
+>
+  Hello
+</div>
+`;
+
 exports[`should render lowercase 1`] = `
 <div
   className="cf-1ez8i2i"
