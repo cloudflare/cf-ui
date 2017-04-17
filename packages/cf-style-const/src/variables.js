@@ -14,6 +14,20 @@ export default {
     seven: 'linear-gradient(left, #F69259, #FFDB6F)',
     eight: 'linear-gradient(left, #85CBA8, #FFDB6F)'
   },
+  color: {
+    rain: '#408BC9',
+    sky: '#76C4E2',
+    dew: '#85CBA8',
+    twilight: '#8176B5',
+    sunset: '#BA77B1',
+    dawn: '#F16975',
+    sunrise: '#F69259',
+    lightning: '#FFDB6F',
+    night: '#404041',
+    dusk: '#4D4D4F',
+    storm: '#808285',
+    hail: '#BCBEC0'
+  },
   fontSize: '16px',
   boxShadow: '0 0 20px 0 rgba(136,136,136,0.50)',
   inputFontSize: '13px',
