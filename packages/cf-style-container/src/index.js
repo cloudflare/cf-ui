@@ -15,13 +15,18 @@ const createComponent = (rule, type = 'div', passThroughProps = []) =>
       : passThroughProps
   );
 
-const applyTheme = (ComponentToWrap, theme) => {
+const applyTheme = (
+  ComponentToWrap,
+  mainTheme = () => {},
+  customTheme = () => {}
+) => {
   class ThemedComponent extends Component {
     getChildContext() {
       return {
         theme: {
           ...(this.context.theme || {}),
-          ...theme(this.context.theme)
+          ...mainTheme(this.context.theme),
+          ...customTheme(this.context.theme)
         }
       };
     }

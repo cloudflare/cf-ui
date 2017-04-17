@@ -88,7 +88,7 @@ export default createComponentStyles({ mainStyles, legendStyles }, FormFieldset)
 Notice that rules are now an object. The names you chose will be used for classNames
 accessible as `styles.mainStyles` and `styles.legendStyles` in this case.
 
-### applyTheme(Component, theme)
+### applyTheme(Component, mainTheme, customTheme)
 
 And HOC that ties a Fela component with the theme (adds the theme to its context).
 
@@ -98,7 +98,10 @@ import HeadingTheme from './HeadingTheme';
 
 import { applyTheme } from 'cf-style-container';
 
-const Heading = applyTheme(HeadingUnstyled, HeadingTheme);
+// overrides HeadingTheme fontWeight1
+const CustomTheme = () => { fontWeight1: 600 };
+
+const Heading = applyTheme(HeadingUnstyled, HeadingTheme, CustomTheme);
 
 // themed component
 <Heading />
