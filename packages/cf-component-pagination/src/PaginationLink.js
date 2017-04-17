@@ -1,7 +1,7 @@
 import React, { PropTypes, Component } from 'react';
 import { createComponent } from 'cf-style-container';
 
-const styles = ({ theme, disabled, active }) => ({
+const styles = ({ theme, disabled, active, type: linkType }) => ({
   position: theme.position,
   display: theme.display,
   paddingTop: theme.paddingTop,
@@ -14,7 +14,8 @@ const styles = ({ theme, disabled, active }) => ({
   ':focus': {
     zIndex: theme['zIndex:focus']
   },
-  cursor: (disabled && theme.cursorDisabled) || (active && theme.cursorActive)
+  cursor: (disabled && theme.cursorDisabled) || (active && theme.cursorActive),
+  ...theme[linkType]
 });
 
 class PaginationLink extends Component {
@@ -53,6 +54,14 @@ class PaginationLink extends Component {
 }
 
 PaginationLink.propTypes = {
+  type: PropTypes.oneOf([
+    'number',
+    'next',
+    'prev',
+    'ellipsis',
+    'loading',
+    'dot'
+  ]),
   children: PropTypes.node,
   onClick: PropTypes.func.isRequired,
   clickable: PropTypes.bool,
