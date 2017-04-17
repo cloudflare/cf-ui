@@ -11,7 +11,6 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-component-heading": "^4.2.1",
     "cf-component-icon": "^2.2.0",
     "cf-style-container": "^1.0.0",
     "react-addons-css-transition-group": "^0.14.2 || ^15.0.0-0",
