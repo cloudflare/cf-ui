@@ -1,6 +1,8 @@
 import React, { PropTypes } from 'react';
 import { createComponent } from 'cf-style-container';
-import capitalize from 'capitalize';
+import capitalizeWord from 'capitalize';
+
+const capitalize = str => str.split('-').map(w => capitalizeWord(w)).join('');
 
 const styles = ({ theme, size, weight, align, type, case: textCase }) => ({
   color: type && theme[`color${capitalize(type)}`],
@@ -28,7 +30,7 @@ class Text extends React.Component {
 
 Text.propTypes = {
   size: PropTypes.oneOf(['normal', 'small']),
-  weight: PropTypes.oneOf(['normal', 'bold']),
+  weight: PropTypes.oneOf(['normal', 'semi-bold', 'bold']),
   align: PropTypes.oneOf(['start', 'center', 'justify', 'end']),
   type: PropTypes.oneOf(['info', 'success', 'warning', 'error', 'muted']),
   case: PropTypes.oneOf(['capitalize', 'titlecase', 'lowercase', 'uppercase']),
