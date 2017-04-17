@@ -30,12 +30,12 @@ test('should render small size', () => {
 
 test('should render bold size', () => {
   const Text = applyTheme(TextUnstyled, () => ({
-    fontSizeBold: '1rem',
+    fontSizeNormal: '1rem',
     fontWeightBold: 600
   }));
 
   const component = renderer.create(
-    felaTestContext(<Text size="bold">Hello</Text>)
+    felaTestContext(<Text size="normal" weight="bold">Hello</Text>)
   );
   expect(component.toJSON()).toMatchSnapshot();
 });

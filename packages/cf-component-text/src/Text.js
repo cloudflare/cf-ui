@@ -2,11 +2,11 @@ import React, { PropTypes } from 'react';
 import { createComponent } from 'cf-style-container';
 import capitalize from 'capitalize';
 
-const styles = ({ theme, size, align, type, case: textCase }) => ({
+const styles = ({ theme, size, weight, align, type, case: textCase }) => ({
   color: type && theme[`color${capitalize(type)}`],
   lineHeight: size && theme[`lineHeight${capitalize(size)}`],
   fontSize: size && theme[`fontSize${capitalize(size)}`],
-  fontWeight: size && theme[`fontWeight${capitalize(size)}`],
+  fontWeight: weight && theme[`fontWeight${capitalize(weight)}`],
   textAlign: align && theme[`textAlign${capitalize(align)}`],
   textTransform: textCase && theme[`textTransform${capitalize(textCase)}`],
   '&:first-letter': {
@@ -27,12 +27,17 @@ class Text extends React.Component {
 }
 
 Text.propTypes = {
-  size: PropTypes.oneOf(['normal', 'small', 'bold']),
+  size: PropTypes.oneOf(['normal', 'small']),
+  weight: PropTypes.oneOf(['normal', 'bold']),
   align: PropTypes.oneOf(['start', 'center', 'justify', 'end']),
   type: PropTypes.oneOf(['info', 'success', 'warning', 'error', 'muted']),
   case: PropTypes.oneOf(['capitalize', 'titlecase', 'lowercase', 'uppercase']),
   className: PropTypes.string.isRequired,
   children: PropTypes.node
+};
+
+Text.defaultProps = {
+  weight: 'normal'
 };
 
 export default createComponent(styles, Text);
