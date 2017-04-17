@@ -26,7 +26,7 @@ exports[`should render lowercase 1`] = `
 
 exports[`should render normal size 1`] = `
 <div
-  className="cf-1wd7cvk"
+  className="cf-jgz5pd"
 >
   Hello
 </div>
