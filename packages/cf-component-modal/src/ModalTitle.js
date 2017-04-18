@@ -4,9 +4,9 @@ import { applyTheme } from 'cf-style-container';
 class ModalTitle extends React.Component {
   render() {
     return (
-      <h3 className="cf-modal__title">
+      <h1 className="cf-modal__title">
         {this.props.children}
-      </h3>
+      </h1>
     );
   }
 }
