@@ -88,7 +88,7 @@ export default createComponentStyles({ mainStyles, legendStyles }, FormFieldset)
 Notice that rules are now an object. The names you chose will be used for classNames
 accessible as `styles.mainStyles` and `styles.legendStyles` in this case.
 
-### applyTheme(Component, mainTheme, customTheme)
+### applyTheme(Component, ...themes)
 
 And HOC that ties a Fela component with the theme (adds the theme to its context).
 
