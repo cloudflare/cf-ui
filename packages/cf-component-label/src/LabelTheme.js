@@ -18,10 +18,10 @@ export default baseTheme => {
     webkitTextStroke: 0,
     whiteSpace: 'nowrap',
 
-    defaultBackgroundColor: baseTheme.colorGray,
-    infoBackgroundColor: baseTheme.colorInfo,
-    successBackgroundColor: baseTheme.colorSuccess,
-    warningBackgroundColor: baseTheme.colorWarning,
-    errorBackgroundColor: baseTheme.colorError
+    defaultBackgroundColor: baseTheme.color.cement,
+    infoBackgroundColor: baseTheme.color.marine,
+    successBackgroundColor: baseTheme.color.grass,
+    warningBackgroundColor: baseTheme.color.tangerine,
+    errorBackgroundColor: baseTheme.color.apple
   };
 };
