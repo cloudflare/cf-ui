@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "fela": "^4.3.2",
+    "merge-options": "0.0.64",
     "react-fela": "^4.2.5"
   },
   "peerDependencies": {
