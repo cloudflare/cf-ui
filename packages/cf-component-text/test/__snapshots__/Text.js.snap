@@ -8,6 +8,14 @@ exports[`should render align 1`] = `
 </div>
 `;
 
+exports[`should render bold size 1`] = `
+<div
+  className="cf-e0qi9f"
+>
+  Hello
+</div>
+`;
+
 exports[`should render lowercase 1`] = `
 <div
   className="cf-1ez8i2i"
@@ -18,7 +26,15 @@ exports[`should render lowercase 1`] = `
 
 exports[`should render normal size 1`] = `
 <div
-  className="cf-1wd7cvk"
+  className="cf-jgz5pd"
+>
+  Hello
+</div>
+`;
+
+exports[`should render semi-bold size 1`] = `
+<div
+  className="cf-z310y"
 >
   Hello
 </div>
