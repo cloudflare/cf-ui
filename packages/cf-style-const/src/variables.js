@@ -15,6 +15,7 @@ export default {
     eight: 'linear-gradient(left, #85CBA8, #FFDB6F)'
   },
   color: {
+    //Style guide colors
     rain: '#408BC9',
     sky: '#76C4E2',
     dew: '#85CBA8',
@@ -26,7 +27,13 @@ export default {
     night: '#404041',
     dusk: '#4D4D4F',
     storm: '#808285',
-    hail: '#BCBEC0'
+    hail: '#BCBEC0',
+    //current colors
+    cement:'#7D7D7D',
+    grass:'#9BCA3E',
+    marine:'#2F7BBF',
+    tangerine:'#FF7900',
+    apple:'#BD2527'
   },
   fontSize: '16px',
   boxShadow: '0 0 20px 0 rgba(136,136,136,0.50)',
