@@ -5,12 +5,12 @@ exports[`should render 1`] = `
   className="cf-cy1e5a"
 >
   <legend
-    className="cf-yhpbj6"
+    className="cf-1peqvck"
   >
     Legend
   </legend>
   <div
-    className="cf-ak4xtz"
+    className="cf-1culcac"
   >
     FormFieldset
   </div>

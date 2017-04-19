@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { render, unmountComponentAtNode } from 'react-dom';
-import TestUtils from 'react-addons-test-utils';
+import TestUtils from 'react-dom/test-utils';
 import { Notification } from '../../cf-component-notifications/src/index';
 import jsdom from 'jsdom';
 

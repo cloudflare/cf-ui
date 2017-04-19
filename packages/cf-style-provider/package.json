@@ -23,9 +23,10 @@
     "fela-plugin-unit": "^4.3.2",
     "fela-plugin-validator": "^4.3.2",
     "react": "^15.4.2",
-    "react-fela": "^4.3.2"
+    "react-fela": "^4.3.2",
+    "prop-types": "^15.5.8"
   },
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
+    "react": "^0.14.9 || ^15.0.0-0 || ^16.0.0-0"
   }
 }

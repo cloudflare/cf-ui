@@ -11,9 +11,10 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "react-select": "1.0.0-rc.3 || 1.x"
+    "react-select": "1.0.0-rc.3 || 1.x",
+    "prop-types": "^15.5.8"
   },
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
+    "react": "^0.14.9 || ^15.0.0-0 || ^16.0.0-0"
   }
 }
