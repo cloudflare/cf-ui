@@ -12,10 +12,10 @@
   },
   "dependencies": {
     "cf-style-container": "^1.0.0",
-    "cf-style-const": "^1.1.0"
+    "cf-style-const": "^1.1.0",
+    "prop-types": "^15.5.8"
   },
   "peerDependencies": {
-    "prop-types": "^15.0.0-0 || ^16.0.0-0",
-    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
+    "react": "^0.14.9 || ^15.0.0-0 || ^16.0.0-0"
   }
 }
