@@ -25,10 +25,8 @@ class Icon extends React.Component {
 }
 
 Icon.propTypes = {
-  label: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.oneOf([false])
-  ]).isRequired,
+  label: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([false])])
+    .isRequired,
   type: PropTypes.oneOf(TYPES).isRequired,
   size: PropTypes.oneOf(SIZES),
   border: PropTypes.bool,
