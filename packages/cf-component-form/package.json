@@ -1,7 +1,7 @@
 {
   "name": "cf-component-form",
   "description": "Cloudflare Form Component",
-  "version": "4.2.1",
+  "version": "4.3.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -14,7 +14,7 @@
     "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
   },
   "dependencies": {
-    "cf-style-container": "^1.0.0",
+    "cf-style-container": "^1.1.0",
     "polished": "^1.0.0"
   }
 }
