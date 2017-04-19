@@ -1,7 +1,7 @@
 {
   "name": "cf-component-link",
   "description": "Cloudflare Link Component",
-  "version": "4.2.0",
+  "version": "4.2.1",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",

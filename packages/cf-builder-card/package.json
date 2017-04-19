@@ -1,7 +1,7 @@
 {
   "name": "cf-builder-card",
   "description": "Cloudflare Card Builder",
-  "version": "2.3.2",
+  "version": "2.3.3",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -11,8 +11,8 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-component-card": "^1.4.3",
-    "cf-component-dynamic-content": "^2.2.0",
+    "cf-component-card": "^1.4.4",
+    "cf-component-dynamic-content": "^2.2.1",
     "cf-util-markdown": "^3.2.0",
     "react-redux": "^3.1.0",
     "prop-types": "^15.5.8"
