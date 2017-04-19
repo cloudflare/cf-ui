@@ -44,14 +44,13 @@ const applyTheme = (ComponentToWrap, primaryTheme = () => {}, ...themes) => {
 };
 
 const createComponentStyles = (styleFunctions, component) => {
-  const mapStylesToProps = props =>
-    renderer => {
-      const toRender = {};
-      for (const style in styleFunctions) {
-        toRender[style] = renderer.renderRule(styleFunctions[style], props);
-      }
-      return toRender;
-    };
+  const mapStylesToProps = props => renderer => {
+    const toRender = {};
+    for (const style in styleFunctions) {
+      toRender[style] = renderer.renderRule(styleFunctions[style], props);
+    }
+    return toRender;
+  };
   return connect(mapStylesToProps)(component);
 };
 

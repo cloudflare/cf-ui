@@ -38,10 +38,8 @@ class Radio extends React.Component {
 }
 
 Radio.propTypes = {
-  label: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.oneOf([false])
-  ]).isRequired,
+  label: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([false])])
+    .isRequired,
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   checked: PropTypes.bool.isRequired,

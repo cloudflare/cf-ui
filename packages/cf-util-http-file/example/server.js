@@ -7,9 +7,11 @@ const app = express();
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')));
 app.get('/bundle.js', (req, res) =>
-  res.sendFile(path.join(__dirname, 'bundle.js')));
+  res.sendFile(path.join(__dirname, 'bundle.js'))
+);
 app.get('/styles.css', (req, res) =>
-  res.sendFile(path.join(__dirname, 'styles.css')));
+  res.sendFile(path.join(__dirname, 'styles.css'))
+);
 
 const tmp = path.join(__dirname, 'tmp');
 const upload = multer({ dest: tmp });
