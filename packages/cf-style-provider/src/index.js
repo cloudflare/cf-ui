@@ -43,9 +43,14 @@ export const createRenderer = opts => {
   });
 };
 
-export const StyleProvider = (
-  { selectorPrefix, dev, cssNode, fontNode, children, ...restProps }
-) => {
+export const StyleProvider = ({
+  selectorPrefix,
+  dev,
+  cssNode,
+  fontNode,
+  children,
+  ...restProps
+}) => {
   const renderer = createRenderer({
     selectorPrefix,
     dev,

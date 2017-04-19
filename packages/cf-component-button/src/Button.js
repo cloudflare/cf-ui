@@ -152,13 +152,8 @@ Button.propTypes = {
   spaced: PropTypes.bool,
   className: PropTypes.string.isRequired,
   group: PropTypes.oneOf(['first', 'inbetween', 'last']),
-  type: PropTypes.oneOf([
-    'default',
-    'primary',
-    'success',
-    'warning',
-    'danger'
-  ]).isRequired,
+  type: PropTypes.oneOf(['default', 'primary', 'success', 'warning', 'danger'])
+    .isRequired,
   disabled: PropTypes.bool,
   loading: PropTypes.bool,
   children: PropTypes.node

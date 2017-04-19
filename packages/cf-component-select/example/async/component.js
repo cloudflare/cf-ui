@@ -12,18 +12,15 @@ class SelectComponent extends React.Component {
   }
 
   getOptions(input, callback) {
-    setTimeout(
-      () => {
-        return callback(null, {
-          options: [
-            { value: 'one', label: 'One' },
-            { value: 'two', label: 'Two' },
-            { value: 'three', label: 'Three' }
-          ].filter(option => option.value.indexOf(input) >= 0)
-        });
-      },
-      500
-    );
+    setTimeout(() => {
+      return callback(null, {
+        options: [
+          { value: 'one', label: 'One' },
+          { value: 'two', label: 'Two' },
+          { value: 'three', label: 'Three' }
+        ].filter(option => option.value.indexOf(input) >= 0)
+      });
+    }, 500);
   }
 
   render() {

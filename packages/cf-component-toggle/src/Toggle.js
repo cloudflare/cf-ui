@@ -46,10 +46,8 @@ class Toggle extends React.Component {
 }
 
 Toggle.propTypes = {
-  label: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.oneOf([false])
-  ]).isRequired,
+  label: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([false])])
+    .isRequired,
   name: PropTypes.string,
   value: PropTypes.bool,
   onChange: PropTypes.func,

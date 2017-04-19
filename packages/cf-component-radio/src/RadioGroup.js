@@ -27,10 +27,8 @@ RadioGroup.propTypes = {
   onChange: PropTypes.func.isRequired,
   options: PropTypes.arrayOf(
     PropTypes.shape({
-      label: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.oneOf([false])
-      ]).isRequired,
+      label: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([false])])
+        .isRequired,
       name: PropTypes.string.isRequired,
       value: PropTypes.string.isRequired
     })

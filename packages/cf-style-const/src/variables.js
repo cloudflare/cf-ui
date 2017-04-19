@@ -29,11 +29,11 @@ export default {
     storm: '#808285',
     hail: '#BCBEC0',
     //current colors
-    cement:'#7D7D7D',
-    grass:'#9BCA3E',
-    marine:'#2F7BBF',
-    tangerine:'#FF7900',
-    apple:'#BD2527'
+    cement: '#7D7D7D',
+    grass: '#9BCA3E',
+    marine: '#2F7BBF',
+    tangerine: '#FF7900',
+    apple: '#BD2527'
   },
   fontSize: '16px',
   boxShadow: '0 0 20px 0 rgba(136,136,136,0.50)',

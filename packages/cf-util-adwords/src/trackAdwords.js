@@ -1,7 +1,8 @@
 import once from 'lodash/once';
 import promisescript from 'promisescript';
 
-const ADWORDS_ASYNC_SCRIPT = 'https://www.googleadservices.com/pagead/conversion_async.js';
+const ADWORDS_ASYNC_SCRIPT =
+  'https://www.googleadservices.com/pagead/conversion_async.js';
 const ADWORDS_GLOBAL = 'google_trackConversion';
 
 const getScript = once(() =>
@@ -9,7 +10,8 @@ const getScript = once(() =>
     url: ADWORDS_ASYNC_SCRIPT,
     type: 'script',
     exposed: ADWORDS_GLOBAL
-  }));
+  })
+);
 
 function track(id, label, params, remarketingOnly = false) {
   return getScript().then(() => {
