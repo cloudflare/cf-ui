@@ -12,9 +12,10 @@
   },
   "dependencies": {
     "cf-component-textarea": "^3.3.0",
-    "react-dom": "^0.14.2 || ^15.0.0-0"
+    "react-dom": "^0.14.2 || ^15.0.0-0",
+    "prop-types": "^15.5.8"
   },
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
+    "react": "^0.14.9 || ^15.0.0-0 || ^16.0.0-0"
   }
 }

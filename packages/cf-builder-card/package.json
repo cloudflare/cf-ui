@@ -14,9 +14,10 @@
     "cf-component-card": "^1.4.3",
     "cf-component-dynamic-content": "^2.2.0",
     "cf-util-markdown": "^3.2.0",
-    "react-redux": "^3.1.0"
+    "react-redux": "^3.1.0",
+    "prop-types": "^15.5.8"
   },
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
+    "react": "^0.14.9 || ^15.0.0-0 || ^16.0.0-0"
   }
 }

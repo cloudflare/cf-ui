@@ -1,7 +1,8 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { default as ReactModal2 } from 'react-modal2';
 import { Gateway } from 'react-gateway';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import CSSTransitionGroup from 'react-transition-group/CSSTransitionGroup';
 
 class Modal extends React.Component {
   render() {
@@ -17,7 +18,7 @@ class Modal extends React.Component {
 
     return (
       <Gateway into="modal">
-        <ReactCSSTransitionGroup
+        <CSSTransitionGroup
           transitionName="cf-transition-modal"
           transitionAppear={true}
           transitionAppearTimeout={200}
@@ -39,7 +40,7 @@ class Modal extends React.Component {
                 </ReactModal2>
               </div>
             </div>}
-        </ReactCSSTransitionGroup>
+        </CSSTransitionGroup>
       </Gateway>
     );
   }

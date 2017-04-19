@@ -1,10 +1,10 @@
 import React, {
   Component,
-  PropTypes,
   Children,
   isValidElement,
   cloneElement
 } from 'react';
+import PropTypes from 'prop-types';
 import { createRenderer as createFelaRenderer } from 'fela';
 import prefixer from 'fela-plugin-prefixer';
 import fallbackValue from 'fela-plugin-fallback-value';
@@ -68,9 +68,9 @@ export const StyleProvider = ({
 
 StyleProvider.defaultProps = defaultOpts;
 StyleProvider.propTypes = {
-  dev: React.PropTypes.bool,
-  selectorPrefix: React.PropTypes.string,
-  cssNode: React.PropTypes.object,
-  fontNode: React.PropTypes.object,
+  dev: PropTypes.bool,
+  selectorPrefix: PropTypes.string,
+  cssNode: PropTypes.object,
+  fontNode: PropTypes.object,
   children: PropTypes.node.isRequired
 };
