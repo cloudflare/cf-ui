@@ -6,6 +6,7 @@ import {
   ThemeProvider,
   connect
 } from 'react-fela';
+import mergeOptions from 'merge-options';
 
 const createComponent = (rule, type = 'div', passThroughProps = []) =>
   createFelaComponent(
@@ -16,13 +17,19 @@ const createComponent = (rule, type = 'div', passThroughProps = []) =>
       : passThroughProps
   );
 
-const applyTheme = (ComponentToWrap, theme) => {
+const applyTheme = (ComponentToWrap, primaryTheme = () => {}, ...themes) => {
   class ThemedComponent extends Component {
     getChildContext() {
+      const contextTheme = this.context.theme || {};
+      let resultTheme = { ...contextTheme, ...primaryTheme(contextTheme) };
+      for (const theme of themes) {
+        if (theme) {
+          resultTheme = { ...mergeOptions(resultTheme, theme(contextTheme)) };
+        }
+      }
       return {
         theme: {
-          ...(this.context.theme || {}),
-          ...theme(this.context.theme)
+          ...resultTheme
         }
       };
     }

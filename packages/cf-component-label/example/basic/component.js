@@ -1,5 +1,5 @@
 import React from 'react';
-import Label from 'cf-component-label';
+import { Label } from 'cf-component-label';
 
 const LabelComponent = () => (
   <p>

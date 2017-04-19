@@ -1,8 +1,6 @@
 import { darken, lighten } from 'polished';
-import { checkBaseTheme } from 'cf-style-const';
 
 export default baseTheme => {
-  checkBaseTheme(baseTheme, 'ButtonTheme');
   const defaultBorder = darken(
     baseTheme.colorOffsetDark,
     baseTheme.colorGrayLight

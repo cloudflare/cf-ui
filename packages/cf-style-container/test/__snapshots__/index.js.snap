@@ -8,6 +8,14 @@ exports[`applyTheme should overwrite the baseTheme and update the context 1`] = 
 />
 `;
 
+exports[`applyTheme should overwrite the mainTheme and update the context 1`] = `
+<div
+  className="cf-1tsdo2i"
+  id={undefined}
+  style={undefined}
+/>
+`;
+
 exports[`createComponent creates empty component 1`] = `
 <div
   className=""

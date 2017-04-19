@@ -4,7 +4,39 @@ const colorOffsetLight = 0.15;
 const colorOffsetDark = 0.07;
 
 export default {
+  gradient: {
+    primary: 'linear-gradient(left, #76C4E2, #85CBA8)',
+    two: 'linear-gradient(left, #8176B5, #85CBA8)',
+    three: 'linear-gradient(left, #8176B5, #76C4E2)',
+    four: 'linear-gradient(left, #8176B5, #BA77B1)',
+    five: 'linear-gradient(left, #8176B5, #F16975)',
+    six: 'linear-gradient(left, #F16975, #F69259)',
+    seven: 'linear-gradient(left, #F69259, #FFDB6F)',
+    eight: 'linear-gradient(left, #85CBA8, #FFDB6F)'
+  },
+  color: {
+    //Style guide colors
+    rain: '#408BC9',
+    sky: '#76C4E2',
+    dew: '#85CBA8',
+    twilight: '#8176B5',
+    sunset: '#BA77B1',
+    dawn: '#F16975',
+    sunrise: '#F69259',
+    lightning: '#FFDB6F',
+    night: '#404041',
+    dusk: '#4D4D4F',
+    storm: '#808285',
+    hail: '#BCBEC0',
+    //current colors
+    cement:'#7D7D7D',
+    grass:'#9BCA3E',
+    marine:'#2F7BBF',
+    tangerine:'#FF7900',
+    apple:'#BD2527'
+  },
   fontSize: '16px',
+  boxShadow: '0 0 20px 0 rgba(136,136,136,0.50)',
   inputFontSize: '13px',
   lineHeight: 1.5,
   inputLineHeight: 1.4,
@@ -60,5 +92,6 @@ export default {
   colorPurpleLight: lighten(colorOffsetLight, '#d91698'),
   colorPurpleDark: darken(colorOffsetDark, '#d91698'),
   colorTwitterBlue: '#00aced',
-  colorFacebookBlue: '#3b5998'
+  colorFacebookBlue: '#3b5998',
+  colorMainBackground: '#e6e6e6'
 };

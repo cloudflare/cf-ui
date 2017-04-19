@@ -1,7 +1,7 @@
 {
   "name": "cf-style-container",
   "description": "Cloudflare Style Container",
-  "version": "0.2.3",
+  "version": "1.0.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "fela": "^4.3.2",
+    "merge-options": "0.0.64",
     "react-fela": "^4.2.5"
   },
   "peerDependencies": {

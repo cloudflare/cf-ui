@@ -22,6 +22,22 @@ test('applyTheme should overwrite the baseTheme and update the context', () => {
   expect(component.toJSON()).toMatchSnapshot();
 });
 
+test('applyTheme should overwrite the mainTheme and update the context', () => {
+  const ThemedFoo = applyTheme(
+    createComponent(props => ({
+      color: props.theme.color
+    })),
+    () => ({
+      color: 'yellow'
+    }),
+    () => ({
+      color: 'blue'
+    })
+  );
+  const component = renderer.create(felaTestContext(<ThemedFoo />));
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
 test('createComponent creates empty component', () => {
   const FelaComponent = createComponent(() => {});
   const component = renderer.create(felaTestContext(<FelaComponent />));

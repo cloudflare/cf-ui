@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <li
-  className="cf-cng1d4"
+  className="cf-1o2wowu"
   role={null}
 >
   <a
@@ -18,7 +18,49 @@ exports[`should render 1`] = `
 
 exports[`should render active 1`] = `
 <li
-  className="cf-1qt7h5z"
+  className="cf-twatip"
+  role={null}
+>
+  <span
+    aria-label="PaginationLabel"
+    className="cf-3opov"
+  >
+    PaginationItem
+  </span>
+</li>
+`;
+
+exports[`should render active dot 1`] = `
+<li
+  className="cf-1j3s92u"
+  role={null}
+>
+  <span
+    aria-label="PaginationLabel"
+    className="cf-ffljdr"
+  >
+    PaginationItem
+  </span>
+</li>
+`;
+
+exports[`should render active next 1`] = `
+<li
+  className="cf-1xiqso8"
+  role={null}
+>
+  <span
+    aria-label="PaginationLabel"
+    className="cf-3opov"
+  >
+    PaginationItem
+  </span>
+</li>
+`;
+
+exports[`should render active prev 1`] = `
+<li
+  className="cf-1xiqso8"
   role={null}
 >
   <span
@@ -32,7 +74,49 @@ exports[`should render active 1`] = `
 
 exports[`should render disabled 1`] = `
 <li
-  className="cf-19kgvty"
+  className="cf-u0p974"
+  role={null}
+>
+  <span
+    aria-label="PaginationLabel"
+    className="cf-3opov"
+  >
+    PaginationItem
+  </span>
+</li>
+`;
+
+exports[`should render disabled dot 1`] = `
+<li
+  className="cf-120e2hj"
+  role={null}
+>
+  <span
+    aria-label="PaginationLabel"
+    className="cf-ffljdr"
+  >
+    PaginationItem
+  </span>
+</li>
+`;
+
+exports[`should render disabled next 1`] = `
+<li
+  className="cf-16vpre1"
+  role={null}
+>
+  <span
+    aria-label="PaginationLabel"
+    className="cf-3opov"
+  >
+    PaginationItem
+  </span>
+</li>
+`;
+
+exports[`should render disabled prev 1`] = `
+<li
+  className="cf-16vpre1"
   role={null}
 >
   <span

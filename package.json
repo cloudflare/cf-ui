@@ -21,7 +21,7 @@
     "updated": "lerna updated --only-explicit-updates",
     "prettier": "node prettier.js",
     "clean": "lerna clean --yes && rimraf .jest",
-    "publish": "git pull --rebase && check-installed-dependencies && npm run build && lerna publish",
+    "publish": "git pull --rebase && check-installed-dependencies && npm run build && lerna publish --skip-temp-tag",
     "update-snapshot": "cross-env BABEL_ENV=commonjs jest --no-cache --updateSnapshot"
   },
   "devDependencies": {

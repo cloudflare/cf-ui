@@ -19,7 +19,7 @@ class CardDrawers extends React.Component {
   }
 
   handleLinkClick(id) {
-    this.props.onClick && this.props.onClick();
+    this.props.onClick && this.props.onClick(id);
 
     this.setState(state => ({
       active: state.active === id ? null : id

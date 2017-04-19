@@ -119,7 +119,8 @@ const styles = props => {
     ...radius(theme.borderRadius, props.group),
     textAlign: theme.textAlign,
     transition: theme.transition,
-    userSelect: theme.userSelect
+    userSelect: theme.userSelect,
+    float: theme.float
   };
 };
 
