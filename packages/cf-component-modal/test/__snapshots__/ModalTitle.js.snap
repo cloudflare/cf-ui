@@ -1,13 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render 1`] = `
-<div
+<h1
   className="cf-modal__title"
 >
-  <h3
-    className="cf-1phyxie"
-  >
-    ModalTitle
-  </h3>
-</div>
+  ModalTitle
+</h1>
 `;
