@@ -1,7 +1,7 @@
 {
   "name": "cf-component-toggle",
   "description": "Cloudflare Toggle Component",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -9,6 +9,9 @@
   "license": "BSD-3-Clause",
   "publishConfig": {
     "registry": "http://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "prop-types": "^15.5.8"
   },
   "peerDependencies": {
     "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"

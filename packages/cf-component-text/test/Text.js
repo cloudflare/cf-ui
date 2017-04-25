@@ -28,6 +28,30 @@ test('should render small size', () => {
   expect(component.toJSON()).toMatchSnapshot();
 });
 
+test('should render bold size', () => {
+  const Text = applyTheme(TextUnstyled, () => ({
+    fontSizeNormal: '1rem',
+    fontWeightBold: 700
+  }));
+
+  const component = renderer.create(
+    felaTestContext(<Text size="normal" weight="bold">Hello</Text>)
+  );
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('should render semi-bold size', () => {
+  const Text = applyTheme(TextUnstyled, () => ({
+    fontSizeNormal: '1rem',
+    fontWeightSemiBold: 600
+  }));
+
+  const component = renderer.create(
+    felaTestContext(<Text size="normal" weight="semi-bold">Hello</Text>)
+  );
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
 test('should render align', () => {
   const Text = applyTheme(TextUnstyled, () => ({
     textAlignCenter: 'center'

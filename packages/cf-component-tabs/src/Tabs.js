@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Viewport from 'cf-component-viewport';
 import Select from 'cf-component-select';
 

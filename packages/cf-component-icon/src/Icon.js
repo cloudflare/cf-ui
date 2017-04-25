@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { TYPES, SIZES } from './options';
 
 class Icon extends React.Component {
@@ -24,10 +25,8 @@ class Icon extends React.Component {
 }
 
 Icon.propTypes = {
-  label: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.oneOf([false])
-  ]).isRequired,
+  label: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([false])])
+    .isRequired,
   type: PropTypes.oneOf(TYPES).isRequired,
   size: PropTypes.oneOf(SIZES),
   border: PropTypes.bool,

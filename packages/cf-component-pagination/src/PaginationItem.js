@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Icon from 'cf-component-icon';
 import { combineRules, createComponent } from 'cf-style-container';
 import { PaginationLink } from './index';
@@ -23,24 +24,14 @@ const disabled = ({ disabled, theme }) => {
   };
 };
 
-const normal = ({ theme }) => ({
+const normal = ({ theme, type: itemType }) => ({
   float: theme.float,
   position: theme.position,
   backgroundColor: theme.backgroundColor,
   color: theme.color,
   border: theme.border,
   borderBottomWidth: theme.borderBottomWidth,
-  '&:first-child': {
-    borderTopLeftRadius: theme['borderTopLeftRadius:first-child'],
-    borderBottomLeftRadius: theme['borderBottomLeftRadius:first-child']
-  },
-  '&:last-child': {
-    borderTopLeftRadius: theme['borderTopLeftRadius:last-child'],
-    borderBottomLeftRadius: theme['borderBottomLeftRadius:last-child']
-  },
-  '&+&': {
-    marginLeft: theme['marginLeft&+&']
-  }
+  ...theme[itemType]
 });
 
 const styles = combineRules(normal, active, disabled);
@@ -72,6 +63,7 @@ class PaginationItem extends React.Component {
           label={props.label}
           active={props.active}
           disabled={props.disabled}
+          type={props.type}
         />
       </li>
     );
@@ -84,7 +76,8 @@ PaginationItem.propTypes = {
     'next',
     'prev',
     'ellipsis',
-    'loading'
+    'loading',
+    'dot'
   ]).isRequired,
   label: PropTypes.string.isRequired,
   onClick: PropTypes.func.isRequired,

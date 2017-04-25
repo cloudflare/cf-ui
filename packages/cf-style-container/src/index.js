@@ -1,10 +1,12 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { combineRules } from 'fela';
 import {
   createComponent as createFelaComponent,
   ThemeProvider,
   connect
 } from 'react-fela';
+import mergeOptions from 'merge-options';
 
 const createComponent = (rule, type = 'div', passThroughProps = []) =>
   createFelaComponent(
@@ -15,13 +17,19 @@ const createComponent = (rule, type = 'div', passThroughProps = []) =>
       : passThroughProps
   );
 
-const applyTheme = (ComponentToWrap, theme) => {
+const applyTheme = (ComponentToWrap, primaryTheme = () => {}, ...themes) => {
   class ThemedComponent extends Component {
     getChildContext() {
+      const contextTheme = this.context.theme || {};
+      let resultTheme = { ...contextTheme, ...primaryTheme(contextTheme) };
+      for (const theme of themes) {
+        if (theme) {
+          resultTheme = { ...mergeOptions(resultTheme, theme(contextTheme)) };
+        }
+      }
       return {
         theme: {
-          ...(this.context.theme || {}),
-          ...theme(this.context.theme)
+          ...resultTheme
         }
       };
     }
@@ -37,14 +45,13 @@ const applyTheme = (ComponentToWrap, theme) => {
 };
 
 const createComponentStyles = (styleFunctions, component) => {
-  const mapStylesToProps = props =>
-    renderer => {
-      const toRender = {};
-      for (const style in styleFunctions) {
-        toRender[style] = renderer.renderRule(styleFunctions[style], props);
-      }
-      return toRender;
-    };
+  const mapStylesToProps = props => renderer => {
+    const toRender = {};
+    for (const style in styleFunctions) {
+      toRender[style] = renderer.renderRule(styleFunctions[style], props);
+    }
+    return toRender;
+  };
   return connect(mapStylesToProps)(component);
 };
 

@@ -36,13 +36,11 @@ class PaginationComponent extends React.Component {
       items.push(
         <PaginationItem
           key={i}
-          type="number"
+          type="dot"
           label={'Page ' + i}
           active={this.state.active === i}
           onClick={this.handleClickItem.bind(this, i)}
-        >
-          {i}
-        </PaginationItem>
+        />
       );
     }
 

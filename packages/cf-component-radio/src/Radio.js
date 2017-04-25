@@ -1,4 +1,6 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+
+import PropTypes from 'prop-types';
 
 class Radio extends React.Component {
   constructor(props) {
@@ -38,10 +40,8 @@ class Radio extends React.Component {
 }
 
 Radio.propTypes = {
-  label: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.oneOf([false])
-  ]).isRequired,
+  label: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([false])])
+    .isRequired,
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   checked: PropTypes.bool.isRequired,

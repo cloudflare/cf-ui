@@ -1,7 +1,9 @@
 export default baseTheme => ({
   fontSizeNormal: '1em',
-  fontWeightNormal: 400,
   fontSizeSmall: '.8em',
+  fontWeightNormal: 400,
+  fontWeightBold: 700,
+  fontWeightSemiBold: 600,
   lineHeightSmall: 1.3,
   textAlignStart: 'left',
   textAlignCenter: 'center',

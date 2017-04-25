@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import {
   createComponent,
   createComponentStyles,
@@ -16,6 +16,22 @@ test('applyTheme should overwrite the baseTheme and update the context', () => {
     })),
     () => ({
       color: 'yellow'
+    })
+  );
+  const component = renderer.create(felaTestContext(<ThemedFoo />));
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
+test('applyTheme should overwrite the mainTheme and update the context', () => {
+  const ThemedFoo = applyTheme(
+    createComponent(props => ({
+      color: props.theme.color
+    })),
+    () => ({
+      color: 'yellow'
+    }),
+    () => ({
+      color: 'blue'
     })
   );
   const component = renderer.create(felaTestContext(<ThemedFoo />));

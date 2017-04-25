@@ -6,6 +6,8 @@ const TextComponent = () => (
     <p>Specify a <code>size</code></p>
     <Text size="normal">Hello World</Text>
     <Text size="small">Hello World</Text>
+    <Text size="normal" weight="semi-bold">Hello World</Text>
+    <Text size="normal" weight="bold">Hello World</Text>
 
     <p>and/or an <code>align</code></p>
     <Text align="start">Hello World</Text>

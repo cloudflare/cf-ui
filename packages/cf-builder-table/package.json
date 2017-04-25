@@ -1,7 +1,7 @@
 {
   "name": "cf-builder-table",
   "description": "Cloudflare Table Builder",
-  "version": "2.2.2",
+  "version": "2.2.3",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -11,11 +11,12 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-component-table": "^2.4.0",
+    "cf-component-table": "^2.4.1",
     "raf": "^3.3.0",
-    "react-redux": "^3.1.0"
+    "react-redux": "^3.1.0",
+    "prop-types": "^15.5.8"
   },
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
+    "react": "^0.14.9 || ^15.0.0-0 || ^16.0.0-0"
   }
 }

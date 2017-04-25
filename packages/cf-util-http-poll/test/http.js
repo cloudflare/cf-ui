@@ -4,20 +4,17 @@ afterEach(() => fetch.mockClear());
 
 test('should poll until `isComplete` returns `true`', done => {
   function setupResponse(active) {
-    setTimeout(
-      () => {
-        fetch.mochResponse(
-          JSON.stringify({
-            active
-          }),
-          {
-            headers: { 'Content-Type': 'application/json' },
-            status: 200
-          }
-        );
-      },
-      5
-    );
+    setTimeout(() => {
+      fetch.mochResponse(
+        JSON.stringify({
+          active
+        }),
+        {
+          headers: { 'Content-Type': 'application/json' },
+          status: 200
+        }
+      );
+    }, 5);
   }
 
   let count = 0;

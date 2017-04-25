@@ -1,7 +1,7 @@
 {
   "name": "cf-component-tooltip",
   "description": "Cloudflare Tooltip Component",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -11,9 +11,10 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "tether-tooltip": "^1.1.0"
+    "tether-tooltip": "^1.1.0",
+    "prop-types": "^15.5.8"
   },
   "peerDependencies": {
-    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
+    "react": "^0.14.9 || ^15.0.0-0 || ^16.0.0-0"
   }
 }

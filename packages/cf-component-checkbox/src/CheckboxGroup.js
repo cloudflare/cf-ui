@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import Checkbox from './Checkbox';
 import includes from 'lodash/includes';
 
@@ -49,10 +50,8 @@ CheckboxGroup.propTypes = {
   onChange: PropTypes.func.isRequired,
   options: PropTypes.arrayOf(
     PropTypes.shape({
-      label: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.oneOf([false])
-      ]).isRequired,
+      label: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([false])])
+        .isRequired,
       name: PropTypes.string.isRequired,
       value: PropTypes.string.isRequired
     })

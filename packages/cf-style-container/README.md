@@ -25,7 +25,8 @@ Very similar to [createComponent](https://github.com/rofrischmann/fela/blob/mast
 You should use this HOC every time when you want to use Fela in your component and you need only one className (one rule function).
 
 ```jsx
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { createComponent } from 'cf-style-container';
 
 const styles = ({ theme, size }) => ({
@@ -54,7 +55,8 @@ export default createComponent(styles, Heading);
 Useful when you need multiple classNames (and rules) in one component.
 
 ```jsx
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { createComponentStyles } from 'cf-style-container';
 
 const mainStyles = ({ theme }) => ({
@@ -88,7 +90,7 @@ export default createComponentStyles({ mainStyles, legendStyles }, FormFieldset)
 Notice that rules are now an object. The names you chose will be used for classNames
 accessible as `styles.mainStyles` and `styles.legendStyles` in this case.
 
-### applyTheme(Component, theme)
+### applyTheme(Component, ...themes)
 
 And HOC that ties a Fela component with the theme (adds the theme to its context).
 
@@ -98,7 +100,10 @@ import HeadingTheme from './HeadingTheme';
 
 import { applyTheme } from 'cf-style-container';
 
-const Heading = applyTheme(HeadingUnstyled, HeadingTheme);
+// overrides HeadingTheme fontWeight1
+const CustomTheme = () => { fontWeight1: 600 };
+
+const Heading = applyTheme(HeadingUnstyled, HeadingTheme, CustomTheme);
 
 // themed component
 <Heading />

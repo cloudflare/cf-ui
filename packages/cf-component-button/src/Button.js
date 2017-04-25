@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { createComponent } from 'cf-style-container';
 
 const radius = (borderRadius, group) => {
@@ -118,7 +119,8 @@ const styles = props => {
     ...radius(theme.borderRadius, props.group),
     textAlign: theme.textAlign,
     transition: theme.transition,
-    userSelect: theme.userSelect
+    userSelect: theme.userSelect,
+    float: theme.float
   };
 };
 
@@ -151,13 +153,8 @@ Button.propTypes = {
   spaced: PropTypes.bool,
   className: PropTypes.string.isRequired,
   group: PropTypes.oneOf(['first', 'inbetween', 'last']),
-  type: PropTypes.oneOf([
-    'default',
-    'primary',
-    'success',
-    'warning',
-    'danger'
-  ]).isRequired,
+  type: PropTypes.oneOf(['default', 'primary', 'success', 'warning', 'danger'])
+    .isRequired,
   disabled: PropTypes.bool,
   loading: PropTypes.bool,
   children: PropTypes.node

@@ -58,18 +58,15 @@ class BuilderPagination extends React.Component {
 
     this.setState({ page, items });
 
-    setTimeout(
-      () => {
-        const items = this.state.items.slice();
+    setTimeout(() => {
+      const items = this.state.items.slice();
 
-        for (let i = start; i <= end; i++) {
-          items[i].isRequesting = false;
-        }
+      for (let i = start; i <= end; i++) {
+        items[i].isRequesting = false;
+      }
 
-        this.setState({ items });
-      },
-      500
-    );
+      this.setState({ items });
+    }, 500);
   }
 
   render() {

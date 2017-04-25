@@ -1,7 +1,7 @@
 {
   "name": "cf-util-cache",
   "description": "Cloudflare Cache Util",
-  "version": "2.2.0",
+  "version": "2.2.1",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
