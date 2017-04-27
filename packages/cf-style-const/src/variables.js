@@ -35,7 +35,7 @@ export default {
     tangerine: '#FF7900',
     apple: '#BD2527'
   },
-  fontSize: '16px',
+  fontSize: '15px',
   boxShadow: '0 0 20px 0 rgba(136,136,136,0.50)',
   inputFontSize: '13px',
   lineHeight: 1.5,
