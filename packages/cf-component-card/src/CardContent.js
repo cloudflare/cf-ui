@@ -21,7 +21,7 @@ class CardContent extends React.Component {
 }
 
 CardContent.propTypes = {
-  title: PropTypes.any.isRequired,
+  title: PropTypes.node,
   footerMessage: PropTypes.string,
   children: PropTypes.node
 };
