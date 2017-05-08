@@ -16,6 +16,20 @@ class Tooltip extends React.Component {
     this.destroyTooltip();
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (
+      this.props.content !== nextProps.content ||
+      this.props.position !== nextProps.position
+    ) {
+      this.destroyTooltip();
+      this.destroyTooltip = createTooltip(
+        findDOMNode(this),
+        nextProps.content,
+        nextProps.position
+      );
+    }
+  }
+
   render() {
     return this.props.children;
   }
