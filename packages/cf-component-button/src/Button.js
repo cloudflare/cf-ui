@@ -148,7 +148,7 @@ class Button extends React.Component {
 }
 
 Button.propTypes = {
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
   submit: PropTypes.bool,
   spaced: PropTypes.bool,
   className: PropTypes.string.isRequired,
