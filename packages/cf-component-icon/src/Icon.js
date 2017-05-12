@@ -61,6 +61,7 @@ Icon.propTypes = {
     'ok',
     'ok-sign',
     'plus',
+    'refresh',
     'remove',
     'remove-sign',
     'resize-horizontal',

@@ -37,6 +37,7 @@ const IconComponent = () => (
       <Icon label="ok-sign" type="ok-sign" key="ok-sign" />
       <Icon label="pause" type="pause" key="pause" />
       <Icon label="plus" type="plus" key="plus" />
+      <Icon label="refresh" type="refresh" key="refresh" />
       <Icon label="remove" type="remove" key="remove" />
       <Icon label="remove-sign" type="remove-sign" key="remove-sign" />
       <Icon label="resize-horizontal" type="resize-horizontal" key="resize-horizontal" />
