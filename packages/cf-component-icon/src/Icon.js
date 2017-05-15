@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { TYPES, SIZES } from './options';
 
 class Icon extends React.Component {
   render() {
@@ -25,10 +24,59 @@ class Icon extends React.Component {
 }
 
 Icon.propTypes = {
-  label: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([false])])
-    .isRequired,
-  type: PropTypes.oneOf(TYPES).isRequired,
-  size: PropTypes.oneOf(SIZES),
+  label: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.oneOf([false])
+  ]).isRequired,
+  type: PropTypes.oneOf([
+    'bolt',
+    'calendar',
+    'caret-down',
+    'caret-left',
+    'caret-right',
+    'caret-up',
+    'chart',
+    'chevron-down',
+    'chevron-left',
+    'chevron-right',
+    'chevron-up',
+    'clipboard',
+    'close',
+    'drive',
+    'exclamation-sign',
+    'facebook',
+    'file',
+    'filter',
+    'flowchart',
+    'gear',
+    'googleplus',
+    'hamburger',
+    'happy',
+    'help',
+    'info-sign',
+    'linkedin',
+    'list',
+    'loading',
+    'lock',
+    'ok',
+    'ok-sign',
+    'pause',
+    'plus',
+    'refresh',
+    'remove',
+    'remove-sign',
+    'resize-horizontal',
+    'sad',
+    'search',
+    'shield',
+    'speech',
+    'time',
+    'twitter',
+    'upload',
+    'widen',
+    'wrench'
+  ]).isRequired,
+  size: PropTypes.oneOf(['2x', '3x', '4x', 'large', 'xlarge']),
   border: PropTypes.bool,
   spin: PropTypes.bool,
   muted: PropTypes.bool,
