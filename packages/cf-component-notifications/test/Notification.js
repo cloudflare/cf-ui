@@ -36,7 +36,7 @@ test('should call onClose after a set delay', done => {
 
 test('should persist when told to', done => {
   let called = false;
-  let onClose = () => called = true;
+  let onClose = () => called = false;
 
   render(
     <Notification
@@ -64,15 +64,30 @@ test('should pause the timeout while the mouse is hovering the notification', do
     global.root
   );
 
-  delay(50, () => {
-    TestUtils.Simulate.mouseEnter(
-      TestUtils.findRenderedDOMComponentWithClass(
-        instance,
-        'cf-notifications__item'
-      )
-    );
+  const domInstance = TestUtils.findRenderedDOMComponentWithClass(
+    instance,
+    'cf-notifications__item'
+  );
+  TestUtils.Simulate.mouseEnter(domInstance);
+
+  // Hover the notifcation item
+  TestUtils.Simulate.mouseEnter(
+    TestUtils.findRenderedDOMComponentWithClass(
+      instance,
+      'cf-notifications__item'
+    )
+  );
+
+  console.log('mouse entered');
+
+  // Give the notification item some time to initialize
+  delay(500, () => {
+    console.log('waiting done!');
+
+    console.log('here');
 
     delay(150, () => {
+      // Make
       expect(called).toBeFalsy();
       TestUtils.Simulate.mouseLeave(
         TestUtils.findRenderedDOMComponentWithClass(
@@ -98,13 +113,17 @@ test('should close on click', done => {
     global.root
   );
 
-  delay(50, () => {
-    TestUtils.Simulate.click(
-      TestUtils.findRenderedDOMComponentWithClass(
-        instance,
-        'cf-notifications__item_close'
-      )
-    );
+  // Click the close button
+  TestUtils.Simulate.click(
+    TestUtils.findRenderedDOMComponentWithClass(
+      instance,
+      'cf-notifications__item_close'
+    )
+  );
+
+  // Wait a bit
+  delay(200, () => {
+    // Check that the onClose callback has indeed been called
     expect(called).toBeTruthy();
     done();
   });
