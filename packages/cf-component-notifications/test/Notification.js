@@ -36,7 +36,7 @@ test('should call onClose after a set delay', done => {
 
 test('should persist when told to', done => {
   let called = false;
-  let onClose = () => called = true;
+  let onClose = () => called = false;
 
   render(
     <Notification
