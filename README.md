@@ -2,9 +2,7 @@
 
 > Cloudflare UI Framework
 
-cf-ui is a set of over 50 packages used to build UIs at Cloudflare using
-projects such as [React](https://facebook.github.io/react/),
-[Fela](http://fela.js.org), [Lerna](https://lernajs.io) and more.
+cf-ui is a set of over 50 packages used to build UIs at Cloudflare using projects such as [React](https://facebook.github.io/react/), [Fela](http://fela.js.org), [Lerna](https://lernajs.io) and more.
 
 - **[Read the introductory blog post &rarr;](https://blog.cloudflare.com/cf-ui/)**
 - **[Interested in more of our technical decisions? See `cf-ui/discussions` &rarr;](discussions)**
