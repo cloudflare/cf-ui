@@ -18,6 +18,8 @@ import { Provider } from 'react-fela';
 import { variables } from 'cf-style-const';
 import { ThemeProvider } from 'cf-style-container';
 
+import cloudflareIcons from './cloudflare-icons';
+
 const defaultOpts = {
   selectorPrefix: 'cf-',
   dev: false,
@@ -36,11 +38,22 @@ export const createRenderer = opts => {
     enhancers.push(monolithic());
   }
 
-  return createFelaRenderer({
+  const renderer = createFelaRenderer({
     plugins,
     enhancers,
     selectorPrefix: [usedOpts.selectorPrefix]
   });
+
+  renderer.renderFont('Cloudflare Icons', [
+    `data:application/x-font-ttf;charset=utf-8;base64,${cloudflareIcons}`
+  ]);
+
+  const spinAnimationName = renderer.renderKeyframe(() => ({
+    from: { transform: 'rotate(0deg)' },
+    to: { transform: 'rotate(359deg)' }
+  }));
+
+  return { renderer, spinAnimationName };
 };
 
 export const StyleProvider = ({
@@ -51,7 +64,7 @@ export const StyleProvider = ({
   children,
   ...restProps
 }) => {
-  const renderer = createRenderer({
+  const { renderer, spinAnimationName } = createRenderer({
     selectorPrefix,
     dev,
     fontNode
@@ -59,7 +72,7 @@ export const StyleProvider = ({
   const child = Children.only(children);
   return (
     <Provider renderer={renderer} mountNode={cssNode}>
-      <ThemeProvider theme={variables}>
+      <ThemeProvider theme={{ spinAnimationName, ...variables }}>
         {isValidElement(child) ? cloneElement(child, { ...restProps }) : child}
       </ThemeProvider>
     </Provider>

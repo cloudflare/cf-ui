@@ -20,9 +20,12 @@ exports[`should render pagination 1`] = `
         className="cf-3opov"
       >
         <i
-          className="cf-icon cf-icon--caret-left"
-          role={undefined}
-        />
+          className="cf-1ew9cp5"
+          id={undefined}
+          style={undefined}
+        >
+          <span />
+        </i>
       </span>
     </li>
     <li
@@ -99,9 +102,12 @@ exports[`should render pagination 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-icon cf-icon--caret-right"
-          role={undefined}
-        />
+          className="cf-1ew9cp5"
+          id={undefined}
+          style={undefined}
+        >
+          <span />
+        </i>
       </a>
     </li>
   </ul>
@@ -128,9 +134,12 @@ exports[`should render pagination loading 1`] = `
         className="cf-3opov"
       >
         <i
-          className="cf-icon cf-icon--caret-left"
-          role={undefined}
-        />
+          className="cf-1ew9cp5"
+          id={undefined}
+          style={undefined}
+        >
+          <span />
+        </i>
       </span>
     </li>
     <li
@@ -142,9 +151,12 @@ exports[`should render pagination loading 1`] = `
         className="cf-3opov"
       >
         <i
-          className="cf-icon cf-icon--loading"
-          role={undefined}
-        />
+          className="cf-1ew9cp5"
+          id={undefined}
+          style={undefined}
+        >
+          <span />
+        </i>
       </span>
     </li>
     <li
@@ -210,9 +222,12 @@ exports[`should render pagination loading 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-icon cf-icon--caret-right"
-          role={undefined}
-        />
+          className="cf-1ew9cp5"
+          id={undefined}
+          style={undefined}
+        >
+          <span />
+        </i>
       </a>
     </li>
   </ul>
@@ -241,9 +256,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-icon cf-icon--caret-left"
-          role={undefined}
-        />
+          className="cf-1ew9cp5"
+          id={undefined}
+          style={undefined}
+        >
+          <span />
+        </i>
       </a>
     </li>
     <li
@@ -320,9 +338,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-icon cf-icon--caret-right"
-          role={undefined}
-        />
+          className="cf-1ew9cp5"
+          id={undefined}
+          style={undefined}
+        >
+          <span />
+        </i>
       </a>
     </li>
   </ul>
@@ -351,9 +372,12 @@ exports[`should render pagination with the last page active 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-icon cf-icon--caret-left"
-          role={undefined}
-        />
+          className="cf-1ew9cp5"
+          id={undefined}
+          style={undefined}
+        >
+          <span />
+        </i>
       </a>
     </li>
     <li
@@ -428,9 +452,12 @@ exports[`should render pagination with the last page active 1`] = `
         className="cf-3opov"
       >
         <i
-          className="cf-icon cf-icon--caret-right"
-          role={undefined}
-        />
+          className="cf-1ew9cp5"
+          id={undefined}
+          style={undefined}
+        >
+          <span />
+        </i>
       </span>
     </li>
   </ul>
@@ -459,9 +486,12 @@ exports[`should render with collapsed items 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-icon cf-icon--caret-left"
-          role={undefined}
-        />
+          className="cf-1ew9cp5"
+          id={undefined}
+          style={undefined}
+        >
+          <span />
+        </i>
       </a>
     </li>
     <li
@@ -590,9 +620,12 @@ exports[`should render with collapsed items 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-icon cf-icon--caret-right"
-          role={undefined}
-        />
+          className="cf-1ew9cp5"
+          id={undefined}
+          style={undefined}
+        >
+          <span />
+        </i>
       </a>
     </li>
   </ul>

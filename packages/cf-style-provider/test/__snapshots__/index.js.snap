@@ -8,6 +8,39 @@ exports[`StyleProvider should render styles 1`] = `
 
 <head>
   <style id=\\"stylesheet\\" data-fela-stylesheet=\\"\\">
+    @-webkit-keyframes k1 {
+      0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg)
+      }
+      100% {
+        transform: rotate(359deg);
+        -webkit-transform: rotate(359deg)
+      }
+    }
+
+    @-moz-keyframes k1 {
+      0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg)
+      }
+      100% {
+        transform: rotate(359deg);
+        -webkit-transform: rotate(359deg)
+      }
+    }
+
+    @keyframes k1 {
+      0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg)
+      }
+      100% {
+        transform: rotate(359deg);
+        -webkit-transform: rotate(359deg)
+      }
+    }
+
     .cf-a {
       margin: 10px
     }

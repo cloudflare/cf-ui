@@ -35,6 +35,7 @@ export default {
     tangerine: '#FF7900',
     apple: '#BD2527'
   },
+  fontStyle: 'normal',
   fontSize: '15px',
   boxShadow: '0 0 20px 0 rgba(136,136,136,0.50)',
   inputFontSize: '13px',
@@ -42,6 +43,7 @@ export default {
   inputLineHeight: 1.4,
   em: '1em',
   rem: '1rem',
+  iconFontFamily: 'Cloudflare Icons',
   fontFamily: '"Open Sans", Helvetica, Arial, sans-serif',
   weightLight: 300,
   weightNormal: 400,
