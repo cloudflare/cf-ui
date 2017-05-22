@@ -172,9 +172,12 @@ const Wrapper = createComponent(({
   };
 }, 'i');
 
-const Label = createComponent(() => ({
-  display: 'none'
-}));
+const Label = createComponent(
+  () => ({
+    display: 'none'
+  }),
+  'span'
+);
 
 class Icon extends React.Component {
   render() {
@@ -191,54 +194,10 @@ Icon.propTypes = {
    * The a11y label set for screen-readers(?). Needs to correspond with the type
    * prop.
    */
-  label: PropTypes.oneOf([
-    'Bolt',
-    'Calendar',
-    'Caret-Down',
-    'Caret-Left',
-    'Caret-Right',
-    'Caret-Up',
-    'Chart',
-    'Chevron-Sown',
-    'Chevron-Left',
-    'Chevron-Right',
-    'Chevron-Up',
-    'Clipboard',
-    'Close',
-    'Drive',
-    'Exclamation-Sign',
-    'Facebook',
-    'File',
-    'Filter',
-    'Flowchart',
-    'Gear',
-    'Googleplus',
-    'Hamburger',
-    'Happy',
-    'Help',
-    'Info-Sign',
-    'LinkedIn',
-    'List',
-    'Loading',
-    'Lock',
-    'Ok',
-    'Ok-Sign',
-    'Pause',
-    'Plus',
-    'Refresh',
-    'Remove',
-    'Remove-Sign',
-    'Resize-Horizontal',
-    'Sad',
-    'Search',
-    'Shield',
-    'Speech',
-    'Time',
-    'Twitter',
-    'Upload',
-    'Widen',
-    'Wrench'
-  ]),
+  label: PropTypes.string,
+  /*
+   * The type of icon to display
+   */
   type: PropTypes.oneOf([
     'bolt',
     'calendar',
