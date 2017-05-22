@@ -6,9 +6,16 @@ exports[`should render 1`] = `
   onClick={[Function]}
 >
   <i
-    className="cf-icon cf-icon--close cf-icon--2x"
-    role={undefined}
-  />
+    className="cf-17bf5fe"
+    id={undefined}
+    style={undefined}
+  >
+    <span
+      className="cf-1u9fru1"
+      id={undefined}
+      style={undefined}
+    />
+  </i>
 </span>
 `;
 
@@ -18,11 +25,14 @@ exports[`should render with a label 1`] = `
   onClick={[Function]}
 >
   <i
-    className="cf-icon cf-icon--close cf-icon--2x"
-    role={undefined}
+    className="cf-17bf5fe"
+    id={undefined}
+    style={undefined}
   >
     <span
-      className="cf-icon__label"
+      className="cf-1u9fru1"
+      id={undefined}
+      style={undefined}
     >
       label
     </span>

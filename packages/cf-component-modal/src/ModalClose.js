@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Icon from 'cf-component-icon';
+import Icon from '../../cf-component-icon/src/';
 
 class ModalClose extends React.Component {
   render() {
@@ -14,11 +14,7 @@ class ModalClose extends React.Component {
 
 ModalClose.propTypes = {
   onClick: PropTypes.func.isRequired,
-  label: PropTypes.oneOfType([PropTypes.string, PropTypes.bool])
-};
-
-ModalClose.defaultProps = {
-  label: false
+  label: PropTypes.string
 };
 
 export default ModalClose;
