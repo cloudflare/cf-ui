@@ -144,8 +144,6 @@ const Wrapper = createComponent(({
       fontPoint = "'\\D7'";
       additionalRules.fontFamily = theme.fontFamily;
       break;
-    default:
-      throw new Error(`"${type}" is not a valid icon`);
   }
 
   if (border) {
