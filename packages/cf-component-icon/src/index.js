@@ -1,4 +1,4 @@
-import { applyTheme } from '../../cf-style-container';
+import { applyTheme } from 'cf-style-container';
 
 import IconUnstyled from './Icon';
 import IconTheme from './IconTheme';

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Icon from '../../cf-component-icon/src/';
+import Icon from 'cf-component-icon';
 
 class ModalClose extends React.Component {
   render() {

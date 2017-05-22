@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
-import Icon, { IconUnstyled } from '../../cf-component-icon/src/index';
+import Icon, { IconUnstyled } from 'cf-component-icon';
 import felaTestContext from '../../../felaTestContext';
 
 test('should render type', () => {

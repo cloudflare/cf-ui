@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { createComponent } from '../../cf-style-container';
+import { createComponent } from 'cf-style-container';
 
 const Wrapper = createComponent(({
   border = false,
