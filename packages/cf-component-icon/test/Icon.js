@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
-import Icon from '../../cf-component-icon/src/index';
+import Icon, { IconUnstyled } from '../../cf-component-icon/src/index';
 import felaTestContext from '../../../felaTestContext';
 
 test('should render type', () => {
@@ -28,21 +28,21 @@ test('should render type/border/spin/muted/white', () => {
 });
 
 test('should render type with no label', () => {
-  const wrapper = shallow(felaTestContext(<Icon type="info-sign" />));
+  const wrapper = shallow(felaTestContext(<IconUnstyled type="info-sign" />));
   const domNode = wrapper.find('Icon');
   expect(domNode.prop('label')).toBe.undefined;
 });
 
 test('should render role', () => {
   const wrapper = shallow(
-    felaTestContext(<Icon type="loading" role="status" />)
+    felaTestContext(<IconUnstyled type="loading" role="status" />)
   );
   const domNode = wrapper.find('Icon');
   expect(domNode.prop('role')).toBe('status');
 });
 
 test('should not render role if not provided', () => {
-  const wrapper = shallow(felaTestContext(<Icon type="loading" />));
+  const wrapper = shallow(felaTestContext(<IconUnstyled type="loading" />));
   const domNode = wrapper.find('Icon');
   expect(domNode.prop('role')).toBe.undefined;
 });
