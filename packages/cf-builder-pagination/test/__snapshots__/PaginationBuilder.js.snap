@@ -20,11 +20,15 @@ exports[`should render pagination 1`] = `
         className="cf-3opov"
       >
         <i
-          className="cf-1ew9cp5"
+          className="cf-1wm9h0q"
           id={undefined}
           style={undefined}
         >
-          <span />
+          <span
+            className="cf-1u9fru1"
+            id={undefined}
+            style={undefined}
+          />
         </i>
       </span>
     </li>
@@ -102,11 +106,15 @@ exports[`should render pagination 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-1ew9cp5"
+          className="cf-olcaob"
           id={undefined}
           style={undefined}
         >
-          <span />
+          <span
+            className="cf-1u9fru1"
+            id={undefined}
+            style={undefined}
+          />
         </i>
       </a>
     </li>
@@ -134,11 +142,15 @@ exports[`should render pagination loading 1`] = `
         className="cf-3opov"
       >
         <i
-          className="cf-1ew9cp5"
+          className="cf-1wm9h0q"
           id={undefined}
           style={undefined}
         >
-          <span />
+          <span
+            className="cf-1u9fru1"
+            id={undefined}
+            style={undefined}
+          />
         </i>
       </span>
     </li>
@@ -151,11 +163,15 @@ exports[`should render pagination loading 1`] = `
         className="cf-3opov"
       >
         <i
-          className="cf-1ew9cp5"
+          className="cf-1isqwou"
           id={undefined}
           style={undefined}
         >
-          <span />
+          <span
+            className="cf-1u9fru1"
+            id={undefined}
+            style={undefined}
+          />
         </i>
       </span>
     </li>
@@ -222,11 +238,15 @@ exports[`should render pagination loading 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-1ew9cp5"
+          className="cf-olcaob"
           id={undefined}
           style={undefined}
         >
-          <span />
+          <span
+            className="cf-1u9fru1"
+            id={undefined}
+            style={undefined}
+          />
         </i>
       </a>
     </li>
@@ -256,11 +276,15 @@ exports[`should render pagination with an infoFormatter 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-1ew9cp5"
+          className="cf-1wm9h0q"
           id={undefined}
           style={undefined}
         >
-          <span />
+          <span
+            className="cf-1u9fru1"
+            id={undefined}
+            style={undefined}
+          />
         </i>
       </a>
     </li>
@@ -338,11 +362,15 @@ exports[`should render pagination with an infoFormatter 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-1ew9cp5"
+          className="cf-olcaob"
           id={undefined}
           style={undefined}
         >
-          <span />
+          <span
+            className="cf-1u9fru1"
+            id={undefined}
+            style={undefined}
+          />
         </i>
       </a>
     </li>
@@ -372,11 +400,15 @@ exports[`should render pagination with the last page active 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-1ew9cp5"
+          className="cf-1wm9h0q"
           id={undefined}
           style={undefined}
         >
-          <span />
+          <span
+            className="cf-1u9fru1"
+            id={undefined}
+            style={undefined}
+          />
         </i>
       </a>
     </li>
@@ -452,11 +484,15 @@ exports[`should render pagination with the last page active 1`] = `
         className="cf-3opov"
       >
         <i
-          className="cf-1ew9cp5"
+          className="cf-olcaob"
           id={undefined}
           style={undefined}
         >
-          <span />
+          <span
+            className="cf-1u9fru1"
+            id={undefined}
+            style={undefined}
+          />
         </i>
       </span>
     </li>
@@ -486,11 +522,15 @@ exports[`should render with collapsed items 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-1ew9cp5"
+          className="cf-1wm9h0q"
           id={undefined}
           style={undefined}
         >
-          <span />
+          <span
+            className="cf-1u9fru1"
+            id={undefined}
+            style={undefined}
+          />
         </i>
       </a>
     </li>
@@ -620,11 +660,15 @@ exports[`should render with collapsed items 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-1ew9cp5"
+          className="cf-olcaob"
           id={undefined}
           style={undefined}
         >
-          <span />
+          <span
+            className="cf-1u9fru1"
+            id={undefined}
+            style={undefined}
+          />
         </i>
       </a>
     </li>

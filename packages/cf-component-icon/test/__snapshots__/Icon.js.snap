@@ -2,48 +2,48 @@
 
 exports[`should render type 1`] = `
 <i
-  className="cf-s3e5cn"
+  className="cf-1q8ut4e"
   id={undefined}
   style={undefined}
 >
-  <div
+  <span
     className="cf-1u9fru1"
     id={undefined}
     style={undefined}
   >
     Info-Sign
-  </div>
+  </span>
 </i>
 `;
 
 exports[`should render type/border/spin/muted/white 1`] = `
 <i
-  className="cf-4y9ki3"
+  className="cf-1eg1unm"
   id={undefined}
   style={undefined}
 >
-  <div
+  <span
     className="cf-1u9fru1"
     id={undefined}
     style={undefined}
   >
     Info-Sign
-  </div>
+  </span>
 </i>
 `;
 
 exports[`should render type/size 1`] = `
 <i
-  className="cf-s3e5cn"
+  className="cf-1q8ut4e"
   id={undefined}
   style={undefined}
 >
-  <div
+  <span
     className="cf-1u9fru1"
     id={undefined}
     style={undefined}
   >
     Info-Sign
-  </div>
+  </span>
 </i>
 `;
