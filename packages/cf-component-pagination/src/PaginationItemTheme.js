@@ -2,8 +2,8 @@ export default baseTheme => ({
   float: 'left',
   position: 'relative',
   backgroundColor: baseTheme.colorWhite,
-  color: baseTheme.colorInfo,
-  backgroundColorActive: baseTheme.colorInfo,
+  color: baseTheme.color.rain,
+  backgroundColorActive: baseTheme.color.rain,
   backgroundColorDisabled: baseTheme.disabledBackground,
   borderColorActive: baseTheme.colorBlueLight,
   colorActive: baseTheme.colorWhite,
@@ -14,15 +14,15 @@ export default baseTheme => ({
     height: '.5rem',
     margin: '1rem',
     borderRadius: '50%',
-    border: '1px solid rgba(0, 0, 0, .15)'
+    border: `1px solid ${baseTheme.color.rain}`
   },
   next: {
-    backgroundColor: baseTheme.colorBlueLight,
+    backgroundColor: baseTheme.color.rain,
     color: baseTheme.colorWhite,
     borderRadius: '3px'
   },
   prev: {
-    backgroundColor: baseTheme.colorBlueLight,
+    backgroundColor: baseTheme.color.rain,
     color: baseTheme.colorWhite,
     borderRadius: '3px'
   }
