@@ -33,8 +33,7 @@ export default {
     grass: '#9BCA3E',
     marine: '#2F7BBF',
     tangerine: '#FF7900',
-    apple: '#BD2527',
-    dessy: '#F7F7F7'
+    apple: '#BD2527'
   },
   fontSize: '15px',
   boxShadow: '0 0 20px 0 rgba(136,136,136,0.50)',
@@ -75,6 +74,7 @@ export default {
   colorOrangeDark: darken(colorOffsetDark, '#ff7900'),
   colorGray: darken(0.5125, '#fff'),
   colorGrayLight: darken(0.13, '#fff'),
+  colorGrayLightOnboarding: '#F7F7F7',
   colorGrayDark: darken(0.8, '#fff'),
   colorGrayBorder: '#666',
   colorGreen: '#9bca3e',
