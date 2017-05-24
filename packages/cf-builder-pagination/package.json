@@ -1,7 +1,7 @@
 {
   "name": "cf-builder-pagination",
   "description": "Cloudflare Pagination Builder",
-  "version": "3.3.3",
+  "version": "3.4.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -11,8 +11,8 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-component-icon": "^2.2.2",
-    "cf-component-pagination": "^4.3.3",
+    "cf-component-icon": "^2.3.0",
+    "cf-component-pagination": "^4.4.0",
     "prop-types": "^15.5.8"
   },
   "peerDependencies": {
