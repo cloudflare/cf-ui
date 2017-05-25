@@ -63,11 +63,15 @@ function toHash(headers) {
   return hash;
 }
 
-function wrapResponse(headers, status, body, text, response) {
+function wrapResponse(headers, status, text, response) {
+  var body = text;
+  if (isJSON(headers['content-type'])) {
+    body = text ? JSON.parse(text) : undefined;
+  }
   return {
     headers,
     status,
-    body: isJSON(headers['content-type']) ? JSON.parse(text) : text,
+    body,
     text,
     response
   };
@@ -182,7 +186,7 @@ export function request(method, url, opts, callback) {
           if (callback) {
             callback(
               undefined,
-              wrapResponse(headers, status, text, text, response)
+              wrapResponse(headers, status, text, response)
             );
           }
           return response;
@@ -192,7 +196,7 @@ export function request(method, url, opts, callback) {
       logError(logMessage);
       return response.text().then(text => {
         if (callback) {
-          callback(wrapResponse(headers, status, text, text, response));
+          callback(wrapResponse(headers, status, text, response));
         }
         return response;
       });
