@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Icon from 'cf-component-icon';
 import { combineRules, createComponent } from 'cf-style-container';
-import { PaginationLink } from './index';
 
 const active = ({ active, theme }) => {
   if (!active) return {};
