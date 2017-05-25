@@ -2,14 +2,16 @@
 
 exports[`should render 1`] = `
 <li
-  className="cf-hbr0yt"
+  className="cf-3962c9"
   role={null}
 >
   <a
-    aria-label="PaginationLabel"
-    className="cf-1ex7c60"
+    aria-label={undefined}
+    className="cf-3962c9 cf-fyzuiq"
     href="#"
+    id={undefined}
     onClick={[Function]}
+    style={undefined}
   >
     PaginationItem
   </a>
@@ -18,112 +20,144 @@ exports[`should render 1`] = `
 
 exports[`should render active 1`] = `
 <li
-  className="cf-12efb8q"
+  className="cf-5lu1qe"
   role={null}
 >
-  <span
-    aria-label="PaginationLabel"
-    className="cf-3opov"
+  <a
+    aria-label={undefined}
+    className="cf-5lu1qe cf-fyzuiq"
+    href="#"
+    id={undefined}
+    onClick={[Function]}
+    style={undefined}
   >
     PaginationItem
-  </span>
+  </a>
 </li>
 `;
 
 exports[`should render active dot 1`] = `
 <li
-  className="cf-1k5in0r"
+  className="cf-kbbnb5"
   role={null}
 >
-  <span
-    aria-label="PaginationLabel"
-    className="cf-ffljdr"
+  <a
+    aria-label={undefined}
+    className="cf-kbbnb5 cf-fyzuiq"
+    href="#"
+    id={undefined}
+    onClick={[Function]}
+    style={undefined}
   >
     PaginationItem
-  </span>
+  </a>
 </li>
 `;
 
 exports[`should render active next 1`] = `
 <li
-  className="cf-1g2x7sj"
+  className="cf-c0xb27"
   role={null}
 >
-  <span
-    aria-label="PaginationLabel"
-    className="cf-3opov"
+  <a
+    aria-label={undefined}
+    className="cf-c0xb27 cf-fyzuiq"
+    href="#"
+    id={undefined}
+    onClick={[Function]}
+    style={undefined}
   >
     PaginationItem
-  </span>
+  </a>
 </li>
 `;
 
 exports[`should render active prev 1`] = `
 <li
-  className="cf-1g2x7sj"
+  className="cf-c0xb27"
   role={null}
 >
-  <span
-    aria-label="PaginationLabel"
-    className="cf-3opov"
+  <a
+    aria-label={undefined}
+    className="cf-c0xb27 cf-fyzuiq"
+    href="#"
+    id={undefined}
+    onClick={[Function]}
+    style={undefined}
   >
     PaginationItem
-  </span>
+  </a>
 </li>
 `;
 
 exports[`should render disabled 1`] = `
 <li
-  className="cf-u0p974"
+  className="cf-yr93k7"
   role={null}
 >
-  <span
-    aria-label="PaginationLabel"
-    className="cf-3opov"
+  <a
+    aria-label={undefined}
+    className="cf-yr93k7 cf-fyzuiq"
+    href="#"
+    id={undefined}
+    onClick={[Function]}
+    style={undefined}
   >
     PaginationItem
-  </span>
+  </a>
 </li>
 `;
 
 exports[`should render disabled dot 1`] = `
 <li
-  className="cf-yjyfgx"
+  className="cf-bjc0ao"
   role={null}
 >
-  <span
-    aria-label="PaginationLabel"
-    className="cf-ffljdr"
+  <a
+    aria-label={undefined}
+    className="cf-bjc0ao cf-fyzuiq"
+    href="#"
+    id={undefined}
+    onClick={[Function]}
+    style={undefined}
   >
     PaginationItem
-  </span>
+  </a>
 </li>
 `;
 
 exports[`should render disabled next 1`] = `
 <li
-  className="cf-16vpre1"
+  className="cf-mgj6am"
   role={null}
 >
-  <span
-    aria-label="PaginationLabel"
-    className="cf-3opov"
+  <a
+    aria-label={undefined}
+    className="cf-mgj6am cf-fyzuiq"
+    href="#"
+    id={undefined}
+    onClick={[Function]}
+    style={undefined}
   >
     PaginationItem
-  </span>
+  </a>
 </li>
 `;
 
 exports[`should render disabled prev 1`] = `
 <li
-  className="cf-16vpre1"
+  className="cf-mgj6am"
   role={null}
 >
-  <span
-    aria-label="PaginationLabel"
-    className="cf-3opov"
+  <a
+    aria-label={undefined}
+    className="cf-mgj6am cf-fyzuiq"
+    href="#"
+    id={undefined}
+    onClick={[Function]}
+    style={undefined}
   >
     PaginationItem
-  </span>
+  </a>
 </li>
 `;
