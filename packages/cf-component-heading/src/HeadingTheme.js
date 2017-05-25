@@ -7,7 +7,6 @@ export default () => ({
   fontWeight3: 700,
   fontSize3: '1.46667rem',
   lineHeight3: 1.3,
-  fontWeight3: 700,
   fontSize4: '1.2rem',
   lineHeight4: 1.3,
   fontWeight4: 700,
