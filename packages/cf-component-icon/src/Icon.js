@@ -188,10 +188,6 @@ class Icon extends React.Component {
 }
 
 Icon.propTypes = {
-  /**
-   * The a11y label set for screen-readers(?). Needs to correspond with the type
-   * prop.
-   */
   label: PropTypes.string,
   /*
    * The type of icon to display
@@ -253,9 +249,6 @@ Icon.propTypes = {
    * Renders icon with spinning animation
    */
   spin: PropTypes.bool,
-  /**
-   * TODO: What is this?
-   */
   role: PropTypes.string
 };
 
