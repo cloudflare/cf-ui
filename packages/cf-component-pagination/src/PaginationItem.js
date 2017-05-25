@@ -11,7 +11,8 @@ const active = ({ active, theme }) => {
     color: theme.colorActive,
     borderColor: theme.borderColorActive,
     backgroundColor: theme.backgroundColorActive,
-    zIndex: theme.zIndexActive
+    zIndex: theme.zIndexActive,
+    cursor: theme.cursorActive
   };
 };
 
@@ -20,7 +21,8 @@ const disabled = ({ disabled, theme }) => {
 
   return {
     color: theme.colorDisabled,
-    backgroundColor: theme.backgroundColorDisabled
+    backgroundColor: theme.backgroundColorDisabled,
+    cursor: theme.cursorDisabled
   };
 };
 
@@ -31,10 +33,31 @@ const normal = ({ theme, type: itemType }) => ({
   color: theme.color,
   border: theme.border,
   borderBottomWidth: theme.borderBottomWidth,
+  cursor: theme.cursor,
   ...theme[itemType]
 });
 
 const styles = combineRules(normal, active, disabled);
+
+const Link = createComponent(
+  ({ theme }) => ({
+    userSelect: theme.link.userSelect,
+    position: theme.link.position,
+    display: theme.link.display,
+    paddingTop: theme.link.paddingTop,
+    paddingBottom: theme.link.paddingBottom,
+    paddingLeft: theme.link.paddingLeft,
+    paddingRight: theme.link.paddingRight,
+    textDecoration: theme.link.textDecoration,
+    fontWeight: theme.link.fontWeight,
+    color: theme.link.color,
+    ':focus': {
+      zIndex: theme.link['zIndex:focus']
+    }
+  }),
+  'a',
+  ['onClick', 'href', 'aria-label']
+);
 
 class PaginationItem extends React.Component {
   render() {
@@ -53,18 +76,17 @@ class PaginationItem extends React.Component {
     } else {
       children = props.children;
     }
-    const clickable = !(props.active || props.disabled || isEllipsis);
+
     return (
       <li className={props.className} role={role}>
-        <PaginationLink
+        <Link
           onClick={props.onClick}
-          clickable={clickable}
-          children={children}
-          label={props.label}
-          active={props.active}
-          disabled={props.disabled}
-          type={props.type}
-        />
+          className={props.className}
+          href="#"
+          aria-label={props.label}
+        >
+          {children}
+        </Link>
       </li>
     );
   }
@@ -79,11 +101,14 @@ PaginationItem.propTypes = {
     'loading',
     'dot'
   ]).isRequired,
-  label: PropTypes.string.isRequired,
-  onClick: PropTypes.func.isRequired,
   active: PropTypes.bool,
   disabled: PropTypes.bool,
-  children: PropTypes.node
+  children: PropTypes.node,
+  onClick: PropTypes.func
+};
+
+PaginationItem.defaultProps = {
+  disabled: false
 };
 
 export default createComponent(styles, PaginationItem);

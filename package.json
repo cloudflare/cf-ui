@@ -16,7 +16,7 @@
   "scripts": {
     "bootstrap": "lerna bootstrap",
     "build": "./scripts/build.sh",
-    "lint": "eslint packages/*/src/**/*.js packages/*/example/**/*.js packages/*/test/**/*.js || true",
+    "lint": "eslint packages/*/src/**/*.js packages/*/example/**/*.js packages/*/test/**/*.js",
     "test": "cross-env BABEL_ENV=commonjs jest",
     "updated": "lerna updated --only-explicit-updates",
     "prettier": "node prettier.js",

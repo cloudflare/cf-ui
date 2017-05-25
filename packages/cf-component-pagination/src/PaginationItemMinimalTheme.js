@@ -2,12 +2,12 @@ export default baseTheme => ({
   float: 'left',
   position: 'relative',
   backgroundColor: baseTheme.colorWhite,
-  color: baseTheme.color.rain,
-  backgroundColorActive: baseTheme.color.rain,
-  backgroundColorDisabled: baseTheme.disabledBackground,
-  borderColorActive: baseTheme.colorBlueLight,
-  colorActive: baseTheme.colorWhite,
-  colorDisabled: baseTheme.colorGrayBorder,
+  color: baseTheme.colorGray,
+  backgroundColorActive: baseTheme.colorWhite,
+  backgroundColorDisabled: baseTheme.colorWhite,
+  borderColorActive: baseTheme.colorWhite,
+  colorActive: baseTheme.colorOrange,
+  colorDisabled: baseTheme.colorGrayLight,
   zIndexActive: 1,
   cursor: 'pointer',
   cursorDisabled: 'default',
@@ -17,16 +17,16 @@ export default baseTheme => ({
     height: '.5rem',
     margin: '1rem',
     borderRadius: '50%',
-    border: `1px solid ${baseTheme.color.rain}`
+    border: '1px solid rgba(0, 0, 0, .15)'
   },
   next: {
-    backgroundColor: baseTheme.color.rain,
-    color: baseTheme.colorWhite,
+    backgroundColor: baseTheme.colorWhite,
+    color: baseTheme.colorGray,
     borderRadius: '3px'
   },
   prev: {
-    backgroundColor: baseTheme.color.rain,
-    color: baseTheme.colorWhite,
+    backgroundColor: baseTheme.colorWhite,
+    color: baseTheme.colorGray,
     borderRadius: '3px'
   },
   link: {
@@ -35,8 +35,8 @@ export default baseTheme => ({
     display: 'block',
     paddingTop: '.5em',
     paddingBottom: '.5em',
-    paddingLeft: '1em',
-    paddingRight: '1em',
+    paddingLeft: '.1em',
+    paddingRight: '.1em',
     textDecoration: 'none',
     fontWeight: 700,
     color: 'inherit',
