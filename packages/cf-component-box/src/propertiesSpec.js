@@ -449,11 +449,6 @@ export default {
       'unset'
     ]),
     default: 'normal'
-  },
-
-  wordWrap: {
-    propType: PropTypes.string,
-    default: 'normal'
   }
 };
 
