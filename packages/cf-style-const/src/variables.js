@@ -28,6 +28,7 @@ export default {
     dusk: '#4D4D4F',
     storm: '#808285',
     hail: '#BCBEC0',
+    moonshine: '#F7F7F7',
     //current colors
     cement: '#7D7D7D',
     grass: '#9BCA3E',
