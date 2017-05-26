@@ -30,12 +30,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="cf-5lu1qe"
+      className="cf-1wi2cf1"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-5lu1qe cf-fyzuiq"
+        className="cf-1wi2cf1 cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -45,12 +45,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -60,12 +60,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -75,12 +75,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -90,12 +90,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -105,12 +105,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="cf-1cbrxtj"
+      className="cf-hmei63"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-1cbrxtj cf-fyzuiq"
+        className="cf-hmei63 cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -156,12 +156,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="cf-5lu1qe"
+      className="cf-1wi2cf1"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-5lu1qe cf-fyzuiq"
+        className="cf-1wi2cf1 cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -174,12 +174,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -189,12 +189,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -204,12 +204,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -219,12 +219,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -234,12 +234,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="cf-1cbrxtj"
+      className="cf-hmei63"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-1cbrxtj cf-fyzuiq"
+        className="cf-hmei63 cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -267,12 +267,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
     role="navigation"
   >
     <li
-      className="cf-1cbrxtj"
+      className="cf-hmei63"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-1cbrxtj cf-fyzuiq"
+        className="cf-hmei63 cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -285,12 +285,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -300,12 +300,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="cf-5lu1qe"
+      className="cf-1wi2cf1"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-5lu1qe cf-fyzuiq"
+        className="cf-1wi2cf1 cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -315,12 +315,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -330,12 +330,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -345,12 +345,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -360,12 +360,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="cf-1cbrxtj"
+      className="cf-hmei63"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-1cbrxtj cf-fyzuiq"
+        className="cf-hmei63 cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -393,12 +393,12 @@ exports[`should render pagination with the last page active 1`] = `
     role="navigation"
   >
     <li
-      className="cf-1cbrxtj"
+      className="cf-hmei63"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-1cbrxtj cf-fyzuiq"
+        className="cf-hmei63 cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -411,12 +411,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -426,12 +426,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -441,12 +441,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -456,12 +456,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -471,12 +471,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="cf-5lu1qe"
+      className="cf-1wi2cf1"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-5lu1qe cf-fyzuiq"
+        className="cf-1wi2cf1 cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -519,12 +519,12 @@ exports[`should render with collapsed items 1`] = `
     role="navigation"
   >
     <li
-      className="cf-1cbrxtj"
+      className="cf-hmei63"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-1cbrxtj cf-fyzuiq"
+        className="cf-hmei63 cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -537,12 +537,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -552,12 +552,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role="presentation"
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -569,12 +569,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -584,12 +584,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -599,12 +599,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-5lu1qe"
+      className="cf-1wi2cf1"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-5lu1qe cf-fyzuiq"
+        className="cf-1wi2cf1 cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -614,12 +614,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -629,12 +629,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -644,12 +644,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role="presentation"
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -661,12 +661,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-3962c9"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-3962c9 cf-fyzuiq"
+        className="cf-15spu1u cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -676,12 +676,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-1cbrxtj"
+      className="cf-hmei63"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="cf-1cbrxtj cf-fyzuiq"
+        className="cf-hmei63 cf-fyzuiq"
         href="#"
         id={undefined}
         onClick={[Function]}

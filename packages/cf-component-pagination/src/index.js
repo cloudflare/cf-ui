@@ -9,10 +9,6 @@ import PaginationItemUnstyled from './PaginationItem';
 import PaginationItemTheme from './PaginationItemTheme';
 import PaginationItemMinimalTheme from './PaginationItemMinimalTheme';
 
-import PaginationLinkUnstyled from './PaginationLink';
-import PaginationLinkTheme from './PaginationLinkTheme';
-import PaginationLinkMinimalTheme from './PaginationLinkMinimalTheme';
-
 import { applyTheme } from 'cf-style-container';
 
 const Pagination = applyTheme(PaginationUnstyled, PaginationTheme);
@@ -29,12 +25,6 @@ const PaginationItemMinimal = applyTheme(
   PaginationItemMinimalTheme
 );
 
-const PaginationLink = applyTheme(PaginationLinkUnstyled, PaginationLinkTheme);
-const PaginationLinkMinimal = applyTheme(
-  PaginationLinkUnstyled,
-  PaginationLinkMinimalTheme
-);
-
 export {
   Pagination,
   PaginationUnstyled,
@@ -46,9 +36,5 @@ export {
   PaginationItemMinimal,
   PaginationRoot,
   PaginationRootUnstyled,
-  PaginationRootTheme,
-  PaginationLink,
-  PaginationLinkMinimal,
-  PaginationLinkUnstyled,
-  PaginationLinkTheme
+  PaginationRootTheme
 };

@@ -2,12 +2,12 @@
 
 exports[`should render 1`] = `
 <li
-  className="cf-3962c9"
+  className="cf-15spu1u"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-3962c9 cf-fyzuiq"
+    className="cf-15spu1u cf-fyzuiq"
     href="#"
     id={undefined}
     onClick={[Function]}
@@ -20,12 +20,12 @@ exports[`should render 1`] = `
 
 exports[`should render active 1`] = `
 <li
-  className="cf-5lu1qe"
+  className="cf-1wi2cf1"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-5lu1qe cf-fyzuiq"
+    className="cf-1wi2cf1 cf-fyzuiq"
     href="#"
     id={undefined}
     onClick={[Function]}
@@ -38,12 +38,12 @@ exports[`should render active 1`] = `
 
 exports[`should render active dot 1`] = `
 <li
-  className="cf-kbbnb5"
+  className="cf-fguc2k"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-kbbnb5 cf-fyzuiq"
+    className="cf-fguc2k cf-fyzuiq"
     href="#"
     id={undefined}
     onClick={[Function]}
@@ -56,12 +56,12 @@ exports[`should render active dot 1`] = `
 
 exports[`should render active next 1`] = `
 <li
-  className="cf-c0xb27"
+  className="cf-1ezx84k"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-c0xb27 cf-fyzuiq"
+    className="cf-1ezx84k cf-fyzuiq"
     href="#"
     id={undefined}
     onClick={[Function]}
@@ -74,12 +74,12 @@ exports[`should render active next 1`] = `
 
 exports[`should render active prev 1`] = `
 <li
-  className="cf-c0xb27"
+  className="cf-1ezx84k"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-c0xb27 cf-fyzuiq"
+    className="cf-1ezx84k cf-fyzuiq"
     href="#"
     id={undefined}
     onClick={[Function]}
@@ -110,12 +110,12 @@ exports[`should render disabled 1`] = `
 
 exports[`should render disabled dot 1`] = `
 <li
-  className="cf-bjc0ao"
+  className="cf-xa3msm"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-bjc0ao cf-fyzuiq"
+    className="cf-xa3msm cf-fyzuiq"
     href="#"
     id={undefined}
     onClick={[Function]}
