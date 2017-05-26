@@ -184,10 +184,7 @@ export function request(method, url, opts, callback) {
 
         return response.text().then(text => {
           if (callback) {
-            callback(
-              undefined,
-              wrapResponse(headers, status, text, response)
-            );
+            callback(undefined, wrapResponse(headers, status, text, response));
           }
           return response;
         });
