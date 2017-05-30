@@ -3,6 +3,7 @@
 exports[`should render 1`] = `
 <section
   className="cf-card"
+  id={undefined}
 >
   Card
 </section>
