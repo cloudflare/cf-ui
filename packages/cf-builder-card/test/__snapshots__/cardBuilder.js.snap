@@ -3,6 +3,7 @@
 exports[`should render a card 1`] = `
 <section
   className="cf-card"
+  id={undefined}
 >
   <div
     className="cf-card__section cf-card__section--default"
@@ -32,6 +33,7 @@ exports[`should render a card 1`] = `
 exports[`should render a table 1`] = `
 <section
   className="cf-card"
+  id={undefined}
 >
   <div
     className="cf-card__section cf-card__section--default"
@@ -66,6 +68,7 @@ exports[`should render a table 1`] = `
 exports[`should render button 1`] = `
 <section
   className="cf-card"
+  id={undefined}
 >
   <div
     className="cf-card__section cf-card__section--default"
@@ -102,6 +105,7 @@ exports[`should render button 1`] = `
 exports[`should render drawers 1`] = `
 <section
   className="cf-card"
+  id={undefined}
 >
   <div
     className="cf-card__section cf-card__section--default"

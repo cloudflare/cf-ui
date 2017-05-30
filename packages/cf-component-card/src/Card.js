@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 class Card extends React.Component {
   render() {
     return (
-      <section className="cf-card">
+      <section id={this.props.id} className="cf-card">
         {this.props.children}
       </section>
     );
@@ -13,6 +13,7 @@ class Card extends React.Component {
 }
 
 Card.propTypes = {
+  id: PropTypes.string,
   children: PropTypes.node
 };
 
