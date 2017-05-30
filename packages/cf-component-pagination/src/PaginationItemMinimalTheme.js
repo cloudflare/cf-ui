@@ -38,7 +38,7 @@ export default baseTheme => ({
     paddingLeft: '.1em',
     paddingRight: '.1em',
     textDecoration: 'none',
-    fontWeight: 700,
+    fontWeight: baseTheme.weightBold,
     color: 'inherit',
     'zIndex:focus': 1
   }
