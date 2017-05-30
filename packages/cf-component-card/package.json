@@ -1,7 +1,7 @@
 {
   "name": "cf-component-card",
   "description": "Cloudflare Card Component",
-  "version": "1.4.4",
+  "version": "1.5.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
