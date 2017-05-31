@@ -406,11 +406,13 @@ exports[`should render drawers 1`] = `
       <div
         className="al am"
         id={undefined}
+        isActive={false}
         onClick={undefined}
       />
       <div
         className="al am"
         id={undefined}
+        isActive={false}
         onClick={undefined}
       />
     </div>

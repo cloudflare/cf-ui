@@ -1,6 +1,6 @@
 import React from 'react';
 import { felaSnapshot } from 'cf-style-provider';
-import CardToolbar from '../src/CardToolbar';
+import CardToolbar from '../../cf-component-card/src/CardToolbar';
 
 test('should render', () => {
   const snapshot = felaSnapshot(
