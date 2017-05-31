@@ -18,7 +18,8 @@ import CardTitleUnstyled from './CardTitle';
 import CardTitleTheme from './CardTitleTheme';
 import CardFooterUnstyled from './CardFooter';
 import CardFooterTheme from './CardFooterTheme';
-
+import CardToolbar from './CardToolbar';
+import CardToolbarLink from './CardToolbarLink';
 import CardPropTypes from './CardPropTypes';
 
 const Card = applyTheme(CardUnstyled, CardTheme);
@@ -59,5 +60,7 @@ export {
   CardTitleTheme,
   CardFooter,
   CardFooterUnstyled,
-  CardFooterTheme
+  CardFooterTheme,
+  CardToolbar,
+  CardToolbarLink
 };
