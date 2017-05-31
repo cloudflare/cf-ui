@@ -33,12 +33,11 @@ export default baseTheme => ({
     userSelect: 'none',
     position: 'relative',
     display: 'block',
-    paddingTop: '.5em',
-    paddingBottom: '.5em',
+    paddingTop: '0',
+    paddingBottom: '0',
     paddingLeft: '.1em',
     paddingRight: '.1em',
     textDecoration: 'none',
-    fontWeight: baseTheme.weightBold,
     color: 'inherit',
     'zIndex:focus': 1
   }

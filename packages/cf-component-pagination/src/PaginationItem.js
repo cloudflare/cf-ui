@@ -48,7 +48,6 @@ const Link = createComponent(
     paddingLeft: theme.link.paddingLeft,
     paddingRight: theme.link.paddingRight,
     textDecoration: theme.link.textDecoration,
-    fontWeight: theme.link.fontWeight,
     color: theme.link.color,
     ':focus': {
       zIndex: theme.link['zIndex:focus']
@@ -78,12 +77,7 @@ class PaginationItem extends React.Component {
 
     return (
       <li className={props.className} role={role}>
-        <Link
-          onClick={props.onClick}
-          className={props.className}
-          href="#"
-          aria-label={props.label}
-        >
+        <Link onClick={props.onClick} href="#" aria-label={props.label}>
           {children}
         </Link>
       </li>
