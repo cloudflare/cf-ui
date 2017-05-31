@@ -7,7 +7,7 @@ exports[`should render 1`] = `
 >
   <a
     aria-label={undefined}
-    className="cf-15spu1u cf-fyzuiq"
+    className="cf-f2oq4w"
     href="#"
     id={undefined}
     onClick={[Function]}
@@ -25,7 +25,7 @@ exports[`should render active 1`] = `
 >
   <a
     aria-label={undefined}
-    className="cf-1wi2cf1 cf-fyzuiq"
+    className="cf-f2oq4w"
     href="#"
     id={undefined}
     onClick={[Function]}
@@ -43,7 +43,7 @@ exports[`should render active dot 1`] = `
 >
   <a
     aria-label={undefined}
-    className="cf-fguc2k cf-fyzuiq"
+    className="cf-f2oq4w"
     href="#"
     id={undefined}
     onClick={[Function]}
@@ -61,7 +61,7 @@ exports[`should render active next 1`] = `
 >
   <a
     aria-label={undefined}
-    className="cf-1ezx84k cf-fyzuiq"
+    className="cf-f2oq4w"
     href="#"
     id={undefined}
     onClick={[Function]}
@@ -79,7 +79,7 @@ exports[`should render active prev 1`] = `
 >
   <a
     aria-label={undefined}
-    className="cf-1ezx84k cf-fyzuiq"
+    className="cf-f2oq4w"
     href="#"
     id={undefined}
     onClick={[Function]}
@@ -97,7 +97,7 @@ exports[`should render disabled 1`] = `
 >
   <a
     aria-label={undefined}
-    className="cf-yr93k7 cf-fyzuiq"
+    className="cf-f2oq4w"
     href="#"
     id={undefined}
     onClick={[Function]}
@@ -115,7 +115,7 @@ exports[`should render disabled dot 1`] = `
 >
   <a
     aria-label={undefined}
-    className="cf-xa3msm cf-fyzuiq"
+    className="cf-f2oq4w"
     href="#"
     id={undefined}
     onClick={[Function]}
@@ -133,7 +133,7 @@ exports[`should render disabled next 1`] = `
 >
   <a
     aria-label={undefined}
-    className="cf-mgj6am cf-fyzuiq"
+    className="cf-f2oq4w"
     href="#"
     id={undefined}
     onClick={[Function]}
@@ -151,7 +151,7 @@ exports[`should render disabled prev 1`] = `
 >
   <a
     aria-label={undefined}
-    className="cf-mgj6am cf-fyzuiq"
+    className="cf-f2oq4w"
     href="#"
     id={undefined}
     onClick={[Function]}
