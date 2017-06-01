@@ -17,7 +17,7 @@ exports[`should render pagination 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-109b087"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -35,7 +35,7 @@ exports[`should render pagination 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -50,7 +50,7 @@ exports[`should render pagination 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -65,7 +65,7 @@ exports[`should render pagination 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -80,7 +80,7 @@ exports[`should render pagination 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -95,7 +95,7 @@ exports[`should render pagination 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -110,7 +110,7 @@ exports[`should render pagination 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -143,7 +143,7 @@ exports[`should render pagination loading 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-109b087"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -161,7 +161,7 @@ exports[`should render pagination loading 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -179,7 +179,7 @@ exports[`should render pagination loading 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -194,7 +194,7 @@ exports[`should render pagination loading 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -209,7 +209,7 @@ exports[`should render pagination loading 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -224,7 +224,7 @@ exports[`should render pagination loading 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -239,7 +239,7 @@ exports[`should render pagination loading 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -272,7 +272,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -290,7 +290,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -305,7 +305,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -320,7 +320,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -335,7 +335,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -350,7 +350,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -365,7 +365,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -398,7 +398,7 @@ exports[`should render pagination with the last page active 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -416,7 +416,7 @@ exports[`should render pagination with the last page active 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -431,7 +431,7 @@ exports[`should render pagination with the last page active 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -446,7 +446,7 @@ exports[`should render pagination with the last page active 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -461,7 +461,7 @@ exports[`should render pagination with the last page active 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -476,7 +476,7 @@ exports[`should render pagination with the last page active 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -491,7 +491,7 @@ exports[`should render pagination with the last page active 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-109b087"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -524,7 +524,7 @@ exports[`should render with collapsed items 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -542,7 +542,7 @@ exports[`should render with collapsed items 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -557,7 +557,7 @@ exports[`should render with collapsed items 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -574,7 +574,7 @@ exports[`should render with collapsed items 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -589,7 +589,7 @@ exports[`should render with collapsed items 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -604,7 +604,7 @@ exports[`should render with collapsed items 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -619,7 +619,7 @@ exports[`should render with collapsed items 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -634,7 +634,7 @@ exports[`should render with collapsed items 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -649,7 +649,7 @@ exports[`should render with collapsed items 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -666,7 +666,7 @@ exports[`should render with collapsed items 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
@@ -681,7 +681,7 @@ exports[`should render with collapsed items 1`] = `
     >
       <a
         aria-label={undefined}
-        className="cf-f2oq4w"
+        className="cf-32iz07"
         href="#"
         id={undefined}
         onClick={[Function]}
