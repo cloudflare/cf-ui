@@ -39,21 +39,31 @@ const normal = ({ theme, type: itemType }) => ({
 const styles = combineRules(normal, active, disabled);
 
 const Link = createComponent(
-  ({ theme, disabled }) => ({
-    userSelect: theme.link.userSelect,
-    position: theme.link.position,
-    display: theme.link.display,
-    paddingTop: theme.link.paddingTop,
-    paddingBottom: theme.link.paddingBottom,
-    paddingLeft: theme.link.paddingLeft,
-    paddingRight: theme.link.paddingRight,
-    textDecoration: theme.link.textDecoration,
-    color: theme.link.color,
-    cursor: disabled ? theme.cursorDisabled : theme.cursor,
-    ':focus': {
-      zIndex: theme.link['zIndex:focus']
+  ({ theme, disabled, active }) => {
+    let cursor = theme.cursor;
+    if (disabled) {
+      cursor = theme.cursorDisabled;
     }
-  }),
+    if (active) {
+      cursor = theme.cursorActive;
+    }
+
+    return {
+      userSelect: theme.link.userSelect,
+      position: theme.link.position,
+      display: theme.link.display,
+      paddingTop: theme.link.paddingTop,
+      paddingBottom: theme.link.paddingBottom,
+      paddingLeft: theme.link.paddingLeft,
+      paddingRight: theme.link.paddingRight,
+      textDecoration: theme.link.textDecoration,
+      color: theme.link.color,
+      cursor: cursor,
+      ':focus': {
+        zIndex: theme.link['zIndex:focus']
+      }
+    };
+  },
   'a',
   ['onClick', 'href', 'aria-label']
 );
@@ -93,6 +103,7 @@ class PaginationItem extends React.Component {
           onClick={this.onClick}
           href="#"
           aria-label={props.label}
+          active={props.active}
           disabled={props.disabled}
         >
           {children}
