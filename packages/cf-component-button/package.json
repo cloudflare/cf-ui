@@ -1,7 +1,7 @@
 {
   "name": "cf-component-button",
   "description": "Cloudflare Button Component",
-  "version": "5.3.2",
+  "version": "5.3.3",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
