@@ -49,6 +49,7 @@ const Link = createComponent(
     paddingRight: theme.link.paddingRight,
     textDecoration: theme.link.textDecoration,
     color: theme.link.color,
+    cursor: theme.cursor,
     ':focus': {
       zIndex: theme.link['zIndex:focus']
     }
