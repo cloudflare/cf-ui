@@ -58,6 +58,17 @@ const Link = createComponent(
 );
 
 class PaginationItem extends React.Component {
+  constructor() {
+    super();
+
+    this.onClick = this.onClick.bind(this);
+  }
+
+  onClick(event) {
+    event.preventDefault();
+    this.props.onClick();
+  }
+
   render() {
     const props = this.props;
     const isEllipsis = props.type === 'ellipsis';
@@ -77,7 +88,7 @@ class PaginationItem extends React.Component {
 
     return (
       <li className={props.className} role={role}>
-        <Link onClick={props.onClick} href="#" aria-label={props.label}>
+        <Link onClick={this.onClick} href="#" aria-label={props.label}>
           {children}
         </Link>
       </li>
