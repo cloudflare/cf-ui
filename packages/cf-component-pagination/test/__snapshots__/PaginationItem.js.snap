@@ -97,7 +97,7 @@ exports[`should render disabled 1`] = `
 >
   <a
     aria-label={undefined}
-    className="cf-32iz07"
+    className="cf-109b087"
     href="#"
     id={undefined}
     onClick={[Function]}
@@ -115,7 +115,7 @@ exports[`should render disabled dot 1`] = `
 >
   <a
     aria-label={undefined}
-    className="cf-32iz07"
+    className="cf-109b087"
     href="#"
     id={undefined}
     onClick={[Function]}
@@ -133,7 +133,7 @@ exports[`should render disabled next 1`] = `
 >
   <a
     aria-label={undefined}
-    className="cf-32iz07"
+    className="cf-109b087"
     href="#"
     id={undefined}
     onClick={[Function]}
@@ -151,7 +151,7 @@ exports[`should render disabled prev 1`] = `
 >
   <a
     aria-label={undefined}
-    className="cf-32iz07"
+    className="cf-109b087"
     href="#"
     id={undefined}
     onClick={[Function]}

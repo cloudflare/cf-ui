@@ -39,7 +39,7 @@ const normal = ({ theme, type: itemType }) => ({
 const styles = combineRules(normal, active, disabled);
 
 const Link = createComponent(
-  ({ theme }) => ({
+  ({ theme, disabled }) => ({
     userSelect: theme.link.userSelect,
     position: theme.link.position,
     display: theme.link.display,
@@ -49,7 +49,7 @@ const Link = createComponent(
     paddingRight: theme.link.paddingRight,
     textDecoration: theme.link.textDecoration,
     color: theme.link.color,
-    cursor: theme.cursor,
+    cursor: disabled ? theme.cursorDisabled : theme.cursor,
     ':focus': {
       zIndex: theme.link['zIndex:focus']
     }
@@ -89,7 +89,12 @@ class PaginationItem extends React.Component {
 
     return (
       <li className={props.className} role={role}>
-        <Link onClick={this.onClick} href="#" aria-label={props.label}>
+        <Link
+          onClick={this.onClick}
+          href="#"
+          aria-label={props.label}
+          disabled={props.disabled}
+        >
           {children}
         </Link>
       </li>
