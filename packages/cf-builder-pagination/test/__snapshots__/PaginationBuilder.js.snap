@@ -12,91 +12,109 @@ exports[`should render pagination 1`] = `
     role="navigation"
   >
     <li
-      className="cf-16vpre1"
+      className="cf-mgj6am"
       role={null}
     >
-      <span
-        aria-label="Previous Page"
-        className="cf-3opov"
+      <a
+        aria-label={undefined}
+        className="cf-109b087"
+        href="#"
+        id={undefined}
+        onClick={[Function]}
+        style={undefined}
       >
         <i
           className="cf-icon cf-icon--caret-left"
           role={undefined}
         />
-      </span>
+      </a>
     </li>
     <li
-      className="cf-12efb8q"
-      role={null}
-    >
-      <span
-        aria-label="Page 1"
-        className="cf-3opov"
-      >
-        1
-      </span>
-    </li>
-    <li
-      className="cf-hbr0yt"
+      className="cf-1wi2cf1"
       role={null}
     >
       <a
-        aria-label="Page 2"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-109b087"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
+      >
+        1
+      </a>
+    </li>
+    <li
+      className="cf-15spu1u"
+      role={null}
+    >
+      <a
+        aria-label={undefined}
+        className="cf-32iz07"
+        href="#"
+        id={undefined}
+        onClick={[Function]}
+        style={undefined}
       >
         2
       </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role={null}
     >
       <a
-        aria-label="Page 3"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         3
       </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role={null}
     >
       <a
-        aria-label="Page 4"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         4
       </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role={null}
     >
       <a
-        aria-label="Page 5"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         5
       </a>
     </li>
     <li
-      className="cf-implzw"
+      className="cf-hmei63"
       role={null}
     >
       <a
-        aria-label="Next Page"
-        className="cf-1ex7c60"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         <i
           className="cf-icon cf-icon--caret-right"
@@ -120,94 +138,112 @@ exports[`should render pagination loading 1`] = `
     role="navigation"
   >
     <li
-      className="cf-16vpre1"
+      className="cf-mgj6am"
       role={null}
     >
-      <span
-        aria-label="Previous Page"
-        className="cf-3opov"
+      <a
+        aria-label={undefined}
+        className="cf-109b087"
+        href="#"
+        id={undefined}
+        onClick={[Function]}
+        style={undefined}
       >
         <i
           className="cf-icon cf-icon--caret-left"
           role={undefined}
         />
-      </span>
+      </a>
     </li>
     <li
-      className="cf-12efb8q"
+      className="cf-1wi2cf1"
       role={null}
     >
-      <span
-        aria-label="Page 1"
-        className="cf-3opov"
+      <a
+        aria-label={undefined}
+        className="cf-109b087"
+        href="#"
+        id={undefined}
+        onClick={[Function]}
+        style={undefined}
       >
         <i
           className="cf-icon cf-icon--loading"
           role={undefined}
         />
-      </span>
+      </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role={null}
     >
       <a
-        aria-label="Page 2"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         2
       </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role={null}
     >
       <a
-        aria-label="Page 3"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         3
       </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role={null}
     >
       <a
-        aria-label="Page 4"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         4
       </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role={null}
     >
       <a
-        aria-label="Page 5"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         5
       </a>
     </li>
     <li
-      className="cf-implzw"
+      className="cf-hmei63"
       role={null}
     >
       <a
-        aria-label="Next Page"
-        className="cf-1ex7c60"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         <i
           className="cf-icon cf-icon--caret-right"
@@ -231,14 +267,16 @@ exports[`should render pagination with an infoFormatter 1`] = `
     role="navigation"
   >
     <li
-      className="cf-implzw"
+      className="cf-hmei63"
       role={null}
     >
       <a
-        aria-label="Previous Page"
-        className="cf-1ex7c60"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         <i
           className="cf-icon cf-icon--caret-left"
@@ -247,77 +285,91 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role={null}
     >
       <a
-        aria-label="Page 1"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         1
       </a>
     </li>
     <li
-      className="cf-12efb8q"
-      role={null}
-    >
-      <span
-        aria-label="Page 2"
-        className="cf-3opov"
-      >
-        2
-      </span>
-    </li>
-    <li
-      className="cf-hbr0yt"
+      className="cf-1wi2cf1"
       role={null}
     >
       <a
-        aria-label="Page 3"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-109b087"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
+      >
+        2
+      </a>
+    </li>
+    <li
+      className="cf-15spu1u"
+      role={null}
+    >
+      <a
+        aria-label={undefined}
+        className="cf-32iz07"
+        href="#"
+        id={undefined}
+        onClick={[Function]}
+        style={undefined}
       >
         3
       </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role={null}
     >
       <a
-        aria-label="Page 4"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         4
       </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role={null}
     >
       <a
-        aria-label="Page 5"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         5
       </a>
     </li>
     <li
-      className="cf-implzw"
+      className="cf-hmei63"
       role={null}
     >
       <a
-        aria-label="Next Page"
-        className="cf-1ex7c60"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         <i
           className="cf-icon cf-icon--caret-right"
@@ -341,14 +393,16 @@ exports[`should render pagination with the last page active 1`] = `
     role="navigation"
   >
     <li
-      className="cf-implzw"
+      className="cf-hmei63"
       role={null}
     >
       <a
-        aria-label="Previous Page"
-        className="cf-1ex7c60"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         <i
           className="cf-icon cf-icon--caret-left"
@@ -357,81 +411,97 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role={null}
     >
       <a
-        aria-label="Page 1"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         1
       </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role={null}
     >
       <a
-        aria-label="Page 2"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         2
       </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role={null}
     >
       <a
-        aria-label="Page 3"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         3
       </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role={null}
     >
       <a
-        aria-label="Page 4"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         4
       </a>
     </li>
     <li
-      className="cf-12efb8q"
+      className="cf-1wi2cf1"
       role={null}
     >
-      <span
-        aria-label="Page 5"
-        className="cf-3opov"
+      <a
+        aria-label={undefined}
+        className="cf-109b087"
+        href="#"
+        id={undefined}
+        onClick={[Function]}
+        style={undefined}
       >
         5
-      </span>
+      </a>
     </li>
     <li
-      className="cf-16vpre1"
+      className="cf-mgj6am"
       role={null}
     >
-      <span
-        aria-label="Next Page"
-        className="cf-3opov"
+      <a
+        aria-label={undefined}
+        className="cf-109b087"
+        href="#"
+        id={undefined}
+        onClick={[Function]}
+        style={undefined}
       >
         <i
           className="cf-icon cf-icon--caret-right"
           role={undefined}
         />
-      </span>
+      </a>
     </li>
   </ul>
 </div>
@@ -449,14 +519,16 @@ exports[`should render with collapsed items 1`] = `
     role="navigation"
   >
     <li
-      className="cf-implzw"
+      className="cf-hmei63"
       role={null}
     >
       <a
-        aria-label="Previous Page"
-        className="cf-1ex7c60"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         <i
           className="cf-icon cf-icon--caret-left"
@@ -465,129 +537,155 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role={null}
     >
       <a
-        aria-label="Page 1"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         1
       </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role="presentation"
     >
-      <span
-        aria-label="Page 2"
-        className="cf-1ex7c60"
+      <a
+        aria-label={undefined}
+        className="cf-32iz07"
+        href="#"
+        id={undefined}
+        onClick={[Function]}
+        style={undefined}
       >
         <span>
           …
         </span>
-      </span>
+      </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role={null}
     >
       <a
-        aria-label="Page 4"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         4
       </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role={null}
     >
       <a
-        aria-label="Page 5"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         5
       </a>
     </li>
     <li
-      className="cf-12efb8q"
-      role={null}
-    >
-      <span
-        aria-label="Page 6"
-        className="cf-3opov"
-      >
-        6
-      </span>
-    </li>
-    <li
-      className="cf-hbr0yt"
+      className="cf-1wi2cf1"
       role={null}
     >
       <a
-        aria-label="Page 7"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-109b087"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
+      >
+        6
+      </a>
+    </li>
+    <li
+      className="cf-15spu1u"
+      role={null}
+    >
+      <a
+        aria-label={undefined}
+        className="cf-32iz07"
+        href="#"
+        id={undefined}
+        onClick={[Function]}
+        style={undefined}
       >
         7
       </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role={null}
     >
       <a
-        aria-label="Page 8"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         8
       </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role="presentation"
     >
-      <span
-        aria-label="Page 9"
-        className="cf-1ex7c60"
+      <a
+        aria-label={undefined}
+        className="cf-32iz07"
+        href="#"
+        id={undefined}
+        onClick={[Function]}
+        style={undefined}
       >
         <span>
           …
         </span>
-      </span>
+      </a>
     </li>
     <li
-      className="cf-hbr0yt"
+      className="cf-15spu1u"
       role={null}
     >
       <a
-        aria-label="Page 20"
-        className="cf-p16ik9"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         20
       </a>
     </li>
     <li
-      className="cf-implzw"
+      className="cf-hmei63"
       role={null}
     >
       <a
-        aria-label="Next Page"
-        className="cf-1ex7c60"
+        aria-label={undefined}
+        className="cf-32iz07"
         href="#"
+        id={undefined}
         onClick={[Function]}
+        style={undefined}
       >
         <i
           className="cf-icon cf-icon--caret-right"

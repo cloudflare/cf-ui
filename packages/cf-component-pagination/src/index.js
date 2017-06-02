@@ -1,29 +1,40 @@
 import PaginationUnstyled from './Pagination';
-import PaginationRootUnstyled from './PaginationRoot';
-import PaginationItemUnstyled from './PaginationItem';
-import PaginationLinkUnstyled from './PaginationLink';
-import PaginationRootTheme from './PaginationRootTheme';
 import PaginationTheme from './PaginationTheme';
+import PaginationMinimalTheme from './PaginationMinimalTheme';
+
+import PaginationRootUnstyled from './PaginationRoot';
+import PaginationRootTheme from './PaginationRootTheme';
+
+import PaginationItemUnstyled from './PaginationItem';
 import PaginationItemTheme from './PaginationItemTheme';
-import PaginationLinkTheme from './PaginationLinkTheme';
+import PaginationItemMinimalTheme from './PaginationItemMinimalTheme';
+
 import { applyTheme } from 'cf-style-container';
 
 const Pagination = applyTheme(PaginationUnstyled, PaginationTheme);
+const PaginationMinimal = applyTheme(
+  PaginationUnstyled,
+  PaginationMinimalTheme
+);
+
 const PaginationRoot = applyTheme(PaginationRootUnstyled, PaginationRootTheme);
+
 const PaginationItem = applyTheme(PaginationItemUnstyled, PaginationItemTheme);
-const PaginationLink = applyTheme(PaginationLinkUnstyled, PaginationLinkTheme);
+const PaginationItemMinimal = applyTheme(
+  PaginationItemUnstyled,
+  PaginationItemMinimalTheme
+);
 
 export {
   Pagination,
-  PaginationItem,
-  PaginationRoot,
-  PaginationLink,
-  PaginationRootTheme,
-  PaginationTheme,
-  PaginationItemTheme,
-  PaginationLinkTheme,
   PaginationUnstyled,
-  PaginationRootUnstyled,
+  PaginationTheme,
+  PaginationMinimal,
+  PaginationItem,
   PaginationItemUnstyled,
-  PaginationLinkUnstyled
+  PaginationItemTheme,
+  PaginationItemMinimal,
+  PaginationRoot,
+  PaginationRootUnstyled,
+  PaginationRootTheme
 };

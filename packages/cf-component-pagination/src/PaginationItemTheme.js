@@ -9,6 +9,9 @@ export default baseTheme => ({
   colorActive: baseTheme.colorWhite,
   colorDisabled: baseTheme.colorGrayBorder,
   zIndexActive: 1,
+  cursor: 'pointer',
+  cursorDisabled: 'default',
+  cursorActive: 'default',
   dot: {
     width: '.5rem',
     height: '.5rem',
@@ -25,5 +28,18 @@ export default baseTheme => ({
     backgroundColor: baseTheme.color.rain,
     color: baseTheme.colorWhite,
     borderRadius: '3px'
+  },
+  link: {
+    userSelect: 'none',
+    position: 'relative',
+    display: 'block',
+    paddingTop: '.5em',
+    paddingBottom: '.5em',
+    paddingLeft: '1em',
+    paddingRight: '1em',
+    textDecoration: 'none',
+    fontWeight: 700,
+    color: 'inherit',
+    'zIndex:focus': 1
   }
 });
