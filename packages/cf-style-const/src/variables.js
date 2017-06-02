@@ -95,5 +95,7 @@ export default {
   colorPurpleDark: darken(colorOffsetDark, '#d91698'),
   colorTwitterBlue: '#00aced',
   colorFacebookBlue: '#3b5998',
-  colorMainBackground: '#e6e6e6'
+  colorMainBackground: '#e6e6e6',
+  zIndexMax: 1000,
+  modalBoxShadow: '0 0 0 9999px rgba(0, 0, 0, .7)'
 };
