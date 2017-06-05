@@ -6,7 +6,11 @@ const styles = ({ theme, size }) => ({
   fontWeight: theme[`fontWeight${size}`],
   fontSize: theme[`fontSize${size}`],
   lineHeight: theme[`lineHeight${size}`],
-  marginTop: theme[`marginTop${size}`]
+  marginTop: theme[`marginTop${size}`],
+  paddingTop: theme.paddingTop,
+  paddingBottom: theme.paddingBottom,
+  paddingLeft: theme.paddingLeft,
+  paddingRight: theme.paddingRight
 });
 
 const Heading = ({ size, className, children }) => {
