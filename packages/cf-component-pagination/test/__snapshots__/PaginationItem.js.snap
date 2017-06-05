@@ -38,7 +38,7 @@ exports[`should render active 1`] = `
 
 exports[`should render active dot 1`] = `
 <li
-  className="cf-fguc2k"
+  className="cf-1xpv85q"
   role={null}
 >
   <a
@@ -110,7 +110,7 @@ exports[`should render disabled 1`] = `
 
 exports[`should render disabled dot 1`] = `
 <li
-  className="cf-xa3msm"
+  className="cf-18awel0"
   role={null}
 >
   <a

@@ -13,9 +13,9 @@ export default baseTheme => ({
   cursorDisabled: 'default',
   cursorActive: 'default',
   dot: {
-    width: '.5rem',
-    height: '.5rem',
-    margin: '1rem',
+    width: '.5em',
+    height: '.5em',
+    margin: '1em',
     borderRadius: '50%',
     border: `1px solid ${baseTheme.color.rain}`
   },
