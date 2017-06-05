@@ -9,9 +9,7 @@ exports[`should render 1`] = `
     aria-label={undefined}
     className="cf-32iz07"
     href="#"
-    id={undefined}
     onClick={[Function]}
-    style={undefined}
   >
     PaginationItem
   </a>
@@ -27,9 +25,7 @@ exports[`should render active 1`] = `
     aria-label={undefined}
     className="cf-109b087"
     href="#"
-    id={undefined}
     onClick={[Function]}
-    style={undefined}
   >
     PaginationItem
   </a>
@@ -45,9 +41,7 @@ exports[`should render active dot 1`] = `
     aria-label={undefined}
     className="cf-109b087"
     href="#"
-    id={undefined}
     onClick={[Function]}
-    style={undefined}
   >
     PaginationItem
   </a>
@@ -63,9 +57,7 @@ exports[`should render active next 1`] = `
     aria-label={undefined}
     className="cf-109b087"
     href="#"
-    id={undefined}
     onClick={[Function]}
-    style={undefined}
   >
     PaginationItem
   </a>
@@ -81,9 +73,7 @@ exports[`should render active prev 1`] = `
     aria-label={undefined}
     className="cf-109b087"
     href="#"
-    id={undefined}
     onClick={[Function]}
-    style={undefined}
   >
     PaginationItem
   </a>
@@ -99,9 +89,7 @@ exports[`should render disabled 1`] = `
     aria-label={undefined}
     className="cf-109b087"
     href="#"
-    id={undefined}
     onClick={[Function]}
-    style={undefined}
   >
     PaginationItem
   </a>
@@ -117,9 +105,7 @@ exports[`should render disabled dot 1`] = `
     aria-label={undefined}
     className="cf-109b087"
     href="#"
-    id={undefined}
     onClick={[Function]}
-    style={undefined}
   >
     PaginationItem
   </a>
@@ -135,9 +121,7 @@ exports[`should render disabled next 1`] = `
     aria-label={undefined}
     className="cf-109b087"
     href="#"
-    id={undefined}
     onClick={[Function]}
-    style={undefined}
   >
     PaginationItem
   </a>
@@ -153,9 +137,7 @@ exports[`should render disabled prev 1`] = `
     aria-label={undefined}
     className="cf-109b087"
     href="#"
-    id={undefined}
     onClick={[Function]}
-    style={undefined}
   >
     PaginationItem
   </a>
