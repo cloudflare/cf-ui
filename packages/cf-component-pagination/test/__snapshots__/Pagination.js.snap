@@ -3,8 +3,6 @@
 exports[`should render 1`] = `
 <div
   className="cf-1bek1ug"
-  id={undefined}
-  style={undefined}
 >
   <ul
     aria-describedby={null}
@@ -19,8 +17,6 @@ exports[`should render 1`] = `
 exports[`should render with info 1`] = `
 <div
   className="cf-1bek1ug"
-  id={undefined}
-  style={undefined}
 >
   <ul
     aria-describedby="cf-pagination-1"

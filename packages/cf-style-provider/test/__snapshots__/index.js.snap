@@ -7,15 +7,7 @@ exports[`StyleProvider should render styles 1`] = `
 <html>
 
 <head>
-  <style id=\\"stylesheet\\" data-fela-stylesheet=\\"\\">
-    .cf-a {
-      margin: 10px
-    }
-
-    .cf-b {
-      color: red
-    }
-  </style>
+  <style id=\\"stylesheet\\"></style>
 </head>
 
 <body>
