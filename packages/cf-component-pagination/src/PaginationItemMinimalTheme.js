@@ -35,8 +35,8 @@ export default baseTheme => ({
     display: 'block',
     paddingTop: '0',
     paddingBottom: '0',
-    paddingLeft: '.1em',
-    paddingRight: '.1em',
+    paddingLeft: '0.5em',
+    paddingRight: '0.5em',
     textDecoration: 'none',
     color: 'inherit',
     'zIndex:focus': 1
