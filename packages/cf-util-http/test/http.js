@@ -63,7 +63,7 @@ describe('request', () => {
     });
   });
 
-  test('should accept 3-args form where the opts is optional (promise)', done => {
+  test('should accept 2-args form where the opts is optional (promise)', done => {
     fetch.mockResponse('', {
       headers: { 'Content-Type': 'text/plain' },
       status: 200
