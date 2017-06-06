@@ -68,13 +68,7 @@ function wrapResponse(headers, status, text, response) {
   if (isJSON(headers['content-type'])) {
     body = text ? JSON.parse(text) : undefined;
   }
-  return {
-    headers,
-    status,
-    body,
-    text,
-    response
-  };
+  return { headers, status, body, text, response };
 }
 
 const BODYLESS_METHODS = ['GET', 'HEAD'];
@@ -114,11 +108,9 @@ const BODYLESS_METHODS = ['GET', 'HEAD'];
  * @see [Global Fetch on MDN](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch)
  * @see [WHATWG Fetch API Spec](https://fetch.spec.whatwg.org/)
  */
-export function request(method, url, opts, callback) {
+export function request(method, url, opts = {}, callback) {
   if (typeof opts === 'function') {
     callback = opts;
-    opts = {};
-  } else if (opts == null) {
     opts = {};
   }
 
@@ -142,8 +134,8 @@ export function request(method, url, opts, callback) {
   // Normalize the headers
   opts.headers = Object.assign({}, opts.headers);
 
-  // Emuluate superagent's questionable ability to filter out headers that's
-  // been set to null or undefined.
+  // Emulate superagent's questionable ability to filter out headers that are
+  // null or undefined.
   for (const h in opts.headers) {
     if (opts.headers[h] == null) {
       delete opts.headers[h];
@@ -179,28 +171,19 @@ export function request(method, url, opts, callback) {
       const status = response.status;
       logMessage = `${logMessage} (${status} ${response.statusText})`;
 
-      if (response.ok) {
-        logSuccess(logMessage);
-
-        return response.text().then(text => {
-          if (callback) {
-            callback(undefined, wrapResponse(headers, status, text, response));
-          }
-          return response;
-        });
-      }
-
-      logError(logMessage);
       return response.text().then(text => {
-        if (callback) {
-          callback(wrapResponse(headers, status, text, response));
+        const wrappedResponse = wrapResponse(headers, status, text, response);
+        if (response.ok) {
+          logSuccess(logMessage);
+          callback && callback(undefined, wrappedResponse);
+          return wrappedResponse;
         }
-        return response;
+        throw wrappedResponse;
       });
     })
     .catch(err => {
-      // Unrecoverable errors
-      callback(err);
+      logError(logMessage);
+      callback && callback(err);
       console.trace(err);
       throw err;
     });
