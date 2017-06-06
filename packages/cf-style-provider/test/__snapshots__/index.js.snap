@@ -3,18 +3,24 @@
 exports[`StyleProvider should render 1`] = `<div />`;
 
 exports[`StyleProvider should render styles 1`] = `
-"<!DOCTYPE html>
-<html>
+"<html>
 
 <head>
-  <style id=\\"stylesheet\\"></style>
+  <style data-fela-type=\\"RULE\\" type=\\"text/css\\">
+    .cf-a {
+      margin: 10px
+    }
+
+    .cf-b {
+      color: red
+    }
+  </style>
 </head>
 
 <body>
-  <div id=\\"react-app\\">
+  <div>
     <div data-reactroot=\\"\\" class=\\"cf-a cf-b\\"></div>
   </div>
-
 </body>
 
 </html>"

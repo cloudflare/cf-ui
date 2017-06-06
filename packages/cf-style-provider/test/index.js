@@ -6,7 +6,6 @@ import { Button } from '../../cf-component-button/src/index';
 import renderer from 'react-test-renderer';
 import { render } from 'react-dom';
 import { mount } from 'enzyme';
-import jsdom from 'jsdom';
 import { html as beautify } from 'js-beautify';
 
 test('StyleProvider should render', () => {
@@ -15,23 +14,8 @@ test('StyleProvider should render', () => {
 });
 
 test('StyleProvider should render styles', () => {
-  const doc = jsdom.jsdom(
-    `<!doctype html>
-     <html>
-     <head>
-       <style id="stylesheet"></style>
-     </head>
-     <body>
-       <div id="react-app"></div>
-     </body>
-     </html>`
-  );
-
-  global.document = doc;
-  global.window = doc.defaultView;
-
-  const cssNode = doc.getElementById('stylesheet');
-  const htmlNode = doc.getElementById('react-app');
+  const htmlNode = document.createElement('div');
+  document.body.appendChild(htmlNode);
 
   const Foo = createComponent(() => ({
     margin: '10px',
@@ -39,14 +23,14 @@ test('StyleProvider should render styles', () => {
   }));
 
   render(
-    <StyleProvider cssNode={cssNode}>
+    <StyleProvider>
       <Foo />
     </StyleProvider>,
     htmlNode
   );
 
   expect(
-    beautify(jsdom.serializeDocument(doc), { indent_size: 2 })
+    beautify(document.documentElement.outerHTML, { indent_size: 2 })
   ).toMatchSnapshot();
 });
 
