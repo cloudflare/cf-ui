@@ -11,9 +11,9 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "fela": "4.3.2",
+    "fela": "^5.0.0",
     "merge-options": "0.0.64",
-    "react-fela": "4.3.2",
+    "react-fela": "^5.0.0",
     "prop-types": "^15.5.8"
   },
   "peerDependencies": {
