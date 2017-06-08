@@ -17,6 +17,7 @@
     "fela": "^5.0.0",
     "fela-beautifier": "^5.0.0",
     "fela-monolithic": "^5.0.0",
+    "fela-plugin-embedded": "^5.0.0",
     "fela-plugin-fallback-value": "^5.0.0",
     "fela-plugin-lvha": "^5.0.0",
     "fela-plugin-prefixer": "^5.0.0",
