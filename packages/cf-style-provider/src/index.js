@@ -11,6 +11,7 @@ import fallbackValue from 'fela-plugin-fallback-value';
 import unit from 'fela-plugin-unit';
 import lvha from 'fela-plugin-lvha';
 import validator from 'fela-plugin-validator';
+import embedded from 'fela-plugin-embedded';
 import beautifier from 'fela-beautifier';
 import monolithic from 'fela-monolithic';
 import { Provider } from 'react-fela';
@@ -24,7 +25,7 @@ const defaultOpts = {
 
 export const createRenderer = opts => {
   const usedOpts = Object.assign({}, defaultOpts, opts);
-  const plugins = [prefixer(), fallbackValue(), unit(), lvha()];
+  const plugins = [prefixer(), fallbackValue(), unit(), lvha(), embedded()];
   const enhancers = [];
 
   if (usedOpts.dev === true) {
