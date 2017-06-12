@@ -124,7 +124,8 @@ const styles = props => {
     transition: theme.transition,
     userSelect: theme.userSelect,
     float: theme.float,
-    height: theme.height
+    height: theme.height,
+    maxWidth: theme.maxWidth
   };
 };
 
