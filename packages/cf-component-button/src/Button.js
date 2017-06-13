@@ -70,7 +70,9 @@ const styles = props => {
       backgroundColor: props.loading
         ? theme.disabledBackground
         : theme[`${props.type}HoverBackground`],
-      borderColor: theme[`${props.type}HoverBorder`],
+      borderColor: props.loading
+        ? theme.disabledBorder
+        : theme[`${props.type}HoverBorder`],
       color: props.loading
         ? theme.disabledBackground
         : theme[`${props.type}HoverColor`]
@@ -99,7 +101,9 @@ const styles = props => {
       : theme[`${props.type}Background`],
     borderBottom: theme.borderBottom,
     borderBottomWidth: theme.borderBottomWidth,
-    borderColor: theme[`${props.type}Border`],
+    borderColor: props.loading
+      ? theme.disabledBorder
+      : theme[`${props.type}Border`],
     borderLeft: props.group && props.group !== 'first' ? 0 : theme.borderLeft,
     borderRight: theme.borderRight,
     borderStyle: theme.borderStyle,
