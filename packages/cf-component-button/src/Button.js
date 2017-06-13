@@ -123,7 +123,8 @@ const styles = props => {
     textAlign: theme.textAlign,
     transition: theme.transition,
     userSelect: theme.userSelect,
-    float: theme.float
+    float: theme.float,
+    maxWidth: theme.maxWidth
   };
 };
 

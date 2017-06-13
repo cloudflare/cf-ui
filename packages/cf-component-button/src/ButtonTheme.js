@@ -65,6 +65,7 @@ export default baseTheme => {
     borderBottom: '1px solid',
     borderTop: 0,
     borderRight: 0,
+    maxWidth: 'initial',
 
     // Disabled
     disabledBorder: darken(
