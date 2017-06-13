@@ -65,7 +65,6 @@ export default baseTheme => {
     borderBottom: '1px solid',
     borderTop: 0,
     borderRight: 0,
-    height: 'initial',
     maxWidth: 'initial',
 
     // Disabled
