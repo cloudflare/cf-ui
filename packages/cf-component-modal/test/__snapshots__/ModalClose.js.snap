@@ -7,13 +7,9 @@ exports[`should render 1`] = `
 >
   <i
     className="cf-17bf5fe"
-    id={undefined}
-    style={undefined}
   >
     <span
       className="cf-1u9fru1"
-      id={undefined}
-      style={undefined}
     />
   </i>
 </span>
@@ -26,13 +22,9 @@ exports[`should render with a label 1`] = `
 >
   <i
     className="cf-17bf5fe"
-    id={undefined}
-    style={undefined}
   >
     <span
       className="cf-1u9fru1"
-      id={undefined}
-      style={undefined}
     >
       label
     </span>

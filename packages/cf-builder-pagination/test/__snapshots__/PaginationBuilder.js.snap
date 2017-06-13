@@ -21,16 +21,12 @@ exports[`should render pagination 1`] = `
       >
         <i
           className="cf-1wm9h0q"
-          id={undefined}
-          style={undefined}
         >
           <span
             className="cf-1u9fru1"
-            id={undefined}
-            style={undefined}
           />
         </i>
-      </span>
+      </a>
     </li>
     <li
       className="cf-1wi2cf1"
@@ -109,13 +105,9 @@ exports[`should render pagination 1`] = `
       >
         <i
           className="cf-olcaob"
-          id={undefined}
-          style={undefined}
         >
           <span
             className="cf-1u9fru1"
-            id={undefined}
-            style={undefined}
           />
         </i>
       </a>
@@ -145,16 +137,12 @@ exports[`should render pagination loading 1`] = `
       >
         <i
           className="cf-1wm9h0q"
-          id={undefined}
-          style={undefined}
         >
           <span
             className="cf-1u9fru1"
-            id={undefined}
-            style={undefined}
           />
         </i>
-      </span>
+      </a>
     </li>
     <li
       className="cf-1wi2cf1"
@@ -168,16 +156,12 @@ exports[`should render pagination loading 1`] = `
       >
         <i
           className="cf-1isqwou"
-          id={undefined}
-          style={undefined}
         >
           <span
             className="cf-1u9fru1"
-            id={undefined}
-            style={undefined}
           />
         </i>
-      </span>
+      </a>
     </li>
     <li
       className="cf-15spu1u"
@@ -243,13 +227,9 @@ exports[`should render pagination loading 1`] = `
       >
         <i
           className="cf-olcaob"
-          id={undefined}
-          style={undefined}
         >
           <span
             className="cf-1u9fru1"
-            id={undefined}
-            style={undefined}
           />
         </i>
       </a>
@@ -279,13 +259,9 @@ exports[`should render pagination with an infoFormatter 1`] = `
       >
         <i
           className="cf-1wm9h0q"
-          id={undefined}
-          style={undefined}
         >
           <span
             className="cf-1u9fru1"
-            id={undefined}
-            style={undefined}
           />
         </i>
       </a>
@@ -367,13 +343,9 @@ exports[`should render pagination with an infoFormatter 1`] = `
       >
         <i
           className="cf-olcaob"
-          id={undefined}
-          style={undefined}
         >
           <span
             className="cf-1u9fru1"
-            id={undefined}
-            style={undefined}
           />
         </i>
       </a>
@@ -403,13 +375,9 @@ exports[`should render pagination with the last page active 1`] = `
       >
         <i
           className="cf-1wm9h0q"
-          id={undefined}
-          style={undefined}
         >
           <span
             className="cf-1u9fru1"
-            id={undefined}
-            style={undefined}
           />
         </i>
       </a>
@@ -491,16 +459,12 @@ exports[`should render pagination with the last page active 1`] = `
       >
         <i
           className="cf-olcaob"
-          id={undefined}
-          style={undefined}
         >
           <span
             className="cf-1u9fru1"
-            id={undefined}
-            style={undefined}
           />
         </i>
-      </span>
+      </a>
     </li>
   </ul>
 </div>
@@ -527,13 +491,9 @@ exports[`should render with collapsed items 1`] = `
       >
         <i
           className="cf-1wm9h0q"
-          id={undefined}
-          style={undefined}
         >
           <span
             className="cf-1u9fru1"
-            id={undefined}
-            style={undefined}
           />
         </i>
       </a>
@@ -671,13 +631,9 @@ exports[`should render with collapsed items 1`] = `
       >
         <i
           className="cf-olcaob"
-          id={undefined}
-          style={undefined}
         >
           <span
             className="cf-1u9fru1"
-            id={undefined}
-            style={undefined}
           />
         </i>
       </a>

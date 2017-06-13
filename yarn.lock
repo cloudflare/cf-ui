@@ -1131,6 +1131,12 @@ cryptiles@2.x.x:
   dependencies:
     boom "2.x.x"
 
+css-in-js-utils@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/css-in-js-utils/-/css-in-js-utils-1.0.3.tgz#9ac7e02f763cf85d94017666565ed68a5b5f3215"
+  dependencies:
+    hyphenate-style-name "^1.0.2"
+
 css-select@~1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/css-select/-/css-select-1.2.0.tgz#2b3a110539c5355f1cd8d314623e870b121ec858"
@@ -1602,6 +1608,26 @@ fbjs@^0.8.9:
     setimmediate "^1.0.5"
     ua-parser-js "^0.7.9"
 
+fela-dom@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/fela-dom/-/fela-dom-5.0.2.tgz#8c10ce9ff2872eece4eb27fcbf5950eba1c76afa"
+  dependencies:
+    fela-tools "^5.0.1"
+    fela-utils "^5.0.1"
+
+fela-tools@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/fela-tools/-/fela-tools-5.0.1.tgz#3cb93239c39cb574b6d6b43a718178ff3173dde4"
+  dependencies:
+    css-in-js-utils "^1.0.3"
+    fela-utils "^5.0.1"
+
+fela-utils@^5.0.1:
+  version "5.0.1"
+  resolved "https://registry.yarnpkg.com/fela-utils/-/fela-utils-5.0.1.tgz#d65dc24bd093442c89d5bdd7d8ffeace82b608ee"
+  dependencies:
+    css-in-js-utils "^1.0.3"
+
 figures@^1.3.5:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/figures/-/figures-1.7.0.tgz#cbe1e3affcf1cd44b80cadfed28dc793a9701d2e"
@@ -1924,6 +1950,10 @@ http-signature@~1.1.0:
     assert-plus "^0.2.0"
     jsprim "^1.2.2"
     sshpk "^1.7.0"
+
+hyphenate-style-name@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.2.tgz#31160a36930adaf1fc04c6074f7eb41465d4ec4b"
 
 iconv-lite@0.4.13, iconv-lite@~0.4.13:
   version "0.4.13"

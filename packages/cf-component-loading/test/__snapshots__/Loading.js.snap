@@ -3,13 +3,9 @@
 exports[`should render 1`] = `
 <i
   className="cf-1isqwou"
-  id={undefined}
-  style={undefined}
 >
   <span
     className="cf-1u9fru1"
-    id={undefined}
-    style={undefined}
   >
     Loading
   </span>
