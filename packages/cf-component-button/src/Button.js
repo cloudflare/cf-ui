@@ -42,7 +42,13 @@ const before = (fadeZoomIn, loading) => {
       left: 0,
       height: '100%',
       width: '100%',
-      opacity: 1
+      opacity: 1,
+      animationName: {
+        '50%': { opacity: 0 }
+      },
+      animationDuration: '1s',
+      animationIterationCount: 'infinite',
+      animationTimingFunction: 'linear'
     }
   };
 };
