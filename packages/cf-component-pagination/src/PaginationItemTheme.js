@@ -2,28 +2,44 @@ export default baseTheme => ({
   float: 'left',
   position: 'relative',
   backgroundColor: baseTheme.colorWhite,
-  color: baseTheme.colorInfo,
-  backgroundColorActive: baseTheme.colorInfo,
+  color: baseTheme.color.rain,
+  backgroundColorActive: baseTheme.color.rain,
   backgroundColorDisabled: baseTheme.disabledBackground,
   borderColorActive: baseTheme.colorBlueLight,
   colorActive: baseTheme.colorWhite,
   colorDisabled: baseTheme.colorGrayBorder,
   zIndexActive: 1,
+  cursor: 'pointer',
+  cursorDisabled: 'default',
+  cursorActive: 'default',
   dot: {
-    width: '.5rem',
-    height: '.5rem',
-    margin: '1rem',
+    width: '.5em',
+    height: '.5em',
+    margin: '1em',
     borderRadius: '50%',
-    border: '1px solid rgba(0, 0, 0, .15)'
+    border: `1px solid ${baseTheme.color.rain}`
   },
   next: {
-    backgroundColor: baseTheme.colorBlueLight,
+    backgroundColor: baseTheme.color.rain,
     color: baseTheme.colorWhite,
     borderRadius: '3px'
   },
   prev: {
-    backgroundColor: baseTheme.colorBlueLight,
+    backgroundColor: baseTheme.color.rain,
     color: baseTheme.colorWhite,
     borderRadius: '3px'
+  },
+  link: {
+    userSelect: 'none',
+    position: 'relative',
+    display: 'block',
+    paddingTop: '.5em',
+    paddingBottom: '.5em',
+    paddingLeft: '1em',
+    paddingRight: '1em',
+    textDecoration: 'none',
+    fontWeight: 700,
+    color: 'inherit',
+    'zIndex:focus': 1
   }
 });

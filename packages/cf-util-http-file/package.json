@@ -1,7 +1,7 @@
 {
   "name": "cf-util-http-file",
   "description": "Cloudflare HTTP File Util",
-  "version": "4.5.8",
+  "version": "4.7.3",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -11,6 +11,6 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-util-http": "^3.5.8"
+    "cf-util-http": "^4.0.1"
   }
 }

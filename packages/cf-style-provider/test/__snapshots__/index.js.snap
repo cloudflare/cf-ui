@@ -3,8 +3,7 @@
 exports[`StyleProvider should render 1`] = `<div />`;
 
 exports[`StyleProvider should render styles 1`] = `
-"<!DOCTYPE html>
-<html>
+"<html>
 
 <head>
   <style id=\\"stylesheet\\" data-fela-stylesheet=\\"\\">
@@ -52,10 +51,9 @@ exports[`StyleProvider should render styles 1`] = `
 </head>
 
 <body>
-  <div id=\\"react-app\\">
+  <div>
     <div data-reactroot=\\"\\" class=\\"cf-a cf-b\\"></div>
   </div>
-
 </body>
 
 </html>"

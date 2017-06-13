@@ -1,7 +1,7 @@
 {
   "name": "cf-component-loading",
   "description": "Cloudflare Loading Component",
-  "version": "2.2.2",
+  "version": "2.4.1",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -11,7 +11,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-component-icon": "^2.2.2",
+    "cf-component-icon": "^2.4.1",
     "prop-types": "^15.5.8"
   },
   "peerDependencies": {

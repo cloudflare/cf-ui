@@ -33,7 +33,6 @@ exports[`should render 1`] = `
     noResultsText="No results found"
     onBlurResetsInput={true}
     onCloseResetsInput={true}
-    openAfterFocus={false}
     optionComponent={[Function]}
     pageSize={5}
     placeholder="Select..."

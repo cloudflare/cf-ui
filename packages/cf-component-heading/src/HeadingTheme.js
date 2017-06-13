@@ -7,7 +7,6 @@ export default () => ({
   fontWeight3: 700,
   fontSize3: '1.46667rem',
   lineHeight3: 1.3,
-  fontWeight3: 700,
   fontSize4: '1.2rem',
   lineHeight4: 1.3,
   fontWeight4: 700,
@@ -16,5 +15,9 @@ export default () => ({
   fontWeight5: 700,
   fontSize6: '.93333rem',
   lineHeight6: 1.6,
-  fontWeight6: 700
+  fontWeight6: 700,
+  paddingTop: 0,
+  paddingBottom: 0,
+  paddingLeft: 0,
+  paddingRight: 0
 });

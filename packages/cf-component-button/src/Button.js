@@ -2,8 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { createComponent } from 'cf-style-container';
 
-const radius = (borderRadius, group) => {
-  if (group) {
+const radius = (borderRadius, group, spaced) => {
+  if (spaced) {
+    return { borderRadius };
+  }
+  if (group && !spaced) {
     return {
       borderTopRightRadius: group === 'last' ? borderRadius : 0,
       borderTopLeftRadius: group === 'first' ? borderRadius : 0,
@@ -116,7 +119,7 @@ const styles = props => {
     paddingTop: theme.paddingTop,
     pointerEvents: props.disabled ? 'none' : 'auto',
     position: theme.position,
-    ...radius(theme.borderRadius, props.group),
+    ...radius(theme.borderRadius, props.group, props.spaced),
     textAlign: theme.textAlign,
     transition: theme.transition,
     userSelect: theme.userSelect,
@@ -148,7 +151,7 @@ class Button extends React.Component {
 }
 
 Button.propTypes = {
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
   submit: PropTypes.bool,
   spaced: PropTypes.bool,
   className: PropTypes.string.isRequired,

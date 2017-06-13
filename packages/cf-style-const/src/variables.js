@@ -28,6 +28,7 @@ export default {
     dusk: '#4D4D4F',
     storm: '#808285',
     hail: '#BCBEC0',
+    moonshine: '#F7F7F7',
     //current colors
     cement: '#7D7D7D',
     grass: '#9BCA3E',
@@ -76,6 +77,7 @@ export default {
   colorOrangeDark: darken(colorOffsetDark, '#ff7900'),
   colorGray: darken(0.5125, '#fff'),
   colorGrayLight: darken(0.13, '#fff'),
+  colorGrayLightOnboarding: '#F7F7F7',
   colorGrayDark: darken(0.8, '#fff'),
   colorGrayBorder: '#666',
   colorGreen: '#9bca3e',
@@ -95,5 +97,7 @@ export default {
   colorPurpleDark: darken(colorOffsetDark, '#d91698'),
   colorTwitterBlue: '#00aced',
   colorFacebookBlue: '#3b5998',
-  colorMainBackground: '#e6e6e6'
+  colorMainBackground: '#e6e6e6',
+  colorOverlay: 'rgba(0, 0, 0, .7)',
+  zIndexMax: 1000
 };

@@ -1,20 +1,12 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import {
-  PaginationItem,
-  PaginationLink
-} from '../../cf-component-pagination/src/index';
+import { PaginationItem } from '../../cf-component-pagination/src/index';
 import felaTestContext from '../../../felaTestContext';
 
 test('should render', () => {
   const component = renderer.create(
     felaTestContext(
-      <PaginationItem
-        type="number"
-        label="PaginationLabel"
-        onClick={() => {}}
-        PaginationLink={PaginationLink}
-      >
+      <PaginationItem type="number" label="PaginationLabel" onClick={() => {}}>
         PaginationItem
       </PaginationItem>
     )
@@ -30,7 +22,6 @@ test('should render active', () => {
         type="number"
         label="PaginationLabel"
         onClick={() => {}}
-        PaginationLink={PaginationLink}
       >
         PaginationItem
       </PaginationItem>
@@ -47,7 +38,6 @@ test('should render disabled', () => {
         type="number"
         label="PaginationLabel"
         onClick={() => {}}
-        PaginationLink={PaginationLink}
       >
         PaginationItem
       </PaginationItem>
@@ -64,7 +54,6 @@ test('should render active dot', () => {
         type="dot"
         label="PaginationLabel"
         onClick={() => {}}
-        PaginationLink={PaginationLink}
       >
         PaginationItem
       </PaginationItem>
@@ -81,7 +70,6 @@ test('should render disabled dot', () => {
         type="dot"
         label="PaginationLabel"
         onClick={() => {}}
-        PaginationLink={PaginationLink}
       >
         PaginationItem
       </PaginationItem>
@@ -98,7 +86,6 @@ test('should render active next', () => {
         type="next"
         label="PaginationLabel"
         onClick={() => {}}
-        PaginationLink={PaginationLink}
       >
         PaginationItem
       </PaginationItem>
@@ -115,7 +102,6 @@ test('should render disabled next', () => {
         type="next"
         label="PaginationLabel"
         onClick={() => {}}
-        PaginationLink={PaginationLink}
       >
         PaginationItem
       </PaginationItem>
@@ -132,7 +118,6 @@ test('should render active prev', () => {
         type="prev"
         label="PaginationLabel"
         onClick={() => {}}
-        PaginationLink={PaginationLink}
       >
         PaginationItem
       </PaginationItem>
@@ -149,7 +134,6 @@ test('should render disabled prev', () => {
         type="prev"
         label="PaginationLabel"
         onClick={() => {}}
-        PaginationLink={PaginationLink}
       >
         PaginationItem
       </PaginationItem>

@@ -82,7 +82,7 @@ exports[`should render 3 buttons with spacing 1`] = `
   className="cf-cmkk1"
 >
   <button
-    className="cf-m1dhvv"
+    className="cf-ecqzwz"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -90,7 +90,7 @@ exports[`should render 3 buttons with spacing 1`] = `
     Button
   </button>
   <button
-    className="cf-10f2fib"
+    className="cf-1usp4kb"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -98,7 +98,7 @@ exports[`should render 3 buttons with spacing 1`] = `
     Button
   </button>
   <button
-    className="cf-irfuir"
+    className="cf-1usp4kb"
     disabled={undefined}
     onClick={[Function]}
     type="button"
