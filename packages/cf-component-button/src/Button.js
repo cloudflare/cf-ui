@@ -65,6 +65,7 @@ const marginLeft = (marginLeft, group, spaced) => {
 
 const styles = props => {
   const theme = props.theme;
+  console;
   return {
     '&:hover': {
       backgroundColor: props.loading
@@ -79,7 +80,9 @@ const styles = props => {
     },
     '&:active': {
       backgroundColor: theme[`${props.type}ActiveBackground`],
-      borderColor: theme[`${props.type}ActiveBorder`],
+      borderColor: props.loading
+        ? theme.disabledBorder
+        : theme[`${props.type}ActiveBorder`],
       color: theme[`${props.type}ActiveColor`]
     },
     '&:focus': {
@@ -90,7 +93,10 @@ const styles = props => {
       color: props.loading
         ? theme.disabledBackground
         : theme[`${props.type}FocusColor`],
-      outline: props.loading ? 'none' : 'inherit'
+      outline: props.loading ? 'none' : 'inherit',
+      borderColor: props.loading
+        ? theme.disabledBorder
+        : theme[`${props.type}Border`]
     },
     ...before(theme.fadeZoomIn, props.loading),
     '&[title]': {
