@@ -27,6 +27,7 @@ const defaultOpts = {
 
 export const createRenderer = opts => {
   const usedOpts = Object.assign({}, defaultOpts, opts);
+
   const plugins = [prefixer(), fallbackValue(), unit(), lvha(), embedded()];
   const enhancers = [];
 
@@ -42,16 +43,7 @@ export const createRenderer = opts => {
     selectorPrefix: [usedOpts.selectorPrefix]
   });
 
-  renderer.renderFont('Cloudflare Icons', [
-    `data:application/x-font-ttf;charset=utf-8;base64,${cloudflareIcons}`
-  ]);
-
-  const spinAnimationName = renderer.renderKeyframe(() => ({
-    from: { transform: 'rotate(0deg)' },
-    to: { transform: 'rotate(359deg)' }
-  }));
-
-  return { renderer, spinAnimationName };
+  return renderer;
 };
 
 export const StyleProvider = ({
@@ -60,14 +52,14 @@ export const StyleProvider = ({
   children,
   ...restProps
 }) => {
-  const { renderer, spinAnimationName } = createRenderer({
+  const renderer = createRenderer({
     selectorPrefix,
     dev
   });
   const child = Children.only(children);
   return (
     <Provider renderer={renderer}>
-      <ThemeProvider theme={{ spinAnimationName, ...variables }}>
+      <ThemeProvider theme={variables}>
         {isValidElement(child) ? cloneElement(child, { ...restProps }) : child}
       </ThemeProvider>
     </Provider>

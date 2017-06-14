@@ -1,9 +1,15 @@
 export default baseTheme => ({
-  iconFontFamily: 'Cloudflare Icons',
+  fontFace: {
+    fontFamily: 'Cloudflare Icons',
+    src: [`data:application/x-font-ttf;charset=utf-8;base64,${cloudflareIcons}`]
+  },
+  animationName: {
+    from: { transform: 'rotate(0deg)' },
+    to: { transform: 'rotate(359deg)' }
+  },
   color: baseTheme.colorDarkGray,
   fontStyle: baseTheme.fontStyle,
-  fontFamily: baseTheme.fontFamily,
   fontSize: baseTheme.fontSize,
   borderRadius: baseTheme.borderRadius,
-  spinAnimationName: baseTheme.spinAnimationName
+  spinAnimationName: baseTheme.spinAnimation
 });

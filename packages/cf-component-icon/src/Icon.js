@@ -154,14 +154,14 @@ const Wrapper = createComponent(({
 
   if (spin) {
     additionalRules.display = 'inline-block';
-    additionalRules.animation = `${theme.spinAnimationName} 2s infinite linear`;
+    additionalRules.animation = `${theme.spinAnimation} 2s infinite linear`;
   }
 
   return {
     color: theme.color,
     fontSize: theme.fontSize,
     fontStyle: theme.fontStyle,
-    fontFamily: theme.iconFontFamily,
+    fontFamily: theme.fontFamily,
 
     '::before': {
       ...additionalRules,

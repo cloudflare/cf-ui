@@ -14,7 +14,7 @@ exports[`should render type 1`] = `
 
 exports[`should render type/border/spin/muted/white 1`] = `
 <i
-  className="cf-1eg1unm"
+  className="cf-5cbob6"
 >
   <span
     className="cf-1u9fru1"
