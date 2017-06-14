@@ -18,8 +18,6 @@ import { Provider } from 'react-fela';
 import { variables } from 'cf-style-const';
 import { ThemeProvider } from 'cf-style-container';
 
-import cloudflareIcons from './cloudflare-icons';
-
 const defaultOpts = {
   selectorPrefix: 'cf-',
   dev: false

@@ -1,3 +1,5 @@
+import cloudflareIcons from './cloudflare-icons';
+
 export default baseTheme => ({
   fontFace: {
     fontFamily: 'Cloudflare Icons',
