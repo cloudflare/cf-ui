@@ -65,7 +65,6 @@ const marginLeft = (marginLeft, group, spaced) => {
 
 const styles = props => {
   const theme = props.theme;
-  console;
   return {
     '&:hover': {
       backgroundColor: props.loading
