@@ -316,6 +316,16 @@ export default {
     default: 0,
     preprocessWith: [pxToRem]
   },
+  maxWidth: {
+    propType: numberOrString,
+    default: 0,
+    preprocessWith: [pxToRem]
+  },
+  maxHeight: {
+    propType: numberOrString,
+    default: 0,
+    preprocessWith: [pxToRem]
+  },
 
   verticalAlign: {
     propType: numberOrString,
