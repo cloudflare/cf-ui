@@ -2,7 +2,7 @@
 
 exports[`should render as submit 1`] = `
 <button
-  className="cf-lzztqz"
+  className="cf-1xw6w94"
   disabled={undefined}
   onClick={[Function]}
   type="submit"
@@ -35,7 +35,7 @@ exports[`should render with loading and disabled overridden 1`] = `
 
 exports[`should render with type 1`] = `
 <button
-  className="cf-lzztqz"
+  className="cf-1xw6w94"
   disabled={undefined}
   onClick={[Function]}
   type="button"
@@ -46,7 +46,7 @@ exports[`should render with type 1`] = `
 
 exports[`should render with type/disabled 1`] = `
 <button
-  className="cf-d1hkdh"
+  className="cf-1fmwu46"
   disabled={true}
   onClick={[Function]}
   type="button"

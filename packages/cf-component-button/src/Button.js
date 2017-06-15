@@ -92,7 +92,7 @@ const styles = props => {
       color: props.loading
         ? theme.disabledBackground
         : theme[`${props.type}FocusColor`],
-      outline: props.loading ? 'none' : 'inherit',
+      outline: props.loading ? 'none' : undefined,
       borderColor: props.loading
         ? theme.disabledBorder
         : theme[`${props.type}Border`]
