@@ -440,6 +440,18 @@ export default {
     default: 'start'
   },
 
+  textDecoration: {
+    propType: PropTypes.oneOf([
+      'none',
+      'underline',
+      'overline',
+      'line-through',
+      'initial',
+      'inherit'
+    ]),
+    default: 'initial'
+  },
+
   opacity: {
     propType: numberOrString,
     default: 1.0
@@ -468,5 +480,4 @@ export default {
    outline
    border-radius
    box-shadow
-   text-decoration
 */
