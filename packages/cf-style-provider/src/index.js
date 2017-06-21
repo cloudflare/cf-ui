@@ -14,6 +14,7 @@ import validator from 'fela-plugin-validator';
 import embedded from 'fela-plugin-embedded';
 import beautifier from 'fela-beautifier';
 import monolithic from 'fela-monolithic';
+import namedMediaQuery from 'fela-plugin-named-media-query';
 import { Provider } from 'react-fela';
 import { variables } from 'cf-style-const';
 import { ThemeProvider } from 'cf-style-container';
@@ -25,7 +26,20 @@ const defaultOpts = {
 
 export const createRenderer = opts => {
   const usedOpts = Object.assign({}, defaultOpts, opts);
-  const plugins = [prefixer(), fallbackValue(), unit(), lvha(), embedded()];
+  const plugins = [
+    prefixer(),
+    fallbackValue(),
+    unit(),
+    lvha(),
+    embedded(),
+    namedMediaQuery({
+      mobile: `@media (min-width: ${variables.breakpoints.modile})`,
+      mobileWide: `@media (min-width: ${variables.breakpoints.mobileWide})`,
+      tablet: `@media (min-width: ${variables.breakpoints.tablet})`,
+      desktop: `@media (min-width: ${variables.breakpoints.desktop})`,
+      desktopLarge: `@media (min-width: ${variables.breakpoints.desktopLarge})`
+    })
+  ];
   const enhancers = [];
 
   if (usedOpts.dev === true) {
