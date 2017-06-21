@@ -97,5 +97,6 @@ export default {
   colorFacebookBlue: '#3b5998',
   colorMainBackground: '#e6e6e6',
   colorOverlay: 'rgba(0, 0, 0, .7)',
+  colorImportantInformation: 'rgba(64,139,201,0.2)',
   zIndexMax: 1000
 };
