@@ -139,7 +139,8 @@ const styles = props => {
     transition: theme.transition,
     userSelect: theme.userSelect,
     float: theme.float,
-    maxWidth: theme.maxWidth
+    maxWidth: theme.maxWidth,
+    float: theme.float
   };
 };
 
