@@ -41,7 +41,10 @@ export default {
     grass: '#9BCA3E',
     marine: '#2F7BBF',
     tangerine: '#FF7900',
-    apple: '#BD2527'
+    apple: '#BD2527',
+    charcoal: '#333333',
+    carrot: '#f56500',
+    smoke: '#e0e0e0'
   },
   fontSize: '15px',
   boxShadow: '0 0 20px 0 rgba(136,136,136,0.50)',
