@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { shallow } from 'enzyme';
+import { shallow, render } from 'enzyme';
 import Icon, { IconUnstyled } from 'cf-component-icon';
 import felaTestContext from '../../../felaTestContext';
 
@@ -35,14 +35,14 @@ test('should render type with no label', () => {
 
 test('should render role', () => {
   const wrapper = shallow(
-    felaTestContext(<IconUnstyled type="loading" role="status" />)
+    felaTestContext(<IconUnstyled type="refresh" role="status" />)
   );
   const domNode = wrapper.find('Icon');
   expect(domNode.prop('role')).toBe('status');
 });
 
 test('should not render role if not provided', () => {
-  const wrapper = shallow(felaTestContext(<IconUnstyled type="loading" />));
+  const wrapper = shallow(felaTestContext(<IconUnstyled type="refresh" />));
   const domNode = wrapper.find('Icon');
   expect(domNode.prop('role')).toBe.undefined;
 });

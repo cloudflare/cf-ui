@@ -2,7 +2,7 @@
 
 exports[`should render type 1`] = `
 <i
-  className="cf-3ii79b"
+  className="cf-1u68lwu"
 >
   <span
     className="cf-1u9fru1"
@@ -14,7 +14,7 @@ exports[`should render type 1`] = `
 
 exports[`should render type/border/spin/muted/white 1`] = `
 <i
-  className="cf-39nhoj"
+  className="cf-1kle8k2"
 >
   <span
     className="cf-1u9fru1"
@@ -26,7 +26,7 @@ exports[`should render type/border/spin/muted/white 1`] = `
 
 exports[`should render type/size 1`] = `
 <i
-  className="cf-3ii79b"
+  className="cf-1u68lwu"
 >
   <span
     className="cf-1u9fru1"

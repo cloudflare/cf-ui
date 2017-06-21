@@ -6,7 +6,7 @@ exports[`should render 1`] = `
   onClick={[Function]}
 >
   <i
-    className="cf-ukvbhn"
+    className="cf-13pkyl4"
   >
     <span
       className="cf-1u9fru1"
@@ -21,7 +21,7 @@ exports[`should render with a label 1`] = `
   onClick={[Function]}
 >
   <i
-    className="cf-ukvbhn"
+    className="cf-13pkyl4"
   >
     <span
       className="cf-1u9fru1"

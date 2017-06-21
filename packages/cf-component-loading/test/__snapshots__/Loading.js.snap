@@ -2,12 +2,12 @@
 
 exports[`should render 1`] = `
 <i
-  className="cf-1bpso4v"
+  className="cf-1lx60tf"
 >
   <span
     className="cf-1u9fru1"
   >
-    Loading
+    Refresh
   </span>
 </i>
 `;
