@@ -20,6 +20,7 @@
     "fela-plugin-embedded": "^5.0.0",
     "fela-plugin-fallback-value": "^5.0.0",
     "fela-plugin-lvha": "^5.0.0",
+    "fela-plugin-named-media-query": "^5.0.1",
     "fela-plugin-prefixer": "^5.0.0",
     "fela-plugin-unit": "^5.0.0",
     "fela-plugin-validator": "^5.0.0",
