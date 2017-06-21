@@ -7,6 +7,7 @@ import {
   connect
 } from 'react-fela';
 import mergeOptions from 'merge-options';
+import { capitalize } from 'underscore.string';
 
 const createComponent = (rule, type = 'div', passThroughProps = []) =>
   createFelaComponent(
@@ -17,21 +18,27 @@ const createComponent = (rule, type = 'div', passThroughProps = []) =>
       : passThroughProps
   );
 
-const applyTheme = (ComponentToWrap, primaryTheme = () => {}, ...themes) => {
+const mergeThemes = (baseTheme, ...themes) => ({
+  theme: (themes &&
+    themes.reduce(
+      (acc, theme) => {
+        if (typeof theme === 'function') {
+          return mergeOptions(acc, theme(baseTheme));
+        } else if (typeof theme === 'object') {
+          return mergeOptions(acc, theme);
+        }
+        throw new Error('theme must be either a function or an object');
+      },
+      { ...baseTheme }
+    )) ||
+    baseTheme
+});
+
+const applyTheme = (ComponentToWrap, ...themes) => {
   class ThemedComponent extends Component {
     getChildContext() {
       const contextTheme = this.context.theme || {};
-      let resultTheme = { ...contextTheme, ...primaryTheme(contextTheme) };
-      for (const theme of themes) {
-        if (theme) {
-          resultTheme = { ...mergeOptions(resultTheme, theme(contextTheme)) };
-        }
-      }
-      return {
-        theme: {
-          ...resultTheme
-        }
-      };
+      return mergeThemes(contextTheme, ...themes);
     }
 
     render() {
@@ -49,9 +56,40 @@ const createComponentStyles = (styleFunctions, component) =>
 
 export {
   createComponent,
+  mergeThemes,
   applyTheme,
   ThemeProvider,
   connect,
   combineRules,
-  createComponentStyles
+  createComponentStyles,
+  capitalize
 };
+
+// Loops the key-value pairs of a props object, and apply a filter function to
+// every pair. The returned value from the filter function will be reduced back
+// to a single object.
+export const filterProps = (props, filter) =>
+  Object.keys(props)
+    .map(key => [key, props[key]])
+    .reduce((accum, [key, value]) => filter(key, value, accum), {});
+
+// Filter out all the keys with null or undefined values
+export const filterNone = props =>
+  filterProps(props, (key, value, accum) => {
+    if (value == null) return accum;
+    accum[key] = value;
+    return accum;
+  });
+
+// Filter out all the style attribute from the props
+export const filterStyle = props =>
+  filterProps(props, (key, value, accum) => {
+    if (key === 'style') return accum;
+    accum[key] = value;
+    return accum;
+  });
+
+export const mapChildren = (children, func) =>
+  React.Children
+    .toArray(children)
+    .map((child, index, children) => func(child, index, children));
