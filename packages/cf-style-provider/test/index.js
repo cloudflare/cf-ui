@@ -19,10 +19,7 @@ test('StyleProvider should render styles', () => {
 
   const Foo = createComponent(() => ({
     margin: '10px',
-    color: 'red',
-    desktop: {
-      fontSize: '1px'
-    }
+    color: 'red'
   }));
 
   render(
