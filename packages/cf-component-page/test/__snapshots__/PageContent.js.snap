@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render 1`] = `
-<article
-  className="cf-lb8cdc"
+<div
+  className="cf-10xznom"
 >
   Hello World
-</article>
+</div>
 `;

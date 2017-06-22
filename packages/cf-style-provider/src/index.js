@@ -33,7 +33,7 @@ export const createRenderer = opts => {
     lvha(),
     embedded(),
     namedMediaQuery({
-      mobile: `@media (min-width: ${variables.breakpoints.modile})`,
+      mobile: `@media (min-width: ${variables.breakpoints.mobile})`,
       mobileWide: `@media (min-width: ${variables.breakpoints.mobileWide})`,
       tablet: `@media (min-width: ${variables.breakpoints.tablet})`,
       desktop: `@media (min-width: ${variables.breakpoints.desktop})`,
