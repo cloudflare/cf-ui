@@ -11,22 +11,33 @@ import { variables } from 'cf-style-const';
 import renderer from 'react-test-renderer';
 import felaTestContext from '../../../felaTestContext';
 
+test('mergeThemes should return an immutable and deeply cloned object', () => {
+  const themeA = () => ({ color: 'yellow' });
+  const themeB = { color: 'blue', breakpoints: { desktop: '1em' } };
+  const props = mergeThemes(variables, themeA, themeB);
+  expect(() => {
+    props.theme.color = 'white';
+  }).toThrow();
+  expect(props.theme.color).toEqual('blue');
+  expect(props.theme.breakpoints).not.toBe(themeB.breakpoints);
+});
+
 test('mergesThemes should accept functions themes', () => {
-  const theme = mergeThemes(variables, () => ({
+  const props = mergeThemes(variables, () => ({
     color: 'yellow'
   }));
-  expect(theme).toMatchSnapshot();
+  expect(props).toMatchSnapshot();
 });
 
 test('mergesThemes should accept object themes', () => {
-  const theme = mergeThemes(variables, {
+  const props = mergeThemes(variables, {
     color: 'yellow'
   });
-  expect(theme).toMatchSnapshot();
+  expect(props).toMatchSnapshot();
 });
 
 test('mergeThemes should override the baseTheme if more than one theme is provided', () => {
-  const theme = mergeThemes(
+  const props = mergeThemes(
     variables,
     () => ({
       color: 'yellow',
@@ -41,12 +52,12 @@ test('mergeThemes should override the baseTheme if more than one theme is provid
       }
     }
   );
-  expect(theme).toMatchSnapshot();
+  expect(props).toMatchSnapshot();
 });
 
 test('mergeThemes should return the baseTheme if no extra theme is provided', () => {
-  const theme = mergeThemes(variables);
-  expect(theme).toMatchSnapshot();
+  const props = mergeThemes(variables);
+  expect(props).toMatchSnapshot();
 });
 
 test('createComponent creates empty component', () => {
