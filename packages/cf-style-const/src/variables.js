@@ -4,6 +4,13 @@ const colorOffsetLight = 0.15;
 const colorOffsetDark = 0.07;
 
 export default {
+  breakpoints: {
+    mobile: '13.6em',
+    mobileWide: '30.4em',
+    tablet: '47.2em',
+    desktop: '64em',
+    desktopLarge: '97.6em'
+  },
   gradient: {
     primary: 'linear-gradient(left, #76C4E2, #85CBA8)',
     two: 'linear-gradient(left, #8176B5, #85CBA8)',
@@ -99,5 +106,6 @@ export default {
   colorFacebookBlue: '#3b5998',
   colorMainBackground: '#e6e6e6',
   colorOverlay: 'rgba(0, 0, 0, .7)',
+  colorImportantInformation: 'rgba(64,139,201,0.2)',
   zIndexMax: 1000
 };

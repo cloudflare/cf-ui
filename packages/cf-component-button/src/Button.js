@@ -42,7 +42,13 @@ const before = (fadeZoomIn, loading) => {
       left: 0,
       height: '100%',
       width: '100%',
-      opacity: 1
+      opacity: 1,
+      animationName: {
+        '50%': { opacity: 0 }
+      },
+      animationDuration: '1s',
+      animationIterationCount: 'infinite',
+      animationTimingFunction: 'linear'
     }
   };
 };
@@ -64,14 +70,18 @@ const styles = props => {
       backgroundColor: props.loading
         ? theme.disabledBackground
         : theme[`${props.type}HoverBackground`],
-      borderColor: theme[`${props.type}HoverBorder`],
+      borderColor: props.loading
+        ? theme.disabledBorder
+        : theme[`${props.type}HoverBorder`],
       color: props.loading
         ? theme.disabledBackground
         : theme[`${props.type}HoverColor`]
     },
     '&:active': {
       backgroundColor: theme[`${props.type}ActiveBackground`],
-      borderColor: theme[`${props.type}ActiveBorder`],
+      borderColor: props.loading
+        ? theme.disabledBorder
+        : theme[`${props.type}ActiveBorder`],
       color: theme[`${props.type}ActiveColor`]
     },
     '&:focus': {
@@ -82,7 +92,10 @@ const styles = props => {
       color: props.loading
         ? theme.disabledBackground
         : theme[`${props.type}FocusColor`],
-      outline: props.loading ? 'none' : 'inherit'
+      outline: props.loading ? 'none' : undefined,
+      borderColor: props.loading
+        ? theme.disabledBorder
+        : theme[`${props.type}Border`]
     },
     ...before(theme.fadeZoomIn, props.loading),
     '&[title]': {
@@ -93,7 +106,9 @@ const styles = props => {
       : theme[`${props.type}Background`],
     borderBottom: theme.borderBottom,
     borderBottomWidth: theme.borderBottomWidth,
-    borderColor: theme[`${props.type}Border`],
+    borderColor: props.loading
+      ? theme.disabledBorder
+      : theme[`${props.type}Border`],
     borderLeft: props.group && props.group !== 'first' ? 0 : theme.borderLeft,
     borderRight: theme.borderRight,
     borderStyle: theme.borderStyle,
@@ -123,6 +138,8 @@ const styles = props => {
     textAlign: theme.textAlign,
     transition: theme.transition,
     userSelect: theme.userSelect,
+    float: theme.float,
+    maxWidth: theme.maxWidth,
     float: theme.float
   };
 };

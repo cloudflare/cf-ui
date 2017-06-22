@@ -15,11 +15,16 @@ exports[`StyleProvider should render styles 1`] = `
       color: red
     }
   </style>
+  <style data-fela-type=\\"RULE\\" type=\\"text/css\\" media=\\"(min-width: 64em)\\">
+    .cf-c {
+      font-size: 1px
+    }
+  </style>
 </head>
 
 <body>
   <div>
-    <div data-reactroot=\\"\\" class=\\"cf-a cf-b\\"></div>
+    <div data-reactroot=\\"\\" class=\\"cf-a cf-b cf-c\\"></div>
   </div>
 </body>
 

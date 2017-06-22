@@ -1,7 +1,7 @@
 {
   "name": "cf-style-provider",
   "description": "Cloudflare Style Provider",
-  "version": "1.5.0",
+  "version": "1.7.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -11,8 +11,8 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-style-const": "^1.4.2",
-    "cf-style-container": "^1.2.0",
+    "cf-style-const": "^1.5.1",
+    "cf-style-container": "^1.2.1",
     "cssbeautify": "^0.3.1",
     "fela": "^5.0.0",
     "fela-beautifier": "^5.0.0",
@@ -20,6 +20,7 @@
     "fela-plugin-embedded": "^5.0.3",
     "fela-plugin-fallback-value": "^5.0.2",
     "fela-plugin-lvha": "^5.0.0",
+    "fela-plugin-named-media-query": "^5.0.1",
     "fela-plugin-prefixer": "^5.0.2",
     "fela-plugin-unit": "^5.0.0",
     "fela-plugin-validator": "^5.0.0",
