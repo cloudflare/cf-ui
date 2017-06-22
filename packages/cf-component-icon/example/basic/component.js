@@ -71,8 +71,11 @@ const IconComponent = () => (
 
     <p>Sizes (hover for the size prop value):</p>
     <p>
+      <Icon label="1.5x" type="gear" size="1.5x" />
       <Icon label="2x" type="gear" size="2x" />
+      <Icon label="2.5x" type="gear" size="2.5x" />
       <Icon label="3x" type="gear" size="3x" />
+      <Icon label="3.5x" type="gear" size="3.5x" />
       <Icon label="4x" type="gear" size="4x" />
       <Icon label="large" type="gear" size="large" />
       <Icon label="xlarge" type="gear" size="xlarge" />

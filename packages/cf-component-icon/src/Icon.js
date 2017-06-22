@@ -71,13 +71,22 @@ const Wrapper = createComponent(
       let fontSize = '1em';
 
       switch (size) {
+        case '1.5x':
+          fontSize = '1.5em';
+          break;
         case '2x':
         case 'large':
           fontSize = '2em';
           break;
+        case '2.5x':
+          fontSize = '2.5em';
+          break;
         case '3x':
         case 'xlarge':
           fontSize = '3em';
+          break;
+        case '3.5x':
+          fontSize = '3.5em';
           break;
         case '4x':
         case 'huge':
@@ -141,7 +150,17 @@ Icon.propTypes = {
   /*
    * Set the size of the icon
    */
-  size: PropTypes.oneOf(['2x', '3x', '4x', 'large', 'xlarge', 'huge']),
+  size: PropTypes.oneOf([
+    '1.5x',
+    '2x',
+    '2.5x',
+    '3x',
+    '3.5x',
+    '4x',
+    'large',
+    'xlarge',
+    'huge'
+  ]),
   /*
    * Text to display when a user hovers over the icon
    */
