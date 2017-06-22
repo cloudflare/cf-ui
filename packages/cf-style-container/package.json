@@ -12,9 +12,9 @@
   },
   "dependencies": {
     "fela": "^5.0.0",
-    "merge-options": "^1.0.0",
     "prop-types": "^15.5.8",
     "react-fela": "^5.0.0",
+    "seamless-immutable": "^7.1.2",
     "underscore.string": "^3.3.4"
   },
   "peerDependencies": {

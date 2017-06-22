@@ -6,7 +6,7 @@ import {
   ThemeProvider,
   connect
 } from 'react-fela';
-import mergeOptions from 'merge-options';
+import { static as Immutable } from 'seamless-immutable';
 import { capitalize } from 'underscore.string';
 
 const createComponent = (rule, type = 'div', passThroughProps = []) =>
@@ -20,18 +20,17 @@ const createComponent = (rule, type = 'div', passThroughProps = []) =>
 
 const mergeThemes = (baseTheme, ...themes) => ({
   theme: (themes &&
-    themes.reduce(
-      (acc, theme) => {
-        if (typeof theme === 'function') {
-          return mergeOptions(acc, theme(baseTheme));
-        } else if (typeof theme === 'object') {
-          return mergeOptions(acc, theme);
-        }
-        throw new Error('theme must be either a function or an object');
-      },
-      { ...baseTheme }
-    )) ||
-    baseTheme
+    themes.reduce((acc, theme) => {
+      if (typeof theme === 'function') {
+        return Immutable.merge(acc, Immutable(theme(baseTheme)), {
+          deep: true
+        });
+      } else if (typeof theme === 'object') {
+        return Immutable.merge(acc, Immutable(theme), { deep: true });
+      }
+      throw new Error('theme must be either a function or an object');
+    }, Immutable(baseTheme))) ||
+    Immutable(baseTheme)
 });
 
 const applyTheme = (ComponentToWrap, ...themes) => {
