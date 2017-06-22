@@ -123,7 +123,9 @@ Object {
     },
     "color": Object {
       "apple": "#BD2527",
+      "carrot": "#f56500",
       "cement": "#7D7D7D",
+      "charcoal": "#333333",
       "dawn": "#F16975",
       "dew": "#85CBA8",
       "dusk": "#4D4D4F",
@@ -135,6 +137,7 @@ Object {
       "night": "#404041",
       "rain": "#408BC9",
       "sky": "#76C4E2",
+      "smoke": "#e0e0e0",
       "storm": "#808285",
       "sunrise": "#F69259",
       "sunset": "#BA77B1",
