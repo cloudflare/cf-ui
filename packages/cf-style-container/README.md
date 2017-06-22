@@ -72,7 +72,6 @@ const legendStyles = ({ theme }) => ({
 
 const FormFieldset = ({ legend, styles }) => (
   <fieldset className={styles.mainStyles}>
-    {' '}
     <legend className={styles.legendStyles}>
       {legend}
     </legend>
