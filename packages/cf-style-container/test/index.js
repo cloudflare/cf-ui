@@ -13,12 +13,28 @@ import felaTestContext from '../../../felaTestContext';
 
 test('mergeThemes should return an immutable and deeply cloned object', () => {
   const themeA = () => ({ color: 'yellow' });
-  const themeB = { color: 'blue', breakpoints: { desktop: '1em' } };
+  const themeB = {
+    color: 'blue',
+    breakpoints: {
+      desktop: '1em',
+      desktopLarge: '1em',
+      mobile: '1em',
+      mobileWide: '1em',
+      tablet: '1em'
+    }
+  };
   const props = mergeThemes(variables, themeA, themeB);
+
   expect(() => {
     props.theme.color = 'white';
   }).toThrow();
+
   expect(props.theme.color).toEqual('blue');
+
+  expect(props.theme.breakpoints).toEqual(themeB.breakpoints);
+
+  // To be or not to be. That is the question.
+  // https://facebook.github.io/jest/docs/en/expect.html#tobevalue
   expect(props.theme.breakpoints).not.toBe(themeB.breakpoints);
 });
 
