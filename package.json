@@ -21,8 +21,9 @@
     "updated": "lerna updated --only-explicit-updates",
     "prettier": "node prettier.js",
     "clean": "lerna clean --yes && rimraf .jest packages/**/es packages/**/lib packages/**/dist",
-    "publish": "git pull --rebase && check-installed-dependencies && npm run build && lerna publish --skip-temp-tag",
-    "update-snapshot": "cross-env BABEL_ENV=commonjs jest --no-cache --updateSnapshot"
+    "publish": "git pull --rebase && check-installed-dependencies && npm run build && lerna publish --skip-temp-tag --conventional-commits",
+    "update-snapshot": "cross-env BABEL_ENV=commonjs jest --no-cache --updateSnapshot",
+    "commitmsg": "validate-commit-msg"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.6",
@@ -42,6 +43,7 @@
     "eslint": "^3.17.1",
     "eslint-plugin-prettier": "^2.0.1",
     "glob": "^7.0.3",
+    "husky": "^0.13.4",
     "isomorphic-fetch": "^2.2.1",
     "jest": "^20.0.3",
     "jest-fetch-mock": "^1.0.8",
@@ -56,7 +58,8 @@
     "react-test-renderer": "^15.4.2",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
-    "rimraf": "^2.6.1"
+    "rimraf": "^2.6.1",
+    "validate-commit-msg": "^2.12.2"
   },
   "dependencies": {}
 }
