@@ -1,4 +1,18 @@
-import Page from './Page';
-import PageHeader from './PageHeader';
+import PageUnstyled from './Page';
+import PageHeaderUnstyled from './PageHeader';
+import PageContentUnstyled from './PageContent';
 
-export { Page, PageHeader };
+import { applyTheme } from 'cf-style-container';
+
+const Page = applyTheme(PageUnstyled, {});
+const PageHeader = applyTheme(PageHeaderUnstyled, {});
+const PageContent = applyTheme(PageContentUnstyled, {});
+
+export {
+  Page,
+  PageUnstyled,
+  PageHeader,
+  PageHeaderUnstyled,
+  PageContent,
+  PageContentUnstyled
+};

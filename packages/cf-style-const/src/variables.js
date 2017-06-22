@@ -59,6 +59,7 @@ export default {
   weightSemiBold: 600,
   weightBold: 700,
   fontWeight: 400,
+  fontWeightLight: 300,
   fontColorHeadingCaption: '#888',
   borderRadius: '2px',
   arrowSize: '5px',

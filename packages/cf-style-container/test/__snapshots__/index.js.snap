@@ -82,6 +82,7 @@ Object {
     "fontFamily": "\\"Open Sans\\", Helvetica, Arial, sans-serif",
     "fontSize": "15px",
     "fontWeight": 400,
+    "fontWeightLight": 300,
     "gradient": Object {
       "eight": "linear-gradient(left, #85CBA8, #FFDB6F)",
       "five": "linear-gradient(left, #8176B5, #F16975)",
@@ -192,6 +193,7 @@ Object {
     "fontFamily": "\\"Open Sans\\", Helvetica, Arial, sans-serif",
     "fontSize": "15px",
     "fontWeight": 400,
+    "fontWeightLight": 300,
     "gradient": Object {
       "eight": "linear-gradient(left, #85CBA8, #FFDB6F)",
       "five": "linear-gradient(left, #8176B5, #F16975)",
@@ -280,6 +282,7 @@ Object {
     "fontFamily": "\\"Open Sans\\", Helvetica, Arial, sans-serif",
     "fontSize": "15px",
     "fontWeight": 400,
+    "fontWeightLight": 300,
     "gradient": Object {
       "eight": "linear-gradient(left, #85CBA8, #FFDB6F)",
       "five": "linear-gradient(left, #8176B5, #F16975)",
@@ -368,6 +371,7 @@ Object {
     "fontFamily": "\\"Open Sans\\", Helvetica, Arial, sans-serif",
     "fontSize": "15px",
     "fontWeight": 400,
+    "fontWeightLight": 300,
     "gradient": Object {
       "eight": "linear-gradient(left, #85CBA8, #FFDB6F)",
       "five": "linear-gradient(left, #8176B5, #F16975)",

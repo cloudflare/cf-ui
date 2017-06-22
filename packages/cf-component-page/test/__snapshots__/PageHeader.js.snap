@@ -2,10 +2,10 @@
 
 exports[`should render title 1`] = `
 <header
-  className="cf-page__header"
+  className=""
 >
   <h1
-    className="cf-page__title"
+    className="cf-10h3ujg"
   >
     Title
   </h1>
@@ -14,15 +14,15 @@ exports[`should render title 1`] = `
 
 exports[`should render title/subtitle 1`] = `
 <header
-  className="cf-page__header"
+  className=""
 >
   <h1
-    className="cf-page__title"
+    className="cf-10h3ujg"
   >
     Title
   </h1>
   <h2
-    className="cf-page__subtitle"
+    className="cf-jjd3ph"
   >
     Subtitle
   </h2>
