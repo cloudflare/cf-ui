@@ -64,8 +64,28 @@ const iconMapping = {
 };
 
 const Wrapper = createComponent(
-  ({ spin = false, type, theme }) => {
+  ({ size, spin = false, type, theme }) => {
     let iconData = iconMapping[type];
+
+    if (size) {
+      let fontSize = '1em';
+
+      switch (size) {
+        case '2x':
+        case 'large':
+          fontSize = '2em';
+          break;
+        case '3x':
+        case 'xlarge':
+          fontSize = '3em';
+          break;
+        case '4x':
+        case 'huge':
+          fontSize = '4em';
+          break;
+      }
+      iconData = Object.assign({}, iconData, { fontSize });
+    }
 
     if (spin) {
       iconData = Object.assign({}, iconData, {
@@ -84,8 +104,8 @@ const Wrapper = createComponent(
 
     return {
       color: theme.color,
-      fontSize: theme.fontSize,
       fontStyle: theme.fontStyle,
+      fontSize: theme.fontSize,
       ...rest,
       fontFace: {
         fontFamily: 'Cloudflare Icons',
@@ -118,6 +138,13 @@ class Icon extends React.Component {
 }
 
 Icon.propTypes = {
+  /*
+   * Set the size of the icon
+   */
+  size: PropTypes.oneOf(['2x', '3x', '4x', 'large', 'xlarge', 'huge']),
+  /*
+   * Text to display when a user hovers over the icon
+   */
   label: PropTypes.string,
   /*
    * The type of icon to display

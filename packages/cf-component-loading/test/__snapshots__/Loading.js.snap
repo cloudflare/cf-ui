@@ -2,7 +2,8 @@
 
 exports[`should render 1`] = `
 <i
-  className="cf-1lx60tf"
+  className="cf-gfau6"
+  title="Refresh"
 >
   <span
     className="cf-1u9fru1"

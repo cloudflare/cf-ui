@@ -3,7 +3,7 @@ import Icon from 'cf-component-icon';
 
 const IconComponent = () => (
   <div>
-    <p>Types (hover for type key):</p>
+    <p>Types (hover for type prop value):</p>
     <div
       style={{
         display: 'grid',
@@ -68,6 +68,16 @@ const IconComponent = () => (
 
     <p>Spin:</p>
     <p><Icon label="gear" type="gear" spin /></p>
+
+    <p>Sizes (hover for the size prop value):</p>
+    <p>
+      <Icon label="2x" type="gear" size="2x" />
+      <Icon label="3x" type="gear" size="3x" />
+      <Icon label="4x" type="gear" size="4x" />
+      <Icon label="large" type="gear" size="large" />
+      <Icon label="xlarge" type="gear" size="xlarge" />
+      <Icon label="huge" type="gear" size="huge" />
+    </p>
   </div>
 );
 

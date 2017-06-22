@@ -20,7 +20,8 @@ exports[`should render pagination 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-d5zsdm"
+          className="cf-1tocjw7"
+          title={false}
         >
           <span
             className="cf-1u9fru1"
@@ -104,7 +105,8 @@ exports[`should render pagination 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-128v18r"
+          className="cf-thc2ra"
+          title={false}
         >
           <span
             className="cf-1u9fru1"
@@ -136,7 +138,8 @@ exports[`should render pagination loading 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-d5zsdm"
+          className="cf-1tocjw7"
+          title={false}
         >
           <span
             className="cf-1u9fru1"
@@ -155,7 +158,8 @@ exports[`should render pagination loading 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-1lx60tf"
+          className="cf-gfau6"
+          title={false}
         >
           <span
             className="cf-1u9fru1"
@@ -226,7 +230,8 @@ exports[`should render pagination loading 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-128v18r"
+          className="cf-thc2ra"
+          title={false}
         >
           <span
             className="cf-1u9fru1"
@@ -258,7 +263,8 @@ exports[`should render pagination with an infoFormatter 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-d5zsdm"
+          className="cf-1tocjw7"
+          title={false}
         >
           <span
             className="cf-1u9fru1"
@@ -342,7 +348,8 @@ exports[`should render pagination with an infoFormatter 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-128v18r"
+          className="cf-thc2ra"
+          title={false}
         >
           <span
             className="cf-1u9fru1"
@@ -374,7 +381,8 @@ exports[`should render pagination with the last page active 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-d5zsdm"
+          className="cf-1tocjw7"
+          title={false}
         >
           <span
             className="cf-1u9fru1"
@@ -458,7 +466,8 @@ exports[`should render pagination with the last page active 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-128v18r"
+          className="cf-thc2ra"
+          title={false}
         >
           <span
             className="cf-1u9fru1"
@@ -490,7 +499,8 @@ exports[`should render with collapsed items 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-d5zsdm"
+          className="cf-1tocjw7"
+          title={false}
         >
           <span
             className="cf-1u9fru1"
@@ -630,7 +640,8 @@ exports[`should render with collapsed items 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-128v18r"
+          className="cf-thc2ra"
+          title={false}
         >
           <span
             className="cf-1u9fru1"
