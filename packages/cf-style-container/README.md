@@ -91,7 +91,9 @@ accessible as `styles.mainStyles` and `styles.legendStyles` in this case.
 
 ### applyTheme(Component, ...themes)
 
-And HOC that ties a Fela component with the theme (adds the theme to its context).
+And HOC that ties a Fela component with the theme (adds the theme to its
+context). The themes can be functions that takes a baseTheme and returns a new
+theme, or just an object.
 
 ```jsx
 import HeadingUnstyled from './Heading';
@@ -106,4 +108,84 @@ const Heading = applyTheme(HeadingUnstyled, HeadingTheme, CustomTheme);
 
 // themed component
 <Heading />
+```
+
+
+## mergeTheme(baseTheme, ...themes)
+
+`applyTheme()` calls this method internally to merge all themes. The returned
+value is a `seamless-immutable` object. It has a `theme` key that contains the
+merged themes, thus it is suitable for passing down to style functions. The
+types of baseTheme and themes are the same as `applyTheme()`'s.
+
+```jsx
+import { variables } from 'cf-style-const';
+import { TableUnstyled, TableTheme } from 'cf-component-table';
+
+import { applyTheme, mergeTheme } from 'cf-style-container';
+
+// You can save this theme and pass it around, you can also apply it to a component.
+const MyTableTheme = mergeTheme(variables, TableTheme, {color: 'blue'});
+...
+const MyTable = applyTheme(TableUnstyled, MyTableTheme);
+```
+
+
+## mapChildren(children, callback)
+
+Convenient function that wraps `React.Children`. This function differs from
+`React.Children.map()` in that the children list is turned into an array first,
+and the callback is invoked as `callback(child, index, children)`. The
+callback's result value is then mapped to the returned array of `mapChildren`.
+
+```javascript
+class TableRow extends React.Component {
+  render() {
+    <tr>
+      {mapChildren(this.props.children, (child, index) =>
+         React.cloneElement(child, {key: index}))}
+    </tr>
+  }
+}
+```
+
+## filterProps(obj, filter)
+## filterNone(obj)
+## filterStyle(obj)
+
+`filterStyle()` filters out the `style` entry from the object. Used to blacklist
+the `style` props from propagating to underlying `react-dom` element when
+spreading props.
+
+`filterNone()` filters out all the entries in the object that have `undefined`
+values. This function is useful to make the style objects mergeable and
+composable, as any key with `undefined` value will overwrite the previous object
+of the same key. This is often not the desired result.
+
+`filterProps()` is the underlying machinary that all other filter function are
+implemented with. It's essentially a reduce on the list of pairs of enumerable
+object properties and their keys. The `filter(key, value, accum)` callback will
+be invoked with the current key, value and accumulated value for each
+pair. Useful to blacklist object keys.
+
+All filter functions are composible.
+
+```javascript
+import { filterNone, filterProps } from 'cf-style-container';
+
+filterNone(
+  filterProps({
+    border: undefined,
+    color: 'blue',
+    border: '1px solid black'
+  }, (key, value, accum) => {
+    if (key === 'border') return accum;
+    else accum[key] = value;
+    return accum;
+  })
+);
+
+// Returns
+
+// {color: 'blue'}
 ```
