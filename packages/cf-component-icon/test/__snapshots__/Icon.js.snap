@@ -1,54 +1,40 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render role 1`] = `
-<i
-  className="cf-icon cf-icon--loading"
-  role="status"
-/>
-`;
-
 exports[`should render type 1`] = `
 <i
-  className="cf-icon cf-icon--info-sign"
-  role={undefined}
+  className="cf-aiy4z7"
+  title="Info-Sign"
 >
   <span
-    className="cf-icon__label"
+    className="cf-1u9fru1"
   >
-    Info
+    Info-Sign
   </span>
 </i>
 `;
 
-exports[`should render type with no label 1`] = `
-<i
-  className="cf-icon cf-icon--info-sign"
-  role={undefined}
-/>
-`;
-
 exports[`should render type/border/spin/muted/white 1`] = `
 <i
-  className="cf-icon cf-icon--info-sign cf-icon--border cf-icon--spin cf-icon--muted cf-icon--white"
-  role={undefined}
+  className="cf-n5l9hv"
+  title="Info-Sign"
 >
   <span
-    className="cf-icon__label"
+    className="cf-1u9fru1"
   >
-    Info
+    Info-Sign
   </span>
 </i>
 `;
 
 exports[`should render type/size 1`] = `
 <i
-  className="cf-icon cf-icon--info-sign cf-icon--xlarge"
-  role={undefined}
+  className="cf-1iie484"
+  title="Info-Sign"
 >
   <span
-    className="cf-icon__label"
+    className="cf-1u9fru1"
   >
-    Info
+    Info-Sign
   </span>
 </i>
 `;

@@ -1,3 +1,8 @@
-import Icon from './Icon';
+import { applyTheme } from 'cf-style-container';
 
-export default Icon;
+import IconUnstyled from './Icon';
+import IconTheme from './IconTheme';
+
+const Icon = applyTheme(IconUnstyled, IconTheme);
+
+export { Icon as default, IconUnstyled, IconTheme };

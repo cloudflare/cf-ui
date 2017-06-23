@@ -20,9 +20,13 @@ exports[`should render pagination 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-icon cf-icon--caret-left"
-          role={undefined}
-        />
+          className="cf-1tocjw7"
+          title={false}
+        >
+          <span
+            className="cf-1u9fru1"
+          />
+        </i>
       </a>
     </li>
     <li
@@ -101,9 +105,13 @@ exports[`should render pagination 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-icon cf-icon--caret-right"
-          role={undefined}
-        />
+          className="cf-thc2ra"
+          title={false}
+        >
+          <span
+            className="cf-1u9fru1"
+          />
+        </i>
       </a>
     </li>
   </ul>
@@ -130,9 +138,13 @@ exports[`should render pagination loading 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-icon cf-icon--caret-left"
-          role={undefined}
-        />
+          className="cf-1tocjw7"
+          title={false}
+        >
+          <span
+            className="cf-1u9fru1"
+          />
+        </i>
       </a>
     </li>
     <li
@@ -146,9 +158,13 @@ exports[`should render pagination loading 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-icon cf-icon--loading"
-          role={undefined}
-        />
+          className="cf-gfau6"
+          title={false}
+        >
+          <span
+            className="cf-1u9fru1"
+          />
+        </i>
       </a>
     </li>
     <li
@@ -214,9 +230,13 @@ exports[`should render pagination loading 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-icon cf-icon--caret-right"
-          role={undefined}
-        />
+          className="cf-thc2ra"
+          title={false}
+        >
+          <span
+            className="cf-1u9fru1"
+          />
+        </i>
       </a>
     </li>
   </ul>
@@ -243,9 +263,13 @@ exports[`should render pagination with an infoFormatter 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-icon cf-icon--caret-left"
-          role={undefined}
-        />
+          className="cf-1tocjw7"
+          title={false}
+        >
+          <span
+            className="cf-1u9fru1"
+          />
+        </i>
       </a>
     </li>
     <li
@@ -324,9 +348,13 @@ exports[`should render pagination with an infoFormatter 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-icon cf-icon--caret-right"
-          role={undefined}
-        />
+          className="cf-thc2ra"
+          title={false}
+        >
+          <span
+            className="cf-1u9fru1"
+          />
+        </i>
       </a>
     </li>
   </ul>
@@ -353,9 +381,13 @@ exports[`should render pagination with the last page active 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-icon cf-icon--caret-left"
-          role={undefined}
-        />
+          className="cf-1tocjw7"
+          title={false}
+        >
+          <span
+            className="cf-1u9fru1"
+          />
+        </i>
       </a>
     </li>
     <li
@@ -434,9 +466,13 @@ exports[`should render pagination with the last page active 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-icon cf-icon--caret-right"
-          role={undefined}
-        />
+          className="cf-thc2ra"
+          title={false}
+        >
+          <span
+            className="cf-1u9fru1"
+          />
+        </i>
       </a>
     </li>
   </ul>
@@ -463,9 +499,13 @@ exports[`should render with collapsed items 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-icon cf-icon--caret-left"
-          role={undefined}
-        />
+          className="cf-1tocjw7"
+          title={false}
+        >
+          <span
+            className="cf-1u9fru1"
+          />
+        </i>
       </a>
     </li>
     <li
@@ -600,9 +640,13 @@ exports[`should render with collapsed items 1`] = `
         onClick={[Function]}
       >
         <i
-          className="cf-icon cf-icon--caret-right"
-          role={undefined}
-        />
+          className="cf-thc2ra"
+          title={false}
+        >
+          <span
+            className="cf-1u9fru1"
+          />
+        </i>
       </a>
     </li>
   </ul>

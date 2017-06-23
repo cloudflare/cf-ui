@@ -81,6 +81,7 @@ Object {
     "fontColorHeadingCaption": "#888",
     "fontFamily": "\\"Open Sans\\", Helvetica, Arial, sans-serif",
     "fontSize": "15px",
+    "fontStyle": "normal",
     "fontWeight": 400,
     "fontWeightLight": 300,
     "gradient": Object {
@@ -93,6 +94,7 @@ Object {
       "three": "linear-gradient(left, #8176B5, #76C4E2)",
       "two": "linear-gradient(left, #8176B5, #85CBA8)",
     },
+    "iconFontFamily": "Cloudflare Icons",
     "inputFontSize": "13px",
     "inputLineHeight": 1.4,
     "lineHeight": 1.5,
@@ -192,6 +194,7 @@ Object {
     "fontColorHeadingCaption": "#888",
     "fontFamily": "\\"Open Sans\\", Helvetica, Arial, sans-serif",
     "fontSize": "15px",
+    "fontStyle": "normal",
     "fontWeight": 400,
     "fontWeightLight": 300,
     "gradient": Object {
@@ -204,6 +207,7 @@ Object {
       "three": "linear-gradient(left, #8176B5, #76C4E2)",
       "two": "linear-gradient(left, #8176B5, #85CBA8)",
     },
+    "iconFontFamily": "Cloudflare Icons",
     "inputFontSize": "13px",
     "inputLineHeight": 1.4,
     "lineHeight": 1.5,
@@ -281,6 +285,7 @@ Object {
     "fontColorHeadingCaption": "#888",
     "fontFamily": "\\"Open Sans\\", Helvetica, Arial, sans-serif",
     "fontSize": "15px",
+    "fontStyle": "normal",
     "fontWeight": 400,
     "fontWeightLight": 300,
     "gradient": Object {
@@ -293,6 +298,7 @@ Object {
       "three": "linear-gradient(left, #8176B5, #76C4E2)",
       "two": "linear-gradient(left, #8176B5, #85CBA8)",
     },
+    "iconFontFamily": "Cloudflare Icons",
     "inputFontSize": "13px",
     "inputLineHeight": 1.4,
     "lineHeight": 1.5,
@@ -370,6 +376,7 @@ Object {
     "fontColorHeadingCaption": "#888",
     "fontFamily": "\\"Open Sans\\", Helvetica, Arial, sans-serif",
     "fontSize": "15px",
+    "fontStyle": "normal",
     "fontWeight": 400,
     "fontWeightLight": 300,
     "gradient": Object {
@@ -382,6 +389,7 @@ Object {
       "three": "linear-gradient(left, #8176B5, #76C4E2)",
       "two": "linear-gradient(left, #8176B5, #85CBA8)",
     },
+    "iconFontFamily": "Cloudflare Icons",
     "inputFontSize": "13px",
     "inputLineHeight": 1.4,
     "lineHeight": 1.5,

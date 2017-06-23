@@ -2,13 +2,13 @@
 
 exports[`should render 1`] = `
 <i
-  className="cf-icon cf-icon--loading"
-  role="status"
+  className="cf-gfau6"
+  title="Refresh"
 >
   <span
-    className="cf-icon__label"
+    className="cf-1u9fru1"
   >
-    Loading
+    Refresh
   </span>
 </i>
 `;

@@ -48,11 +48,13 @@ export const createRenderer = opts => {
     enhancers.push(monolithic());
   }
 
-  return createFelaRenderer({
+  const renderer = createFelaRenderer({
     plugins,
     enhancers,
     selectorPrefix: [usedOpts.selectorPrefix]
   });
+
+  return renderer;
 };
 
 export const StyleProvider = ({

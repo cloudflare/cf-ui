@@ -6,7 +6,7 @@ class ModalClose extends React.Component {
   render() {
     return (
       <span className="cf-modal__close" onClick={this.props.onClick}>
-        <Icon type="close" label={this.props.label} size="2x" />
+        <Icon type="remove" label={this.props.label} size="2x" />
       </span>
     );
   }
@@ -14,11 +14,7 @@ class ModalClose extends React.Component {
 
 ModalClose.propTypes = {
   onClick: PropTypes.func.isRequired,
-  label: PropTypes.oneOfType([PropTypes.string, PropTypes.bool])
-};
-
-ModalClose.defaultProps = {
-  label: false
+  label: PropTypes.string
 };
 
 export default ModalClose;

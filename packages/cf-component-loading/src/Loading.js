@@ -3,6 +3,6 @@ import Icon from 'cf-component-icon';
 
 export default class Loading extends React.Component {
   render() {
-    return <Icon type="loading" label="Loading" role="status" />;
+    return <Icon type="refresh" label="Refresh" role="status" />;
   }
 }

@@ -58,5 +58,7 @@
     "redux-thunk": "^2.2.0",
     "rimraf": "^2.6.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "fela-dom": "^5.0.2"
+  }
 }

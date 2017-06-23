@@ -1,34 +1,48 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import Icon from '../../cf-component-icon/src/index';
+import { shallow, render } from 'enzyme';
+import Icon, { IconUnstyled } from 'cf-component-icon';
+import felaTestContext from '../../../felaTestContext';
 
 test('should render type', () => {
-  const component = renderer.create(<Icon type="info-sign" label="Info" />);
+  const component = renderer.create(
+    felaTestContext(<Icon type="info-sign" label="Info-Sign" />)
+  );
   expect(component.toJSON()).toMatchSnapshot();
 });
 
 test('should render type/size', () => {
   const component = renderer.create(
-    <Icon type="info-sign" label="Info" size="xlarge" />
+    felaTestContext(<Icon type="info-sign" label="Info-Sign" size="xlarge" />)
   );
   expect(component.toJSON()).toMatchSnapshot();
 });
 
 test('should render type/border/spin/muted/white', () => {
   const component = renderer.create(
-    <Icon type="info-sign" label="Info" border spin muted white />
+    felaTestContext(
+      <Icon type="info-sign" label="Info-Sign" border spin muted white />
+    )
   );
   expect(component.toJSON()).toMatchSnapshot();
 });
 
 test('should render type with no label', () => {
-  const component = renderer.create(<Icon type="info-sign" label={false} />);
-  expect(component.toJSON()).toMatchSnapshot();
+  const wrapper = shallow(felaTestContext(<IconUnstyled type="info-sign" />));
+  const domNode = wrapper.find('Icon');
+  expect(domNode.prop('label')).toBe.undefined;
 });
 
 test('should render role', () => {
-  const component = renderer.create(
-    <Icon type="loading" label={false} role="status" />
+  const wrapper = shallow(
+    felaTestContext(<IconUnstyled type="refresh" role="status" />)
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  const domNode = wrapper.find('Icon');
+  expect(domNode.prop('role')).toBe('status');
+});
+
+test('should not render role if not provided', () => {
+  const wrapper = shallow(felaTestContext(<IconUnstyled type="refresh" />));
+  const domNode = wrapper.find('Icon');
+  expect(domNode.prop('role')).toBe.undefined;
 });
