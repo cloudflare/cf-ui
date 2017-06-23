@@ -32,7 +32,7 @@ import { StyleProvider } from 'cf-style-provider';
 import { Button } from 'cf-component-button';
 
 ReactDOM.render(
-  <StyleProvider cssNode={document.getElementById('stylesheet')}>
+  <StyleProvider>
     <Button type="primary" onClick={() => console.log('clicked')}>
       Primary Button
     </Button>
@@ -45,9 +45,9 @@ Do you want to try for yourself?
 
 ```sh
 git clone git@github.com:cloudflare/cf-ui.git
-cd cf-ui/example
-yarn install
-yarn run build
+cd cf-ui/packages/example
+npm install
+npm run build
 open index.html
 ```
 
