@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { ModalTitle } from '../../cf-component-modal/src/index';
 import { Heading } from '../../cf-component-heading/src/index';
-import felaTestContext from '../../../felaTestContext';
+import { felaTestContext } from 'cf-style-provider';
 
 test('should render', () => {
   const component = renderer.create(
