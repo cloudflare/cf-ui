@@ -1,11 +1,9 @@
 import React from 'react';
 import { Heading } from '../../cf-component-heading/src/index';
-import renderer from 'react-test-renderer';
-import { felaTestContext } from 'cf-style-provider';
+import { felaSnapshot } from 'cf-style-provider';
 
 test('should render size', () => {
-  const component = renderer.create(
-    felaTestContext(<Heading size={2}>Heading</Heading>)
-  );
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<Heading size={2}>Heading</Heading>);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

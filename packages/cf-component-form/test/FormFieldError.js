@@ -1,8 +1,7 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { FormFieldError } from '../src/index';
-import { felaTestContext } from 'cf-style-provider';
+import { felaSnapshot, felaTestContext } from 'cf-style-provider';
 
 test('should render valid state', () => {
   expect(
@@ -13,22 +12,20 @@ test('should render valid state', () => {
 });
 
 test('should render invalid state', () => {
-  const component = renderer.create(
-    felaTestContext(
-      <FormFieldError field={{ invalid: true }} validations={{}} />
-    )
+  const snapshot = felaSnapshot(
+    <FormFieldError field={{ invalid: true }} validations={{}} />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render invalid state with validation errors', () => {
-  const component = renderer.create(
-    felaTestContext(
-      <FormFieldError
-        field={{ invalid: true }}
-        validations={{ required: 'This is required' }}
-      />
-    )
+  const snapshot = felaSnapshot(
+    <FormFieldError
+      field={{ invalid: true }}
+      validations={{ required: 'This is required' }}
+    />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

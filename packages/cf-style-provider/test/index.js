@@ -26,7 +26,7 @@ test('StyleProvider should render styles', () => {
   }));
 
   render(
-    <StyleProvider selectorPrefix="cf-">
+    <StyleProvider>
       <Foo />
     </StyleProvider>,
     htmlNode

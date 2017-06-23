@@ -11,3 +11,5 @@ exports[`should render 1`] = `
   </h1>
 </div>
 `;
+
+exports[`should render 2`] = `""`;

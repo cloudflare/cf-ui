@@ -8,8 +8,7 @@ import {
   mapChildren
 } from '../../cf-style-container/src/index';
 import { variables } from 'cf-style-const';
-import renderer from 'react-test-renderer';
-import { felaTestContext } from 'cf-style-provider';
+import { felaSnapshot } from 'cf-style-provider';
 
 test('mergeThemes should return an immutable and deeply cloned object', () => {
   const themeA = () => ({ color: 'yellow' });
@@ -78,8 +77,9 @@ test('mergeThemes should return the baseTheme if no extra theme is provided', ()
 
 test('createComponent creates empty component', () => {
   const FelaComponent = createComponent(() => {});
-  const component = renderer.create(felaTestContext(<FelaComponent />));
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<FelaComponent />);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('createComponentStyles creates a component', () => {
@@ -97,8 +97,9 @@ test('createComponentStyles creates a component', () => {
     },
     Foo
   );
-  const component = renderer.create(felaTestContext(<FelaComponent />));
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<FelaComponent />);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('filterNone will filter out all keys with undefined or null values', () => {

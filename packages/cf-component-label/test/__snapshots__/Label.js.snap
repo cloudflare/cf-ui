@@ -2,8 +2,32 @@
 
 exports[`should render 1`] = `
 <span
-  className="cf-1gcgiur"
+  className="1gcgiur"
 >
   A Label
 </span>
+`;
+
+exports[`should render 2`] = `
+".1gcgiur {
+  border-radius: 2px;
+  color: #fff;
+  display: inline-block;
+  font-size: 0.8666666666666667rem;
+  font-weight: 600;
+  line-height: 1rem;
+  padding-top: 0.26667em;
+  padding-right: 0.4em;
+  padding-bottom: 0.26667em;
+  padding-left: 0.4em;
+  text-transform: uppercase;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  vertical-align: baseline;
+  -webkit-text-stroke: 0px;
+  white-space: nowrap;
+  background-color: #7D7D7D
+}"
 `;

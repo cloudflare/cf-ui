@@ -5,7 +5,7 @@ import React from 'react';
 import StyleProvider from './StyleProvider';
 
 export default (component, renderer) => (
-  <StyleProvider renderer={renderer} dev selectorPrefix="cf-">
+  <StyleProvider renderer={renderer} dev>
     {component}
   </StyleProvider>
 );

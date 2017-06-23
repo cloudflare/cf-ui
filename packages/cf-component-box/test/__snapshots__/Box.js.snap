@@ -2,8 +2,27 @@
 
 exports[`should render all props as styles 1`] = `
 <div
-  className="cf-k8v3yj"
+  className="k8v3yj"
 >
   Box
 </div>
+`;
+
+exports[`should render all props as styles 2`] = `
+"
+.k8v3yj {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  margin: 1rem;
+  padding: 1rem;
+  display: inline-block;
+  position: relative;
+  top: 0.06666666666666667rem;
+  bottom: 0.06666666666666667rem;
+  min-width: 6.666666666666667rem;
+  width: 6.666666666666667rem;
+  min-height: 6.666666666666667rem;
+  height: 6.666666666666667rem
+}"
 `;

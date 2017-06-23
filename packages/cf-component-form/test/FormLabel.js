@@ -1,18 +1,15 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 import { FormLabel } from '../src/index';
-import { felaTestContext } from 'cf-style-provider';
+import { felaSnapshot } from 'cf-style-provider';
 
 test('should render', () => {
-  const component = renderer.create(
-    felaTestContext(<FormLabel>FormLabel</FormLabel>)
-  );
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<FormLabel>FormLabel</FormLabel>);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render hidden', function() {
-  const component = renderer.create(
-    felaTestContext(<FormLabel hidden>FormLabel</FormLabel>)
-  );
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<FormLabel hidden>FormLabel</FormLabel>);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
