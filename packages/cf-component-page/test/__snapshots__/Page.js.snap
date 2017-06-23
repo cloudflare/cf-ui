@@ -2,8 +2,19 @@
 
 exports[`should render 1`] = `
 <article
-  className="cf-lb8cdc"
+  className="lb8cdc"
 >
   Hello World
 </article>
+`;
+
+exports[`should render 2`] = `
+"
+.lb8cdc {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem
+}@media (min-width: 47.2em){
+    .lb8cdc {
+  padding-bottom: 1.3rem
+}}"
 `;

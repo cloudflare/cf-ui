@@ -1,18 +1,18 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { PageHeader } from '../../cf-component-page/src/index';
-import felaTestContext from '../../../felaTestContext';
+import { PageHeader } from '../src/index';
+import { felaSnapshot } from 'cf-style-provider';
 
 test('should render title', () => {
-  const component = renderer.create(
-    felaTestContext(<PageHeader title="Title" />)
-  );
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<PageHeader title="Title" />);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render title/subtitle', () => {
-  const component = renderer.create(
-    felaTestContext(<PageHeader title="Title" subtitle="Subtitle" />)
+  const snapshot = felaSnapshot(
+    <PageHeader title="Title" subtitle="Subtitle" />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

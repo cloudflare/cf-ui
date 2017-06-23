@@ -1,11 +1,10 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { PageContent } from '../../cf-component-page/src/index';
-import felaTestContext from '../../../felaTestContext';
+import { PageContent } from '../src/index';
+import { felaSnapshot } from 'cf-style-provider';
 
 test('should render', () => {
-  const component = renderer.create(
-    felaTestContext(<PageContent>Hello World</PageContent>)
-  );
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<PageContent>Hello World</PageContent>);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
