@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { createComponent } from 'cf-style-container';
 
 const styles = ({ theme }) => ({
-  background: theme.background,
   border: theme.border,
   boxShadow: theme.boxShadow
 });
