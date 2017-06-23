@@ -4,7 +4,7 @@ import {
   Pagination,
   PaginationRoot
 } from '../../cf-component-pagination/src/index';
-import felaTestContext from '../../../felaTestContext';
+import { felaTestContext } from 'cf-style-provider';
 
 test('should render', () => {
   const component = renderer.create(

@@ -2,7 +2,7 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { FormFieldError } from '../src/index';
-import felaTestContext from '../../../felaTestContext';
+import { felaTestContext } from 'cf-style-provider';
 
 test('should render valid state', () => {
   expect(

@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import { mount } from 'enzyme';
 import { PaginationBuilder } from '../../cf-builder-pagination/src/index';
 import { createStub } from '../../cf-test-stub/src/index';
-import felaTestContext from '../../../felaTestContext';
+import { felaTestContext } from 'cf-style-provider';
 
 test('should render pagination', () => {
   const component = renderer.create(

@@ -9,7 +9,7 @@ import {
 } from '../../cf-style-container/src/index';
 import { variables } from 'cf-style-const';
 import renderer from 'react-test-renderer';
-import felaTestContext from '../../../felaTestContext';
+import { felaTestContext } from 'cf-style-provider';
 
 test('mergeThemes should return an immutable and deeply cloned object', () => {
   const themeA = () => ({ color: 'yellow' });

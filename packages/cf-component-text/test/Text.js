@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { Text, TextUnstyled } from '../../cf-component-text/src/index';
-import felaTestContext from '../../../felaTestContext';
+import { felaTestContext } from 'cf-style-provider';
 import { applyTheme } from 'cf-style-container';
 
 test('should render normal size', () => {

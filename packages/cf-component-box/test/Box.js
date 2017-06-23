@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box } from '../../cf-component-box/src/index';
 import renderer from 'react-test-renderer';
-import felaTestContext from '../../../felaTestContext';
+import { felaTestContext } from 'cf-style-provider';
 
 test('should render all props as styles', () => {
   const component = renderer.create(
