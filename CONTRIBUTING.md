@@ -15,6 +15,17 @@ yarn run bootstrap
 > `yarn run bootstrap` anytime that you have changed the dependencies within a
 > package.
 
+## Commiting changes
+
+`cf-ui` follows the [`conventional-commits`](http://conventionalcommits.org/)
+standard and enforces it with a pre-commit hook that should have been installed
+on your system when you installed the dependencies from `npm`.
+
+Make sure to include the full name of the package that you are changing in the
+scope part of the commit message in order to get the benefit of `lerna`
+automatically setting the correct version number for the component as well as
+generating the correct CHANGELOG.
+
 ## Development tasks
 
 ```sh
