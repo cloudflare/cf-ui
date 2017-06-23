@@ -11,7 +11,6 @@ import namedMediaQuery from 'fela-plugin-named-media-query';
 import { variables } from 'cf-style-const';
 
 const defaultOpts = {
-  selectorPrefix: 'cf-',
   dev: false
 };
 
@@ -41,8 +40,7 @@ const createRenderer = opts => {
 
   return createFelaRenderer({
     plugins,
-    enhancers,
-    selectorPrefix: [usedOpts.selectorPrefix]
+    enhancers
   });
 };
 

@@ -2,124 +2,355 @@
 
 exports[`should render 1`] = `
 <li
-  className="cf-15spu1u"
+  className="15spu1u"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-32iz07"
+    className="32iz07"
     href="#"
     onClick={[Function]}
   >
     PaginationItem
   </a>
 </li>
+`;
+
+exports[`should render 2`] = `
+".15spu1u {
+  float: left;
+  position: relative;
+  background-color: #fff;
+  color: #408BC9;
+  cursor: pointer
+}
+
+.32iz07:focus {
+  z-index: 1
+}
+
+.32iz07 {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+  display: block;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer
+}"
 `;
 
 exports[`should render active 1`] = `
 <li
-  className="cf-1wi2cf1"
+  className="1wi2cf1"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-109b087"
+    className="109b087"
     href="#"
     onClick={[Function]}
   >
     PaginationItem
   </a>
 </li>
+`;
+
+exports[`should render active 2`] = `
+".1wi2cf1 {
+  float: left;
+  position: relative;
+  background-color: #408BC9;
+  color: #fff;
+  cursor: default;
+  border-color: #62a1d8;
+  z-index: 1
+}
+
+.109b087:focus {
+  z-index: 1
+}
+
+.109b087 {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+  display: block;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-decoration: none;
+  color: inherit;
+  cursor: default
+}"
 `;
 
 exports[`should render active dot 1`] = `
 <li
-  className="cf-1xpv85q"
+  className="1xpv85q"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-109b087"
+    className="109b087"
     href="#"
     onClick={[Function]}
   >
     PaginationItem
   </a>
 </li>
+`;
+
+exports[`should render active dot 2`] = `
+".1xpv85q {
+  float: left;
+  position: relative;
+  background-color: #408BC9;
+  color: #fff;
+  border: 1px solid #408BC9;
+  cursor: default;
+  width: .5em;
+  height: .5em;
+  margin: 1em;
+  border-radius: 50%;
+  border-color: #62a1d8;
+  z-index: 1
+}
+
+.109b087:focus {
+  z-index: 1
+}
+
+.109b087 {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+  display: block;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-decoration: none;
+  color: inherit;
+  cursor: default
+}"
 `;
 
 exports[`should render active next 1`] = `
 <li
-  className="cf-1ezx84k"
+  className="1ezx84k"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-109b087"
+    className="109b087"
     href="#"
     onClick={[Function]}
   >
     PaginationItem
   </a>
 </li>
+`;
+
+exports[`should render active next 2`] = `
+".1ezx84k {
+  float: left;
+  position: relative;
+  background-color: #408BC9;
+  color: #fff;
+  cursor: default;
+  border-radius: 3px;
+  border-color: #62a1d8;
+  z-index: 1
+}
+
+.109b087:focus {
+  z-index: 1
+}
+
+.109b087 {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+  display: block;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-decoration: none;
+  color: inherit;
+  cursor: default
+}"
 `;
 
 exports[`should render active prev 1`] = `
 <li
-  className="cf-1ezx84k"
+  className="1ezx84k"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-109b087"
+    className="109b087"
     href="#"
     onClick={[Function]}
   >
     PaginationItem
   </a>
 </li>
+`;
+
+exports[`should render active prev 2`] = `
+".1ezx84k {
+  float: left;
+  position: relative;
+  background-color: #408BC9;
+  color: #fff;
+  cursor: default;
+  border-radius: 3px;
+  border-color: #62a1d8;
+  z-index: 1
+}
+
+.109b087:focus {
+  z-index: 1
+}
+
+.109b087 {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+  display: block;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-decoration: none;
+  color: inherit;
+  cursor: default
+}"
 `;
 
 exports[`should render disabled 1`] = `
 <li
-  className="cf-yr93k7"
+  className="yr93k7"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-109b087"
+    className="109b087"
     href="#"
     onClick={[Function]}
   >
     PaginationItem
   </a>
 </li>
+`;
+
+exports[`should render disabled 2`] = `
+"
+.yr93k7 {
+  float: left;
+  position: relative;
+  background-color: #ededed;
+  color: #666;
+  cursor: default
+}
+
+.109b087:focus {
+  z-index: 1
+}
+
+.109b087 {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+  display: block;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-decoration: none;
+  color: inherit;
+  cursor: default
+}"
 `;
 
 exports[`should render disabled dot 1`] = `
 <li
-  className="cf-18awel0"
+  className="18awel0"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-109b087"
+    className="109b087"
     href="#"
     onClick={[Function]}
   >
     PaginationItem
   </a>
 </li>
+`;
+
+exports[`should render disabled dot 2`] = `
+".18awel0 {
+  float: left;
+  position: relative;
+  background-color: #ededed;
+  color: #666;
+  border: 1px solid #408BC9;
+  cursor: default;
+  width: .5em;
+  height: .5em;
+  margin: 1em;
+  border-radius: 50%
+}
+
+.109b087:focus {
+  z-index: 1
+}
+
+.109b087 {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+  display: block;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-decoration: none;
+  color: inherit;
+  cursor: default
+}"
 `;
 
 exports[`should render disabled next 1`] = `
 <li
-  className="cf-mgj6am"
+  className="mgj6am"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-109b087"
+    className="109b087"
     href="#"
     onClick={[Function]}
   >
@@ -128,18 +359,82 @@ exports[`should render disabled next 1`] = `
 </li>
 `;
 
+exports[`should render disabled next 2`] = `
+"
+.mgj6am {
+  float: left;
+  position: relative;
+  background-color: #ededed;
+  color: #666;
+  cursor: default;
+  border-radius: 3px
+}
+
+.109b087:focus {
+  z-index: 1
+}
+
+.109b087 {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+  display: block;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-decoration: none;
+  color: inherit;
+  cursor: default
+}"
+`;
+
 exports[`should render disabled prev 1`] = `
 <li
-  className="cf-mgj6am"
+  className="mgj6am"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-109b087"
+    className="109b087"
     href="#"
     onClick={[Function]}
   >
     PaginationItem
   </a>
 </li>
+`;
+
+exports[`should render disabled prev 2`] = `
+"
+.mgj6am {
+  float: left;
+  position: relative;
+  background-color: #ededed;
+  color: #666;
+  cursor: default;
+  border-radius: 3px
+}
+
+.109b087:focus {
+  z-index: 1
+}
+
+.109b087 {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  position: relative;
+  display: block;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-decoration: none;
+  color: inherit;
+  cursor: default
+}"
 `;

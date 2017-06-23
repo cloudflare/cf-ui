@@ -2,17 +2,62 @@
 
 exports[`should render 1`] = `
 <fieldset
-  className="cf-cy1e5a"
+  className="cy1e5a"
 >
   <legend
-    className="cf-1peqvck"
+    className="1peqvck"
   >
     Legend
   </legend>
   <div
-    className="cf-1culcac"
+    className="1culcac"
   >
     FormFieldset
   </div>
 </fieldset>
+`;
+
+exports[`should render 2`] = `
+"
+.cy1e5a::after {
+  clear: both;
+  content:;
+  display: table
+}
+
+
+    .cy1e5a {
+  margin: 0px;
+  padding: 0px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #dedede
+}
+
+.1peqvck {
+  padding: 1em;
+  margin-bottom: 0px;
+  border-bottom: none
+}
+
+.1culcac {
+  padding: 1em;
+  border: 0 solid #dedede;
+  border-top-width: 1px;
+  background: #eee
+}@media (min-width: 720px){.1peqvck {
+  width: 30%;
+  float: left;
+  padding: 1.7em 1rem;
+  color: #333;
+  text-align: right
+}
+
+.1culcac {
+  width: 70%;
+  float: left;
+  border-top-width: 0px;
+  border-left-width: 0px
+}}"
 `;

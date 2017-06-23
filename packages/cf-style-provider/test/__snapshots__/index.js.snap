@@ -7,16 +7,16 @@ exports[`StyleProvider should render styles 1`] = `
 
 <head>
   <style data-fela-type=\\"RULE\\" type=\\"text/css\\">
-    .cf-a {
+    .a {
       margin: 10px
     }
 
-    .cf-b {
+    .b {
       color: red
     }
   </style>
   <style data-fela-type=\\"RULE\\" type=\\"text/css\\" media=\\"(min-width: 64em)\\">
-    .cf-c {
+    .c {
       font-size: 1px
     }
   </style>
@@ -24,7 +24,7 @@ exports[`StyleProvider should render styles 1`] = `
 
 <body>
   <div>
-    <div data-reactroot=\\"\\" class=\\"cf-a cf-b cf-c\\"></div>
+    <div data-reactroot=\\"\\" class=\\"a b c\\"></div>
   </div>
 </body>
 

@@ -2,8 +2,16 @@
 
 exports[`should render 1`] = `
 <div
-  className="cf-2idotc"
+  className="2idotc"
 >
   FormFooter
 </div>
+`;
+
+exports[`should render 2`] = `
+".2idotc {
+  padding: 1em;
+  border-top: 1px solid #dedede;
+  text-align: right
+}"
 `;

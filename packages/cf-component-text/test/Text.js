@@ -1,7 +1,6 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 import { Text, TextUnstyled } from '../../cf-component-text/src/index';
-import { felaTestContext } from 'cf-style-provider';
+import { felaSnapshot } from 'cf-style-provider';
 import { applyTheme } from 'cf-style-container';
 
 test('should render normal size', () => {
@@ -9,11 +8,9 @@ test('should render normal size', () => {
     fontSizeNormal: '1rem',
     fontWeightNormal: 400
   }));
-
-  const component = renderer.create(
-    felaTestContext(<Text size="normal">Hello</Text>)
-  );
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<Text size="normal">Hello</Text>);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render small size', () => {
@@ -22,10 +19,9 @@ test('should render small size', () => {
     lineHeightSmall: 1.3
   }));
 
-  const component = renderer.create(
-    felaTestContext(<Text size="small">Hello</Text>)
-  );
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<Text size="small">Hello</Text>);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render bold size', () => {
@@ -34,10 +30,9 @@ test('should render bold size', () => {
     fontWeightBold: 700
   }));
 
-  const component = renderer.create(
-    felaTestContext(<Text size="normal" weight="bold">Hello</Text>)
-  );
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<Text size="normal" weight="bold">Hello</Text>);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render semi-bold size', () => {
@@ -46,10 +41,11 @@ test('should render semi-bold size', () => {
     fontWeightSemiBold: 600
   }));
 
-  const component = renderer.create(
-    felaTestContext(<Text size="normal" weight="semi-bold">Hello</Text>)
+  const snapshot = felaSnapshot(
+    <Text size="normal" weight="semi-bold">Hello</Text>
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render align', () => {
@@ -57,10 +53,9 @@ test('should render align', () => {
     textAlignCenter: 'center'
   }));
 
-  const component = renderer.create(
-    felaTestContext(<Text align="center">Hello</Text>)
-  );
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<Text align="center">Hello</Text>);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render type', () => {
@@ -68,10 +63,9 @@ test('should render type', () => {
     colorInfo: '#434148'
   }));
 
-  const component = renderer.create(
-    felaTestContext(<Text type="info">Hello</Text>)
-  );
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<Text type="info">Hello</Text>);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render lowercase', () => {
@@ -79,10 +73,9 @@ test('should render lowercase', () => {
     textTransformLowercase: 'lowercase'
   }));
 
-  const component = renderer.create(
-    felaTestContext(<Text case="lowercase">Hello</Text>)
-  );
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<Text case="lowercase">Hello</Text>);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render titlecase case', () => {
@@ -90,8 +83,7 @@ test('should render titlecase case', () => {
     'textTransformTitlecase:first-letter': 'capitalize'
   }));
 
-  const component = renderer.create(
-    felaTestContext(<Text case="titlecase">Hello</Text>)
-  );
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<Text case="titlecase">Hello</Text>);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

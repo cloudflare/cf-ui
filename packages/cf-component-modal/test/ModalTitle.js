@@ -1,12 +1,10 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 import { ModalTitle } from '../../cf-component-modal/src/index';
 import { Heading } from '../../cf-component-heading/src/index';
-import { felaTestContext } from 'cf-style-provider';
+import { felaSnapshot } from 'cf-style-provider';
 
 test('should render', () => {
-  const component = renderer.create(
-    felaTestContext(<ModalTitle>ModalTitle</ModalTitle>)
-  );
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<ModalTitle>ModalTitle</ModalTitle>);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

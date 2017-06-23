@@ -2,12 +2,24 @@
 
 exports[`should render 1`] = `
 <div
-  className="cf-1sgbk2q"
+  className="1sgbk2q"
 >
   <h3
-    className="cf-oxs2bj"
+    className="oxs2bj"
   >
     FormHeader
   </h3>
 </div>
+`;
+
+exports[`should render 2`] = `
+".1sgbk2q {
+  padding: 1em;
+  border-bottom: 1px solid #dedede
+}
+
+
+    .oxs2bj {
+  margin: 0px
+}"
 `;
