@@ -1,17 +1,562 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render 1`] = `
-<tfoot
-  className="cf-table__foot"
+exports[`TableFoot should compose with styles overrides 1`] = `
+<StyleProvider
+  dev={true}
 >
-  TableFoot
-</tfoot>
+  <Provider
+    renderer={
+      Object {
+        "_emitChange": [Function],
+        "_renderStyleToCache": [Function],
+        "_renderStyleToClassNames": [Function],
+        "cache": Object {
+          "116rzb2": true,
+          "46sr0r": true,
+        },
+        "clear": [Function],
+        "fontFaces": "",
+        "keyframePrefixes": Array [
+          "-webkit-",
+          "-moz-",
+          "",
+        ],
+        "keyframes": "",
+        "listeners": Array [
+          [Function],
+          [Function],
+        ],
+        "mediaQueryOrder": Array [],
+        "mediaRules": Object {
+          "(max-width: 47.2em)": ".46sr0r {
+        display: block;
+        width: 100%;
+        box-sizing: border-box
+      }
+      
+      .116rzb2 {
+        display: block;
+        width: 100%;
+        box-sizing: border-box
+      }",
+          "(min-width: 97.6em)": ".116rzb2 {
+        width: 1000px
+      }",
+          "screen and (max-width: 47.2em)": ".46sr0r {
+        display: block
+      }",
+        },
+        "plugins": Array [
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+        ],
+        "prettySelectors": false,
+        "renderFont": [Function],
+        "renderKeyframe": [Function],
+        "renderRule": [Function],
+        "renderStatic": [Function],
+        "renderToString": [Function],
+        "rules": ".46sr0r {
+        background: #fff;
+        border-collapse: collapse;
+        border-spacing: 0px;
+        max-width: 100%;
+        width: 100%
+      }
+      
+      .116rzb2 {
+        vertical-align: right
+      }",
+        "selectorPrefix": "",
+        "statics": "",
+        "styleNodes": Object {
+          "RULE": <style
+            data-fela-type="RULE"
+            type="text/css"
+      >
+            .46sr0r { background: #fff; border-collapse: collapse; border-spacing: 0px; max-width: 100%; width: 100% } .116rzb2 { vertical-align: right }
+      </style>,
+          "RULE(max-width: 47.2em)": <style
+            data-fela-type="RULE"
+            type="text/css"
+            media="(max-width: 47.2em)"
+      >
+            .46sr0r { display: block; width: 100%; box-sizing: border-box } .116rzb2 { display: block; width: 100%; box-sizing: border-box }
+      </style>,
+          "RULE(min-width: 97.6em)": <style
+            data-fela-type="RULE"
+            type="text/css"
+            media="(min-width: 97.6em)"
+      >
+            .116rzb2 { width: 1000px }
+      </style>,
+          "RULEscreen and (max-width: 47.2em)": <style
+            data-fela-type="RULE"
+            type="text/css"
+            media="screen and (max-width: 47.2em)"
+      >
+            .46sr0r { display: block }
+      </style>,
+        },
+        "subscribe": [Function],
+        "uniqueKeyframeIdentifier": 0,
+        "uniqueRuleIdentifier": 0,
+      }
+    }
+  >
+    <ThemeProvider
+      overwrite={false}
+      theme={
+        Object {
+          "arrowSize": "5px",
+          "bodyAccentColor": "#333",
+          "bodyBackground": "#ebebeb",
+          "bodyOffsetColor": "#787878",
+          "borderRadius": "2px",
+          "boxShadow": "0 0 20px 0 rgba(136,136,136,0.50)",
+          "breakpoints": Object {
+            "desktop": "64em",
+            "desktopLarge": "97.6em",
+            "mobile": "13.6em",
+            "mobileWide": "30.4em",
+            "tablet": "47.2em",
+          },
+          "color": Object {
+            "apple": "#BD2527",
+            "carrot": "#f56500",
+            "cement": "#7D7D7D",
+            "charcoal": "#333333",
+            "dawn": "#F16975",
+            "dew": "#85CBA8",
+            "dusk": "#4D4D4F",
+            "grass": "#9BCA3E",
+            "hail": "#BCBEC0",
+            "lightning": "#FFDB6F",
+            "marine": "#2F7BBF",
+            "moonshine": "#F7F7F7",
+            "night": "#404041",
+            "rain": "#408BC9",
+            "sky": "#76C4E2",
+            "smoke": "#e0e0e0",
+            "storm": "#808285",
+            "sunrise": "#F69259",
+            "sunset": "#BA77B1",
+            "tangerine": "#FF7900",
+            "twilight": "#8176B5",
+          },
+          "colorBlack": "#000",
+          "colorBlue": "#2f7bbf",
+          "colorBlueDark": "#2869a2",
+          "colorBlueLight": "#62a1d8",
+          "colorError": "#ff3100",
+          "colorFacebookBlue": "#3b5998",
+          "colorGray": "#7c7c7c",
+          "colorGrayBorder": "#666",
+          "colorGrayDark": "#333",
+          "colorGrayLight": "#dedede",
+          "colorGrayLightOnboarding": "#F7F7F7",
+          "colorGreen": "#9bca3e",
+          "colorGreenDark": "#87b331",
+          "colorGreenLight": "#bada7a",
+          "colorImportantInformation": "rgba(64,139,201,0.2)",
+          "colorInfo": "#00a9eb",
+          "colorMainBackground": "#e6e6e6",
+          "colorMuted": "#7c7c7c",
+          "colorOffsetDark": 0.07,
+          "colorOffsetLight": 0.15,
+          "colorOrange": "#ff7900",
+          "colorOrangeDark": "#db6800",
+          "colorOrangeLight": "#ffa14d",
+          "colorOverlay": "rgba(0, 0, 0, .7)",
+          "colorPink": "#d91698",
+          "colorPinkDark": "#b91381",
+          "colorPinkLight": "#ed4eb8",
+          "colorPurple": "#9545e5",
+          "colorPurpleDark": "#b91381",
+          "colorPurpleLight": "#ed4eb8",
+          "colorRed": "#bd2527",
+          "colorRedDark": "#9f1f21",
+          "colorRedLight": "#dd5153",
+          "colorSmoke": "#f2f2f2",
+          "colorSuccess": "#68970f",
+          "colorTwitterBlue": "#00aced",
+          "colorWarning": "#fca520",
+          "colorWhite": "#fff",
+          "colorYellow": "#ffd24d",
+          "colorYellowDark": "#ffc929",
+          "colorYellowLight": "#ffe59a",
+          "disabledBackground": "#ededed",
+          "em": "1em",
+          "fontColor": "#333",
+          "fontColorHeadingCaption": "#888",
+          "fontFamily": "\\"Open Sans\\", Helvetica, Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": 400,
+          "fontWeightLight": 300,
+          "gradient": Object {
+            "eight": "linear-gradient(left, #85CBA8, #FFDB6F)",
+            "five": "linear-gradient(left, #8176B5, #F16975)",
+            "four": "linear-gradient(left, #8176B5, #BA77B1)",
+            "primary": "linear-gradient(left, #76C4E2, #85CBA8)",
+            "seven": "linear-gradient(left, #F69259, #FFDB6F)",
+            "six": "linear-gradient(left, #F16975, #F69259)",
+            "three": "linear-gradient(left, #8176B5, #76C4E2)",
+            "two": "linear-gradient(left, #8176B5, #85CBA8)",
+          },
+          "inputFontSize": "13px",
+          "inputLineHeight": 1.4,
+          "lineHeight": 1.5,
+          "rem": "1rem",
+          "weightBold": 700,
+          "weightLight": 300,
+          "weightNormal": 400,
+          "weightSemiBold": 600,
+          "zIndexMax": 1000,
+        }
+      }
+    >
+      <ThemedComponent>
+        <TableStyles>
+          <TableStyles
+            _felaRule={[Function]}
+            passThrough={Array []}
+          >
+            <Table
+              bare={false}
+              bordered={true}
+              className="46sr0r"
+              condensed={false}
+              hover={false}
+              is="table"
+              striped={false}
+            >
+              <table
+                className="46sr0r"
+              >
+                <ThemedComponent
+                  bare={false}
+                  bordered={true}
+                  condensed={false}
+                  hover={false}
+                  striped={false}
+                >
+                  <FelaComponent
+                    bare={false}
+                    bordered={true}
+                    condensed={false}
+                    hover={false}
+                    striped={false}
+                  >
+                    <TableFootStyles
+                      _felaRule={[Function]}
+                      bare={false}
+                      bordered={true}
+                      condensed={false}
+                      hover={false}
+                      passThrough={Array []}
+                      striped={false}
+                    >
+                      <TableFootStyles
+                        _felaRule={[Function]}
+                        bare={false}
+                        bordered={true}
+                        condensed={false}
+                        hover={false}
+                        passThrough={Array []}
+                        striped={false}
+                      >
+                        <TableFoot
+                          bare={false}
+                          bordered={true}
+                          className="116rzb2"
+                          condensed={false}
+                          hover={false}
+                          is="tfoot"
+                          striped={false}
+                        >
+                          <tfoot
+                            className="116rzb2"
+                          />
+                        </TableFoot>
+                      </TableFootStyles>
+                    </TableFootStyles>
+                  </FelaComponent>
+                </ThemedComponent>
+              </table>
+            </Table>
+          </TableStyles>
+        </TableStyles>
+      </ThemedComponent>
+    </ThemeProvider>
+  </Provider>
+</StyleProvider>
 `;
 
-exports[`should render extra class name 1`] = `
-<tfoot
-  className="cf-table__foot extra"
+exports[`TableFoot should render 1`] = `
+<StyleProvider
+  dev={true}
 >
-  TableFoot
-</tfoot>
+  <Provider
+    renderer={
+      Object {
+        "_emitChange": [Function],
+        "_renderStyleToCache": [Function],
+        "_renderStyleToClassNames": [Function],
+        "cache": Object {
+          "1b0jccb": true,
+          "dotb8y": true,
+        },
+        "clear": [Function],
+        "fontFaces": "",
+        "keyframePrefixes": Array [
+          "-webkit-",
+          "-moz-",
+          "",
+        ],
+        "keyframes": "",
+        "listeners": Array [
+          [Function],
+          [Function],
+        ],
+        "mediaQueryOrder": Array [],
+        "mediaRules": Object {
+          "(max-width: 47.2em)": ".dotb8y {
+        display: block;
+        width: 100%;
+        box-sizing: border-box
+      }
+      
+      .1b0jccb {
+        display: block;
+        width: 100%;
+        box-sizing: border-box
+      }",
+          "screen and (max-width: 47.2em)": ".1b0jccb:after {
+        content: \\"\\";
+        display: table;
+        clear: both
+      }
+      
+      .1b0jccb {
+        display: block;
+        padding: 0.73333333333rem;
+        border-top: none;
+        background-color: #ccc
+      }",
+        },
+        "plugins": Array [
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+        ],
+        "prettySelectors": false,
+        "renderFont": [Function],
+        "renderKeyframe": [Function],
+        "renderRule": [Function],
+        "renderStatic": [Function],
+        "renderToString": [Function],
+        "rules": ".1b0jccb {
+        border-color: #dedede
+      }",
+        "selectorPrefix": "",
+        "statics": "",
+        "styleNodes": Object {
+          "RULE": <style
+            data-fela-type="RULE"
+            type="text/css"
+      >
+            .1b0jccb { border-color: #dedede }
+      </style>,
+          "RULE(max-width: 47.2em)": <style
+            data-fela-type="RULE"
+            type="text/css"
+            media="(max-width: 47.2em)"
+      >
+            .dotb8y { display: block; width: 100%; box-sizing: border-box } .1b0jccb { display: block; width: 100%; box-sizing: border-box }
+      </style>,
+          "RULEscreen and (max-width: 47.2em)": <style
+            data-fela-type="RULE"
+            type="text/css"
+            media="screen and (max-width: 47.2em)"
+      >
+            .1b0jccb:after { content: ""; display: table; clear: both } .1b0jccb { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc }
+      </style>,
+        },
+        "subscribe": [Function],
+        "uniqueKeyframeIdentifier": 0,
+        "uniqueRuleIdentifier": 0,
+      }
+    }
+  >
+    <ThemeProvider
+      overwrite={false}
+      theme={
+        Object {
+          "arrowSize": "5px",
+          "bodyAccentColor": "#333",
+          "bodyBackground": "#ebebeb",
+          "bodyOffsetColor": "#787878",
+          "borderRadius": "2px",
+          "boxShadow": "0 0 20px 0 rgba(136,136,136,0.50)",
+          "breakpoints": Object {
+            "desktop": "64em",
+            "desktopLarge": "97.6em",
+            "mobile": "13.6em",
+            "mobileWide": "30.4em",
+            "tablet": "47.2em",
+          },
+          "color": Object {
+            "apple": "#BD2527",
+            "carrot": "#f56500",
+            "cement": "#7D7D7D",
+            "charcoal": "#333333",
+            "dawn": "#F16975",
+            "dew": "#85CBA8",
+            "dusk": "#4D4D4F",
+            "grass": "#9BCA3E",
+            "hail": "#BCBEC0",
+            "lightning": "#FFDB6F",
+            "marine": "#2F7BBF",
+            "moonshine": "#F7F7F7",
+            "night": "#404041",
+            "rain": "#408BC9",
+            "sky": "#76C4E2",
+            "smoke": "#e0e0e0",
+            "storm": "#808285",
+            "sunrise": "#F69259",
+            "sunset": "#BA77B1",
+            "tangerine": "#FF7900",
+            "twilight": "#8176B5",
+          },
+          "colorBlack": "#000",
+          "colorBlue": "#2f7bbf",
+          "colorBlueDark": "#2869a2",
+          "colorBlueLight": "#62a1d8",
+          "colorError": "#ff3100",
+          "colorFacebookBlue": "#3b5998",
+          "colorGray": "#7c7c7c",
+          "colorGrayBorder": "#666",
+          "colorGrayDark": "#333",
+          "colorGrayLight": "#dedede",
+          "colorGrayLightOnboarding": "#F7F7F7",
+          "colorGreen": "#9bca3e",
+          "colorGreenDark": "#87b331",
+          "colorGreenLight": "#bada7a",
+          "colorImportantInformation": "rgba(64,139,201,0.2)",
+          "colorInfo": "#00a9eb",
+          "colorMainBackground": "#e6e6e6",
+          "colorMuted": "#7c7c7c",
+          "colorOffsetDark": 0.07,
+          "colorOffsetLight": 0.15,
+          "colorOrange": "#ff7900",
+          "colorOrangeDark": "#db6800",
+          "colorOrangeLight": "#ffa14d",
+          "colorOverlay": "rgba(0, 0, 0, .7)",
+          "colorPink": "#d91698",
+          "colorPinkDark": "#b91381",
+          "colorPinkLight": "#ed4eb8",
+          "colorPurple": "#9545e5",
+          "colorPurpleDark": "#b91381",
+          "colorPurpleLight": "#ed4eb8",
+          "colorRed": "#bd2527",
+          "colorRedDark": "#9f1f21",
+          "colorRedLight": "#dd5153",
+          "colorSmoke": "#f2f2f2",
+          "colorSuccess": "#68970f",
+          "colorTwitterBlue": "#00aced",
+          "colorWarning": "#fca520",
+          "colorWhite": "#fff",
+          "colorYellow": "#ffd24d",
+          "colorYellowDark": "#ffc929",
+          "colorYellowLight": "#ffe59a",
+          "disabledBackground": "#ededed",
+          "em": "1em",
+          "fontColor": "#333",
+          "fontColorHeadingCaption": "#888",
+          "fontFamily": "\\"Open Sans\\", Helvetica, Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": 400,
+          "fontWeightLight": 300,
+          "gradient": Object {
+            "eight": "linear-gradient(left, #85CBA8, #FFDB6F)",
+            "five": "linear-gradient(left, #8176B5, #F16975)",
+            "four": "linear-gradient(left, #8176B5, #BA77B1)",
+            "primary": "linear-gradient(left, #76C4E2, #85CBA8)",
+            "seven": "linear-gradient(left, #F69259, #FFDB6F)",
+            "six": "linear-gradient(left, #F16975, #F69259)",
+            "three": "linear-gradient(left, #8176B5, #76C4E2)",
+            "two": "linear-gradient(left, #8176B5, #85CBA8)",
+          },
+          "inputFontSize": "13px",
+          "inputLineHeight": 1.4,
+          "lineHeight": 1.5,
+          "rem": "1rem",
+          "weightBold": 700,
+          "weightLight": 300,
+          "weightNormal": 400,
+          "weightSemiBold": 600,
+          "zIndexMax": 1000,
+        }
+      }
+    >
+      <table>
+        <ThemedComponent>
+          <TableFootStyles>
+            <TableFootStyles
+              _felaRule={[Function]}
+              passThrough={Array []}
+            >
+              <TableFoot
+                className="dotb8y"
+                is="tfoot"
+              >
+                <tfoot
+                  className="dotb8y"
+                >
+                  <ThemedComponent
+                    rowIndex={-0}
+                    tfootIndex={0}
+                  >
+                    <TableRowStyles
+                      rowIndex={-0}
+                      tfootIndex={0}
+                    >
+                      <TableRowStyles
+                        _felaRule={[Function]}
+                        passThrough={Array []}
+                        rowIndex={-0}
+                        tfootIndex={0}
+                      >
+                        <TableRow
+                          className="1b0jccb"
+                          is="tr"
+                          rowIndex={-0}
+                          tfootIndex={0}
+                          type="default"
+                        >
+                          <tr
+                            className="1b0jccb"
+                          />
+                        </TableRow>
+                      </TableRowStyles>
+                    </TableRowStyles>
+                  </ThemedComponent>
+                </tfoot>
+              </TableFoot>
+            </TableFootStyles>
+          </TableFootStyles>
+        </ThemedComponent>
+      </table>
+    </ThemeProvider>
+  </Provider>
+</StyleProvider>
 `;

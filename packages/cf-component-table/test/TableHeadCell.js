@@ -1,17 +1,25 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { TableHeadCell } from '../../cf-component-table/src/index';
+import {
+  TableHeadCell,
+  createTableHeadCell
+} from '../../cf-component-table/src/index';
+import { felaSnapshot } from 'cf-style-provider';
 
-test('should render', () => {
-  const component = renderer.create(
-    <TableHeadCell>TableHeadCell</TableHeadCell>
-  );
-  expect(component.toJSON()).toMatchSnapshot();
-});
+describe('TableHeadCell', () => {
+  it('should render', () => {
+    const snapshot = felaSnapshot(<TableHeadCell>TableHeadCell</TableHeadCell>);
+    expect(snapshot).toMatchSnapshot();
+  });
 
-test('should render extra class name', () => {
-  const component = renderer.create(
-    <TableHeadCell className="extra">TableHeadCell</TableHeadCell>
-  );
-  expect(component.toJSON()).toMatchSnapshot();
+  it('should compose with styles overrides', () => {
+    const TableHeadCell = createTableHeadCell(({ theme }) => ({
+      verticalAlign: 'right',
+      [`@media (min-width: ${theme.breakpoints.desktopLarge})`]: {
+        width: '1000px'
+      }
+    }));
+    const snapshot = felaSnapshot(<TableHeadCell>TableHeadCell</TableHeadCell>);
+    expect(snapshot).toMatchSnapshot();
+  });
 });

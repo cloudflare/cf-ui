@@ -1,33 +1,123 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render 1`] = `
-<tr
-  className="cf-table__row cf-table__row--default"
+exports[`TableRow should compose with styles overrides 1`] = `
+Object {
+  "component": <tr
+    className="t744or"
 >
-  TableRow
-</tr>
+    <td
+        className="1glop85"
+        colSpan={undefined}
+        rowSpan={undefined}
+    />
+</tr>,
+  "styles": "
+.t744or {
+  border-color: #dedede;
+  vertical-align: right
+}
+
+.1glop85 {
+  border-top: 1px solid #dedede;
+  line-height: 1.5;
+  padding: 0.73333333333rem;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}@media (max-width: 47.2em){
+    .t744or {
+  display: block;
+  width: 100%;
+  box-sizing: border-box
+}
+
+.1glop85 {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-top-width: 0px
+}}@media screen and (max-width: 47.2em){
+    .t744or:after {
+  content: \\"\\";
+  display: table;
+  clear: both
+}
+
+
+    .t744or {
+  display: block;
+  padding: 0.73333333333rem;
+  border-top: 1px solid #dedede;
+  background-color: #ccc
+}
+
+.1glop85 {
+  display: block;
+  border: none;
+  float: left;
+  clear: left;
+  padding: 0px
+}}@media (min-width: 97.6em){
+    .t744or {
+  width: 1000px
+}}",
+}
 `;
 
-exports[`should render extra class name 1`] = `
-<tr
-  className="cf-table__row cf-table__row--default extra"
+exports[`TableRow should render 1`] = `
+Object {
+  "component": <tr
+    className="1k2myrb"
 >
-  TableRow
-</tr>
+    TableRow
+</tr>,
+  "styles": ".1k2myrb {
+  border-color: #dedede
+}@media (max-width: 47.2em){.1k2myrb {
+  display: block;
+  width: 100%;
+  box-sizing: border-box
+}}@media screen and (max-width: 47.2em){.1k2myrb:after {
+  content: \\"\\";
+  display: table;
+  clear: both
+}
+
+.1k2myrb {
+  display: block;
+  padding: 0.73333333333rem;
+  border-top: 1px solid #dedede;
+  background-color: #ccc
+}}",
+}
 `;
 
-exports[`should render with accent 1`] = `
-<tr
-  className="cf-table__row cf-table__row--default cf-table__row--accent-orange"
+exports[`TableRow should render with type 1`] = `
+Object {
+  "component": <tr
+    className="7q8ucp"
 >
-  TableRow
-</tr>
-`;
+    TableRow
+</tr>,
+  "styles": ".7q8ucp {
+  border-color: #d93c3e;
+  background-color: #dd5153
+}@media (max-width: 47.2em){.7q8ucp {
+  display: block;
+  width: 100%;
+  box-sizing: border-box
+}}@media screen and (max-width: 47.2em){.7q8ucp:after {
+  content: \\"\\";
+  display: table;
+  clear: both
+}
 
-exports[`should render with type 1`] = `
-<tr
-  className="cf-table__row cf-table__row--error"
->
-  TableRow
-</tr>
+.7q8ucp {
+  display: block;
+  padding: 0.73333333333rem;
+  border-top: 1px solid #dedede;
+  background-color: #ccc
+}}",
+}
 `;

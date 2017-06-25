@@ -1,49 +1,142 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render 1`] = `
-<table
-  className="cf-table cf-table--bordered"
+exports[`Table should compose with styles overrides 1`] = `
+Object {
+  "component": <table
+    className="1gskw3r"
 >
-  Table
-</table>
+    Table
+</table>,
+  "styles": ".1gskw3r {
+  background: #fff;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  max-width: 100%;
+  width: 100%;
+  vertical-align: right
+}@media (max-width: 47.2em){.1gskw3r {
+  display: block;
+  width: 100%;
+  box-sizing: border-box
+}}@media screen and (max-width: 47.2em){.1gskw3r {
+  display: block
+}}@media (min-width: 97.6em){.1gskw3r {
+  width: 1000px
+}}",
+}
 `;
 
-exports[`should render condensed 1`] = `
-<table
-  className="cf-table cf-table--bordered cf-table--condensed"
+exports[`Table should render 1`] = `
+Object {
+  "component": <table
+    className="46sr0r"
 >
-  Table
-</table>
+    Table
+</table>,
+  "styles": ".46sr0r {
+  background: #fff;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  max-width: 100%;
+  width: 100%
+}@media (max-width: 47.2em){.46sr0r {
+  display: block;
+  width: 100%;
+  box-sizing: border-box
+}}@media screen and (max-width: 47.2em){.46sr0r {
+  display: block
+}}",
+}
 `;
 
-exports[`should render extra class names 1`] = `
-<table
-  className="cf-table cf-table--bordered extra"
+exports[`Table should render condensed 1`] = `
+Object {
+  "component": <table
+    className="46sr0r"
 >
-  Table
-</table>
+    Table
+</table>,
+  "styles": ".46sr0r {
+  background: #fff;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  max-width: 100%;
+  width: 100%
+}@media (max-width: 47.2em){.46sr0r {
+  display: block;
+  width: 100%;
+  box-sizing: border-box
+}}@media screen and (max-width: 47.2em){.46sr0r {
+  display: block
+}}",
+}
 `;
 
-exports[`should render hover 1`] = `
-<table
-  className="cf-table cf-table--hover cf-table--bordered"
+exports[`Table should render hover 1`] = `
+Object {
+  "component": <table
+    className="46sr0r"
 >
-  Table
-</table>
+    Table
+</table>,
+  "styles": ".46sr0r {
+  background: #fff;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  max-width: 100%;
+  width: 100%
+}@media (max-width: 47.2em){.46sr0r {
+  display: block;
+  width: 100%;
+  box-sizing: border-box
+}}@media screen and (max-width: 47.2em){.46sr0r {
+  display: block
+}}",
+}
 `;
 
-exports[`should render not bordered 1`] = `
-<table
-  className="cf-table"
+exports[`Table should render not bordered 1`] = `
+Object {
+  "component": <table
+    className="46sr0r"
 >
-  Table
-</table>
+    Table
+</table>,
+  "styles": ".46sr0r {
+  background: #fff;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  max-width: 100%;
+  width: 100%
+}@media (max-width: 47.2em){.46sr0r {
+  display: block;
+  width: 100%;
+  box-sizing: border-box
+}}@media screen and (max-width: 47.2em){.46sr0r {
+  display: block
+}}",
+}
 `;
 
-exports[`should render striped 1`] = `
-<table
-  className="cf-table cf-table--striped cf-table--bordered"
+exports[`Table should render striped 1`] = `
+Object {
+  "component": <table
+    className="46sr0r"
 >
-  Table
-</table>
+    Table
+</table>,
+  "styles": ".46sr0r {
+  background: #fff;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  max-width: 100%;
+  width: 100%
+}@media (max-width: 47.2em){.46sr0r {
+  display: block;
+  width: 100%;
+  box-sizing: border-box
+}}@media screen and (max-width: 47.2em){.46sr0r {
+  display: block
+}}",
+}
 `;

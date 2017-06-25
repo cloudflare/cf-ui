@@ -1,22 +1,29 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { TableCell } from '../../cf-component-table/src/index';
+import { TableCell, createTableCell } from '../../cf-component-table/src/index';
+import { felaSnapshot } from 'cf-style-provider';
 
-test('should render', () => {
-  const component = renderer.create(<TableCell>TableCell</TableCell>);
-  expect(component.toJSON()).toMatchSnapshot();
-});
+describe('TableCell', () => {
+  it('should render', () => {
+    const snapshot = felaSnapshot(<TableCell>TableCell</TableCell>);
+    expect(snapshot).toMatchSnapshot();
+  });
 
-test('should render extra class name', () => {
-  const component = renderer.create(
-    <TableCell className="extra">TableCell</TableCell>
-  );
-  expect(component.toJSON()).toMatchSnapshot();
-});
+  it('should render with align', () => {
+    const snapshot = felaSnapshot(
+      <TableCell align="center">TableCell</TableCell>
+    );
+    expect(snapshot).toMatchSnapshot();
+  });
 
-test('should render with align', () => {
-  const component = renderer.create(
-    <TableCell align="center">TableCell</TableCell>
-  );
-  expect(component.toJSON()).toMatchSnapshot();
+  it('should compose with styles overrides', () => {
+    const TableCell = createTableCell(({ theme }) => ({
+      verticalAlign: 'right',
+      [`@media (min-width: ${theme.breakpoints.desktopLarge})`]: {
+        width: '1000px'
+      }
+    }));
+    const snapshot = felaSnapshot(<TableCell>TableCell</TableCell>);
+    expect(snapshot).toMatchSnapshot();
+  });
 });

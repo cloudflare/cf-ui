@@ -9,14 +9,4 @@ const rowType = PropTypes.oneOf([
   'error'
 ]);
 
-const rowAccent = PropTypes.oneOf([
-  false,
-  'gray',
-  'orange',
-  'pink',
-  'red',
-  'green',
-  'purple'
-]);
-
-export default { rowType, rowAccent };
+export default { rowType };

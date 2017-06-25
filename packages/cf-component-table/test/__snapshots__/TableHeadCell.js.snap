@@ -1,17 +1,77 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render 1`] = `
-<th
-  className="cf-table__cell cf-table__cell--head"
+exports[`TableHeadCell should compose with styles overrides 1`] = `
+Object {
+  "component": <th
+    className="6zfuo5"
 >
-  TableHeadCell
-</th>
+    TableHeadCell
+</th>,
+  "styles": ".6zfuo5:first-letter {
+  text-transform: capitalize
+}
+
+.6zfuo5 {
+  border-top: 1px solid #dedede;
+  line-height: 1.5;
+  padding: 0.73333333333rem;
+  vertical-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-color: #dedede;
+  text-align: left;
+  font-weight: 600
+}@media (max-width: 47.2em){.6zfuo5 {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-top-width: 0px
+}}@media screen and (max-width: 47.2em){.6zfuo5 {
+  display: block;
+  border: none;
+  float: left;
+  clear: left;
+  padding: 0px
+}}@media (min-width: 97.6em){.6zfuo5 {
+  width: 1000px
+}}",
+}
 `;
 
-exports[`should render extra class name 1`] = `
-<th
-  className="cf-table__cell cf-table__cell--head extra"
+exports[`TableHeadCell should render 1`] = `
+Object {
+  "component": <th
+    className="1u7kqkt"
 >
-  TableHeadCell
-</th>
+    TableHeadCell
+</th>,
+  "styles": ".1u7kqkt:first-letter {
+  text-transform: capitalize
+}
+
+.1u7kqkt {
+  border-top: 1px solid #dedede;
+  line-height: 1.5;
+  padding: 0.73333333333rem;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-color: #dedede;
+  text-align: left;
+  font-weight: 600
+}@media (max-width: 47.2em){.1u7kqkt {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-top-width: 0px
+}}@media screen and (max-width: 47.2em){.1u7kqkt {
+  display: block;
+  border: none;
+  float: left;
+  clear: left;
+  padding: 0px
+}}",
+}
 `;

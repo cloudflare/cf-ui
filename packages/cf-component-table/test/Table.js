@@ -1,33 +1,108 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { Table } from '../../cf-component-table/src/index';
+import { felaSnapshot, felaTestContext } from 'cf-style-provider';
 
-test('should render', () => {
-  const component = renderer.create(<Table>Table</Table>);
-  expect(component.toJSON()).toMatchSnapshot();
-});
+import {
+  Table,
+  TableHead,
+  TableBody,
+  TableFoot,
+  createTable
+} from '../../cf-component-table/src/index';
+import { mount } from 'enzyme';
 
-test('should render extra class names', () => {
-  const component = renderer.create(<Table className="extra">Table</Table>);
-  expect(component.toJSON()).toMatchSnapshot();
-});
+describe('Table', () => {
+  it('should render', () => {
+    const snapshot = felaSnapshot(<Table>Table</Table>);
+    expect(snapshot).toMatchSnapshot();
+  });
 
-test('should render striped', () => {
-  const component = renderer.create(<Table striped>Table</Table>);
-  expect(component.toJSON()).toMatchSnapshot();
-});
+  it('should render striped', () => {
+    const snapshot = felaSnapshot(<Table striped>Table</Table>);
+    expect(snapshot).toMatchSnapshot();
+  });
 
-test('should render hover', () => {
-  const component = renderer.create(<Table hover>Table</Table>);
-  expect(component.toJSON()).toMatchSnapshot();
-});
+  it('should render hover', () => {
+    const snapshot = felaSnapshot(<Table hover>Table</Table>);
+    expect(snapshot).toMatchSnapshot();
+  });
 
-test('should render not bordered', () => {
-  const component = renderer.create(<Table bordered={false}>Table</Table>);
-  expect(component.toJSON()).toMatchSnapshot();
-});
+  it('should render not bordered', () => {
+    const snapshot = felaSnapshot(<Table bordered={false}>Table</Table>);
+    expect(snapshot).toMatchSnapshot();
+  });
 
-test('should render condensed', () => {
-  const component = renderer.create(<Table condensed>Table</Table>);
-  expect(component.toJSON()).toMatchSnapshot();
+  it('should render condensed', () => {
+    const snapshot = felaSnapshot(<Table condensed>Table</Table>);
+    expect(snapshot).toMatchSnapshot();
+  });
+
+  it('should pass down CSS query props', () => {
+    const wrapper = mount(
+      felaTestContext(
+        <Table striped hover bordered condensed bare>
+          <TableHead />
+          <TableHead />
+          <TableBody />
+          <TableBody />
+          <TableFoot />
+          <TableFoot />
+        </Table>
+      )
+    );
+
+    const thead0 = wrapper.find(TableHead).at(0);
+    const thead1 = wrapper.find(TableHead).at(1);
+    const tbody0 = wrapper.find(TableBody).at(0);
+    const tbody1 = wrapper.find(TableBody).at(1);
+    const tfoot0 = wrapper.find(TableFoot).at(0);
+    const tfoot1 = wrapper.find(TableFoot).at(1);
+
+    expect(thead0.prop('condensed')).toBeTruthy();
+    expect(thead0.prop('striped')).toBeTruthy();
+    expect(thead0.prop('bordered')).toBeTruthy();
+    expect(thead0.prop('hover')).toBeTruthy();
+    expect(thead0.prop('bare')).toBeTruthy();
+
+    expect(thead1.prop('condensed')).toBeTruthy();
+    expect(thead1.prop('striped')).toBeTruthy();
+    expect(thead1.prop('bordered')).toBeTruthy();
+    expect(thead1.prop('hover')).toBeTruthy();
+    expect(thead1.prop('bare')).toBeTruthy();
+
+    expect(tbody0.prop('condensed')).toBeTruthy();
+    expect(tbody0.prop('striped')).toBeTruthy();
+    expect(tbody0.prop('bordered')).toBeTruthy();
+    expect(tbody0.prop('hover')).toBeTruthy();
+    expect(tbody0.prop('bare')).toBeTruthy();
+
+    expect(tbody1.prop('condensed')).toBeTruthy();
+    expect(tbody1.prop('striped')).toBeTruthy();
+    expect(tbody1.prop('bordered')).toBeTruthy();
+    expect(tbody1.prop('hover')).toBeTruthy();
+    expect(tbody1.prop('bare')).toBeTruthy();
+
+    expect(tfoot0.prop('condensed')).toBeTruthy();
+    expect(tfoot0.prop('striped')).toBeTruthy();
+    expect(tfoot0.prop('bordered')).toBeTruthy();
+    expect(tfoot0.prop('hover')).toBeTruthy();
+    expect(tfoot0.prop('bare')).toBeTruthy();
+
+    expect(tfoot1.prop('condensed')).toBeTruthy();
+    expect(tfoot1.prop('striped')).toBeTruthy();
+    expect(tfoot1.prop('bordered')).toBeTruthy();
+    expect(tfoot1.prop('hover')).toBeTruthy();
+    expect(tfoot1.prop('bare')).toBeTruthy();
+  });
+
+  it('should compose with styles overrides', () => {
+    const Table = createTable(({ theme }) => ({
+      verticalAlign: 'right',
+      [`@media (min-width: ${theme.breakpoints.desktopLarge})`]: {
+        width: '1000px'
+      }
+    }));
+    const snapshot = felaSnapshot(<Table>Table</Table>);
+    expect(snapshot).toMatchSnapshot();
+  });
 });

@@ -1,11 +1,12 @@
-import Table from './Table';
-import TableBody from './TableBody';
-import TableCell from './TableCell';
-import TableFoot from './TableFoot';
-import TableHead from './TableHead';
-import TableHeadCell from './TableHeadCell';
+import Table, { createTable } from './Table';
+import TableBody, { createTableBody } from './TableBody';
+import TableCell, { createTableCell } from './TableCell';
+import TableFoot, { createTableFoot } from './TableFoot';
+import TableHead, { createTableHead } from './TableHead';
+import TableHeadCell, { createTableHeadCell } from './TableHeadCell';
+import TableRow, { createTableRow } from './TableRow';
 import TablePropTypes from './TablePropTypes';
-import TableRow from './TableRow';
+import TableTheme from './TableTheme';
 
 export {
   Table,
@@ -14,6 +15,13 @@ export {
   TableFoot,
   TableHead,
   TableHeadCell,
-  TablePropTypes,
-  TableRow
+  TableRow,
+  createTable,
+  createTableBody,
+  createTableCell,
+  createTableFoot,
+  createTableHead,
+  createTableHeadCell,
+  createTableRow,
+  TablePropTypes
 };
