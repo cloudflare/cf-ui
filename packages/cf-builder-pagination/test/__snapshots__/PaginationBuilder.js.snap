@@ -111,15 +111,12 @@ exports[`should render pagination 1`] = `
 `;
 
 exports[`should render pagination 2`] = `
-"
-.y1rhga:after {
+".y1rhga:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-
-
-    .y1rhga {
+.y1rhga {
   list-style: none;
   margin-top: 0px;
   margin-left: 0px;
@@ -133,15 +130,12 @@ exports[`should render pagination 2`] = `
   border-radius: 3px;
   box-shadow: none
 }
-
 .1bek1ug:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-
-
-    .mgj6am {
+.mgj6am {
   float: left;
   position: relative;
   background-color: #ededed;
@@ -149,11 +143,9 @@ exports[`should render pagination 2`] = `
   cursor: default;
   border-radius: 3px
 }
-
 .109b087:focus {
   z-index: 1
 }
-
 .109b087 {
   user-select: none;
   -webkit-user-select: none;
@@ -169,7 +161,6 @@ exports[`should render pagination 2`] = `
   color: inherit;
   cursor: default
 }
-
 .1wi2cf1 {
   float: left;
   position: relative;
@@ -179,7 +170,6 @@ exports[`should render pagination 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-
 .15spu1u {
   float: left;
   position: relative;
@@ -187,11 +177,9 @@ exports[`should render pagination 2`] = `
   color: #408BC9;
   cursor: pointer
 }
-
 .32iz07:focus {
   z-index: 1
 }
-
 .32iz07 {
   user-select: none;
   -webkit-user-select: none;
@@ -207,9 +195,7 @@ exports[`should render pagination 2`] = `
   color: inherit;
   cursor: pointer
 }
-
-
-    .hmei63 {
+.hmei63 {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -333,15 +319,12 @@ exports[`should render pagination loading 1`] = `
 `;
 
 exports[`should render pagination loading 2`] = `
-"
-.y1rhga:after {
+".y1rhga:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-
-
-    .y1rhga {
+.y1rhga {
   list-style: none;
   margin-top: 0px;
   margin-left: 0px;
@@ -355,15 +338,12 @@ exports[`should render pagination loading 2`] = `
   border-radius: 3px;
   box-shadow: none
 }
-
 .1bek1ug:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-
-
-    .mgj6am {
+.mgj6am {
   float: left;
   position: relative;
   background-color: #ededed;
@@ -371,11 +351,9 @@ exports[`should render pagination loading 2`] = `
   cursor: default;
   border-radius: 3px
 }
-
 .109b087:focus {
   z-index: 1
 }
-
 .109b087 {
   user-select: none;
   -webkit-user-select: none;
@@ -391,7 +369,6 @@ exports[`should render pagination loading 2`] = `
   color: inherit;
   cursor: default
 }
-
 .1wi2cf1 {
   float: left;
   position: relative;
@@ -401,7 +378,6 @@ exports[`should render pagination loading 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-
 .15spu1u {
   float: left;
   position: relative;
@@ -409,11 +385,9 @@ exports[`should render pagination loading 2`] = `
   color: #408BC9;
   cursor: pointer
 }
-
 .32iz07:focus {
   z-index: 1
 }
-
 .32iz07 {
   user-select: none;
   -webkit-user-select: none;
@@ -429,9 +403,7 @@ exports[`should render pagination loading 2`] = `
   color: inherit;
   cursor: pointer
 }
-
-
-    .hmei63 {
+.hmei63 {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -552,15 +524,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
 `;
 
 exports[`should render pagination with an infoFormatter 2`] = `
-"
-.y1rhga:after {
+".y1rhga:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-
-
-    .y1rhga {
+.y1rhga {
   list-style: none;
   margin-top: 0px;
   margin-left: 0px;
@@ -574,15 +543,12 @@ exports[`should render pagination with an infoFormatter 2`] = `
   border-radius: 3px;
   box-shadow: none
 }
-
 .1bek1ug:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-
-
-    .hmei63 {
+.hmei63 {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -590,11 +556,9 @@ exports[`should render pagination with an infoFormatter 2`] = `
   cursor: pointer;
   border-radius: 3px
 }
-
 .32iz07:focus {
   z-index: 1
 }
-
 .32iz07 {
   user-select: none;
   -webkit-user-select: none;
@@ -610,7 +574,6 @@ exports[`should render pagination with an infoFormatter 2`] = `
   color: inherit;
   cursor: pointer
 }
-
 .15spu1u {
   float: left;
   position: relative;
@@ -618,7 +581,6 @@ exports[`should render pagination with an infoFormatter 2`] = `
   color: #408BC9;
   cursor: pointer
 }
-
 .1wi2cf1 {
   float: left;
   position: relative;
@@ -628,11 +590,9 @@ exports[`should render pagination with an infoFormatter 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-
 .109b087:focus {
   z-index: 1
 }
-
 .109b087 {
   user-select: none;
   -webkit-user-select: none;
@@ -761,15 +721,12 @@ exports[`should render pagination with the last page active 1`] = `
 `;
 
 exports[`should render pagination with the last page active 2`] = `
-"
-.y1rhga:after {
+".y1rhga:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-
-
-    .y1rhga {
+.y1rhga {
   list-style: none;
   margin-top: 0px;
   margin-left: 0px;
@@ -783,15 +740,12 @@ exports[`should render pagination with the last page active 2`] = `
   border-radius: 3px;
   box-shadow: none
 }
-
 .1bek1ug:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-
-
-    .hmei63 {
+.hmei63 {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -799,11 +753,9 @@ exports[`should render pagination with the last page active 2`] = `
   cursor: pointer;
   border-radius: 3px
 }
-
 .32iz07:focus {
   z-index: 1
 }
-
 .32iz07 {
   user-select: none;
   -webkit-user-select: none;
@@ -819,7 +771,6 @@ exports[`should render pagination with the last page active 2`] = `
   color: inherit;
   cursor: pointer
 }
-
 .15spu1u {
   float: left;
   position: relative;
@@ -827,7 +778,6 @@ exports[`should render pagination with the last page active 2`] = `
   color: #408BC9;
   cursor: pointer
 }
-
 .1wi2cf1 {
   float: left;
   position: relative;
@@ -837,11 +787,9 @@ exports[`should render pagination with the last page active 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-
 .109b087:focus {
   z-index: 1
 }
-
 .109b087 {
   user-select: none;
   -webkit-user-select: none;
@@ -857,9 +805,7 @@ exports[`should render pagination with the last page active 2`] = `
   color: inherit;
   cursor: default
 }
-
-
-    .mgj6am {
+.mgj6am {
   float: left;
   position: relative;
   background-color: #ededed;
@@ -1036,15 +982,12 @@ exports[`should render with collapsed items 1`] = `
 `;
 
 exports[`should render with collapsed items 2`] = `
-"
-.y1rhga:after {
+".y1rhga:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-
-
-    .y1rhga {
+.y1rhga {
   list-style: none;
   margin-top: 0px;
   margin-left: 0px;
@@ -1058,15 +1001,12 @@ exports[`should render with collapsed items 2`] = `
   border-radius: 3px;
   box-shadow: none
 }
-
 .1bek1ug:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-
-
-    .hmei63 {
+.hmei63 {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -1074,11 +1014,9 @@ exports[`should render with collapsed items 2`] = `
   cursor: pointer;
   border-radius: 3px
 }
-
 .32iz07:focus {
   z-index: 1
 }
-
 .32iz07 {
   user-select: none;
   -webkit-user-select: none;
@@ -1094,7 +1032,6 @@ exports[`should render with collapsed items 2`] = `
   color: inherit;
   cursor: pointer
 }
-
 .15spu1u {
   float: left;
   position: relative;
@@ -1102,7 +1039,6 @@ exports[`should render with collapsed items 2`] = `
   color: #408BC9;
   cursor: pointer
 }
-
 .1wi2cf1 {
   float: left;
   position: relative;
@@ -1112,11 +1048,9 @@ exports[`should render with collapsed items 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-
 .109b087:focus {
   z-index: 1
 }
-
 .109b087 {
   user-select: none;
   -webkit-user-select: none;

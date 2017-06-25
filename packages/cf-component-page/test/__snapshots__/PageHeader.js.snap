@@ -43,9 +43,7 @@ exports[`should render title/subtitle 2`] = `
   line-height: 1.2;
   font-weight: 400
 }
-
-
-    .jjd3ph {
+.jjd3ph {
   color: #7c7c7c;
   font-weight: 300
 }"

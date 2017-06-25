@@ -17,9 +17,7 @@ exports[`should render 2`] = `
   padding: 1em;
   border-bottom: 1px solid #dedede
 }
-
-
-    .oxs2bj {
+.oxs2bj {
   margin: 0px
 }"
 `;

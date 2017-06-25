@@ -9,8 +9,7 @@ exports[`should render all props as styles 1`] = `
 `;
 
 exports[`should render all props as styles 2`] = `
-"
-.k8v3yj {
+".k8v3yj {
   border-width: 1px;
   border-style: solid;
   border-color: black;

@@ -17,23 +17,19 @@ exports[`should render as submit 2`] = `
   border-color: #215685;
   color: #fff
 }
-
 .12tyf0k:active {
   background-color: #215685;
   border-color: #1a4468;
   color: #fff
 }
-
 .12tyf0k:focus {
   background-color: #2f7bbf;
   color: #fff;
   border-color: #2869a2
 }
-
 .12tyf0k[title] {
   pointer-events: none
 }
-
 .12tyf0k {
   background-color: #2f7bbf;
   border-bottom: 1px solid;
@@ -44,7 +40,7 @@ exports[`should render as submit 2`] = `
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
+  font-family: \\"Open Sans\\",Helvetica,Arial,sans-serif;
   font-size: 0.9333333333333333rem;
   font-weight: 400;
   line-height: 1.2;
@@ -90,40 +86,32 @@ exports[`should render with loading 2`] = `
     opacity: 0
   }
 }
-
 @-moz-keyframes k1 {
   50% {
     opacity: 0
   }
 }
-
 @keyframes k1 {
   50% {
     opacity: 0
   }
 }
-    .nubafe:hover {
+.nubafe:hover {
   background-color: #ededed;
   border-color: #dbdbdb;
   color: #ededed
 }
-
-
-    .nubafe:active {
+.nubafe:active {
   background-color: #215685;
   border-color: #dbdbdb;
   color: #fff
 }
-
-
-    .nubafe:focus {
+.nubafe:focus {
   color: #ededed;
   outline: none;
   border-color: #dbdbdb
 }
-
-
-    .nubafe::before {
+.nubafe::before {
   content: \\"…\\";
   color: black;
   display: block;
@@ -141,14 +129,10 @@ exports[`should render with loading 2`] = `
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear
 }
-
-
-    .nubafe[title] {
+.nubafe[title] {
   pointer-events: none
 }
-
-
-    .nubafe {
+.nubafe {
   background-color: #ededed;
   border-bottom: 1px solid;
   border-color: #dbdbdb;
@@ -158,7 +142,7 @@ exports[`should render with loading 2`] = `
   color: #ededed;
   cursor: default;
   display: inline-block;
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
+  font-family: \\"Open Sans\\",Helvetica,Arial,sans-serif;
   font-size: 0.9333333333333333rem;
   font-weight: 400;
   line-height: 1.2;
@@ -204,40 +188,32 @@ exports[`should render with loading and disabled overridden 2`] = `
     opacity: 0
   }
 }
-
 @-moz-keyframes k1 {
   50% {
     opacity: 0
   }
 }
-
 @keyframes k1 {
   50% {
     opacity: 0
   }
 }
-    .nubafe:hover {
+.nubafe:hover {
   background-color: #ededed;
   border-color: #dbdbdb;
   color: #ededed
 }
-
-
-    .nubafe:active {
+.nubafe:active {
   background-color: #215685;
   border-color: #dbdbdb;
   color: #fff
 }
-
-
-    .nubafe:focus {
+.nubafe:focus {
   color: #ededed;
   outline: none;
   border-color: #dbdbdb
 }
-
-
-    .nubafe::before {
+.nubafe::before {
   content: \\"…\\";
   color: black;
   display: block;
@@ -255,14 +231,10 @@ exports[`should render with loading and disabled overridden 2`] = `
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear
 }
-
-
-    .nubafe[title] {
+.nubafe[title] {
   pointer-events: none
 }
-
-
-    .nubafe {
+.nubafe {
   background-color: #ededed;
   border-bottom: 1px solid;
   border-color: #dbdbdb;
@@ -272,7 +244,7 @@ exports[`should render with loading and disabled overridden 2`] = `
   color: #ededed;
   cursor: default;
   display: inline-block;
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
+  font-family: \\"Open Sans\\",Helvetica,Arial,sans-serif;
   font-size: 0.9333333333333333rem;
   font-weight: 400;
   line-height: 1.2;
@@ -318,23 +290,19 @@ exports[`should render with type 2`] = `
   border-color: #215685;
   color: #fff
 }
-
 .12tyf0k:active {
   background-color: #215685;
   border-color: #1a4468;
   color: #fff
 }
-
 .12tyf0k:focus {
   background-color: #2f7bbf;
   color: #fff;
   border-color: #2869a2
 }
-
 .12tyf0k[title] {
   pointer-events: none
 }
-
 .12tyf0k {
   background-color: #2f7bbf;
   border-bottom: 1px solid;
@@ -345,7 +313,7 @@ exports[`should render with type 2`] = `
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
+  font-family: \\"Open Sans\\",Helvetica,Arial,sans-serif;
   font-size: 0.9333333333333333rem;
   font-weight: 400;
   line-height: 1.2;
@@ -386,34 +354,25 @@ exports[`should render with type/disabled 1`] = `
 `;
 
 exports[`should render with type/disabled 2`] = `
-"
-.bare0q:hover {
+".bare0q:hover {
   background-color: #2869a2;
   border-color: #215685;
   color: #fff
 }
-
-
-    .bare0q:active {
+.bare0q:active {
   background-color: #215685;
   border-color: #1a4468;
   color: #fff
 }
-
-
-    .bare0q:focus {
+.bare0q:focus {
   background-color: #2f7bbf;
   color: #fff;
   border-color: #2869a2
 }
-
-
-    .bare0q[title] {
+.bare0q[title] {
   pointer-events: auto
 }
-
-
-    .bare0q {
+.bare0q {
   background-color: #2f7bbf;
   border-bottom: 1px solid;
   border-color: #2869a2;
@@ -423,7 +382,7 @@ exports[`should render with type/disabled 2`] = `
   color: #fff;
   cursor: default;
   display: inline-block;
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
+  font-family: \\"Open Sans\\",Helvetica,Arial,sans-serif;
   font-size: 0.9333333333333333rem;
   font-weight: 400;
   line-height: 1.2;

@@ -24,11 +24,9 @@ exports[`should render 2`] = `
   color: #408BC9;
   cursor: pointer
 }
-
 .32iz07:focus {
   z-index: 1
 }
-
 .32iz07 {
   user-select: none;
   -webkit-user-select: none;
@@ -72,11 +70,9 @@ exports[`should render active 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-
 .109b087:focus {
   z-index: 1
 }
-
 .109b087 {
   user-select: none;
   -webkit-user-select: none;
@@ -125,11 +121,9 @@ exports[`should render active dot 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-
 .109b087:focus {
   z-index: 1
 }
-
 .109b087 {
   user-select: none;
   -webkit-user-select: none;
@@ -174,11 +168,9 @@ exports[`should render active next 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-
 .109b087:focus {
   z-index: 1
 }
-
 .109b087 {
   user-select: none;
   -webkit-user-select: none;
@@ -223,11 +215,9 @@ exports[`should render active prev 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-
 .109b087:focus {
   z-index: 1
 }
-
 .109b087 {
   user-select: none;
   -webkit-user-select: none;
@@ -262,19 +252,16 @@ exports[`should render disabled 1`] = `
 `;
 
 exports[`should render disabled 2`] = `
-"
-.yr93k7 {
+".yr93k7 {
   float: left;
   position: relative;
   background-color: #ededed;
   color: #666;
   cursor: default
 }
-
 .109b087:focus {
   z-index: 1
 }
-
 .109b087 {
   user-select: none;
   -webkit-user-select: none;
@@ -321,11 +308,9 @@ exports[`should render disabled dot 2`] = `
   margin: 1em;
   border-radius: 50%
 }
-
 .109b087:focus {
   z-index: 1
 }
-
 .109b087 {
   user-select: none;
   -webkit-user-select: none;
@@ -360,8 +345,7 @@ exports[`should render disabled next 1`] = `
 `;
 
 exports[`should render disabled next 2`] = `
-"
-.mgj6am {
+".mgj6am {
   float: left;
   position: relative;
   background-color: #ededed;
@@ -369,11 +353,9 @@ exports[`should render disabled next 2`] = `
   cursor: default;
   border-radius: 3px
 }
-
 .109b087:focus {
   z-index: 1
 }
-
 .109b087 {
   user-select: none;
   -webkit-user-select: none;
@@ -408,8 +390,7 @@ exports[`should render disabled prev 1`] = `
 `;
 
 exports[`should render disabled prev 2`] = `
-"
-.mgj6am {
+".mgj6am {
   float: left;
   position: relative;
   background-color: #ededed;
@@ -417,11 +398,9 @@ exports[`should render disabled prev 2`] = `
   cursor: default;
   border-radius: 3px
 }
-
 .109b087:focus {
   z-index: 1
 }
-
 .109b087 {
   user-select: none;
   -webkit-user-select: none;

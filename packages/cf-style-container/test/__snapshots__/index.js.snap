@@ -19,11 +19,9 @@ exports[`createComponentStyles creates a component 1`] = `
 `;
 
 exports[`createComponentStyles creates a component 2`] = `
-"
-.dxtwdx {
+".dxtwdx {
   padding: 5px
 }
-
 .18oup6l {
   margin: 2px
 }"

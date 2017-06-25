@@ -15,15 +15,12 @@ exports[`should render 1`] = `
 `;
 
 exports[`should render 2`] = `
-"
-.y1rhga:after {
+".y1rhga:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-
-
-    .y1rhga {
+.y1rhga {
   list-style: none;
   margin-top: 0px;
   margin-left: 0px;
@@ -37,7 +34,6 @@ exports[`should render 2`] = `
   border-radius: 3px;
   box-shadow: none
 }
-
 .1bek1ug:after {
   content: \\"\\";
   display: table;
@@ -65,15 +61,12 @@ exports[`should render with info 1`] = `
 `;
 
 exports[`should render with info 2`] = `
-"
-.y1rhga:after {
+".y1rhga:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-
-
-    .y1rhga {
+.y1rhga {
   list-style: none;
   margin-top: 0px;
   margin-left: 0px;
@@ -87,7 +80,6 @@ exports[`should render with info 2`] = `
   border-radius: 3px;
   box-shadow: none
 }
-
 .1bek1ug:after {
   content: \\"\\";
   display: table;

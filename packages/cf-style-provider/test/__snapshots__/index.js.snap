@@ -30,3 +30,14 @@ exports[`StyleProvider should render styles 1`] = `
 
 </html>"
 `;
+
+exports[`felaSnapshot should return a formatted snapshot object 1`] = `
+Object {
+  "component": <div
+    className="53ysj"
+/>,
+  "styles": ".53ysj {
+  color: black
+}",
+}
+`;

@@ -7,8 +7,7 @@ exports[`should render invalid state 1`] = `
 `;
 
 exports[`should render invalid state 2`] = `
-"
-.lzhvgp::before {
+".lzhvgp::before {
   content: \\"\\";
   display: block;
   position: absolute;
@@ -19,9 +18,7 @@ exports[`should render invalid state 2`] = `
   border-width: 6px;
   border-bottom-color: #bd2527
 }
-
-
-    .lzhvgp::after {
+.lzhvgp::after {
   content: \\"\\";
   display: block;
   position: absolute;
@@ -32,24 +29,18 @@ exports[`should render invalid state 2`] = `
   border-width: 4px;
   border-bottom-color: #bd2527
 }
-
-
-    .lzhvgp p {
+.lzhvgp p {
   margin-top: 0px;
   margin-bottom: 0px
 }
-
-
-    .lzhvgp p + p {
+.lzhvgp p + p {
   margin-top: 0.5em
 }
-
-
-    .lzhvgp {
+.lzhvgp {
   position: relative;
   margin-top: -0.75em;
   padding: 0.5em 1em;
-  border: 1px solid  #9f1f21;
+  border: 1px solid #9f1f21;
   font-size: 0.8em;
   font-weight: 600;
   background: #bd2527;
@@ -71,8 +62,7 @@ exports[`should render invalid state with validation errors 1`] = `
 `;
 
 exports[`should render invalid state with validation errors 2`] = `
-"
-.lzhvgp::before {
+".lzhvgp::before {
   content: \\"\\";
   display: block;
   position: absolute;
@@ -83,9 +73,7 @@ exports[`should render invalid state with validation errors 2`] = `
   border-width: 6px;
   border-bottom-color: #bd2527
 }
-
-
-    .lzhvgp::after {
+.lzhvgp::after {
   content: \\"\\";
   display: block;
   position: absolute;
@@ -96,24 +84,18 @@ exports[`should render invalid state with validation errors 2`] = `
   border-width: 4px;
   border-bottom-color: #bd2527
 }
-
-
-    .lzhvgp p {
+.lzhvgp p {
   margin-top: 0px;
   margin-bottom: 0px
 }
-
-
-    .lzhvgp p + p {
+.lzhvgp p + p {
   margin-top: 0.5em
 }
-
-
-    .lzhvgp {
+.lzhvgp {
   position: relative;
   margin-top: -0.75em;
   padding: 0.5em 1em;
-  border: 1px solid  #9f1f21;
+  border: 1px solid #9f1f21;
   font-size: 0.8em;
   font-weight: 600;
   background: #bd2527;

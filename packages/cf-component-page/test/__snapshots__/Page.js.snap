@@ -9,12 +9,13 @@ exports[`should render 1`] = `
 `;
 
 exports[`should render 2`] = `
-"
-.lb8cdc {
+".lb8cdc {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem
-}@media (min-width: 47.2em){
-    .lb8cdc {
-  padding-bottom: 1.3rem
-}}"
+}
+@media (min-width: 47.2em) {
+  .lb8cdc {
+    padding-bottom: 1.3rem
+  }
+}"
 `;
