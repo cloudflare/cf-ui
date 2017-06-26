@@ -3,14 +3,14 @@
 exports[`TableHeadCell should render 1`] = `
 Object {
   "component": <th
-    className="1u7kqkt"
+    className="cf-1u7kqkt"
 >
     TableHeadCell
 </th>,
-  "styles": ".1u7kqkt:first-letter {
+  "styles": ".cf-1u7kqkt:first-letter {
   text-transform: capitalize
 }
-.1u7kqkt {
+.cf-1u7kqkt {
   border-top: 1px solid #dedede;
   line-height: 1.5;
   padding: 0.73333333333rem;
@@ -23,7 +23,7 @@ Object {
   font-weight: 600
 }
 @media (max-width: 47.2em) {
-  .1u7kqkt {
+  .cf-1u7kqkt {
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -31,7 +31,7 @@ Object {
   }
 }
 @media screen and (max-width: 47.2em) {
-  .1u7kqkt {
+  .cf-1u7kqkt {
     display: block;
     border: none;
     float: left;
@@ -53,7 +53,7 @@ exports[`createTableHeadCell should be able to render a div 1`] = `
         "_renderStyleToCache": [Function],
         "_renderStyleToClassNames": [Function],
         "cache": Object {
-          "1f998t1": true,
+          "cf-1f998t1": true,
         },
         "clear": [Function],
         "fontFaces": "",
@@ -69,16 +69,16 @@ exports[`createTableHeadCell should be able to render a div 1`] = `
         ],
         "mediaQueryOrder": Array [],
         "mediaRules": Object {
-          "(max-width: 47.2em)": ".1f998t1 {
+          "(max-width: 47.2em)": ".cf-1f998t1 {
         display: block;
         width: 100%;
         box-sizing: border-box;
         border-top-width: 0px
       }",
-          "(min-width: 97.6em)": ".1f998t1 {
+          "(min-width: 97.6em)": ".cf-1f998t1 {
         width: 1000px
       }",
-          "screen and (max-width: 47.2em)": ".1f998t1 {
+          "screen and (max-width: 47.2em)": ".cf-1f998t1 {
         display: block;
         border: none;
         float: left;
@@ -101,11 +101,11 @@ exports[`createTableHeadCell should be able to render a div 1`] = `
         "renderRule": [Function],
         "renderStatic": [Function],
         "renderToString": [Function],
-        "rules": ".1f998t1:first-letter {
+        "rules": ".cf-1f998t1:first-letter {
         text-transform: capitalize
       }
       
-      .1f998t1 {
+      .cf-1f998t1 {
         display: inline-block;
         flex: auto;
         -webkit-flex: auto;
@@ -120,35 +120,35 @@ exports[`createTableHeadCell should be able to render a div 1`] = `
         text-align: left;
         font-weight: 600
       }",
-        "selectorPrefix": "",
+        "selectorPrefix": "cf-",
         "statics": "",
         "styleNodes": Object {
           "RULE": <style
             data-fela-type="RULE"
             type="text/css"
       >
-            .1f998t1:first-letter { text-transform: capitalize } .1f998t1 { display: inline-block; flex: auto; -webkit-flex: auto; border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-color: #dedede; text-align: left; font-weight: 600 }
+            .cf-1f998t1:first-letter { text-transform: capitalize } .cf-1f998t1 { display: inline-block; flex: auto; -webkit-flex: auto; border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-color: #dedede; text-align: left; font-weight: 600 }
       </style>,
           "RULE(max-width: 47.2em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="(max-width: 47.2em)"
       >
-            .1f998t1 { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px }
+            .cf-1f998t1 { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px }
       </style>,
           "RULE(min-width: 97.6em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="(min-width: 97.6em)"
       >
-            .1f998t1 { width: 1000px }
+            .cf-1f998t1 { width: 1000px }
       </style>,
           "RULEscreen and (max-width: 47.2em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="screen and (max-width: 47.2em)"
       >
-            .1f998t1 { display: block; border: none; float: left; clear: left; padding: 0px }
+            .cf-1f998t1 { display: block; border: none; float: left; clear: left; padding: 0px }
       </style>,
         },
         "subscribe": [Function],
@@ -275,7 +275,7 @@ exports[`createTableHeadCell should be able to render a div 1`] = `
           is="div"
         >
           <div
-            className="1f998t1"
+            className="cf-1f998t1"
             is="div"
           />
         </FelaComponent>
@@ -296,7 +296,7 @@ exports[`createTableHeadCell should compose with styles overrides 1`] = `
         "_renderStyleToCache": [Function],
         "_renderStyleToClassNames": [Function],
         "cache": Object {
-          "6zfuo5": true,
+          "cf-6zfuo5": true,
         },
         "clear": [Function],
         "fontFaces": "",
@@ -312,16 +312,16 @@ exports[`createTableHeadCell should compose with styles overrides 1`] = `
         ],
         "mediaQueryOrder": Array [],
         "mediaRules": Object {
-          "(max-width: 47.2em)": ".6zfuo5 {
+          "(max-width: 47.2em)": ".cf-6zfuo5 {
         display: block;
         width: 100%;
         box-sizing: border-box;
         border-top-width: 0px
       }",
-          "(min-width: 97.6em)": ".6zfuo5 {
+          "(min-width: 97.6em)": ".cf-6zfuo5 {
         width: 1000px
       }",
-          "screen and (max-width: 47.2em)": ".6zfuo5 {
+          "screen and (max-width: 47.2em)": ".cf-6zfuo5 {
         display: block;
         border: none;
         float: left;
@@ -344,11 +344,11 @@ exports[`createTableHeadCell should compose with styles overrides 1`] = `
         "renderRule": [Function],
         "renderStatic": [Function],
         "renderToString": [Function],
-        "rules": ".6zfuo5:first-letter {
+        "rules": ".cf-6zfuo5:first-letter {
         text-transform: capitalize
       }
       
-      .6zfuo5 {
+      .cf-6zfuo5 {
         border-top: 1px solid #dedede;
         line-height: 1.5;
         padding: 0.73333333333rem;
@@ -360,35 +360,35 @@ exports[`createTableHeadCell should compose with styles overrides 1`] = `
         text-align: left;
         font-weight: 600
       }",
-        "selectorPrefix": "",
+        "selectorPrefix": "cf-",
         "statics": "",
         "styleNodes": Object {
           "RULE": <style
             data-fela-type="RULE"
             type="text/css"
       >
-            .6zfuo5:first-letter { text-transform: capitalize } .6zfuo5 { border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-color: #dedede; text-align: left; font-weight: 600 }
+            .cf-6zfuo5:first-letter { text-transform: capitalize } .cf-6zfuo5 { border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-color: #dedede; text-align: left; font-weight: 600 }
       </style>,
           "RULE(max-width: 47.2em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="(max-width: 47.2em)"
       >
-            .6zfuo5 { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px }
+            .cf-6zfuo5 { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px }
       </style>,
           "RULE(min-width: 97.6em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="(min-width: 97.6em)"
       >
-            .6zfuo5 { width: 1000px }
+            .cf-6zfuo5 { width: 1000px }
       </style>,
           "RULEscreen and (max-width: 47.2em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="screen and (max-width: 47.2em)"
       >
-            .6zfuo5 { display: block; border: none; float: left; clear: left; padding: 0px }
+            .cf-6zfuo5 { display: block; border: none; float: left; clear: left; padding: 0px }
       </style>,
         },
         "subscribe": [Function],
@@ -514,11 +514,11 @@ exports[`createTableHeadCell should compose with styles overrides 1`] = `
             <ThemedComponent>
               <FelaComponent>
                 <TableHeadCell
-                  className="6zfuo5"
+                  className="cf-6zfuo5"
                   is="th"
                 >
                   <th
-                    className="6zfuo5"
+                    className="cf-6zfuo5"
                   />
                 </TableHeadCell>
               </FelaComponent>

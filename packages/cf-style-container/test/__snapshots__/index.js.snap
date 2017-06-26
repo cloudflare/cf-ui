@@ -3,9 +3,9 @@
 exports[`connectStyles should accept styles functions or objects 1`] = `
 Object {
   "component": <div
-    className="bd4m75"
+    className="cf-bd4m75"
 />,
-  "styles": ".bd4m75 {
+  "styles": ".cf-bd4m75 {
   color: #fff
 }",
 }
@@ -14,9 +14,9 @@ Object {
 exports[`connectStyles's return value should return a styled component when invoked 1`] = `
 Object {
   "component": <div
-    className="53ysj"
+    className="cf-53ysj"
 />,
-  "styles": ".53ysj {
+  "styles": ".cf-53ysj {
   color: black
 }",
 }

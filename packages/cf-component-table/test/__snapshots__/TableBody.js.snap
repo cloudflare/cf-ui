@@ -11,8 +11,8 @@ exports[`TableBody should compose with styles overrides 1`] = `
         "_renderStyleToCache": [Function],
         "_renderStyleToClassNames": [Function],
         "cache": Object {
-          "46sr0r": true,
-          "7q381j": true,
+          "cf-46sr0r": true,
+          "cf-7q381j": true,
         },
         "clear": [Function],
         "fontFaces": "",
@@ -28,25 +28,25 @@ exports[`TableBody should compose with styles overrides 1`] = `
         ],
         "mediaQueryOrder": Array [],
         "mediaRules": Object {
-          "(max-width: 47.2em)": ".46sr0r {
+          "(max-width: 47.2em)": ".cf-46sr0r {
         display: block;
         width: 100%;
         box-sizing: border-box
       }
       
-      .7q381j {
+      .cf-7q381j {
         display: block;
         width: 100%;
         box-sizing: border-box
       }",
-          "(min-width: 97.6em)": ".7q381j {
+          "(min-width: 97.6em)": ".cf-7q381j {
         width: 1000px
       }",
-          "screen and (max-width: 47.2em)": ".46sr0r {
+          "screen and (max-width: 47.2em)": ".cf-46sr0r {
         display: block
       }
       
-      .7q381j {
+      .cf-7q381j {
         display: block
       }",
         },
@@ -65,7 +65,7 @@ exports[`TableBody should compose with styles overrides 1`] = `
         "renderRule": [Function],
         "renderStatic": [Function],
         "renderToString": [Function],
-        "rules": ".46sr0r {
+        "rules": ".cf-46sr0r {
         background: #fff;
         border-collapse: collapse;
         border-spacing: 0px;
@@ -73,38 +73,38 @@ exports[`TableBody should compose with styles overrides 1`] = `
         width: 100%
       }
       
-      .7q381j {
+      .cf-7q381j {
         vertical-align: right
       }",
-        "selectorPrefix": "",
+        "selectorPrefix": "cf-",
         "statics": "",
         "styleNodes": Object {
           "RULE": <style
             data-fela-type="RULE"
             type="text/css"
       >
-            .46sr0r { background: #fff; border-collapse: collapse; border-spacing: 0px; max-width: 100%; width: 100% } .7q381j { vertical-align: right }
+            .cf-46sr0r { background: #fff; border-collapse: collapse; border-spacing: 0px; max-width: 100%; width: 100% } .cf-7q381j { vertical-align: right }
       </style>,
           "RULE(max-width: 47.2em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="(max-width: 47.2em)"
       >
-            .46sr0r { display: block; width: 100%; box-sizing: border-box } .7q381j { display: block; width: 100%; box-sizing: border-box }
+            .cf-46sr0r { display: block; width: 100%; box-sizing: border-box } .cf-7q381j { display: block; width: 100%; box-sizing: border-box }
       </style>,
           "RULE(min-width: 97.6em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="(min-width: 97.6em)"
       >
-            .7q381j { width: 1000px }
+            .cf-7q381j { width: 1000px }
       </style>,
           "RULEscreen and (max-width: 47.2em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="screen and (max-width: 47.2em)"
       >
-            .46sr0r { display: block } .7q381j { display: block }
+            .cf-46sr0r { display: block } .cf-7q381j { display: block }
       </style>,
         },
         "subscribe": [Function],
@@ -229,14 +229,14 @@ exports[`TableBody should compose with styles overrides 1`] = `
           <Table
             bare={false}
             bordered={true}
-            className="46sr0r"
+            className="cf-46sr0r"
             condensed={false}
             hover={false}
             is="table"
             striped={false}
           >
             <table
-              className="46sr0r"
+              className="cf-46sr0r"
             >
               <ThemedComponent
                 bare={false}
@@ -255,14 +255,14 @@ exports[`TableBody should compose with styles overrides 1`] = `
                   <TableBody
                     bare={false}
                     bordered={true}
-                    className="7q381j"
+                    className="cf-7q381j"
                     condensed={false}
                     hover={false}
                     is="tbody"
                     striped={false}
                   >
                     <tbody
-                      className="7q381j"
+                      className="cf-7q381j"
                     />
                   </TableBody>
                 </FelaComponent>
@@ -287,9 +287,9 @@ exports[`TableBody should render 1`] = `
         "_renderStyleToCache": [Function],
         "_renderStyleToClassNames": [Function],
         "cache": Object {
-          "1b0jccb": true,
-          "t9kph0": true,
-          "zos2pn": true,
+          "cf-1b0jccb": true,
+          "cf-t9kph0": true,
+          "cf-zos2pn": true,
         },
         "clear": [Function],
         "fontFaces": "",
@@ -305,51 +305,51 @@ exports[`TableBody should render 1`] = `
         ],
         "mediaQueryOrder": Array [],
         "mediaRules": Object {
-          "(max-width: 47.2em)": ".zos2pn {
+          "(max-width: 47.2em)": ".cf-zos2pn {
         display: block;
         width: 100%;
         box-sizing: border-box
       }
       
-      .1b0jccb {
+      .cf-1b0jccb {
         display: block;
         width: 100%;
         box-sizing: border-box
       }
       
-      .t9kph0 {
+      .cf-t9kph0 {
         display: block;
         width: 100%;
         box-sizing: border-box
       }",
-          "screen and (max-width: 47.2em)": ".zos2pn {
+          "screen and (max-width: 47.2em)": ".cf-zos2pn {
         display: block
       }
       
-      .1b0jccb:after {
+      .cf-1b0jccb:after {
         content: \\"\\";
         display: table;
         clear: both
       }
       
-      .1b0jccb {
+      .cf-1b0jccb {
         display: block;
         padding: 0.73333333333rem;
         border-top: none;
         background-color: #ccc
       }
       
-      .t9kph0:after {
+      .cf-t9kph0:after {
         content: \\"\\";
         display: table;
         clear: both
       }
       
-      .t9kph0:hover> td {
+      .cf-t9kph0:hover> td {
         background-color: transparent
       }
       
-      .t9kph0 {
+      .cf-t9kph0 {
         display: block;
         padding: 0.73333333333rem;
         border-top: none;
@@ -371,35 +371,35 @@ exports[`TableBody should render 1`] = `
         "renderRule": [Function],
         "renderStatic": [Function],
         "renderToString": [Function],
-        "rules": ".1b0jccb {
+        "rules": ".cf-1b0jccb {
         border-color: #dedede
       }
       
-      .t9kph0 {
+      .cf-t9kph0 {
         border-color: #dedede
       }",
-        "selectorPrefix": "",
+        "selectorPrefix": "cf-",
         "statics": "",
         "styleNodes": Object {
           "RULE": <style
             data-fela-type="RULE"
             type="text/css"
       >
-            .1b0jccb { border-color: #dedede } .t9kph0 { border-color: #dedede }
+            .cf-1b0jccb { border-color: #dedede } .cf-t9kph0 { border-color: #dedede }
       </style>,
           "RULE(max-width: 47.2em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="(max-width: 47.2em)"
       >
-            .zos2pn { display: block; width: 100%; box-sizing: border-box } .1b0jccb { display: block; width: 100%; box-sizing: border-box } .t9kph0 { display: block; width: 100%; box-sizing: border-box }
+            .cf-zos2pn { display: block; width: 100%; box-sizing: border-box } .cf-1b0jccb { display: block; width: 100%; box-sizing: border-box } .cf-t9kph0 { display: block; width: 100%; box-sizing: border-box }
       </style>,
           "RULEscreen and (max-width: 47.2em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="screen and (max-width: 47.2em)"
       >
-            .zos2pn { display: block } .1b0jccb:after { content: ""; display: table; clear: both } .1b0jccb { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .t9kph0:after { content: ""; display: table; clear: both } .t9kph0:hover> td { background-color: transparent } .t9kph0 { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc }
+            .cf-zos2pn { display: block } .cf-1b0jccb:after { content: ""; display: table; clear: both } .cf-1b0jccb { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .cf-t9kph0:after { content: ""; display: table; clear: both } .cf-t9kph0:hover> td { background-color: transparent } .cf-t9kph0 { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc }
       </style>,
         },
         "subscribe": [Function],
@@ -523,11 +523,11 @@ exports[`TableBody should render 1`] = `
         <ThemedComponent>
           <FelaComponent>
             <TableBody
-              className="zos2pn"
+              className="cf-zos2pn"
               is="tbody"
             >
               <tbody
-                className="zos2pn"
+                className="cf-zos2pn"
               >
                 <ThemedComponent
                   rowIndex={-0}
@@ -538,14 +538,14 @@ exports[`TableBody should render 1`] = `
                     tbodyIndex={0}
                   >
                     <TableRow
-                      className="t9kph0"
+                      className="cf-t9kph0"
                       is="tr"
                       rowIndex={-0}
                       tbodyIndex={0}
                       type="default"
                     >
                       <tr
-                        className="t9kph0"
+                        className="cf-t9kph0"
                       />
                     </TableRow>
                   </FelaComponent>
@@ -571,10 +571,10 @@ exports[`createTableBody should be able to render a div 1`] = `
         "_renderStyleToCache": [Function],
         "_renderStyleToClassNames": [Function],
         "cache": Object {
-          "1c43i05": true,
-          "46sr0r": true,
-          "7q381j": true,
-          "kk9pov": true,
+          "cf-1c43i05": true,
+          "cf-46sr0r": true,
+          "cf-7q381j": true,
+          "cf-kk9pov": true,
         },
         "clear": [Function],
         "fontFaces": "",
@@ -590,55 +590,55 @@ exports[`createTableBody should be able to render a div 1`] = `
         ],
         "mediaQueryOrder": Array [],
         "mediaRules": Object {
-          "(max-width: 47.2em)": ".46sr0r {
+          "(max-width: 47.2em)": ".cf-46sr0r {
         display: block;
         width: 100%;
         box-sizing: border-box
       }
       
-      .7q381j {
+      .cf-7q381j {
         display: block;
         width: 100%;
         box-sizing: border-box
       }
       
-      .1c43i05 {
+      .cf-1c43i05 {
         display: block;
         width: 100%;
         box-sizing: border-box
       }
       
-      .kk9pov {
+      .cf-kk9pov {
         display: block;
         width: 100%;
         box-sizing: border-box;
         border-top-width: 0px
       }",
-          "(min-width: 97.6em)": ".7q381j {
+          "(min-width: 97.6em)": ".cf-7q381j {
         width: 1000px
       }",
-          "screen and (max-width: 47.2em)": ".46sr0r {
+          "screen and (max-width: 47.2em)": ".cf-46sr0r {
         display: block
       }
       
-      .7q381j {
+      .cf-7q381j {
         display: block
       }
       
-      .1c43i05:after {
+      .cf-1c43i05:after {
         content: \\"\\";
         display: table;
         clear: both
       }
       
-      .1c43i05 {
+      .cf-1c43i05 {
         display: block;
         padding: 0.73333333333rem;
         border-top: 1px solid #dedede;
         background-color: #ccc
       }
       
-      .kk9pov {
+      .cf-kk9pov {
         display: block;
         border: none;
         float: left;
@@ -661,7 +661,7 @@ exports[`createTableBody should be able to render a div 1`] = `
         "renderRule": [Function],
         "renderStatic": [Function],
         "renderToString": [Function],
-        "rules": ".46sr0r {
+        "rules": ".cf-46sr0r {
         background: #fff;
         border-collapse: collapse;
         border-spacing: 0px;
@@ -669,11 +669,11 @@ exports[`createTableBody should be able to render a div 1`] = `
         width: 100%
       }
       
-      .7q381j {
+      .cf-7q381j {
         vertical-align: right
       }
       
-      .1c43i05 {
+      .cf-1c43i05 {
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
@@ -691,7 +691,7 @@ exports[`createTableBody should be able to render a div 1`] = `
         border-color: #dedede
       }
       
-      .kk9pov {
+      .cf-kk9pov {
         display: inline-block;
         flex: auto;
         -webkit-flex: auto;
@@ -704,35 +704,35 @@ exports[`createTableBody should be able to render a div 1`] = `
         text-overflow: ellipsis;
         border-color: #dedede
       }",
-        "selectorPrefix": "",
+        "selectorPrefix": "cf-",
         "statics": "",
         "styleNodes": Object {
           "RULE": <style
             data-fela-type="RULE"
             type="text/css"
       >
-            .46sr0r { background: #fff; border-collapse: collapse; border-spacing: 0px; max-width: 100%; width: 100% } .7q381j { vertical-align: right } .1c43i05 { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: nowrap; -webkit-box-lines: nowrap; -webkit-flex-wrap: nowrap; justify-content: space-around; -webkit-box-pack: justify; -webkit-justify-content: space-around; align-items: center; -webkit-box-align: center; -webkit-align-items: center; border-color: #dedede } .kk9pov { display: inline-block; flex: auto; -webkit-flex: auto; border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-color: #dedede }
+            .cf-46sr0r { background: #fff; border-collapse: collapse; border-spacing: 0px; max-width: 100%; width: 100% } .cf-7q381j { vertical-align: right } .cf-1c43i05 { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: nowrap; -webkit-box-lines: nowrap; -webkit-flex-wrap: nowrap; justify-content: space-around; -webkit-box-pack: justify; -webkit-justify-content: space-around; align-items: center; -webkit-box-align: center; -webkit-align-items: center; border-color: #dedede } .cf-kk9pov { display: inline-block; flex: auto; -webkit-flex: auto; border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-color: #dedede }
       </style>,
           "RULE(max-width: 47.2em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="(max-width: 47.2em)"
       >
-            .46sr0r { display: block; width: 100%; box-sizing: border-box } .7q381j { display: block; width: 100%; box-sizing: border-box } .1c43i05 { display: block; width: 100%; box-sizing: border-box } .kk9pov { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px }
+            .cf-46sr0r { display: block; width: 100%; box-sizing: border-box } .cf-7q381j { display: block; width: 100%; box-sizing: border-box } .cf-1c43i05 { display: block; width: 100%; box-sizing: border-box } .cf-kk9pov { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px }
       </style>,
           "RULE(min-width: 97.6em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="(min-width: 97.6em)"
       >
-            .7q381j { width: 1000px }
+            .cf-7q381j { width: 1000px }
       </style>,
           "RULEscreen and (max-width: 47.2em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="screen and (max-width: 47.2em)"
       >
-            .46sr0r { display: block } .7q381j { display: block } .1c43i05:after { content: ""; display: table; clear: both } .1c43i05 { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc } .kk9pov { display: block; border: none; float: left; clear: left; padding: 0px }
+            .cf-46sr0r { display: block } .cf-7q381j { display: block } .cf-1c43i05:after { content: ""; display: table; clear: both } .cf-1c43i05 { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc } .cf-kk9pov { display: block; border: none; float: left; clear: left; padding: 0px }
       </style>,
         },
         "subscribe": [Function],
@@ -859,7 +859,7 @@ exports[`createTableBody should be able to render a div 1`] = `
           is="div"
         >
           <div
-            className="46sr0r"
+            className="cf-46sr0r"
             is="div"
           >
             <ThemedComponent
@@ -869,7 +869,7 @@ exports[`createTableBody should be able to render a div 1`] = `
                 is="div"
               >
                 <div
-                  className="7q381j"
+                  className="cf-7q381j"
                   is="div"
                 >
                   <ThemedComponent
@@ -879,7 +879,7 @@ exports[`createTableBody should be able to render a div 1`] = `
                       is="div"
                     >
                       <div
-                        className="1c43i05"
+                        className="cf-1c43i05"
                         is="div"
                       >
                         <ThemedComponent
@@ -889,7 +889,7 @@ exports[`createTableBody should be able to render a div 1`] = `
                             is="div"
                           >
                             <div
-                              className="kk9pov"
+                              className="cf-kk9pov"
                               is="div"
                             />
                           </FelaComponent>
@@ -919,7 +919,7 @@ exports[`createTableBody should compose with styles overrides 1`] = `
         "_renderStyleToCache": [Function],
         "_renderStyleToClassNames": [Function],
         "cache": Object {
-          "7q381j": true,
+          "cf-7q381j": true,
         },
         "clear": [Function],
         "fontFaces": "",
@@ -935,15 +935,15 @@ exports[`createTableBody should compose with styles overrides 1`] = `
         ],
         "mediaQueryOrder": Array [],
         "mediaRules": Object {
-          "(max-width: 47.2em)": ".7q381j {
+          "(max-width: 47.2em)": ".cf-7q381j {
         display: block;
         width: 100%;
         box-sizing: border-box
       }",
-          "(min-width: 97.6em)": ".7q381j {
+          "(min-width: 97.6em)": ".cf-7q381j {
         width: 1000px
       }",
-          "screen and (max-width: 47.2em)": ".7q381j {
+          "screen and (max-width: 47.2em)": ".cf-7q381j {
         display: block
       }",
         },
@@ -962,38 +962,38 @@ exports[`createTableBody should compose with styles overrides 1`] = `
         "renderRule": [Function],
         "renderStatic": [Function],
         "renderToString": [Function],
-        "rules": ".7q381j {
+        "rules": ".cf-7q381j {
         vertical-align: right
       }",
-        "selectorPrefix": "",
+        "selectorPrefix": "cf-",
         "statics": "",
         "styleNodes": Object {
           "RULE": <style
             data-fela-type="RULE"
             type="text/css"
       >
-            .7q381j { vertical-align: right }
+            .cf-7q381j { vertical-align: right }
       </style>,
           "RULE(max-width: 47.2em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="(max-width: 47.2em)"
       >
-            .7q381j { display: block; width: 100%; box-sizing: border-box }
+            .cf-7q381j { display: block; width: 100%; box-sizing: border-box }
       </style>,
           "RULE(min-width: 97.6em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="(min-width: 97.6em)"
       >
-            .7q381j { width: 1000px }
+            .cf-7q381j { width: 1000px }
       </style>,
           "RULEscreen and (max-width: 47.2em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="screen and (max-width: 47.2em)"
       >
-            .7q381j { display: block }
+            .cf-7q381j { display: block }
       </style>,
         },
         "subscribe": [Function],
@@ -1117,11 +1117,11 @@ exports[`createTableBody should compose with styles overrides 1`] = `
         <ThemedComponent>
           <FelaComponent>
             <TableBody
-              className="7q381j"
+              className="cf-7q381j"
               is="tbody"
             >
               <tbody
-                className="7q381j"
+                className="cf-7q381j"
               />
             </TableBody>
           </FelaComponent>

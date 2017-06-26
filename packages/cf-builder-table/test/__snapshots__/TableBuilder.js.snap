@@ -22,10 +22,10 @@ exports[`should render a table 1`] = `
           "_renderStyleToCache": [Function],
           "_renderStyleToClassNames": [Function],
           "cache": Object {
-            "1b0jccb": true,
-            "46sr0r": true,
-            "d1fi02": true,
-            "zos2pn": true,
+            "cf-1b0jccb": true,
+            "cf-46sr0r": true,
+            "cf-d1fi02": true,
+            "cf-zos2pn": true,
           },
           "clear": [Function],
           "fontFaces": "",
@@ -41,51 +41,51 @@ exports[`should render a table 1`] = `
           ],
           "mediaQueryOrder": Array [],
           "mediaRules": Object {
-            "(max-width: 47.2em)": ".46sr0r {
+            "(max-width: 47.2em)": ".cf-46sr0r {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .d1fi02 {
+        .cf-d1fi02 {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .1b0jccb {
+        .cf-1b0jccb {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .zos2pn {
+        .cf-zos2pn {
           display: block;
           width: 100%;
           box-sizing: border-box
         }",
-            "screen and (max-width: 47.2em)": ".46sr0r {
+            "screen and (max-width: 47.2em)": ".cf-46sr0r {
           display: block
         }
         
-        .d1fi02 {
+        .cf-d1fi02 {
           display: none
         }
         
-        .1b0jccb:after {
+        .cf-1b0jccb:after {
           content: \\"\\";
           display: table;
           clear: both
         }
         
-        .1b0jccb {
+        .cf-1b0jccb {
           display: block;
           padding: 0.73333333333rem;
           border-top: none;
           background-color: #ccc
         }
         
-        .zos2pn {
+        .cf-zos2pn {
           display: block
         }",
           },
@@ -104,7 +104,7 @@ exports[`should render a table 1`] = `
           "renderRule": [Function],
           "renderStatic": [Function],
           "renderToString": [Function],
-          "rules": ".46sr0r {
+          "rules": ".cf-46sr0r {
           background: #fff;
           border-collapse: collapse;
           border-spacing: 0px;
@@ -112,35 +112,35 @@ exports[`should render a table 1`] = `
           width: 100%
         }
         
-        .d1fi02 {
+        .cf-d1fi02 {
           background: #dedede
         }
         
-        .1b0jccb {
+        .cf-1b0jccb {
           border-color: #dedede
         }",
-          "selectorPrefix": "",
+          "selectorPrefix": "cf-",
           "statics": "",
           "styleNodes": Object {
             "RULE": <style
               data-fela-type="RULE"
               type="text/css"
         >
-              .46sr0r { background: #fff; border-collapse: collapse; border-spacing: 0px; max-width: 100%; width: 100% } .d1fi02 { background: #dedede } .1b0jccb { border-color: #dedede }
+              .cf-46sr0r { background: #fff; border-collapse: collapse; border-spacing: 0px; max-width: 100%; width: 100% } .cf-d1fi02 { background: #dedede } .cf-1b0jccb { border-color: #dedede }
         </style>,
             "RULE(max-width: 47.2em)": <style
               data-fela-type="RULE"
               type="text/css"
               media="(max-width: 47.2em)"
         >
-              .46sr0r { display: block; width: 100%; box-sizing: border-box } .d1fi02 { display: block; width: 100%; box-sizing: border-box } .1b0jccb { display: block; width: 100%; box-sizing: border-box } .zos2pn { display: block; width: 100%; box-sizing: border-box }
+              .cf-46sr0r { display: block; width: 100%; box-sizing: border-box } .cf-d1fi02 { display: block; width: 100%; box-sizing: border-box } .cf-1b0jccb { display: block; width: 100%; box-sizing: border-box } .cf-zos2pn { display: block; width: 100%; box-sizing: border-box }
         </style>,
             "RULEscreen and (max-width: 47.2em)": <style
               data-fela-type="RULE"
               type="text/css"
               media="screen and (max-width: 47.2em)"
         >
-              .46sr0r { display: block } .d1fi02 { display: none } .1b0jccb:after { content: ""; display: table; clear: both } .1b0jccb { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .zos2pn { display: block }
+              .cf-46sr0r { display: block } .cf-d1fi02 { display: none } .cf-1b0jccb:after { content: ""; display: table; clear: both } .cf-1b0jccb { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .cf-zos2pn { display: block }
         </style>,
           },
           "subscribe": [Function],
@@ -277,14 +277,14 @@ exports[`should render a table 1`] = `
                 <Table
                   bare={false}
                   bordered={true}
-                  className="46sr0r"
+                  className="cf-46sr0r"
                   condensed={false}
                   hover={false}
                   is="table"
                   striped={false}
                 >
                   <table
-                    className="46sr0r"
+                    className="cf-46sr0r"
                   >
                     <ThemedComponent
                       bare={false}
@@ -303,14 +303,14 @@ exports[`should render a table 1`] = `
                         <TableHead
                           bare={false}
                           bordered={true}
-                          className="d1fi02"
+                          className="cf-d1fi02"
                           condensed={false}
                           hover={false}
                           is="thead"
                           striped={false}
                         >
                           <thead
-                            className="d1fi02"
+                            className="cf-d1fi02"
                           >
                             <ThemedComponent
                               bare={false}
@@ -333,7 +333,7 @@ exports[`should render a table 1`] = `
                                 <TableRow
                                   bare={false}
                                   bordered={true}
-                                  className="1b0jccb"
+                                  className="cf-1b0jccb"
                                   condensed={false}
                                   hover={false}
                                   is="tr"
@@ -343,7 +343,7 @@ exports[`should render a table 1`] = `
                                   type="default"
                                 >
                                   <tr
-                                    className="1b0jccb"
+                                    className="cf-1b0jccb"
                                   />
                                 </TableRow>
                               </FelaComponent>
@@ -369,14 +369,14 @@ exports[`should render a table 1`] = `
                         <TableBody
                           bare={false}
                           bordered={true}
-                          className="zos2pn"
+                          className="cf-zos2pn"
                           condensed={false}
                           hover={false}
                           is="tbody"
                           striped={false}
                         >
                           <tbody
-                            className="zos2pn"
+                            className="cf-zos2pn"
                           />
                         </TableBody>
                       </FelaComponent>
@@ -415,21 +415,21 @@ exports[`should render the dataset in columns 1`] = `
           "_renderStyleToCache": [Function],
           "_renderStyleToClassNames": [Function],
           "cache": Object {
-            "1b0jccb": true,
-            "1c6l5ki": true,
-            "1f59ksd": true,
-            "1fm7xdg": true,
-            "1k2myrb": true,
-            "1uiy02g": true,
-            "1ypdp8g": true,
-            "46sr0r": true,
-            "7ul4z3": true,
-            "9x0t0g": true,
-            "9yqouo": true,
-            "d1fi02": true,
-            "g0oihw": true,
-            "t9kph0": true,
-            "zos2pn": true,
+            "cf-1b0jccb": true,
+            "cf-1c6l5ki": true,
+            "cf-1f59ksd": true,
+            "cf-1fm7xdg": true,
+            "cf-1k2myrb": true,
+            "cf-1uiy02g": true,
+            "cf-1ypdp8g": true,
+            "cf-46sr0r": true,
+            "cf-7ul4z3": true,
+            "cf-9x0t0g": true,
+            "cf-9yqouo": true,
+            "cf-d1fi02": true,
+            "cf-g0oihw": true,
+            "cf-t9kph0": true,
+            "cf-zos2pn": true,
           },
           "clear": [Function],
           "fontFaces": "",
@@ -445,125 +445,125 @@ exports[`should render the dataset in columns 1`] = `
           ],
           "mediaQueryOrder": Array [],
           "mediaRules": Object {
-            "(max-width: 47.2em)": ".46sr0r {
+            "(max-width: 47.2em)": ".cf-46sr0r {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .d1fi02 {
+        .cf-d1fi02 {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .1b0jccb {
+        .cf-1b0jccb {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .9x0t0g {
+        .cf-9x0t0g {
           display: block;
           width: 100%;
           box-sizing: border-box;
           border-top-width: 0px
         }
         
-        .7ul4z3 {
+        .cf-7ul4z3 {
           display: block;
           width: 100%;
           box-sizing: border-box;
           border-top-width: 0px
         }
         
-        .zos2pn {
+        .cf-zos2pn {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .1c6l5ki {
+        .cf-1c6l5ki {
           display: block;
           width: 100%;
           box-sizing: border-box;
           border-top-width: 0px
         }
         
-        .1f59ksd {
+        .cf-1f59ksd {
           display: block;
           width: 100%;
           box-sizing: border-box;
           border-top-width: 0px
         }
         
-        .1k2myrb {
+        .cf-1k2myrb {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .1fm7xdg {
+        .cf-1fm7xdg {
           display: block;
           width: 100%;
           box-sizing: border-box;
           border-top-width: 0px
         }
         
-        .1ypdp8g {
+        .cf-1ypdp8g {
           display: block;
           width: 100%;
           box-sizing: border-box;
           border-top-width: 0px
         }
         
-        .t9kph0 {
+        .cf-t9kph0 {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .g0oihw {
+        .cf-g0oihw {
           display: block;
           width: 100%;
           box-sizing: border-box;
           border-top-width: 0px
         }
         
-        .9yqouo {
+        .cf-9yqouo {
           display: block;
           width: 100%;
           box-sizing: border-box;
           border-top-width: 0px
         }
         
-        .1uiy02g {
+        .cf-1uiy02g {
           display: block;
           width: 100%;
           box-sizing: border-box
         }",
-            "screen and (max-width: 47.2em)": ".46sr0r {
+            "screen and (max-width: 47.2em)": ".cf-46sr0r {
           display: block
         }
         
-        .d1fi02 {
+        .cf-d1fi02 {
           display: none
         }
         
-        .1b0jccb:after {
+        .cf-1b0jccb:after {
           content: \\"\\";
           display: table;
           clear: both
         }
         
-        .1b0jccb {
+        .cf-1b0jccb {
           display: block;
           padding: 0.73333333333rem;
           border-top: none;
           background-color: #ccc
         }
         
-        .9x0t0g {
+        .cf-9x0t0g {
           display: block;
           border: none;
           float: left;
@@ -571,7 +571,7 @@ exports[`should render the dataset in columns 1`] = `
           padding: 0px
         }
         
-        .7ul4z3 {
+        .cf-7ul4z3 {
           display: block;
           border: none;
           float: left;
@@ -579,11 +579,11 @@ exports[`should render the dataset in columns 1`] = `
           padding: 0px
         }
         
-        .zos2pn {
+        .cf-zos2pn {
           display: block
         }
         
-        .1c6l5ki {
+        .cf-1c6l5ki {
           display: block;
           border: none;
           float: left;
@@ -591,7 +591,7 @@ exports[`should render the dataset in columns 1`] = `
           padding: 0px
         }
         
-        .1f59ksd {
+        .cf-1f59ksd {
           display: block;
           border: none;
           float: left;
@@ -599,20 +599,20 @@ exports[`should render the dataset in columns 1`] = `
           padding: 0px
         }
         
-        .1k2myrb:after {
+        .cf-1k2myrb:after {
           content: \\"\\";
           display: table;
           clear: both
         }
         
-        .1k2myrb {
+        .cf-1k2myrb {
           display: block;
           padding: 0.73333333333rem;
           border-top: 1px solid #dedede;
           background-color: #ccc
         }
         
-        .1fm7xdg {
+        .cf-1fm7xdg {
           display: block;
           border: none;
           float: left;
@@ -620,7 +620,7 @@ exports[`should render the dataset in columns 1`] = `
           padding: 0px
         }
         
-        .1ypdp8g {
+        .cf-1ypdp8g {
           display: block;
           border: none;
           float: left;
@@ -628,24 +628,24 @@ exports[`should render the dataset in columns 1`] = `
           padding: 0px
         }
         
-        .t9kph0:after {
+        .cf-t9kph0:after {
           content: \\"\\";
           display: table;
           clear: both
         }
         
-        .t9kph0:hover> td {
+        .cf-t9kph0:hover> td {
           background-color: transparent
         }
         
-        .t9kph0 {
+        .cf-t9kph0 {
           display: block;
           padding: 0.73333333333rem;
           border-top: none;
           background-color: #ccc
         }
         
-        .g0oihw {
+        .cf-g0oihw {
           display: block;
           border: none;
           float: left;
@@ -653,7 +653,7 @@ exports[`should render the dataset in columns 1`] = `
           padding: 0px
         }
         
-        .9yqouo {
+        .cf-9yqouo {
           display: block;
           border: none;
           float: left;
@@ -661,17 +661,17 @@ exports[`should render the dataset in columns 1`] = `
           padding: 0px
         }
         
-        .1uiy02g:after {
+        .cf-1uiy02g:after {
           content: \\"\\";
           display: table;
           clear: both
         }
         
-        .1uiy02g:hover> td {
+        .cf-1uiy02g:hover> td {
           background-color: transparent
         }
         
-        .1uiy02g {
+        .cf-1uiy02g {
           display: block;
           padding: 0.73333333333rem;
           border-top: 1px solid #dedede;
@@ -693,7 +693,7 @@ exports[`should render the dataset in columns 1`] = `
           "renderRule": [Function],
           "renderStatic": [Function],
           "renderToString": [Function],
-          "rules": ".46sr0r {
+          "rules": ".cf-46sr0r {
           background: #fff;
           border-collapse: collapse;
           border-spacing: 0px;
@@ -701,19 +701,19 @@ exports[`should render the dataset in columns 1`] = `
           width: 100%
         }
         
-        .d1fi02 {
+        .cf-d1fi02 {
           background: #dedede
         }
         
-        .1b0jccb {
+        .cf-1b0jccb {
           border-color: #dedede
         }
         
-        .9x0t0g:first-letter {
+        .cf-9x0t0g:first-letter {
           text-transform: capitalize
         }
         
-        .9x0t0g {
+        .cf-9x0t0g {
           border-top: 1px solid #dedede;
           line-height: 1.5;
           padding: 0.73333333333rem;
@@ -726,11 +726,11 @@ exports[`should render the dataset in columns 1`] = `
           font-weight: 600
         }
         
-        .7ul4z3:first-letter {
+        .cf-7ul4z3:first-letter {
           text-transform: capitalize
         }
         
-        .7ul4z3 {
+        .cf-7ul4z3 {
           border-top: 1px solid #dedede;
           line-height: 1.5;
           padding: 0.73333333333rem;
@@ -743,7 +743,7 @@ exports[`should render the dataset in columns 1`] = `
           font-weight: 600
         }
         
-        .1c6l5ki {
+        .cf-1c6l5ki {
           border-top: 1px solid #dedede;
           line-height: 1.5;
           padding: 0.73333333333rem;
@@ -754,7 +754,7 @@ exports[`should render the dataset in columns 1`] = `
           border-left: 1px solid #dedede
         }
         
-        .1f59ksd {
+        .cf-1f59ksd {
           border-top: 1px solid #dedede;
           line-height: 1.5;
           padding: 0.73333333333rem;
@@ -765,15 +765,15 @@ exports[`should render the dataset in columns 1`] = `
           border-left: 1px solid #dedede
         }
         
-        .1k2myrb {
+        .cf-1k2myrb {
           border-color: #dedede
         }
         
-        .1fm7xdg:first-letter {
+        .cf-1fm7xdg:first-letter {
           text-transform: capitalize
         }
         
-        .1fm7xdg {
+        .cf-1fm7xdg {
           border-top: 0px;
           line-height: 1.5;
           padding: 0.73333333333rem;
@@ -787,11 +787,11 @@ exports[`should render the dataset in columns 1`] = `
           border-top-left-radius: 2px
         }
         
-        .1ypdp8g:first-letter {
+        .cf-1ypdp8g:first-letter {
           text-transform: capitalize
         }
         
-        .1ypdp8g {
+        .cf-1ypdp8g {
           border-top: 0px;
           line-height: 1.5;
           padding: 0.73333333333rem;
@@ -805,11 +805,11 @@ exports[`should render the dataset in columns 1`] = `
           border-top-right-radius: 2px
         }
         
-        .t9kph0 {
+        .cf-t9kph0 {
           border-color: #dedede
         }
         
-        .g0oihw {
+        .cf-g0oihw {
           border-top: 0px;
           line-height: 1.5;
           padding: 0.73333333333rem;
@@ -821,7 +821,7 @@ exports[`should render the dataset in columns 1`] = `
           border-left: 1px solid #dedede
         }
         
-        .9yqouo {
+        .cf-9yqouo {
           border-top: 0px;
           line-height: 1.5;
           padding: 0.73333333333rem;
@@ -833,31 +833,31 @@ exports[`should render the dataset in columns 1`] = `
           border-left: 1px solid #dedede
         }
         
-        .1uiy02g {
+        .cf-1uiy02g {
           border-color: #dedede
         }",
-          "selectorPrefix": "",
+          "selectorPrefix": "cf-",
           "statics": "",
           "styleNodes": Object {
             "RULE": <style
               data-fela-type="RULE"
               type="text/css"
         >
-              .46sr0r { background: #fff; border-collapse: collapse; border-spacing: 0px; max-width: 100%; width: 100% } .d1fi02 { background: #dedede } .1b0jccb { border-color: #dedede } .9x0t0g:first-letter { text-transform: capitalize } .9x0t0g { border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 1px solid #dedede; text-align: left; font-weight: 600 } .7ul4z3:first-letter { text-transform: capitalize } .7ul4z3 { border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 1px solid #dedede; text-align: left; font-weight: 600 } .1c6l5ki { border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 1px solid #dedede } .1f59ksd { border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 1px solid #dedede } .1k2myrb { border-color: #dedede } .1fm7xdg:first-letter { text-transform: capitalize } .1fm7xdg { border-top: 0px; line-height: 1.5; padding: 0.73333333333rem; vertical-align: bottom; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 1px solid #dedede; text-align: left; font-weight: 600; border-top-left-radius: 2px } .1ypdp8g:first-letter { text-transform: capitalize } .1ypdp8g { border-top: 0px; line-height: 1.5; padding: 0.73333333333rem; vertical-align: bottom; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 1px solid #dedede; text-align: left; font-weight: 600; border-top-right-radius: 2px } .t9kph0 { border-color: #dedede } .g0oihw { border-top: 0px; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-top-left-radius: 2px; border-left: 1px solid #dedede } .9yqouo { border-top: 0px; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-top-right-radius: 2px; border-left: 1px solid #dedede } .1uiy02g { border-color: #dedede }
+              .cf-46sr0r { background: #fff; border-collapse: collapse; border-spacing: 0px; max-width: 100%; width: 100% } .cf-d1fi02 { background: #dedede } .cf-1b0jccb { border-color: #dedede } .cf-9x0t0g:first-letter { text-transform: capitalize } .cf-9x0t0g { border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 1px solid #dedede; text-align: left; font-weight: 600 } .cf-7ul4z3:first-letter { text-transform: capitalize } .cf-7ul4z3 { border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 1px solid #dedede; text-align: left; font-weight: 600 } .cf-1c6l5ki { border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 1px solid #dedede } .cf-1f59ksd { border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 1px solid #dedede } .cf-1k2myrb { border-color: #dedede } .cf-1fm7xdg:first-letter { text-transform: capitalize } .cf-1fm7xdg { border-top: 0px; line-height: 1.5; padding: 0.73333333333rem; vertical-align: bottom; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 1px solid #dedede; text-align: left; font-weight: 600; border-top-left-radius: 2px } .cf-1ypdp8g:first-letter { text-transform: capitalize } .cf-1ypdp8g { border-top: 0px; line-height: 1.5; padding: 0.73333333333rem; vertical-align: bottom; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 1px solid #dedede; text-align: left; font-weight: 600; border-top-right-radius: 2px } .cf-t9kph0 { border-color: #dedede } .cf-g0oihw { border-top: 0px; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-top-left-radius: 2px; border-left: 1px solid #dedede } .cf-9yqouo { border-top: 0px; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-top-right-radius: 2px; border-left: 1px solid #dedede } .cf-1uiy02g { border-color: #dedede }
         </style>,
             "RULE(max-width: 47.2em)": <style
               data-fela-type="RULE"
               type="text/css"
               media="(max-width: 47.2em)"
         >
-              .46sr0r { display: block; width: 100%; box-sizing: border-box } .d1fi02 { display: block; width: 100%; box-sizing: border-box } .1b0jccb { display: block; width: 100%; box-sizing: border-box } .9x0t0g { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .7ul4z3 { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .zos2pn { display: block; width: 100%; box-sizing: border-box } .1c6l5ki { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .1f59ksd { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .1k2myrb { display: block; width: 100%; box-sizing: border-box } .1fm7xdg { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .1ypdp8g { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .t9kph0 { display: block; width: 100%; box-sizing: border-box } .g0oihw { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .9yqouo { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .1uiy02g { display: block; width: 100%; box-sizing: border-box }
+              .cf-46sr0r { display: block; width: 100%; box-sizing: border-box } .cf-d1fi02 { display: block; width: 100%; box-sizing: border-box } .cf-1b0jccb { display: block; width: 100%; box-sizing: border-box } .cf-9x0t0g { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .cf-7ul4z3 { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .cf-zos2pn { display: block; width: 100%; box-sizing: border-box } .cf-1c6l5ki { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .cf-1f59ksd { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .cf-1k2myrb { display: block; width: 100%; box-sizing: border-box } .cf-1fm7xdg { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .cf-1ypdp8g { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .cf-t9kph0 { display: block; width: 100%; box-sizing: border-box } .cf-g0oihw { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .cf-9yqouo { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .cf-1uiy02g { display: block; width: 100%; box-sizing: border-box }
         </style>,
             "RULEscreen and (max-width: 47.2em)": <style
               data-fela-type="RULE"
               type="text/css"
               media="screen and (max-width: 47.2em)"
         >
-              .46sr0r { display: block } .d1fi02 { display: none } .1b0jccb:after { content: ""; display: table; clear: both } .1b0jccb { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .9x0t0g { display: block; border: none; float: left; clear: left; padding: 0px } .7ul4z3 { display: block; border: none; float: left; clear: left; padding: 0px } .zos2pn { display: block } .1c6l5ki { display: block; border: none; float: left; clear: left; padding: 0px } .1f59ksd { display: block; border: none; float: left; clear: left; padding: 0px } .1k2myrb:after { content: ""; display: table; clear: both } .1k2myrb { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc } .1fm7xdg { display: block; border: none; float: left; clear: left; padding: 0px } .1ypdp8g { display: block; border: none; float: left; clear: left; padding: 0px } .t9kph0:after { content: ""; display: table; clear: both } .t9kph0:hover> td { background-color: transparent } .t9kph0 { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .g0oihw { display: block; border: none; float: left; clear: left; padding: 0px } .9yqouo { display: block; border: none; float: left; clear: left; padding: 0px } .1uiy02g:after { content: ""; display: table; clear: both } .1uiy02g:hover> td { background-color: transparent } .1uiy02g { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc }
+              .cf-46sr0r { display: block } .cf-d1fi02 { display: none } .cf-1b0jccb:after { content: ""; display: table; clear: both } .cf-1b0jccb { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .cf-9x0t0g { display: block; border: none; float: left; clear: left; padding: 0px } .cf-7ul4z3 { display: block; border: none; float: left; clear: left; padding: 0px } .cf-zos2pn { display: block } .cf-1c6l5ki { display: block; border: none; float: left; clear: left; padding: 0px } .cf-1f59ksd { display: block; border: none; float: left; clear: left; padding: 0px } .cf-1k2myrb:after { content: ""; display: table; clear: both } .cf-1k2myrb { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc } .cf-1fm7xdg { display: block; border: none; float: left; clear: left; padding: 0px } .cf-1ypdp8g { display: block; border: none; float: left; clear: left; padding: 0px } .cf-t9kph0:after { content: ""; display: table; clear: both } .cf-t9kph0:hover> td { background-color: transparent } .cf-t9kph0 { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .cf-g0oihw { display: block; border: none; float: left; clear: left; padding: 0px } .cf-9yqouo { display: block; border: none; float: left; clear: left; padding: 0px } .cf-1uiy02g:after { content: ""; display: table; clear: both } .cf-1uiy02g:hover> td { background-color: transparent } .cf-1uiy02g { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc }
         </style>,
           },
           "subscribe": [Function],
@@ -1050,14 +1050,14 @@ exports[`should render the dataset in columns 1`] = `
                 <Table
                   bare={false}
                   bordered={true}
-                  className="46sr0r"
+                  className="cf-46sr0r"
                   condensed={false}
                   hover={false}
                   is="table"
                   striped={false}
                 >
                   <table
-                    className="46sr0r"
+                    className="cf-46sr0r"
                   >
                     <ThemedComponent
                       bare={false}
@@ -1076,14 +1076,14 @@ exports[`should render the dataset in columns 1`] = `
                         <TableHead
                           bare={false}
                           bordered={true}
-                          className="d1fi02"
+                          className="cf-d1fi02"
                           condensed={false}
                           hover={false}
                           is="thead"
                           striped={false}
                         >
                           <thead
-                            className="d1fi02"
+                            className="cf-d1fi02"
                           >
                             <ThemedComponent
                               bare={false}
@@ -1106,7 +1106,7 @@ exports[`should render the dataset in columns 1`] = `
                                 <TableRow
                                   bare={false}
                                   bordered={true}
-                                  className="1b0jccb"
+                                  className="cf-1b0jccb"
                                   condensed={false}
                                   hover={false}
                                   is="tr"
@@ -1116,7 +1116,7 @@ exports[`should render the dataset in columns 1`] = `
                                   type="default"
                                 >
                                   <tr
-                                    className="1b0jccb"
+                                    className="cf-1b0jccb"
                                   >
                                     <ThemedComponent
                                       bare={false}
@@ -1144,7 +1144,7 @@ exports[`should render the dataset in columns 1`] = `
                                           bare={false}
                                           bordered={true}
                                           cellIndex={0}
-                                          className="1fm7xdg"
+                                          className="cf-1fm7xdg"
                                           condensed={false}
                                           hover={false}
                                           is="th"
@@ -1154,7 +1154,7 @@ exports[`should render the dataset in columns 1`] = `
                                           theadIndex={0}
                                         >
                                           <th
-                                            className="1fm7xdg"
+                                            className="cf-1fm7xdg"
                                           >
                                             Name
                                           </th>
@@ -1187,7 +1187,7 @@ exports[`should render the dataset in columns 1`] = `
                                           bare={false}
                                           bordered={true}
                                           cellIndex={-1}
-                                          className="1ypdp8g"
+                                          className="cf-1ypdp8g"
                                           condensed={false}
                                           hover={false}
                                           is="th"
@@ -1197,7 +1197,7 @@ exports[`should render the dataset in columns 1`] = `
                                           theadIndex={0}
                                         >
                                           <th
-                                            className="1ypdp8g"
+                                            className="cf-1ypdp8g"
                                           >
                                             Value
                                           </th>
@@ -1229,14 +1229,14 @@ exports[`should render the dataset in columns 1`] = `
                         <TableBody
                           bare={false}
                           bordered={true}
-                          className="zos2pn"
+                          className="cf-zos2pn"
                           condensed={false}
                           hover={false}
                           is="tbody"
                           striped={false}
                         >
                           <tbody
-                            className="zos2pn"
+                            className="cf-zos2pn"
                           >
                             <ThemedComponent
                               bare={false}
@@ -1259,7 +1259,7 @@ exports[`should render the dataset in columns 1`] = `
                                 <TableRow
                                   bare={false}
                                   bordered={true}
-                                  className="t9kph0"
+                                  className="cf-t9kph0"
                                   condensed={false}
                                   hover={false}
                                   is="tr"
@@ -1269,7 +1269,7 @@ exports[`should render the dataset in columns 1`] = `
                                   type="default"
                                 >
                                   <tr
-                                    className="t9kph0"
+                                    className="cf-t9kph0"
                                   >
                                     <ThemedComponent
                                       bare={false}
@@ -1298,7 +1298,7 @@ exports[`should render the dataset in columns 1`] = `
                                           bare={false}
                                           bordered={true}
                                           cellIndex={0}
-                                          className="g0oihw"
+                                          className="cf-g0oihw"
                                           condensed={false}
                                           hover={false}
                                           is="td"
@@ -1308,7 +1308,7 @@ exports[`should render the dataset in columns 1`] = `
                                           tbodyIndex={0}
                                         >
                                           <td
-                                            className="g0oihw"
+                                            className="cf-g0oihw"
                                           >
                                             Foo
                                           </td>
@@ -1342,7 +1342,7 @@ exports[`should render the dataset in columns 1`] = `
                                           bare={false}
                                           bordered={true}
                                           cellIndex={-1}
-                                          className="9yqouo"
+                                          className="cf-9yqouo"
                                           condensed={false}
                                           hover={false}
                                           is="td"
@@ -1352,7 +1352,7 @@ exports[`should render the dataset in columns 1`] = `
                                           tbodyIndex={0}
                                         >
                                           <td
-                                            className="9yqouo"
+                                            className="cf-9yqouo"
                                           >
                                             foo
                                           </td>
@@ -1384,7 +1384,7 @@ exports[`should render the dataset in columns 1`] = `
                                 <TableRow
                                   bare={false}
                                   bordered={true}
-                                  className="1uiy02g"
+                                  className="cf-1uiy02g"
                                   condensed={false}
                                   hover={false}
                                   is="tr"
@@ -1394,7 +1394,7 @@ exports[`should render the dataset in columns 1`] = `
                                   type="default"
                                 >
                                   <tr
-                                    className="1uiy02g"
+                                    className="cf-1uiy02g"
                                   >
                                     <ThemedComponent
                                       bare={false}
@@ -1423,7 +1423,7 @@ exports[`should render the dataset in columns 1`] = `
                                           bare={false}
                                           bordered={true}
                                           cellIndex={0}
-                                          className="1c6l5ki"
+                                          className="cf-1c6l5ki"
                                           condensed={false}
                                           hover={false}
                                           is="td"
@@ -1433,7 +1433,7 @@ exports[`should render the dataset in columns 1`] = `
                                           tbodyIndex={0}
                                         >
                                           <td
-                                            className="1c6l5ki"
+                                            className="cf-1c6l5ki"
                                           >
                                             Bar
                                           </td>
@@ -1467,7 +1467,7 @@ exports[`should render the dataset in columns 1`] = `
                                           bare={false}
                                           bordered={true}
                                           cellIndex={-1}
-                                          className="1f59ksd"
+                                          className="cf-1f59ksd"
                                           condensed={false}
                                           hover={false}
                                           is="td"
@@ -1477,7 +1477,7 @@ exports[`should render the dataset in columns 1`] = `
                                           tbodyIndex={0}
                                         >
                                           <td
-                                            className="1f59ksd"
+                                            className="cf-1f59ksd"
                                           >
                                             bar
                                           </td>
@@ -1526,14 +1526,14 @@ exports[`should support flashes 1`] = `
           "_renderStyleToCache": [Function],
           "_renderStyleToClassNames": [Function],
           "cache": Object {
-            "14uu5dt": true,
-            "1b0jccb": true,
-            "1k2myrb": true,
-            "1uiy02g": true,
-            "46sr0r": true,
-            "d1fi02": true,
-            "t9kph0": true,
-            "zos2pn": true,
+            "cf-14uu5dt": true,
+            "cf-1b0jccb": true,
+            "cf-1k2myrb": true,
+            "cf-1uiy02g": true,
+            "cf-46sr0r": true,
+            "cf-d1fi02": true,
+            "cf-t9kph0": true,
+            "cf-zos2pn": true,
           },
           "clear": [Function],
           "fontFaces": "",
@@ -1549,136 +1549,136 @@ exports[`should support flashes 1`] = `
           ],
           "mediaQueryOrder": Array [],
           "mediaRules": Object {
-            "(max-width: 47.2em)": ".46sr0r {
+            "(max-width: 47.2em)": ".cf-46sr0r {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .d1fi02 {
+        .cf-d1fi02 {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .1b0jccb {
+        .cf-1b0jccb {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .zos2pn {
+        .cf-zos2pn {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .1k2myrb {
+        .cf-1k2myrb {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .t9kph0 {
+        .cf-t9kph0 {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .1uiy02g {
+        .cf-1uiy02g {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .14uu5dt {
+        .cf-14uu5dt {
           display: block;
           width: 100%;
           box-sizing: border-box
         }",
-            "screen and (max-width: 47.2em)": ".46sr0r {
+            "screen and (max-width: 47.2em)": ".cf-46sr0r {
           display: block
         }
         
-        .d1fi02 {
+        .cf-d1fi02 {
           display: none
         }
         
-        .1b0jccb:after {
+        .cf-1b0jccb:after {
           content: \\"\\";
           display: table;
           clear: both
         }
         
-        .1b0jccb {
+        .cf-1b0jccb {
           display: block;
           padding: 0.73333333333rem;
           border-top: none;
           background-color: #ccc
         }
         
-        .zos2pn {
+        .cf-zos2pn {
           display: block
         }
         
-        .1k2myrb:after {
+        .cf-1k2myrb:after {
           content: \\"\\";
           display: table;
           clear: both
         }
         
-        .1k2myrb {
+        .cf-1k2myrb {
           display: block;
           padding: 0.73333333333rem;
           border-top: 1px solid #dedede;
           background-color: #ccc
         }
         
-        .t9kph0:after {
+        .cf-t9kph0:after {
           content: \\"\\";
           display: table;
           clear: both
         }
         
-        .t9kph0:hover> td {
+        .cf-t9kph0:hover> td {
           background-color: transparent
         }
         
-        .t9kph0 {
+        .cf-t9kph0 {
           display: block;
           padding: 0.73333333333rem;
           border-top: none;
           background-color: #ccc
         }
         
-        .1uiy02g:after {
+        .cf-1uiy02g:after {
           content: \\"\\";
           display: table;
           clear: both
         }
         
-        .1uiy02g:hover> td {
+        .cf-1uiy02g:hover> td {
           background-color: transparent
         }
         
-        .1uiy02g {
+        .cf-1uiy02g {
           display: block;
           padding: 0.73333333333rem;
           border-top: 1px solid #dedede;
           background-color: #ccc
         }
         
-        .14uu5dt:after {
+        .cf-14uu5dt:after {
           content: \\"\\";
           display: table;
           clear: both
         }
         
-        .14uu5dt:hover> td {
+        .cf-14uu5dt:hover> td {
           background-color: transparent
         }
         
-        .14uu5dt {
+        .cf-14uu5dt {
           display: block;
           padding: 0.73333333333rem;
           border-top: none;
@@ -1700,7 +1700,7 @@ exports[`should support flashes 1`] = `
           "renderRule": [Function],
           "renderStatic": [Function],
           "renderToString": [Function],
-          "rules": ".46sr0r {
+          "rules": ".cf-46sr0r {
           background: #fff;
           border-collapse: collapse;
           border-spacing: 0px;
@@ -1708,52 +1708,52 @@ exports[`should support flashes 1`] = `
           width: 100%
         }
         
-        .d1fi02 {
+        .cf-d1fi02 {
           background: #dedede
         }
         
-        .1b0jccb {
+        .cf-1b0jccb {
           border-color: #dedede
         }
         
-        .1k2myrb {
+        .cf-1k2myrb {
           border-color: #dedede
         }
         
-        .t9kph0 {
+        .cf-t9kph0 {
           border-color: #dedede
         }
         
-        .1uiy02g {
+        .cf-1uiy02g {
           border-color: #dedede
         }
         
-        .14uu5dt {
+        .cf-14uu5dt {
           border-color: #b0d466;
           background-color: #bada7a
         }",
-          "selectorPrefix": "",
+          "selectorPrefix": "cf-",
           "statics": "",
           "styleNodes": Object {
             "RULE": <style
               data-fela-type="RULE"
               type="text/css"
         >
-              .46sr0r { background: #fff; border-collapse: collapse; border-spacing: 0px; max-width: 100%; width: 100% } .d1fi02 { background: #dedede } .1b0jccb { border-color: #dedede } .1k2myrb { border-color: #dedede } .t9kph0 { border-color: #dedede } .1uiy02g { border-color: #dedede } .14uu5dt { border-color: #b0d466; background-color: #bada7a }
+              .cf-46sr0r { background: #fff; border-collapse: collapse; border-spacing: 0px; max-width: 100%; width: 100% } .cf-d1fi02 { background: #dedede } .cf-1b0jccb { border-color: #dedede } .cf-1k2myrb { border-color: #dedede } .cf-t9kph0 { border-color: #dedede } .cf-1uiy02g { border-color: #dedede } .cf-14uu5dt { border-color: #b0d466; background-color: #bada7a }
         </style>,
             "RULE(max-width: 47.2em)": <style
               data-fela-type="RULE"
               type="text/css"
               media="(max-width: 47.2em)"
         >
-              .46sr0r { display: block; width: 100%; box-sizing: border-box } .d1fi02 { display: block; width: 100%; box-sizing: border-box } .1b0jccb { display: block; width: 100%; box-sizing: border-box } .zos2pn { display: block; width: 100%; box-sizing: border-box } .1k2myrb { display: block; width: 100%; box-sizing: border-box } .t9kph0 { display: block; width: 100%; box-sizing: border-box } .1uiy02g { display: block; width: 100%; box-sizing: border-box } .14uu5dt { display: block; width: 100%; box-sizing: border-box }
+              .cf-46sr0r { display: block; width: 100%; box-sizing: border-box } .cf-d1fi02 { display: block; width: 100%; box-sizing: border-box } .cf-1b0jccb { display: block; width: 100%; box-sizing: border-box } .cf-zos2pn { display: block; width: 100%; box-sizing: border-box } .cf-1k2myrb { display: block; width: 100%; box-sizing: border-box } .cf-t9kph0 { display: block; width: 100%; box-sizing: border-box } .cf-1uiy02g { display: block; width: 100%; box-sizing: border-box } .cf-14uu5dt { display: block; width: 100%; box-sizing: border-box }
         </style>,
             "RULEscreen and (max-width: 47.2em)": <style
               data-fela-type="RULE"
               type="text/css"
               media="screen and (max-width: 47.2em)"
         >
-              .46sr0r { display: block } .d1fi02 { display: none } .1b0jccb:after { content: ""; display: table; clear: both } .1b0jccb { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .zos2pn { display: block } .1k2myrb:after { content: ""; display: table; clear: both } .1k2myrb { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc } .t9kph0:after { content: ""; display: table; clear: both } .t9kph0:hover> td { background-color: transparent } .t9kph0 { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .1uiy02g:after { content: ""; display: table; clear: both } .1uiy02g:hover> td { background-color: transparent } .1uiy02g { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc } .14uu5dt:after { content: ""; display: table; clear: both } .14uu5dt:hover> td { background-color: transparent } .14uu5dt { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc }
+              .cf-46sr0r { display: block } .cf-d1fi02 { display: none } .cf-1b0jccb:after { content: ""; display: table; clear: both } .cf-1b0jccb { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .cf-zos2pn { display: block } .cf-1k2myrb:after { content: ""; display: table; clear: both } .cf-1k2myrb { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc } .cf-t9kph0:after { content: ""; display: table; clear: both } .cf-t9kph0:hover> td { background-color: transparent } .cf-t9kph0 { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .cf-1uiy02g:after { content: ""; display: table; clear: both } .cf-1uiy02g:hover> td { background-color: transparent } .cf-1uiy02g { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc } .cf-14uu5dt:after { content: ""; display: table; clear: both } .cf-14uu5dt:hover> td { background-color: transparent } .cf-14uu5dt { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc }
         </style>,
           },
           "subscribe": [Function],
@@ -1916,14 +1916,14 @@ exports[`should support flashes 1`] = `
                 <Table
                   bare={false}
                   bordered={true}
-                  className="46sr0r"
+                  className="cf-46sr0r"
                   condensed={false}
                   hover={false}
                   is="table"
                   striped={false}
                 >
                   <table
-                    className="46sr0r"
+                    className="cf-46sr0r"
                   >
                     <ThemedComponent
                       bare={false}
@@ -1942,14 +1942,14 @@ exports[`should support flashes 1`] = `
                         <TableHead
                           bare={false}
                           bordered={true}
-                          className="d1fi02"
+                          className="cf-d1fi02"
                           condensed={false}
                           hover={false}
                           is="thead"
                           striped={false}
                         >
                           <thead
-                            className="d1fi02"
+                            className="cf-d1fi02"
                           >
                             <ThemedComponent
                               bare={false}
@@ -1972,7 +1972,7 @@ exports[`should support flashes 1`] = `
                                 <TableRow
                                   bare={false}
                                   bordered={true}
-                                  className="1b0jccb"
+                                  className="cf-1b0jccb"
                                   condensed={false}
                                   hover={false}
                                   is="tr"
@@ -1982,7 +1982,7 @@ exports[`should support flashes 1`] = `
                                   type="default"
                                 >
                                   <tr
-                                    className="1b0jccb"
+                                    className="cf-1b0jccb"
                                   />
                                 </TableRow>
                               </FelaComponent>
@@ -2008,14 +2008,14 @@ exports[`should support flashes 1`] = `
                         <TableBody
                           bare={false}
                           bordered={true}
-                          className="zos2pn"
+                          className="cf-zos2pn"
                           condensed={false}
                           hover={false}
                           is="tbody"
                           striped={false}
                         >
                           <tbody
-                            className="zos2pn"
+                            className="cf-zos2pn"
                           >
                             <ThemedComponent
                               bare={false}
@@ -2040,7 +2040,7 @@ exports[`should support flashes 1`] = `
                                 <TableRow
                                   bare={false}
                                   bordered={true}
-                                  className="14uu5dt"
+                                  className="cf-14uu5dt"
                                   condensed={false}
                                   hover={false}
                                   is="tr"
@@ -2050,7 +2050,7 @@ exports[`should support flashes 1`] = `
                                   type="success"
                                 >
                                   <tr
-                                    className="14uu5dt"
+                                    className="cf-14uu5dt"
                                   />
                                 </TableRow>
                               </FelaComponent>
@@ -2076,7 +2076,7 @@ exports[`should support flashes 1`] = `
                                 <TableRow
                                   bare={false}
                                   bordered={true}
-                                  className="1uiy02g"
+                                  className="cf-1uiy02g"
                                   condensed={false}
                                   hover={false}
                                   is="tr"
@@ -2086,7 +2086,7 @@ exports[`should support flashes 1`] = `
                                   type="default"
                                 >
                                   <tr
-                                    className="1uiy02g"
+                                    className="cf-1uiy02g"
                                   />
                                 </TableRow>
                               </FelaComponent>
@@ -2129,14 +2129,14 @@ exports[`should support row type/accent 1`] = `
           "_renderStyleToCache": [Function],
           "_renderStyleToClassNames": [Function],
           "cache": Object {
-            "14uu5dt": true,
-            "1b0jccb": true,
-            "1k2myrb": true,
-            "1uiy02g": true,
-            "46sr0r": true,
-            "d1fi02": true,
-            "dreiha": true,
-            "zos2pn": true,
+            "cf-14uu5dt": true,
+            "cf-1b0jccb": true,
+            "cf-1k2myrb": true,
+            "cf-1uiy02g": true,
+            "cf-46sr0r": true,
+            "cf-d1fi02": true,
+            "cf-dreiha": true,
+            "cf-zos2pn": true,
           },
           "clear": [Function],
           "fontFaces": "",
@@ -2152,132 +2152,132 @@ exports[`should support row type/accent 1`] = `
           ],
           "mediaQueryOrder": Array [],
           "mediaRules": Object {
-            "(max-width: 47.2em)": ".46sr0r {
+            "(max-width: 47.2em)": ".cf-46sr0r {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .d1fi02 {
+        .cf-d1fi02 {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .1b0jccb {
+        .cf-1b0jccb {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .zos2pn {
+        .cf-zos2pn {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .dreiha {
+        .cf-dreiha {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .1k2myrb {
+        .cf-1k2myrb {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .14uu5dt {
+        .cf-14uu5dt {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .1uiy02g {
+        .cf-1uiy02g {
           display: block;
           width: 100%;
           box-sizing: border-box
         }",
-            "screen and (max-width: 47.2em)": ".46sr0r {
+            "screen and (max-width: 47.2em)": ".cf-46sr0r {
           display: block
         }
         
-        .d1fi02 {
+        .cf-d1fi02 {
           display: none
         }
         
-        .1b0jccb:after {
+        .cf-1b0jccb:after {
           content: \\"\\";
           display: table;
           clear: both
         }
         
-        .1b0jccb {
+        .cf-1b0jccb {
           display: block;
           padding: 0.73333333333rem;
           border-top: none;
           background-color: #ccc
         }
         
-        .zos2pn {
+        .cf-zos2pn {
           display: block
         }
         
-        .dreiha:after {
+        .cf-dreiha:after {
           content: \\"\\";
           display: table;
           clear: both
         }
         
-        .dreiha {
+        .cf-dreiha {
           display: block;
           padding: 0.73333333333rem;
           border-top: none;
           background-color: #ccc
         }
         
-        .1k2myrb:after {
+        .cf-1k2myrb:after {
           content: \\"\\";
           display: table;
           clear: both
         }
         
-        .1k2myrb {
+        .cf-1k2myrb {
           display: block;
           padding: 0.73333333333rem;
           border-top: 1px solid #dedede;
           background-color: #ccc
         }
         
-        .14uu5dt:after {
+        .cf-14uu5dt:after {
           content: \\"\\";
           display: table;
           clear: both
         }
         
-        .14uu5dt:hover> td {
+        .cf-14uu5dt:hover> td {
           background-color: transparent
         }
         
-        .14uu5dt {
+        .cf-14uu5dt {
           display: block;
           padding: 0.73333333333rem;
           border-top: none;
           background-color: #ccc
         }
         
-        .1uiy02g:after {
+        .cf-1uiy02g:after {
           content: \\"\\";
           display: table;
           clear: both
         }
         
-        .1uiy02g:hover> td {
+        .cf-1uiy02g:hover> td {
           background-color: transparent
         }
         
-        .1uiy02g {
+        .cf-1uiy02g {
           display: block;
           padding: 0.73333333333rem;
           border-top: 1px solid #dedede;
@@ -2299,7 +2299,7 @@ exports[`should support row type/accent 1`] = `
           "renderRule": [Function],
           "renderStatic": [Function],
           "renderToString": [Function],
-          "rules": ".46sr0r {
+          "rules": ".cf-46sr0r {
           background: #fff;
           border-collapse: collapse;
           border-spacing: 0px;
@@ -2307,53 +2307,53 @@ exports[`should support row type/accent 1`] = `
           width: 100%
         }
         
-        .d1fi02 {
+        .cf-d1fi02 {
           background: #dedede
         }
         
-        .1b0jccb {
+        .cf-1b0jccb {
           border-color: #dedede
         }
         
-        .dreiha {
+        .cf-dreiha {
           border-color: #b0d466;
           background-color: #bada7a
         }
         
-        .1k2myrb {
+        .cf-1k2myrb {
           border-color: #dedede
         }
         
-        .14uu5dt {
+        .cf-14uu5dt {
           border-color: #b0d466;
           background-color: #bada7a
         }
         
-        .1uiy02g {
+        .cf-1uiy02g {
           border-color: #dedede
         }",
-          "selectorPrefix": "",
+          "selectorPrefix": "cf-",
           "statics": "",
           "styleNodes": Object {
             "RULE": <style
               data-fela-type="RULE"
               type="text/css"
         >
-              .46sr0r { background: #fff; border-collapse: collapse; border-spacing: 0px; max-width: 100%; width: 100% } .d1fi02 { background: #dedede } .1b0jccb { border-color: #dedede } .dreiha { border-color: #b0d466; background-color: #bada7a } .1k2myrb { border-color: #dedede } .14uu5dt { border-color: #b0d466; background-color: #bada7a } .1uiy02g { border-color: #dedede }
+              .cf-46sr0r { background: #fff; border-collapse: collapse; border-spacing: 0px; max-width: 100%; width: 100% } .cf-d1fi02 { background: #dedede } .cf-1b0jccb { border-color: #dedede } .cf-dreiha { border-color: #b0d466; background-color: #bada7a } .cf-1k2myrb { border-color: #dedede } .cf-14uu5dt { border-color: #b0d466; background-color: #bada7a } .cf-1uiy02g { border-color: #dedede }
         </style>,
             "RULE(max-width: 47.2em)": <style
               data-fela-type="RULE"
               type="text/css"
               media="(max-width: 47.2em)"
         >
-              .46sr0r { display: block; width: 100%; box-sizing: border-box } .d1fi02 { display: block; width: 100%; box-sizing: border-box } .1b0jccb { display: block; width: 100%; box-sizing: border-box } .zos2pn { display: block; width: 100%; box-sizing: border-box } .dreiha { display: block; width: 100%; box-sizing: border-box } .1k2myrb { display: block; width: 100%; box-sizing: border-box } .14uu5dt { display: block; width: 100%; box-sizing: border-box } .1uiy02g { display: block; width: 100%; box-sizing: border-box }
+              .cf-46sr0r { display: block; width: 100%; box-sizing: border-box } .cf-d1fi02 { display: block; width: 100%; box-sizing: border-box } .cf-1b0jccb { display: block; width: 100%; box-sizing: border-box } .cf-zos2pn { display: block; width: 100%; box-sizing: border-box } .cf-dreiha { display: block; width: 100%; box-sizing: border-box } .cf-1k2myrb { display: block; width: 100%; box-sizing: border-box } .cf-14uu5dt { display: block; width: 100%; box-sizing: border-box } .cf-1uiy02g { display: block; width: 100%; box-sizing: border-box }
         </style>,
             "RULEscreen and (max-width: 47.2em)": <style
               data-fela-type="RULE"
               type="text/css"
               media="screen and (max-width: 47.2em)"
         >
-              .46sr0r { display: block } .d1fi02 { display: none } .1b0jccb:after { content: ""; display: table; clear: both } .1b0jccb { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .zos2pn { display: block } .dreiha:after { content: ""; display: table; clear: both } .dreiha { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .1k2myrb:after { content: ""; display: table; clear: both } .1k2myrb { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc } .14uu5dt:after { content: ""; display: table; clear: both } .14uu5dt:hover> td { background-color: transparent } .14uu5dt { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .1uiy02g:after { content: ""; display: table; clear: both } .1uiy02g:hover> td { background-color: transparent } .1uiy02g { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc }
+              .cf-46sr0r { display: block } .cf-d1fi02 { display: none } .cf-1b0jccb:after { content: ""; display: table; clear: both } .cf-1b0jccb { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .cf-zos2pn { display: block } .cf-dreiha:after { content: ""; display: table; clear: both } .cf-dreiha { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .cf-1k2myrb:after { content: ""; display: table; clear: both } .cf-1k2myrb { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc } .cf-14uu5dt:after { content: ""; display: table; clear: both } .cf-14uu5dt:hover> td { background-color: transparent } .cf-14uu5dt { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .cf-1uiy02g:after { content: ""; display: table; clear: both } .cf-1uiy02g:hover> td { background-color: transparent } .cf-1uiy02g { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc }
         </style>,
           },
           "subscribe": [Function],
@@ -2516,14 +2516,14 @@ exports[`should support row type/accent 1`] = `
                 <Table
                   bare={false}
                   bordered={true}
-                  className="46sr0r"
+                  className="cf-46sr0r"
                   condensed={false}
                   hover={false}
                   is="table"
                   striped={false}
                 >
                   <table
-                    className="46sr0r"
+                    className="cf-46sr0r"
                   >
                     <ThemedComponent
                       bare={false}
@@ -2542,14 +2542,14 @@ exports[`should support row type/accent 1`] = `
                         <TableHead
                           bare={false}
                           bordered={true}
-                          className="d1fi02"
+                          className="cf-d1fi02"
                           condensed={false}
                           hover={false}
                           is="thead"
                           striped={false}
                         >
                           <thead
-                            className="d1fi02"
+                            className="cf-d1fi02"
                           >
                             <ThemedComponent
                               bare={false}
@@ -2572,7 +2572,7 @@ exports[`should support row type/accent 1`] = `
                                 <TableRow
                                   bare={false}
                                   bordered={true}
-                                  className="1b0jccb"
+                                  className="cf-1b0jccb"
                                   condensed={false}
                                   hover={false}
                                   is="tr"
@@ -2582,7 +2582,7 @@ exports[`should support row type/accent 1`] = `
                                   type="default"
                                 >
                                   <tr
-                                    className="1b0jccb"
+                                    className="cf-1b0jccb"
                                   />
                                 </TableRow>
                               </FelaComponent>
@@ -2608,14 +2608,14 @@ exports[`should support row type/accent 1`] = `
                         <TableBody
                           bare={false}
                           bordered={true}
-                          className="zos2pn"
+                          className="cf-zos2pn"
                           condensed={false}
                           hover={false}
                           is="tbody"
                           striped={false}
                         >
                           <tbody
-                            className="zos2pn"
+                            className="cf-zos2pn"
                           >
                             <ThemedComponent
                               bare={false}
@@ -2640,7 +2640,7 @@ exports[`should support row type/accent 1`] = `
                                 <TableRow
                                   bare={false}
                                   bordered={true}
-                                  className="14uu5dt"
+                                  className="cf-14uu5dt"
                                   condensed={false}
                                   hover={false}
                                   is="tr"
@@ -2650,7 +2650,7 @@ exports[`should support row type/accent 1`] = `
                                   type="success"
                                 >
                                   <tr
-                                    className="14uu5dt"
+                                    className="cf-14uu5dt"
                                   />
                                 </TableRow>
                               </FelaComponent>
@@ -2676,7 +2676,7 @@ exports[`should support row type/accent 1`] = `
                                 <TableRow
                                   bare={false}
                                   bordered={true}
-                                  className="1uiy02g"
+                                  className="cf-1uiy02g"
                                   condensed={false}
                                   hover={false}
                                   is="tr"
@@ -2686,7 +2686,7 @@ exports[`should support row type/accent 1`] = `
                                   type="default"
                                 >
                                   <tr
-                                    className="1uiy02g"
+                                    className="cf-1uiy02g"
                                   />
                                 </TableRow>
                               </FelaComponent>
@@ -2729,10 +2729,10 @@ exports[`should support table props 1`] = `
           "_renderStyleToCache": [Function],
           "_renderStyleToClassNames": [Function],
           "cache": Object {
-            "127ooxc": true,
-            "1b0jccb": true,
-            "d1fi02": true,
-            "zos2pn": true,
+            "cf-127ooxc": true,
+            "cf-1b0jccb": true,
+            "cf-d1fi02": true,
+            "cf-zos2pn": true,
           },
           "clear": [Function],
           "fontFaces": "",
@@ -2748,51 +2748,51 @@ exports[`should support table props 1`] = `
           ],
           "mediaQueryOrder": Array [],
           "mediaRules": Object {
-            "(max-width: 47.2em)": ".127ooxc {
+            "(max-width: 47.2em)": ".cf-127ooxc {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .d1fi02 {
+        .cf-d1fi02 {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .1b0jccb {
+        .cf-1b0jccb {
           display: block;
           width: 100%;
           box-sizing: border-box
         }
         
-        .zos2pn {
+        .cf-zos2pn {
           display: block;
           width: 100%;
           box-sizing: border-box
         }",
-            "screen and (max-width: 47.2em)": ".127ooxc {
+            "screen and (max-width: 47.2em)": ".cf-127ooxc {
           display: block
         }
         
-        .d1fi02 {
+        .cf-d1fi02 {
           display: none
         }
         
-        .1b0jccb:after {
+        .cf-1b0jccb:after {
           content: \\"\\";
           display: table;
           clear: both
         }
         
-        .1b0jccb {
+        .cf-1b0jccb {
           display: block;
           padding: 0.73333333333rem;
           border-top: none;
           background-color: #ccc
         }
         
-        .zos2pn {
+        .cf-zos2pn {
           display: block
         }",
           },
@@ -2811,7 +2811,7 @@ exports[`should support table props 1`] = `
           "renderRule": [Function],
           "renderStatic": [Function],
           "renderToString": [Function],
-          "rules": ".127ooxc {
+          "rules": ".cf-127ooxc {
           background: #fff;
           border-collapse: separate;
           border-spacing: 0px;
@@ -2823,35 +2823,35 @@ exports[`should support table props 1`] = `
         border-left:0px
         }
         
-        .d1fi02 {
+        .cf-d1fi02 {
         background: #dedede
         }
         
-        .1b0jccb {
+        .cf-1b0jccb {
         border-color: #dedede
         }",
-          "selectorPrefix": "",
+          "selectorPrefix": "cf-",
           "statics": "",
           "styleNodes": Object {
             "RULE": <style
               data-fela-type="RULE"
               type="text/css"
         >
-              .127ooxc { background: #fff; border-collapse: separate; border-spacing: 0px; max-width: 100%; width: 100%; border: 1px solid \${theme.tableBorderColor }; border-left:0px } .d1fi02 { background: #dedede } .1b0jccb { border-color: #dedede }
+              .cf-127ooxc { background: #fff; border-collapse: separate; border-spacing: 0px; max-width: 100%; width: 100%; border: 1px solid \${theme.tableBorderColor }; border-left:0px } .cf-d1fi02 { background: #dedede } .cf-1b0jccb { border-color: #dedede }
         </style>,
             "RULE(max-width: 47.2em)": <style
               data-fela-type="RULE"
               type="text/css"
               media="(max-width: 47.2em)"
         >
-              .127ooxc { display: block; width: 100%; box-sizing: border-box } .d1fi02 { display: block; width: 100%; box-sizing: border-box } .1b0jccb { display: block; width: 100%; box-sizing: border-box } .zos2pn { display: block; width: 100%; box-sizing: border-box }
+              .cf-127ooxc { display: block; width: 100%; box-sizing: border-box } .cf-d1fi02 { display: block; width: 100%; box-sizing: border-box } .cf-1b0jccb { display: block; width: 100%; box-sizing: border-box } .cf-zos2pn { display: block; width: 100%; box-sizing: border-box }
         </style>,
             "RULEscreen and (max-width: 47.2em)": <style
               data-fela-type="RULE"
               type="text/css"
               media="screen and (max-width: 47.2em)"
         >
-              .127ooxc { display: block } .d1fi02 { display: none } .1b0jccb:after { content: ""; display: table; clear: both } .1b0jccb { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .zos2pn { display: block }
+              .cf-127ooxc { display: block } .cf-d1fi02 { display: none } .cf-1b0jccb:after { content: ""; display: table; clear: both } .cf-1b0jccb { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .cf-zos2pn { display: block }
         </style>,
           },
           "subscribe": [Function],
@@ -3006,14 +3006,14 @@ exports[`should support table props 1`] = `
                 <Table
                   bare={false}
                   bordered={true}
-                  className="127ooxc"
+                  className="cf-127ooxc"
                   condensed={true}
                   hover={true}
                   is="table"
                   striped={true}
                 >
                   <table
-                    className="127ooxc"
+                    className="cf-127ooxc"
                   >
                     <ThemedComponent
                       bare={false}
@@ -3032,14 +3032,14 @@ exports[`should support table props 1`] = `
                         <TableHead
                           bare={false}
                           bordered={true}
-                          className="d1fi02"
+                          className="cf-d1fi02"
                           condensed={true}
                           hover={true}
                           is="thead"
                           striped={true}
                         >
                           <thead
-                            className="d1fi02"
+                            className="cf-d1fi02"
                           >
                             <ThemedComponent
                               bare={false}
@@ -3062,7 +3062,7 @@ exports[`should support table props 1`] = `
                                 <TableRow
                                   bare={false}
                                   bordered={true}
-                                  className="1b0jccb"
+                                  className="cf-1b0jccb"
                                   condensed={true}
                                   hover={true}
                                   is="tr"
@@ -3072,7 +3072,7 @@ exports[`should support table props 1`] = `
                                   type="default"
                                 >
                                   <tr
-                                    className="1b0jccb"
+                                    className="cf-1b0jccb"
                                   />
                                 </TableRow>
                               </FelaComponent>
@@ -3098,14 +3098,14 @@ exports[`should support table props 1`] = `
                         <TableBody
                           bare={false}
                           bordered={true}
-                          className="zos2pn"
+                          className="cf-zos2pn"
                           condensed={true}
                           hover={true}
                           is="tbody"
                           striped={true}
                         >
                           <tbody
-                            className="zos2pn"
+                            className="cf-zos2pn"
                           />
                         </TableBody>
                       </FelaComponent>

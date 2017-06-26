@@ -3,19 +3,19 @@
 exports[`TableRow should compose with styles overrides 1`] = `
 Object {
   "component": <tr
-    className="t744or"
+    className="cf-t744or"
 >
     <td
-        className="1glop85"
+        className="cf-1glop85"
         colSpan={undefined}
         rowSpan={undefined}
     />
 </tr>,
-  "styles": ".t744or {
+  "styles": ".cf-t744or {
   border-color: #dedede;
   vertical-align: right
 }
-.1glop85 {
+.cf-1glop85 {
   border-top: 1px solid #dedede;
   line-height: 1.5;
   padding: 0.73333333333rem;
@@ -25,12 +25,12 @@ Object {
   text-overflow: ellipsis
 }
 @media (max-width: 47.2em) {
-  .t744or {
+  .cf-t744or {
     display: block;
     width: 100%;
     box-sizing: border-box
   }
-  .1glop85 {
+  .cf-1glop85 {
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -38,18 +38,18 @@ Object {
   }
 }
 @media screen and (max-width: 47.2em) {
-  .t744or:after {
+  .cf-t744or:after {
     content: \\"\\";
     display: table;
     clear: both
   }
-  .t744or {
+  .cf-t744or {
     display: block;
     padding: 0.73333333333rem;
     border-top: 1px solid #dedede;
     background-color: #ccc
   }
-  .1glop85 {
+  .cf-1glop85 {
     display: block;
     border: none;
     float: left;
@@ -58,7 +58,7 @@ Object {
   }
 }
 @media (min-width: 97.6em) {
-  .t744or {
+  .cf-t744or {
     width: 1000px
   }
 }",
@@ -68,27 +68,27 @@ Object {
 exports[`TableRow should render 1`] = `
 Object {
   "component": <tr
-    className="1k2myrb"
+    className="cf-1k2myrb"
 >
     TableRow
 </tr>,
-  "styles": ".1k2myrb {
+  "styles": ".cf-1k2myrb {
   border-color: #dedede
 }
 @media (max-width: 47.2em) {
-  .1k2myrb {
+  .cf-1k2myrb {
     display: block;
     width: 100%;
     box-sizing: border-box
   }
 }
 @media screen and (max-width: 47.2em) {
-  .1k2myrb:after {
+  .cf-1k2myrb:after {
     content: \\"\\";
     display: table;
     clear: both
   }
-  .1k2myrb {
+  .cf-1k2myrb {
     display: block;
     padding: 0.73333333333rem;
     border-top: 1px solid #dedede;
@@ -101,28 +101,28 @@ Object {
 exports[`TableRow should render with type 1`] = `
 Object {
   "component": <tr
-    className="7q8ucp"
+    className="cf-7q8ucp"
 >
     TableRow
 </tr>,
-  "styles": ".7q8ucp {
+  "styles": ".cf-7q8ucp {
   border-color: #d93c3e;
   background-color: #dd5153
 }
 @media (max-width: 47.2em) {
-  .7q8ucp {
+  .cf-7q8ucp {
     display: block;
     width: 100%;
     box-sizing: border-box
   }
 }
 @media screen and (max-width: 47.2em) {
-  .7q8ucp:after {
+  .cf-7q8ucp:after {
     content: \\"\\";
     display: table;
     clear: both
   }
-  .7q8ucp {
+  .cf-7q8ucp {
     display: block;
     padding: 0.73333333333rem;
     border-top: 1px solid #dedede;
@@ -137,7 +137,7 @@ Object {
   "component": <div
     bare={undefined}
     bordered={undefined}
-    className="1edt7t"
+    className="cf-1edt7t"
     condensed={undefined}
     hover={undefined}
     is="div"
@@ -153,7 +153,7 @@ Object {
         bare={undefined}
         bordered={undefined}
         cellIndex={undefined}
-        className="kk9pov"
+        className="cf-kk9pov"
         colSpan={undefined}
         condensed={undefined}
         headers={undefined}
@@ -169,7 +169,7 @@ Object {
         width={undefined}
     />
 </div>,
-  "styles": ".1edt7t {
+  "styles": ".cf-1edt7t {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -187,7 +187,7 @@ Object {
   border-color: #dedede;
   vertical-align: right
 }
-.kk9pov {
+.cf-kk9pov {
   display: inline-block;
   flex: auto;
   -webkit-flex: auto;
@@ -201,12 +201,12 @@ Object {
   border-color: #dedede
 }
 @media (max-width: 47.2em) {
-  .1edt7t {
+  .cf-1edt7t {
     display: block;
     width: 100%;
     box-sizing: border-box
   }
-  .kk9pov {
+  .cf-kk9pov {
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -214,18 +214,18 @@ Object {
   }
 }
 @media screen and (max-width: 47.2em) {
-  .1edt7t:after {
+  .cf-1edt7t:after {
     content: \\"\\";
     display: table;
     clear: both
   }
-  .1edt7t {
+  .cf-1edt7t {
     display: block;
     padding: 0.73333333333rem;
     border-top: 1px solid #dedede;
     background-color: #ccc
   }
-  .kk9pov {
+  .cf-kk9pov {
     display: block;
     border: none;
     float: left;
@@ -234,7 +234,7 @@ Object {
   }
 }
 @media (min-width: 97.6em) {
-  .1edt7t {
+  .cf-1edt7t {
     width: 1000px
   }
 }",
@@ -244,19 +244,19 @@ Object {
 exports[`createTableRow should compose with styles overrides 1`] = `
 Object {
   "component": <tr
-    className="t744or"
+    className="cf-t744or"
 >
     <td
-        className="1glop85"
+        className="cf-1glop85"
         colSpan={undefined}
         rowSpan={undefined}
     />
 </tr>,
-  "styles": ".t744or {
+  "styles": ".cf-t744or {
   border-color: #dedede;
   vertical-align: right
 }
-.1glop85 {
+.cf-1glop85 {
   border-top: 1px solid #dedede;
   line-height: 1.5;
   padding: 0.73333333333rem;
@@ -266,12 +266,12 @@ Object {
   text-overflow: ellipsis
 }
 @media (max-width: 47.2em) {
-  .t744or {
+  .cf-t744or {
     display: block;
     width: 100%;
     box-sizing: border-box
   }
-  .1glop85 {
+  .cf-1glop85 {
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -279,18 +279,18 @@ Object {
   }
 }
 @media screen and (max-width: 47.2em) {
-  .t744or:after {
+  .cf-t744or:after {
     content: \\"\\";
     display: table;
     clear: both
   }
-  .t744or {
+  .cf-t744or {
     display: block;
     padding: 0.73333333333rem;
     border-top: 1px solid #dedede;
     background-color: #ccc
   }
-  .1glop85 {
+  .cf-1glop85 {
     display: block;
     border: none;
     float: left;
@@ -299,7 +299,7 @@ Object {
   }
 }
 @media (min-width: 97.6em) {
-  .t744or {
+  .cf-t744or {
     width: 1000px
   }
 }",

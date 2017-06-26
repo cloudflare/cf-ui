@@ -7,7 +7,7 @@ Object {
     bare={undefined}
     bordered={undefined}
     cellIndex={undefined}
-    className="kk9pov"
+    className="cf-kk9pov"
     colSpan={undefined}
     condensed={undefined}
     headers={undefined}
@@ -24,7 +24,7 @@ Object {
 >
     TableCell
 </div>,
-  "styles": ".kk9pov {
+  "styles": ".cf-kk9pov {
   display: inline-block;
   flex: auto;
   -webkit-flex: auto;
@@ -38,7 +38,7 @@ Object {
   border-color: #dedede
 }
 @media (max-width: 47.2em) {
-  .kk9pov {
+  .cf-kk9pov {
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -46,7 +46,7 @@ Object {
   }
 }
 @media screen and (max-width: 47.2em) {
-  .kk9pov {
+  .cf-kk9pov {
     display: block;
     border: none;
     float: left;
@@ -60,13 +60,13 @@ Object {
 exports[`TableCell should render 1`] = `
 Object {
   "component": <td
-    className="c5609r"
+    className="cf-c5609r"
     colSpan={undefined}
     rowSpan={undefined}
 >
     TableCell
 </td>,
-  "styles": ".c5609r {
+  "styles": ".cf-c5609r {
   border-top: 1px solid #dedede;
   line-height: 1.5;
   padding: 0.73333333333rem;
@@ -77,7 +77,7 @@ Object {
   border-color: #dedede
 }
 @media (max-width: 47.2em) {
-  .c5609r {
+  .cf-c5609r {
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -85,7 +85,7 @@ Object {
   }
 }
 @media screen and (max-width: 47.2em) {
-  .c5609r {
+  .cf-c5609r {
     display: block;
     border: none;
     float: left;
@@ -99,13 +99,13 @@ Object {
 exports[`TableCell should render with align 1`] = `
 Object {
   "component": <td
-    className="2n3suq"
+    className="cf-2n3suq"
     colSpan={undefined}
     rowSpan={undefined}
 >
     TableCell
 </td>,
-  "styles": ".2n3suq {
+  "styles": ".cf-2n3suq {
   border-top: 1px solid #dedede;
   line-height: 1.5;
   padding: 0.73333333333rem;
@@ -117,7 +117,7 @@ Object {
   border-color: #dedede
 }
 @media (max-width: 47.2em) {
-  .2n3suq {
+  .cf-2n3suq {
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -125,7 +125,7 @@ Object {
   }
 }
 @media screen and (max-width: 47.2em) {
-  .2n3suq {
+  .cf-2n3suq {
     display: block;
     border: none;
     float: left;
@@ -147,7 +147,7 @@ exports[`createTableCell should be able to render a div 1`] = `
         "_renderStyleToCache": [Function],
         "_renderStyleToClassNames": [Function],
         "cache": Object {
-          "6ddffr": true,
+          "cf-6ddffr": true,
         },
         "clear": [Function],
         "fontFaces": "",
@@ -163,16 +163,16 @@ exports[`createTableCell should be able to render a div 1`] = `
         ],
         "mediaQueryOrder": Array [],
         "mediaRules": Object {
-          "(max-width: 47.2em)": ".6ddffr {
+          "(max-width: 47.2em)": ".cf-6ddffr {
         display: block;
         width: 100%;
         box-sizing: border-box;
         border-top-width: 0px
       }",
-          "(min-width: 97.6em)": ".6ddffr {
+          "(min-width: 97.6em)": ".cf-6ddffr {
         width: 1000px
       }",
-          "screen and (max-width: 47.2em)": ".6ddffr {
+          "screen and (max-width: 47.2em)": ".cf-6ddffr {
         display: block;
         border: none;
         float: left;
@@ -195,7 +195,7 @@ exports[`createTableCell should be able to render a div 1`] = `
         "renderRule": [Function],
         "renderStatic": [Function],
         "renderToString": [Function],
-        "rules": ".6ddffr {
+        "rules": ".cf-6ddffr {
         display: inline-block;
         flex: auto;
         -webkit-flex: auto;
@@ -208,35 +208,35 @@ exports[`createTableCell should be able to render a div 1`] = `
         text-overflow: ellipsis;
         border-color: #dedede
       }",
-        "selectorPrefix": "",
+        "selectorPrefix": "cf-",
         "statics": "",
         "styleNodes": Object {
           "RULE": <style
             data-fela-type="RULE"
             type="text/css"
       >
-            .6ddffr { display: inline-block; flex: auto; -webkit-flex: auto; border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-color: #dedede }
+            .cf-6ddffr { display: inline-block; flex: auto; -webkit-flex: auto; border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-color: #dedede }
       </style>,
           "RULE(max-width: 47.2em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="(max-width: 47.2em)"
       >
-            .6ddffr { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px }
+            .cf-6ddffr { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px }
       </style>,
           "RULE(min-width: 97.6em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="(min-width: 97.6em)"
       >
-            .6ddffr { width: 1000px }
+            .cf-6ddffr { width: 1000px }
       </style>,
           "RULEscreen and (max-width: 47.2em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="screen and (max-width: 47.2em)"
       >
-            .6ddffr { display: block; border: none; float: left; clear: left; padding: 0px }
+            .cf-6ddffr { display: block; border: none; float: left; clear: left; padding: 0px }
       </style>,
         },
         "subscribe": [Function],
@@ -363,7 +363,7 @@ exports[`createTableCell should be able to render a div 1`] = `
           is="div"
         >
           <div
-            className="6ddffr"
+            className="cf-6ddffr"
             is="div"
           />
         </FelaComponent>
@@ -384,7 +384,7 @@ exports[`createTableCell should compose with styles overrides 1`] = `
         "_renderStyleToCache": [Function],
         "_renderStyleToClassNames": [Function],
         "cache": Object {
-          "19q41br": true,
+          "cf-19q41br": true,
         },
         "clear": [Function],
         "fontFaces": "",
@@ -400,16 +400,16 @@ exports[`createTableCell should compose with styles overrides 1`] = `
         ],
         "mediaQueryOrder": Array [],
         "mediaRules": Object {
-          "(max-width: 47.2em)": ".19q41br {
+          "(max-width: 47.2em)": ".cf-19q41br {
         display: block;
         width: 100%;
         box-sizing: border-box;
         border-top-width: 0px
       }",
-          "(min-width: 97.6em)": ".19q41br {
+          "(min-width: 97.6em)": ".cf-19q41br {
         width: 1000px
       }",
-          "screen and (max-width: 47.2em)": ".19q41br {
+          "screen and (max-width: 47.2em)": ".cf-19q41br {
         display: block;
         border: none;
         float: left;
@@ -432,7 +432,7 @@ exports[`createTableCell should compose with styles overrides 1`] = `
         "renderRule": [Function],
         "renderStatic": [Function],
         "renderToString": [Function],
-        "rules": ".19q41br {
+        "rules": ".cf-19q41br {
         border-top: 1px solid #dedede;
         line-height: 1.5;
         padding: 0.73333333333rem;
@@ -442,35 +442,35 @@ exports[`createTableCell should compose with styles overrides 1`] = `
         text-overflow: ellipsis;
         border-color: #dedede
       }",
-        "selectorPrefix": "",
+        "selectorPrefix": "cf-",
         "statics": "",
         "styleNodes": Object {
           "RULE": <style
             data-fela-type="RULE"
             type="text/css"
       >
-            .19q41br { border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-color: #dedede }
+            .cf-19q41br { border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-color: #dedede }
       </style>,
           "RULE(max-width: 47.2em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="(max-width: 47.2em)"
       >
-            .19q41br { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px }
+            .cf-19q41br { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px }
       </style>,
           "RULE(min-width: 97.6em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="(min-width: 97.6em)"
       >
-            .19q41br { width: 1000px }
+            .cf-19q41br { width: 1000px }
       </style>,
           "RULEscreen and (max-width: 47.2em)": <style
             data-fela-type="RULE"
             type="text/css"
             media="screen and (max-width: 47.2em)"
       >
-            .19q41br { display: block; border: none; float: left; clear: left; padding: 0px }
+            .cf-19q41br { display: block; border: none; float: left; clear: left; padding: 0px }
       </style>,
         },
         "subscribe": [Function],
@@ -597,11 +597,11 @@ exports[`createTableCell should compose with styles overrides 1`] = `
               <FelaComponent>
                 <TableCell
                   align="left"
-                  className="19q41br"
+                  className="cf-19q41br"
                   is="td"
                 >
                   <td
-                    className="19q41br"
+                    className="cf-19q41br"
                   />
                 </TableCell>
               </FelaComponent>
