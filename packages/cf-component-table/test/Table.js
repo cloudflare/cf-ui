@@ -1,15 +1,18 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { felaSnapshot, felaTestContext } from 'cf-style-provider';
+import { mount } from 'enzyme';
+import toJSON from 'enzyme-to-json';
 
 import {
   Table,
   TableHead,
   TableBody,
   TableFoot,
+  TableRow,
+  TableCell,
   createTable
 } from '../../cf-component-table/src/index';
-import { mount } from 'enzyme';
 
 describe('Table', () => {
   it('should render', () => {
@@ -103,6 +106,62 @@ describe('Table', () => {
       }
     }));
     const snapshot = felaSnapshot(<Table>Table</Table>);
+    expect(snapshot).toMatchSnapshot();
+  });
+});
+
+describe('createTable', () => {
+  it('should compose with styles overrides', () => {
+    const Table = createTable(({ theme }) => ({
+      verticalAlign: 'right',
+      [`@media (min-width: ${theme.breakpoints.desktopLarge})`]: {
+        width: '1000px'
+      }
+    }));
+    const snapshot = toJSON(
+      mount(
+        felaTestContext(
+          <table>
+            <TableHead />
+            <TableBody />
+            <TableFoot />
+          </table>
+        )
+      )
+    );
+    expect(snapshot).toMatchSnapshot();
+  });
+
+  it('should be able to render a div', () => {
+    const Table = createTable(({ theme }) => ({
+      verticalAlign: 'right',
+      [`@media (min-width: ${theme.breakpoints.desktopLarge})`]: {
+        width: '1000px'
+      }
+    }));
+    const snapshot = toJSON(
+      mount(
+        felaTestContext(
+          <Table is="div">
+            <TableHead is="div">
+              <TableRow is="div">
+                <TableCell is="div" />
+              </TableRow>
+            </TableHead>
+            <TableBody is="div">
+              <TableRow is="div">
+                <TableCell is="div" />
+              </TableRow>
+            </TableBody>
+            <TableFoot is="div">
+              <TableRow is="div">
+                <TableCell is="div" />
+              </TableRow>
+            </TableFoot>
+          </Table>
+        )
+      )
+    );
     expect(snapshot).toMatchSnapshot();
   });
 });

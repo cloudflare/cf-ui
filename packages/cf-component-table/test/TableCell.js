@@ -1,7 +1,9 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { TableCell, createTableCell } from '../../cf-component-table/src/index';
-import { felaSnapshot } from 'cf-style-provider';
+import { felaSnapshot, felaTestContext } from 'cf-style-provider';
+import { mount } from 'enzyme';
+import toJSON from 'enzyme-to-json';
 
 describe('TableCell', () => {
   it('should render', () => {
@@ -16,6 +18,13 @@ describe('TableCell', () => {
     expect(snapshot).toMatchSnapshot();
   });
 
+  it('can render a div', () => {
+    const snapshot = felaSnapshot(<TableCell is="div">TableCell</TableCell>);
+    expect(snapshot).toMatchSnapshot();
+  });
+});
+
+describe('createTableCell', () => {
   it('should compose with styles overrides', () => {
     const TableCell = createTableCell(({ theme }) => ({
       verticalAlign: 'right',
@@ -23,7 +32,30 @@ describe('TableCell', () => {
         width: '1000px'
       }
     }));
-    const snapshot = felaSnapshot(<TableCell>TableCell</TableCell>);
+    const snapshot = toJSON(
+      mount(
+        felaTestContext(
+          <table>
+            <tbody>
+              <tr>
+                <TableCell />
+              </tr>
+            </tbody>
+          </table>
+        )
+      )
+    );
+    expect(snapshot).toMatchSnapshot();
+  });
+
+  it('should be able to render a div', () => {
+    const TableCell = createTableCell(({ theme }) => ({
+      verticalAlign: 'right',
+      [`@media (min-width: ${theme.breakpoints.desktopLarge})`]: {
+        width: '1000px'
+      }
+    }));
+    const snapshot = toJSON(mount(felaTestContext(<TableCell is="div" />)));
     expect(snapshot).toMatchSnapshot();
   });
 });

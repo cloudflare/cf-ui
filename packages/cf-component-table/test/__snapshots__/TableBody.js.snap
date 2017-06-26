@@ -596,3 +596,615 @@ exports[`TableBody should render 1`] = `
   </Provider>
 </StyleProvider>
 `;
+
+exports[`createTableBody should be able to render a div 1`] = `
+<StyleProvider
+  dev={true}
+>
+  <Provider
+    renderer={
+      Object {
+        "_emitChange": [Function],
+        "_renderStyleToCache": [Function],
+        "_renderStyleToClassNames": [Function],
+        "cache": Object {
+          "1c43i05": true,
+          "46sr0r": true,
+          "7q381j": true,
+          "kk9pov": true,
+        },
+        "clear": [Function],
+        "fontFaces": "",
+        "keyframePrefixes": Array [
+          "-webkit-",
+          "-moz-",
+          "",
+        ],
+        "keyframes": "",
+        "listeners": Array [
+          [Function],
+          [Function],
+        ],
+        "mediaQueryOrder": Array [],
+        "mediaRules": Object {
+          "(max-width: 47.2em)": ".46sr0r {
+        display: block;
+        width: 100%;
+        box-sizing: border-box
+      }
+      
+      .7q381j {
+        display: block;
+        width: 100%;
+        box-sizing: border-box
+      }
+      
+      .1c43i05 {
+        display: block;
+        width: 100%;
+        box-sizing: border-box
+      }
+      
+      .kk9pov {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        border-top-width: 0px
+      }",
+          "(min-width: 97.6em)": ".7q381j {
+        width: 1000px
+      }",
+          "screen and (max-width: 47.2em)": ".46sr0r {
+        display: block
+      }
+      
+      .7q381j {
+        display: block
+      }
+      
+      .1c43i05:after {
+        content: \\"\\";
+        display: table;
+        clear: both
+      }
+      
+      .1c43i05 {
+        display: block;
+        padding: 0.73333333333rem;
+        border-top: 1px solid #dedede;
+        background-color: #ccc
+      }
+      
+      .kk9pov {
+        display: block;
+        border: none;
+        float: left;
+        clear: left;
+        padding: 0px
+      }",
+        },
+        "plugins": Array [
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+        ],
+        "prettySelectors": false,
+        "renderFont": [Function],
+        "renderKeyframe": [Function],
+        "renderRule": [Function],
+        "renderStatic": [Function],
+        "renderToString": [Function],
+        "rules": ".46sr0r {
+        background: #fff;
+        border-collapse: collapse;
+        border-spacing: 0px;
+        max-width: 100%;
+        width: 100%
+      }
+      
+      .7q381j {
+        vertical-align: right
+      }
+      
+      .1c43i05 {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: nowrap;
+        -webkit-box-lines: nowrap;
+        -webkit-flex-wrap: nowrap;
+        justify-content: space-around;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-around;
+        align-items: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        border-color: #dedede
+      }
+      
+      .kk9pov {
+        display: inline-block;
+        flex: auto;
+        -webkit-flex: auto;
+        border-top: 1px solid #dedede;
+        line-height: 1.5;
+        padding: 0.73333333333rem;
+        vertical-align: middle;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-color: #dedede
+      }",
+        "selectorPrefix": "",
+        "statics": "",
+        "styleNodes": Object {
+          "RULE": <style
+            data-fela-type="RULE"
+            type="text/css"
+      >
+            .46sr0r { background: #fff; border-collapse: collapse; border-spacing: 0px; max-width: 100%; width: 100% } .7q381j { vertical-align: right } .1c43i05 { display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex; flex-wrap: nowrap; -webkit-box-lines: nowrap; -webkit-flex-wrap: nowrap; justify-content: space-around; -webkit-box-pack: justify; -webkit-justify-content: space-around; align-items: center; -webkit-box-align: center; -webkit-align-items: center; border-color: #dedede } .kk9pov { display: inline-block; flex: auto; -webkit-flex: auto; border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-color: #dedede }
+      </style>,
+          "RULE(max-width: 47.2em)": <style
+            data-fela-type="RULE"
+            type="text/css"
+            media="(max-width: 47.2em)"
+      >
+            .46sr0r { display: block; width: 100%; box-sizing: border-box } .7q381j { display: block; width: 100%; box-sizing: border-box } .1c43i05 { display: block; width: 100%; box-sizing: border-box } .kk9pov { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px }
+      </style>,
+          "RULE(min-width: 97.6em)": <style
+            data-fela-type="RULE"
+            type="text/css"
+            media="(min-width: 97.6em)"
+      >
+            .7q381j { width: 1000px }
+      </style>,
+          "RULEscreen and (max-width: 47.2em)": <style
+            data-fela-type="RULE"
+            type="text/css"
+            media="screen and (max-width: 47.2em)"
+      >
+            .46sr0r { display: block } .7q381j { display: block } .1c43i05:after { content: ""; display: table; clear: both } .1c43i05 { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc } .kk9pov { display: block; border: none; float: left; clear: left; padding: 0px }
+      </style>,
+        },
+        "subscribe": [Function],
+        "uniqueKeyframeIdentifier": 0,
+        "uniqueRuleIdentifier": 0,
+      }
+    }
+  >
+    <ThemeProvider
+      overwrite={false}
+      theme={
+        Object {
+          "arrowSize": "5px",
+          "bodyAccentColor": "#333",
+          "bodyBackground": "#ebebeb",
+          "bodyOffsetColor": "#787878",
+          "borderRadius": "2px",
+          "boxShadow": "0 0 20px 0 rgba(136,136,136,0.50)",
+          "breakpoints": Object {
+            "desktop": "64em",
+            "desktopLarge": "97.6em",
+            "mobile": "13.6em",
+            "mobileWide": "30.4em",
+            "tablet": "47.2em",
+          },
+          "color": Object {
+            "apple": "#BD2527",
+            "carrot": "#f56500",
+            "cement": "#7D7D7D",
+            "charcoal": "#333333",
+            "dawn": "#F16975",
+            "dew": "#85CBA8",
+            "dusk": "#4D4D4F",
+            "grass": "#9BCA3E",
+            "hail": "#BCBEC0",
+            "lightning": "#FFDB6F",
+            "marine": "#2F7BBF",
+            "moonshine": "#F7F7F7",
+            "night": "#404041",
+            "rain": "#408BC9",
+            "sky": "#76C4E2",
+            "smoke": "#e0e0e0",
+            "storm": "#808285",
+            "sunrise": "#F69259",
+            "sunset": "#BA77B1",
+            "tangerine": "#FF7900",
+            "twilight": "#8176B5",
+          },
+          "colorBlack": "#000",
+          "colorBlue": "#2f7bbf",
+          "colorBlueDark": "#2869a2",
+          "colorBlueLight": "#62a1d8",
+          "colorError": "#ff3100",
+          "colorFacebookBlue": "#3b5998",
+          "colorGray": "#7c7c7c",
+          "colorGrayBorder": "#666",
+          "colorGrayDark": "#333",
+          "colorGrayLight": "#dedede",
+          "colorGrayLightOnboarding": "#F7F7F7",
+          "colorGreen": "#9bca3e",
+          "colorGreenDark": "#87b331",
+          "colorGreenLight": "#bada7a",
+          "colorImportantInformation": "rgba(64,139,201,0.2)",
+          "colorInfo": "#00a9eb",
+          "colorMainBackground": "#e6e6e6",
+          "colorMuted": "#7c7c7c",
+          "colorOffsetDark": 0.07,
+          "colorOffsetLight": 0.15,
+          "colorOrange": "#ff7900",
+          "colorOrangeDark": "#db6800",
+          "colorOrangeLight": "#ffa14d",
+          "colorOverlay": "rgba(0, 0, 0, .7)",
+          "colorPink": "#d91698",
+          "colorPinkDark": "#b91381",
+          "colorPinkLight": "#ed4eb8",
+          "colorPurple": "#9545e5",
+          "colorPurpleDark": "#b91381",
+          "colorPurpleLight": "#ed4eb8",
+          "colorRed": "#bd2527",
+          "colorRedDark": "#9f1f21",
+          "colorRedLight": "#dd5153",
+          "colorSmoke": "#f2f2f2",
+          "colorSuccess": "#68970f",
+          "colorTwitterBlue": "#00aced",
+          "colorWarning": "#fca520",
+          "colorWhite": "#fff",
+          "colorYellow": "#ffd24d",
+          "colorYellowDark": "#ffc929",
+          "colorYellowLight": "#ffe59a",
+          "disabledBackground": "#ededed",
+          "em": "1em",
+          "fontColor": "#333",
+          "fontColorHeadingCaption": "#888",
+          "fontFamily": "\\"Open Sans\\", Helvetica, Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": 400,
+          "fontWeightLight": 300,
+          "gradient": Object {
+            "eight": "linear-gradient(left, #85CBA8, #FFDB6F)",
+            "five": "linear-gradient(left, #8176B5, #F16975)",
+            "four": "linear-gradient(left, #8176B5, #BA77B1)",
+            "primary": "linear-gradient(left, #76C4E2, #85CBA8)",
+            "seven": "linear-gradient(left, #F69259, #FFDB6F)",
+            "six": "linear-gradient(left, #F16975, #F69259)",
+            "three": "linear-gradient(left, #8176B5, #76C4E2)",
+            "two": "linear-gradient(left, #8176B5, #85CBA8)",
+          },
+          "inputFontSize": "13px",
+          "inputLineHeight": 1.4,
+          "lineHeight": 1.5,
+          "rem": "1rem",
+          "weightBold": 700,
+          "weightLight": 300,
+          "weightNormal": 400,
+          "weightSemiBold": 600,
+          "zIndexMax": 1000,
+        }
+      }
+    >
+      <ThemedComponent
+        is="div"
+      >
+        <TableStyles
+          is="div"
+        >
+          <TableStyles
+            _felaRule={[Function]}
+            is="div"
+            passThrough={Array []}
+          >
+            <div
+              className="46sr0r"
+              is="div"
+            >
+              <ThemedComponent
+                is="div"
+              >
+                <FelaComponent
+                  is="div"
+                >
+                  <TableBodyStyles
+                    _felaRule={[Function]}
+                    is="div"
+                    passThrough={Array []}
+                  >
+                    <TableBodyStyles
+                      _felaRule={[Function]}
+                      is="div"
+                      passThrough={Array []}
+                    >
+                      <div
+                        className="7q381j"
+                        is="div"
+                      >
+                        <ThemedComponent
+                          is="div"
+                        >
+                          <TableRowStyles
+                            is="div"
+                          >
+                            <TableRowStyles
+                              _felaRule={[Function]}
+                              is="div"
+                              passThrough={Array []}
+                            >
+                              <div
+                                className="1c43i05"
+                                is="div"
+                              >
+                                <ThemedComponent
+                                  is="div"
+                                >
+                                  <TableCellStyles
+                                    is="div"
+                                  >
+                                    <TableCellStyles
+                                      _felaRule={[Function]}
+                                      is="div"
+                                      passThrough={Array []}
+                                    >
+                                      <div
+                                        className="kk9pov"
+                                        is="div"
+                                      />
+                                    </TableCellStyles>
+                                  </TableCellStyles>
+                                </ThemedComponent>
+                              </div>
+                            </TableRowStyles>
+                          </TableRowStyles>
+                        </ThemedComponent>
+                      </div>
+                    </TableBodyStyles>
+                  </TableBodyStyles>
+                </FelaComponent>
+              </ThemedComponent>
+            </div>
+          </TableStyles>
+        </TableStyles>
+      </ThemedComponent>
+    </ThemeProvider>
+  </Provider>
+</StyleProvider>
+`;
+
+exports[`createTableBody should compose with styles overrides 1`] = `
+<StyleProvider
+  dev={true}
+>
+  <Provider
+    renderer={
+      Object {
+        "_emitChange": [Function],
+        "_renderStyleToCache": [Function],
+        "_renderStyleToClassNames": [Function],
+        "cache": Object {
+          "7q381j": true,
+        },
+        "clear": [Function],
+        "fontFaces": "",
+        "keyframePrefixes": Array [
+          "-webkit-",
+          "-moz-",
+          "",
+        ],
+        "keyframes": "",
+        "listeners": Array [
+          [Function],
+          [Function],
+        ],
+        "mediaQueryOrder": Array [],
+        "mediaRules": Object {
+          "(max-width: 47.2em)": ".7q381j {
+        display: block;
+        width: 100%;
+        box-sizing: border-box
+      }",
+          "(min-width: 97.6em)": ".7q381j {
+        width: 1000px
+      }",
+          "screen and (max-width: 47.2em)": ".7q381j {
+        display: block
+      }",
+        },
+        "plugins": Array [
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+          [Function],
+        ],
+        "prettySelectors": false,
+        "renderFont": [Function],
+        "renderKeyframe": [Function],
+        "renderRule": [Function],
+        "renderStatic": [Function],
+        "renderToString": [Function],
+        "rules": ".7q381j {
+        vertical-align: right
+      }",
+        "selectorPrefix": "",
+        "statics": "",
+        "styleNodes": Object {
+          "RULE": <style
+            data-fela-type="RULE"
+            type="text/css"
+      >
+            .7q381j { vertical-align: right }
+      </style>,
+          "RULE(max-width: 47.2em)": <style
+            data-fela-type="RULE"
+            type="text/css"
+            media="(max-width: 47.2em)"
+      >
+            .7q381j { display: block; width: 100%; box-sizing: border-box }
+      </style>,
+          "RULE(min-width: 97.6em)": <style
+            data-fela-type="RULE"
+            type="text/css"
+            media="(min-width: 97.6em)"
+      >
+            .7q381j { width: 1000px }
+      </style>,
+          "RULEscreen and (max-width: 47.2em)": <style
+            data-fela-type="RULE"
+            type="text/css"
+            media="screen and (max-width: 47.2em)"
+      >
+            .7q381j { display: block }
+      </style>,
+        },
+        "subscribe": [Function],
+        "uniqueKeyframeIdentifier": 0,
+        "uniqueRuleIdentifier": 0,
+      }
+    }
+  >
+    <ThemeProvider
+      overwrite={false}
+      theme={
+        Object {
+          "arrowSize": "5px",
+          "bodyAccentColor": "#333",
+          "bodyBackground": "#ebebeb",
+          "bodyOffsetColor": "#787878",
+          "borderRadius": "2px",
+          "boxShadow": "0 0 20px 0 rgba(136,136,136,0.50)",
+          "breakpoints": Object {
+            "desktop": "64em",
+            "desktopLarge": "97.6em",
+            "mobile": "13.6em",
+            "mobileWide": "30.4em",
+            "tablet": "47.2em",
+          },
+          "color": Object {
+            "apple": "#BD2527",
+            "carrot": "#f56500",
+            "cement": "#7D7D7D",
+            "charcoal": "#333333",
+            "dawn": "#F16975",
+            "dew": "#85CBA8",
+            "dusk": "#4D4D4F",
+            "grass": "#9BCA3E",
+            "hail": "#BCBEC0",
+            "lightning": "#FFDB6F",
+            "marine": "#2F7BBF",
+            "moonshine": "#F7F7F7",
+            "night": "#404041",
+            "rain": "#408BC9",
+            "sky": "#76C4E2",
+            "smoke": "#e0e0e0",
+            "storm": "#808285",
+            "sunrise": "#F69259",
+            "sunset": "#BA77B1",
+            "tangerine": "#FF7900",
+            "twilight": "#8176B5",
+          },
+          "colorBlack": "#000",
+          "colorBlue": "#2f7bbf",
+          "colorBlueDark": "#2869a2",
+          "colorBlueLight": "#62a1d8",
+          "colorError": "#ff3100",
+          "colorFacebookBlue": "#3b5998",
+          "colorGray": "#7c7c7c",
+          "colorGrayBorder": "#666",
+          "colorGrayDark": "#333",
+          "colorGrayLight": "#dedede",
+          "colorGrayLightOnboarding": "#F7F7F7",
+          "colorGreen": "#9bca3e",
+          "colorGreenDark": "#87b331",
+          "colorGreenLight": "#bada7a",
+          "colorImportantInformation": "rgba(64,139,201,0.2)",
+          "colorInfo": "#00a9eb",
+          "colorMainBackground": "#e6e6e6",
+          "colorMuted": "#7c7c7c",
+          "colorOffsetDark": 0.07,
+          "colorOffsetLight": 0.15,
+          "colorOrange": "#ff7900",
+          "colorOrangeDark": "#db6800",
+          "colorOrangeLight": "#ffa14d",
+          "colorOverlay": "rgba(0, 0, 0, .7)",
+          "colorPink": "#d91698",
+          "colorPinkDark": "#b91381",
+          "colorPinkLight": "#ed4eb8",
+          "colorPurple": "#9545e5",
+          "colorPurpleDark": "#b91381",
+          "colorPurpleLight": "#ed4eb8",
+          "colorRed": "#bd2527",
+          "colorRedDark": "#9f1f21",
+          "colorRedLight": "#dd5153",
+          "colorSmoke": "#f2f2f2",
+          "colorSuccess": "#68970f",
+          "colorTwitterBlue": "#00aced",
+          "colorWarning": "#fca520",
+          "colorWhite": "#fff",
+          "colorYellow": "#ffd24d",
+          "colorYellowDark": "#ffc929",
+          "colorYellowLight": "#ffe59a",
+          "disabledBackground": "#ededed",
+          "em": "1em",
+          "fontColor": "#333",
+          "fontColorHeadingCaption": "#888",
+          "fontFamily": "\\"Open Sans\\", Helvetica, Arial, sans-serif",
+          "fontSize": "15px",
+          "fontWeight": 400,
+          "fontWeightLight": 300,
+          "gradient": Object {
+            "eight": "linear-gradient(left, #85CBA8, #FFDB6F)",
+            "five": "linear-gradient(left, #8176B5, #F16975)",
+            "four": "linear-gradient(left, #8176B5, #BA77B1)",
+            "primary": "linear-gradient(left, #76C4E2, #85CBA8)",
+            "seven": "linear-gradient(left, #F69259, #FFDB6F)",
+            "six": "linear-gradient(left, #F16975, #F69259)",
+            "three": "linear-gradient(left, #8176B5, #76C4E2)",
+            "two": "linear-gradient(left, #8176B5, #85CBA8)",
+          },
+          "inputFontSize": "13px",
+          "inputLineHeight": 1.4,
+          "lineHeight": 1.5,
+          "rem": "1rem",
+          "weightBold": 700,
+          "weightLight": 300,
+          "weightNormal": 400,
+          "weightSemiBold": 600,
+          "zIndexMax": 1000,
+        }
+      }
+    >
+      <table>
+        <ThemedComponent>
+          <FelaComponent>
+            <TableBodyStyles
+              _felaRule={[Function]}
+              passThrough={Array []}
+            >
+              <TableBodyStyles
+                _felaRule={[Function]}
+                passThrough={Array []}
+              >
+                <TableBody
+                  className="7q381j"
+                  is="tbody"
+                >
+                  <tbody
+                    className="7q381j"
+                  />
+                </TableBody>
+              </TableBodyStyles>
+            </TableBodyStyles>
+          </FelaComponent>
+        </ThemedComponent>
+      </table>
+    </ThemeProvider>
+  </Provider>
+</StyleProvider>
+`;

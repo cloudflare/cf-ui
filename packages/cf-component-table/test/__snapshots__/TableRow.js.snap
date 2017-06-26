@@ -121,3 +121,175 @@ Object {
 }}",
 }
 `;
+
+exports[`createTableRow should be able to render a div 1`] = `
+Object {
+  "component": <div
+    bare={undefined}
+    bordered={undefined}
+    className="1edt7t"
+    condensed={undefined}
+    hover={undefined}
+    is="div"
+    rowIndex={undefined}
+    striped={undefined}
+    tbodyIndex={undefined}
+    tfootIndex={undefined}
+    theadIndex={undefined}
+    type={undefined}
+>
+    <div
+        align={undefined}
+        bare={undefined}
+        bordered={undefined}
+        cellIndex={undefined}
+        className="kk9pov"
+        colSpan={undefined}
+        condensed={undefined}
+        headers={undefined}
+        hover={undefined}
+        is="div"
+        rowIndex={undefined}
+        rowSpan={undefined}
+        rowType={undefined}
+        striped={undefined}
+        tbodyIndex={undefined}
+        tfootIndex={undefined}
+        theadIndex={undefined}
+        width={undefined}
+    />
+</div>,
+  "styles": ".1edt7t {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-box-lines: nowrap;
+  -webkit-flex-wrap: nowrap;
+  justify-content: space-around;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-around;
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  border-color: #dedede;
+  vertical-align: right
+}
+
+
+    .kk9pov {
+  display: inline-block;
+  flex: auto;
+  -webkit-flex: auto;
+  border-top: 1px solid #dedede;
+  line-height: 1.5;
+  padding: 0.73333333333rem;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-color: #dedede
+}@media (max-width: 47.2em){.1edt7t {
+  display: block;
+  width: 100%;
+  box-sizing: border-box
+}
+
+
+    .kk9pov {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-top-width: 0px
+}}@media screen and (max-width: 47.2em){.1edt7t:after {
+  content: \\"\\";
+  display: table;
+  clear: both
+}
+
+.1edt7t {
+  display: block;
+  padding: 0.73333333333rem;
+  border-top: 1px solid #dedede;
+  background-color: #ccc
+}
+
+
+    .kk9pov {
+  display: block;
+  border: none;
+  float: left;
+  clear: left;
+  padding: 0px
+}}@media (min-width: 97.6em){.1edt7t {
+  width: 1000px
+}}",
+}
+`;
+
+exports[`createTableRow should compose with styles overrides 1`] = `
+Object {
+  "component": <tr
+    className="t744or"
+>
+    <td
+        className="1glop85"
+        colSpan={undefined}
+        rowSpan={undefined}
+    />
+</tr>,
+  "styles": "
+.t744or {
+  border-color: #dedede;
+  vertical-align: right
+}
+
+.1glop85 {
+  border-top: 1px solid #dedede;
+  line-height: 1.5;
+  padding: 0.73333333333rem;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}@media (max-width: 47.2em){
+    .t744or {
+  display: block;
+  width: 100%;
+  box-sizing: border-box
+}
+
+.1glop85 {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border-top-width: 0px
+}}@media screen and (max-width: 47.2em){
+    .t744or:after {
+  content: \\"\\";
+  display: table;
+  clear: both
+}
+
+
+    .t744or {
+  display: block;
+  padding: 0.73333333333rem;
+  border-top: 1px solid #dedede;
+  background-color: #ccc
+}
+
+.1glop85 {
+  display: block;
+  border: none;
+  float: left;
+  clear: left;
+  padding: 0px
+}}@media (min-width: 97.6em){
+    .t744or {
+  width: 1000px
+}}",
+}
+`;

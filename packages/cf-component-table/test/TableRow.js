@@ -75,3 +75,29 @@ describe('TableRow', () => {
     expect(snapshot).toMatchSnapshot();
   });
 });
+
+describe('createTableRow', () => {
+  it('should compose with styles overrides', () => {
+    const TableRow = createTableRow(({ theme }) => ({
+      verticalAlign: 'right',
+      [`@media (min-width: ${theme.breakpoints.desktopLarge})`]: {
+        width: '1000px'
+      }
+    }));
+    const snapshot = felaSnapshot(<TableRow><TableCell /></TableRow>);
+    expect(snapshot).toMatchSnapshot();
+  });
+
+  it('should be able to render a div', () => {
+    const TableRow = createTableRow(({ theme }) => ({
+      verticalAlign: 'right',
+      [`@media (min-width: ${theme.breakpoints.desktopLarge})`]: {
+        width: '1000px'
+      }
+    }));
+    const snapshot = felaSnapshot(
+      <TableRow is="div"><TableCell is="div" /></TableRow>
+    );
+    expect(snapshot).toMatchSnapshot();
+  });
+});

@@ -3,6 +3,7 @@ import {
   Table,
   TableFoot,
   TableRow,
+  TableCell,
   createTableFoot
 } from '../../cf-component-table/src/index';
 import { felaTestContext } from 'cf-style-provider';
@@ -60,5 +61,49 @@ describe('TableFoot', () => {
     }));
     const tree = mount(felaTestContext(<Table><TableFoot /></Table>));
     expect(toJSON(tree)).toMatchSnapshot();
+  });
+});
+
+describe('createTableFoot', () => {
+  it('should compose with styles overrides', () => {
+    const TableFoot = createTableFoot(({ theme }) => ({
+      verticalAlign: 'right',
+      [`@media (min-width: ${theme.breakpoints.desktopLarge})`]: {
+        width: '1000px'
+      }
+    }));
+    const snapshot = toJSON(
+      mount(
+        felaTestContext(
+          <table>
+            <TableFoot />
+          </table>
+        )
+      )
+    );
+    expect(snapshot).toMatchSnapshot();
+  });
+
+  it('should be able to render a div', () => {
+    const TableFoot = createTableFoot(({ theme }) => ({
+      verticalAlign: 'right',
+      [`@media (min-width: ${theme.breakpoints.desktopLarge})`]: {
+        width: '1000px'
+      }
+    }));
+    const snapshot = toJSON(
+      mount(
+        felaTestContext(
+          <Table is="div">
+            <TableFoot is="div">
+              <TableRow is="div">
+                <TableCell is="div" />
+              </TableRow>
+            </TableFoot>
+          </Table>
+        )
+      )
+    );
+    expect(snapshot).toMatchSnapshot();
   });
 });
