@@ -2,15 +2,14 @@
 
 exports[`should render all props as styles 1`] = `
 <div
-  className="k8v3yj"
+  className="cf-k8v3yj"
 >
   Box
 </div>
 `;
 
 exports[`should render all props as styles 2`] = `
-"
-.k8v3yj {
+".cf-k8v3yj {
   border-width: 1px;
   border-style: solid;
   border-color: black;

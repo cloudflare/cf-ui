@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { PageHeader } from '../src/index';
-import { felaSnapshot } from 'cf-style-provider';
+import felaSnapshot from 'cf-style-provider/src/felaSnapshot';
 
 test('should render title', () => {
   const snapshot = felaSnapshot(<PageHeader title="Title" />);

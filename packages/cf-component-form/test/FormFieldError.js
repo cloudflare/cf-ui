@@ -1,7 +1,8 @@
 import React from 'react';
 import { renderToStaticMarkup } from 'react-dom/server';
 import { FormFieldError } from '../src/index';
-import { felaSnapshot, felaTestContext } from 'cf-style-provider';
+import felaSnapshot from 'cf-style-provider/src/felaSnapshot';
+import felaTestContext from 'cf-style-provider/src/felaTestContext';
 
 test('should render valid state', () => {
   expect(

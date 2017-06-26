@@ -2,14 +2,14 @@
 
 exports[`should render size 1`] = `
 <h2
-  className="1y93kqw"
+  className="cf-1y93kqw"
 >
   Heading
 </h2>
 `;
 
 exports[`should render size 2`] = `
-".1y93kqw {
+".cf-1y93kqw {
   font-size: 1.6rem;
   line-height: 1.3;
   padding-top: 0px;

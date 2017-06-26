@@ -2,12 +2,12 @@
 
 exports[`should render 1`] = `
 <li
-  className="15spu1u"
+  className="cf-15spu1u"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="32iz07"
+    className="cf-32iz07"
     href="#"
     onClick={[Function]}
   >
@@ -17,19 +17,17 @@ exports[`should render 1`] = `
 `;
 
 exports[`should render 2`] = `
-".15spu1u {
+".cf-15spu1u {
   float: left;
   position: relative;
   background-color: #fff;
   color: #408BC9;
   cursor: pointer
 }
-
-.32iz07:focus {
+.cf-32iz07:focus {
   z-index: 1
 }
-
-.32iz07 {
+.cf-32iz07 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -48,12 +46,12 @@ exports[`should render 2`] = `
 
 exports[`should render active 1`] = `
 <li
-  className="1wi2cf1"
+  className="cf-1wi2cf1"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="109b087"
+    className="cf-109b087"
     href="#"
     onClick={[Function]}
   >
@@ -63,7 +61,7 @@ exports[`should render active 1`] = `
 `;
 
 exports[`should render active 2`] = `
-".1wi2cf1 {
+".cf-1wi2cf1 {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -72,12 +70,10 @@ exports[`should render active 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-
-.109b087:focus {
+.cf-109b087:focus {
   z-index: 1
 }
-
-.109b087 {
+.cf-109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -96,12 +92,12 @@ exports[`should render active 2`] = `
 
 exports[`should render active dot 1`] = `
 <li
-  className="1xpv85q"
+  className="cf-1xpv85q"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="109b087"
+    className="cf-109b087"
     href="#"
     onClick={[Function]}
   >
@@ -111,7 +107,7 @@ exports[`should render active dot 1`] = `
 `;
 
 exports[`should render active dot 2`] = `
-".1xpv85q {
+".cf-1xpv85q {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -125,12 +121,10 @@ exports[`should render active dot 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-
-.109b087:focus {
+.cf-109b087:focus {
   z-index: 1
 }
-
-.109b087 {
+.cf-109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -149,12 +143,12 @@ exports[`should render active dot 2`] = `
 
 exports[`should render active next 1`] = `
 <li
-  className="1ezx84k"
+  className="cf-1ezx84k"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="109b087"
+    className="cf-109b087"
     href="#"
     onClick={[Function]}
   >
@@ -164,7 +158,7 @@ exports[`should render active next 1`] = `
 `;
 
 exports[`should render active next 2`] = `
-".1ezx84k {
+".cf-1ezx84k {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -174,12 +168,10 @@ exports[`should render active next 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-
-.109b087:focus {
+.cf-109b087:focus {
   z-index: 1
 }
-
-.109b087 {
+.cf-109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -198,12 +190,12 @@ exports[`should render active next 2`] = `
 
 exports[`should render active prev 1`] = `
 <li
-  className="1ezx84k"
+  className="cf-1ezx84k"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="109b087"
+    className="cf-109b087"
     href="#"
     onClick={[Function]}
   >
@@ -213,7 +205,7 @@ exports[`should render active prev 1`] = `
 `;
 
 exports[`should render active prev 2`] = `
-".1ezx84k {
+".cf-1ezx84k {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -223,12 +215,10 @@ exports[`should render active prev 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-
-.109b087:focus {
+.cf-109b087:focus {
   z-index: 1
 }
-
-.109b087 {
+.cf-109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -247,12 +237,12 @@ exports[`should render active prev 2`] = `
 
 exports[`should render disabled 1`] = `
 <li
-  className="yr93k7"
+  className="cf-yr93k7"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="109b087"
+    className="cf-109b087"
     href="#"
     onClick={[Function]}
   >
@@ -262,20 +252,17 @@ exports[`should render disabled 1`] = `
 `;
 
 exports[`should render disabled 2`] = `
-"
-.yr93k7 {
+".cf-yr93k7 {
   float: left;
   position: relative;
   background-color: #ededed;
   color: #666;
   cursor: default
 }
-
-.109b087:focus {
+.cf-109b087:focus {
   z-index: 1
 }
-
-.109b087 {
+.cf-109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -294,12 +281,12 @@ exports[`should render disabled 2`] = `
 
 exports[`should render disabled dot 1`] = `
 <li
-  className="18awel0"
+  className="cf-18awel0"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="109b087"
+    className="cf-109b087"
     href="#"
     onClick={[Function]}
   >
@@ -309,7 +296,7 @@ exports[`should render disabled dot 1`] = `
 `;
 
 exports[`should render disabled dot 2`] = `
-".18awel0 {
+".cf-18awel0 {
   float: left;
   position: relative;
   background-color: #ededed;
@@ -321,12 +308,10 @@ exports[`should render disabled dot 2`] = `
   margin: 1em;
   border-radius: 50%
 }
-
-.109b087:focus {
+.cf-109b087:focus {
   z-index: 1
 }
-
-.109b087 {
+.cf-109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -345,12 +330,12 @@ exports[`should render disabled dot 2`] = `
 
 exports[`should render disabled next 1`] = `
 <li
-  className="mgj6am"
+  className="cf-mgj6am"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="109b087"
+    className="cf-109b087"
     href="#"
     onClick={[Function]}
   >
@@ -360,8 +345,7 @@ exports[`should render disabled next 1`] = `
 `;
 
 exports[`should render disabled next 2`] = `
-"
-.mgj6am {
+".cf-mgj6am {
   float: left;
   position: relative;
   background-color: #ededed;
@@ -369,12 +353,10 @@ exports[`should render disabled next 2`] = `
   cursor: default;
   border-radius: 3px
 }
-
-.109b087:focus {
+.cf-109b087:focus {
   z-index: 1
 }
-
-.109b087 {
+.cf-109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -393,12 +375,12 @@ exports[`should render disabled next 2`] = `
 
 exports[`should render disabled prev 1`] = `
 <li
-  className="mgj6am"
+  className="cf-mgj6am"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="109b087"
+    className="cf-109b087"
     href="#"
     onClick={[Function]}
   >
@@ -408,8 +390,7 @@ exports[`should render disabled prev 1`] = `
 `;
 
 exports[`should render disabled prev 2`] = `
-"
-.mgj6am {
+".cf-mgj6am {
   float: left;
   position: relative;
   background-color: #ededed;
@@ -417,12 +398,10 @@ exports[`should render disabled prev 2`] = `
   cursor: default;
   border-radius: 3px
 }
-
-.109b087:focus {
+.cf-109b087:focus {
   z-index: 1
 }
-
-.109b087 {
+.cf-109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;

@@ -1,19 +1,20 @@
 import renderer from 'react-test-renderer';
 import { html as beautify } from 'js-beautify';
+import CleanCSS from 'clean-css';
 import felaTestContext from './felaTestContext';
 import createRenderer from './createRenderer';
 
-const prettifyFelaString = str =>
-  str.replace(/\.[a-z]+/g, '\n    $&').replace(/^\s+/, '\n');
+const cssCleaner = new CleanCSS({ format: 'beautify', level: 0 });
 
 export default component => {
   const felaRenderer = createRenderer({
     dev: true
   });
+
   return {
     component: renderer
       .create(felaTestContext(component, felaRenderer))
       .toJSON(),
-    styles: prettifyFelaString(felaRenderer.renderToString())
+    styles: cssCleaner.minify(felaRenderer.renderToString()).styles
   };
 };
