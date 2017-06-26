@@ -10,7 +10,6 @@ Object {
   "styles": ".1u7kqkt:first-letter {
   text-transform: capitalize
 }
-
 .1u7kqkt {
   border-top: 1px solid #dedede;
   line-height: 1.5;
@@ -22,18 +21,24 @@ Object {
   border-color: #dedede;
   text-align: left;
   font-weight: 600
-}@media (max-width: 47.2em){.1u7kqkt {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  border-top-width: 0px
-}}@media screen and (max-width: 47.2em){.1u7kqkt {
-  display: block;
-  border: none;
-  float: left;
-  clear: left;
-  padding: 0px
-}}",
+}
+@media (max-width: 47.2em) {
+  .1u7kqkt {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-top-width: 0px
+  }
+}
+@media screen and (max-width: 47.2em) {
+  .1u7kqkt {
+    display: block;
+    border: none;
+    float: left;
+    clear: left;
+    padding: 0px
+  }
+}",
 }
 `;
 

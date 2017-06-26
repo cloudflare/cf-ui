@@ -24,8 +24,7 @@ Object {
 >
     TableCell
 </div>,
-  "styles": "
-.kk9pov {
+  "styles": ".kk9pov {
   display: inline-block;
   flex: auto;
   -webkit-flex: auto;
@@ -37,20 +36,24 @@ Object {
   overflow: hidden;
   text-overflow: ellipsis;
   border-color: #dedede
-}@media (max-width: 47.2em){
-    .kk9pov {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  border-top-width: 0px
-}}@media screen and (max-width: 47.2em){
-    .kk9pov {
-  display: block;
-  border: none;
-  float: left;
-  clear: left;
-  padding: 0px
-}}",
+}
+@media (max-width: 47.2em) {
+  .kk9pov {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-top-width: 0px
+  }
+}
+@media screen and (max-width: 47.2em) {
+  .kk9pov {
+    display: block;
+    border: none;
+    float: left;
+    clear: left;
+    padding: 0px
+  }
+}",
 }
 `;
 
@@ -63,8 +66,7 @@ Object {
 >
     TableCell
 </td>,
-  "styles": "
-.c5609r {
+  "styles": ".c5609r {
   border-top: 1px solid #dedede;
   line-height: 1.5;
   padding: 0.73333333333rem;
@@ -73,20 +75,24 @@ Object {
   overflow: hidden;
   text-overflow: ellipsis;
   border-color: #dedede
-}@media (max-width: 47.2em){
-    .c5609r {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  border-top-width: 0px
-}}@media screen and (max-width: 47.2em){
-    .c5609r {
-  display: block;
-  border: none;
-  float: left;
-  clear: left;
-  padding: 0px
-}}",
+}
+@media (max-width: 47.2em) {
+  .c5609r {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-top-width: 0px
+  }
+}
+@media screen and (max-width: 47.2em) {
+  .c5609r {
+    display: block;
+    border: none;
+    float: left;
+    clear: left;
+    padding: 0px
+  }
+}",
 }
 `;
 
@@ -109,18 +115,24 @@ Object {
   overflow: hidden;
   text-overflow: ellipsis;
   border-color: #dedede
-}@media (max-width: 47.2em){.2n3suq {
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  border-top-width: 0px
-}}@media screen and (max-width: 47.2em){.2n3suq {
-  display: block;
-  border: none;
-  float: left;
-  clear: left;
-  padding: 0px
-}}",
+}
+@media (max-width: 47.2em) {
+  .2n3suq {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-top-width: 0px
+  }
+}
+@media screen and (max-width: 47.2em) {
+  .2n3suq {
+    display: block;
+    border: none;
+    float: left;
+    clear: left;
+    padding: 0px
+  }
+}",
 }
 `;
 

@@ -6,7 +6,7 @@ import {
   TableCell,
   createTableHead
 } from '../../cf-component-table/src/index';
-import { felaTestContext } from 'cf-style-provider';
+import felaTestContext from '../../cf-style-provider/src/felaTestContext';
 import { mount } from 'enzyme';
 import toJSON from 'enzyme-to-json';
 

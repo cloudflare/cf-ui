@@ -5,8 +5,7 @@ Object {
   "component": <div
     className="bd4m75"
 />,
-  "styles": "
-.bd4m75 {
+  "styles": ".bd4m75 {
   color: #fff
 }",
 }

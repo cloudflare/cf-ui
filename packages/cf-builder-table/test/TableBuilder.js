@@ -15,7 +15,7 @@ import {
   TableRow,
   TableCell
 } from '../../cf-component-table/src/index';
-import { felaTestContext } from 'cf-style-provider';
+import felaTestContext from 'cf-style-provider/src/felaTestContext';
 
 let store;
 
