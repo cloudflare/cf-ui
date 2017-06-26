@@ -226,76 +226,51 @@ exports[`TableHead should compose with styles overrides 1`] = `
       }
     >
       <ThemedComponent>
-        <TableStyles>
-          <TableStyles
-            _felaRule={[Function]}
-            passThrough={Array []}
+        <FelaComponent>
+          <Table
+            bare={false}
+            bordered={true}
+            className="46sr0r"
+            condensed={false}
+            hover={false}
+            is="table"
+            striped={false}
           >
-            <Table
-              bare={false}
-              bordered={true}
+            <table
               className="46sr0r"
-              condensed={false}
-              hover={false}
-              is="table"
-              striped={false}
             >
-              <table
-                className="46sr0r"
+              <ThemedComponent
+                bare={false}
+                bordered={true}
+                condensed={false}
+                hover={false}
+                striped={false}
               >
-                <ThemedComponent
+                <FelaComponent
                   bare={false}
                   bordered={true}
                   condensed={false}
                   hover={false}
                   striped={false}
                 >
-                  <FelaComponent
+                  <TableHead
                     bare={false}
                     bordered={true}
+                    className="1n3j7e6"
                     condensed={false}
                     hover={false}
+                    is="thead"
                     striped={false}
                   >
-                    <TableHeadStyles
-                      _felaRule={[Function]}
-                      bare={false}
-                      bordered={true}
-                      condensed={false}
-                      hover={false}
-                      passThrough={Array []}
-                      striped={false}
-                    >
-                      <TableHeadStyles
-                        _felaRule={[Function]}
-                        bare={false}
-                        bordered={true}
-                        condensed={false}
-                        hover={false}
-                        passThrough={Array []}
-                        striped={false}
-                      >
-                        <TableHead
-                          bare={false}
-                          bordered={true}
-                          className="1n3j7e6"
-                          condensed={false}
-                          hover={false}
-                          is="thead"
-                          striped={false}
-                        >
-                          <thead
-                            className="1n3j7e6"
-                          />
-                        </TableHead>
-                      </TableHeadStyles>
-                    </TableHeadStyles>
-                  </FelaComponent>
-                </ThemedComponent>
-              </table>
-            </Table>
-          </TableStyles>
-        </TableStyles>
+                    <thead
+                      className="1n3j7e6"
+                    />
+                  </TableHead>
+                </FelaComponent>
+              </ThemedComponent>
+            </table>
+          </Table>
+        </FelaComponent>
       </ThemedComponent>
     </ThemeProvider>
   </Provider>
@@ -523,50 +498,38 @@ exports[`TableHead should render 1`] = `
     >
       <table>
         <ThemedComponent>
-          <TableHeadStyles>
-            <TableHeadStyles
-              _felaRule={[Function]}
-              passThrough={Array []}
+          <FelaComponent>
+            <TableHead
+              className="d1fi02"
+              is="thead"
             >
-              <TableHead
+              <thead
                 className="d1fi02"
-                is="thead"
               >
-                <thead
-                  className="d1fi02"
+                <ThemedComponent
+                  rowIndex={-0}
+                  theadIndex={0}
                 >
-                  <ThemedComponent
+                  <FelaComponent
                     rowIndex={-0}
                     theadIndex={0}
                   >
-                    <TableRowStyles
+                    <TableRow
+                      className="1b0jccb"
+                      is="tr"
                       rowIndex={-0}
                       theadIndex={0}
+                      type="default"
                     >
-                      <TableRowStyles
-                        _felaRule={[Function]}
-                        passThrough={Array []}
-                        rowIndex={-0}
-                        theadIndex={0}
-                      >
-                        <TableRow
-                          className="1b0jccb"
-                          is="tr"
-                          rowIndex={-0}
-                          theadIndex={0}
-                          type="default"
-                        >
-                          <tr
-                            className="1b0jccb"
-                          />
-                        </TableRow>
-                      </TableRowStyles>
-                    </TableRowStyles>
-                  </ThemedComponent>
-                </thead>
-              </TableHead>
-            </TableHeadStyles>
-          </TableHeadStyles>
+                      <tr
+                        className="1b0jccb"
+                      />
+                    </TableRow>
+                  </FelaComponent>
+                </ThemedComponent>
+              </thead>
+            </TableHead>
+          </FelaComponent>
         </ThemedComponent>
       </table>
     </ThemeProvider>
@@ -870,83 +833,53 @@ exports[`createTableHead should be able to render a div 1`] = `
       <ThemedComponent
         is="div"
       >
-        <TableStyles
+        <FelaComponent
           is="div"
         >
-          <TableStyles
-            _felaRule={[Function]}
+          <div
+            className="46sr0r"
             is="div"
-            passThrough={Array []}
           >
-            <div
-              className="46sr0r"
+            <ThemedComponent
               is="div"
             >
-              <ThemedComponent
+              <FelaComponent
                 is="div"
               >
-                <FelaComponent
+                <div
+                  className="1n3j7e6"
                   is="div"
                 >
-                  <TableHeadStyles
-                    _felaRule={[Function]}
+                  <ThemedComponent
                     is="div"
-                    passThrough={Array []}
                   >
-                    <TableHeadStyles
-                      _felaRule={[Function]}
+                    <FelaComponent
                       is="div"
-                      passThrough={Array []}
                     >
                       <div
-                        className="1n3j7e6"
+                        className="1c43i05"
                         is="div"
                       >
                         <ThemedComponent
                           is="div"
                         >
-                          <TableRowStyles
+                          <FelaComponent
                             is="div"
                           >
-                            <TableRowStyles
-                              _felaRule={[Function]}
+                            <div
+                              className="kk9pov"
                               is="div"
-                              passThrough={Array []}
-                            >
-                              <div
-                                className="1c43i05"
-                                is="div"
-                              >
-                                <ThemedComponent
-                                  is="div"
-                                >
-                                  <TableCellStyles
-                                    is="div"
-                                  >
-                                    <TableCellStyles
-                                      _felaRule={[Function]}
-                                      is="div"
-                                      passThrough={Array []}
-                                    >
-                                      <div
-                                        className="kk9pov"
-                                        is="div"
-                                      />
-                                    </TableCellStyles>
-                                  </TableCellStyles>
-                                </ThemedComponent>
-                              </div>
-                            </TableRowStyles>
-                          </TableRowStyles>
+                            />
+                          </FelaComponent>
                         </ThemedComponent>
                       </div>
-                    </TableHeadStyles>
-                  </TableHeadStyles>
-                </FelaComponent>
-              </ThemedComponent>
-            </div>
-          </TableStyles>
-        </TableStyles>
+                    </FelaComponent>
+                  </ThemedComponent>
+                </div>
+              </FelaComponent>
+            </ThemedComponent>
+          </div>
+        </FelaComponent>
       </ThemedComponent>
     </ThemeProvider>
   </Provider>
@@ -1162,24 +1095,14 @@ exports[`createTableHead should compose with styles overrides 1`] = `
       <table>
         <ThemedComponent>
           <FelaComponent>
-            <TableHeadStyles
-              _felaRule={[Function]}
-              passThrough={Array []}
+            <TableHead
+              className="1n3j7e6"
+              is="thead"
             >
-              <TableHeadStyles
-                _felaRule={[Function]}
-                passThrough={Array []}
-              >
-                <TableHead
-                  className="1n3j7e6"
-                  is="thead"
-                >
-                  <thead
-                    className="1n3j7e6"
-                  />
-                </TableHead>
-              </TableHeadStyles>
-            </TableHeadStyles>
+              <thead
+                className="1n3j7e6"
+              />
+            </TableHead>
           </FelaComponent>
         </ThemedComponent>
       </table>

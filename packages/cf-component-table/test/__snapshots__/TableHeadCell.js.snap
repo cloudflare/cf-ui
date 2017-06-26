@@ -269,28 +269,10 @@ exports[`createTableHeadCell should be able to render a div 1`] = `
         <FelaComponent
           is="div"
         >
-          <TableHeadCellStyles
-            _felaRule={[Function]}
+          <div
+            className="1f998t1"
             is="div"
-            passThrough={Array []}
-          >
-            <TableCellStyles
-              _felaRule={[Function]}
-              is="div"
-              passThrough={Array []}
-            >
-              <TableCellStyles
-                _felaRule={[Function]}
-                is="div"
-                passThrough={Array []}
-              >
-                <div
-                  className="1f998t1"
-                  is="div"
-                />
-              </TableCellStyles>
-            </TableCellStyles>
-          </TableHeadCellStyles>
+          />
         </FelaComponent>
       </ThemedComponent>
     </ThemeProvider>
@@ -526,29 +508,14 @@ exports[`createTableHeadCell should compose with styles overrides 1`] = `
           <tr>
             <ThemedComponent>
               <FelaComponent>
-                <TableHeadCellStyles
-                  _felaRule={[Function]}
-                  passThrough={Array []}
+                <TableHeadCell
+                  className="6zfuo5"
+                  is="th"
                 >
-                  <TableCellStyles
-                    _felaRule={[Function]}
-                    passThrough={Array []}
-                  >
-                    <TableCellStyles
-                      _felaRule={[Function]}
-                      passThrough={Array []}
-                    >
-                      <TableHeadCell
-                        className="6zfuo5"
-                        is="th"
-                      >
-                        <th
-                          className="6zfuo5"
-                        />
-                      </TableHeadCell>
-                    </TableCellStyles>
-                  </TableCellStyles>
-                </TableHeadCellStyles>
+                  <th
+                    className="6zfuo5"
+                  />
+                </TableHeadCell>
               </FelaComponent>
             </ThemedComponent>
           </tr>

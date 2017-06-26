@@ -350,22 +350,10 @@ exports[`createTableCell should be able to render a div 1`] = `
         <FelaComponent
           is="div"
         >
-          <TableCellStyles
-            _felaRule={[Function]}
+          <div
+            className="6ddffr"
             is="div"
-            passThrough={Array []}
-          >
-            <TableCellStyles
-              _felaRule={[Function]}
-              is="div"
-              passThrough={Array []}
-            >
-              <div
-                className="6ddffr"
-                is="div"
-              />
-            </TableCellStyles>
-          </TableCellStyles>
+          />
         </FelaComponent>
       </ThemedComponent>
     </ThemeProvider>
@@ -595,25 +583,15 @@ exports[`createTableCell should compose with styles overrides 1`] = `
           <tr>
             <ThemedComponent>
               <FelaComponent>
-                <TableCellStyles
-                  _felaRule={[Function]}
-                  passThrough={Array []}
+                <TableCell
+                  align="left"
+                  className="19q41br"
+                  is="td"
                 >
-                  <TableCellStyles
-                    _felaRule={[Function]}
-                    passThrough={Array []}
-                  >
-                    <TableCell
-                      align="left"
-                      className="19q41br"
-                      is="td"
-                    >
-                      <td
-                        className="19q41br"
-                      />
-                    </TableCell>
-                  </TableCellStyles>
-                </TableCellStyles>
+                  <td
+                    className="19q41br"
+                  />
+                </TableCell>
               </FelaComponent>
             </ThemedComponent>
           </tr>

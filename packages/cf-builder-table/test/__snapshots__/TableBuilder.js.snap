@@ -273,154 +273,117 @@ exports[`should render a table 1`] = `
             tableName="test-table"
           >
             <ThemedComponent>
-              <TableStyles>
-                <TableStyles
-                  _felaRule={[Function]}
-                  passThrough={Array []}
+              <FelaComponent>
+                <Table
+                  bare={false}
+                  bordered={true}
+                  className="46sr0r"
+                  condensed={false}
+                  hover={false}
+                  is="table"
+                  striped={false}
                 >
-                  <Table
-                    bare={false}
-                    bordered={true}
+                  <table
                     className="46sr0r"
-                    condensed={false}
-                    hover={false}
-                    is="table"
-                    striped={false}
                   >
-                    <table
-                      className="46sr0r"
+                    <ThemedComponent
+                      bare={false}
+                      bordered={true}
+                      condensed={false}
+                      hover={false}
+                      striped={false}
                     >
-                      <ThemedComponent
+                      <FelaComponent
                         bare={false}
                         bordered={true}
                         condensed={false}
                         hover={false}
                         striped={false}
                       >
-                        <TableHeadStyles
+                        <TableHead
                           bare={false}
                           bordered={true}
+                          className="d1fi02"
                           condensed={false}
                           hover={false}
+                          is="thead"
                           striped={false}
                         >
-                          <TableHeadStyles
-                            _felaRule={[Function]}
-                            bare={false}
-                            bordered={true}
-                            condensed={false}
-                            hover={false}
-                            passThrough={Array []}
-                            striped={false}
+                          <thead
+                            className="d1fi02"
                           >
-                            <TableHead
+                            <ThemedComponent
                               bare={false}
                               bordered={true}
-                              className="d1fi02"
                               condensed={false}
                               hover={false}
-                              is="thead"
+                              rowIndex={-0}
                               striped={false}
+                              theadIndex={0}
                             >
-                              <thead
-                                className="d1fi02"
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={false}
+                                hover={false}
+                                rowIndex={-0}
+                                striped={false}
+                                theadIndex={0}
                               >
-                                <ThemedComponent
+                                <TableRow
                                   bare={false}
                                   bordered={true}
+                                  className="1b0jccb"
                                   condensed={false}
                                   hover={false}
+                                  is="tr"
                                   rowIndex={-0}
                                   striped={false}
                                   theadIndex={0}
+                                  type="default"
                                 >
-                                  <TableRowStyles
-                                    bare={false}
-                                    bordered={true}
-                                    condensed={false}
-                                    hover={false}
-                                    rowIndex={-0}
-                                    striped={false}
-                                    theadIndex={0}
-                                  >
-                                    <TableRowStyles
-                                      _felaRule={[Function]}
-                                      bare={false}
-                                      bordered={true}
-                                      condensed={false}
-                                      hover={false}
-                                      passThrough={Array []}
-                                      rowIndex={-0}
-                                      striped={false}
-                                      theadIndex={0}
-                                    >
-                                      <TableRow
-                                        bare={false}
-                                        bordered={true}
-                                        className="1b0jccb"
-                                        condensed={false}
-                                        hover={false}
-                                        is="tr"
-                                        rowIndex={-0}
-                                        striped={false}
-                                        theadIndex={0}
-                                        type="default"
-                                      >
-                                        <tr
-                                          className="1b0jccb"
-                                        />
-                                      </TableRow>
-                                    </TableRowStyles>
-                                  </TableRowStyles>
-                                </ThemedComponent>
-                              </thead>
-                            </TableHead>
-                          </TableHeadStyles>
-                        </TableHeadStyles>
-                      </ThemedComponent>
-                      <ThemedComponent
+                                  <tr
+                                    className="1b0jccb"
+                                  />
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                          </thead>
+                        </TableHead>
+                      </FelaComponent>
+                    </ThemedComponent>
+                    <ThemedComponent
+                      bare={false}
+                      bordered={true}
+                      condensed={false}
+                      hover={false}
+                      striped={false}
+                    >
+                      <FelaComponent
                         bare={false}
                         bordered={true}
                         condensed={false}
                         hover={false}
                         striped={false}
                       >
-                        <TableBodyStyles
+                        <TableBody
                           bare={false}
                           bordered={true}
+                          className="zos2pn"
                           condensed={false}
                           hover={false}
+                          is="tbody"
                           striped={false}
                         >
-                          <TableBodyStyles
-                            _felaRule={[Function]}
-                            bare={false}
-                            bordered={true}
-                            condensed={false}
-                            hover={false}
-                            passThrough={Array []}
-                            striped={false}
-                          >
-                            <TableBody
-                              bare={false}
-                              bordered={true}
-                              className="zos2pn"
-                              condensed={false}
-                              hover={false}
-                              is="tbody"
-                              striped={false}
-                            >
-                              <tbody
-                                className="zos2pn"
-                              />
-                            </TableBody>
-                          </TableBodyStyles>
-                        </TableBodyStyles>
-                      </ThemedComponent>
-                    </table>
-                  </Table>
-                </TableStyles>
-              </TableStyles>
+                          <tbody
+                            className="zos2pn"
+                          />
+                        </TableBody>
+                      </FelaComponent>
+                    </ThemedComponent>
+                  </table>
+                </Table>
+              </FelaComponent>
             </ThemedComponent>
           </TableBuilder>
         </Connect(TableBuilder)>
@@ -1083,628 +1046,455 @@ exports[`should render the dataset in columns 1`] = `
             tableName="test-table"
           >
             <ThemedComponent>
-              <TableStyles>
-                <TableStyles
-                  _felaRule={[Function]}
-                  passThrough={Array []}
+              <FelaComponent>
+                <Table
+                  bare={false}
+                  bordered={true}
+                  className="46sr0r"
+                  condensed={false}
+                  hover={false}
+                  is="table"
+                  striped={false}
                 >
-                  <Table
-                    bare={false}
-                    bordered={true}
+                  <table
                     className="46sr0r"
-                    condensed={false}
-                    hover={false}
-                    is="table"
-                    striped={false}
                   >
-                    <table
-                      className="46sr0r"
+                    <ThemedComponent
+                      bare={false}
+                      bordered={true}
+                      condensed={false}
+                      hover={false}
+                      striped={false}
                     >
-                      <ThemedComponent
+                      <FelaComponent
                         bare={false}
                         bordered={true}
                         condensed={false}
                         hover={false}
                         striped={false}
                       >
-                        <TableHeadStyles
+                        <TableHead
                           bare={false}
                           bordered={true}
+                          className="d1fi02"
                           condensed={false}
                           hover={false}
+                          is="thead"
                           striped={false}
                         >
-                          <TableHeadStyles
-                            _felaRule={[Function]}
-                            bare={false}
-                            bordered={true}
-                            condensed={false}
-                            hover={false}
-                            passThrough={Array []}
-                            striped={false}
+                          <thead
+                            className="d1fi02"
                           >
-                            <TableHead
+                            <ThemedComponent
                               bare={false}
                               bordered={true}
-                              className="d1fi02"
                               condensed={false}
                               hover={false}
-                              is="thead"
+                              rowIndex={-0}
                               striped={false}
+                              theadIndex={0}
                             >
-                              <thead
-                                className="d1fi02"
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={false}
+                                hover={false}
+                                rowIndex={-0}
+                                striped={false}
+                                theadIndex={0}
                               >
-                                <ThemedComponent
+                                <TableRow
                                   bare={false}
                                   bordered={true}
+                                  className="1b0jccb"
                                   condensed={false}
                                   hover={false}
+                                  is="tr"
                                   rowIndex={-0}
                                   striped={false}
                                   theadIndex={0}
+                                  type="default"
                                 >
-                                  <TableRowStyles
-                                    bare={false}
-                                    bordered={true}
-                                    condensed={false}
-                                    hover={false}
-                                    rowIndex={-0}
-                                    striped={false}
-                                    theadIndex={0}
+                                  <tr
+                                    className="1b0jccb"
                                   >
-                                    <TableRowStyles
-                                      _felaRule={[Function]}
+                                    <ThemedComponent
                                       bare={false}
                                       bordered={true}
+                                      cellIndex={0}
                                       condensed={false}
                                       hover={false}
-                                      passThrough={Array []}
                                       rowIndex={-0}
+                                      rowType="default"
                                       striped={false}
                                       theadIndex={0}
                                     >
-                                      <TableRow
+                                      <FelaComponent
                                         bare={false}
                                         bordered={true}
-                                        className="1b0jccb"
+                                        cellIndex={0}
                                         condensed={false}
                                         hover={false}
-                                        is="tr"
                                         rowIndex={-0}
+                                        rowType="default"
                                         striped={false}
                                         theadIndex={0}
-                                        type="default"
                                       >
-                                        <tr
-                                          className="1b0jccb"
+                                        <TableHeadCell
+                                          bare={false}
+                                          bordered={true}
+                                          cellIndex={0}
+                                          className="1fm7xdg"
+                                          condensed={false}
+                                          hover={false}
+                                          is="th"
+                                          rowIndex={-0}
+                                          rowType="default"
+                                          striped={false}
+                                          theadIndex={0}
                                         >
-                                          <ThemedComponent
-                                            bare={false}
-                                            bordered={true}
-                                            cellIndex={0}
-                                            condensed={false}
-                                            hover={false}
-                                            rowIndex={-0}
-                                            rowType="default"
-                                            striped={false}
-                                            theadIndex={0}
+                                          <th
+                                            className="1fm7xdg"
                                           >
-                                            <TableHeadCellStyles
-                                              bare={false}
-                                              bordered={true}
-                                              cellIndex={0}
-                                              condensed={false}
-                                              hover={false}
-                                              rowIndex={-0}
-                                              rowType="default"
-                                              striped={false}
-                                              theadIndex={0}
-                                            >
-                                              <TableCellStyles
-                                                _felaRule={[Function]}
-                                                bare={false}
-                                                bordered={true}
-                                                cellIndex={0}
-                                                condensed={false}
-                                                hover={false}
-                                                passThrough={Array []}
-                                                rowIndex={-0}
-                                                rowType="default"
-                                                striped={false}
-                                                theadIndex={0}
-                                              >
-                                                <TableCellStyles
-                                                  _felaRule={[Function]}
-                                                  bare={false}
-                                                  bordered={true}
-                                                  cellIndex={0}
-                                                  condensed={false}
-                                                  hover={false}
-                                                  passThrough={Array []}
-                                                  rowIndex={-0}
-                                                  rowType="default"
-                                                  striped={false}
-                                                  theadIndex={0}
-                                                >
-                                                  <TableHeadCell
-                                                    bare={false}
-                                                    bordered={true}
-                                                    cellIndex={0}
-                                                    className="1fm7xdg"
-                                                    condensed={false}
-                                                    hover={false}
-                                                    is="th"
-                                                    rowIndex={-0}
-                                                    rowType="default"
-                                                    striped={false}
-                                                    theadIndex={0}
-                                                  >
-                                                    <th
-                                                      className="1fm7xdg"
-                                                    >
-                                                      Name
-                                                    </th>
-                                                  </TableHeadCell>
-                                                </TableCellStyles>
-                                              </TableCellStyles>
-                                            </TableHeadCellStyles>
-                                          </ThemedComponent>
-                                          <ThemedComponent
-                                            bare={false}
-                                            bordered={true}
-                                            cellIndex={-1}
-                                            condensed={false}
-                                            hover={false}
-                                            rowIndex={-0}
-                                            rowType="default"
-                                            striped={false}
-                                            theadIndex={0}
+                                            Name
+                                          </th>
+                                        </TableHeadCell>
+                                      </FelaComponent>
+                                    </ThemedComponent>
+                                    <ThemedComponent
+                                      bare={false}
+                                      bordered={true}
+                                      cellIndex={-1}
+                                      condensed={false}
+                                      hover={false}
+                                      rowIndex={-0}
+                                      rowType="default"
+                                      striped={false}
+                                      theadIndex={0}
+                                    >
+                                      <FelaComponent
+                                        bare={false}
+                                        bordered={true}
+                                        cellIndex={-1}
+                                        condensed={false}
+                                        hover={false}
+                                        rowIndex={-0}
+                                        rowType="default"
+                                        striped={false}
+                                        theadIndex={0}
+                                      >
+                                        <TableHeadCell
+                                          bare={false}
+                                          bordered={true}
+                                          cellIndex={-1}
+                                          className="1ypdp8g"
+                                          condensed={false}
+                                          hover={false}
+                                          is="th"
+                                          rowIndex={-0}
+                                          rowType="default"
+                                          striped={false}
+                                          theadIndex={0}
+                                        >
+                                          <th
+                                            className="1ypdp8g"
                                           >
-                                            <TableHeadCellStyles
-                                              bare={false}
-                                              bordered={true}
-                                              cellIndex={-1}
-                                              condensed={false}
-                                              hover={false}
-                                              rowIndex={-0}
-                                              rowType="default"
-                                              striped={false}
-                                              theadIndex={0}
-                                            >
-                                              <TableCellStyles
-                                                _felaRule={[Function]}
-                                                bare={false}
-                                                bordered={true}
-                                                cellIndex={-1}
-                                                condensed={false}
-                                                hover={false}
-                                                passThrough={Array []}
-                                                rowIndex={-0}
-                                                rowType="default"
-                                                striped={false}
-                                                theadIndex={0}
-                                              >
-                                                <TableCellStyles
-                                                  _felaRule={[Function]}
-                                                  bare={false}
-                                                  bordered={true}
-                                                  cellIndex={-1}
-                                                  condensed={false}
-                                                  hover={false}
-                                                  passThrough={Array []}
-                                                  rowIndex={-0}
-                                                  rowType="default"
-                                                  striped={false}
-                                                  theadIndex={0}
-                                                >
-                                                  <TableHeadCell
-                                                    bare={false}
-                                                    bordered={true}
-                                                    cellIndex={-1}
-                                                    className="1ypdp8g"
-                                                    condensed={false}
-                                                    hover={false}
-                                                    is="th"
-                                                    rowIndex={-0}
-                                                    rowType="default"
-                                                    striped={false}
-                                                    theadIndex={0}
-                                                  >
-                                                    <th
-                                                      className="1ypdp8g"
-                                                    >
-                                                      Value
-                                                    </th>
-                                                  </TableHeadCell>
-                                                </TableCellStyles>
-                                              </TableCellStyles>
-                                            </TableHeadCellStyles>
-                                          </ThemedComponent>
-                                        </tr>
-                                      </TableRow>
-                                    </TableRowStyles>
-                                  </TableRowStyles>
-                                </ThemedComponent>
-                              </thead>
-                            </TableHead>
-                          </TableHeadStyles>
-                        </TableHeadStyles>
-                      </ThemedComponent>
-                      <ThemedComponent
+                                            Value
+                                          </th>
+                                        </TableHeadCell>
+                                      </FelaComponent>
+                                    </ThemedComponent>
+                                  </tr>
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                          </thead>
+                        </TableHead>
+                      </FelaComponent>
+                    </ThemedComponent>
+                    <ThemedComponent
+                      bare={false}
+                      bordered={true}
+                      condensed={false}
+                      hover={false}
+                      striped={false}
+                    >
+                      <FelaComponent
                         bare={false}
                         bordered={true}
                         condensed={false}
                         hover={false}
                         striped={false}
                       >
-                        <TableBodyStyles
+                        <TableBody
                           bare={false}
                           bordered={true}
+                          className="zos2pn"
                           condensed={false}
                           hover={false}
+                          is="tbody"
                           striped={false}
                         >
-                          <TableBodyStyles
-                            _felaRule={[Function]}
-                            bare={false}
-                            bordered={true}
-                            condensed={false}
-                            hover={false}
-                            passThrough={Array []}
-                            striped={false}
+                          <tbody
+                            className="zos2pn"
                           >
-                            <TableBody
+                            <ThemedComponent
                               bare={false}
                               bordered={true}
-                              className="zos2pn"
                               condensed={false}
                               hover={false}
-                              is="tbody"
+                              rowIndex={0}
                               striped={false}
+                              tbodyIndex={0}
                             >
-                              <tbody
-                                className="zos2pn"
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={false}
+                                hover={false}
+                                rowIndex={0}
+                                striped={false}
+                                tbodyIndex={0}
                               >
-                                <ThemedComponent
+                                <TableRow
                                   bare={false}
                                   bordered={true}
+                                  className="t9kph0"
                                   condensed={false}
                                   hover={false}
+                                  is="tr"
                                   rowIndex={0}
                                   striped={false}
                                   tbodyIndex={0}
+                                  type="default"
                                 >
-                                  <TableRowStyles
-                                    bare={false}
-                                    bordered={true}
-                                    condensed={false}
-                                    hover={false}
-                                    rowIndex={0}
-                                    striped={false}
-                                    tbodyIndex={0}
+                                  <tr
+                                    className="t9kph0"
                                   >
-                                    <TableRowStyles
-                                      _felaRule={[Function]}
+                                    <ThemedComponent
                                       bare={false}
                                       bordered={true}
+                                      cellIndex={0}
                                       condensed={false}
                                       hover={false}
-                                      passThrough={Array []}
                                       rowIndex={0}
+                                      rowType="default"
                                       striped={false}
                                       tbodyIndex={0}
                                     >
-                                      <TableRow
+                                      <FelaComponent
                                         bare={false}
                                         bordered={true}
-                                        className="t9kph0"
+                                        cellIndex={0}
                                         condensed={false}
                                         hover={false}
-                                        is="tr"
                                         rowIndex={0}
+                                        rowType="default"
                                         striped={false}
                                         tbodyIndex={0}
-                                        type="default"
                                       >
-                                        <tr
-                                          className="t9kph0"
+                                        <TableCell
+                                          align="left"
+                                          bare={false}
+                                          bordered={true}
+                                          cellIndex={0}
+                                          className="g0oihw"
+                                          condensed={false}
+                                          hover={false}
+                                          is="td"
+                                          rowIndex={0}
+                                          rowType="default"
+                                          striped={false}
+                                          tbodyIndex={0}
                                         >
-                                          <ThemedComponent
-                                            bare={false}
-                                            bordered={true}
-                                            cellIndex={0}
-                                            condensed={false}
-                                            hover={false}
-                                            rowIndex={0}
-                                            rowType="default"
-                                            striped={false}
-                                            tbodyIndex={0}
+                                          <td
+                                            className="g0oihw"
                                           >
-                                            <TableCellStyles
-                                              bare={false}
-                                              bordered={true}
-                                              cellIndex={0}
-                                              condensed={false}
-                                              hover={false}
-                                              rowIndex={0}
-                                              rowType="default"
-                                              striped={false}
-                                              tbodyIndex={0}
-                                            >
-                                              <TableCellStyles
-                                                _felaRule={[Function]}
-                                                bare={false}
-                                                bordered={true}
-                                                cellIndex={0}
-                                                condensed={false}
-                                                hover={false}
-                                                passThrough={Array []}
-                                                rowIndex={0}
-                                                rowType="default"
-                                                striped={false}
-                                                tbodyIndex={0}
-                                              >
-                                                <TableCell
-                                                  align="left"
-                                                  bare={false}
-                                                  bordered={true}
-                                                  cellIndex={0}
-                                                  className="g0oihw"
-                                                  condensed={false}
-                                                  hover={false}
-                                                  is="td"
-                                                  rowIndex={0}
-                                                  rowType="default"
-                                                  striped={false}
-                                                  tbodyIndex={0}
-                                                >
-                                                  <td
-                                                    className="g0oihw"
-                                                  >
-                                                    Foo
-                                                  </td>
-                                                </TableCell>
-                                              </TableCellStyles>
-                                            </TableCellStyles>
-                                          </ThemedComponent>
-                                          <ThemedComponent
-                                            bare={false}
-                                            bordered={true}
-                                            cellIndex={-1}
-                                            condensed={false}
-                                            hover={false}
-                                            rowIndex={0}
-                                            rowType="default"
-                                            striped={false}
-                                            tbodyIndex={0}
+                                            Foo
+                                          </td>
+                                        </TableCell>
+                                      </FelaComponent>
+                                    </ThemedComponent>
+                                    <ThemedComponent
+                                      bare={false}
+                                      bordered={true}
+                                      cellIndex={-1}
+                                      condensed={false}
+                                      hover={false}
+                                      rowIndex={0}
+                                      rowType="default"
+                                      striped={false}
+                                      tbodyIndex={0}
+                                    >
+                                      <FelaComponent
+                                        bare={false}
+                                        bordered={true}
+                                        cellIndex={-1}
+                                        condensed={false}
+                                        hover={false}
+                                        rowIndex={0}
+                                        rowType="default"
+                                        striped={false}
+                                        tbodyIndex={0}
+                                      >
+                                        <TableCell
+                                          align="left"
+                                          bare={false}
+                                          bordered={true}
+                                          cellIndex={-1}
+                                          className="9yqouo"
+                                          condensed={false}
+                                          hover={false}
+                                          is="td"
+                                          rowIndex={0}
+                                          rowType="default"
+                                          striped={false}
+                                          tbodyIndex={0}
+                                        >
+                                          <td
+                                            className="9yqouo"
                                           >
-                                            <TableCellStyles
-                                              bare={false}
-                                              bordered={true}
-                                              cellIndex={-1}
-                                              condensed={false}
-                                              hover={false}
-                                              rowIndex={0}
-                                              rowType="default"
-                                              striped={false}
-                                              tbodyIndex={0}
-                                            >
-                                              <TableCellStyles
-                                                _felaRule={[Function]}
-                                                bare={false}
-                                                bordered={true}
-                                                cellIndex={-1}
-                                                condensed={false}
-                                                hover={false}
-                                                passThrough={Array []}
-                                                rowIndex={0}
-                                                rowType="default"
-                                                striped={false}
-                                                tbodyIndex={0}
-                                              >
-                                                <TableCell
-                                                  align="left"
-                                                  bare={false}
-                                                  bordered={true}
-                                                  cellIndex={-1}
-                                                  className="9yqouo"
-                                                  condensed={false}
-                                                  hover={false}
-                                                  is="td"
-                                                  rowIndex={0}
-                                                  rowType="default"
-                                                  striped={false}
-                                                  tbodyIndex={0}
-                                                >
-                                                  <td
-                                                    className="9yqouo"
-                                                  >
-                                                    foo
-                                                  </td>
-                                                </TableCell>
-                                              </TableCellStyles>
-                                            </TableCellStyles>
-                                          </ThemedComponent>
-                                        </tr>
-                                      </TableRow>
-                                    </TableRowStyles>
-                                  </TableRowStyles>
-                                </ThemedComponent>
-                                <ThemedComponent
+                                            foo
+                                          </td>
+                                        </TableCell>
+                                      </FelaComponent>
+                                    </ThemedComponent>
+                                  </tr>
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                            <ThemedComponent
+                              bare={false}
+                              bordered={true}
+                              condensed={false}
+                              hover={false}
+                              rowIndex={-1}
+                              striped={false}
+                              tbodyIndex={0}
+                            >
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={false}
+                                hover={false}
+                                rowIndex={-1}
+                                striped={false}
+                                tbodyIndex={0}
+                              >
+                                <TableRow
                                   bare={false}
                                   bordered={true}
+                                  className="1uiy02g"
                                   condensed={false}
                                   hover={false}
+                                  is="tr"
                                   rowIndex={-1}
                                   striped={false}
                                   tbodyIndex={0}
+                                  type="default"
                                 >
-                                  <TableRowStyles
-                                    bare={false}
-                                    bordered={true}
-                                    condensed={false}
-                                    hover={false}
-                                    rowIndex={-1}
-                                    striped={false}
-                                    tbodyIndex={0}
+                                  <tr
+                                    className="1uiy02g"
                                   >
-                                    <TableRowStyles
-                                      _felaRule={[Function]}
+                                    <ThemedComponent
                                       bare={false}
                                       bordered={true}
+                                      cellIndex={0}
                                       condensed={false}
                                       hover={false}
-                                      passThrough={Array []}
                                       rowIndex={-1}
+                                      rowType="default"
                                       striped={false}
                                       tbodyIndex={0}
                                     >
-                                      <TableRow
+                                      <FelaComponent
                                         bare={false}
                                         bordered={true}
-                                        className="1uiy02g"
+                                        cellIndex={0}
                                         condensed={false}
                                         hover={false}
-                                        is="tr"
                                         rowIndex={-1}
+                                        rowType="default"
                                         striped={false}
                                         tbodyIndex={0}
-                                        type="default"
                                       >
-                                        <tr
-                                          className="1uiy02g"
+                                        <TableCell
+                                          align="left"
+                                          bare={false}
+                                          bordered={true}
+                                          cellIndex={0}
+                                          className="1c6l5ki"
+                                          condensed={false}
+                                          hover={false}
+                                          is="td"
+                                          rowIndex={-1}
+                                          rowType="default"
+                                          striped={false}
+                                          tbodyIndex={0}
                                         >
-                                          <ThemedComponent
-                                            bare={false}
-                                            bordered={true}
-                                            cellIndex={0}
-                                            condensed={false}
-                                            hover={false}
-                                            rowIndex={-1}
-                                            rowType="default"
-                                            striped={false}
-                                            tbodyIndex={0}
+                                          <td
+                                            className="1c6l5ki"
                                           >
-                                            <TableCellStyles
-                                              bare={false}
-                                              bordered={true}
-                                              cellIndex={0}
-                                              condensed={false}
-                                              hover={false}
-                                              rowIndex={-1}
-                                              rowType="default"
-                                              striped={false}
-                                              tbodyIndex={0}
-                                            >
-                                              <TableCellStyles
-                                                _felaRule={[Function]}
-                                                bare={false}
-                                                bordered={true}
-                                                cellIndex={0}
-                                                condensed={false}
-                                                hover={false}
-                                                passThrough={Array []}
-                                                rowIndex={-1}
-                                                rowType="default"
-                                                striped={false}
-                                                tbodyIndex={0}
-                                              >
-                                                <TableCell
-                                                  align="left"
-                                                  bare={false}
-                                                  bordered={true}
-                                                  cellIndex={0}
-                                                  className="1c6l5ki"
-                                                  condensed={false}
-                                                  hover={false}
-                                                  is="td"
-                                                  rowIndex={-1}
-                                                  rowType="default"
-                                                  striped={false}
-                                                  tbodyIndex={0}
-                                                >
-                                                  <td
-                                                    className="1c6l5ki"
-                                                  >
-                                                    Bar
-                                                  </td>
-                                                </TableCell>
-                                              </TableCellStyles>
-                                            </TableCellStyles>
-                                          </ThemedComponent>
-                                          <ThemedComponent
-                                            bare={false}
-                                            bordered={true}
-                                            cellIndex={-1}
-                                            condensed={false}
-                                            hover={false}
-                                            rowIndex={-1}
-                                            rowType="default"
-                                            striped={false}
-                                            tbodyIndex={0}
+                                            Bar
+                                          </td>
+                                        </TableCell>
+                                      </FelaComponent>
+                                    </ThemedComponent>
+                                    <ThemedComponent
+                                      bare={false}
+                                      bordered={true}
+                                      cellIndex={-1}
+                                      condensed={false}
+                                      hover={false}
+                                      rowIndex={-1}
+                                      rowType="default"
+                                      striped={false}
+                                      tbodyIndex={0}
+                                    >
+                                      <FelaComponent
+                                        bare={false}
+                                        bordered={true}
+                                        cellIndex={-1}
+                                        condensed={false}
+                                        hover={false}
+                                        rowIndex={-1}
+                                        rowType="default"
+                                        striped={false}
+                                        tbodyIndex={0}
+                                      >
+                                        <TableCell
+                                          align="left"
+                                          bare={false}
+                                          bordered={true}
+                                          cellIndex={-1}
+                                          className="1f59ksd"
+                                          condensed={false}
+                                          hover={false}
+                                          is="td"
+                                          rowIndex={-1}
+                                          rowType="default"
+                                          striped={false}
+                                          tbodyIndex={0}
+                                        >
+                                          <td
+                                            className="1f59ksd"
                                           >
-                                            <TableCellStyles
-                                              bare={false}
-                                              bordered={true}
-                                              cellIndex={-1}
-                                              condensed={false}
-                                              hover={false}
-                                              rowIndex={-1}
-                                              rowType="default"
-                                              striped={false}
-                                              tbodyIndex={0}
-                                            >
-                                              <TableCellStyles
-                                                _felaRule={[Function]}
-                                                bare={false}
-                                                bordered={true}
-                                                cellIndex={-1}
-                                                condensed={false}
-                                                hover={false}
-                                                passThrough={Array []}
-                                                rowIndex={-1}
-                                                rowType="default"
-                                                striped={false}
-                                                tbodyIndex={0}
-                                              >
-                                                <TableCell
-                                                  align="left"
-                                                  bare={false}
-                                                  bordered={true}
-                                                  cellIndex={-1}
-                                                  className="1f59ksd"
-                                                  condensed={false}
-                                                  hover={false}
-                                                  is="td"
-                                                  rowIndex={-1}
-                                                  rowType="default"
-                                                  striped={false}
-                                                  tbodyIndex={0}
-                                                >
-                                                  <td
-                                                    className="1f59ksd"
-                                                  >
-                                                    bar
-                                                  </td>
-                                                </TableCell>
-                                              </TableCellStyles>
-                                            </TableCellStyles>
-                                          </ThemedComponent>
-                                        </tr>
-                                      </TableRow>
-                                    </TableRowStyles>
-                                  </TableRowStyles>
-                                </ThemedComponent>
-                              </tbody>
-                            </TableBody>
-                          </TableBodyStyles>
-                        </TableBodyStyles>
-                      </ThemedComponent>
-                    </table>
-                  </Table>
-                </TableStyles>
-              </TableStyles>
+                                            bar
+                                          </td>
+                                        </TableCell>
+                                      </FelaComponent>
+                                    </ThemedComponent>
+                                  </tr>
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                          </tbody>
+                        </TableBody>
+                      </FelaComponent>
+                    </ThemedComponent>
+                  </table>
+                </Table>
+              </FelaComponent>
             </ThemedComponent>
           </TableBuilder>
         </Connect(TableBuilder)>
@@ -2122,254 +1912,192 @@ exports[`should support flashes 1`] = `
             tableName="test-table"
           >
             <ThemedComponent>
-              <TableStyles>
-                <TableStyles
-                  _felaRule={[Function]}
-                  passThrough={Array []}
+              <FelaComponent>
+                <Table
+                  bare={false}
+                  bordered={true}
+                  className="46sr0r"
+                  condensed={false}
+                  hover={false}
+                  is="table"
+                  striped={false}
                 >
-                  <Table
-                    bare={false}
-                    bordered={true}
+                  <table
                     className="46sr0r"
-                    condensed={false}
-                    hover={false}
-                    is="table"
-                    striped={false}
                   >
-                    <table
-                      className="46sr0r"
+                    <ThemedComponent
+                      bare={false}
+                      bordered={true}
+                      condensed={false}
+                      hover={false}
+                      striped={false}
                     >
-                      <ThemedComponent
+                      <FelaComponent
                         bare={false}
                         bordered={true}
                         condensed={false}
                         hover={false}
                         striped={false}
                       >
-                        <TableHeadStyles
+                        <TableHead
                           bare={false}
                           bordered={true}
+                          className="d1fi02"
                           condensed={false}
                           hover={false}
+                          is="thead"
                           striped={false}
                         >
-                          <TableHeadStyles
-                            _felaRule={[Function]}
-                            bare={false}
-                            bordered={true}
-                            condensed={false}
-                            hover={false}
-                            passThrough={Array []}
-                            striped={false}
+                          <thead
+                            className="d1fi02"
                           >
-                            <TableHead
+                            <ThemedComponent
                               bare={false}
                               bordered={true}
-                              className="d1fi02"
                               condensed={false}
                               hover={false}
-                              is="thead"
+                              rowIndex={-0}
                               striped={false}
+                              theadIndex={0}
                             >
-                              <thead
-                                className="d1fi02"
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={false}
+                                hover={false}
+                                rowIndex={-0}
+                                striped={false}
+                                theadIndex={0}
                               >
-                                <ThemedComponent
+                                <TableRow
                                   bare={false}
                                   bordered={true}
+                                  className="1b0jccb"
                                   condensed={false}
                                   hover={false}
+                                  is="tr"
                                   rowIndex={-0}
                                   striped={false}
                                   theadIndex={0}
+                                  type="default"
                                 >
-                                  <TableRowStyles
-                                    bare={false}
-                                    bordered={true}
-                                    condensed={false}
-                                    hover={false}
-                                    rowIndex={-0}
-                                    striped={false}
-                                    theadIndex={0}
-                                  >
-                                    <TableRowStyles
-                                      _felaRule={[Function]}
-                                      bare={false}
-                                      bordered={true}
-                                      condensed={false}
-                                      hover={false}
-                                      passThrough={Array []}
-                                      rowIndex={-0}
-                                      striped={false}
-                                      theadIndex={0}
-                                    >
-                                      <TableRow
-                                        bare={false}
-                                        bordered={true}
-                                        className="1b0jccb"
-                                        condensed={false}
-                                        hover={false}
-                                        is="tr"
-                                        rowIndex={-0}
-                                        striped={false}
-                                        theadIndex={0}
-                                        type="default"
-                                      >
-                                        <tr
-                                          className="1b0jccb"
-                                        />
-                                      </TableRow>
-                                    </TableRowStyles>
-                                  </TableRowStyles>
-                                </ThemedComponent>
-                              </thead>
-                            </TableHead>
-                          </TableHeadStyles>
-                        </TableHeadStyles>
-                      </ThemedComponent>
-                      <ThemedComponent
+                                  <tr
+                                    className="1b0jccb"
+                                  />
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                          </thead>
+                        </TableHead>
+                      </FelaComponent>
+                    </ThemedComponent>
+                    <ThemedComponent
+                      bare={false}
+                      bordered={true}
+                      condensed={false}
+                      hover={false}
+                      striped={false}
+                    >
+                      <FelaComponent
                         bare={false}
                         bordered={true}
                         condensed={false}
                         hover={false}
                         striped={false}
                       >
-                        <TableBodyStyles
+                        <TableBody
                           bare={false}
                           bordered={true}
+                          className="zos2pn"
                           condensed={false}
                           hover={false}
+                          is="tbody"
                           striped={false}
                         >
-                          <TableBodyStyles
-                            _felaRule={[Function]}
-                            bare={false}
-                            bordered={true}
-                            condensed={false}
-                            hover={false}
-                            passThrough={Array []}
-                            striped={false}
+                          <tbody
+                            className="zos2pn"
                           >
-                            <TableBody
+                            <ThemedComponent
                               bare={false}
                               bordered={true}
-                              className="zos2pn"
                               condensed={false}
                               hover={false}
-                              is="tbody"
+                              rowIndex={0}
                               striped={false}
+                              tbodyIndex={0}
+                              type="success"
                             >
-                              <tbody
-                                className="zos2pn"
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={false}
+                                hover={false}
+                                rowIndex={0}
+                                striped={false}
+                                tbodyIndex={0}
+                                type="success"
                               >
-                                <ThemedComponent
+                                <TableRow
                                   bare={false}
                                   bordered={true}
+                                  className="14uu5dt"
                                   condensed={false}
                                   hover={false}
+                                  is="tr"
                                   rowIndex={0}
                                   striped={false}
                                   tbodyIndex={0}
                                   type="success"
                                 >
-                                  <TableRowStyles
-                                    bare={false}
-                                    bordered={true}
-                                    condensed={false}
-                                    hover={false}
-                                    rowIndex={0}
-                                    striped={false}
-                                    tbodyIndex={0}
-                                    type="success"
-                                  >
-                                    <TableRowStyles
-                                      _felaRule={[Function]}
-                                      bare={false}
-                                      bordered={true}
-                                      condensed={false}
-                                      hover={false}
-                                      passThrough={Array []}
-                                      rowIndex={0}
-                                      striped={false}
-                                      tbodyIndex={0}
-                                      type="success"
-                                    >
-                                      <TableRow
-                                        bare={false}
-                                        bordered={true}
-                                        className="14uu5dt"
-                                        condensed={false}
-                                        hover={false}
-                                        is="tr"
-                                        rowIndex={0}
-                                        striped={false}
-                                        tbodyIndex={0}
-                                        type="success"
-                                      >
-                                        <tr
-                                          className="14uu5dt"
-                                        />
-                                      </TableRow>
-                                    </TableRowStyles>
-                                  </TableRowStyles>
-                                </ThemedComponent>
-                                <ThemedComponent
+                                  <tr
+                                    className="14uu5dt"
+                                  />
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                            <ThemedComponent
+                              bare={false}
+                              bordered={true}
+                              condensed={false}
+                              hover={false}
+                              rowIndex={-1}
+                              striped={false}
+                              tbodyIndex={0}
+                            >
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={false}
+                                hover={false}
+                                rowIndex={-1}
+                                striped={false}
+                                tbodyIndex={0}
+                              >
+                                <TableRow
                                   bare={false}
                                   bordered={true}
+                                  className="1uiy02g"
                                   condensed={false}
                                   hover={false}
+                                  is="tr"
                                   rowIndex={-1}
                                   striped={false}
                                   tbodyIndex={0}
+                                  type="default"
                                 >
-                                  <TableRowStyles
-                                    bare={false}
-                                    bordered={true}
-                                    condensed={false}
-                                    hover={false}
-                                    rowIndex={-1}
-                                    striped={false}
-                                    tbodyIndex={0}
-                                  >
-                                    <TableRowStyles
-                                      _felaRule={[Function]}
-                                      bare={false}
-                                      bordered={true}
-                                      condensed={false}
-                                      hover={false}
-                                      passThrough={Array []}
-                                      rowIndex={-1}
-                                      striped={false}
-                                      tbodyIndex={0}
-                                    >
-                                      <TableRow
-                                        bare={false}
-                                        bordered={true}
-                                        className="1uiy02g"
-                                        condensed={false}
-                                        hover={false}
-                                        is="tr"
-                                        rowIndex={-1}
-                                        striped={false}
-                                        tbodyIndex={0}
-                                        type="default"
-                                      >
-                                        <tr
-                                          className="1uiy02g"
-                                        />
-                                      </TableRow>
-                                    </TableRowStyles>
-                                  </TableRowStyles>
-                                </ThemedComponent>
-                              </tbody>
-                            </TableBody>
-                          </TableBodyStyles>
-                        </TableBodyStyles>
-                      </ThemedComponent>
-                    </table>
-                  </Table>
-                </TableStyles>
-              </TableStyles>
+                                  <tr
+                                    className="1uiy02g"
+                                  />
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                          </tbody>
+                        </TableBody>
+                      </FelaComponent>
+                    </ThemedComponent>
+                  </table>
+                </Table>
+              </FelaComponent>
             </ThemedComponent>
           </TableBuilder>
         </Connect(TableBuilder)>
@@ -2784,254 +2512,192 @@ exports[`should support row type/accent 1`] = `
             tableName="test-table"
           >
             <ThemedComponent>
-              <TableStyles>
-                <TableStyles
-                  _felaRule={[Function]}
-                  passThrough={Array []}
+              <FelaComponent>
+                <Table
+                  bare={false}
+                  bordered={true}
+                  className="46sr0r"
+                  condensed={false}
+                  hover={false}
+                  is="table"
+                  striped={false}
                 >
-                  <Table
-                    bare={false}
-                    bordered={true}
+                  <table
                     className="46sr0r"
-                    condensed={false}
-                    hover={false}
-                    is="table"
-                    striped={false}
                   >
-                    <table
-                      className="46sr0r"
+                    <ThemedComponent
+                      bare={false}
+                      bordered={true}
+                      condensed={false}
+                      hover={false}
+                      striped={false}
                     >
-                      <ThemedComponent
+                      <FelaComponent
                         bare={false}
                         bordered={true}
                         condensed={false}
                         hover={false}
                         striped={false}
                       >
-                        <TableHeadStyles
+                        <TableHead
                           bare={false}
                           bordered={true}
+                          className="d1fi02"
                           condensed={false}
                           hover={false}
+                          is="thead"
                           striped={false}
                         >
-                          <TableHeadStyles
-                            _felaRule={[Function]}
-                            bare={false}
-                            bordered={true}
-                            condensed={false}
-                            hover={false}
-                            passThrough={Array []}
-                            striped={false}
+                          <thead
+                            className="d1fi02"
                           >
-                            <TableHead
+                            <ThemedComponent
                               bare={false}
                               bordered={true}
-                              className="d1fi02"
                               condensed={false}
                               hover={false}
-                              is="thead"
+                              rowIndex={-0}
                               striped={false}
+                              theadIndex={0}
                             >
-                              <thead
-                                className="d1fi02"
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={false}
+                                hover={false}
+                                rowIndex={-0}
+                                striped={false}
+                                theadIndex={0}
                               >
-                                <ThemedComponent
+                                <TableRow
                                   bare={false}
                                   bordered={true}
+                                  className="1b0jccb"
                                   condensed={false}
                                   hover={false}
+                                  is="tr"
                                   rowIndex={-0}
                                   striped={false}
                                   theadIndex={0}
+                                  type="default"
                                 >
-                                  <TableRowStyles
-                                    bare={false}
-                                    bordered={true}
-                                    condensed={false}
-                                    hover={false}
-                                    rowIndex={-0}
-                                    striped={false}
-                                    theadIndex={0}
-                                  >
-                                    <TableRowStyles
-                                      _felaRule={[Function]}
-                                      bare={false}
-                                      bordered={true}
-                                      condensed={false}
-                                      hover={false}
-                                      passThrough={Array []}
-                                      rowIndex={-0}
-                                      striped={false}
-                                      theadIndex={0}
-                                    >
-                                      <TableRow
-                                        bare={false}
-                                        bordered={true}
-                                        className="1b0jccb"
-                                        condensed={false}
-                                        hover={false}
-                                        is="tr"
-                                        rowIndex={-0}
-                                        striped={false}
-                                        theadIndex={0}
-                                        type="default"
-                                      >
-                                        <tr
-                                          className="1b0jccb"
-                                        />
-                                      </TableRow>
-                                    </TableRowStyles>
-                                  </TableRowStyles>
-                                </ThemedComponent>
-                              </thead>
-                            </TableHead>
-                          </TableHeadStyles>
-                        </TableHeadStyles>
-                      </ThemedComponent>
-                      <ThemedComponent
+                                  <tr
+                                    className="1b0jccb"
+                                  />
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                          </thead>
+                        </TableHead>
+                      </FelaComponent>
+                    </ThemedComponent>
+                    <ThemedComponent
+                      bare={false}
+                      bordered={true}
+                      condensed={false}
+                      hover={false}
+                      striped={false}
+                    >
+                      <FelaComponent
                         bare={false}
                         bordered={true}
                         condensed={false}
                         hover={false}
                         striped={false}
                       >
-                        <TableBodyStyles
+                        <TableBody
                           bare={false}
                           bordered={true}
+                          className="zos2pn"
                           condensed={false}
                           hover={false}
+                          is="tbody"
                           striped={false}
                         >
-                          <TableBodyStyles
-                            _felaRule={[Function]}
-                            bare={false}
-                            bordered={true}
-                            condensed={false}
-                            hover={false}
-                            passThrough={Array []}
-                            striped={false}
+                          <tbody
+                            className="zos2pn"
                           >
-                            <TableBody
+                            <ThemedComponent
                               bare={false}
                               bordered={true}
-                              className="zos2pn"
                               condensed={false}
                               hover={false}
-                              is="tbody"
+                              rowIndex={0}
                               striped={false}
+                              tbodyIndex={0}
+                              type="success"
                             >
-                              <tbody
-                                className="zos2pn"
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={false}
+                                hover={false}
+                                rowIndex={0}
+                                striped={false}
+                                tbodyIndex={0}
+                                type="success"
                               >
-                                <ThemedComponent
+                                <TableRow
                                   bare={false}
                                   bordered={true}
+                                  className="14uu5dt"
                                   condensed={false}
                                   hover={false}
+                                  is="tr"
                                   rowIndex={0}
                                   striped={false}
                                   tbodyIndex={0}
                                   type="success"
                                 >
-                                  <TableRowStyles
-                                    bare={false}
-                                    bordered={true}
-                                    condensed={false}
-                                    hover={false}
-                                    rowIndex={0}
-                                    striped={false}
-                                    tbodyIndex={0}
-                                    type="success"
-                                  >
-                                    <TableRowStyles
-                                      _felaRule={[Function]}
-                                      bare={false}
-                                      bordered={true}
-                                      condensed={false}
-                                      hover={false}
-                                      passThrough={Array []}
-                                      rowIndex={0}
-                                      striped={false}
-                                      tbodyIndex={0}
-                                      type="success"
-                                    >
-                                      <TableRow
-                                        bare={false}
-                                        bordered={true}
-                                        className="14uu5dt"
-                                        condensed={false}
-                                        hover={false}
-                                        is="tr"
-                                        rowIndex={0}
-                                        striped={false}
-                                        tbodyIndex={0}
-                                        type="success"
-                                      >
-                                        <tr
-                                          className="14uu5dt"
-                                        />
-                                      </TableRow>
-                                    </TableRowStyles>
-                                  </TableRowStyles>
-                                </ThemedComponent>
-                                <ThemedComponent
+                                  <tr
+                                    className="14uu5dt"
+                                  />
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                            <ThemedComponent
+                              bare={false}
+                              bordered={true}
+                              condensed={false}
+                              hover={false}
+                              rowIndex={-1}
+                              striped={false}
+                              tbodyIndex={0}
+                            >
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={false}
+                                hover={false}
+                                rowIndex={-1}
+                                striped={false}
+                                tbodyIndex={0}
+                              >
+                                <TableRow
                                   bare={false}
                                   bordered={true}
+                                  className="1uiy02g"
                                   condensed={false}
                                   hover={false}
+                                  is="tr"
                                   rowIndex={-1}
                                   striped={false}
                                   tbodyIndex={0}
+                                  type="default"
                                 >
-                                  <TableRowStyles
-                                    bare={false}
-                                    bordered={true}
-                                    condensed={false}
-                                    hover={false}
-                                    rowIndex={-1}
-                                    striped={false}
-                                    tbodyIndex={0}
-                                  >
-                                    <TableRowStyles
-                                      _felaRule={[Function]}
-                                      bare={false}
-                                      bordered={true}
-                                      condensed={false}
-                                      hover={false}
-                                      passThrough={Array []}
-                                      rowIndex={-1}
-                                      striped={false}
-                                      tbodyIndex={0}
-                                    >
-                                      <TableRow
-                                        bare={false}
-                                        bordered={true}
-                                        className="1uiy02g"
-                                        condensed={false}
-                                        hover={false}
-                                        is="tr"
-                                        rowIndex={-1}
-                                        striped={false}
-                                        tbodyIndex={0}
-                                        type="default"
-                                      >
-                                        <tr
-                                          className="1uiy02g"
-                                        />
-                                      </TableRow>
-                                    </TableRowStyles>
-                                  </TableRowStyles>
-                                </ThemedComponent>
-                              </tbody>
-                            </TableBody>
-                          </TableBodyStyles>
-                        </TableBodyStyles>
-                      </ThemedComponent>
-                    </table>
-                  </Table>
-                </TableStyles>
-              </TableStyles>
+                                  <tr
+                                    className="1uiy02g"
+                                  />
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                          </tbody>
+                        </TableBody>
+                      </FelaComponent>
+                    </ThemedComponent>
+                  </table>
+                </Table>
+              </FelaComponent>
             </ThemedComponent>
           </TableBuilder>
         </Connect(TableBuilder)>
@@ -3331,163 +2997,122 @@ exports[`should support table props 1`] = `
               hover={true}
               striped={true}
             >
-              <TableStyles
+              <FelaComponent
                 bordered={true}
                 condensed={true}
                 hover={true}
                 striped={true}
               >
-                <TableStyles
-                  _felaRule={[Function]}
+                <Table
+                  bare={false}
                   bordered={true}
+                  className="127ooxc"
                   condensed={true}
                   hover={true}
-                  passThrough={Array []}
+                  is="table"
                   striped={true}
                 >
-                  <Table
-                    bare={false}
-                    bordered={true}
+                  <table
                     className="127ooxc"
-                    condensed={true}
-                    hover={true}
-                    is="table"
-                    striped={true}
                   >
-                    <table
-                      className="127ooxc"
+                    <ThemedComponent
+                      bare={false}
+                      bordered={true}
+                      condensed={true}
+                      hover={true}
+                      striped={true}
                     >
-                      <ThemedComponent
+                      <FelaComponent
                         bare={false}
                         bordered={true}
                         condensed={true}
                         hover={true}
                         striped={true}
                       >
-                        <TableHeadStyles
+                        <TableHead
                           bare={false}
                           bordered={true}
+                          className="d1fi02"
                           condensed={true}
                           hover={true}
+                          is="thead"
                           striped={true}
                         >
-                          <TableHeadStyles
-                            _felaRule={[Function]}
-                            bare={false}
-                            bordered={true}
-                            condensed={true}
-                            hover={true}
-                            passThrough={Array []}
-                            striped={true}
+                          <thead
+                            className="d1fi02"
                           >
-                            <TableHead
+                            <ThemedComponent
                               bare={false}
                               bordered={true}
-                              className="d1fi02"
                               condensed={true}
                               hover={true}
-                              is="thead"
+                              rowIndex={-0}
                               striped={true}
+                              theadIndex={0}
                             >
-                              <thead
-                                className="d1fi02"
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={true}
+                                hover={true}
+                                rowIndex={-0}
+                                striped={true}
+                                theadIndex={0}
                               >
-                                <ThemedComponent
+                                <TableRow
                                   bare={false}
                                   bordered={true}
+                                  className="1b0jccb"
                                   condensed={true}
                                   hover={true}
+                                  is="tr"
                                   rowIndex={-0}
                                   striped={true}
                                   theadIndex={0}
+                                  type="default"
                                 >
-                                  <TableRowStyles
-                                    bare={false}
-                                    bordered={true}
-                                    condensed={true}
-                                    hover={true}
-                                    rowIndex={-0}
-                                    striped={true}
-                                    theadIndex={0}
-                                  >
-                                    <TableRowStyles
-                                      _felaRule={[Function]}
-                                      bare={false}
-                                      bordered={true}
-                                      condensed={true}
-                                      hover={true}
-                                      passThrough={Array []}
-                                      rowIndex={-0}
-                                      striped={true}
-                                      theadIndex={0}
-                                    >
-                                      <TableRow
-                                        bare={false}
-                                        bordered={true}
-                                        className="1b0jccb"
-                                        condensed={true}
-                                        hover={true}
-                                        is="tr"
-                                        rowIndex={-0}
-                                        striped={true}
-                                        theadIndex={0}
-                                        type="default"
-                                      >
-                                        <tr
-                                          className="1b0jccb"
-                                        />
-                                      </TableRow>
-                                    </TableRowStyles>
-                                  </TableRowStyles>
-                                </ThemedComponent>
-                              </thead>
-                            </TableHead>
-                          </TableHeadStyles>
-                        </TableHeadStyles>
-                      </ThemedComponent>
-                      <ThemedComponent
+                                  <tr
+                                    className="1b0jccb"
+                                  />
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                          </thead>
+                        </TableHead>
+                      </FelaComponent>
+                    </ThemedComponent>
+                    <ThemedComponent
+                      bare={false}
+                      bordered={true}
+                      condensed={true}
+                      hover={true}
+                      striped={true}
+                    >
+                      <FelaComponent
                         bare={false}
                         bordered={true}
                         condensed={true}
                         hover={true}
                         striped={true}
                       >
-                        <TableBodyStyles
+                        <TableBody
                           bare={false}
                           bordered={true}
+                          className="zos2pn"
                           condensed={true}
                           hover={true}
+                          is="tbody"
                           striped={true}
                         >
-                          <TableBodyStyles
-                            _felaRule={[Function]}
-                            bare={false}
-                            bordered={true}
-                            condensed={true}
-                            hover={true}
-                            passThrough={Array []}
-                            striped={true}
-                          >
-                            <TableBody
-                              bare={false}
-                              bordered={true}
-                              className="zos2pn"
-                              condensed={true}
-                              hover={true}
-                              is="tbody"
-                              striped={true}
-                            >
-                              <tbody
-                                className="zos2pn"
-                              />
-                            </TableBody>
-                          </TableBodyStyles>
-                        </TableBodyStyles>
-                      </ThemedComponent>
-                    </table>
-                  </Table>
-                </TableStyles>
-              </TableStyles>
+                          <tbody
+                            className="zos2pn"
+                          />
+                        </TableBody>
+                      </FelaComponent>
+                    </ThemedComponent>
+                  </table>
+                </Table>
+              </FelaComponent>
             </ThemedComponent>
           </TableBuilder>
         </Connect(TableBuilder)>

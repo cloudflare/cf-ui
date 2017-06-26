@@ -221,76 +221,51 @@ exports[`TableFoot should compose with styles overrides 1`] = `
       }
     >
       <ThemedComponent>
-        <TableStyles>
-          <TableStyles
-            _felaRule={[Function]}
-            passThrough={Array []}
+        <FelaComponent>
+          <Table
+            bare={false}
+            bordered={true}
+            className="46sr0r"
+            condensed={false}
+            hover={false}
+            is="table"
+            striped={false}
           >
-            <Table
-              bare={false}
-              bordered={true}
+            <table
               className="46sr0r"
-              condensed={false}
-              hover={false}
-              is="table"
-              striped={false}
             >
-              <table
-                className="46sr0r"
+              <ThemedComponent
+                bare={false}
+                bordered={true}
+                condensed={false}
+                hover={false}
+                striped={false}
               >
-                <ThemedComponent
+                <FelaComponent
                   bare={false}
                   bordered={true}
                   condensed={false}
                   hover={false}
                   striped={false}
                 >
-                  <FelaComponent
+                  <TableFoot
                     bare={false}
                     bordered={true}
+                    className="116rzb2"
                     condensed={false}
                     hover={false}
+                    is="tfoot"
                     striped={false}
                   >
-                    <TableFootStyles
-                      _felaRule={[Function]}
-                      bare={false}
-                      bordered={true}
-                      condensed={false}
-                      hover={false}
-                      passThrough={Array []}
-                      striped={false}
-                    >
-                      <TableFootStyles
-                        _felaRule={[Function]}
-                        bare={false}
-                        bordered={true}
-                        condensed={false}
-                        hover={false}
-                        passThrough={Array []}
-                        striped={false}
-                      >
-                        <TableFoot
-                          bare={false}
-                          bordered={true}
-                          className="116rzb2"
-                          condensed={false}
-                          hover={false}
-                          is="tfoot"
-                          striped={false}
-                        >
-                          <tfoot
-                            className="116rzb2"
-                          />
-                        </TableFoot>
-                      </TableFootStyles>
-                    </TableFootStyles>
-                  </FelaComponent>
-                </ThemedComponent>
-              </table>
-            </Table>
-          </TableStyles>
-        </TableStyles>
+                    <tfoot
+                      className="116rzb2"
+                    />
+                  </TableFoot>
+                </FelaComponent>
+              </ThemedComponent>
+            </table>
+          </Table>
+        </FelaComponent>
       </ThemedComponent>
     </ThemeProvider>
   </Provider>
@@ -510,50 +485,38 @@ exports[`TableFoot should render 1`] = `
     >
       <table>
         <ThemedComponent>
-          <TableFootStyles>
-            <TableFootStyles
-              _felaRule={[Function]}
-              passThrough={Array []}
+          <FelaComponent>
+            <TableFoot
+              className="dotb8y"
+              is="tfoot"
             >
-              <TableFoot
+              <tfoot
                 className="dotb8y"
-                is="tfoot"
               >
-                <tfoot
-                  className="dotb8y"
+                <ThemedComponent
+                  rowIndex={-0}
+                  tfootIndex={0}
                 >
-                  <ThemedComponent
+                  <FelaComponent
                     rowIndex={-0}
                     tfootIndex={0}
                   >
-                    <TableRowStyles
+                    <TableRow
+                      className="1b0jccb"
+                      is="tr"
                       rowIndex={-0}
                       tfootIndex={0}
+                      type="default"
                     >
-                      <TableRowStyles
-                        _felaRule={[Function]}
-                        passThrough={Array []}
-                        rowIndex={-0}
-                        tfootIndex={0}
-                      >
-                        <TableRow
-                          className="1b0jccb"
-                          is="tr"
-                          rowIndex={-0}
-                          tfootIndex={0}
-                          type="default"
-                        >
-                          <tr
-                            className="1b0jccb"
-                          />
-                        </TableRow>
-                      </TableRowStyles>
-                    </TableRowStyles>
-                  </ThemedComponent>
-                </tfoot>
-              </TableFoot>
-            </TableFootStyles>
-          </TableFootStyles>
+                      <tr
+                        className="1b0jccb"
+                      />
+                    </TableRow>
+                  </FelaComponent>
+                </ThemedComponent>
+              </tfoot>
+            </TableFoot>
+          </FelaComponent>
         </ThemedComponent>
       </table>
     </ThemeProvider>
@@ -852,83 +815,53 @@ exports[`createTableFoot should be able to render a div 1`] = `
       <ThemedComponent
         is="div"
       >
-        <TableStyles
+        <FelaComponent
           is="div"
         >
-          <TableStyles
-            _felaRule={[Function]}
+          <div
+            className="46sr0r"
             is="div"
-            passThrough={Array []}
           >
-            <div
-              className="46sr0r"
+            <ThemedComponent
               is="div"
             >
-              <ThemedComponent
+              <FelaComponent
                 is="div"
               >
-                <FelaComponent
+                <div
+                  className="116rzb2"
                   is="div"
                 >
-                  <TableFootStyles
-                    _felaRule={[Function]}
+                  <ThemedComponent
                     is="div"
-                    passThrough={Array []}
                   >
-                    <TableFootStyles
-                      _felaRule={[Function]}
+                    <FelaComponent
                       is="div"
-                      passThrough={Array []}
                     >
                       <div
-                        className="116rzb2"
+                        className="1c43i05"
                         is="div"
                       >
                         <ThemedComponent
                           is="div"
                         >
-                          <TableRowStyles
+                          <FelaComponent
                             is="div"
                           >
-                            <TableRowStyles
-                              _felaRule={[Function]}
+                            <div
+                              className="kk9pov"
                               is="div"
-                              passThrough={Array []}
-                            >
-                              <div
-                                className="1c43i05"
-                                is="div"
-                              >
-                                <ThemedComponent
-                                  is="div"
-                                >
-                                  <TableCellStyles
-                                    is="div"
-                                  >
-                                    <TableCellStyles
-                                      _felaRule={[Function]}
-                                      is="div"
-                                      passThrough={Array []}
-                                    >
-                                      <div
-                                        className="kk9pov"
-                                        is="div"
-                                      />
-                                    </TableCellStyles>
-                                  </TableCellStyles>
-                                </ThemedComponent>
-                              </div>
-                            </TableRowStyles>
-                          </TableRowStyles>
+                            />
+                          </FelaComponent>
                         </ThemedComponent>
                       </div>
-                    </TableFootStyles>
-                  </TableFootStyles>
-                </FelaComponent>
-              </ThemedComponent>
-            </div>
-          </TableStyles>
-        </TableStyles>
+                    </FelaComponent>
+                  </ThemedComponent>
+                </div>
+              </FelaComponent>
+            </ThemedComponent>
+          </div>
+        </FelaComponent>
       </ThemedComponent>
     </ThemeProvider>
   </Provider>
@@ -1140,24 +1073,14 @@ exports[`createTableFoot should compose with styles overrides 1`] = `
       <table>
         <ThemedComponent>
           <FelaComponent>
-            <TableFootStyles
-              _felaRule={[Function]}
-              passThrough={Array []}
+            <TableFoot
+              className="116rzb2"
+              is="tfoot"
             >
-              <TableFootStyles
-                _felaRule={[Function]}
-                passThrough={Array []}
-              >
-                <TableFoot
-                  className="116rzb2"
-                  is="tfoot"
-                >
-                  <tfoot
-                    className="116rzb2"
-                  />
-                </TableFoot>
-              </TableFootStyles>
-            </TableFootStyles>
+              <tfoot
+                className="116rzb2"
+              />
+            </TableFoot>
           </FelaComponent>
         </ThemedComponent>
       </table>

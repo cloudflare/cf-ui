@@ -458,191 +458,125 @@ exports[`createTable should be able to render a div 1`] = `
         <FelaComponent
           is="div"
         >
-          <TableStyles
-            _felaRule={[Function]}
+          <div
+            className="1gskw3r"
             is="div"
-            passThrough={Array []}
           >
-            <TableStyles
-              _felaRule={[Function]}
+            <ThemedComponent
               is="div"
-              passThrough={Array []}
             >
-              <div
-                className="1gskw3r"
+              <FelaComponent
                 is="div"
               >
-                <ThemedComponent
+                <div
+                  className="d1fi02"
                   is="div"
                 >
-                  <TableHeadStyles
+                  <ThemedComponent
                     is="div"
                   >
-                    <TableHeadStyles
-                      _felaRule={[Function]}
+                    <FelaComponent
                       is="div"
-                      passThrough={Array []}
                     >
                       <div
-                        className="d1fi02"
+                        className="1c43i05"
                         is="div"
                       >
                         <ThemedComponent
                           is="div"
                         >
-                          <TableRowStyles
+                          <FelaComponent
                             is="div"
                           >
-                            <TableRowStyles
-                              _felaRule={[Function]}
+                            <div
+                              className="kk9pov"
                               is="div"
-                              passThrough={Array []}
-                            >
-                              <div
-                                className="1c43i05"
-                                is="div"
-                              >
-                                <ThemedComponent
-                                  is="div"
-                                >
-                                  <TableCellStyles
-                                    is="div"
-                                  >
-                                    <TableCellStyles
-                                      _felaRule={[Function]}
-                                      is="div"
-                                      passThrough={Array []}
-                                    >
-                                      <div
-                                        className="kk9pov"
-                                        is="div"
-                                      />
-                                    </TableCellStyles>
-                                  </TableCellStyles>
-                                </ThemedComponent>
-                              </div>
-                            </TableRowStyles>
-                          </TableRowStyles>
+                            />
+                          </FelaComponent>
                         </ThemedComponent>
                       </div>
-                    </TableHeadStyles>
-                  </TableHeadStyles>
-                </ThemedComponent>
-                <ThemedComponent
+                    </FelaComponent>
+                  </ThemedComponent>
+                </div>
+              </FelaComponent>
+            </ThemedComponent>
+            <ThemedComponent
+              is="div"
+            >
+              <FelaComponent
+                is="div"
+              >
+                <div
+                  className="zos2pn"
                   is="div"
                 >
-                  <TableBodyStyles
+                  <ThemedComponent
                     is="div"
                   >
-                    <TableBodyStyles
-                      _felaRule={[Function]}
+                    <FelaComponent
                       is="div"
-                      passThrough={Array []}
                     >
                       <div
-                        className="zos2pn"
+                        className="1c43i05"
                         is="div"
                       >
                         <ThemedComponent
                           is="div"
                         >
-                          <TableRowStyles
+                          <FelaComponent
                             is="div"
                           >
-                            <TableRowStyles
-                              _felaRule={[Function]}
+                            <div
+                              className="kk9pov"
                               is="div"
-                              passThrough={Array []}
-                            >
-                              <div
-                                className="1c43i05"
-                                is="div"
-                              >
-                                <ThemedComponent
-                                  is="div"
-                                >
-                                  <TableCellStyles
-                                    is="div"
-                                  >
-                                    <TableCellStyles
-                                      _felaRule={[Function]}
-                                      is="div"
-                                      passThrough={Array []}
-                                    >
-                                      <div
-                                        className="kk9pov"
-                                        is="div"
-                                      />
-                                    </TableCellStyles>
-                                  </TableCellStyles>
-                                </ThemedComponent>
-                              </div>
-                            </TableRowStyles>
-                          </TableRowStyles>
+                            />
+                          </FelaComponent>
                         </ThemedComponent>
                       </div>
-                    </TableBodyStyles>
-                  </TableBodyStyles>
-                </ThemedComponent>
-                <ThemedComponent
+                    </FelaComponent>
+                  </ThemedComponent>
+                </div>
+              </FelaComponent>
+            </ThemedComponent>
+            <ThemedComponent
+              is="div"
+            >
+              <FelaComponent
+                is="div"
+              >
+                <div
+                  className="dotb8y"
                   is="div"
                 >
-                  <TableFootStyles
+                  <ThemedComponent
                     is="div"
                   >
-                    <TableFootStyles
-                      _felaRule={[Function]}
+                    <FelaComponent
                       is="div"
-                      passThrough={Array []}
                     >
                       <div
-                        className="dotb8y"
+                        className="1c43i05"
                         is="div"
                       >
                         <ThemedComponent
                           is="div"
                         >
-                          <TableRowStyles
+                          <FelaComponent
                             is="div"
                           >
-                            <TableRowStyles
-                              _felaRule={[Function]}
+                            <div
+                              className="kk9pov"
                               is="div"
-                              passThrough={Array []}
-                            >
-                              <div
-                                className="1c43i05"
-                                is="div"
-                              >
-                                <ThemedComponent
-                                  is="div"
-                                >
-                                  <TableCellStyles
-                                    is="div"
-                                  >
-                                    <TableCellStyles
-                                      _felaRule={[Function]}
-                                      is="div"
-                                      passThrough={Array []}
-                                    >
-                                      <div
-                                        className="kk9pov"
-                                        is="div"
-                                      />
-                                    </TableCellStyles>
-                                  </TableCellStyles>
-                                </ThemedComponent>
-                              </div>
-                            </TableRowStyles>
-                          </TableRowStyles>
+                            />
+                          </FelaComponent>
                         </ThemedComponent>
                       </div>
-                    </TableFootStyles>
-                  </TableFootStyles>
-                </ThemedComponent>
-              </div>
-            </TableStyles>
-          </TableStyles>
+                    </FelaComponent>
+                  </ThemedComponent>
+                </div>
+              </FelaComponent>
+            </ThemedComponent>
+          </div>
         </FelaComponent>
       </ThemedComponent>
     </ThemeProvider>
@@ -872,55 +806,40 @@ exports[`createTable should compose with styles overrides 1`] = `
     >
       <table>
         <ThemedComponent>
-          <TableHeadStyles>
-            <TableHeadStyles
-              _felaRule={[Function]}
-              passThrough={Array []}
+          <FelaComponent>
+            <TableHead
+              className="d1fi02"
+              is="thead"
             >
-              <TableHead
+              <thead
                 className="d1fi02"
-                is="thead"
-              >
-                <thead
-                  className="d1fi02"
-                />
-              </TableHead>
-            </TableHeadStyles>
-          </TableHeadStyles>
+              />
+            </TableHead>
+          </FelaComponent>
         </ThemedComponent>
         <ThemedComponent>
-          <TableBodyStyles>
-            <TableBodyStyles
-              _felaRule={[Function]}
-              passThrough={Array []}
+          <FelaComponent>
+            <TableBody
+              className="zos2pn"
+              is="tbody"
             >
-              <TableBody
+              <tbody
                 className="zos2pn"
-                is="tbody"
-              >
-                <tbody
-                  className="zos2pn"
-                />
-              </TableBody>
-            </TableBodyStyles>
-          </TableBodyStyles>
+              />
+            </TableBody>
+          </FelaComponent>
         </ThemedComponent>
         <ThemedComponent>
-          <TableFootStyles>
-            <TableFootStyles
-              _felaRule={[Function]}
-              passThrough={Array []}
+          <FelaComponent>
+            <TableFoot
+              className="dotb8y"
+              is="tfoot"
             >
-              <TableFoot
+              <tfoot
                 className="dotb8y"
-                is="tfoot"
-              >
-                <tfoot
-                  className="dotb8y"
-                />
-              </TableFoot>
-            </TableFootStyles>
-          </TableFootStyles>
+              />
+            </TableFoot>
+          </FelaComponent>
         </ThemedComponent>
       </table>
     </ThemeProvider>
