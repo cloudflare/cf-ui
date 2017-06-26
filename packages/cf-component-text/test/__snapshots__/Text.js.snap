@@ -2,28 +2,28 @@
 
 exports[`should render align 1`] = `
 <div
-  className="12kp2av"
+  className="cf-12kp2av"
 >
   Hello
 </div>
 `;
 
 exports[`should render align 2`] = `
-".12kp2av {
+".cf-12kp2av {
   text-align: center
 }"
 `;
 
 exports[`should render bold size 1`] = `
 <div
-  className="e0qi9f"
+  className="cf-e0qi9f"
 >
   Hello
 </div>
 `;
 
 exports[`should render bold size 2`] = `
-".e0qi9f {
+".cf-e0qi9f {
   font-size: 1rem;
   font-weight: 700
 }"
@@ -31,42 +31,42 @@ exports[`should render bold size 2`] = `
 
 exports[`should render lowercase 1`] = `
 <div
-  className="1ez8i2i"
+  className="cf-1ez8i2i"
 >
   Hello
 </div>
 `;
 
 exports[`should render lowercase 2`] = `
-".1ez8i2i {
+".cf-1ez8i2i {
   text-transform: lowercase
 }"
 `;
 
 exports[`should render normal size 1`] = `
 <div
-  className="jgz5pd"
+  className="cf-jgz5pd"
 >
   Hello
 </div>
 `;
 
 exports[`should render normal size 2`] = `
-".jgz5pd {
+".cf-jgz5pd {
   font-size: 1rem
 }"
 `;
 
 exports[`should render semi-bold size 1`] = `
 <div
-  className="z310y"
+  className="cf-z310y"
 >
   Hello
 </div>
 `;
 
 exports[`should render semi-bold size 2`] = `
-".z310y {
+".cf-z310y {
   font-size: 1rem;
   font-weight: 600
 }"
@@ -74,14 +74,14 @@ exports[`should render semi-bold size 2`] = `
 
 exports[`should render small size 1`] = `
 <div
-  className="xk5sq7"
+  className="cf-xk5sq7"
 >
   Hello
 </div>
 `;
 
 exports[`should render small size 2`] = `
-".xk5sq7 {
+".cf-xk5sq7 {
   line-height: 1.3;
   font-size: 0.8em
 }"
@@ -89,28 +89,28 @@ exports[`should render small size 2`] = `
 
 exports[`should render titlecase case 1`] = `
 <div
-  className="w04jx1"
+  className="cf-w04jx1"
 >
   Hello
 </div>
 `;
 
 exports[`should render titlecase case 2`] = `
-".w04jx1:first-letter {
+".cf-w04jx1:first-letter {
   text-transform: capitalize
 }"
 `;
 
 exports[`should render type 1`] = `
 <div
-  className="1vjexbg"
+  className="cf-1vjexbg"
 >
   Hello
 </div>
 `;
 
 exports[`should render type 2`] = `
-".1vjexbg {
+".cf-1vjexbg {
   color: #434148
 }"
 `;

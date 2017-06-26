@@ -2,39 +2,39 @@
 
 exports[`should render 1`] = `
 <div
-  className="10xznom"
+  className="cf-10xznom"
 >
   Hello World
 </div>
 `;
 
 exports[`should render 2`] = `
-".10xznom {
+".cf-10xznom {
   margin-left: auto;
   margin-right: auto
 }
 @media (min-width: 13.6em) {
-  .10xznom {
+  .cf-10xznom {
     width: 13.6em
   }
 }
 @media (min-width: 30.4em) {
-  .10xznom {
+  .cf-10xznom {
     width: 30.4em
   }
 }
 @media (min-width: 47.2em) {
-  .10xznom {
+  .cf-10xznom {
     width: 47.2em
   }
 }
 @media (min-width: 64em) {
-  .10xznom {
+  .cf-10xznom {
     width: 64em
   }
 }
 @media (min-width: 97.6em) {
-  .10xznom {
+  .cf-10xznom {
     width: 97.6em
   }
 }"

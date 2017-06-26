@@ -2,7 +2,7 @@
 
 exports[`should render as submit 1`] = `
 <button
-  className="12tyf0k"
+  className="cf-12tyf0k"
   disabled={undefined}
   onClick={[Function]}
   type="submit"
@@ -12,25 +12,25 @@ exports[`should render as submit 1`] = `
 `;
 
 exports[`should render as submit 2`] = `
-".12tyf0k:hover {
+".cf-12tyf0k:hover {
   background-color: #2869a2;
   border-color: #215685;
   color: #fff
 }
-.12tyf0k:active {
+.cf-12tyf0k:active {
   background-color: #215685;
   border-color: #1a4468;
   color: #fff
 }
-.12tyf0k:focus {
+.cf-12tyf0k:focus {
   background-color: #2f7bbf;
   color: #fff;
   border-color: #2869a2
 }
-.12tyf0k[title] {
+.cf-12tyf0k[title] {
   pointer-events: none
 }
-.12tyf0k {
+.cf-12tyf0k {
   background-color: #2f7bbf;
   border-bottom: 1px solid;
   border-color: #2869a2;
@@ -71,7 +71,7 @@ exports[`should render as submit 2`] = `
 
 exports[`should render with loading 1`] = `
 <button
-  className="nubafe"
+  className="cf-nubafe"
   disabled={true}
   onClick={[Function]}
   type="button"
@@ -96,22 +96,22 @@ exports[`should render with loading 2`] = `
     opacity: 0
   }
 }
-.nubafe:hover {
+.cf-nubafe:hover {
   background-color: #ededed;
   border-color: #dbdbdb;
   color: #ededed
 }
-.nubafe:active {
+.cf-nubafe:active {
   background-color: #215685;
   border-color: #dbdbdb;
   color: #fff
 }
-.nubafe:focus {
+.cf-nubafe:focus {
   color: #ededed;
   outline: none;
   border-color: #dbdbdb
 }
-.nubafe::before {
+.cf-nubafe::before {
   content: \\"…\\";
   color: black;
   display: block;
@@ -129,10 +129,10 @@ exports[`should render with loading 2`] = `
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear
 }
-.nubafe[title] {
+.cf-nubafe[title] {
   pointer-events: none
 }
-.nubafe {
+.cf-nubafe {
   background-color: #ededed;
   border-bottom: 1px solid;
   border-color: #dbdbdb;
@@ -173,7 +173,7 @@ exports[`should render with loading 2`] = `
 
 exports[`should render with loading and disabled overridden 1`] = `
 <button
-  className="nubafe"
+  className="cf-nubafe"
   disabled={true}
   onClick={[Function]}
   type="button"
@@ -198,22 +198,22 @@ exports[`should render with loading and disabled overridden 2`] = `
     opacity: 0
   }
 }
-.nubafe:hover {
+.cf-nubafe:hover {
   background-color: #ededed;
   border-color: #dbdbdb;
   color: #ededed
 }
-.nubafe:active {
+.cf-nubafe:active {
   background-color: #215685;
   border-color: #dbdbdb;
   color: #fff
 }
-.nubafe:focus {
+.cf-nubafe:focus {
   color: #ededed;
   outline: none;
   border-color: #dbdbdb
 }
-.nubafe::before {
+.cf-nubafe::before {
   content: \\"…\\";
   color: black;
   display: block;
@@ -231,10 +231,10 @@ exports[`should render with loading and disabled overridden 2`] = `
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear
 }
-.nubafe[title] {
+.cf-nubafe[title] {
   pointer-events: none
 }
-.nubafe {
+.cf-nubafe {
   background-color: #ededed;
   border-bottom: 1px solid;
   border-color: #dbdbdb;
@@ -275,7 +275,7 @@ exports[`should render with loading and disabled overridden 2`] = `
 
 exports[`should render with type 1`] = `
 <button
-  className="12tyf0k"
+  className="cf-12tyf0k"
   disabled={undefined}
   onClick={[Function]}
   type="button"
@@ -285,25 +285,25 @@ exports[`should render with type 1`] = `
 `;
 
 exports[`should render with type 2`] = `
-".12tyf0k:hover {
+".cf-12tyf0k:hover {
   background-color: #2869a2;
   border-color: #215685;
   color: #fff
 }
-.12tyf0k:active {
+.cf-12tyf0k:active {
   background-color: #215685;
   border-color: #1a4468;
   color: #fff
 }
-.12tyf0k:focus {
+.cf-12tyf0k:focus {
   background-color: #2f7bbf;
   color: #fff;
   border-color: #2869a2
 }
-.12tyf0k[title] {
+.cf-12tyf0k[title] {
   pointer-events: none
 }
-.12tyf0k {
+.cf-12tyf0k {
   background-color: #2f7bbf;
   border-bottom: 1px solid;
   border-color: #2869a2;
@@ -344,7 +344,7 @@ exports[`should render with type 2`] = `
 
 exports[`should render with type/disabled 1`] = `
 <button
-  className="bare0q"
+  className="cf-bare0q"
   disabled={true}
   onClick={[Function]}
   type="button"
@@ -354,25 +354,25 @@ exports[`should render with type/disabled 1`] = `
 `;
 
 exports[`should render with type/disabled 2`] = `
-".bare0q:hover {
+".cf-bare0q:hover {
   background-color: #2869a2;
   border-color: #215685;
   color: #fff
 }
-.bare0q:active {
+.cf-bare0q:active {
   background-color: #215685;
   border-color: #1a4468;
   color: #fff
 }
-.bare0q:focus {
+.cf-bare0q:focus {
   background-color: #2f7bbf;
   color: #fff;
   border-color: #2869a2
 }
-.bare0q[title] {
+.cf-bare0q[title] {
   pointer-events: auto
 }
-.bare0q {
+.cf-bare0q {
   background-color: #2f7bbf;
   border-bottom: 1px solid;
   border-color: #2869a2;

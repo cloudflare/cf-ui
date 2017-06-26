@@ -2,20 +2,20 @@
 
 exports[`should render pagination 1`] = `
 <div
-  className="1bek1ug"
+  className="cf-1bek1ug"
 >
   <ul
     aria-describedby={null}
-    className="y1rhga"
+    className="cf-y1rhga"
     role="navigation"
   >
     <li
-      className="mgj6am"
+      className="cf-mgj6am"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="109b087"
+        className="cf-109b087"
         href="#"
         onClick={[Function]}
       >
@@ -26,12 +26,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="1wi2cf1"
+      className="cf-1wi2cf1"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="109b087"
+        className="cf-109b087"
         href="#"
         onClick={[Function]}
       >
@@ -39,12 +39,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -52,12 +52,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -65,12 +65,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -78,12 +78,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -91,12 +91,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="hmei63"
+      className="cf-hmei63"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -111,12 +111,12 @@ exports[`should render pagination 1`] = `
 `;
 
 exports[`should render pagination 2`] = `
-".y1rhga:after {
+".cf-y1rhga:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-.y1rhga {
+.cf-y1rhga {
   list-style: none;
   margin-top: 0px;
   margin-left: 0px;
@@ -130,12 +130,12 @@ exports[`should render pagination 2`] = `
   border-radius: 3px;
   box-shadow: none
 }
-.1bek1ug:after {
+.cf-1bek1ug:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-.mgj6am {
+.cf-mgj6am {
   float: left;
   position: relative;
   background-color: #ededed;
@@ -143,10 +143,10 @@ exports[`should render pagination 2`] = `
   cursor: default;
   border-radius: 3px
 }
-.109b087:focus {
+.cf-109b087:focus {
   z-index: 1
 }
-.109b087 {
+.cf-109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -161,7 +161,7 @@ exports[`should render pagination 2`] = `
   color: inherit;
   cursor: default
 }
-.1wi2cf1 {
+.cf-1wi2cf1 {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -170,17 +170,17 @@ exports[`should render pagination 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-.15spu1u {
+.cf-15spu1u {
   float: left;
   position: relative;
   background-color: #fff;
   color: #408BC9;
   cursor: pointer
 }
-.32iz07:focus {
+.cf-32iz07:focus {
   z-index: 1
 }
-.32iz07 {
+.cf-32iz07 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -195,7 +195,7 @@ exports[`should render pagination 2`] = `
   color: inherit;
   cursor: pointer
 }
-.hmei63 {
+.cf-hmei63 {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -207,20 +207,20 @@ exports[`should render pagination 2`] = `
 
 exports[`should render pagination loading 1`] = `
 <div
-  className="1bek1ug"
+  className="cf-1bek1ug"
 >
   <ul
     aria-describedby={null}
-    className="y1rhga"
+    className="cf-y1rhga"
     role="navigation"
   >
     <li
-      className="mgj6am"
+      className="cf-mgj6am"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="109b087"
+        className="cf-109b087"
         href="#"
         onClick={[Function]}
       >
@@ -231,12 +231,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="1wi2cf1"
+      className="cf-1wi2cf1"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="109b087"
+        className="cf-109b087"
         href="#"
         onClick={[Function]}
       >
@@ -247,12 +247,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -260,12 +260,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -273,12 +273,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -286,12 +286,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -299,12 +299,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="hmei63"
+      className="cf-hmei63"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -319,12 +319,12 @@ exports[`should render pagination loading 1`] = `
 `;
 
 exports[`should render pagination loading 2`] = `
-".y1rhga:after {
+".cf-y1rhga:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-.y1rhga {
+.cf-y1rhga {
   list-style: none;
   margin-top: 0px;
   margin-left: 0px;
@@ -338,12 +338,12 @@ exports[`should render pagination loading 2`] = `
   border-radius: 3px;
   box-shadow: none
 }
-.1bek1ug:after {
+.cf-1bek1ug:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-.mgj6am {
+.cf-mgj6am {
   float: left;
   position: relative;
   background-color: #ededed;
@@ -351,10 +351,10 @@ exports[`should render pagination loading 2`] = `
   cursor: default;
   border-radius: 3px
 }
-.109b087:focus {
+.cf-109b087:focus {
   z-index: 1
 }
-.109b087 {
+.cf-109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -369,7 +369,7 @@ exports[`should render pagination loading 2`] = `
   color: inherit;
   cursor: default
 }
-.1wi2cf1 {
+.cf-1wi2cf1 {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -378,17 +378,17 @@ exports[`should render pagination loading 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-.15spu1u {
+.cf-15spu1u {
   float: left;
   position: relative;
   background-color: #fff;
   color: #408BC9;
   cursor: pointer
 }
-.32iz07:focus {
+.cf-32iz07:focus {
   z-index: 1
 }
-.32iz07 {
+.cf-32iz07 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -403,7 +403,7 @@ exports[`should render pagination loading 2`] = `
   color: inherit;
   cursor: pointer
 }
-.hmei63 {
+.cf-hmei63 {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -415,20 +415,20 @@ exports[`should render pagination loading 2`] = `
 
 exports[`should render pagination with an infoFormatter 1`] = `
 <div
-  className="1bek1ug"
+  className="cf-1bek1ug"
 >
   <ul
     aria-describedby={null}
-    className="y1rhga"
+    className="cf-y1rhga"
     role="navigation"
   >
     <li
-      className="hmei63"
+      className="cf-hmei63"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -439,12 +439,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -452,12 +452,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="1wi2cf1"
+      className="cf-1wi2cf1"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="109b087"
+        className="cf-109b087"
         href="#"
         onClick={[Function]}
       >
@@ -465,12 +465,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -478,12 +478,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -491,12 +491,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -504,12 +504,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="hmei63"
+      className="cf-hmei63"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -524,12 +524,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
 `;
 
 exports[`should render pagination with an infoFormatter 2`] = `
-".y1rhga:after {
+".cf-y1rhga:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-.y1rhga {
+.cf-y1rhga {
   list-style: none;
   margin-top: 0px;
   margin-left: 0px;
@@ -543,12 +543,12 @@ exports[`should render pagination with an infoFormatter 2`] = `
   border-radius: 3px;
   box-shadow: none
 }
-.1bek1ug:after {
+.cf-1bek1ug:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-.hmei63 {
+.cf-hmei63 {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -556,10 +556,10 @@ exports[`should render pagination with an infoFormatter 2`] = `
   cursor: pointer;
   border-radius: 3px
 }
-.32iz07:focus {
+.cf-32iz07:focus {
   z-index: 1
 }
-.32iz07 {
+.cf-32iz07 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -574,14 +574,14 @@ exports[`should render pagination with an infoFormatter 2`] = `
   color: inherit;
   cursor: pointer
 }
-.15spu1u {
+.cf-15spu1u {
   float: left;
   position: relative;
   background-color: #fff;
   color: #408BC9;
   cursor: pointer
 }
-.1wi2cf1 {
+.cf-1wi2cf1 {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -590,10 +590,10 @@ exports[`should render pagination with an infoFormatter 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-.109b087:focus {
+.cf-109b087:focus {
   z-index: 1
 }
-.109b087 {
+.cf-109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -612,20 +612,20 @@ exports[`should render pagination with an infoFormatter 2`] = `
 
 exports[`should render pagination with the last page active 1`] = `
 <div
-  className="1bek1ug"
+  className="cf-1bek1ug"
 >
   <ul
     aria-describedby={null}
-    className="y1rhga"
+    className="cf-y1rhga"
     role="navigation"
   >
     <li
-      className="hmei63"
+      className="cf-hmei63"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -636,12 +636,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -649,12 +649,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -662,12 +662,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -675,12 +675,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -688,12 +688,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="1wi2cf1"
+      className="cf-1wi2cf1"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="109b087"
+        className="cf-109b087"
         href="#"
         onClick={[Function]}
       >
@@ -701,12 +701,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="mgj6am"
+      className="cf-mgj6am"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="109b087"
+        className="cf-109b087"
         href="#"
         onClick={[Function]}
       >
@@ -721,12 +721,12 @@ exports[`should render pagination with the last page active 1`] = `
 `;
 
 exports[`should render pagination with the last page active 2`] = `
-".y1rhga:after {
+".cf-y1rhga:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-.y1rhga {
+.cf-y1rhga {
   list-style: none;
   margin-top: 0px;
   margin-left: 0px;
@@ -740,12 +740,12 @@ exports[`should render pagination with the last page active 2`] = `
   border-radius: 3px;
   box-shadow: none
 }
-.1bek1ug:after {
+.cf-1bek1ug:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-.hmei63 {
+.cf-hmei63 {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -753,10 +753,10 @@ exports[`should render pagination with the last page active 2`] = `
   cursor: pointer;
   border-radius: 3px
 }
-.32iz07:focus {
+.cf-32iz07:focus {
   z-index: 1
 }
-.32iz07 {
+.cf-32iz07 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -771,14 +771,14 @@ exports[`should render pagination with the last page active 2`] = `
   color: inherit;
   cursor: pointer
 }
-.15spu1u {
+.cf-15spu1u {
   float: left;
   position: relative;
   background-color: #fff;
   color: #408BC9;
   cursor: pointer
 }
-.1wi2cf1 {
+.cf-1wi2cf1 {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -787,10 +787,10 @@ exports[`should render pagination with the last page active 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-.109b087:focus {
+.cf-109b087:focus {
   z-index: 1
 }
-.109b087 {
+.cf-109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -805,7 +805,7 @@ exports[`should render pagination with the last page active 2`] = `
   color: inherit;
   cursor: default
 }
-.mgj6am {
+.cf-mgj6am {
   float: left;
   position: relative;
   background-color: #ededed;
@@ -817,20 +817,20 @@ exports[`should render pagination with the last page active 2`] = `
 
 exports[`should render with collapsed items 1`] = `
 <div
-  className="1bek1ug"
+  className="cf-1bek1ug"
 >
   <ul
     aria-describedby={null}
-    className="y1rhga"
+    className="cf-y1rhga"
     role="navigation"
   >
     <li
-      className="hmei63"
+      className="cf-hmei63"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -841,12 +841,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -854,12 +854,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role="presentation"
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -869,12 +869,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -882,12 +882,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -895,12 +895,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="1wi2cf1"
+      className="cf-1wi2cf1"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="109b087"
+        className="cf-109b087"
         href="#"
         onClick={[Function]}
       >
@@ -908,12 +908,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -921,12 +921,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -934,12 +934,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role="presentation"
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -949,12 +949,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="15spu1u"
+      className="cf-15spu1u"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -962,12 +962,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="hmei63"
+      className="cf-hmei63"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="32iz07"
+        className="cf-32iz07"
         href="#"
         onClick={[Function]}
       >
@@ -982,12 +982,12 @@ exports[`should render with collapsed items 1`] = `
 `;
 
 exports[`should render with collapsed items 2`] = `
-".y1rhga:after {
+".cf-y1rhga:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-.y1rhga {
+.cf-y1rhga {
   list-style: none;
   margin-top: 0px;
   margin-left: 0px;
@@ -1001,12 +1001,12 @@ exports[`should render with collapsed items 2`] = `
   border-radius: 3px;
   box-shadow: none
 }
-.1bek1ug:after {
+.cf-1bek1ug:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-.hmei63 {
+.cf-hmei63 {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -1014,10 +1014,10 @@ exports[`should render with collapsed items 2`] = `
   cursor: pointer;
   border-radius: 3px
 }
-.32iz07:focus {
+.cf-32iz07:focus {
   z-index: 1
 }
-.32iz07 {
+.cf-32iz07 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -1032,14 +1032,14 @@ exports[`should render with collapsed items 2`] = `
   color: inherit;
   cursor: pointer
 }
-.15spu1u {
+.cf-15spu1u {
   float: left;
   position: relative;
   background-color: #fff;
   color: #408BC9;
   cursor: pointer
 }
-.1wi2cf1 {
+.cf-1wi2cf1 {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -1048,10 +1048,10 @@ exports[`should render with collapsed items 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-.109b087:focus {
+.cf-109b087:focus {
   z-index: 1
 }
-.109b087 {
+.cf-109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;

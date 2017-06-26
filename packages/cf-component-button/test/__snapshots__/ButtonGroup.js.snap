@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <div
-  className="cmkk1"
+  className="cf-cmkk1"
 >
   Hello
 </div>
@@ -10,10 +10,10 @@ exports[`should render 1`] = `
 
 exports[`should render 1 button 1`] = `
 <div
-  className="cmkk1"
+  className="cf-cmkk1"
 >
   <button
-    className="8n1gf0"
+    className="cf-8n1gf0"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -24,31 +24,31 @@ exports[`should render 1 button 1`] = `
 `;
 
 exports[`should render 1 button 2`] = `
-".cmkk1 {
+".cf-cmkk1 {
   display: inline-block;
   position: relative;
   vertical-align: middle;
   white-space: nowrap
 }
-.8n1gf0:hover {
+.cf-8n1gf0:hover {
   background-color: #2869a2;
   border-color: #215685;
   color: #fff
 }
-.8n1gf0:active {
+.cf-8n1gf0:active {
   background-color: #215685;
   border-color: #1a4468;
   color: #fff
 }
-.8n1gf0:focus {
+.cf-8n1gf0:focus {
   background-color: #2f7bbf;
   color: #fff;
   border-color: #2869a2
 }
-.8n1gf0[title] {
+.cf-8n1gf0[title] {
   pointer-events: none
 }
-.8n1gf0 {
+.cf-8n1gf0 {
   background-color: #2f7bbf;
   border-bottom: 1px solid;
   border-color: #2869a2;
@@ -91,7 +91,7 @@ exports[`should render 1 button 2`] = `
 `;
 
 exports[`should render 2`] = `
-".cmkk1 {
+".cf-cmkk1 {
   display: inline-block;
   position: relative;
   vertical-align: middle;
@@ -101,10 +101,10 @@ exports[`should render 2`] = `
 
 exports[`should render 2 buttons 1`] = `
 <div
-  className="cmkk1"
+  className="cf-cmkk1"
 >
   <button
-    className="iwt3vg"
+    className="cf-iwt3vg"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -112,7 +112,7 @@ exports[`should render 2 buttons 1`] = `
     Button
   </button>
   <button
-    className="8n1gf0"
+    className="cf-8n1gf0"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -123,31 +123,31 @@ exports[`should render 2 buttons 1`] = `
 `;
 
 exports[`should render 2 buttons 2`] = `
-".cmkk1 {
+".cf-cmkk1 {
   display: inline-block;
   position: relative;
   vertical-align: middle;
   white-space: nowrap
 }
-.iwt3vg:hover {
+.cf-iwt3vg:hover {
   background-color: #2869a2;
   border-color: #215685;
   color: #fff
 }
-.iwt3vg:active {
+.cf-iwt3vg:active {
   background-color: #215685;
   border-color: #1a4468;
   color: #fff
 }
-.iwt3vg:focus {
+.cf-iwt3vg:focus {
   background-color: #2f7bbf;
   color: #fff;
   border-color: #2869a2
 }
-.iwt3vg[title] {
+.cf-iwt3vg[title] {
   pointer-events: none
 }
-.iwt3vg {
+.cf-iwt3vg {
   background-color: #2f7bbf;
   border-bottom: 1px solid;
   border-color: #2869a2;
@@ -187,25 +187,25 @@ exports[`should render 2 buttons 2`] = `
   float: none;
   max-width: initial
 }
-.8n1gf0:hover {
+.cf-8n1gf0:hover {
   background-color: #2869a2;
   border-color: #215685;
   color: #fff
 }
-.8n1gf0:active {
+.cf-8n1gf0:active {
   background-color: #215685;
   border-color: #1a4468;
   color: #fff
 }
-.8n1gf0:focus {
+.cf-8n1gf0:focus {
   background-color: #2f7bbf;
   color: #fff;
   border-color: #2869a2
 }
-.8n1gf0[title] {
+.cf-8n1gf0[title] {
   pointer-events: none
 }
-.8n1gf0 {
+.cf-8n1gf0 {
   background-color: #2f7bbf;
   border-bottom: 1px solid;
   border-color: #2869a2;
@@ -249,10 +249,10 @@ exports[`should render 2 buttons 2`] = `
 
 exports[`should render 3 buttons 1`] = `
 <div
-  className="cmkk1"
+  className="cf-cmkk1"
 >
   <button
-    className="iwt3vg"
+    className="cf-iwt3vg"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -260,7 +260,7 @@ exports[`should render 3 buttons 1`] = `
     Button
   </button>
   <button
-    className="5141ss"
+    className="cf-5141ss"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -268,7 +268,7 @@ exports[`should render 3 buttons 1`] = `
     Button
   </button>
   <button
-    className="8n1gf0"
+    className="cf-8n1gf0"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -279,31 +279,31 @@ exports[`should render 3 buttons 1`] = `
 `;
 
 exports[`should render 3 buttons 2`] = `
-".cmkk1 {
+".cf-cmkk1 {
   display: inline-block;
   position: relative;
   vertical-align: middle;
   white-space: nowrap
 }
-.iwt3vg:hover {
+.cf-iwt3vg:hover {
   background-color: #2869a2;
   border-color: #215685;
   color: #fff
 }
-.iwt3vg:active {
+.cf-iwt3vg:active {
   background-color: #215685;
   border-color: #1a4468;
   color: #fff
 }
-.iwt3vg:focus {
+.cf-iwt3vg:focus {
   background-color: #2f7bbf;
   color: #fff;
   border-color: #2869a2
 }
-.iwt3vg[title] {
+.cf-iwt3vg[title] {
   pointer-events: none
 }
-.iwt3vg {
+.cf-iwt3vg {
   background-color: #2f7bbf;
   border-bottom: 1px solid;
   border-color: #2869a2;
@@ -343,25 +343,25 @@ exports[`should render 3 buttons 2`] = `
   float: none;
   max-width: initial
 }
-.5141ss:hover {
+.cf-5141ss:hover {
   background-color: #2869a2;
   border-color: #215685;
   color: #fff
 }
-.5141ss:active {
+.cf-5141ss:active {
   background-color: #215685;
   border-color: #1a4468;
   color: #fff
 }
-.5141ss:focus {
+.cf-5141ss:focus {
   background-color: #2f7bbf;
   color: #fff;
   border-color: #2869a2
 }
-.5141ss[title] {
+.cf-5141ss[title] {
   pointer-events: none
 }
-.5141ss {
+.cf-5141ss {
   background-color: #2f7bbf;
   border-bottom: 1px solid;
   border-color: #2869a2;
@@ -401,25 +401,25 @@ exports[`should render 3 buttons 2`] = `
   float: none;
   max-width: initial
 }
-.8n1gf0:hover {
+.cf-8n1gf0:hover {
   background-color: #2869a2;
   border-color: #215685;
   color: #fff
 }
-.8n1gf0:active {
+.cf-8n1gf0:active {
   background-color: #215685;
   border-color: #1a4468;
   color: #fff
 }
-.8n1gf0:focus {
+.cf-8n1gf0:focus {
   background-color: #2f7bbf;
   color: #fff;
   border-color: #2869a2
 }
-.8n1gf0[title] {
+.cf-8n1gf0[title] {
   pointer-events: none
 }
-.8n1gf0 {
+.cf-8n1gf0 {
   background-color: #2f7bbf;
   border-bottom: 1px solid;
   border-color: #2869a2;
@@ -463,10 +463,10 @@ exports[`should render 3 buttons 2`] = `
 
 exports[`should render 3 buttons with spacing 1`] = `
 <div
-  className="cmkk1"
+  className="cf-cmkk1"
 >
   <button
-    className="12tyf0k"
+    className="cf-12tyf0k"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -474,7 +474,7 @@ exports[`should render 3 buttons with spacing 1`] = `
     Button
   </button>
   <button
-    className="1n7ummk"
+    className="cf-1n7ummk"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -482,7 +482,7 @@ exports[`should render 3 buttons with spacing 1`] = `
     Button
   </button>
   <button
-    className="1n7ummk"
+    className="cf-1n7ummk"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -493,31 +493,31 @@ exports[`should render 3 buttons with spacing 1`] = `
 `;
 
 exports[`should render 3 buttons with spacing 2`] = `
-".cmkk1 {
+".cf-cmkk1 {
   display: inline-block;
   position: relative;
   vertical-align: middle;
   white-space: nowrap
 }
-.12tyf0k:hover {
+.cf-12tyf0k:hover {
   background-color: #2869a2;
   border-color: #215685;
   color: #fff
 }
-.12tyf0k:active {
+.cf-12tyf0k:active {
   background-color: #215685;
   border-color: #1a4468;
   color: #fff
 }
-.12tyf0k:focus {
+.cf-12tyf0k:focus {
   background-color: #2f7bbf;
   color: #fff;
   border-color: #2869a2
 }
-.12tyf0k[title] {
+.cf-12tyf0k[title] {
   pointer-events: none
 }
-.12tyf0k {
+.cf-12tyf0k {
   background-color: #2f7bbf;
   border-bottom: 1px solid;
   border-color: #2869a2;
@@ -554,25 +554,25 @@ exports[`should render 3 buttons with spacing 2`] = `
   float: none;
   max-width: initial
 }
-.1n7ummk:hover {
+.cf-1n7ummk:hover {
   background-color: #2869a2;
   border-color: #215685;
   color: #fff
 }
-.1n7ummk:active {
+.cf-1n7ummk:active {
   background-color: #215685;
   border-color: #1a4468;
   color: #fff
 }
-.1n7ummk:focus {
+.cf-1n7ummk:focus {
   background-color: #2f7bbf;
   color: #fff;
   border-color: #2869a2
 }
-.1n7ummk[title] {
+.cf-1n7ummk[title] {
   pointer-events: none
 }
-.1n7ummk {
+.cf-1n7ummk {
   background-color: #2f7bbf;
   border-bottom: 1px solid;
   border-color: #2869a2;

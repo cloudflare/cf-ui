@@ -2,12 +2,12 @@
 
 exports[`should render invalid state 1`] = `
 <div
-  className="lzhvgp"
+  className="cf-lzhvgp"
 />
 `;
 
 exports[`should render invalid state 2`] = `
-".lzhvgp::before {
+".cf-lzhvgp::before {
   content: \\"\\";
   display: block;
   position: absolute;
@@ -18,7 +18,7 @@ exports[`should render invalid state 2`] = `
   border-width: 6px;
   border-bottom-color: #bd2527
 }
-.lzhvgp::after {
+.cf-lzhvgp::after {
   content: \\"\\";
   display: block;
   position: absolute;
@@ -29,14 +29,14 @@ exports[`should render invalid state 2`] = `
   border-width: 4px;
   border-bottom-color: #bd2527
 }
-.lzhvgp p {
+.cf-lzhvgp p {
   margin-top: 0px;
   margin-bottom: 0px
 }
-.lzhvgp p + p {
+.cf-lzhvgp p + p {
   margin-top: 0.5em
 }
-.lzhvgp {
+.cf-lzhvgp {
   position: relative;
   margin-top: -0.75em;
   padding: 0.5em 1em;
@@ -53,7 +53,7 @@ exports[`should render invalid state 2`] = `
 
 exports[`should render invalid state with validation errors 1`] = `
 <div
-  className="lzhvgp"
+  className="cf-lzhvgp"
 >
   <p>
     This is required
@@ -62,7 +62,7 @@ exports[`should render invalid state with validation errors 1`] = `
 `;
 
 exports[`should render invalid state with validation errors 2`] = `
-".lzhvgp::before {
+".cf-lzhvgp::before {
   content: \\"\\";
   display: block;
   position: absolute;
@@ -73,7 +73,7 @@ exports[`should render invalid state with validation errors 2`] = `
   border-width: 6px;
   border-bottom-color: #bd2527
 }
-.lzhvgp::after {
+.cf-lzhvgp::after {
   content: \\"\\";
   display: block;
   position: absolute;
@@ -84,14 +84,14 @@ exports[`should render invalid state with validation errors 2`] = `
   border-width: 4px;
   border-bottom-color: #bd2527
 }
-.lzhvgp p {
+.cf-lzhvgp p {
   margin-top: 0px;
   margin-bottom: 0px
 }
-.lzhvgp p + p {
+.cf-lzhvgp p + p {
   margin-top: 0.5em
 }
-.lzhvgp {
+.cf-lzhvgp {
   position: relative;
   margin-top: -0.75em;
   padding: 0.5em 1em;

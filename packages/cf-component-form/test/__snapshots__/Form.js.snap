@@ -2,7 +2,7 @@
 
 exports[`should render horizontal layout 1`] = `
 <form
-  className="19lc4xi"
+  className="cf-19lc4xi"
   onSubmit={[Function]}
 >
   Form
@@ -10,7 +10,7 @@ exports[`should render horizontal layout 1`] = `
 `;
 
 exports[`should render horizontal layout 2`] = `
-".19lc4xi {
+".cf-19lc4xi {
   border: 1px solid #dedede;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
 }"
@@ -18,7 +18,7 @@ exports[`should render horizontal layout 2`] = `
 
 exports[`should render vertical layout 1`] = `
 <form
-  className="19lc4xi"
+  className="cf-19lc4xi"
   onSubmit={[Function]}
 >
   Form
@@ -26,7 +26,7 @@ exports[`should render vertical layout 1`] = `
 `;
 
 exports[`should render vertical layout 2`] = `
-".19lc4xi {
+".cf-19lc4xi {
   border: 1px solid #dedede;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05)
 }"

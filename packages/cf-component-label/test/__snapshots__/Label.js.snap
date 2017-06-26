@@ -2,14 +2,14 @@
 
 exports[`should render 1`] = `
 <span
-  className="1gcgiur"
+  className="cf-1gcgiur"
 >
   A Label
 </span>
 `;
 
 exports[`should render 2`] = `
-".1gcgiur {
+".cf-1gcgiur {
   border-radius: 2px;
   color: #fff;
   display: inline-block;

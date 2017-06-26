@@ -10,19 +10,19 @@ exports[`createComponent creates empty component 2`] = `""`;
 
 exports[`createComponentStyles creates a component 1`] = `
 <div
-  className="dxtwdx"
+  className="cf-dxtwdx"
 >
   <i
-    className="18oup6l"
+    className="cf-18oup6l"
   />
 </div>
 `;
 
 exports[`createComponentStyles creates a component 2`] = `
-".dxtwdx {
+".cf-dxtwdx {
   padding: 5px
 }
-.18oup6l {
+.cf-18oup6l {
   margin: 2px
 }"
 `;
