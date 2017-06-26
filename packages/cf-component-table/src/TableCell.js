@@ -119,26 +119,7 @@ export const TableCellStyles = ({
 
 class TableCell extends React.Component {
   render() {
-    const {
-      is,
-      className,
-      children,
-      condensed,
-      striped,
-      bordered,
-      hover,
-      bare,
-      rowType,
-      theadIndex,
-      tbodyIndex,
-      tfootIndex,
-      rowIndex,
-      cellIndex,
-      align,
-      width,
-      rowSpan,
-      colSpan
-    } = this.props;
+    const { is, className, children, rowSpan, colSpan } = this.props;
 
     return React.createElement(
       is,
@@ -147,7 +128,7 @@ class TableCell extends React.Component {
         rowSpan: is === 'div' ? undefined : rowSpan,
         colSpan: is === 'div' ? undefined : colSpan
       },
-      this.props.children
+      children
     );
   }
 }
