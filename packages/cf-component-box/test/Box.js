@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box } from '../src/index';
-import { felaSnapshot } from 'cf-style-provider';
+import felaSnapshot from 'cf-style-provider/src/felaSnapshot';
 
 test('should render all props as styles', () => {
   const snapshot = felaSnapshot(

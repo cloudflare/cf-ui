@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, TextUnstyled } from '../../cf-component-text/src/index';
-import { felaSnapshot } from 'cf-style-provider';
+import felaSnapshot from 'cf-style-provider/src/felaSnapshot';
 import { applyTheme } from 'cf-style-container';
 
 test('should render normal size', () => {

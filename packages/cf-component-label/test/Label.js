@@ -1,5 +1,5 @@
 import React from 'react';
-import { felaSnapshot } from 'cf-style-provider';
+import felaSnapshot from 'cf-style-provider/src/felaSnapshot';
 import { Label } from '../../cf-component-label/src/index';
 
 test('should render', () => {

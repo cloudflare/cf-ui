@@ -57,11 +57,15 @@ renderer.renderToString(); // returns CSS as a string
 
 ## felaTestContext
 
-**For testing**. HOC that passes fela renderer and base theme into the context. Handy for testing with enzyme.
+**For testing**. HOC that passes fela renderer and base theme into the
+context. Handy for testing with enzyme.
+
+**NOTE:** felaTestContext is not exported from the index, you must provide a
+deep path to acccess it.
 
 ```js
 import { mount } from 'enzyme';
-import { felaTestContext } from 'cf-style-provider';
+import felaTestContext from 'cf-style-provider/src/felaTestContext';
 
 test('should call onPageChange when clicking another page', () => {
   const onPageChange = createStub();
@@ -87,10 +91,13 @@ test('should call onPageChange when clicking another page', () => {
 
 **For testing**. Uses internally felaTestContext. It shallow renders the component and returns snapshots of DOM and styles as a object with properties `component` and `styles`. Use it like this:
 
+**NOTE:** feleSnapshot is not exported from the index, you must provide a deep
+path to acccess it.
+
 ```js
 import React from 'react';
 import { Form } from '../src/index';
-import { felaSnapshot } from 'cf-style-provider';
+import felaSnapshot from 'cf-style-provider/src/felaSnapshot';
 
 test('should render horizontal layout', () => {
   const snapshot = felaSnapshot(

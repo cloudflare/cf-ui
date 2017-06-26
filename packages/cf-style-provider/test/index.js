@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { StyleProvider, felaSnapshot } from '../src/index';
+import { StyleProvider } from '../src/index';
+import felaSnapshot from '../src/felaSnapshot';
 import { createComponent } from '../../cf-style-container/src/index';
 import { Button } from '../../cf-component-button/src/index';
 import renderer from 'react-test-renderer';
