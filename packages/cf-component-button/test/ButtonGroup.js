@@ -1,5 +1,5 @@
 import React from 'react';
-import felaSnapshot from 'cf-style-provider/src/felaSnapshot';
+import { felaSnapshot } from 'cf-style-provider';
 import { ButtonGroup, Button } from '../../cf-component-button/src/index';
 
 test('should render', () => {

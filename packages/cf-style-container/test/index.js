@@ -8,7 +8,7 @@ import {
   mapChildren
 } from '../../cf-style-container/src/index';
 import { variables } from 'cf-style-const';
-import felaSnapshot from 'cf-style-provider/src/felaSnapshot';
+import { felaSnapshot } from 'cf-style-provider';
 
 test('mergeThemes should return an immutable and deeply cloned object', () => {
   const themeA = () => ({ color: 'yellow' });
