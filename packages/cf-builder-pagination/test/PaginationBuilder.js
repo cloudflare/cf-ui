@@ -94,17 +94,17 @@ test('should call onPageChange when clicking another page', () => {
   );
 
   const items = wrapper.find('li');
-  items.at(2).find('a').simulate('click');
+  items.at(2).find('a').at(0).simulate('click');
   expect(onPageChange.called).toBeTruthy();
   expect(onPageChange.calls[0].args[0]).toBe(2);
 
   wrapper.setProps({ page: 2 });
-  items.at(0).find('a').simulate('click');
+  items.at(0).find('a').at(0).simulate('click');
   expect(onPageChange.called).toBeTruthy;
   expect(onPageChange.calls[1].args[0]).toBe(1);
 
   wrapper.setProps({ page: 1 });
-  items.at(items.length - 1).find('a').simulate('click');
+  items.at(items.length - 1).find('a').at(0).simulate('click');
   expect(onPageChange.called).toBeTruthy;
   expect(onPageChange.calls[2].args[0]).toBe(2);
 });
