@@ -2,7 +2,7 @@
 
 exports[`should render as submit 1`] = `
 <button
-  className="cf-12tyf0k"
+  className="f12tyf0k"
   disabled={undefined}
   onClick={[Function]}
   type="submit"
@@ -12,25 +12,30 @@ exports[`should render as submit 1`] = `
 `;
 
 exports[`should render as submit 2`] = `
-".cf-12tyf0k:hover {
+"
+.f12tyf0k:hover {
   background-color: #2869a2;
   border-color: #215685;
   color: #fff
 }
-.cf-12tyf0k:active {
+
+.f12tyf0k:active {
   background-color: #215685;
   border-color: #1a4468;
   color: #fff
 }
-.cf-12tyf0k:focus {
+
+.f12tyf0k:focus {
   background-color: #2f7bbf;
   color: #fff;
   border-color: #2869a2
 }
-.cf-12tyf0k[title] {
+
+.f12tyf0k[title] {
   pointer-events: none
 }
-.cf-12tyf0k {
+
+.f12tyf0k {
   background-color: #2f7bbf;
   border-bottom: 1px solid;
   border-color: #2869a2;
@@ -40,7 +45,7 @@ exports[`should render as submit 2`] = `
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: \\"Open Sans\\",Helvetica,Arial,sans-serif;
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
   font-size: 0.9333333333333333rem;
   font-weight: 400;
   line-height: 1.2;
@@ -66,12 +71,13 @@ exports[`should render as submit 2`] = `
   -ms-user-select: none;
   float: none;
   max-width: initial
-}"
+}
+"
 `;
 
 exports[`should render with loading 1`] = `
 <button
-  className="cf-nubafe"
+  className="fnubafe"
   disabled={true}
   onClick={[Function]}
   type="button"
@@ -81,37 +87,44 @@ exports[`should render with loading 1`] = `
 `;
 
 exports[`should render with loading 2`] = `
-"@-webkit-keyframes k1 {
+"
+@-webkit-keyframes k1 {
   50% {
     opacity: 0
   }
 }
+
 @-moz-keyframes k1 {
   50% {
     opacity: 0
   }
 }
+
 @keyframes k1 {
   50% {
     opacity: 0
   }
 }
-.cf-nubafe:hover {
+
+.fnubafe:hover {
   background-color: #ededed;
   border-color: #dbdbdb;
   color: #ededed
 }
-.cf-nubafe:active {
+
+.fnubafe:active {
   background-color: #215685;
   border-color: #dbdbdb;
   color: #fff
 }
-.cf-nubafe:focus {
+
+.fnubafe:focus {
   color: #ededed;
   outline: none;
   border-color: #dbdbdb
 }
-.cf-nubafe::before {
+
+.fnubafe::before {
   content: \\"…\\";
   color: black;
   display: block;
@@ -129,10 +142,12 @@ exports[`should render with loading 2`] = `
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear
 }
-.cf-nubafe[title] {
+
+.fnubafe[title] {
   pointer-events: none
 }
-.cf-nubafe {
+
+.fnubafe {
   background-color: #ededed;
   border-bottom: 1px solid;
   border-color: #dbdbdb;
@@ -142,7 +157,7 @@ exports[`should render with loading 2`] = `
   color: #ededed;
   cursor: default;
   display: inline-block;
-  font-family: \\"Open Sans\\",Helvetica,Arial,sans-serif;
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
   font-size: 0.9333333333333333rem;
   font-weight: 400;
   line-height: 1.2;
@@ -168,12 +183,13 @@ exports[`should render with loading 2`] = `
   -ms-user-select: none;
   float: none;
   max-width: initial
-}"
+}
+"
 `;
 
 exports[`should render with loading and disabled overridden 1`] = `
 <button
-  className="cf-nubafe"
+  className="fnubafe"
   disabled={true}
   onClick={[Function]}
   type="button"
@@ -183,37 +199,44 @@ exports[`should render with loading and disabled overridden 1`] = `
 `;
 
 exports[`should render with loading and disabled overridden 2`] = `
-"@-webkit-keyframes k1 {
+"
+@-webkit-keyframes k1 {
   50% {
     opacity: 0
   }
 }
+
 @-moz-keyframes k1 {
   50% {
     opacity: 0
   }
 }
+
 @keyframes k1 {
   50% {
     opacity: 0
   }
 }
-.cf-nubafe:hover {
+
+.fnubafe:hover {
   background-color: #ededed;
   border-color: #dbdbdb;
   color: #ededed
 }
-.cf-nubafe:active {
+
+.fnubafe:active {
   background-color: #215685;
   border-color: #dbdbdb;
   color: #fff
 }
-.cf-nubafe:focus {
+
+.fnubafe:focus {
   color: #ededed;
   outline: none;
   border-color: #dbdbdb
 }
-.cf-nubafe::before {
+
+.fnubafe::before {
   content: \\"…\\";
   color: black;
   display: block;
@@ -231,10 +254,12 @@ exports[`should render with loading and disabled overridden 2`] = `
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear
 }
-.cf-nubafe[title] {
+
+.fnubafe[title] {
   pointer-events: none
 }
-.cf-nubafe {
+
+.fnubafe {
   background-color: #ededed;
   border-bottom: 1px solid;
   border-color: #dbdbdb;
@@ -244,7 +269,7 @@ exports[`should render with loading and disabled overridden 2`] = `
   color: #ededed;
   cursor: default;
   display: inline-block;
-  font-family: \\"Open Sans\\",Helvetica,Arial,sans-serif;
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
   font-size: 0.9333333333333333rem;
   font-weight: 400;
   line-height: 1.2;
@@ -270,12 +295,13 @@ exports[`should render with loading and disabled overridden 2`] = `
   -ms-user-select: none;
   float: none;
   max-width: initial
-}"
+}
+"
 `;
 
 exports[`should render with type 1`] = `
 <button
-  className="cf-12tyf0k"
+  className="f12tyf0k"
   disabled={undefined}
   onClick={[Function]}
   type="button"
@@ -285,25 +311,30 @@ exports[`should render with type 1`] = `
 `;
 
 exports[`should render with type 2`] = `
-".cf-12tyf0k:hover {
+"
+.f12tyf0k:hover {
   background-color: #2869a2;
   border-color: #215685;
   color: #fff
 }
-.cf-12tyf0k:active {
+
+.f12tyf0k:active {
   background-color: #215685;
   border-color: #1a4468;
   color: #fff
 }
-.cf-12tyf0k:focus {
+
+.f12tyf0k:focus {
   background-color: #2f7bbf;
   color: #fff;
   border-color: #2869a2
 }
-.cf-12tyf0k[title] {
+
+.f12tyf0k[title] {
   pointer-events: none
 }
-.cf-12tyf0k {
+
+.f12tyf0k {
   background-color: #2f7bbf;
   border-bottom: 1px solid;
   border-color: #2869a2;
@@ -313,7 +344,7 @@ exports[`should render with type 2`] = `
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: \\"Open Sans\\",Helvetica,Arial,sans-serif;
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
   font-size: 0.9333333333333333rem;
   font-weight: 400;
   line-height: 1.2;
@@ -339,12 +370,13 @@ exports[`should render with type 2`] = `
   -ms-user-select: none;
   float: none;
   max-width: initial
-}"
+}
+"
 `;
 
 exports[`should render with type/disabled 1`] = `
 <button
-  className="cf-bare0q"
+  className="fbare0q"
   disabled={true}
   onClick={[Function]}
   type="button"
@@ -354,25 +386,30 @@ exports[`should render with type/disabled 1`] = `
 `;
 
 exports[`should render with type/disabled 2`] = `
-".cf-bare0q:hover {
+"
+.fbare0q:hover {
   background-color: #2869a2;
   border-color: #215685;
   color: #fff
 }
-.cf-bare0q:active {
+
+.fbare0q:active {
   background-color: #215685;
   border-color: #1a4468;
   color: #fff
 }
-.cf-bare0q:focus {
+
+.fbare0q:focus {
   background-color: #2f7bbf;
   color: #fff;
   border-color: #2869a2
 }
-.cf-bare0q[title] {
+
+.fbare0q[title] {
   pointer-events: auto
 }
-.cf-bare0q {
+
+.fbare0q {
   background-color: #2f7bbf;
   border-bottom: 1px solid;
   border-color: #2869a2;
@@ -382,7 +419,7 @@ exports[`should render with type/disabled 2`] = `
   color: #fff;
   cursor: default;
   display: inline-block;
-  font-family: \\"Open Sans\\",Helvetica,Arial,sans-serif;
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
   font-size: 0.9333333333333333rem;
   font-weight: 400;
   line-height: 1.2;
@@ -408,5 +445,6 @@ exports[`should render with type/disabled 2`] = `
   -ms-user-select: none;
   float: none;
   max-width: initial
-}"
+}
+"
 `;

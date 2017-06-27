@@ -12,4 +12,8 @@ exports[`should render 1`] = `
 </div>
 `;
 
-exports[`should render 2`] = `""`;
+exports[`should render 2`] = `
+"
+
+"
+`;

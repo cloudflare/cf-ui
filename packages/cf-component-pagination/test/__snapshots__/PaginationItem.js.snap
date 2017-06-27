@@ -2,12 +2,12 @@
 
 exports[`should render 1`] = `
 <li
-  className="cf-15spu1u"
+  className="f15spu1u"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-32iz07"
+    className="f32iz07"
     href="#"
     onClick={[Function]}
   >
@@ -17,17 +17,20 @@ exports[`should render 1`] = `
 `;
 
 exports[`should render 2`] = `
-".cf-15spu1u {
+"
+.f15spu1u {
   float: left;
   position: relative;
   background-color: #fff;
   color: #408BC9;
   cursor: pointer
 }
-.cf-32iz07:focus {
+
+.f32iz07:focus {
   z-index: 1
 }
-.cf-32iz07 {
+
+.f32iz07 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -41,17 +44,18 @@ exports[`should render 2`] = `
   text-decoration: none;
   color: inherit;
   cursor: pointer
-}"
+}
+"
 `;
 
 exports[`should render active 1`] = `
 <li
-  className="cf-1wi2cf1"
+  className="f1wi2cf1"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-109b087"
+    className="f109b087"
     href="#"
     onClick={[Function]}
   >
@@ -61,7 +65,8 @@ exports[`should render active 1`] = `
 `;
 
 exports[`should render active 2`] = `
-".cf-1wi2cf1 {
+"
+.f1wi2cf1 {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -70,10 +75,12 @@ exports[`should render active 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-.cf-109b087:focus {
+
+.f109b087:focus {
   z-index: 1
 }
-.cf-109b087 {
+
+.f109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -87,17 +94,18 @@ exports[`should render active 2`] = `
   text-decoration: none;
   color: inherit;
   cursor: default
-}"
+}
+"
 `;
 
 exports[`should render active dot 1`] = `
 <li
-  className="cf-1xpv85q"
+  className="f1xpv85q"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-109b087"
+    className="f109b087"
     href="#"
     onClick={[Function]}
   >
@@ -107,7 +115,8 @@ exports[`should render active dot 1`] = `
 `;
 
 exports[`should render active dot 2`] = `
-".cf-1xpv85q {
+"
+.f1xpv85q {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -121,10 +130,12 @@ exports[`should render active dot 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-.cf-109b087:focus {
+
+.f109b087:focus {
   z-index: 1
 }
-.cf-109b087 {
+
+.f109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -138,17 +149,18 @@ exports[`should render active dot 2`] = `
   text-decoration: none;
   color: inherit;
   cursor: default
-}"
+}
+"
 `;
 
 exports[`should render active next 1`] = `
 <li
-  className="cf-1ezx84k"
+  className="f1ezx84k"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-109b087"
+    className="f109b087"
     href="#"
     onClick={[Function]}
   >
@@ -158,7 +170,8 @@ exports[`should render active next 1`] = `
 `;
 
 exports[`should render active next 2`] = `
-".cf-1ezx84k {
+"
+.f1ezx84k {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -168,10 +181,12 @@ exports[`should render active next 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-.cf-109b087:focus {
+
+.f109b087:focus {
   z-index: 1
 }
-.cf-109b087 {
+
+.f109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -185,17 +200,18 @@ exports[`should render active next 2`] = `
   text-decoration: none;
   color: inherit;
   cursor: default
-}"
+}
+"
 `;
 
 exports[`should render active prev 1`] = `
 <li
-  className="cf-1ezx84k"
+  className="f1ezx84k"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-109b087"
+    className="f109b087"
     href="#"
     onClick={[Function]}
   >
@@ -205,7 +221,8 @@ exports[`should render active prev 1`] = `
 `;
 
 exports[`should render active prev 2`] = `
-".cf-1ezx84k {
+"
+.f1ezx84k {
   float: left;
   position: relative;
   background-color: #408BC9;
@@ -215,10 +232,12 @@ exports[`should render active prev 2`] = `
   border-color: #62a1d8;
   z-index: 1
 }
-.cf-109b087:focus {
+
+.f109b087:focus {
   z-index: 1
 }
-.cf-109b087 {
+
+.f109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -232,17 +251,18 @@ exports[`should render active prev 2`] = `
   text-decoration: none;
   color: inherit;
   cursor: default
-}"
+}
+"
 `;
 
 exports[`should render disabled 1`] = `
 <li
-  className="cf-yr93k7"
+  className="fyr93k7"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-109b087"
+    className="f109b087"
     href="#"
     onClick={[Function]}
   >
@@ -252,17 +272,20 @@ exports[`should render disabled 1`] = `
 `;
 
 exports[`should render disabled 2`] = `
-".cf-yr93k7 {
+"
+.fyr93k7 {
   float: left;
   position: relative;
   background-color: #ededed;
   color: #666;
   cursor: default
 }
-.cf-109b087:focus {
+
+.f109b087:focus {
   z-index: 1
 }
-.cf-109b087 {
+
+.f109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -276,17 +299,18 @@ exports[`should render disabled 2`] = `
   text-decoration: none;
   color: inherit;
   cursor: default
-}"
+}
+"
 `;
 
 exports[`should render disabled dot 1`] = `
 <li
-  className="cf-18awel0"
+  className="f18awel0"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-109b087"
+    className="f109b087"
     href="#"
     onClick={[Function]}
   >
@@ -296,7 +320,8 @@ exports[`should render disabled dot 1`] = `
 `;
 
 exports[`should render disabled dot 2`] = `
-".cf-18awel0 {
+"
+.f18awel0 {
   float: left;
   position: relative;
   background-color: #ededed;
@@ -308,10 +333,12 @@ exports[`should render disabled dot 2`] = `
   margin: 1em;
   border-radius: 50%
 }
-.cf-109b087:focus {
+
+.f109b087:focus {
   z-index: 1
 }
-.cf-109b087 {
+
+.f109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -325,17 +352,18 @@ exports[`should render disabled dot 2`] = `
   text-decoration: none;
   color: inherit;
   cursor: default
-}"
+}
+"
 `;
 
 exports[`should render disabled next 1`] = `
 <li
-  className="cf-mgj6am"
+  className="fmgj6am"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-109b087"
+    className="f109b087"
     href="#"
     onClick={[Function]}
   >
@@ -345,7 +373,8 @@ exports[`should render disabled next 1`] = `
 `;
 
 exports[`should render disabled next 2`] = `
-".cf-mgj6am {
+"
+.fmgj6am {
   float: left;
   position: relative;
   background-color: #ededed;
@@ -353,10 +382,12 @@ exports[`should render disabled next 2`] = `
   cursor: default;
   border-radius: 3px
 }
-.cf-109b087:focus {
+
+.f109b087:focus {
   z-index: 1
 }
-.cf-109b087 {
+
+.f109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -370,17 +401,18 @@ exports[`should render disabled next 2`] = `
   text-decoration: none;
   color: inherit;
   cursor: default
-}"
+}
+"
 `;
 
 exports[`should render disabled prev 1`] = `
 <li
-  className="cf-mgj6am"
+  className="fmgj6am"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="cf-109b087"
+    className="f109b087"
     href="#"
     onClick={[Function]}
   >
@@ -390,7 +422,8 @@ exports[`should render disabled prev 1`] = `
 `;
 
 exports[`should render disabled prev 2`] = `
-".cf-mgj6am {
+"
+.fmgj6am {
   float: left;
   position: relative;
   background-color: #ededed;
@@ -398,10 +431,12 @@ exports[`should render disabled prev 2`] = `
   cursor: default;
   border-radius: 3px
 }
-.cf-109b087:focus {
+
+.f109b087:focus {
   z-index: 1
 }
-.cf-109b087 {
+
+.f109b087 {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -415,5 +450,6 @@ exports[`should render disabled prev 2`] = `
   text-decoration: none;
   color: inherit;
   cursor: default
-}"
+}
+"
 `;

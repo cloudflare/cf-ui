@@ -6,25 +6,32 @@ exports[`createComponent creates empty component 1`] = `
 />
 `;
 
-exports[`createComponent creates empty component 2`] = `""`;
+exports[`createComponent creates empty component 2`] = `
+"
+
+"
+`;
 
 exports[`createComponentStyles creates a component 1`] = `
 <div
-  className="cf-dxtwdx"
+  className="fdxtwdx"
 >
   <i
-    className="cf-18oup6l"
+    className="f18oup6l"
   />
 </div>
 `;
 
 exports[`createComponentStyles creates a component 2`] = `
-".cf-dxtwdx {
+"
+.fdxtwdx {
   padding: 5px
 }
-.cf-18oup6l {
+
+.f18oup6l {
   margin: 2px
-}"
+}
+"
 `;
 
 exports[`mergeThemes should override the baseTheme if more than one theme is provided 1`] = `

@@ -2,12 +2,13 @@
 
 exports[`should render invalid state 1`] = `
 <div
-  className="cf-lzhvgp"
+  className="flzhvgp"
 />
 `;
 
 exports[`should render invalid state 2`] = `
-".cf-lzhvgp::before {
+"
+.flzhvgp::before {
   content: \\"\\";
   display: block;
   position: absolute;
@@ -18,7 +19,8 @@ exports[`should render invalid state 2`] = `
   border-width: 6px;
   border-bottom-color: #bd2527
 }
-.cf-lzhvgp::after {
+
+.flzhvgp::after {
   content: \\"\\";
   display: block;
   position: absolute;
@@ -29,18 +31,21 @@ exports[`should render invalid state 2`] = `
   border-width: 4px;
   border-bottom-color: #bd2527
 }
-.cf-lzhvgp p {
+
+.flzhvgp p {
   margin-top: 0px;
   margin-bottom: 0px
 }
-.cf-lzhvgp p + p {
+
+.flzhvgp p + p {
   margin-top: 0.5em
 }
-.cf-lzhvgp {
+
+.flzhvgp {
   position: relative;
   margin-top: -0.75em;
   padding: 0.5em 1em;
-  border: 1px solid #9f1f21;
+  border: 1px solid  #9f1f21;
   font-size: 0.8em;
   font-weight: 600;
   background: #bd2527;
@@ -48,12 +53,13 @@ exports[`should render invalid state 2`] = `
   border-radius: 2px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   -webkit-font-smoothing: antialiased
-}"
+}
+"
 `;
 
 exports[`should render invalid state with validation errors 1`] = `
 <div
-  className="cf-lzhvgp"
+  className="flzhvgp"
 >
   <p>
     This is required
@@ -62,7 +68,8 @@ exports[`should render invalid state with validation errors 1`] = `
 `;
 
 exports[`should render invalid state with validation errors 2`] = `
-".cf-lzhvgp::before {
+"
+.flzhvgp::before {
   content: \\"\\";
   display: block;
   position: absolute;
@@ -73,7 +80,8 @@ exports[`should render invalid state with validation errors 2`] = `
   border-width: 6px;
   border-bottom-color: #bd2527
 }
-.cf-lzhvgp::after {
+
+.flzhvgp::after {
   content: \\"\\";
   display: block;
   position: absolute;
@@ -84,18 +92,21 @@ exports[`should render invalid state with validation errors 2`] = `
   border-width: 4px;
   border-bottom-color: #bd2527
 }
-.cf-lzhvgp p {
+
+.flzhvgp p {
   margin-top: 0px;
   margin-bottom: 0px
 }
-.cf-lzhvgp p + p {
+
+.flzhvgp p + p {
   margin-top: 0.5em
 }
-.cf-lzhvgp {
+
+.flzhvgp {
   position: relative;
   margin-top: -0.75em;
   padding: 0.5em 1em;
-  border: 1px solid #9f1f21;
+  border: 1px solid  #9f1f21;
   font-size: 0.8em;
   font-weight: 600;
   background: #bd2527;
@@ -103,5 +114,6 @@ exports[`should render invalid state with validation errors 2`] = `
   border-radius: 2px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   -webkit-font-smoothing: antialiased
-}"
+}
+"
 `;

@@ -2,17 +2,19 @@
 
 exports[`should render 1`] = `
 <small
-  className="cf-1d38fhm"
+  className="f1d38fhm"
 >
   Heading Caption
 </small>
 `;
 
 exports[`should render 2`] = `
-".cf-1d38fhm {
+"
+.f1d38fhm {
   color: #7c7c7c;
   font-color: #333;
   font-weight: 400;
   margin-left: .5em
-}"
+}
+"
 `;
