@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { createComponent } from 'cf-style-container';
 
 // Doesn't allow overrides atm
-const styles = () => ({
-  paddingTop: '2.5rem',
-  paddingBottom: '2.5rem',
+const styles = ({ theme }) => ({
+  paddingTop: theme.paddingTop,
+  paddingBottom: theme.paddingBottom,
   tablet: {
     paddingBottom: '1.3rem'
   }
