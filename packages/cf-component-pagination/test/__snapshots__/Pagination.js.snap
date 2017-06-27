@@ -2,11 +2,11 @@
 
 exports[`should render 1`] = `
 <div
-  className="cf-1bek1ug"
+  className="f1bek1ug"
 >
   <ul
     aria-describedby={null}
-    className="cf-y1rhga"
+    className="fy1rhga"
     role="navigation"
   >
     Pagination
@@ -15,12 +15,14 @@ exports[`should render 1`] = `
 `;
 
 exports[`should render 2`] = `
-".cf-y1rhga:after {
+"
+.fy1rhga:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-.cf-y1rhga {
+
+.fy1rhga {
   list-style: none;
   margin-top: 0px;
   margin-left: 0px;
@@ -34,20 +36,22 @@ exports[`should render 2`] = `
   border-radius: 3px;
   box-shadow: none
 }
-.cf-1bek1ug:after {
+
+.f1bek1ug:after {
   content: \\"\\";
   display: table;
   clear: both
-}"
+}
+"
 `;
 
 exports[`should render with info 1`] = `
 <div
-  className="cf-1bek1ug"
+  className="f1bek1ug"
 >
   <ul
     aria-describedby="cf-pagination-1"
-    className="cf-y1rhga"
+    className="fy1rhga"
     role="navigation"
   >
     Pagination
@@ -61,12 +65,14 @@ exports[`should render with info 1`] = `
 `;
 
 exports[`should render with info 2`] = `
-".cf-y1rhga:after {
+"
+.fy1rhga:after {
   content: \\"\\";
   display: table;
   clear: both
 }
-.cf-y1rhga {
+
+.fy1rhga {
   list-style: none;
   margin-top: 0px;
   margin-left: 0px;
@@ -80,9 +86,11 @@ exports[`should render with info 2`] = `
   border-radius: 3px;
   box-shadow: none
 }
-.cf-1bek1ug:after {
+
+.f1bek1ug:after {
   content: \\"\\";
   display: table;
   clear: both
-}"
+}
+"
 `;

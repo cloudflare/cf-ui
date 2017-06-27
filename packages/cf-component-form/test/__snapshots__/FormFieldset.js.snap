@@ -2,15 +2,15 @@
 
 exports[`should render 1`] = `
 <fieldset
-  className="cf-1nadb32"
+  className="f1nadb32"
 >
   <legend
-    className="cf-1peqvck"
+    className="f1peqvck"
   >
     Legend
   </legend>
   <div
-    className="cf-1culcac"
+    className="f1culcac"
   >
     FormFieldset
   </div>
@@ -18,12 +18,14 @@ exports[`should render 1`] = `
 `;
 
 exports[`should render 2`] = `
-".cf-1nadb32::after {
+"
+.f1nadb32::after {
   clear: both;
   content: \\"\\";
   display: table
 }
-.cf-1nadb32 {
+
+.f1nadb32 {
   margin: 0px;
   padding: 0px;
   border-top: none;
@@ -31,30 +33,35 @@ exports[`should render 2`] = `
   border-right: none;
   border-bottom: 1px solid #dedede
 }
-.cf-1peqvck {
+
+.f1peqvck {
   padding: 1em;
   margin-bottom: 0px;
   border-bottom: none
 }
-.cf-1culcac {
+
+.f1culcac {
   padding: 1em;
   border: 0 solid #dedede;
   border-top-width: 1px;
   background: #eee
 }
+
 @media (min-width: 720px) {
-  .cf-1peqvck {
+  .f1peqvck {
     width: 30%;
     float: left;
     padding: 1.7em 1rem;
     color: #333;
     text-align: right
   }
-  .cf-1culcac {
+  
+  .f1culcac {
     width: 70%;
     float: left;
     border-top-width: 0px;
     border-left-width: 0px
   }
-}"
+}
+"
 `;

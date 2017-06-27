@@ -2,10 +2,10 @@
 
 exports[`should render 1`] = `
 <div
-  className="cf-1sgbk2q"
+  className="f1sgbk2q"
 >
   <h3
-    className="cf-oxs2bj"
+    className="foxs2bj"
   >
     FormHeader
   </h3>
@@ -13,11 +13,14 @@ exports[`should render 1`] = `
 `;
 
 exports[`should render 2`] = `
-".cf-1sgbk2q {
+"
+.f1sgbk2q {
   padding: 1em;
   border-bottom: 1px solid #dedede
 }
-.cf-oxs2bj {
+
+.foxs2bj {
   margin: 0px
-}"
+}
+"
 `;

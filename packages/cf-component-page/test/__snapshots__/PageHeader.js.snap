@@ -5,7 +5,7 @@ exports[`should render title 1`] = `
   className=""
 >
   <h1
-    className="cf-10h3ujg"
+    className="f10h3ujg"
   >
     Title
   </h1>
@@ -13,11 +13,13 @@ exports[`should render title 1`] = `
 `;
 
 exports[`should render title 2`] = `
-".cf-10h3ujg {
+"
+.f10h3ujg {
   font-size: 2rem;
   line-height: 1.2;
   font-weight: 400
-}"
+}
+"
 `;
 
 exports[`should render title/subtitle 1`] = `
@@ -25,12 +27,12 @@ exports[`should render title/subtitle 1`] = `
   className=""
 >
   <h1
-    className="cf-10h3ujg"
+    className="f10h3ujg"
   >
     Title
   </h1>
   <h2
-    className="cf-jjd3ph"
+    className="fjjd3ph"
   >
     Subtitle
   </h2>
@@ -38,13 +40,16 @@ exports[`should render title/subtitle 1`] = `
 `;
 
 exports[`should render title/subtitle 2`] = `
-".cf-10h3ujg {
+"
+.f10h3ujg {
   font-size: 2rem;
   line-height: 1.2;
   font-weight: 400
 }
-.cf-jjd3ph {
+
+.fjjd3ph {
   color: #7c7c7c;
   font-weight: 300
-}"
+}
+"
 `;

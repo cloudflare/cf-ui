@@ -2,115 +2,131 @@
 
 exports[`should render align 1`] = `
 <div
-  className="cf-12kp2av"
+  className="f12kp2av"
 >
   Hello
 </div>
 `;
 
 exports[`should render align 2`] = `
-".cf-12kp2av {
+"
+.f12kp2av {
   text-align: center
-}"
+}
+"
 `;
 
 exports[`should render bold size 1`] = `
 <div
-  className="cf-e0qi9f"
+  className="fe0qi9f"
 >
   Hello
 </div>
 `;
 
 exports[`should render bold size 2`] = `
-".cf-e0qi9f {
+"
+.fe0qi9f {
   font-size: 1rem;
   font-weight: 700
-}"
+}
+"
 `;
 
 exports[`should render lowercase 1`] = `
 <div
-  className="cf-1ez8i2i"
+  className="f1ez8i2i"
 >
   Hello
 </div>
 `;
 
 exports[`should render lowercase 2`] = `
-".cf-1ez8i2i {
+"
+.f1ez8i2i {
   text-transform: lowercase
-}"
+}
+"
 `;
 
 exports[`should render normal size 1`] = `
 <div
-  className="cf-jgz5pd"
+  className="fjgz5pd"
 >
   Hello
 </div>
 `;
 
 exports[`should render normal size 2`] = `
-".cf-jgz5pd {
+"
+.fjgz5pd {
   font-size: 1rem
-}"
+}
+"
 `;
 
 exports[`should render semi-bold size 1`] = `
 <div
-  className="cf-z310y"
+  className="fz310y"
 >
   Hello
 </div>
 `;
 
 exports[`should render semi-bold size 2`] = `
-".cf-z310y {
+"
+.fz310y {
   font-size: 1rem;
   font-weight: 600
-}"
+}
+"
 `;
 
 exports[`should render small size 1`] = `
 <div
-  className="cf-xk5sq7"
+  className="fxk5sq7"
 >
   Hello
 </div>
 `;
 
 exports[`should render small size 2`] = `
-".cf-xk5sq7 {
+"
+.fxk5sq7 {
   line-height: 1.3;
   font-size: 0.8em
-}"
+}
+"
 `;
 
 exports[`should render titlecase case 1`] = `
 <div
-  className="cf-w04jx1"
+  className="fw04jx1"
 >
   Hello
 </div>
 `;
 
 exports[`should render titlecase case 2`] = `
-".cf-w04jx1:first-letter {
+"
+.fw04jx1:first-letter {
   text-transform: capitalize
-}"
+}
+"
 `;
 
 exports[`should render type 1`] = `
 <div
-  className="cf-1vjexbg"
+  className="f1vjexbg"
 >
   Hello
 </div>
 `;
 
 exports[`should render type 2`] = `
-".cf-1vjexbg {
+"
+.f1vjexbg {
   color: #434148
-}"
+}
+"
 `;
