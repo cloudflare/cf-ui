@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { combineRules } from 'fela';
-import {
-  createComponent as createFelaComponent,
-  ThemeProvider,
-  connect
-} from 'react-fela';
+import { ThemeProvider, connect } from 'react-fela';
 import { static as Immutable } from 'seamless-immutable';
 import { capitalize } from 'underscore.string';
+import createFelaComponent from './createComponent';
 
 const createComponent = (rule, type = 'div', passThroughProps = []) =>
   createFelaComponent(
