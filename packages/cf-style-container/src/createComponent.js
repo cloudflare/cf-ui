@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 function createComponentFactory(createElement, contextTypes) {
   return function createComponent(rule, type, passThroughProps) {
-    const displayName = rule.name ? rule.name : 'FelaComponent';
+    const displayName = rule.name || 'FelaComponent';
 
     const FelaComponent = ({ children, ...ruleProps }, { renderer, theme }) => {
       if (!renderer) {
@@ -35,9 +35,6 @@ function createComponentFactory(createElement, contextTypes) {
 
       if (ruleProps.style) {
         componentProps.style = ruleProps.style;
-      }
-
-      if (ruleProps.className) {
       }
 
       componentProps.className = renderer.renderRule(rule, ruleProps);
