@@ -4,7 +4,9 @@ import PropTypes from 'prop-types';
 
 function createComponentFactory(createElement, contextTypes) {
   return function createComponent(rule, type, passThroughProps) {
-    const displayName = rule.name || 'FelaComponent';
+    const componentName = typeof type === 'string'
+      ? type
+      : type.displayName || type.name || '';
 
     const FelaComponent = ({ children, ...ruleProps }, { renderer, theme }) => {
       if (!renderer) {
@@ -18,10 +20,6 @@ function createComponentFactory(createElement, contextTypes) {
           "createComponent() can't render styles without the theme in the context. Wrap the root of your app with <StyleProvider />."
         );
       }
-
-      const componentName = typeof type === 'string'
-        ? type
-        : type.displayName || type.name || '';
 
       // compose passThrough props from arrays or functions
       const resolvedPassThrough = [
@@ -54,15 +52,21 @@ function createComponentFactory(createElement, contextTypes) {
       }
 
       const customType = ruleProps.is || type;
+
       return createElement(customType, componentProps, children);
     };
+
+    if (type.propTypes) {
+      FelaComponent.propTypes = type.propTypes;
+      FelaComponent.propTypes.className = PropTypes.string;
+    }
 
     if (contextTypes) {
       FelaComponent.contextTypes = contextTypes;
     }
 
     // use the rule name as display name to better debug with react inspector
-    FelaComponent.displayName = displayName;
+    FelaComponent.displayName = componentName;
     FelaComponent._isFelaComponent = true;
 
     return FelaComponent;
