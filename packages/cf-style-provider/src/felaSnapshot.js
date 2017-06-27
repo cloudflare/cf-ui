@@ -1,5 +1,4 @@
 import renderer from 'react-test-renderer';
-import perfectionist from 'perfectionist';
 import felaTestContext from './felaTestContext';
 import createRenderer from './createRenderer';
 
