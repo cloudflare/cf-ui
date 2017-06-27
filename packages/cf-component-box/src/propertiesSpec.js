@@ -471,6 +471,18 @@ export default {
       'unset'
     ]),
     default: 'normal'
+  },
+
+  clear: {
+    propType: PropTypes.oneOf([
+      'none',
+      'left',
+      'right',
+      'both',
+      'initial',
+      'inherit'
+    ]),
+    default: 'none'
   }
 };
 
