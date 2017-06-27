@@ -1,6 +1,6 @@
 import React from 'react';
 import { HeadingCaption } from '../../cf-component-heading/src/index';
-import felaSnapshot from 'cf-style-provider/src/felaSnapshot';
+import { felaSnapshot } from 'cf-style-provider';
 
 test('should render', () => {
   const snapshot = felaSnapshot(

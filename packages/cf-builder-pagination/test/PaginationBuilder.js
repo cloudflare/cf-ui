@@ -2,8 +2,8 @@ import React from 'react';
 import { mount } from 'enzyme';
 import { PaginationBuilder } from '../../cf-builder-pagination/src/index';
 import { createStub } from '../../cf-test-stub/src/index';
-import felaSnapshot from 'cf-style-provider/src/felaSnapshot';
-import felaTestContext from 'cf-style-provider/src/felaTestContext';
+import { felaSnapshot } from 'cf-style-provider';
+import { felaTestContext } from 'cf-style-provider';
 
 test('should render pagination', () => {
   const snapshot = felaSnapshot(

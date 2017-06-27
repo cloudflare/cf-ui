@@ -65,7 +65,7 @@ deep path to acccess it.
 
 ```js
 import { mount } from 'enzyme';
-import felaTestContext from 'cf-style-provider/src/felaTestContext';
+import { felaTestContext } from 'cf-style-provider';
 
 test('should call onPageChange when clicking another page', () => {
   const onPageChange = createStub();
@@ -97,7 +97,7 @@ path to acccess it.
 ```js
 import React from 'react';
 import { Form } from '../src/index';
-import felaSnapshot from 'cf-style-provider/src/felaSnapshot';
+import { felaSnapshot } from 'cf-style-provider';
 
 test('should render horizontal layout', () => {
   const snapshot = felaSnapshot(
