@@ -21,7 +21,7 @@
     "updated": "lerna updated --only-explicit-updates",
     "prettier": "node prettier.js",
     "clean": "lerna clean --yes && rimraf .jest packages/**/es packages/**/lib packages/**/dist",
-    "publish": "git pull --rebase && check-installed-dependencies && npm run build && lerna publish --skip-temp-tag --conventional-commits",
+    "publish": "git pull --rebase && check-installed-dependencies && npm run build && lerna publish --skip-temp-tag --conventional-commits --message 'chore: Publish' --independent && git push",
     "update-snapshot": "cross-env BABEL_ENV=commonjs jest --no-cache --updateSnapshot"
   },
   "devDependencies": {
@@ -49,7 +49,7 @@
     "jest-fetch-mock": "^1.0.8",
     "js-beautify": "^1.6.14",
     "jsdom": "^9.11.0",
-    "lerna": "2.0.0-beta.38",
+    "lerna": "^2.0.0-rc.5",
     "polished": "^1.2.1",
     "prettier": "^1.1.0",
     "prop-types": "^15.5.8",
