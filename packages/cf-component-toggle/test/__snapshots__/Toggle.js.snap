@@ -2,12 +2,11 @@
 
 exports[`should render 1`] = `
 <label
-  className="cf-toggle"
+  className="f17lho90"
   htmlFor="test"
 >
   <input
     checked={undefined}
-    className="cf-toggle__checkbox"
     disabled={undefined}
     id="test"
     name="test"
@@ -17,24 +16,130 @@ exports[`should render 1`] = `
     type="checkbox"
   />
   <span
-    className="cf-toggle__label"
+    className="f15elc4i"
   >
     Test Toggle
   </span>
   <span
-    className="cf-toggle__handle"
+    active={undefined}
+    className="fopa0cz"
   />
 </label>
+`;
+
+exports[`should render 2`] = `
+"
+.f17lho90::before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 50%;
+  line-height: 2.26667rem;
+  text-align: center;
+  content: 'On';
+  left: 0px;
+  background: #9bca3e;
+  color: #fff
+}
+
+.f17lho90::after {
+  display: block;
+  position: absolute;
+  content: 'Off';
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  text-align: center;
+  width: 50%;
+  line-height: 2.26667rem;
+  background: #7c7c7c;
+  color: #fff
+}
+
+.f17lho90 {
+  display: block;
+  position: relative;
+  margin: 0px;
+  height: 2.26667rem;
+  width: 5.334rem;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #aaa;
+  cursor: pointer;
+  font-size: 0.86667rem;
+  margin-bottom: 0.38333em;
+  min-height: 1.22em
+}
+
+.f15elc4i {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0px
+}
+
+.fopa0cz::before {
+  border: 4px solid transparent;
+  content: '';
+  display: block;
+  height: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -3px;
+  width: 0px;
+  border-left-color: transparent;
+  border-right-color: inherit;
+  margin-left: -10px
+}
+
+.fopa0cz::after {
+  border: 4px solid transparent;
+  border-left-color: inherit;
+  content: '';
+  display: block;
+  height: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 2px;
+  margin-top: -3px;
+  width: 0px
+}
+
+.fopa0cz {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 50%;
+  border: inherit;
+  border-width: 0px;
+  border-right-width: inherit;
+  border-left-width: 0px;
+  background: #fff;
+  transition: left 100ms ease;
+  -webkit-transition: left 100ms ease;
+  -moz-transition: left 100ms ease
+}
+"
 `;
 
 exports[`should render checked 1`] = `
 <label
-  className="cf-toggle cf-toggle--active"
+  className="f17lho90"
   htmlFor="test"
 >
   <input
     checked={true}
-    className="cf-toggle__checkbox"
     disabled={undefined}
     id="test"
     name="test"
@@ -44,24 +149,130 @@ exports[`should render checked 1`] = `
     type="checkbox"
   />
   <span
-    className="cf-toggle__label"
+    className="f15elc4i"
   >
     Test Toggle
   </span>
   <span
-    className="cf-toggle__handle"
+    active={true}
+    className="firytjf"
   />
 </label>
 `;
 
+exports[`should render checked 2`] = `
+"
+.f17lho90::before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 50%;
+  line-height: 2.26667rem;
+  text-align: center;
+  content: 'On';
+  left: 0px;
+  background: #9bca3e;
+  color: #fff
+}
+
+.f17lho90::after {
+  display: block;
+  position: absolute;
+  content: 'Off';
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  text-align: center;
+  width: 50%;
+  line-height: 2.26667rem;
+  background: #7c7c7c;
+  color: #fff
+}
+
+.f17lho90 {
+  display: block;
+  position: relative;
+  margin: 0px;
+  height: 2.26667rem;
+  width: 5.334rem;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #aaa;
+  cursor: pointer;
+  font-size: 0.86667rem;
+  margin-bottom: 0.38333em;
+  min-height: 1.22em
+}
+
+.f15elc4i {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0px
+}
+
+.firytjf::before {
+  border: 4px solid transparent;
+  content: '';
+  display: block;
+  height: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -3px;
+  width: 0px;
+  border-left-color: transparent;
+  border-right-color: inherit;
+  margin-left: -10px
+}
+
+.firytjf::after {
+  border: 4px solid transparent;
+  border-left-color: inherit;
+  content: '';
+  display: block;
+  height: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 2px;
+  margin-top: -3px;
+  width: 0px
+}
+
+.firytjf {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  bottom: 0px;
+  left: 50%;
+  width: 50%;
+  border: inherit;
+  border-width: 0px;
+  border-right-width: 0px;
+  border-left-width: inherit;
+  background: #fff;
+  transition: left 100ms ease;
+  -webkit-transition: left 100ms ease;
+  -moz-transition: left 100ms ease
+}
+"
+`;
+
 exports[`should render disabled 1`] = `
 <label
-  className="cf-toggle cf-toggle--active cf-toggle--disabled"
+  className="f1t9hd5d"
   htmlFor="test"
 >
   <input
     checked={true}
-    className="cf-toggle__checkbox"
     disabled={true}
     id="test"
     name="test"
@@ -71,12 +282,119 @@ exports[`should render disabled 1`] = `
     type="checkbox"
   />
   <span
-    className="cf-toggle__label"
+    className="f15elc4i"
   >
     Test Toggle
   </span>
   <span
-    className="cf-toggle__handle"
+    active={true}
+    className="firytjf"
   />
 </label>
+`;
+
+exports[`should render disabled 2`] = `
+"
+.f1t9hd5d::before {
+  display: block;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  width: 50%;
+  line-height: 2.26667rem;
+  text-align: center;
+  content: 'On';
+  left: 0px;
+  background: #7c7c7c;
+  color: #dedede
+}
+
+.f1t9hd5d::after {
+  display: block;
+  position: absolute;
+  content: 'Off';
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  text-align: center;
+  width: 50%;
+  line-height: 2.26667rem;
+  background: #7c7c7c;
+  color: #dedede
+}
+
+.f1t9hd5d {
+  display: block;
+  position: relative;
+  margin: 0px;
+  height: 2.26667rem;
+  width: 5.334rem;
+  border-radius: 2px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #7c7c7c;
+  cursor: not-allowed;
+  font-size: 0.86667rem;
+  margin-bottom: 0.38333em;
+  min-height: 1.22em
+}
+
+.f15elc4i {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0px
+}
+
+.firytjf::before {
+  border: 4px solid transparent;
+  content: '';
+  display: block;
+  height: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -3px;
+  width: 0px;
+  border-left-color: transparent;
+  border-right-color: inherit;
+  margin-left: -10px
+}
+
+.firytjf::after {
+  border: 4px solid transparent;
+  border-left-color: inherit;
+  content: '';
+  display: block;
+  height: 0px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: 2px;
+  margin-top: -3px;
+  width: 0px
+}
+
+.firytjf {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  bottom: 0px;
+  left: 50%;
+  width: 50%;
+  border: inherit;
+  border-width: 0px;
+  border-right-width: 0px;
+  border-left-width: inherit;
+  background: #fff;
+  transition: left 100ms ease;
+  -webkit-transition: left 100ms ease;
+  -moz-transition: left 100ms ease
+}
+"
 `;
