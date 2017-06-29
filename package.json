@@ -22,7 +22,8 @@
     "prettier": "node prettier.js",
     "clean": "lerna clean --yes && rimraf .jest packages/**/es packages/**/lib packages/**/dist",
     "publish": "git pull --rebase && check-installed-dependencies && npm run build && lerna publish --skip-temp-tag --conventional-commits --message 'chore: Publish' && git push",
-    "update-snapshot": "cross-env BABEL_ENV=commonjs jest --no-cache --updateSnapshot"
+    "update-snapshot": "cross-env BABEL_ENV=commonjs jest --no-cache --updateSnapshot",
+    "commitmsg": "validate-commit-msg"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.6",
