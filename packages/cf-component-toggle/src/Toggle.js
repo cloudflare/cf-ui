@@ -97,19 +97,29 @@ const Handle = createComponent(
   ['active']
 );
 
-const A11yLabel = createComponent(
-  () => ({
-    position: 'absolute',
-    width: '1px',
-    height: '1px',
-    padding: 0,
-    margin: '-1px',
-    overflow: 'hidden',
-    clip: 'rect(0, 0, 0, 0)',
-    border: 0
-  }),
-  'span'
-);
+const HiddenStyles = () => ({
+  position: 'absolute',
+  overflow: 'hidden',
+  margin: 0,
+  padding: 0,
+  border: 0,
+  outline: 0,
+  opacity: 0
+});
+
+const Input = createComponent(HiddenStyles, 'input', [
+  'type',
+  'checkbox',
+  'disabled',
+  'id',
+  'name',
+  'checked',
+  'onChange',
+  'onFocus',
+  'onBlur'
+]);
+
+const A11yLabel = createComponent(HiddenStyles, 'span');
 
 class Toggle extends React.Component {
   constructor(props) {
@@ -128,7 +138,7 @@ class Toggle extends React.Component {
 
     return (
       <label htmlFor={this.props.name} className={className}>
-        <input
+        <Input
           type="checkbox"
           disabled={this.props.disabled}
           id={this.props.name}
