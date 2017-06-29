@@ -1,22 +1,25 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { felaSnapshot } from 'cf-style-provider';
 import Toggle from '../../cf-component-toggle/src/index';
 
 test('should render', () => {
-  const component = renderer.create(<Toggle label="Test Toggle" name="test" />);
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<Toggle label="Test Toggle" name="test" />);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render checked', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Toggle label="Test Toggle" name="test" value={true} />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render disabled', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Toggle disabled label="Test Toggle" name="test" value={true} />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
