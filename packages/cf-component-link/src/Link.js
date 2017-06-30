@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { routeTo } from 'cf-util-route-handler';
+import { createComponent } from 'cf-style-container';
 
 class Link extends React.Component {
   constructor(props, context) {
@@ -47,22 +48,43 @@ class Link extends React.Component {
       }
     }
 
-    props.className = 'cf-link';
-
     if (disabled) {
-      props.className += ' cf-link--disabled';
       props.disabled = true;
-    }
-
-    if (className) {
-      props.className += ' ' + className;
     }
 
     props.onClick = this.handleClick;
 
     props.ref = node => this.link = node;
 
-    return React.createElement(tagName, props, children);
+    const Link = createComponent(
+      ({ theme, disabled }) => ({
+        color: disabled ? theme.disabledColor : theme.color,
+        outline: theme.outline,
+        textDecoration: theme.textDecoration,
+        transition: theme.transition,
+        cursor: disabled ? theme.disabledCursor : theme.cursor,
+
+        '&:hover': {
+          color: disabled
+            ? theme['&:hover'].disabledColor
+            : theme['&:hover'].color
+        },
+
+        '&:focus': {
+          color: theme['&:focus'].color,
+          outline: theme['&:focus'].outline,
+          outlineOffset: theme['&:focus'].outlineOffset
+        },
+
+        '&:active': {
+          color: theme['&:active'].color,
+          outline: theme['&:active'].outline
+        }
+      }),
+      tagName,
+      ['disabled', 'href', 'role']
+    );
+    return <Link {...props}>{children}</Link>;
   }
 }
 

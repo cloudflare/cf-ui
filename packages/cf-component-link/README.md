@@ -12,7 +12,7 @@ $ npm install cf-component-link
 
 ```jsx
 import React from 'react';
-import Link from 'cf-component-link';
+import { Link } from 'cf-component-link';
 
 class LinkComponent extends React.Component {
   handleClick() {

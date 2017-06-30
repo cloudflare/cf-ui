@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'cf-component-link';
+import { Link } from 'cf-component-link';
 import DropdownRegistry from './DropdownRegistry';
 
 class DropdownLink extends React.Component {

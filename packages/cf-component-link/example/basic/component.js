@@ -1,5 +1,5 @@
 import React from 'react';
-import Link from 'cf-component-link';
+import { Link } from 'cf-component-link';
 
 class LinkComponent extends React.Component {
   handleClick() {
@@ -15,11 +15,6 @@ class LinkComponent extends React.Component {
         <p>Alternatively you can pass an <code>onClick</code> handler:</p>
         <Link onClick={this.handleClick.bind(this)}>Link to something</Link>
         <p>Note: This will give it a <code>role="button"</code></p>
-
-        <p>
-          All additional props will be added to the <code>Link</code> element:
-        </p>
-        <Link to="/foo" className="special-link">Link to /foo</Link>
 
         <p>You can even specify <code>tagName</code>:</p>
         <Link to="/bar" tagName="button">Link to /bar</Link>
