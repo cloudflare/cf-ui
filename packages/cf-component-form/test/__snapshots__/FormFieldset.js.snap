@@ -5,12 +5,12 @@ exports[`should render 1`] = `
   className="f1nadb32"
 >
   <legend
-    className="f1peqvck"
+    className="f15bygxq"
   >
     Legend
   </legend>
   <div
-    className="f1culcac"
+    className="f13cnhwe"
   >
     FormFieldset
   </div>
@@ -34,21 +34,21 @@ exports[`should render 2`] = `
   border-bottom: 1px solid #dedede
 }
 
-.f1peqvck {
+.f15bygxq {
   padding: 1em;
   margin-bottom: 0px;
   border-bottom: none
 }
 
-.f1culcac {
+.f13cnhwe {
   padding: 1em;
   border: 0 solid #dedede;
   border-top-width: 1px;
   background: #eee
 }
 
-@media (min-width: 720px) {
-  .f1peqvck {
+@media (min-width: 47.2em) {
+  .f15bygxq {
     width: 30%;
     float: left;
     padding: 1.7em 1rem;
@@ -56,7 +56,7 @@ exports[`should render 2`] = `
     text-align: right
   }
   
-  .f1culcac {
+  .f13cnhwe {
     width: 70%;
     float: left;
     border-top-width: 0px;
