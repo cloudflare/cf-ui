@@ -14,6 +14,16 @@ const defaultOpts = {
   dev: false
 };
 
+const mediaQueries = {
+  mobile: `@media (min-width: ${variables.breakpoints.mobile})`,
+  mobileWide: `@media (min-width: ${variables.breakpoints.mobileWide})`,
+  tablet: `@media (min-width: ${variables.breakpoints.tablet})`,
+  desktop: `@media (min-width: ${variables.breakpoints.desktop})`,
+  desktopLarge: `@media (min-width: ${variables.breakpoints.desktopLarge})`
+};
+
+const removePrefix = query => query.replace('@media ', '');
+
 const createRenderer = opts => {
   const usedOpts = Object.assign({}, defaultOpts, opts);
   const plugins = [
@@ -22,13 +32,7 @@ const createRenderer = opts => {
     unit(),
     lvha(),
     embedded(),
-    namedMediaQuery({
-      mobile: `@media (min-width: ${variables.breakpoints.mobile})`,
-      mobileWide: `@media (min-width: ${variables.breakpoints.mobileWide})`,
-      tablet: `@media (min-width: ${variables.breakpoints.tablet})`,
-      desktop: `@media (min-width: ${variables.breakpoints.desktop})`,
-      desktopLarge: `@media (min-width: ${variables.breakpoints.desktopLarge})`
-    })
+    namedMediaQuery(mediaQueries)
   ];
   const enhancers = [];
 
@@ -38,9 +42,18 @@ const createRenderer = opts => {
     enhancers.push(monolithic());
   }
 
+  console.log(removePrefix(mediaQueries.mobile));
+
   return createFelaRenderer({
     plugins,
-    enhancers
+    enhancers,
+    mediaQueryOrder: [
+      removePrefix(mediaQueries.mobile),
+      removePrefix(mediaQueries.mobileWide),
+      removePrefix(mediaQueries.tablet),
+      removePrefix(mediaQueries.desktop),
+      removePrefix(mediaQueries.desktopLarge)
+    ]
   });
 };
 

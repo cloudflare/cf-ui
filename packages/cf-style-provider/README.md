@@ -119,8 +119,44 @@ We use multiple fela plugins that extend typical CSS-in-JS syntax. Check them ou
 - [unit](https://github.com/rofrischmann/fela/tree/master/packages/fela-plugin-unit)
 - [embedded](https://github.com/rofrischmann/fela/tree/master/packages/fela-plugin-embedded)
 - [named-media-query](https://github.com/rofrischmann/fela/tree/master/packages/fela-plugin-named-media-query)
-  - mobile
-  - mobileWide
-  - tablet
-  - desktop
-  - desktopLarge
+
+### named-media-query
+
+We have a set of configured media queries. Please, use them!
+
+```
+mobile: @media (min-width: 13.6em)
+mobileWide: @media (min-width: 30.4em)
+tablet: @media (min-width: 47.2em)
+desktop: @media (min-width: 64em)
+desktopLarge: @media (min-width: 97.6em)
+```
+
+**Input:** 
+
+```js
+const Column = createComponent(() => ({
+  color: 'black',
+  desktop: {
+    color: 'white'
+  }
+}))
+```
+
+**Output:**
+
+```html
+<style data-fela-type="RULE" type="text/css">
+  .a {
+    color: black
+  }
+</style>
+
+<style data-fela-type="RULE" type="text/css" media="(min-width: 64em)">
+  .b {
+    color: white
+  }
+</style>
+
+<div class="a b"></div>
+```
