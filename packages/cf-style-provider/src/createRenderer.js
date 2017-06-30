@@ -8,6 +8,7 @@ import embedded from 'fela-plugin-embedded';
 import beautifier from 'fela-beautifier';
 import monolithic from 'fela-monolithic';
 import namedMediaQuery from 'fela-plugin-named-media-query';
+import whitelistMediaQuery from './whitelistMediaQuery';
 import { variables } from 'cf-style-const';
 
 const defaultOpts = {
@@ -38,11 +39,10 @@ const createRenderer = opts => {
 
   if (usedOpts.dev === true) {
     plugins.push(validator());
+    plugins.push(whitelistMediaQuery(mediaQueries));
     enhancers.push(beautifier());
     enhancers.push(monolithic());
   }
-
-  console.log(removePrefix(mediaQueries.mobile));
 
   return createFelaRenderer({
     plugins,
