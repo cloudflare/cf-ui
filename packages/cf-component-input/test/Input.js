@@ -1,30 +1,33 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import Input from '../../cf-component-input/src/index';
+import { felaSnapshot } from 'cf-style-provider';
+import { Input } from '../../cf-component-input/src/index';
 
 test('should render', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Input name="example" value="content" onChange={() => {}} />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render with type', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Input type="search" name="example" value="content" onChange={() => {}} />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render with error', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Input name="example" value="" invalid onChange={() => {}} />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render with placeholder', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Input
       name="example"
       value=""
@@ -32,18 +35,20 @@ test('should render with placeholder', () => {
       onChange={() => {}}
     />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render with autocomplete', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Input name="example" value="" autoComplete="off" onChange={() => {}} />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should pass all props down to the inner input and merge classnames', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Input
       className="klass"
       name="example"
@@ -56,5 +61,6 @@ test('should pass all props down to the inner input and merge classnames', () =>
       min={3}
     />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
