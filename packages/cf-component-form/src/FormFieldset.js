@@ -17,7 +17,7 @@ const legendStyles = ({ theme, layout }) => ({
   padding: theme.legend.padding,
   marginBottom: theme.legend.marginBottom,
   borderBottom: theme.legend.borderBottom,
-  '@media (min-width: 720px)': layout === 'horizontal'
+  tablet: layout === 'horizontal'
     ? {
         width: '30%',
         float: 'left',
@@ -33,7 +33,7 @@ const contentStyles = ({ theme, layout }) => ({
   border: theme.content.border,
   borderTopWidth: theme.content.borderTopWidth,
   background: theme.content.background,
-  '@media (min-width: 720px)': layout === 'horizontal'
+  tablet: layout === 'horizontal'
     ? {
         width: '70%',
         float: 'left',
