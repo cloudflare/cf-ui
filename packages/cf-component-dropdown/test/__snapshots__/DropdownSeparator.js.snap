@@ -2,7 +2,19 @@
 
 exports[`should render with to 1`] = `
 <div
-  className="cf-dropdown__separator"
+  className="a b"
   role="separator"
 />
+`;
+
+exports[`should render with to 2`] = `
+"
+.a {
+  margin: 0.53333rem 0
+}
+
+.b {
+  border-top: 1px solid #dedede
+}
+"
 `;

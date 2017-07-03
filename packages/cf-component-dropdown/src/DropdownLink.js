@@ -1,7 +1,42 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'cf-component-link';
+import { createComponent } from 'cf-style-container';
+
 import DropdownRegistry from './DropdownRegistry';
+
+const styled = ({ theme }) => ({
+  position: 'relative',
+  zIndex: 1,
+
+  '&:first-child': {
+    borderTopWidth: 0
+  },
+
+  '& > a': {
+    display: 'block',
+    padding: '0.2rem 1.06667rem',
+    cursor: 'pointer',
+    whiteSpace: 'nowrap',
+
+    '&:hover': {
+      color: theme.colorWhite,
+      background: theme.color.marine
+    },
+
+    '&:focus': {
+      color: theme.colorWhite,
+      background: theme.color.sky,
+      outline: '5px auto -webkit-focus-ring-color',
+      outlineOffset: '-1px'
+    },
+
+    '&:active': {
+      color: theme.colorWhite,
+      background: theme.color.rain
+    }
+  }
+});
 
 class DropdownLink extends React.Component {
   constructor(props, context) {
@@ -41,7 +76,7 @@ class DropdownLink extends React.Component {
 
   render() {
     return (
-      <li className="cf-dropdown__link" role="menuitem">
+      <li className={this.props.className} role="menuitem">
         <Link
           ref={node => this.link = node}
           to={this.props.to}
@@ -66,4 +101,4 @@ DropdownLink.contextTypes = {
   dropdownRegistry: PropTypes.instanceOf(DropdownRegistry).isRequired
 };
 
-export default DropdownLink;
+export default createComponent(styled, DropdownLink);
