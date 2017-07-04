@@ -11,7 +11,7 @@ projects such as [React](https://facebook.github.io/react/),
 
 ## Usage
 
-Whilst cf-ui is used extensively within Cloudflare, it is also an evolving set of components and therefore can be unstable. **We reccommend only using this toolset to build interfaces for Cloudflare-internal products.** However, feel free to follow along and contribute as we continue to grow this library.
+Whilst cf-ui is used extensively within Cloudflare, it is also an evolving set of components and therefore can be unstable. **We recommend only using this toolset to build interfaces for Cloudflare-internal products.** However, feel free to follow along and contribute as we continue to grow this library.
 
 ## cf-ui meets CSS in JS
 
