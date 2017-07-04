@@ -2,16 +2,74 @@
 
 exports[`should render 1`] = `
 <div
-  className="cf-card__control"
+  className="f1tuxd3h"
 >
   CardControl
 </div>
 `;
 
+exports[`should render 2`] = `
+"
+.f1tuxd3h {
+  position: relative;
+  padding: 2rem;
+  border: 0 solid #dedede;
+  border-top-width: 1px;
+  background-color: rgba(0, 0, 0, 0.06);
+  text-align: center
+}
+
+@media (min-width: 47.2em) {
+  .f1tuxd3h {
+    width: 40%;
+    border-left-width: 1px;
+    border-top-width: 0px;
+    vertical-align: middle;
+    display: table-cell
+  }
+}
+
+@media (min-width: 64em) {
+  .f1tuxd3h {
+    width: 30%
+  }
+}
+"
+`;
+
 exports[`should render wide 1`] = `
 <div
-  className="cf-card__control cf-card__control--wide"
+  className="f1eqoh8z"
 >
   CardControl
 </div>
+`;
+
+exports[`should render wide 2`] = `
+"
+.f1eqoh8z {
+  position: relative;
+  padding: 0px;
+  border: 0 solid #dedede;
+  border-top-width: 1px;
+  background-color: rgba(0, 0, 0, 0.06);
+  text-align: inherit
+}
+
+@media (min-width: 47.2em) {
+  .f1eqoh8z {
+    width: 40%;
+    border-left-width: 1px;
+    border-top-width: 0px;
+    vertical-align: middle;
+    display: table-cell
+  }
+}
+
+@media (min-width: 64em) {
+  .f1eqoh8z {
+    width: 30%
+  }
+}
+"
 `;

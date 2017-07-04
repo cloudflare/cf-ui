@@ -2,18 +2,39 @@
 
 exports[`should render 1`] = `
 <div
-  className="cf-card__toolbar"
+  className="f1ml0oyj"
 >
-  <div
-    className="cf-card__toolbar_controls"
-  >
+  <div>
     Controls
   </div>
   <div
-    className="cf-card__toolbar_links"
+    className="f107ja4p"
     role="tablist"
   >
     Links
   </div>
 </div>
+`;
+
+exports[`should render 2`] = `
+"
+.f1ml0oyj:first-child {
+  border-top: initial
+}
+
+.f1ml0oyj::after {
+  content: '';
+  display: table;
+  clear: both
+}
+
+.f1ml0oyj {
+  border-top: 1px solid #dedede;
+  min-height: 2.96666rem
+}
+
+.f107ja4p {
+  float: right
+}
+"
 `;

@@ -2,8 +2,21 @@
 
 exports[`should render 1`] = `
 <div
-  className="cf-card__block"
+  className="f1n2x65j"
 >
   CardBlock
 </div>
+`;
+
+exports[`should render 2`] = `
+"
+.f1n2x65j:first-child {
+  border-top: 0px
+}
+
+.f1n2x65j {
+  padding: 1rem 1.4rem 1.26667rem;
+  border-top: 1px solid #dedede
+}
+"
 `;

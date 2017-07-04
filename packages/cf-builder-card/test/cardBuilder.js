@@ -1,8 +1,7 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { felaSnapshot, felaTestContext } from 'cf-style-provider';
 import { createStore, combineReducers } from 'redux';
 import { Provider } from 'react-redux';
-import { felaTestContext } from 'cf-style-provider';
 import {
   cardActions,
   cardReducer,
@@ -21,18 +20,17 @@ beforeEach(() => {
 });
 
 test('should render a card', () => {
-  const component = renderer.create(
-    felaTestContext(
-      <Provider store={store}>
-        <CardBuilder
-          cardName="test-card"
-          title="This is a Card"
-          description="This is the description of a card."
-        />
-      </Provider>
-    )
+  const snapshot = felaSnapshot(
+    <Provider store={store}>
+      <CardBuilder
+        cardName="test-card"
+        title="This is a Card"
+        description="This is the description of a card."
+      />
+    </Provider>
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render the description with markdown', () => {
@@ -59,61 +57,58 @@ test('should render the description with markdown', () => {
 
 test('should render button', () => {
   const button = <button>Click Me</button>;
-  const component = renderer.create(
-    felaTestContext(
-      <Provider store={store}>
-        <CardBuilder
-          cardName="test-card"
-          title="This is a Card"
-          description="This is the *description* of a card."
-          control={button}
-        />
-      </Provider>
-    )
+  const snapshot = felaSnapshot(
+    <Provider store={store}>
+      <CardBuilder
+        cardName="test-card"
+        title="This is a Card"
+        description="This is the *description* of a card."
+        control={button}
+      />
+    </Provider>
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render a table', () => {
   const table = <table />;
-  const component = renderer.create(
-    felaTestContext(
-      <Provider store={store}>
-        <CardBuilder
-          cardName="test-card"
-          title="This is a Card"
-          description="This is the *description* of a card."
-          table={table}
-        />
-      </Provider>
-    )
+  const snapshot = felaSnapshot(
+    <Provider store={store}>
+      <CardBuilder
+        cardName="test-card"
+        title="This is a Card"
+        description="This is the *description* of a card."
+        table={table}
+      />
+    </Provider>
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render drawers', () => {
-  const component = renderer.create(
-    felaTestContext(
-      <Provider store={store}>
-        <CardBuilder
-          cardName="test-card"
-          title="This is a Card"
-          description="This is the *description* of a card."
-          drawers={[
-            {
-              id: 'help',
-              name: 'Help',
-              content: 'Help Content'
-            },
-            {
-              id: 'api',
-              name: 'API',
-              content: 'API Content'
-            }
-          ]}
-        />
-      </Provider>
-    )
+  const snapshot = felaSnapshot(
+    <Provider store={store}>
+      <CardBuilder
+        cardName="test-card"
+        title="This is a Card"
+        description="This is the *description* of a card."
+        drawers={[
+          {
+            id: 'help',
+            name: 'Help',
+            content: 'Help Content'
+          },
+          {
+            id: 'api',
+            name: 'API',
+            content: 'API Content'
+          }
+        ]}
+      />
+    </Provider>
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

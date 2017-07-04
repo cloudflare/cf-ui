@@ -1,8 +1,9 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { felaSnapshot } from 'cf-style-provider';
 import { CardBlock } from '../../cf-component-card/src/index';
 
 test('should render', () => {
-  const component = renderer.create(<CardBlock>CardBlock</CardBlock>);
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<CardBlock>CardBlock</CardBlock>);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

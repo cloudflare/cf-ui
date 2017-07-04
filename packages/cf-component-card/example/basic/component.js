@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   Card,
+  CardBlock,
   CardContent,
   CardControl,
   CardDrawers,
@@ -41,7 +42,12 @@ class CardComponent extends React.Component {
             />
           </CardContent>
           <CardControl>
-            <Button type="default" onClick={() => {}}>Example Control</Button>
+            <CardBlock>
+              This is a block
+            </CardBlock>
+            <CardBlock>
+              <Button type="default" onClick={() => {}}>Example Control</Button>
+            </CardBlock>
           </CardControl>
         </CardSection>
         <CardDrawers

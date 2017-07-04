@@ -1,9 +1,9 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { felaSnapshot } from 'cf-style-provider';
 import { CardMessages } from '../../cf-component-card/src/index';
 
 test('should render', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <CardMessages
       messages={[
         { type: 'info', content: 'Message One' },
@@ -11,5 +11,6 @@ test('should render', () => {
       ]}
     />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

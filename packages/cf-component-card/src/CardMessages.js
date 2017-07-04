@@ -1,34 +1,31 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
+import { createComponent } from 'cf-style-container';
 
-class CardMessages extends React.Component {
-  render() {
-    return (
-      <div className="cf-card__messages">
-        {this.props.messages.map((message, index) => {
-          return (
-            <div
-              key={index}
-              role="alert"
-              className={'cf-card__message cf-card__message--' + message.type}
-            >
-              {message.content}
-            </div>
-          );
-        })}
+const styles = () => ({
+  paddingTop: '0.5rem'
+});
+
+const CardMessages = ({ className, messages }) => (
+  <div className={className}>
+    {messages.map((message, index) => (
+      <div key={index} role="alert">
+        {message.content}
       </div>
-    );
-  }
-}
+    ))}
+  </div>
+);
 
 CardMessages.propTypes = {
+  /* The messages to render */
   messages: PropTypes.arrayOf(
     PropTypes.shape({
+      /* The type of message, currently does nothing */
       type: PropTypes.oneOf(['info', 'success', 'error', 'warning']),
+      /* The content to be rendered */
       content: PropTypes.any.isRequired
     })
   ).isRequired
 };
 
-export default CardMessages;
+export default createComponent(styles, CardMessages);

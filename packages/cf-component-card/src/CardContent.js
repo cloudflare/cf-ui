@@ -1,24 +1,37 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
+import { createComponent } from 'cf-style-container';
 
-class CardContent extends React.Component {
-  render() {
-    return (
-      <div className="cf-card__content">
-        <h3 className="cf-card__title">
-          {this.props.title}
-        </h3>
-        {this.props.children}
-        {this.props.footerMessage
-          ? <div className="cf-card__footer_message">
-              {this.props.footerMessage}
-            </div>
-          : null}
-      </div>
-    );
+const styles = () => ({
+  padding: '1.5rem',
+
+  tablet: {
+    display: 'table-cell'
   }
-}
+});
+
+const Title = createComponent(
+  () => ({
+    fontWeight: 400,
+    marginBottom: '1rem'
+  }),
+  'h3'
+);
+
+const Footer = createComponent(({ theme }) => ({
+  fontSize: '0.8rem',
+  color: theme.colorGray,
+  lineHeight: '1.3',
+  marginTop: '1.5em'
+}));
+
+const CardContent = ({ className, title, children, footerMessage }) => (
+  <div className={className}>
+    <Title>{title}</Title>
+    {children}
+    {footerMessage && <Footer>{footerMessage}</Footer>}
+  </div>
+);
 
 CardContent.propTypes = {
   title: PropTypes.node,
@@ -26,4 +39,4 @@ CardContent.propTypes = {
   children: PropTypes.node
 };
 
-export default CardContent;
+export default createComponent(styles, CardContent);

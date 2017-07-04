@@ -1,10 +1,11 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { felaSnapshot } from 'cf-style-provider';
 import CardToolbar from '../src/CardToolbar';
 
 test('should render', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <CardToolbar controls={'Controls'} links={'Links'} />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

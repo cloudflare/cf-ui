@@ -1,11 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { createComponent } from 'cf-style-container';
+
 import CardSection from './CardSection';
 import CardToolbar from './CardToolbar';
 import CardToolbarLink from './CardToolbarLink';
 import CardPropTypes from './CardPropTypes';
 
 let UNIQUE_ID = 0;
+
+const Drawer = createComponent(
+  ({ theme, isActive }) => ({
+    borderTop: isActive ? `1px solid ${theme.colorGrayLight}` : 'initial',
+    padding: isActive ? '1.5rem' : 'initial'
+  }),
+  'div',
+  ['key', 'id', 'isActive', 'onClick']
+);
+
+const Container = createComponent(
+  ({ active }) => ({
+    display: active ? 'block' : 'none'
+  }),
+  'div',
+  ['active']
+);
 
 class CardDrawers extends React.Component {
   constructor(props) {
@@ -49,37 +68,25 @@ class CardDrawers extends React.Component {
         </CardToolbarLink>
       );
 
-      let className = 'cf-card__drawer';
-
-      if (isActive) {
-        className += ' cf-card__drawer--active';
-      }
-
       drawers.push(
-        <div
+        <Drawer
           key={drawer.id}
           role="tabpanel"
           aria-labelledby={id}
           aria-hidden={isActive ? 'false' : 'true'}
-          className={className}
+          isActive={isActive}
         >
           {isActive && drawer.content}
-        </div>
+        </Drawer>
       );
     });
-
-    let containerClassName = 'cf-card__drawers_container';
-
-    if (active) {
-      containerClassName += ' cf-card__drawers_container--open';
-    }
 
     return (
       <CardSection>
         <CardToolbar controls={this.props.controls} links={links} />
-        <div className={containerClassName}>
+        <Container active={this.props.active}>
           {drawers}
-        </div>
+        </Container>
       </CardSection>
     );
   }

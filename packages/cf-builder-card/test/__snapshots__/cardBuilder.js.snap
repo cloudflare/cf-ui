@@ -30,6 +30,14 @@ exports[`should render a card 1`] = `
 </section>
 `;
 
+exports[`should render a card 2`] = `
+"
+.a {
+  display: initial
+}
+"
+`;
+
 exports[`should render a table 1`] = `
 <section
   className="cf-card"
@@ -63,6 +71,14 @@ exports[`should render a table 1`] = `
     <table />
   </div>
 </section>
+`;
+
+exports[`should render a table 2`] = `
+"
+.a {
+  display: initial
+}
+"
 `;
 
 exports[`should render button 1`] = `
@@ -100,6 +116,14 @@ exports[`should render button 1`] = `
     </div>
   </div>
 </section>
+`;
+
+exports[`should render button 2`] = `
+"
+.a {
+  display: initial
+}
+"
 `;
 
 exports[`should render drawers 1`] = `
@@ -180,4 +204,12 @@ exports[`should render drawers 1`] = `
     </div>
   </div>
 </section>
+`;
+
+exports[`should render drawers 2`] = `
+"
+.a {
+  display: initial
+}
+"
 `;

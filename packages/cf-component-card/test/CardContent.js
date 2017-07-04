@@ -1,19 +1,21 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { felaSnapshot } from 'cf-style-provider';
 import { CardContent } from '../../cf-component-card/src/index';
 
 test('should render without footer message', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <CardContent title="Title">CardContent</CardContent>
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render with footer message', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <CardContent title="Title" footerMessage="Footer Message">
       CardContent
     </CardContent>
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

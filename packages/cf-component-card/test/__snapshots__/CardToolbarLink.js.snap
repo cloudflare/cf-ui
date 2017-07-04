@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <a
-  className="cf-link cf-card__toolbar_link"
+  className="cf-link fssm709"
   href="#!"
   id="link"
   onClick={[Function]}
@@ -12,9 +12,35 @@ exports[`should render 1`] = `
 </a>
 `;
 
+exports[`should render 2`] = `
+"
+.fssm709::after {
+  content: '\\\\f003';
+  font-family: \\"cloudflare-font\\";
+  font-style: normal;
+  font-weight: normal;
+  margin-top: -0.7em;
+  position: absolute;
+  top: 60%;
+  right: 1rem;
+  transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -moz-transition: transform 0.2s ease;
+  transform: initial;
+  -webkit-transform: initial
+}
+
+.fssm709 {
+  position: relative;
+  display: inline-block;
+  padding: 0.73333rem 2em 0.73333rem 0.5rem
+}
+"
+`;
+
 exports[`should render with isActive 1`] = `
 <a
-  className="cf-link cf-card__toolbar_link cf-card__toolbar_link--open"
+  className="cf-link f1qnym2h"
   href="#!"
   id="link"
   onClick={[Function]}
@@ -22,4 +48,30 @@ exports[`should render with isActive 1`] = `
 >
   CardToolbarLink
 </a>
+`;
+
+exports[`should render with isActive 2`] = `
+"
+.f1qnym2h::after {
+  content: '\\\\f003';
+  font-family: \\"cloudflare-font\\";
+  font-style: normal;
+  font-weight: normal;
+  margin-top: -0.7em;
+  position: absolute;
+  top: 60%;
+  right: 1rem;
+  transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -moz-transition: transform 0.2s ease;
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg)
+}
+
+.f1qnym2h {
+  position: relative;
+  display: inline-block;
+  padding: 0.73333rem 2em 0.73333rem 0.5rem
+}
+"
 `;
