@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <div
-  className="cf-copyable-textarea"
+  className="f1e3biah"
 >
   <textarea
     className="cf-textarea cf-textarea--readonly"
@@ -13,9 +13,34 @@ exports[`should render 1`] = `
     value="content"
   />
   <p
-    className="cf-copyable-textarea__help-text"
+    className="fd3qrxq"
   >
     click here
   </p>
 </div>
+`;
+
+exports[`should render 2`] = `
+"
+.f1e3biah > textarea {
+  height: 7rem;
+  word-break: break-all;
+  cursor: text;
+  resize: none;
+  color: #333333;
+  font-family: monaco, courier, monospace
+}
+
+.f1e3biah {
+  margin-top: 1rem;
+  cursor: pointer
+}
+
+.fd3qrxq {
+  font-size: 0.8em;
+  color: #7c7c7c;
+  margin-top: -0.5em;
+  margin-bottom: 1em
+}
+"
 `;

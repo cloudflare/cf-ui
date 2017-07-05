@@ -1,6 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Textarea from 'cf-component-textarea';
+import { createComponent, applyTheme } from 'cf-style-container';
+
+const styles = ({ theme }) => ({
+  marginTop: '1rem',
+  cursor: 'pointer',
+
+  '& > textarea': {
+    height: '7rem',
+    wordBreak: 'break-all',
+    cursor: 'text',
+    resize: 'none',
+    color: theme.color.charcoal,
+    fontFamily: 'monaco, courier, monospace'
+  }
+});
+
+const HelpText = createComponent(
+  ({ theme }) => ({
+    fontSize: '0.8em',
+    color: theme.colorGray,
+    marginTop: '-0.5em',
+    marginBottom: '1em'
+  }),
+  'p'
+);
 
 class CopyableTextarea extends React.Component {
   constructor(props) {
@@ -47,7 +72,7 @@ class CopyableTextarea extends React.Component {
 
   render() {
     return (
-      <div className="cf-copyable-textarea">
+      <div className={this.props.className}>
         <Textarea
           ref={node => this.textarea = node}
           readOnly
@@ -56,7 +81,7 @@ class CopyableTextarea extends React.Component {
           onFocus={this.handleFocus}
           onBlur={this.handleBlur}
         />
-        <p className="cf-copyable-textarea__help-text">{this.state.helpText}</p>
+        <HelpText>{this.state.helpText}</HelpText>
       </div>
     );
   }
@@ -77,4 +102,4 @@ CopyableTextarea.defaultProps = {
   pressCommandOrCtrlCToCopyText: 'Press Command/Ctrl+C to copy'
 };
 
-export default CopyableTextarea;
+export default createComponent(styles, CopyableTextarea);

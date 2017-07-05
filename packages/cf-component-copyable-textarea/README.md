@@ -12,7 +12,7 @@ $ npm install cf-component-copyable-textarea
 
 ```jsx
 import React from 'react';
-import CopyableTextarea from 'cf-component-copyable-textarea';
+import { CopyableTextarea } from 'cf-component-copyable-textarea';
 
 class CopyableTextareaComponent extends React.Component {
   render() {

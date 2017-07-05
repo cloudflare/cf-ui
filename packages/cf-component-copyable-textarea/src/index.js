@@ -1,3 +1,11 @@
-import CopyableTextarea from './CopyableTextarea';
+import { applyTheme } from 'cf-style-container';
 
-export default CopyableTextarea;
+import CopyableTextareaUnstyled from './CopyableTextarea';
+import CopyableTextareaTheme from './CopyableTextareaTheme';
+
+const CopyableTextarea = applyTheme(
+  CopyableTextareaUnstyled,
+  CopyableTextareaTheme
+);
+
+export { CopyableTextarea, CopyableTextareaUnstyled, CopyableTextareaTheme };
