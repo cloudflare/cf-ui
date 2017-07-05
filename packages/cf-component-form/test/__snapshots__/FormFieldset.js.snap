@@ -2,15 +2,15 @@
 
 exports[`should render 1`] = `
 <fieldset
-  className="f1nadb32"
+  className="a b c d e f g h i"
 >
   <legend
-    className="f15bygxq"
+    className="j k l m n o p q"
   >
     Legend
   </legend>
   <div
-    className="f13cnhwe"
+    className="j r s t u n v w"
   >
     FormFieldset
   </div>
@@ -19,47 +19,96 @@ exports[`should render 1`] = `
 
 exports[`should render 2`] = `
 "
-.f1nadb32::after {
-  clear: both;
-  content: \\"\\";
-  display: table
+.a {
+  margin: 0px
 }
 
-.f1nadb32 {
-  margin: 0px;
-  padding: 0px;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+.b {
+  padding: 0px
+}
+
+.c {
+  border-top: none
+}
+
+.d {
+  border-left: none
+}
+
+.e {
+  border-right: none
+}
+
+.f {
   border-bottom: 1px solid #dedede
 }
 
-.f15bygxq {
-  padding: 1em;
-  margin-bottom: 0px;
+.g::after {
+  clear: both
+}
+
+.h::after {
+  content: \\"\\"
+}
+
+.i::after {
+  display: table
+}
+
+.j {
+  padding: 1em
+}
+
+.k {
+  margin-bottom: 0px
+}
+
+.l {
   border-bottom: none
 }
 
-.f13cnhwe {
-  padding: 1em;
-  border: 0 solid #dedede;
-  border-top-width: 1px;
+.r {
+  border: 0 solid #dedede
+}
+
+.s {
+  border-top-width: 1px
+}
+
+.t {
   background: #eee
 }
 
 @media (min-width: 47.2em) {
-  .f15bygxq {
-    width: 30%;
-    float: left;
-    padding: 1.7em 1rem;
-    color: #333;
+  .m {
+    width: 30%
+  }
+  
+  .n {
+    float: left
+  }
+  
+  .o {
+    padding: 1.7em 1rem
+  }
+  
+  .p {
+    color: #333
+  }
+  
+  .q {
     text-align: right
   }
   
-  .f13cnhwe {
-    width: 70%;
-    float: left;
-    border-top-width: 0px;
+  .u {
+    width: 70%
+  }
+  
+  .v {
+    border-top-width: 0px
+  }
+  
+  .w {
     border-left-width: 0px
   }
 }

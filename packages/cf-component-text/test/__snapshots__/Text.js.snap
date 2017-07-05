@@ -2,7 +2,7 @@
 
 exports[`should render align 1`] = `
 <div
-  className="f12kp2av"
+  className="a"
 >
   Hello
 </div>
@@ -10,7 +10,7 @@ exports[`should render align 1`] = `
 
 exports[`should render align 2`] = `
 "
-.f12kp2av {
+.a {
   text-align: center
 }
 "
@@ -18,7 +18,7 @@ exports[`should render align 2`] = `
 
 exports[`should render bold size 1`] = `
 <div
-  className="fe0qi9f"
+  className="a b"
 >
   Hello
 </div>
@@ -26,8 +26,11 @@ exports[`should render bold size 1`] = `
 
 exports[`should render bold size 2`] = `
 "
-.fe0qi9f {
-  font-size: 1rem;
+.a {
+  font-size: 1rem
+}
+
+.b {
   font-weight: 700
 }
 "
@@ -35,7 +38,7 @@ exports[`should render bold size 2`] = `
 
 exports[`should render lowercase 1`] = `
 <div
-  className="f1ez8i2i"
+  className="a"
 >
   Hello
 </div>
@@ -43,7 +46,7 @@ exports[`should render lowercase 1`] = `
 
 exports[`should render lowercase 2`] = `
 "
-.f1ez8i2i {
+.a {
   text-transform: lowercase
 }
 "
@@ -51,7 +54,7 @@ exports[`should render lowercase 2`] = `
 
 exports[`should render normal size 1`] = `
 <div
-  className="fjgz5pd"
+  className="a"
 >
   Hello
 </div>
@@ -59,7 +62,7 @@ exports[`should render normal size 1`] = `
 
 exports[`should render normal size 2`] = `
 "
-.fjgz5pd {
+.a {
   font-size: 1rem
 }
 "
@@ -67,7 +70,7 @@ exports[`should render normal size 2`] = `
 
 exports[`should render semi-bold size 1`] = `
 <div
-  className="fz310y"
+  className="a b"
 >
   Hello
 </div>
@@ -75,8 +78,11 @@ exports[`should render semi-bold size 1`] = `
 
 exports[`should render semi-bold size 2`] = `
 "
-.fz310y {
-  font-size: 1rem;
+.a {
+  font-size: 1rem
+}
+
+.b {
   font-weight: 600
 }
 "
@@ -84,7 +90,7 @@ exports[`should render semi-bold size 2`] = `
 
 exports[`should render small size 1`] = `
 <div
-  className="fxk5sq7"
+  className="a b"
 >
   Hello
 </div>
@@ -92,8 +98,11 @@ exports[`should render small size 1`] = `
 
 exports[`should render small size 2`] = `
 "
-.fxk5sq7 {
-  line-height: 1.3;
+.a {
+  line-height: 1.3
+}
+
+.b {
   font-size: 0.8em
 }
 "
@@ -101,7 +110,7 @@ exports[`should render small size 2`] = `
 
 exports[`should render titlecase case 1`] = `
 <div
-  className="fw04jx1"
+  className="a"
 >
   Hello
 </div>
@@ -109,7 +118,7 @@ exports[`should render titlecase case 1`] = `
 
 exports[`should render titlecase case 2`] = `
 "
-.fw04jx1:first-letter {
+.a:first-letter {
   text-transform: capitalize
 }
 "
@@ -117,7 +126,7 @@ exports[`should render titlecase case 2`] = `
 
 exports[`should render type 1`] = `
 <div
-  className="f1vjexbg"
+  className="a"
 >
   Hello
 </div>
@@ -125,7 +134,7 @@ exports[`should render type 1`] = `
 
 exports[`should render type 2`] = `
 "
-.f1vjexbg {
+.a {
   color: #434148
 }
 "

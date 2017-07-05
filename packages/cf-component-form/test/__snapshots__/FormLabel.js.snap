@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <label
-  className="f1f9r163"
+  className="a b c d"
 >
   FormLabel
 </label>
@@ -10,10 +10,19 @@ exports[`should render 1`] = `
 
 exports[`should render 2`] = `
 "
-.f1f9r163 {
-  font-size: 0.8666666666666667em;
-  display: block;
-  margin-bottom: 0.2em;
+.a {
+  font-size: 0.8666666666666667em
+}
+
+.b {
+  display: block
+}
+
+.c {
+  margin-bottom: 0.2em
+}
+
+.d {
   color: #333
 }
 "
@@ -21,7 +30,7 @@ exports[`should render 2`] = `
 
 exports[`should render hidden 1`] = `
 <label
-  className="f1f1cr8o"
+  className="a b c d"
 >
   FormLabel
 </label>
@@ -29,10 +38,19 @@ exports[`should render hidden 1`] = `
 
 exports[`should render hidden 2`] = `
 "
-.f1f1cr8o {
-  font-size: 0.8666666666666667em;
-  display: none;
-  margin-bottom: 0.2em;
+.a {
+  font-size: 0.8666666666666667em
+}
+
+.b {
+  display: none
+}
+
+.c {
+  margin-bottom: 0.2em
+}
+
+.d {
   color: #333
 }
 "

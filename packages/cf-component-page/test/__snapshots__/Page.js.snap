@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <article
-  className="fpl1olc"
+  className="a b c"
 >
   Hello World
 </article>
@@ -10,13 +10,16 @@ exports[`should render 1`] = `
 
 exports[`should render 2`] = `
 "
-.fpl1olc {
-  padding-top: 0px;
+.a {
+  padding-top: 0px
+}
+
+.b {
   padding-bottom: 0px
 }
 
 @media (min-width: 47.2em) {
-  .fpl1olc {
+  .c {
     padding-bottom: 1.3rem
   }
 }

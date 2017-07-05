@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <div
-  className="f2idotc"
+  className="a b c"
 >
   FormFooter
 </div>
@@ -10,9 +10,15 @@ exports[`should render 1`] = `
 
 exports[`should render 2`] = `
 "
-.f2idotc {
-  padding: 1em;
-  border-top: 1px solid #dedede;
+.a {
+  padding: 1em
+}
+
+.b {
+  border-top: 1px solid #dedede
+}
+
+.c {
   text-align: right
 }
 "

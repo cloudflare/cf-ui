@@ -34,10 +34,10 @@ exports[`StyleProvider should render styles 1`] = `
 exports[`felaSnapshot should return a formatted snapshot object 1`] = `
 Object {
   "component": <div
-    className="f53ysj"
+    className="a"
 />,
   "styles": "
-.f53ysj {
+.a {
   color: black
 }
 ",

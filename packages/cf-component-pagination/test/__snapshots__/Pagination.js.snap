@@ -2,11 +2,11 @@
 
 exports[`should render 1`] = `
 <div
-  className="f1bek1ug"
+  className="a b c"
 >
   <ul
     aria-describedby={null}
-    className="fy1rhga"
+    className="a b c d e f g h i j k l m n o"
     role="navigation"
   >
     Pagination
@@ -16,42 +16,75 @@ exports[`should render 1`] = `
 
 exports[`should render 2`] = `
 "
-.fy1rhga:after {
-  content: \\"\\";
-  display: table;
+.a:after {
+  content: \\"\\"
+}
+
+.b:after {
+  display: table
+}
+
+.c:after {
   clear: both
 }
 
-.fy1rhga {
-  list-style: none;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  float: left;
-  border-radius: 3px;
+.d {
+  list-style: none
+}
+
+.e {
+  margin-top: 0px
+}
+
+.f {
+  margin-left: 0px
+}
+
+.g {
+  margin-right: 0px
+}
+
+.h {
+  margin-bottom: 0px
+}
+
+.i {
+  padding-top: 0px
+}
+
+.j {
+  padding-left: 0px
+}
+
+.k {
+  padding-right: 0px
+}
+
+.l {
+  padding-bottom: 0px
+}
+
+.m {
+  float: left
+}
+
+.n {
+  border-radius: 3px
+}
+
+.o {
   box-shadow: none
-}
-
-.f1bek1ug:after {
-  content: \\"\\";
-  display: table;
-  clear: both
 }
 "
 `;
 
 exports[`should render with info 1`] = `
 <div
-  className="f1bek1ug"
+  className="a b c"
 >
   <ul
     aria-describedby="cf-pagination-1"
-    className="fy1rhga"
+    className="a b c d e f g h i j k l m n o"
     role="navigation"
   >
     Pagination
@@ -66,31 +99,64 @@ exports[`should render with info 1`] = `
 
 exports[`should render with info 2`] = `
 "
-.fy1rhga:after {
-  content: \\"\\";
-  display: table;
+.a:after {
+  content: \\"\\"
+}
+
+.b:after {
+  display: table
+}
+
+.c:after {
   clear: both
 }
 
-.fy1rhga {
-  list-style: none;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  float: left;
-  border-radius: 3px;
+.d {
+  list-style: none
+}
+
+.e {
+  margin-top: 0px
+}
+
+.f {
+  margin-left: 0px
+}
+
+.g {
+  margin-right: 0px
+}
+
+.h {
+  margin-bottom: 0px
+}
+
+.i {
+  padding-top: 0px
+}
+
+.j {
+  padding-left: 0px
+}
+
+.k {
+  padding-right: 0px
+}
+
+.l {
+  padding-bottom: 0px
+}
+
+.m {
+  float: left
+}
+
+.n {
+  border-radius: 3px
+}
+
+.o {
   box-shadow: none
-}
-
-.f1bek1ug:after {
-  content: \\"\\";
-  display: table;
-  clear: both
 }
 "
 `;
