@@ -10,7 +10,7 @@ import {
 import { Flex, FlexItem } from 'cf-component-flex';
 import Input from 'cf-component-input';
 import Select from 'cf-component-select';
-import Textarea from 'cf-component-textarea';
+import { Textarea } from 'cf-component-textarea';
 import { Button } from 'cf-component-button';
 
 class FormComponent extends React.Component {

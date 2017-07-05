@@ -1,20 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Textarea from 'cf-component-textarea';
+import { TextareaUnstyled, TextareaTheme } from 'cf-component-textarea';
 import { createComponent, applyTheme } from 'cf-style-container';
+
+const Textarea = applyTheme(TextareaUnstyled, TextareaTheme, theme => ({
+  height: '7rem',
+  wordBreak: 'break-all',
+  cursor: 'text',
+  resize: 'none',
+  color: theme.color.charcoal,
+  fontFamily: 'monaco, courier, monospace'
+}));
 
 const styles = ({ theme }) => ({
   marginTop: '1rem',
-  cursor: 'pointer',
-
-  '& > textarea': {
-    height: '7rem',
-    wordBreak: 'break-all',
-    cursor: 'text',
-    resize: 'none',
-    color: theme.color.charcoal,
-    fontFamily: 'monaco, courier, monospace'
-  }
+  cursor: 'pointer'
 });
 
 const HelpText = createComponent(

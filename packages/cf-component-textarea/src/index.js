@@ -1,3 +1,8 @@
-import Textarea from './Textarea';
+import { applyTheme } from 'cf-style-container';
 
-export default Textarea;
+import TextareaUnstyled from './Textarea';
+import TextareaTheme from './TextareaTheme';
+
+const Textarea = applyTheme(TextareaUnstyled, TextareaTheme);
+
+export { Textarea, TextareaUnstyled, TextareaTheme };

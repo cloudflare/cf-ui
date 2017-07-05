@@ -1,5 +1,5 @@
 import React from 'react';
-import Textarea from 'cf-component-textarea';
+import { Textarea } from 'cf-component-textarea';
 
 class TextareaComponent extends React.Component {
   constructor(props) {

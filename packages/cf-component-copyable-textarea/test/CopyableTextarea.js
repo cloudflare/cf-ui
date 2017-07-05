@@ -53,7 +53,7 @@ test('should render copied help text after copying', () => {
     )
   );
   copyableTextarea.find('textarea').simulate('focus');
-  expect(copyableTextarea.find('p').get(1).innerHTML).toBe('copied');
+  expect(copyableTextarea.find('p').text()).toBe('copied');
 });
 
 test('should render press help text if copying was not successful', () => {
@@ -70,5 +70,5 @@ test('should render press help text if copying was not successful', () => {
     )
   );
   copyableTextarea.find('textarea').simulate('focus');
-  expect(copyableTextarea.find('p').get(1).innerHTML).toBe('press here');
+  expect(copyableTextarea.find('p').text()).toBe('press here');
 });
