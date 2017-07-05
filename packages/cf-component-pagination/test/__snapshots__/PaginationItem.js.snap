@@ -2,12 +2,12 @@
 
 exports[`should render 1`] = `
 <li
-  className="f15spu1u"
+  className="a b c d e"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="f32iz07"
+    className="f b g h i j k l m e n"
     href="#"
     onClick={[Function]}
   >
@@ -18,44 +18,75 @@ exports[`should render 1`] = `
 
 exports[`should render 2`] = `
 "
-.f15spu1u {
-  float: left;
-  position: relative;
-  background-color: #fff;
-  color: #408BC9;
+.a {
+  float: left
+}
+
+.b {
+  position: relative
+}
+
+.c {
+  background-color: #fff
+}
+
+.d {
+  color: #408BC9
+}
+
+.e {
   cursor: pointer
 }
 
-.f32iz07:focus {
-  z-index: 1
-}
-
-.f32iz07 {
+.f {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  position: relative;
-  display: block;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer
+  -ms-user-select: none
+}
+
+.g {
+  display: block
+}
+
+.h {
+  padding-top: .5em
+}
+
+.i {
+  padding-bottom: .5em
+}
+
+.j {
+  padding-left: 1em
+}
+
+.k {
+  padding-right: 1em
+}
+
+.l {
+  text-decoration: none
+}
+
+.m {
+  color: inherit
+}
+
+.n:focus {
+  z-index: 1
 }
 "
 `;
 
 exports[`should render active 1`] = `
 <li
-  className="f1wi2cf1"
+  className="a b c d e f g"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="f109b087"
+    className="h b i j k l m n o e p"
     href="#"
     onClick={[Function]}
   >
@@ -66,46 +97,83 @@ exports[`should render active 1`] = `
 
 exports[`should render active 2`] = `
 "
-.f1wi2cf1 {
-  float: left;
-  position: relative;
-  background-color: #408BC9;
-  color: #fff;
-  cursor: default;
-  border-color: #62a1d8;
+.a {
+  float: left
+}
+
+.b {
+  position: relative
+}
+
+.c {
+  background-color: #408BC9
+}
+
+.d {
+  color: #fff
+}
+
+.e {
+  cursor: default
+}
+
+.f {
+  border-color: #62a1d8
+}
+
+.g {
   z-index: 1
 }
 
-.f109b087:focus {
-  z-index: 1
-}
-
-.f109b087 {
+.h {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  position: relative;
-  display: block;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-decoration: none;
-  color: inherit;
-  cursor: default
+  -ms-user-select: none
+}
+
+.i {
+  display: block
+}
+
+.j {
+  padding-top: .5em
+}
+
+.k {
+  padding-bottom: .5em
+}
+
+.l {
+  padding-left: 1em
+}
+
+.m {
+  padding-right: 1em
+}
+
+.n {
+  text-decoration: none
+}
+
+.o {
+  color: inherit
+}
+
+.p:focus {
+  z-index: 1
 }
 "
 `;
 
 exports[`should render active dot 1`] = `
 <li
-  className="f1xpv85q"
+  className="a b c d e f g h i j k l"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="f109b087"
+    className="m b n o p q r s t f u"
     href="#"
     onClick={[Function]}
   >
@@ -116,51 +184,103 @@ exports[`should render active dot 1`] = `
 
 exports[`should render active dot 2`] = `
 "
-.f1xpv85q {
-  float: left;
-  position: relative;
-  background-color: #408BC9;
-  color: #fff;
-  border: 1px solid #408BC9;
-  cursor: default;
-  width: .5em;
-  height: .5em;
-  margin: 1em;
-  border-radius: 50%;
-  border-color: #62a1d8;
+.a {
+  float: left
+}
+
+.b {
+  position: relative
+}
+
+.c {
+  background-color: #408BC9
+}
+
+.d {
+  color: #fff
+}
+
+.e {
+  border: 1px solid #408BC9
+}
+
+.f {
+  cursor: default
+}
+
+.g {
+  width: .5em
+}
+
+.h {
+  height: .5em
+}
+
+.i {
+  margin: 1em
+}
+
+.j {
+  border-radius: 50%
+}
+
+.k {
+  border-color: #62a1d8
+}
+
+.l {
   z-index: 1
 }
 
-.f109b087:focus {
-  z-index: 1
-}
-
-.f109b087 {
+.m {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  position: relative;
-  display: block;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-decoration: none;
-  color: inherit;
-  cursor: default
+  -ms-user-select: none
+}
+
+.n {
+  display: block
+}
+
+.o {
+  padding-top: .5em
+}
+
+.p {
+  padding-bottom: .5em
+}
+
+.q {
+  padding-left: 1em
+}
+
+.r {
+  padding-right: 1em
+}
+
+.s {
+  text-decoration: none
+}
+
+.t {
+  color: inherit
+}
+
+.u:focus {
+  z-index: 1
 }
 "
 `;
 
 exports[`should render active next 1`] = `
 <li
-  className="f1ezx84k"
+  className="a b c d e f g h"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="f109b087"
+    className="i b j k l m n o p e q"
     href="#"
     onClick={[Function]}
   >
@@ -171,47 +291,87 @@ exports[`should render active next 1`] = `
 
 exports[`should render active next 2`] = `
 "
-.f1ezx84k {
-  float: left;
-  position: relative;
-  background-color: #408BC9;
-  color: #fff;
-  cursor: default;
-  border-radius: 3px;
-  border-color: #62a1d8;
+.a {
+  float: left
+}
+
+.b {
+  position: relative
+}
+
+.c {
+  background-color: #408BC9
+}
+
+.d {
+  color: #fff
+}
+
+.e {
+  cursor: default
+}
+
+.f {
+  border-radius: 3px
+}
+
+.g {
+  border-color: #62a1d8
+}
+
+.h {
   z-index: 1
 }
 
-.f109b087:focus {
-  z-index: 1
-}
-
-.f109b087 {
+.i {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  position: relative;
-  display: block;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-decoration: none;
-  color: inherit;
-  cursor: default
+  -ms-user-select: none
+}
+
+.j {
+  display: block
+}
+
+.k {
+  padding-top: .5em
+}
+
+.l {
+  padding-bottom: .5em
+}
+
+.m {
+  padding-left: 1em
+}
+
+.n {
+  padding-right: 1em
+}
+
+.o {
+  text-decoration: none
+}
+
+.p {
+  color: inherit
+}
+
+.q:focus {
+  z-index: 1
 }
 "
 `;
 
 exports[`should render active prev 1`] = `
 <li
-  className="f1ezx84k"
+  className="a b c d e f g h"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="f109b087"
+    className="i b j k l m n o p e q"
     href="#"
     onClick={[Function]}
   >
@@ -222,47 +382,87 @@ exports[`should render active prev 1`] = `
 
 exports[`should render active prev 2`] = `
 "
-.f1ezx84k {
-  float: left;
-  position: relative;
-  background-color: #408BC9;
-  color: #fff;
-  cursor: default;
-  border-radius: 3px;
-  border-color: #62a1d8;
+.a {
+  float: left
+}
+
+.b {
+  position: relative
+}
+
+.c {
+  background-color: #408BC9
+}
+
+.d {
+  color: #fff
+}
+
+.e {
+  cursor: default
+}
+
+.f {
+  border-radius: 3px
+}
+
+.g {
+  border-color: #62a1d8
+}
+
+.h {
   z-index: 1
 }
 
-.f109b087:focus {
-  z-index: 1
-}
-
-.f109b087 {
+.i {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  position: relative;
-  display: block;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-decoration: none;
-  color: inherit;
-  cursor: default
+  -ms-user-select: none
+}
+
+.j {
+  display: block
+}
+
+.k {
+  padding-top: .5em
+}
+
+.l {
+  padding-bottom: .5em
+}
+
+.m {
+  padding-left: 1em
+}
+
+.n {
+  padding-right: 1em
+}
+
+.o {
+  text-decoration: none
+}
+
+.p {
+  color: inherit
+}
+
+.q:focus {
+  z-index: 1
 }
 "
 `;
 
 exports[`should render disabled 1`] = `
 <li
-  className="fyr93k7"
+  className="a b c d e"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="f109b087"
+    className="f b g h i j k l m e n"
     href="#"
     onClick={[Function]}
   >
@@ -273,44 +473,75 @@ exports[`should render disabled 1`] = `
 
 exports[`should render disabled 2`] = `
 "
-.fyr93k7 {
-  float: left;
-  position: relative;
-  background-color: #ededed;
-  color: #666;
+.a {
+  float: left
+}
+
+.b {
+  position: relative
+}
+
+.c {
+  background-color: #ededed
+}
+
+.d {
+  color: #666
+}
+
+.e {
   cursor: default
 }
 
-.f109b087:focus {
-  z-index: 1
-}
-
-.f109b087 {
+.f {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  position: relative;
-  display: block;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-decoration: none;
-  color: inherit;
-  cursor: default
+  -ms-user-select: none
+}
+
+.g {
+  display: block
+}
+
+.h {
+  padding-top: .5em
+}
+
+.i {
+  padding-bottom: .5em
+}
+
+.j {
+  padding-left: 1em
+}
+
+.k {
+  padding-right: 1em
+}
+
+.l {
+  text-decoration: none
+}
+
+.m {
+  color: inherit
+}
+
+.n:focus {
+  z-index: 1
 }
 "
 `;
 
 exports[`should render disabled dot 1`] = `
 <li
-  className="f18awel0"
+  className="a b c d e f g h i j"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="f109b087"
+    className="k b l m n o p q r f s"
     href="#"
     onClick={[Function]}
   >
@@ -321,49 +552,95 @@ exports[`should render disabled dot 1`] = `
 
 exports[`should render disabled dot 2`] = `
 "
-.f18awel0 {
-  float: left;
-  position: relative;
-  background-color: #ededed;
-  color: #666;
-  border: 1px solid #408BC9;
-  cursor: default;
-  width: .5em;
-  height: .5em;
-  margin: 1em;
+.a {
+  float: left
+}
+
+.b {
+  position: relative
+}
+
+.c {
+  background-color: #ededed
+}
+
+.d {
+  color: #666
+}
+
+.e {
+  border: 1px solid #408BC9
+}
+
+.f {
+  cursor: default
+}
+
+.g {
+  width: .5em
+}
+
+.h {
+  height: .5em
+}
+
+.i {
+  margin: 1em
+}
+
+.j {
   border-radius: 50%
 }
 
-.f109b087:focus {
-  z-index: 1
-}
-
-.f109b087 {
+.k {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  position: relative;
-  display: block;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-decoration: none;
-  color: inherit;
-  cursor: default
+  -ms-user-select: none
+}
+
+.l {
+  display: block
+}
+
+.m {
+  padding-top: .5em
+}
+
+.n {
+  padding-bottom: .5em
+}
+
+.o {
+  padding-left: 1em
+}
+
+.p {
+  padding-right: 1em
+}
+
+.q {
+  text-decoration: none
+}
+
+.r {
+  color: inherit
+}
+
+.s:focus {
+  z-index: 1
 }
 "
 `;
 
 exports[`should render disabled next 1`] = `
 <li
-  className="fmgj6am"
+  className="a b c d e f"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="f109b087"
+    className="g b h i j k l m n e o"
     href="#"
     onClick={[Function]}
   >
@@ -374,45 +651,79 @@ exports[`should render disabled next 1`] = `
 
 exports[`should render disabled next 2`] = `
 "
-.fmgj6am {
-  float: left;
-  position: relative;
-  background-color: #ededed;
-  color: #666;
-  cursor: default;
+.a {
+  float: left
+}
+
+.b {
+  position: relative
+}
+
+.c {
+  background-color: #ededed
+}
+
+.d {
+  color: #666
+}
+
+.e {
+  cursor: default
+}
+
+.f {
   border-radius: 3px
 }
 
-.f109b087:focus {
-  z-index: 1
-}
-
-.f109b087 {
+.g {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  position: relative;
-  display: block;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-decoration: none;
-  color: inherit;
-  cursor: default
+  -ms-user-select: none
+}
+
+.h {
+  display: block
+}
+
+.i {
+  padding-top: .5em
+}
+
+.j {
+  padding-bottom: .5em
+}
+
+.k {
+  padding-left: 1em
+}
+
+.l {
+  padding-right: 1em
+}
+
+.m {
+  text-decoration: none
+}
+
+.n {
+  color: inherit
+}
+
+.o:focus {
+  z-index: 1
 }
 "
 `;
 
 exports[`should render disabled prev 1`] = `
 <li
-  className="fmgj6am"
+  className="a b c d e f"
   role={null}
 >
   <a
     aria-label={undefined}
-    className="f109b087"
+    className="g b h i j k l m n e o"
     href="#"
     onClick={[Function]}
   >
@@ -423,33 +734,67 @@ exports[`should render disabled prev 1`] = `
 
 exports[`should render disabled prev 2`] = `
 "
-.fmgj6am {
-  float: left;
-  position: relative;
-  background-color: #ededed;
-  color: #666;
-  cursor: default;
+.a {
+  float: left
+}
+
+.b {
+  position: relative
+}
+
+.c {
+  background-color: #ededed
+}
+
+.d {
+  color: #666
+}
+
+.e {
+  cursor: default
+}
+
+.f {
   border-radius: 3px
 }
 
-.f109b087:focus {
-  z-index: 1
-}
-
-.f109b087 {
+.g {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  position: relative;
-  display: block;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-decoration: none;
-  color: inherit;
-  cursor: default
+  -ms-user-select: none
+}
+
+.h {
+  display: block
+}
+
+.i {
+  padding-top: .5em
+}
+
+.j {
+  padding-bottom: .5em
+}
+
+.k {
+  padding-left: 1em
+}
+
+.l {
+  padding-right: 1em
+}
+
+.m {
+  text-decoration: none
+}
+
+.n {
+  color: inherit
+}
+
+.o:focus {
+  z-index: 1
 }
 "
 `;

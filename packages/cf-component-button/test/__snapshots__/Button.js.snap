@@ -2,7 +2,7 @@
 
 exports[`should render as submit 1`] = `
 <button
-  className="f12tyf0k"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao"
   disabled={undefined}
   onClick={[Function]}
   type="submit"
@@ -13,63 +13,168 @@ exports[`should render as submit 1`] = `
 
 exports[`should render as submit 2`] = `
 "
-.f12tyf0k:hover {
-  background-color: #2869a2;
-  border-color: #215685;
+.a:hover {
+  background-color: #2869a2
+}
+
+.b:hover {
+  border-color: #215685
+}
+
+.c:hover {
   color: #fff
 }
 
-.f12tyf0k:active {
-  background-color: #215685;
-  border-color: #1a4468;
+.d:active {
+  background-color: #215685
+}
+
+.e:active {
+  border-color: #1a4468
+}
+
+.f:active {
   color: #fff
 }
 
-.f12tyf0k:focus {
-  background-color: #2f7bbf;
-  color: #fff;
+.g:focus {
+  background-color: #2f7bbf
+}
+
+.h:focus {
+  color: #fff
+}
+
+.i:focus {
   border-color: #2869a2
 }
 
-.f12tyf0k[title] {
+.j[title] {
   pointer-events: none
 }
 
-.f12tyf0k {
-  background-color: #2f7bbf;
-  border-bottom: 1px solid;
-  border-color: #2869a2;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
-  font-size: 0.9333333333333333rem;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-left: 0px;
-  opacity: inherit;
-  padding-bottom: 0.53em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.6em;
-  pointer-events: auto;
-  position: relative;
-  border-radius: 2px;
-  text-align: center;
+.k {
+  background-color: #2f7bbf
+}
+
+.l {
+  border-bottom: 1px solid
+}
+
+.m {
+  border-color: #2869a2
+}
+
+.n {
+  border-left: 0px
+}
+
+.o {
+  border-right: 0px
+}
+
+.p {
+  border-top: 0px
+}
+
+.q {
+  color: #fff
+}
+
+.r {
+  cursor: pointer
+}
+
+.s {
+  display: inline-block
+}
+
+.t {
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+}
+
+.u {
+  font-size: 0.9333333333333333rem
+}
+
+.v {
+  font-weight: 400
+}
+
+.w {
+  line-height: 1.2
+}
+
+.x {
+  margin-bottom: 0px
+}
+
+.y {
+  margin-right: 0px
+}
+
+.z {
+  margin-top: 0px
+}
+
+.ab {
+  margin-left: 0px
+}
+
+.ac {
+  opacity: inherit
+}
+
+.ad {
+  padding-bottom: 0.53em
+}
+
+.ae {
+  padding-left: 1em
+}
+
+.af {
+  padding-right: 1em
+}
+
+.ag {
+  padding-top: 0.6em
+}
+
+.ah {
+  pointer-events: auto
+}
+
+.ai {
+  position: relative
+}
+
+.aj {
+  border-radius: 2px
+}
+
+.ak {
+  text-align: center
+}
+
+.al {
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
+  -moz-transition: all 200ms ease
+}
+
+.am {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  float: none;
+  -ms-user-select: none
+}
+
+.an {
+  float: none
+}
+
+.ao {
   max-width: initial
 }
 "
@@ -77,7 +182,7 @@ exports[`should render as submit 2`] = `
 
 exports[`should render with loading 1`] = `
 <button
-  className="fnubafe"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao ap aq ar as at au av aw ax ay az ba bb"
   disabled={true}
   onClick={[Function]}
   type="button"
@@ -106,82 +211,223 @@ exports[`should render with loading 2`] = `
   }
 }
 
-.fnubafe:hover {
-  background-color: #ededed;
-  border-color: #dbdbdb;
-  color: #ededed
+.a:hover {
+  background-color: #ededed
 }
 
-.fnubafe:active {
-  background-color: #215685;
-  border-color: #dbdbdb;
-  color: #fff
-}
-
-.fnubafe:focus {
-  color: #ededed;
-  outline: none;
+.b:hover {
   border-color: #dbdbdb
 }
 
-.fnubafe::before {
-  content: \\"…\\";
-  color: black;
-  display: block;
-  position: absolute;
-  top: 0.6em;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-  animation-name: k1;
+.c:hover {
+  color: #ededed
+}
+
+.d:active {
+  background-color: #215685
+}
+
+.e:active {
+  border-color: #dbdbdb
+}
+
+.f:active {
+  color: #fff
+}
+
+.g:focus {
+  color: #ededed
+}
+
+.h:focus {
+  outline: none
+}
+
+.i:focus {
+  border-color: #dbdbdb
+}
+
+.j::before {
+  content: \\"…\\"
+}
+
+.k::before {
+  color: black
+}
+
+.l::before {
+  display: block
+}
+
+.m::before {
+  position: absolute
+}
+
+.n::before {
+  top: 0.6em
+}
+
+.o::before {
+  left: 0px
+}
+
+.p::before {
+  height: 100%
+}
+
+.q::before {
+  width: 100%
+}
+
+.r::before {
+  opacity: 1
+}
+
+.s::before {
+  animation-name: k1
+}
+
+.t::before {
   animation-duration: 1s;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 1s
+}
+
+.u::before {
   animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite
+}
+
+.v::before {
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear
 }
 
-.fnubafe[title] {
+.w[title] {
   pointer-events: none
 }
 
-.fnubafe {
-  background-color: #ededed;
-  border-bottom: 1px solid;
-  border-color: #dbdbdb;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  color: #ededed;
-  cursor: default;
-  display: inline-block;
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
-  font-size: 0.9333333333333333rem;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-left: 0px;
-  opacity: 0.8;
-  padding-bottom: 0.53em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.6em;
-  pointer-events: auto;
-  position: relative;
-  border-radius: 2px;
-  text-align: center;
+.x {
+  background-color: #ededed
+}
+
+.y {
+  border-bottom: 1px solid
+}
+
+.z {
+  border-color: #dbdbdb
+}
+
+.ab {
+  border-left: 0px
+}
+
+.ac {
+  border-right: 0px
+}
+
+.ad {
+  border-top: 0px
+}
+
+.ae {
+  color: #ededed
+}
+
+.af {
+  cursor: default
+}
+
+.ag {
+  display: inline-block
+}
+
+.ah {
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+}
+
+.ai {
+  font-size: 0.9333333333333333rem
+}
+
+.aj {
+  font-weight: 400
+}
+
+.ak {
+  line-height: 1.2
+}
+
+.al {
+  margin-bottom: 0px
+}
+
+.am {
+  margin-right: 0px
+}
+
+.an {
+  margin-top: 0px
+}
+
+.ao {
+  margin-left: 0px
+}
+
+.ap {
+  opacity: 0.8
+}
+
+.aq {
+  padding-bottom: 0.53em
+}
+
+.ar {
+  padding-left: 1em
+}
+
+.as {
+  padding-right: 1em
+}
+
+.at {
+  padding-top: 0.6em
+}
+
+.au {
+  pointer-events: auto
+}
+
+.av {
+  position: relative
+}
+
+.aw {
+  border-radius: 2px
+}
+
+.ax {
+  text-align: center
+}
+
+.ay {
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
+  -moz-transition: all 200ms ease
+}
+
+.az {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  float: none;
+  -ms-user-select: none
+}
+
+.ba {
+  float: none
+}
+
+.bb {
   max-width: initial
 }
 "
@@ -189,7 +435,7 @@ exports[`should render with loading 2`] = `
 
 exports[`should render with loading and disabled overridden 1`] = `
 <button
-  className="fnubafe"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao ap aq ar as at au av aw ax ay az ba bb"
   disabled={true}
   onClick={[Function]}
   type="button"
@@ -218,82 +464,223 @@ exports[`should render with loading and disabled overridden 2`] = `
   }
 }
 
-.fnubafe:hover {
-  background-color: #ededed;
-  border-color: #dbdbdb;
-  color: #ededed
+.a:hover {
+  background-color: #ededed
 }
 
-.fnubafe:active {
-  background-color: #215685;
-  border-color: #dbdbdb;
-  color: #fff
-}
-
-.fnubafe:focus {
-  color: #ededed;
-  outline: none;
+.b:hover {
   border-color: #dbdbdb
 }
 
-.fnubafe::before {
-  content: \\"…\\";
-  color: black;
-  display: block;
-  position: absolute;
-  top: 0.6em;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-  animation-name: k1;
+.c:hover {
+  color: #ededed
+}
+
+.d:active {
+  background-color: #215685
+}
+
+.e:active {
+  border-color: #dbdbdb
+}
+
+.f:active {
+  color: #fff
+}
+
+.g:focus {
+  color: #ededed
+}
+
+.h:focus {
+  outline: none
+}
+
+.i:focus {
+  border-color: #dbdbdb
+}
+
+.j::before {
+  content: \\"…\\"
+}
+
+.k::before {
+  color: black
+}
+
+.l::before {
+  display: block
+}
+
+.m::before {
+  position: absolute
+}
+
+.n::before {
+  top: 0.6em
+}
+
+.o::before {
+  left: 0px
+}
+
+.p::before {
+  height: 100%
+}
+
+.q::before {
+  width: 100%
+}
+
+.r::before {
+  opacity: 1
+}
+
+.s::before {
+  animation-name: k1
+}
+
+.t::before {
   animation-duration: 1s;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 1s
+}
+
+.u::before {
   animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite
+}
+
+.v::before {
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear
 }
 
-.fnubafe[title] {
+.w[title] {
   pointer-events: none
 }
 
-.fnubafe {
-  background-color: #ededed;
-  border-bottom: 1px solid;
-  border-color: #dbdbdb;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  color: #ededed;
-  cursor: default;
-  display: inline-block;
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
-  font-size: 0.9333333333333333rem;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-left: 0px;
-  opacity: 0.8;
-  padding-bottom: 0.53em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.6em;
-  pointer-events: auto;
-  position: relative;
-  border-radius: 2px;
-  text-align: center;
+.x {
+  background-color: #ededed
+}
+
+.y {
+  border-bottom: 1px solid
+}
+
+.z {
+  border-color: #dbdbdb
+}
+
+.ab {
+  border-left: 0px
+}
+
+.ac {
+  border-right: 0px
+}
+
+.ad {
+  border-top: 0px
+}
+
+.ae {
+  color: #ededed
+}
+
+.af {
+  cursor: default
+}
+
+.ag {
+  display: inline-block
+}
+
+.ah {
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+}
+
+.ai {
+  font-size: 0.9333333333333333rem
+}
+
+.aj {
+  font-weight: 400
+}
+
+.ak {
+  line-height: 1.2
+}
+
+.al {
+  margin-bottom: 0px
+}
+
+.am {
+  margin-right: 0px
+}
+
+.an {
+  margin-top: 0px
+}
+
+.ao {
+  margin-left: 0px
+}
+
+.ap {
+  opacity: 0.8
+}
+
+.aq {
+  padding-bottom: 0.53em
+}
+
+.ar {
+  padding-left: 1em
+}
+
+.as {
+  padding-right: 1em
+}
+
+.at {
+  padding-top: 0.6em
+}
+
+.au {
+  pointer-events: auto
+}
+
+.av {
+  position: relative
+}
+
+.aw {
+  border-radius: 2px
+}
+
+.ax {
+  text-align: center
+}
+
+.ay {
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
+  -moz-transition: all 200ms ease
+}
+
+.az {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  float: none;
+  -ms-user-select: none
+}
+
+.ba {
+  float: none
+}
+
+.bb {
   max-width: initial
 }
 "
@@ -301,7 +688,7 @@ exports[`should render with loading and disabled overridden 2`] = `
 
 exports[`should render with type 1`] = `
 <button
-  className="f12tyf0k"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao"
   disabled={undefined}
   onClick={[Function]}
   type="button"
@@ -312,63 +699,168 @@ exports[`should render with type 1`] = `
 
 exports[`should render with type 2`] = `
 "
-.f12tyf0k:hover {
-  background-color: #2869a2;
-  border-color: #215685;
+.a:hover {
+  background-color: #2869a2
+}
+
+.b:hover {
+  border-color: #215685
+}
+
+.c:hover {
   color: #fff
 }
 
-.f12tyf0k:active {
-  background-color: #215685;
-  border-color: #1a4468;
+.d:active {
+  background-color: #215685
+}
+
+.e:active {
+  border-color: #1a4468
+}
+
+.f:active {
   color: #fff
 }
 
-.f12tyf0k:focus {
-  background-color: #2f7bbf;
-  color: #fff;
+.g:focus {
+  background-color: #2f7bbf
+}
+
+.h:focus {
+  color: #fff
+}
+
+.i:focus {
   border-color: #2869a2
 }
 
-.f12tyf0k[title] {
+.j[title] {
   pointer-events: none
 }
 
-.f12tyf0k {
-  background-color: #2f7bbf;
-  border-bottom: 1px solid;
-  border-color: #2869a2;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
-  font-size: 0.9333333333333333rem;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-left: 0px;
-  opacity: inherit;
-  padding-bottom: 0.53em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.6em;
-  pointer-events: auto;
-  position: relative;
-  border-radius: 2px;
-  text-align: center;
+.k {
+  background-color: #2f7bbf
+}
+
+.l {
+  border-bottom: 1px solid
+}
+
+.m {
+  border-color: #2869a2
+}
+
+.n {
+  border-left: 0px
+}
+
+.o {
+  border-right: 0px
+}
+
+.p {
+  border-top: 0px
+}
+
+.q {
+  color: #fff
+}
+
+.r {
+  cursor: pointer
+}
+
+.s {
+  display: inline-block
+}
+
+.t {
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+}
+
+.u {
+  font-size: 0.9333333333333333rem
+}
+
+.v {
+  font-weight: 400
+}
+
+.w {
+  line-height: 1.2
+}
+
+.x {
+  margin-bottom: 0px
+}
+
+.y {
+  margin-right: 0px
+}
+
+.z {
+  margin-top: 0px
+}
+
+.ab {
+  margin-left: 0px
+}
+
+.ac {
+  opacity: inherit
+}
+
+.ad {
+  padding-bottom: 0.53em
+}
+
+.ae {
+  padding-left: 1em
+}
+
+.af {
+  padding-right: 1em
+}
+
+.ag {
+  padding-top: 0.6em
+}
+
+.ah {
+  pointer-events: auto
+}
+
+.ai {
+  position: relative
+}
+
+.aj {
+  border-radius: 2px
+}
+
+.ak {
+  text-align: center
+}
+
+.al {
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
+  -moz-transition: all 200ms ease
+}
+
+.am {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  float: none;
+  -ms-user-select: none
+}
+
+.an {
+  float: none
+}
+
+.ao {
   max-width: initial
 }
 "
@@ -376,7 +868,7 @@ exports[`should render with type 2`] = `
 
 exports[`should render with type/disabled 1`] = `
 <button
-  className="fbare0q"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao"
   disabled={true}
   onClick={[Function]}
   type="button"
@@ -387,63 +879,168 @@ exports[`should render with type/disabled 1`] = `
 
 exports[`should render with type/disabled 2`] = `
 "
-.fbare0q:hover {
-  background-color: #2869a2;
-  border-color: #215685;
+.a:hover {
+  background-color: #2869a2
+}
+
+.b:hover {
+  border-color: #215685
+}
+
+.c:hover {
   color: #fff
 }
 
-.fbare0q:active {
-  background-color: #215685;
-  border-color: #1a4468;
+.d:active {
+  background-color: #215685
+}
+
+.e:active {
+  border-color: #1a4468
+}
+
+.f:active {
   color: #fff
 }
 
-.fbare0q:focus {
-  background-color: #2f7bbf;
-  color: #fff;
+.g:focus {
+  background-color: #2f7bbf
+}
+
+.h:focus {
+  color: #fff
+}
+
+.i:focus {
   border-color: #2869a2
 }
 
-.fbare0q[title] {
+.j[title] {
   pointer-events: auto
 }
 
-.fbare0q {
-  background-color: #2f7bbf;
-  border-bottom: 1px solid;
-  border-color: #2869a2;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  color: #fff;
-  cursor: default;
-  display: inline-block;
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
-  font-size: 0.9333333333333333rem;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-left: 0px;
-  opacity: 0.5;
-  padding-bottom: 0.53em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.6em;
-  pointer-events: none;
-  position: relative;
-  border-radius: 2px;
-  text-align: center;
+.k {
+  background-color: #2f7bbf
+}
+
+.l {
+  border-bottom: 1px solid
+}
+
+.m {
+  border-color: #2869a2
+}
+
+.n {
+  border-left: 0px
+}
+
+.o {
+  border-right: 0px
+}
+
+.p {
+  border-top: 0px
+}
+
+.q {
+  color: #fff
+}
+
+.r {
+  cursor: default
+}
+
+.s {
+  display: inline-block
+}
+
+.t {
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+}
+
+.u {
+  font-size: 0.9333333333333333rem
+}
+
+.v {
+  font-weight: 400
+}
+
+.w {
+  line-height: 1.2
+}
+
+.x {
+  margin-bottom: 0px
+}
+
+.y {
+  margin-right: 0px
+}
+
+.z {
+  margin-top: 0px
+}
+
+.ab {
+  margin-left: 0px
+}
+
+.ac {
+  opacity: 0.5
+}
+
+.ad {
+  padding-bottom: 0.53em
+}
+
+.ae {
+  padding-left: 1em
+}
+
+.af {
+  padding-right: 1em
+}
+
+.ag {
+  padding-top: 0.6em
+}
+
+.ah {
+  pointer-events: none
+}
+
+.ai {
+  position: relative
+}
+
+.aj {
+  border-radius: 2px
+}
+
+.ak {
+  text-align: center
+}
+
+.al {
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
+  -moz-transition: all 200ms ease
+}
+
+.am {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  float: none;
+  -ms-user-select: none
+}
+
+.an {
+  float: none
+}
+
+.ao {
   max-width: initial
 }
 "

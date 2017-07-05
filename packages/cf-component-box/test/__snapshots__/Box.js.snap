@@ -2,7 +2,7 @@
 
 exports[`should render all props as styles 1`] = `
 <div
-  className="fk8v3yj"
+  className="a b c d e f g h i j k l m"
 >
   Box
 </div>
@@ -10,19 +10,55 @@ exports[`should render all props as styles 1`] = `
 
 exports[`should render all props as styles 2`] = `
 "
-.fk8v3yj {
-  border-width: 1px;
-  border-style: solid;
-  border-color: black;
-  margin: 1rem;
-  padding: 1rem;
-  display: inline-block;
-  position: relative;
-  top: 0.06666666666666667rem;
-  bottom: 0.06666666666666667rem;
-  min-width: 6.666666666666667rem;
-  width: 6.666666666666667rem;
-  min-height: 6.666666666666667rem;
+.a {
+  border-width: 1px
+}
+
+.b {
+  border-style: solid
+}
+
+.c {
+  border-color: black
+}
+
+.d {
+  margin: 1rem
+}
+
+.e {
+  padding: 1rem
+}
+
+.f {
+  display: inline-block
+}
+
+.g {
+  position: relative
+}
+
+.h {
+  top: 0.06666666666666667rem
+}
+
+.i {
+  bottom: 0.06666666666666667rem
+}
+
+.j {
+  min-width: 6.666666666666667rem
+}
+
+.k {
+  width: 6.666666666666667rem
+}
+
+.l {
+  min-height: 6.666666666666667rem
+}
+
+.m {
   height: 6.666666666666667rem
 }
 "

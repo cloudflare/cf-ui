@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <div
-  className="fcmkk1"
+  className="a b c d"
 >
   Hello
 </div>
@@ -10,10 +10,10 @@ exports[`should render 1`] = `
 
 exports[`should render 1 button 1`] = `
 <div
-  className="fcmkk1"
+  className="a b c d"
 >
   <button
-    className="f8n1gf0"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b al am an ao ap aq ar as at"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -25,73 +25,188 @@ exports[`should render 1 button 1`] = `
 
 exports[`should render 1 button 2`] = `
 "
-.fcmkk1 {
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
+.a {
+  display: inline-block
+}
+
+.b {
+  position: relative
+}
+
+.c {
+  vertical-align: middle
+}
+
+.d {
   white-space: nowrap
 }
 
-.f8n1gf0:hover {
-  background-color: #2869a2;
-  border-color: #215685;
+.e:hover {
+  background-color: #2869a2
+}
+
+.f:hover {
+  border-color: #215685
+}
+
+.g:hover {
   color: #fff
 }
 
-.f8n1gf0:active {
-  background-color: #215685;
-  border-color: #1a4468;
+.h:active {
+  background-color: #215685
+}
+
+.i:active {
+  border-color: #1a4468
+}
+
+.j:active {
   color: #fff
 }
 
-.f8n1gf0:focus {
-  background-color: #2f7bbf;
-  color: #fff;
+.k:focus {
+  background-color: #2f7bbf
+}
+
+.l:focus {
+  color: #fff
+}
+
+.m:focus {
   border-color: #2869a2
 }
 
-.f8n1gf0[title] {
+.n[title] {
   pointer-events: none
 }
 
-.f8n1gf0 {
-  background-color: #2f7bbf;
-  border-bottom: 1px solid;
-  border-color: #2869a2;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
-  font-size: 0.9333333333333333rem;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-left: 0px;
-  opacity: inherit;
-  padding-bottom: 0.53em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.6em;
-  pointer-events: auto;
-  position: relative;
-  border-top-right-radius: 2px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 2px;
-  text-align: center;
+.o {
+  background-color: #2f7bbf
+}
+
+.p {
+  border-bottom: 1px solid
+}
+
+.q {
+  border-color: #2869a2
+}
+
+.r {
+  border-left: 0px
+}
+
+.s {
+  border-right: 0px
+}
+
+.t {
+  border-top: 0px
+}
+
+.u {
+  color: #fff
+}
+
+.v {
+  cursor: pointer
+}
+
+.w {
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+}
+
+.x {
+  font-size: 0.9333333333333333rem
+}
+
+.y {
+  font-weight: 400
+}
+
+.z {
+  line-height: 1.2
+}
+
+.ab {
+  margin-bottom: 0px
+}
+
+.ac {
+  margin-right: 0px
+}
+
+.ad {
+  margin-top: 0px
+}
+
+.ae {
+  margin-left: 0px
+}
+
+.af {
+  opacity: inherit
+}
+
+.ag {
+  padding-bottom: 0.53em
+}
+
+.ah {
+  padding-left: 1em
+}
+
+.ai {
+  padding-right: 1em
+}
+
+.aj {
+  padding-top: 0.6em
+}
+
+.ak {
+  pointer-events: auto
+}
+
+.al {
+  border-top-right-radius: 2px
+}
+
+.am {
+  border-top-left-radius: 0px
+}
+
+.an {
+  border-bottom-left-radius: 0px
+}
+
+.ao {
+  border-bottom-right-radius: 2px
+}
+
+.ap {
+  text-align: center
+}
+
+.aq {
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
+  -moz-transition: all 200ms ease
+}
+
+.ar {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  float: none;
+  -ms-user-select: none
+}
+
+.as {
+  float: none
+}
+
+.at {
   max-width: initial
 }
 "
@@ -99,10 +214,19 @@ exports[`should render 1 button 2`] = `
 
 exports[`should render 2`] = `
 "
-.fcmkk1 {
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
+.a {
+  display: inline-block
+}
+
+.b {
+  position: relative
+}
+
+.c {
+  vertical-align: middle
+}
+
+.d {
   white-space: nowrap
 }
 "
@@ -110,10 +234,10 @@ exports[`should render 2`] = `
 
 exports[`should render 2 buttons 1`] = `
 <div
-  className="fcmkk1"
+  className="a b c d"
 >
   <button
-    className="fiwt3vg"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b al am an ao ap aq ar as at"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -121,7 +245,7 @@ exports[`should render 2 buttons 1`] = `
     Button
   </button>
   <button
-    className="f8n1gf0"
+    className="e f g h i j k  l  m n o p  q r s  t  u v a w x y z ab ac ad ae af ag ah ai aj ak b au av aw ax ap aq ar as at"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -133,147 +257,215 @@ exports[`should render 2 buttons 1`] = `
 
 exports[`should render 2 buttons 2`] = `
 "
-.fcmkk1 {
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
+.a {
+  display: inline-block
+}
+
+.b {
+  position: relative
+}
+
+.c {
+  vertical-align: middle
+}
+
+.d {
   white-space: nowrap
 }
 
-.fiwt3vg:hover {
-  background-color: #2869a2;
-  border-color: #215685;
+.e:hover {
+  background-color: #2869a2
+}
+
+.f:hover {
+  border-color: #215685
+}
+
+.g:hover {
   color: #fff
 }
 
-.fiwt3vg:active {
-  background-color: #215685;
-  border-color: #1a4468;
+.h:active {
+  background-color: #215685
+}
+
+.i:active {
+  border-color: #1a4468
+}
+
+.j:active {
   color: #fff
 }
 
-.fiwt3vg:focus {
-  background-color: #2f7bbf;
-  color: #fff;
+.k:focus {
+  background-color: #2f7bbf
+}
+
+.l:focus {
+  color: #fff
+}
+
+.m:focus {
   border-color: #2869a2
 }
 
-.fiwt3vg[title] {
+.n[title] {
   pointer-events: none
 }
 
-.fiwt3vg {
-  background-color: #2f7bbf;
-  border-bottom: 1px solid;
-  border-color: #2869a2;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
-  font-size: 0.9333333333333333rem;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-left: 0px;
-  opacity: inherit;
-  padding-bottom: 0.53em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.6em;
-  pointer-events: auto;
-  position: relative;
-  border-top-right-radius: 0px;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 0px;
-  text-align: center;
-  transition: all 200ms ease;
-  -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  float: none;
-  max-width: initial
+.o {
+  background-color: #2f7bbf
 }
 
-.f8n1gf0:hover {
-  background-color: #2869a2;
-  border-color: #215685;
-  color: #fff
+.p {
+  border-bottom: 1px solid
 }
 
-.f8n1gf0:active {
-  background-color: #215685;
-  border-color: #1a4468;
-  color: #fff
-}
-
-.f8n1gf0:focus {
-  background-color: #2f7bbf;
-  color: #fff;
+.q {
   border-color: #2869a2
 }
 
-.f8n1gf0[title] {
-  pointer-events: none
+.r {
+  border-left: 0px
 }
 
-.f8n1gf0 {
-  background-color: #2f7bbf;
-  border-bottom: 1px solid;
-  border-color: #2869a2;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
-  font-size: 0.9333333333333333rem;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-left: 0px;
-  opacity: inherit;
-  padding-bottom: 0.53em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.6em;
-  pointer-events: auto;
-  position: relative;
-  border-top-right-radius: 2px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 2px;
-  text-align: center;
+.s {
+  border-right: 0px
+}
+
+.t {
+  border-top: 0px
+}
+
+.u {
+  color: #fff
+}
+
+.v {
+  cursor: pointer
+}
+
+.w {
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+}
+
+.x {
+  font-size: 0.9333333333333333rem
+}
+
+.y {
+  font-weight: 400
+}
+
+.z {
+  line-height: 1.2
+}
+
+.ab {
+  margin-bottom: 0px
+}
+
+.ac {
+  margin-right: 0px
+}
+
+.ad {
+  margin-top: 0px
+}
+
+.ae {
+  margin-left: 0px
+}
+
+.af {
+  opacity: inherit
+}
+
+.ag {
+  padding-bottom: 0.53em
+}
+
+.ah {
+  padding-left: 1em
+}
+
+.ai {
+  padding-right: 1em
+}
+
+.aj {
+  padding-top: 0.6em
+}
+
+.ak {
+  pointer-events: auto
+}
+
+.al {
+  border-top-right-radius: 0px
+}
+
+.am {
+  border-top-left-radius: 2px
+}
+
+.an {
+  border-bottom-left-radius: 2px
+}
+
+.ao {
+  border-bottom-right-radius: 0px
+}
+
+.ap {
+  text-align: center
+}
+
+.aq {
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
+  -moz-transition: all 200ms ease
+}
+
+.ar {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  float: none;
+  -ms-user-select: none
+}
+
+.as {
+  float: none
+}
+
+.at {
   max-width: initial
+}
+
+.au {
+  border-top-right-radius: 2px
+}
+
+.av {
+  border-top-left-radius: 0px
+}
+
+.aw {
+  border-bottom-left-radius: 0px
+}
+
+.ax {
+  border-bottom-right-radius: 2px
 }
 "
 `;
 
 exports[`should render 3 buttons 1`] = `
 <div
-  className="fcmkk1"
+  className="a b c d"
 >
   <button
-    className="fiwt3vg"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b al am an ao ap aq ar as at"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -281,7 +473,7 @@ exports[`should render 3 buttons 1`] = `
     Button
   </button>
   <button
-    className="f5141ss"
+    className="e f g h i j k  l  m n o p  q r s  t  u v a w x y z ab ac ad ae af ag ah ai aj ak b al au av ao ap aq ar as at"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -289,7 +481,7 @@ exports[`should render 3 buttons 1`] = `
     Button
   </button>
   <button
-    className="f8n1gf0"
+    className="e f g h i j k  l  m n o p  q r s  t  u v a w x y z ab ac ad ae af ag ah ai aj ak b aw au av ax ap aq ar as at"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -301,210 +493,215 @@ exports[`should render 3 buttons 1`] = `
 
 exports[`should render 3 buttons 2`] = `
 "
-.fcmkk1 {
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
+.a {
+  display: inline-block
+}
+
+.b {
+  position: relative
+}
+
+.c {
+  vertical-align: middle
+}
+
+.d {
   white-space: nowrap
 }
 
-.fiwt3vg:hover {
-  background-color: #2869a2;
-  border-color: #215685;
+.e:hover {
+  background-color: #2869a2
+}
+
+.f:hover {
+  border-color: #215685
+}
+
+.g:hover {
   color: #fff
 }
 
-.fiwt3vg:active {
-  background-color: #215685;
-  border-color: #1a4468;
+.h:active {
+  background-color: #215685
+}
+
+.i:active {
+  border-color: #1a4468
+}
+
+.j:active {
   color: #fff
 }
 
-.fiwt3vg:focus {
-  background-color: #2f7bbf;
-  color: #fff;
+.k:focus {
+  background-color: #2f7bbf
+}
+
+.l:focus {
+  color: #fff
+}
+
+.m:focus {
   border-color: #2869a2
 }
 
-.fiwt3vg[title] {
+.n[title] {
   pointer-events: none
 }
 
-.fiwt3vg {
-  background-color: #2f7bbf;
-  border-bottom: 1px solid;
-  border-color: #2869a2;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
-  font-size: 0.9333333333333333rem;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-left: 0px;
-  opacity: inherit;
-  padding-bottom: 0.53em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.6em;
-  pointer-events: auto;
-  position: relative;
-  border-top-right-radius: 0px;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 0px;
-  text-align: center;
-  transition: all 200ms ease;
-  -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  float: none;
-  max-width: initial
+.o {
+  background-color: #2f7bbf
 }
 
-.f5141ss:hover {
-  background-color: #2869a2;
-  border-color: #215685;
-  color: #fff
+.p {
+  border-bottom: 1px solid
 }
 
-.f5141ss:active {
-  background-color: #215685;
-  border-color: #1a4468;
-  color: #fff
-}
-
-.f5141ss:focus {
-  background-color: #2f7bbf;
-  color: #fff;
+.q {
   border-color: #2869a2
 }
 
-.f5141ss[title] {
-  pointer-events: none
+.r {
+  border-left: 0px
 }
 
-.f5141ss {
-  background-color: #2f7bbf;
-  border-bottom: 1px solid;
-  border-color: #2869a2;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
-  font-size: 0.9333333333333333rem;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-left: 0px;
-  opacity: inherit;
-  padding-bottom: 0.53em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.6em;
-  pointer-events: auto;
-  position: relative;
-  border-top-right-radius: 0px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
-  text-align: center;
-  transition: all 200ms ease;
-  -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  float: none;
-  max-width: initial
+.s {
+  border-right: 0px
 }
 
-.f8n1gf0:hover {
-  background-color: #2869a2;
-  border-color: #215685;
+.t {
+  border-top: 0px
+}
+
+.u {
   color: #fff
 }
 
-.f8n1gf0:active {
-  background-color: #215685;
-  border-color: #1a4468;
-  color: #fff
+.v {
+  cursor: pointer
 }
 
-.f8n1gf0:focus {
-  background-color: #2f7bbf;
-  color: #fff;
-  border-color: #2869a2
+.w {
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
 }
 
-.f8n1gf0[title] {
-  pointer-events: none
+.x {
+  font-size: 0.9333333333333333rem
 }
 
-.f8n1gf0 {
-  background-color: #2f7bbf;
-  border-bottom: 1px solid;
-  border-color: #2869a2;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
-  font-size: 0.9333333333333333rem;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-left: 0px;
-  opacity: inherit;
-  padding-bottom: 0.53em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.6em;
-  pointer-events: auto;
-  position: relative;
-  border-top-right-radius: 2px;
-  border-top-left-radius: 0px;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 2px;
-  text-align: center;
+.y {
+  font-weight: 400
+}
+
+.z {
+  line-height: 1.2
+}
+
+.ab {
+  margin-bottom: 0px
+}
+
+.ac {
+  margin-right: 0px
+}
+
+.ad {
+  margin-top: 0px
+}
+
+.ae {
+  margin-left: 0px
+}
+
+.af {
+  opacity: inherit
+}
+
+.ag {
+  padding-bottom: 0.53em
+}
+
+.ah {
+  padding-left: 1em
+}
+
+.ai {
+  padding-right: 1em
+}
+
+.aj {
+  padding-top: 0.6em
+}
+
+.ak {
+  pointer-events: auto
+}
+
+.al {
+  border-top-right-radius: 0px
+}
+
+.am {
+  border-top-left-radius: 2px
+}
+
+.an {
+  border-bottom-left-radius: 2px
+}
+
+.ao {
+  border-bottom-right-radius: 0px
+}
+
+.ap {
+  text-align: center
+}
+
+.aq {
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
+  -moz-transition: all 200ms ease
+}
+
+.ar {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  float: none;
+  -ms-user-select: none
+}
+
+.as {
+  float: none
+}
+
+.at {
   max-width: initial
+}
+
+.au {
+  border-top-left-radius: 0px
+}
+
+.av {
+  border-bottom-left-radius: 0px
+}
+
+.aw {
+  border-top-right-radius: 2px
+}
+
+.ax {
+  border-bottom-right-radius: 2px
 }
 "
 `;
 
 exports[`should render 3 buttons with spacing 1`] = `
 <div
-  className="fcmkk1"
+  className="a b c d"
 >
   <button
-    className="f12tyf0k"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b al am an ao ap aq"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -512,7 +709,7 @@ exports[`should render 3 buttons with spacing 1`] = `
     Button
   </button>
   <button
-    className="f1n7ummk"
+    className="e f g h i j k  l  m n o p  q r s  t  u v a w x y z ab ac ad ar af ag ah ai aj ak b al am an ao ap aq"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -520,7 +717,7 @@ exports[`should render 3 buttons with spacing 1`] = `
     Button
   </button>
   <button
-    className="f1n7ummk"
+    className="e f g h i j k  l  m n o p  q r s  t  u v a w x y z ab ac ad ar af ag ah ai aj ak b al am an ao ap aq"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -532,131 +729,181 @@ exports[`should render 3 buttons with spacing 1`] = `
 
 exports[`should render 3 buttons with spacing 2`] = `
 "
-.fcmkk1 {
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
+.a {
+  display: inline-block
+}
+
+.b {
+  position: relative
+}
+
+.c {
+  vertical-align: middle
+}
+
+.d {
   white-space: nowrap
 }
 
-.f12tyf0k:hover {
-  background-color: #2869a2;
-  border-color: #215685;
+.e:hover {
+  background-color: #2869a2
+}
+
+.f:hover {
+  border-color: #215685
+}
+
+.g:hover {
   color: #fff
 }
 
-.f12tyf0k:active {
-  background-color: #215685;
-  border-color: #1a4468;
+.h:active {
+  background-color: #215685
+}
+
+.i:active {
+  border-color: #1a4468
+}
+
+.j:active {
   color: #fff
 }
 
-.f12tyf0k:focus {
-  background-color: #2f7bbf;
-  color: #fff;
+.k:focus {
+  background-color: #2f7bbf
+}
+
+.l:focus {
+  color: #fff
+}
+
+.m:focus {
   border-color: #2869a2
 }
 
-.f12tyf0k[title] {
+.n[title] {
   pointer-events: none
 }
 
-.f12tyf0k {
-  background-color: #2f7bbf;
-  border-bottom: 1px solid;
-  border-color: #2869a2;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
-  font-size: 0.9333333333333333rem;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-left: 0px;
-  opacity: inherit;
-  padding-bottom: 0.53em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.6em;
-  pointer-events: auto;
-  position: relative;
-  border-radius: 2px;
-  text-align: center;
-  transition: all 200ms ease;
-  -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  float: none;
-  max-width: initial
+.o {
+  background-color: #2f7bbf
 }
 
-.f1n7ummk:hover {
-  background-color: #2869a2;
-  border-color: #215685;
-  color: #fff
+.p {
+  border-bottom: 1px solid
 }
 
-.f1n7ummk:active {
-  background-color: #215685;
-  border-color: #1a4468;
-  color: #fff
-}
-
-.f1n7ummk:focus {
-  background-color: #2f7bbf;
-  color: #fff;
+.q {
   border-color: #2869a2
 }
 
-.f1n7ummk[title] {
-  pointer-events: none
+.r {
+  border-left: 0px
 }
 
-.f1n7ummk {
-  background-color: #2f7bbf;
-  border-bottom: 1px solid;
-  border-color: #2869a2;
-  border-left: 0px;
-  border-right: 0px;
-  border-top: 0px;
-  color: #fff;
-  cursor: pointer;
-  display: inline-block;
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif;
-  font-size: 0.9333333333333333rem;
-  font-weight: 400;
-  line-height: 1.2;
-  margin-bottom: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  margin-left: 0.4rem;
-  opacity: inherit;
-  padding-bottom: 0.53em;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-top: 0.6em;
-  pointer-events: auto;
-  position: relative;
-  border-radius: 2px;
-  text-align: center;
+.s {
+  border-right: 0px
+}
+
+.t {
+  border-top: 0px
+}
+
+.u {
+  color: #fff
+}
+
+.v {
+  cursor: pointer
+}
+
+.w {
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+}
+
+.x {
+  font-size: 0.9333333333333333rem
+}
+
+.y {
+  font-weight: 400
+}
+
+.z {
+  line-height: 1.2
+}
+
+.ab {
+  margin-bottom: 0px
+}
+
+.ac {
+  margin-right: 0px
+}
+
+.ad {
+  margin-top: 0px
+}
+
+.ae {
+  margin-left: 0px
+}
+
+.af {
+  opacity: inherit
+}
+
+.ag {
+  padding-bottom: 0.53em
+}
+
+.ah {
+  padding-left: 1em
+}
+
+.ai {
+  padding-right: 1em
+}
+
+.aj {
+  padding-top: 0.6em
+}
+
+.ak {
+  pointer-events: auto
+}
+
+.al {
+  border-radius: 2px
+}
+
+.am {
+  text-align: center
+}
+
+.an {
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
+  -moz-transition: all 200ms ease
+}
+
+.ao {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  float: none;
+  -ms-user-select: none
+}
+
+.ap {
+  float: none
+}
+
+.aq {
   max-width: initial
+}
+
+.ar {
+  margin-left: 0.4rem
 }
 "
 `;

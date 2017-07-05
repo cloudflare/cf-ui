@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <label
-  className="f17lho90"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj"
   htmlFor="test"
 >
   <input
@@ -16,126 +16,318 @@ exports[`should render 1`] = `
     type="checkbox"
   />
   <span
-    className="f15elc4i"
+    className="ak al am an ao ap aq ar"
   >
     Test Toggle
   </span>
   <span
     active={undefined}
-    className="fopa0cz"
+    className="a ak as at au av aw ax ay az ba bb bc bd be n bf o bg bh bi bj bk bl bm bn bo bp y bq z br bs bt bu bv"
   />
 </label>
 `;
 
 exports[`should render 2`] = `
 "
-.f17lho90::before {
-  display: block;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  width: 50%;
-  line-height: 2.26667rem;
-  text-align: center;
-  content: 'On';
-  left: 0px;
-  background: #9bca3e;
-  color: #fff
+.a {
+  display: block
 }
 
-.f17lho90::after {
-  display: block;
-  position: absolute;
-  content: 'Off';
-  top: 0px;
-  bottom: 0px;
-  right: 0px;
-  text-align: center;
-  width: 50%;
-  line-height: 2.26667rem;
-  background: #7c7c7c;
-  color: #fff
+.b {
+  position: relative
 }
 
-.f17lho90 {
-  display: block;
-  position: relative;
-  margin: 0px;
-  height: 2.26667rem;
-  width: 5.334rem;
-  border-radius: 2px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #aaa;
-  cursor: pointer;
-  font-size: 0.86667rem;
-  margin-bottom: 0.38333em;
+.c {
+  margin: 0px
+}
+
+.d {
+  height: 2.26667rem
+}
+
+.e {
+  width: 5.334rem
+}
+
+.f {
+  border-radius: 2px
+}
+
+.g {
+  border-width: 1px
+}
+
+.h {
+  border-style: solid
+}
+
+.i {
+  border-color: #aaa
+}
+
+.j {
+  cursor: pointer
+}
+
+.k {
+  font-size: 0.86667rem
+}
+
+.l {
+  margin-bottom: 0.38333em
+}
+
+.m {
   min-height: 1.22em
 }
 
-.f15elc4i {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0px;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+.n::before {
+  display: block
+}
+
+.o::before {
+  position: absolute
+}
+
+.p::before {
+  top: 0px
+}
+
+.q::before {
+  bottom: 0px
+}
+
+.r::before {
+  width: 50%
+}
+
+.s::before {
+  line-height: 2.26667rem
+}
+
+.t::before {
+  text-align: center
+}
+
+.u::before {
+  content: 'On'
+}
+
+.v::before {
+  left: 0px
+}
+
+.w::before {
+  background: #9bca3e
+}
+
+.x::before {
+  color: #fff
+}
+
+.y::after {
+  display: block
+}
+
+.z::after {
+  position: absolute
+}
+
+.ab::after {
+  content: 'Off'
+}
+
+.ac::after {
+  top: 0px
+}
+
+.ad::after {
+  bottom: 0px
+}
+
+.ae::after {
+  right: 0px
+}
+
+.af::after {
+  text-align: center
+}
+
+.ag::after {
+  width: 50%
+}
+
+.ah::after {
+  line-height: 2.26667rem
+}
+
+.ai::after {
+  background: #7c7c7c
+}
+
+.aj::after {
+  color: #fff
+}
+
+.ak {
+  position: absolute
+}
+
+.al {
+  width: 1px
+}
+
+.am {
+  height: 1px
+}
+
+.an {
+  padding: 0px
+}
+
+.ao {
+  margin: -1px
+}
+
+.ap {
+  overflow: hidden
+}
+
+.aq {
+  clip: rect(0, 0, 0, 0)
+}
+
+.ar {
   border: 0px
 }
 
-.fopa0cz::before {
-  border: 4px solid transparent;
-  content: '';
-  display: block;
-  height: 0px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -3px;
-  width: 0px;
-  border-left-color: transparent;
-  border-right-color: inherit;
-  margin-left: -10px
+.as {
+  z-index: 1
 }
 
-.fopa0cz::after {
-  border: 4px solid transparent;
-  border-left-color: inherit;
-  content: '';
-  display: block;
-  height: 0px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: 2px;
-  margin-top: -3px;
-  width: 0px
+.at {
+  top: 0px
 }
 
-.fopa0cz {
-  display: block;
-  position: absolute;
-  z-index: 1;
-  top: 0px;
-  bottom: 0px;
-  left: 0px;
-  width: 50%;
-  border: inherit;
-  border-width: 0px;
-  border-right-width: inherit;
-  border-left-width: 0px;
-  background: #fff;
+.au {
+  bottom: 0px
+}
+
+.av {
+  left: 0px
+}
+
+.aw {
+  width: 50%
+}
+
+.ax {
+  border: inherit
+}
+
+.ay {
+  border-width: 0px
+}
+
+.az {
+  border-right-width: inherit
+}
+
+.ba {
+  border-left-width: 0px
+}
+
+.bb {
+  background: #fff
+}
+
+.bc {
   transition: left 100ms ease;
   -webkit-transition: left 100ms ease;
   -moz-transition: left 100ms ease
+}
+
+.bd::before {
+  border: 4px solid transparent
+}
+
+.be::before {
+  content: ''
+}
+
+.bf::before {
+  height: 0px
+}
+
+.bg::before {
+  top: 50%
+}
+
+.bh::before {
+  left: 50%
+}
+
+.bi::before {
+  margin-top: -3px
+}
+
+.bj::before {
+  width: 0px
+}
+
+.bk::before {
+  border-left-color: transparent
+}
+
+.bl::before {
+  border-right-color: inherit
+}
+
+.bm::before {
+  margin-left: -10px
+}
+
+.bn::after {
+  border: 4px solid transparent
+}
+
+.bo::after {
+  border-left-color: inherit
+}
+
+.bp::after {
+  content: ''
+}
+
+.bq::after {
+  height: 0px
+}
+
+.br::after {
+  top: 50%
+}
+
+.bs::after {
+  left: 50%
+}
+
+.bt::after {
+  margin-left: 2px
+}
+
+.bu::after {
+  margin-top: -3px
+}
+
+.bv::after {
+  width: 0px
 }
 "
 `;
 
 exports[`should render checked 1`] = `
 <label
-  className="f17lho90"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj"
   htmlFor="test"
 >
   <input
@@ -149,126 +341,318 @@ exports[`should render checked 1`] = `
     type="checkbox"
   />
   <span
-    className="f15elc4i"
+    className="ak al am an ao ap aq ar"
   >
     Test Toggle
   </span>
   <span
     active={true}
-    className="firytjf"
+    className="a ak as at au av aw ax ay az ba bb bc bd be n bf o bg bh bi bj bk bl bm bn bo bp y bq z br bs bt bu bv"
   />
 </label>
 `;
 
 exports[`should render checked 2`] = `
 "
-.f17lho90::before {
-  display: block;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  width: 50%;
-  line-height: 2.26667rem;
-  text-align: center;
-  content: 'On';
-  left: 0px;
-  background: #9bca3e;
-  color: #fff
+.a {
+  display: block
 }
 
-.f17lho90::after {
-  display: block;
-  position: absolute;
-  content: 'Off';
-  top: 0px;
-  bottom: 0px;
-  right: 0px;
-  text-align: center;
-  width: 50%;
-  line-height: 2.26667rem;
-  background: #7c7c7c;
-  color: #fff
+.b {
+  position: relative
 }
 
-.f17lho90 {
-  display: block;
-  position: relative;
-  margin: 0px;
-  height: 2.26667rem;
-  width: 5.334rem;
-  border-radius: 2px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #aaa;
-  cursor: pointer;
-  font-size: 0.86667rem;
-  margin-bottom: 0.38333em;
+.c {
+  margin: 0px
+}
+
+.d {
+  height: 2.26667rem
+}
+
+.e {
+  width: 5.334rem
+}
+
+.f {
+  border-radius: 2px
+}
+
+.g {
+  border-width: 1px
+}
+
+.h {
+  border-style: solid
+}
+
+.i {
+  border-color: #aaa
+}
+
+.j {
+  cursor: pointer
+}
+
+.k {
+  font-size: 0.86667rem
+}
+
+.l {
+  margin-bottom: 0.38333em
+}
+
+.m {
   min-height: 1.22em
 }
 
-.f15elc4i {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0px;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+.n::before {
+  display: block
+}
+
+.o::before {
+  position: absolute
+}
+
+.p::before {
+  top: 0px
+}
+
+.q::before {
+  bottom: 0px
+}
+
+.r::before {
+  width: 50%
+}
+
+.s::before {
+  line-height: 2.26667rem
+}
+
+.t::before {
+  text-align: center
+}
+
+.u::before {
+  content: 'On'
+}
+
+.v::before {
+  left: 0px
+}
+
+.w::before {
+  background: #9bca3e
+}
+
+.x::before {
+  color: #fff
+}
+
+.y::after {
+  display: block
+}
+
+.z::after {
+  position: absolute
+}
+
+.ab::after {
+  content: 'Off'
+}
+
+.ac::after {
+  top: 0px
+}
+
+.ad::after {
+  bottom: 0px
+}
+
+.ae::after {
+  right: 0px
+}
+
+.af::after {
+  text-align: center
+}
+
+.ag::after {
+  width: 50%
+}
+
+.ah::after {
+  line-height: 2.26667rem
+}
+
+.ai::after {
+  background: #7c7c7c
+}
+
+.aj::after {
+  color: #fff
+}
+
+.ak {
+  position: absolute
+}
+
+.al {
+  width: 1px
+}
+
+.am {
+  height: 1px
+}
+
+.an {
+  padding: 0px
+}
+
+.ao {
+  margin: -1px
+}
+
+.ap {
+  overflow: hidden
+}
+
+.aq {
+  clip: rect(0, 0, 0, 0)
+}
+
+.ar {
   border: 0px
 }
 
-.firytjf::before {
-  border: 4px solid transparent;
-  content: '';
-  display: block;
-  height: 0px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -3px;
-  width: 0px;
-  border-left-color: transparent;
-  border-right-color: inherit;
-  margin-left: -10px
+.as {
+  z-index: 1
 }
 
-.firytjf::after {
-  border: 4px solid transparent;
-  border-left-color: inherit;
-  content: '';
-  display: block;
-  height: 0px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: 2px;
-  margin-top: -3px;
-  width: 0px
+.at {
+  top: 0px
 }
 
-.firytjf {
-  display: block;
-  position: absolute;
-  z-index: 1;
-  top: 0px;
-  bottom: 0px;
-  left: 50%;
-  width: 50%;
-  border: inherit;
-  border-width: 0px;
-  border-right-width: 0px;
-  border-left-width: inherit;
-  background: #fff;
+.au {
+  bottom: 0px
+}
+
+.av {
+  left: 50%
+}
+
+.aw {
+  width: 50%
+}
+
+.ax {
+  border: inherit
+}
+
+.ay {
+  border-width: 0px
+}
+
+.az {
+  border-right-width: 0px
+}
+
+.ba {
+  border-left-width: inherit
+}
+
+.bb {
+  background: #fff
+}
+
+.bc {
   transition: left 100ms ease;
   -webkit-transition: left 100ms ease;
   -moz-transition: left 100ms ease
+}
+
+.bd::before {
+  border: 4px solid transparent
+}
+
+.be::before {
+  content: ''
+}
+
+.bf::before {
+  height: 0px
+}
+
+.bg::before {
+  top: 50%
+}
+
+.bh::before {
+  left: 50%
+}
+
+.bi::before {
+  margin-top: -3px
+}
+
+.bj::before {
+  width: 0px
+}
+
+.bk::before {
+  border-left-color: transparent
+}
+
+.bl::before {
+  border-right-color: inherit
+}
+
+.bm::before {
+  margin-left: -10px
+}
+
+.bn::after {
+  border: 4px solid transparent
+}
+
+.bo::after {
+  border-left-color: inherit
+}
+
+.bp::after {
+  content: ''
+}
+
+.bq::after {
+  height: 0px
+}
+
+.br::after {
+  top: 50%
+}
+
+.bs::after {
+  left: 50%
+}
+
+.bt::after {
+  margin-left: 2px
+}
+
+.bu::after {
+  margin-top: -3px
+}
+
+.bv::after {
+  width: 0px
 }
 "
 `;
 
 exports[`should render disabled 1`] = `
 <label
-  className="f1t9hd5d"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj"
   htmlFor="test"
 >
   <input
@@ -282,119 +666,311 @@ exports[`should render disabled 1`] = `
     type="checkbox"
   />
   <span
-    className="f15elc4i"
+    className="ak al am an ao ap aq ar"
   >
     Test Toggle
   </span>
   <span
     active={true}
-    className="firytjf"
+    className="a ak as at au av aw ax ay az ba bb bc bd be n bf o bg bh bi bj bk bl bm bn bo bp y bq z br bs bt bu bv"
   />
 </label>
 `;
 
 exports[`should render disabled 2`] = `
 "
-.f1t9hd5d::before {
-  display: block;
-  position: absolute;
-  top: 0px;
-  bottom: 0px;
-  width: 50%;
-  line-height: 2.26667rem;
-  text-align: center;
-  content: 'On';
-  left: 0px;
-  background: #7c7c7c;
-  color: #dedede
+.a {
+  display: block
 }
 
-.f1t9hd5d::after {
-  display: block;
-  position: absolute;
-  content: 'Off';
-  top: 0px;
-  bottom: 0px;
-  right: 0px;
-  text-align: center;
-  width: 50%;
-  line-height: 2.26667rem;
-  background: #7c7c7c;
-  color: #dedede
+.b {
+  position: relative
 }
 
-.f1t9hd5d {
-  display: block;
-  position: relative;
-  margin: 0px;
-  height: 2.26667rem;
-  width: 5.334rem;
-  border-radius: 2px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #7c7c7c;
-  cursor: not-allowed;
-  font-size: 0.86667rem;
-  margin-bottom: 0.38333em;
+.c {
+  margin: 0px
+}
+
+.d {
+  height: 2.26667rem
+}
+
+.e {
+  width: 5.334rem
+}
+
+.f {
+  border-radius: 2px
+}
+
+.g {
+  border-width: 1px
+}
+
+.h {
+  border-style: solid
+}
+
+.i {
+  border-color: #7c7c7c
+}
+
+.j {
+  cursor: not-allowed
+}
+
+.k {
+  font-size: 0.86667rem
+}
+
+.l {
+  margin-bottom: 0.38333em
+}
+
+.m {
   min-height: 1.22em
 }
 
-.f15elc4i {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0px;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
+.n::before {
+  display: block
+}
+
+.o::before {
+  position: absolute
+}
+
+.p::before {
+  top: 0px
+}
+
+.q::before {
+  bottom: 0px
+}
+
+.r::before {
+  width: 50%
+}
+
+.s::before {
+  line-height: 2.26667rem
+}
+
+.t::before {
+  text-align: center
+}
+
+.u::before {
+  content: 'On'
+}
+
+.v::before {
+  left: 0px
+}
+
+.w::before {
+  background: #7c7c7c
+}
+
+.x::before {
+  color: #dedede
+}
+
+.y::after {
+  display: block
+}
+
+.z::after {
+  position: absolute
+}
+
+.ab::after {
+  content: 'Off'
+}
+
+.ac::after {
+  top: 0px
+}
+
+.ad::after {
+  bottom: 0px
+}
+
+.ae::after {
+  right: 0px
+}
+
+.af::after {
+  text-align: center
+}
+
+.ag::after {
+  width: 50%
+}
+
+.ah::after {
+  line-height: 2.26667rem
+}
+
+.ai::after {
+  background: #7c7c7c
+}
+
+.aj::after {
+  color: #dedede
+}
+
+.ak {
+  position: absolute
+}
+
+.al {
+  width: 1px
+}
+
+.am {
+  height: 1px
+}
+
+.an {
+  padding: 0px
+}
+
+.ao {
+  margin: -1px
+}
+
+.ap {
+  overflow: hidden
+}
+
+.aq {
+  clip: rect(0, 0, 0, 0)
+}
+
+.ar {
   border: 0px
 }
 
-.firytjf::before {
-  border: 4px solid transparent;
-  content: '';
-  display: block;
-  height: 0px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -3px;
-  width: 0px;
-  border-left-color: transparent;
-  border-right-color: inherit;
-  margin-left: -10px
+.as {
+  z-index: 1
 }
 
-.firytjf::after {
-  border: 4px solid transparent;
-  border-left-color: inherit;
-  content: '';
-  display: block;
-  height: 0px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: 2px;
-  margin-top: -3px;
-  width: 0px
+.at {
+  top: 0px
 }
 
-.firytjf {
-  display: block;
-  position: absolute;
-  z-index: 1;
-  top: 0px;
-  bottom: 0px;
-  left: 50%;
-  width: 50%;
-  border: inherit;
-  border-width: 0px;
-  border-right-width: 0px;
-  border-left-width: inherit;
-  background: #fff;
+.au {
+  bottom: 0px
+}
+
+.av {
+  left: 50%
+}
+
+.aw {
+  width: 50%
+}
+
+.ax {
+  border: inherit
+}
+
+.ay {
+  border-width: 0px
+}
+
+.az {
+  border-right-width: 0px
+}
+
+.ba {
+  border-left-width: inherit
+}
+
+.bb {
+  background: #fff
+}
+
+.bc {
   transition: left 100ms ease;
   -webkit-transition: left 100ms ease;
   -moz-transition: left 100ms ease
+}
+
+.bd::before {
+  border: 4px solid transparent
+}
+
+.be::before {
+  content: ''
+}
+
+.bf::before {
+  height: 0px
+}
+
+.bg::before {
+  top: 50%
+}
+
+.bh::before {
+  left: 50%
+}
+
+.bi::before {
+  margin-top: -3px
+}
+
+.bj::before {
+  width: 0px
+}
+
+.bk::before {
+  border-left-color: transparent
+}
+
+.bl::before {
+  border-right-color: inherit
+}
+
+.bm::before {
+  margin-left: -10px
+}
+
+.bn::after {
+  border: 4px solid transparent
+}
+
+.bo::after {
+  border-left-color: inherit
+}
+
+.bp::after {
+  content: ''
+}
+
+.bq::after {
+  height: 0px
+}
+
+.br::after {
+  top: 50%
+}
+
+.bs::after {
+  left: 50%
+}
+
+.bt::after {
+  margin-left: 2px
+}
+
+.bu::after {
+  margin-top: -3px
+}
+
+.bv::after {
+  width: 0px
 }
 "
 `;

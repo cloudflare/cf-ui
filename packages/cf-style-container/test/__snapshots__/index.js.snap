@@ -14,21 +14,21 @@ exports[`createComponent creates empty component 2`] = `
 
 exports[`createComponentStyles creates a component 1`] = `
 <div
-  className="fdxtwdx"
+  className="a"
 >
   <i
-    className="f18oup6l"
+    className="b"
   />
 </div>
 `;
 
 exports[`createComponentStyles creates a component 2`] = `
 "
-.fdxtwdx {
+.a {
   padding: 5px
 }
 
-.f18oup6l {
+.b {
   margin: 2px
 }
 "

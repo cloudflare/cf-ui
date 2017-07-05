@@ -2,64 +2,145 @@
 
 exports[`should render invalid state 1`] = `
 <div
-  className="flzhvgp"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag"
 />
 `;
 
 exports[`should render invalid state 2`] = `
 "
-.flzhvgp::before {
-  content: \\"\\";
-  display: block;
-  position: absolute;
-  bottom: 100%;
-  border-style: solid;
-  border-color: transparent;
-  left: 4px;
-  border-width: 6px;
+.a {
+  position: relative
+}
+
+.b {
+  margin-top: -0.75em
+}
+
+.c {
+  padding: 0.5em 1em
+}
+
+.d {
+  border: 1px solid  #9f1f21
+}
+
+.e {
+  font-size: 0.8em
+}
+
+.f {
+  font-weight: 600
+}
+
+.g {
+  background: #bd2527
+}
+
+.h {
+  color: #fff
+}
+
+.i {
+  border-radius: 2px
+}
+
+.j {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
+}
+
+.k {
+  -webkit-font-smoothing: antialiased
+}
+
+.l::before {
+  content: \\"\\"
+}
+
+.m::before {
+  display: block
+}
+
+.n::before {
+  position: absolute
+}
+
+.o::before {
+  bottom: 100%
+}
+
+.p::before {
+  border-style: solid
+}
+
+.q::before {
+  border-color: transparent
+}
+
+.r::before {
+  left: 4px
+}
+
+.s::before {
+  border-width: 6px
+}
+
+.t::before {
   border-bottom-color: #bd2527
 }
 
-.flzhvgp::after {
-  content: \\"\\";
-  display: block;
-  position: absolute;
-  bottom: 100%;
-  border-style: solid;
-  border-color: transparent;
-  left: 4px;
-  border-width: 4px;
+.u::after {
+  content: \\"\\"
+}
+
+.v::after {
+  display: block
+}
+
+.w::after {
+  position: absolute
+}
+
+.x::after {
+  bottom: 100%
+}
+
+.y::after {
+  border-style: solid
+}
+
+.z::after {
+  border-color: transparent
+}
+
+.ab::after {
+  left: 4px
+}
+
+.ac::after {
+  border-width: 4px
+}
+
+.ad::after {
   border-bottom-color: #bd2527
 }
 
-.flzhvgp p {
-  margin-top: 0px;
+.ae p {
+  margin-top: 0px
+}
+
+.af p {
   margin-bottom: 0px
 }
 
-.flzhvgp p + p {
+.ag p + p {
   margin-top: 0.5em
-}
-
-.flzhvgp {
-  position: relative;
-  margin-top: -0.75em;
-  padding: 0.5em 1em;
-  border: 1px solid  #9f1f21;
-  font-size: 0.8em;
-  font-weight: 600;
-  background: #bd2527;
-  color: #fff;
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  -webkit-font-smoothing: antialiased
 }
 "
 `;
 
 exports[`should render invalid state with validation errors 1`] = `
 <div
-  className="flzhvgp"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag"
 >
   <p>
     This is required
@@ -69,51 +150,132 @@ exports[`should render invalid state with validation errors 1`] = `
 
 exports[`should render invalid state with validation errors 2`] = `
 "
-.flzhvgp::before {
-  content: \\"\\";
-  display: block;
-  position: absolute;
-  bottom: 100%;
-  border-style: solid;
-  border-color: transparent;
-  left: 4px;
-  border-width: 6px;
+.a {
+  position: relative
+}
+
+.b {
+  margin-top: -0.75em
+}
+
+.c {
+  padding: 0.5em 1em
+}
+
+.d {
+  border: 1px solid  #9f1f21
+}
+
+.e {
+  font-size: 0.8em
+}
+
+.f {
+  font-weight: 600
+}
+
+.g {
+  background: #bd2527
+}
+
+.h {
+  color: #fff
+}
+
+.i {
+  border-radius: 2px
+}
+
+.j {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
+}
+
+.k {
+  -webkit-font-smoothing: antialiased
+}
+
+.l::before {
+  content: \\"\\"
+}
+
+.m::before {
+  display: block
+}
+
+.n::before {
+  position: absolute
+}
+
+.o::before {
+  bottom: 100%
+}
+
+.p::before {
+  border-style: solid
+}
+
+.q::before {
+  border-color: transparent
+}
+
+.r::before {
+  left: 4px
+}
+
+.s::before {
+  border-width: 6px
+}
+
+.t::before {
   border-bottom-color: #bd2527
 }
 
-.flzhvgp::after {
-  content: \\"\\";
-  display: block;
-  position: absolute;
-  bottom: 100%;
-  border-style: solid;
-  border-color: transparent;
-  left: 4px;
-  border-width: 4px;
+.u::after {
+  content: \\"\\"
+}
+
+.v::after {
+  display: block
+}
+
+.w::after {
+  position: absolute
+}
+
+.x::after {
+  bottom: 100%
+}
+
+.y::after {
+  border-style: solid
+}
+
+.z::after {
+  border-color: transparent
+}
+
+.ab::after {
+  left: 4px
+}
+
+.ac::after {
+  border-width: 4px
+}
+
+.ad::after {
   border-bottom-color: #bd2527
 }
 
-.flzhvgp p {
-  margin-top: 0px;
+.ae p {
+  margin-top: 0px
+}
+
+.af p {
   margin-bottom: 0px
 }
 
-.flzhvgp p + p {
+.ag p + p {
   margin-top: 0.5em
-}
-
-.flzhvgp {
-  position: relative;
-  margin-top: -0.75em;
-  padding: 0.5em 1em;
-  border: 1px solid  #9f1f21;
-  font-size: 0.8em;
-  font-weight: 600;
-  background: #bd2527;
-  color: #fff;
-  border-radius: 2px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
-  -webkit-font-smoothing: antialiased
 }
 "
 `;

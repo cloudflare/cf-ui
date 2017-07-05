@@ -2,20 +2,20 @@
 
 exports[`should render pagination 1`] = `
 <div
-  className="f1bek1ug"
+  className="a b c"
 >
   <ul
     aria-describedby={null}
-    className="fy1rhga"
+    className="a b c d e f g h i j k l m n o"
     role="navigation"
   >
     <li
-      className="fmgj6am"
+      className="m p q r s n"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f109b087"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -26,12 +26,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="f1wi2cf1"
+      className="m p ad ae   s af ag"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f109b087"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -39,12 +39,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ah ai   aj"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab aj ac"
         href="#"
         onClick={[Function]}
       >
@@ -52,12 +52,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ah ai   aj"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab aj ac"
         href="#"
         onClick={[Function]}
       >
@@ -65,12 +65,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ah ai   aj"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab aj ac"
         href="#"
         onClick={[Function]}
       >
@@ -78,12 +78,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ah ai   aj"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab aj ac"
         href="#"
         onClick={[Function]}
       >
@@ -91,12 +91,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="fhmei63"
+      className="m p ad ae   aj n"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab aj ac"
         href="#"
         onClick={[Function]}
       >
@@ -112,127 +112,167 @@ exports[`should render pagination 1`] = `
 
 exports[`should render pagination 2`] = `
 "
-.fy1rhga:after {
-  content: \\"\\";
-  display: table;
+.a:after {
+  content: \\"\\"
+}
+
+.b:after {
+  display: table
+}
+
+.c:after {
   clear: both
 }
 
-.fy1rhga {
-  list-style: none;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  float: left;
-  border-radius: 3px;
+.d {
+  list-style: none
+}
+
+.e {
+  margin-top: 0px
+}
+
+.f {
+  margin-left: 0px
+}
+
+.g {
+  margin-right: 0px
+}
+
+.h {
+  margin-bottom: 0px
+}
+
+.i {
+  padding-top: 0px
+}
+
+.j {
+  padding-left: 0px
+}
+
+.k {
+  padding-right: 0px
+}
+
+.l {
+  padding-bottom: 0px
+}
+
+.m {
+  float: left
+}
+
+.n {
+  border-radius: 3px
+}
+
+.o {
   box-shadow: none
 }
 
-.f1bek1ug:after {
-  content: \\"\\";
-  display: table;
-  clear: both
+.p {
+  position: relative
 }
 
-.fmgj6am {
-  float: left;
-  position: relative;
-  background-color: #ededed;
-  color: #666;
-  cursor: default;
-  border-radius: 3px
+.q {
+  background-color: #ededed
 }
 
-.f109b087:focus {
-  z-index: 1
+.r {
+  color: #666
 }
 
-.f109b087 {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  position: relative;
-  display: block;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-decoration: none;
-  color: inherit;
+.s {
   cursor: default
 }
 
-.f1wi2cf1 {
-  float: left;
-  position: relative;
-  background-color: #408BC9;
-  color: #fff;
-  cursor: default;
-  border-color: #62a1d8;
-  z-index: 1
-}
-
-.f15spu1u {
-  float: left;
-  position: relative;
-  background-color: #fff;
-  color: #408BC9;
-  cursor: pointer
-}
-
-.f32iz07:focus {
-  z-index: 1
-}
-
-.f32iz07 {
+.t {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  position: relative;
-  display: block;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer
+  -ms-user-select: none
 }
 
-.fhmei63 {
-  float: left;
-  position: relative;
-  background-color: #408BC9;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 3px
+.u {
+  display: block
+}
+
+.v {
+  padding-top: .5em
+}
+
+.w {
+  padding-bottom: .5em
+}
+
+.x {
+  padding-left: 1em
+}
+
+.y {
+  padding-right: 1em
+}
+
+.z {
+  text-decoration: none
+}
+
+.ab {
+  color: inherit
+}
+
+.ac:focus {
+  z-index: 1
+}
+
+.ad {
+  background-color: #408BC9
+}
+
+.ae {
+  color: #fff
+}
+
+.af {
+  border-color: #62a1d8
+}
+
+.ag {
+  z-index: 1
+}
+
+.ah {
+  background-color: #fff
+}
+
+.ai {
+  color: #408BC9
+}
+
+.aj {
+  cursor: pointer
 }
 "
 `;
 
 exports[`should render pagination loading 1`] = `
 <div
-  className="f1bek1ug"
+  className="a b c"
 >
   <ul
     aria-describedby={null}
-    className="fy1rhga"
+    className="a b c d e f g h i j k l m n o"
     role="navigation"
   >
     <li
-      className="fmgj6am"
+      className="m p q r s n"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f109b087"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -243,12 +283,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="f1wi2cf1"
+      className="m p ad ae   s af ag"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f109b087"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -259,12 +299,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ah ai   aj"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab aj ac"
         href="#"
         onClick={[Function]}
       >
@@ -272,12 +312,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ah ai   aj"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab aj ac"
         href="#"
         onClick={[Function]}
       >
@@ -285,12 +325,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ah ai   aj"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab aj ac"
         href="#"
         onClick={[Function]}
       >
@@ -298,12 +338,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ah ai   aj"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab aj ac"
         href="#"
         onClick={[Function]}
       >
@@ -311,12 +351,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="fhmei63"
+      className="m p ad ae   aj n"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab aj ac"
         href="#"
         onClick={[Function]}
       >
@@ -332,127 +372,167 @@ exports[`should render pagination loading 1`] = `
 
 exports[`should render pagination loading 2`] = `
 "
-.fy1rhga:after {
-  content: \\"\\";
-  display: table;
+.a:after {
+  content: \\"\\"
+}
+
+.b:after {
+  display: table
+}
+
+.c:after {
   clear: both
 }
 
-.fy1rhga {
-  list-style: none;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  float: left;
-  border-radius: 3px;
+.d {
+  list-style: none
+}
+
+.e {
+  margin-top: 0px
+}
+
+.f {
+  margin-left: 0px
+}
+
+.g {
+  margin-right: 0px
+}
+
+.h {
+  margin-bottom: 0px
+}
+
+.i {
+  padding-top: 0px
+}
+
+.j {
+  padding-left: 0px
+}
+
+.k {
+  padding-right: 0px
+}
+
+.l {
+  padding-bottom: 0px
+}
+
+.m {
+  float: left
+}
+
+.n {
+  border-radius: 3px
+}
+
+.o {
   box-shadow: none
 }
 
-.f1bek1ug:after {
-  content: \\"\\";
-  display: table;
-  clear: both
+.p {
+  position: relative
 }
 
-.fmgj6am {
-  float: left;
-  position: relative;
-  background-color: #ededed;
-  color: #666;
-  cursor: default;
-  border-radius: 3px
+.q {
+  background-color: #ededed
 }
 
-.f109b087:focus {
-  z-index: 1
+.r {
+  color: #666
 }
 
-.f109b087 {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  position: relative;
-  display: block;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-decoration: none;
-  color: inherit;
+.s {
   cursor: default
 }
 
-.f1wi2cf1 {
-  float: left;
-  position: relative;
-  background-color: #408BC9;
-  color: #fff;
-  cursor: default;
-  border-color: #62a1d8;
-  z-index: 1
-}
-
-.f15spu1u {
-  float: left;
-  position: relative;
-  background-color: #fff;
-  color: #408BC9;
-  cursor: pointer
-}
-
-.f32iz07:focus {
-  z-index: 1
-}
-
-.f32iz07 {
+.t {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  position: relative;
-  display: block;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer
+  -ms-user-select: none
 }
 
-.fhmei63 {
-  float: left;
-  position: relative;
-  background-color: #408BC9;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 3px
+.u {
+  display: block
+}
+
+.v {
+  padding-top: .5em
+}
+
+.w {
+  padding-bottom: .5em
+}
+
+.x {
+  padding-left: 1em
+}
+
+.y {
+  padding-right: 1em
+}
+
+.z {
+  text-decoration: none
+}
+
+.ab {
+  color: inherit
+}
+
+.ac:focus {
+  z-index: 1
+}
+
+.ad {
+  background-color: #408BC9
+}
+
+.ae {
+  color: #fff
+}
+
+.af {
+  border-color: #62a1d8
+}
+
+.ag {
+  z-index: 1
+}
+
+.ah {
+  background-color: #fff
+}
+
+.ai {
+  color: #408BC9
+}
+
+.aj {
+  cursor: pointer
 }
 "
 `;
 
 exports[`should render pagination with an infoFormatter 1`] = `
 <div
-  className="f1bek1ug"
+  className="a b c"
 >
   <ul
     aria-describedby={null}
-    className="fy1rhga"
+    className="a b c d e f g h i j k l m n o"
     role="navigation"
   >
     <li
-      className="fhmei63"
+      className="m p q r s n"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -463,12 +543,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ad ae   s"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -476,12 +556,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="f1wi2cf1"
+      className="m p q r   af ag ah"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f109b087"
+        className="t p u v w x y z ab af ac"
         href="#"
         onClick={[Function]}
       >
@@ -489,12 +569,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ad ae   s"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -502,12 +582,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ad ae   s"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -515,12 +595,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ad ae   s"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -528,12 +608,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="fhmei63"
+      className="m p q r   s n"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -549,118 +629,159 @@ exports[`should render pagination with an infoFormatter 1`] = `
 
 exports[`should render pagination with an infoFormatter 2`] = `
 "
-.fy1rhga:after {
-  content: \\"\\";
-  display: table;
+.a:after {
+  content: \\"\\"
+}
+
+.b:after {
+  display: table
+}
+
+.c:after {
   clear: both
 }
 
-.fy1rhga {
-  list-style: none;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  float: left;
-  border-radius: 3px;
-  box-shadow: none
+.d {
+  list-style: none
 }
 
-.f1bek1ug:after {
-  content: \\"\\";
-  display: table;
-  clear: both
+.e {
+  margin-top: 0px
 }
 
-.fhmei63 {
-  float: left;
-  position: relative;
-  background-color: #408BC9;
-  color: #fff;
-  cursor: pointer;
+.f {
+  margin-left: 0px
+}
+
+.g {
+  margin-right: 0px
+}
+
+.h {
+  margin-bottom: 0px
+}
+
+.i {
+  padding-top: 0px
+}
+
+.j {
+  padding-left: 0px
+}
+
+.k {
+  padding-right: 0px
+}
+
+.l {
+  padding-bottom: 0px
+}
+
+.m {
+  float: left
+}
+
+.n {
   border-radius: 3px
 }
 
-.f32iz07:focus {
-  z-index: 1
+.o {
+  box-shadow: none
 }
 
-.f32iz07 {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  position: relative;
-  display: block;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-decoration: none;
-  color: inherit;
+.p {
+  position: relative
+}
+
+.q {
+  background-color: #408BC9
+}
+
+.r {
+  color: #fff
+}
+
+.s {
   cursor: pointer
 }
 
-.f15spu1u {
-  float: left;
-  position: relative;
-  background-color: #fff;
-  color: #408BC9;
-  cursor: pointer
-}
-
-.f1wi2cf1 {
-  float: left;
-  position: relative;
-  background-color: #408BC9;
-  color: #fff;
-  cursor: default;
-  border-color: #62a1d8;
-  z-index: 1
-}
-
-.f109b087:focus {
-  z-index: 1
-}
-
-.f109b087 {
+.t {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  position: relative;
-  display: block;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-decoration: none;
-  color: inherit;
+  -ms-user-select: none
+}
+
+.u {
+  display: block
+}
+
+.v {
+  padding-top: .5em
+}
+
+.w {
+  padding-bottom: .5em
+}
+
+.x {
+  padding-left: 1em
+}
+
+.y {
+  padding-right: 1em
+}
+
+.z {
+  text-decoration: none
+}
+
+.ab {
+  color: inherit
+}
+
+.ac:focus {
+  z-index: 1
+}
+
+.ad {
+  background-color: #fff
+}
+
+.ae {
+  color: #408BC9
+}
+
+.af {
   cursor: default
+}
+
+.ag {
+  border-color: #62a1d8
+}
+
+.ah {
+  z-index: 1
 }
 "
 `;
 
 exports[`should render pagination with the last page active 1`] = `
 <div
-  className="f1bek1ug"
+  className="a b c"
 >
   <ul
     aria-describedby={null}
-    className="fy1rhga"
+    className="a b c d e f g h i j k l m n o"
     role="navigation"
   >
     <li
-      className="fhmei63"
+      className="m p q r s n"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -671,12 +792,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ad ae   s"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -684,12 +805,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ad ae   s"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -697,12 +818,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ad ae   s"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -710,12 +831,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ad ae   s"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -723,12 +844,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="f1wi2cf1"
+      className="m p q r   af ag ah"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f109b087"
+        className="t p u v w x y z ab af ac"
         href="#"
         onClick={[Function]}
       >
@@ -736,12 +857,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="fmgj6am"
+      className="m p ai aj   af n"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f109b087"
+        className="t p u v w x y z ab af ac"
         href="#"
         onClick={[Function]}
       >
@@ -757,127 +878,167 @@ exports[`should render pagination with the last page active 1`] = `
 
 exports[`should render pagination with the last page active 2`] = `
 "
-.fy1rhga:after {
-  content: \\"\\";
-  display: table;
+.a:after {
+  content: \\"\\"
+}
+
+.b:after {
+  display: table
+}
+
+.c:after {
   clear: both
 }
 
-.fy1rhga {
-  list-style: none;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  float: left;
-  border-radius: 3px;
+.d {
+  list-style: none
+}
+
+.e {
+  margin-top: 0px
+}
+
+.f {
+  margin-left: 0px
+}
+
+.g {
+  margin-right: 0px
+}
+
+.h {
+  margin-bottom: 0px
+}
+
+.i {
+  padding-top: 0px
+}
+
+.j {
+  padding-left: 0px
+}
+
+.k {
+  padding-right: 0px
+}
+
+.l {
+  padding-bottom: 0px
+}
+
+.m {
+  float: left
+}
+
+.n {
+  border-radius: 3px
+}
+
+.o {
   box-shadow: none
 }
 
-.f1bek1ug:after {
-  content: \\"\\";
-  display: table;
-  clear: both
+.p {
+  position: relative
 }
 
-.fhmei63 {
-  float: left;
-  position: relative;
-  background-color: #408BC9;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 3px
+.q {
+  background-color: #408BC9
 }
 
-.f32iz07:focus {
-  z-index: 1
+.r {
+  color: #fff
 }
 
-.f32iz07 {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  position: relative;
-  display: block;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-decoration: none;
-  color: inherit;
+.s {
   cursor: pointer
 }
 
-.f15spu1u {
-  float: left;
-  position: relative;
-  background-color: #fff;
-  color: #408BC9;
-  cursor: pointer
-}
-
-.f1wi2cf1 {
-  float: left;
-  position: relative;
-  background-color: #408BC9;
-  color: #fff;
-  cursor: default;
-  border-color: #62a1d8;
-  z-index: 1
-}
-
-.f109b087:focus {
-  z-index: 1
-}
-
-.f109b087 {
+.t {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  position: relative;
-  display: block;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-decoration: none;
-  color: inherit;
+  -ms-user-select: none
+}
+
+.u {
+  display: block
+}
+
+.v {
+  padding-top: .5em
+}
+
+.w {
+  padding-bottom: .5em
+}
+
+.x {
+  padding-left: 1em
+}
+
+.y {
+  padding-right: 1em
+}
+
+.z {
+  text-decoration: none
+}
+
+.ab {
+  color: inherit
+}
+
+.ac:focus {
+  z-index: 1
+}
+
+.ad {
+  background-color: #fff
+}
+
+.ae {
+  color: #408BC9
+}
+
+.af {
   cursor: default
 }
 
-.fmgj6am {
-  float: left;
-  position: relative;
-  background-color: #ededed;
-  color: #666;
-  cursor: default;
-  border-radius: 3px
+.ag {
+  border-color: #62a1d8
+}
+
+.ah {
+  z-index: 1
+}
+
+.ai {
+  background-color: #ededed
+}
+
+.aj {
+  color: #666
 }
 "
 `;
 
 exports[`should render with collapsed items 1`] = `
 <div
-  className="f1bek1ug"
+  className="a b c"
 >
   <ul
     aria-describedby={null}
-    className="fy1rhga"
+    className="a b c d e f g h i j k l m n o"
     role="navigation"
   >
     <li
-      className="fhmei63"
+      className="m p q r s n"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -888,12 +1049,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ad ae   s"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -901,12 +1062,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ad ae   s"
       role="presentation"
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -916,12 +1077,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ad ae   s"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -929,12 +1090,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ad ae   s"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -942,12 +1103,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="f1wi2cf1"
+      className="m p q r   af ag ah"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f109b087"
+        className="t p u v w x y z ab af ac"
         href="#"
         onClick={[Function]}
       >
@@ -955,12 +1116,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ad ae   s"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -968,12 +1129,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ad ae   s"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -981,12 +1142,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ad ae   s"
       role="presentation"
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -996,12 +1157,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="f15spu1u"
+      className="m p ad ae   s"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -1009,12 +1170,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="fhmei63"
+      className="m p q r   s n"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="f32iz07"
+        className="t p u v w x y z ab s ac"
         href="#"
         onClick={[Function]}
       >
@@ -1030,98 +1191,139 @@ exports[`should render with collapsed items 1`] = `
 
 exports[`should render with collapsed items 2`] = `
 "
-.fy1rhga:after {
-  content: \\"\\";
-  display: table;
+.a:after {
+  content: \\"\\"
+}
+
+.b:after {
+  display: table
+}
+
+.c:after {
   clear: both
 }
 
-.fy1rhga {
-  list-style: none;
-  margin-top: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  float: left;
-  border-radius: 3px;
-  box-shadow: none
+.d {
+  list-style: none
 }
 
-.f1bek1ug:after {
-  content: \\"\\";
-  display: table;
-  clear: both
+.e {
+  margin-top: 0px
 }
 
-.fhmei63 {
-  float: left;
-  position: relative;
-  background-color: #408BC9;
-  color: #fff;
-  cursor: pointer;
+.f {
+  margin-left: 0px
+}
+
+.g {
+  margin-right: 0px
+}
+
+.h {
+  margin-bottom: 0px
+}
+
+.i {
+  padding-top: 0px
+}
+
+.j {
+  padding-left: 0px
+}
+
+.k {
+  padding-right: 0px
+}
+
+.l {
+  padding-bottom: 0px
+}
+
+.m {
+  float: left
+}
+
+.n {
   border-radius: 3px
 }
 
-.f32iz07:focus {
-  z-index: 1
+.o {
+  box-shadow: none
 }
 
-.f32iz07 {
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  position: relative;
-  display: block;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-decoration: none;
-  color: inherit;
+.p {
+  position: relative
+}
+
+.q {
+  background-color: #408BC9
+}
+
+.r {
+  color: #fff
+}
+
+.s {
   cursor: pointer
 }
 
-.f15spu1u {
-  float: left;
-  position: relative;
-  background-color: #fff;
-  color: #408BC9;
-  cursor: pointer
-}
-
-.f1wi2cf1 {
-  float: left;
-  position: relative;
-  background-color: #408BC9;
-  color: #fff;
-  cursor: default;
-  border-color: #62a1d8;
-  z-index: 1
-}
-
-.f109b087:focus {
-  z-index: 1
-}
-
-.f109b087 {
+.t {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  position: relative;
-  display: block;
-  padding-top: .5em;
-  padding-bottom: .5em;
-  padding-left: 1em;
-  padding-right: 1em;
-  text-decoration: none;
-  color: inherit;
+  -ms-user-select: none
+}
+
+.u {
+  display: block
+}
+
+.v {
+  padding-top: .5em
+}
+
+.w {
+  padding-bottom: .5em
+}
+
+.x {
+  padding-left: 1em
+}
+
+.y {
+  padding-right: 1em
+}
+
+.z {
+  text-decoration: none
+}
+
+.ab {
+  color: inherit
+}
+
+.ac:focus {
+  z-index: 1
+}
+
+.ad {
+  background-color: #fff
+}
+
+.ae {
+  color: #408BC9
+}
+
+.af {
   cursor: default
+}
+
+.ag {
+  border-color: #62a1d8
+}
+
+.ah {
+  z-index: 1
 }
 "
 `;
