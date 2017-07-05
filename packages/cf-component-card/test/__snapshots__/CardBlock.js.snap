@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <div
-  className="f1n2x65j"
+  className="a b c"
 >
   CardBlock
 </div>
@@ -10,13 +10,16 @@ exports[`should render 1`] = `
 
 exports[`should render 2`] = `
 "
-.f1n2x65j:first-child {
-  border-top: 0px
+.a {
+  padding: 1rem 1.4rem 1.26667rem
 }
 
-.f1n2x65j {
-  padding: 1rem 1.4rem 1.26667rem;
+.b {
   border-top: 1px solid #dedede
+}
+
+.c:first-child {
+  border-top: 0px
 }
 "
 `;

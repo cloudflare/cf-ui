@@ -41,10 +41,8 @@ class CardComponent extends React.Component {
     return (
       <Card>
         <CardSection>
-          <CardContent
-            title="Hello World"
-            footerMessage="This is a footer message."
-          >
+          <CardContent>
+            <CardTitle>Card Title</CardTitle>
             <p>Here is some content.</p>
             <CardMessages
               messages={[
@@ -52,6 +50,7 @@ class CardComponent extends React.Component {
                 { type: 'error', content: 'Error Message' }
               ]}
             />
+            <CardFooter>Card Footer</CardFooter>
           </CardContent>
           <CardControl>
             <Button type="default" onClick={() => {}}>Example Control</Button>

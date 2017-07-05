@@ -2,22 +2,17 @@
 
 exports[`should render a card 1`] = `
 <section
-  className="cf-card"
+  className="a b c d e f g"
   id={undefined}
 >
   <div
-    className="cf-card__section cf-card__section--default"
+    className="h i j k l m"
   >
     <div
-      className="cf-card__content"
+      className="n o"
     >
-      <h3
-        className="cf-card__title"
-      >
-        This is a Card
-      </h3>
       <div
-        className="a"
+        className="p"
         dangerouslySetInnerHTML={
           Object {
             "__html": "<p>This is the description of a card.</p>
@@ -33,29 +28,88 @@ exports[`should render a card 1`] = `
 exports[`should render a card 2`] = `
 "
 .a {
+  margin-top: 1em
+}
+
+.b {
+  margin-bottom: 1em
+}
+
+.c {
+  padding: 0px
+}
+
+.d {
+  border: 1px solid #dedede
+}
+
+.e {
+  background-color: #fff
+}
+
+.f {
+  border-radius: 2px
+}
+
+.g {
+  transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease
+}
+
+.h {
+  display: table
+}
+
+.i {
+  table-layout: fixed
+}
+
+.j {
+  width: 100%
+}
+
+.k {
+  border-top: 1px solid #dedede
+}
+
+.l {
+  border-left: initial
+}
+
+.m:first-child {
+  border-top: initial
+}
+
+.n {
+  padding: 1.5rem
+}
+
+.p {
   display: initial
+}
+
+@media (min-width: 47.2em) {
+  .o {
+    display: table-cell
+  }
 }
 "
 `;
 
 exports[`should render a table 1`] = `
 <section
-  className="cf-card"
+  className="a b c d e f g"
   id={undefined}
 >
   <div
-    className="cf-card__section cf-card__section--default"
+    className="h i j k l m"
   >
     <div
-      className="cf-card__content"
+      className="n o"
     >
-      <h3
-        className="cf-card__title"
-      >
-        This is a Card
-      </h3>
       <div
-        className="a"
+        className="p"
         dangerouslySetInnerHTML={
           Object {
             "__html": "<p>This is the <em>description</em> of a card.</p>
@@ -66,7 +120,7 @@ exports[`should render a table 1`] = `
     </div>
   </div>
   <div
-    className="cf-card__section cf-card__section--default"
+    className="h i j k l m"
   >
     <table />
   </div>
@@ -76,29 +130,88 @@ exports[`should render a table 1`] = `
 exports[`should render a table 2`] = `
 "
 .a {
+  margin-top: 1em
+}
+
+.b {
+  margin-bottom: 1em
+}
+
+.c {
+  padding: 0px
+}
+
+.d {
+  border: 1px solid #dedede
+}
+
+.e {
+  background-color: #fff
+}
+
+.f {
+  border-radius: 2px
+}
+
+.g {
+  transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease
+}
+
+.h {
+  display: table
+}
+
+.i {
+  table-layout: fixed
+}
+
+.j {
+  width: 100%
+}
+
+.k {
+  border-top: 1px solid #dedede
+}
+
+.l {
+  border-left: initial
+}
+
+.m:first-child {
+  border-top: initial
+}
+
+.n {
+  padding: 1.5rem
+}
+
+.p {
   display: initial
+}
+
+@media (min-width: 47.2em) {
+  .o {
+    display: table-cell
+  }
 }
 "
 `;
 
 exports[`should render button 1`] = `
 <section
-  className="cf-card"
+  className="a b c d e f g"
   id={undefined}
 >
   <div
-    className="cf-card__section cf-card__section--default"
+    className="h i j k l m"
   >
     <div
-      className="cf-card__content"
+      className="n o"
     >
-      <h3
-        className="cf-card__title"
-      >
-        This is a Card
-      </h3>
       <div
-        className="a"
+        className="p"
         dangerouslySetInnerHTML={
           Object {
             "__html": "<p>This is the <em>description</em> of a card.</p>
@@ -108,7 +221,7 @@ exports[`should render button 1`] = `
       />
     </div>
     <div
-      className="cf-card__control"
+      className="q r s t u v w x y z o ab"
     >
       <button>
         Click Me
@@ -121,29 +234,134 @@ exports[`should render button 1`] = `
 exports[`should render button 2`] = `
 "
 .a {
+  margin-top: 1em
+}
+
+.b {
+  margin-bottom: 1em
+}
+
+.c {
+  padding: 0px
+}
+
+.d {
+  border: 1px solid #dedede
+}
+
+.e {
+  background-color: #fff
+}
+
+.f {
+  border-radius: 2px
+}
+
+.g {
+  transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease
+}
+
+.h {
+  display: table
+}
+
+.i {
+  table-layout: fixed
+}
+
+.j {
+  width: 100%
+}
+
+.k {
+  border-top: 1px solid #dedede
+}
+
+.l {
+  border-left: initial
+}
+
+.m:first-child {
+  border-top: initial
+}
+
+.n {
+  padding: 1.5rem
+}
+
+.p {
   display: initial
+}
+
+.q {
+  position: relative
+}
+
+.r {
+  padding: 2rem
+}
+
+.s {
+  border: 0 solid #dedede
+}
+
+.t {
+  border-top-width: 1px
+}
+
+.u {
+  background-color: rgba(0, 0, 0, 0.06)
+}
+
+.v {
+  text-align: center
+}
+
+@media (min-width: 47.2em) {
+  .o {
+    display: table-cell
+  }
+  
+  .w {
+    width: 40%
+  }
+  
+  .x {
+    border-left-width: 1px
+  }
+  
+  .y {
+    border-top-width: 0px
+  }
+  
+  .z {
+    vertical-align: middle
+  }
+}
+
+@media (min-width: 64em) {
+  .ab {
+    width: 30%
+  }
 }
 "
 `;
 
 exports[`should render drawers 1`] = `
 <section
-  className="cf-card"
+  className="a b c d e f g"
   id={undefined}
 >
   <div
-    className="cf-card__section cf-card__section--default"
+    className="h i j k l m"
   >
     <div
-      className="cf-card__content"
+      className="n o"
     >
-      <h3
-        className="cf-card__title"
-      >
-        This is a Card
-      </h3>
       <div
-        className="a"
+        className="p"
         dangerouslySetInnerHTML={
           Object {
             "__html": "<p>This is the <em>description</em> of a card.</p>
@@ -154,20 +372,18 @@ exports[`should render drawers 1`] = `
     </div>
   </div>
   <div
-    className="cf-card__section cf-card__section--default"
+    className="h i j k l m"
   >
     <div
-      className="cf-card__toolbar"
+      className="k q m r s t"
     >
+      <div />
       <div
-        className="cf-card__toolbar_controls"
-      />
-      <div
-        className="cf-card__toolbar_links"
+        className="u"
         role="tablist"
       >
         <a
-          className="cf-link cf-card__toolbar_link"
+          className="cf-link v w x y z ab ac ad ae af ag ah ai"
           href="#!"
           id="card-0-drawer-help"
           onClick={[Function]}
@@ -176,7 +392,7 @@ exports[`should render drawers 1`] = `
           Help
         </a>
         <a
-          className="cf-link cf-card__toolbar_link"
+          className="cf-link v w x y z ab ac ad ae af ag ah ai"
           href="#!"
           id="card-0-drawer-api"
           onClick={[Function]}
@@ -187,19 +403,20 @@ exports[`should render drawers 1`] = `
       </div>
     </div>
     <div
-      className="cf-card__drawers_container"
+      active={undefined}
+      className="aj"
     >
       <div
-        aria-hidden="true"
-        aria-labelledby="card-0-drawer-help"
-        className="cf-card__drawer"
-        role="tabpanel"
+        className="ak al"
+        id={undefined}
+        isActive={false}
+        onClick={undefined}
       />
       <div
-        aria-hidden="true"
-        aria-labelledby="card-0-drawer-api"
-        className="cf-card__drawer"
-        role="tabpanel"
+        className="ak al"
+        id={undefined}
+        isActive={false}
+        onClick={undefined}
       />
     </div>
   </div>
@@ -209,7 +426,158 @@ exports[`should render drawers 1`] = `
 exports[`should render drawers 2`] = `
 "
 .a {
+  margin-top: 1em
+}
+
+.b {
+  margin-bottom: 1em
+}
+
+.c {
+  padding: 0px
+}
+
+.d {
+  border: 1px solid #dedede
+}
+
+.e {
+  background-color: #fff
+}
+
+.f {
+  border-radius: 2px
+}
+
+.g {
+  transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease
+}
+
+.h {
+  display: table
+}
+
+.i {
+  table-layout: fixed
+}
+
+.j {
+  width: 100%
+}
+
+.k {
+  border-top: 1px solid #dedede
+}
+
+.l {
+  border-left: initial
+}
+
+.m:first-child {
+  border-top: initial
+}
+
+.n {
+  padding: 1.5rem
+}
+
+.p {
   display: initial
+}
+
+.q {
+  min-height: 2.96666rem
+}
+
+.r::after {
+  content: ''
+}
+
+.s::after {
+  display: table
+}
+
+.t::after {
+  clear: both
+}
+
+.u {
+  float: right
+}
+
+.v {
+  position: relative
+}
+
+.w {
+  display: inline-block
+}
+
+.x {
+  padding: 0.73333rem 2em 0.73333rem 0.5rem
+}
+
+.y::after {
+  content: '\\\\f003'
+}
+
+.z::after {
+  font-family: \\"cloudflare-font\\"
+}
+
+.ab::after {
+  font-style: normal
+}
+
+.ac::after {
+  font-weight: normal
+}
+
+.ad::after {
+  margin-top: -0.7em
+}
+
+.ae::after {
+  position: absolute
+}
+
+.af::after {
+  top: 60%
+}
+
+.ag::after {
+  right: 1rem
+}
+
+.ah::after {
+  transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -moz-transition: transform 0.2s ease
+}
+
+.ai::after {
+  transform: initial;
+  -webkit-transform: initial
+}
+
+.aj {
+  display: none
+}
+
+.ak {
+  border-top: initial
+}
+
+.al {
+  padding: initial
+}
+
+@media (min-width: 47.2em) {
+  .o {
+    display: table-cell
+  }
 }
 "
 `;

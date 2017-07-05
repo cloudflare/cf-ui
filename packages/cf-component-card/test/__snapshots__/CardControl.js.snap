@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <div
-  className="f1tuxd3h"
+  className="a b c d e f g h i j k l"
 >
   CardControl
 </div>
@@ -10,27 +10,54 @@ exports[`should render 1`] = `
 
 exports[`should render 2`] = `
 "
-.f1tuxd3h {
-  position: relative;
-  padding: 2rem;
-  border: 0 solid #dedede;
-  border-top-width: 1px;
-  background-color: rgba(0, 0, 0, 0.06);
+.a {
+  position: relative
+}
+
+.b {
+  padding: 2rem
+}
+
+.c {
+  border: 0 solid #dedede
+}
+
+.d {
+  border-top-width: 1px
+}
+
+.e {
+  background-color: rgba(0, 0, 0, 0.06)
+}
+
+.f {
   text-align: center
 }
 
 @media (min-width: 47.2em) {
-  .f1tuxd3h {
-    width: 40%;
-    border-left-width: 1px;
-    border-top-width: 0px;
-    vertical-align: middle;
+  .g {
+    width: 40%
+  }
+  
+  .h {
+    border-left-width: 1px
+  }
+  
+  .i {
+    border-top-width: 0px
+  }
+  
+  .j {
+    vertical-align: middle
+  }
+  
+  .k {
     display: table-cell
   }
 }
 
 @media (min-width: 64em) {
-  .f1tuxd3h {
+  .l {
     width: 30%
   }
 }
@@ -39,7 +66,7 @@ exports[`should render 2`] = `
 
 exports[`should render wide 1`] = `
 <div
-  className="f1eqoh8z"
+  className="a b c d e f g h i j k l"
 >
   CardControl
 </div>
@@ -47,27 +74,54 @@ exports[`should render wide 1`] = `
 
 exports[`should render wide 2`] = `
 "
-.f1eqoh8z {
-  position: relative;
-  padding: 0px;
-  border: 0 solid #dedede;
-  border-top-width: 1px;
-  background-color: rgba(0, 0, 0, 0.06);
+.a {
+  position: relative
+}
+
+.b {
+  padding: 0px
+}
+
+.c {
+  border: 0 solid #dedede
+}
+
+.d {
+  border-top-width: 1px
+}
+
+.e {
+  background-color: rgba(0, 0, 0, 0.06)
+}
+
+.f {
   text-align: inherit
 }
 
 @media (min-width: 47.2em) {
-  .f1eqoh8z {
-    width: 40%;
-    border-left-width: 1px;
-    border-top-width: 0px;
-    vertical-align: middle;
+  .g {
+    width: 40%
+  }
+  
+  .h {
+    border-left-width: 1px
+  }
+  
+  .i {
+    border-top-width: 0px
+  }
+  
+  .j {
+    vertical-align: middle
+  }
+  
+  .k {
     display: table-cell
   }
 }
 
 @media (min-width: 64em) {
-  .f1eqoh8z {
+  .l {
     width: 30%
   }
 }
