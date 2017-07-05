@@ -1,3 +1,8 @@
-import Callout from './Callout';
+import { applyTheme } from 'cf-style-container';
 
-export default Callout;
+import CalloutUnstyled from './Callout';
+import CalloutTheme from './CalloutTheme';
+
+const Callout = applyTheme(CalloutUnstyled, CalloutTheme);
+
+export { Callout, CalloutUnstyled, CalloutTheme };

@@ -12,7 +12,7 @@ $ npm install cf-component-callout
 
 ```jsx
 import React from 'react';
-import Callout from 'cf-component-callout';
+import { Callout } from 'cf-component-callout';
 
 const CalloutComponent = () => (
   <Callout title="Callout Title" content="Callout content." />
