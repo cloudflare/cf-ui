@@ -6,7 +6,6 @@ import lvha from 'fela-plugin-lvha';
 import validator from 'fela-plugin-validator';
 import embedded from 'fela-plugin-embedded';
 import beautifier from 'fela-beautifier';
-import monolithic from 'fela-monolithic';
 import namedMediaQuery from 'fela-plugin-named-media-query';
 import whitelistMediaQuery from './whitelistMediaQuery';
 import { variables } from 'cf-style-const';
@@ -41,7 +40,6 @@ const createRenderer = opts => {
     plugins.push(validator());
     plugins.push(whitelistMediaQuery(mediaQueries));
     enhancers.push(beautifier());
-    enhancers.push(monolithic());
   }
 
   return createFelaRenderer({
