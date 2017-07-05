@@ -1,4 +1,5 @@
 export default function saveFile(filename, file, mimeType) {
+  if (!filename || !file) throw new Error('filename and file are required');
   mimeType = mimeType || 'application/octet-stream';
   if ('msSaveBlob' in global.navigator) {
     global.navigator.msSaveBlob(new Blob([file]), filename);
@@ -8,7 +9,7 @@ export default function saveFile(filename, file, mimeType) {
   const fileBlob = new Blob([file], { type: mimeType });
   const link = global.document.createElement('a');
   link.href = global.URL.createObjectURL(fileBlob);
-  if (filename) link.download = filename;
+  link.download = filename;
 
   link.click();
 }
