@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <div
-  className="f113e28i"
+  className="a"
 >
   <div
     role="alert"
@@ -19,7 +19,7 @@ exports[`should render 1`] = `
 
 exports[`should render 2`] = `
 "
-.f113e28i {
+.a {
   padding-top: 0.5rem
 }
 "

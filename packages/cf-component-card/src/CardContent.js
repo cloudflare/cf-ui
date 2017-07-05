@@ -10,32 +10,13 @@ const styles = () => ({
   }
 });
 
-const Title = createComponent(
-  () => ({
-    fontWeight: 400,
-    marginBottom: '1rem'
-  }),
-  'h3'
-);
-
-const Footer = createComponent(({ theme }) => ({
-  fontSize: '0.8rem',
-  color: theme.colorGray,
-  lineHeight: '1.3',
-  marginTop: '1.5em'
-}));
-
-const CardContent = ({ className, title, children, footerMessage }) => (
+const CardContent = ({ className, children }) => (
   <div className={className}>
-    <Title>{title}</Title>
     {children}
-    {footerMessage && <Footer>{footerMessage}</Footer>}
   </div>
 );
 
 CardContent.propTypes = {
-  title: PropTypes.node,
-  footerMessage: PropTypes.string,
   children: PropTypes.node
 };
 

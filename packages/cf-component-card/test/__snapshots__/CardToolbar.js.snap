@@ -2,13 +2,13 @@
 
 exports[`should render 1`] = `
 <div
-  className="f1ml0oyj"
+  className="a b c d e f"
 >
   <div>
     Controls
   </div>
   <div
-    className="f107ja4p"
+    className="g"
     role="tablist"
   >
     Links
@@ -18,22 +18,31 @@ exports[`should render 1`] = `
 
 exports[`should render 2`] = `
 "
-.f1ml0oyj:first-child {
-  border-top: initial
+.a {
+  border-top: 1px solid #dedede
 }
 
-.f1ml0oyj::after {
-  content: '';
-  display: table;
-  clear: both
-}
-
-.f1ml0oyj {
-  border-top: 1px solid #dedede;
+.b {
   min-height: 2.96666rem
 }
 
-.f107ja4p {
+.c:first-child {
+  border-top: initial
+}
+
+.d::after {
+  content: ''
+}
+
+.e::after {
+  display: table
+}
+
+.f::after {
+  clear: both
+}
+
+.g {
   float: right
 }
 "

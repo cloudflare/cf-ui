@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <a
-  className="cf-link fssm709"
+  className="cf-link a b c d e f g h i j k l m"
   href="#!"
   id="link"
   onClick={[Function]}
@@ -14,33 +14,66 @@ exports[`should render 1`] = `
 
 exports[`should render 2`] = `
 "
-.fssm709::after {
-  content: '\\\\f003';
-  font-family: \\"cloudflare-font\\";
-  font-style: normal;
-  font-weight: normal;
-  margin-top: -0.7em;
-  position: absolute;
-  top: 60%;
-  right: 1rem;
-  transition: -webkit-transform 0.2s ease,transform 0.2s ease;
-  -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
-  -moz-transition: transform 0.2s ease;
-  transform: initial;
-  -webkit-transform: initial
+.a {
+  position: relative
 }
 
-.fssm709 {
-  position: relative;
-  display: inline-block;
+.b {
+  display: inline-block
+}
+
+.c {
   padding: 0.73333rem 2em 0.73333rem 0.5rem
+}
+
+.d::after {
+  content: '\\\\f003'
+}
+
+.e::after {
+  font-family: \\"cloudflare-font\\"
+}
+
+.f::after {
+  font-style: normal
+}
+
+.g::after {
+  font-weight: normal
+}
+
+.h::after {
+  margin-top: -0.7em
+}
+
+.i::after {
+  position: absolute
+}
+
+.j::after {
+  top: 60%
+}
+
+.k::after {
+  right: 1rem
+}
+
+.l::after {
+  transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -moz-transition: transform 0.2s ease
+}
+
+.m::after {
+  transform: initial;
+  -webkit-transform: initial
 }
 "
 `;
 
 exports[`should render with isActive 1`] = `
 <a
-  className="cf-link f1qnym2h"
+  className="cf-link a b c d e f g h i j k l m"
   href="#!"
   id="link"
   onClick={[Function]}
@@ -52,26 +85,59 @@ exports[`should render with isActive 1`] = `
 
 exports[`should render with isActive 2`] = `
 "
-.f1qnym2h::after {
-  content: '\\\\f003';
-  font-family: \\"cloudflare-font\\";
-  font-style: normal;
-  font-weight: normal;
-  margin-top: -0.7em;
-  position: absolute;
-  top: 60%;
-  right: 1rem;
-  transition: -webkit-transform 0.2s ease,transform 0.2s ease;
-  -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
-  -moz-transition: transform 0.2s ease;
-  transform: rotate(90deg);
-  -webkit-transform: rotate(90deg)
+.a {
+  position: relative
 }
 
-.f1qnym2h {
-  position: relative;
-  display: inline-block;
+.b {
+  display: inline-block
+}
+
+.c {
   padding: 0.73333rem 2em 0.73333rem 0.5rem
+}
+
+.d::after {
+  content: '\\\\f003'
+}
+
+.e::after {
+  font-family: \\"cloudflare-font\\"
+}
+
+.f::after {
+  font-style: normal
+}
+
+.g::after {
+  font-weight: normal
+}
+
+.h::after {
+  margin-top: -0.7em
+}
+
+.i::after {
+  position: absolute
+}
+
+.j::after {
+  top: 60%
+}
+
+.k::after {
+  right: 1rem
+}
+
+.l::after {
+  transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -moz-transition: transform 0.2s ease
+}
+
+.m::after {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg)
 }
 "
 `;

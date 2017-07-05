@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <section
-  className="f1plgxv3"
+  className="a b c d e f g"
   id={undefined}
 >
   Card
@@ -11,13 +11,31 @@ exports[`should render 1`] = `
 
 exports[`should render 2`] = `
 "
-.f1plgxv3 {
-  margin-top: 1em;
-  margin-bottom: 1em;
-  padding: 0px;
-  border: 1px solid #dedede;
-  background-color: #fff;
-  border-radius: 2px;
+.a {
+  margin-top: 1em
+}
+
+.b {
+  margin-bottom: 1em
+}
+
+.c {
+  padding: 0px
+}
+
+.d {
+  border: 1px solid #dedede
+}
+
+.e {
+  background-color: #fff
+}
+
+.f {
+  border-radius: 2px
+}
+
+.g {
   transition: all 0.35s ease;
   -webkit-transition: all 0.35s ease;
   -moz-transition: all 0.35s ease

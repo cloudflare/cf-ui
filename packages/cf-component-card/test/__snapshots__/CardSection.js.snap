@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <div
-  className="f1rvdz2f"
+  className="a b c d e f"
 >
   CardSection
 </div>
@@ -10,23 +10,35 @@ exports[`should render 1`] = `
 
 exports[`should render 2`] = `
 "
-.f1rvdz2f:first-child {
-  border-top: initial
+.a {
+  display: table
 }
 
-.f1rvdz2f {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  border-top: 1px solid #dedede;
+.b {
+  table-layout: fixed
+}
+
+.c {
+  width: 100%
+}
+
+.d {
+  border-top: 1px solid #dedede
+}
+
+.e {
   border-left: initial
+}
+
+.f:first-child {
+  border-top: initial
 }
 "
 `;
 
 exports[`should render with status 1`] = `
 <div
-  className="f1jc1r20"
+  className="a b c d e f"
 >
   CardSection
 </div>
@@ -34,16 +46,28 @@ exports[`should render with status 1`] = `
 
 exports[`should render with status 2`] = `
 "
-.f1jc1r20:first-child {
-  border-top: initial
+.a {
+  display: table
 }
 
-.f1jc1r20 {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  border-top: 1px solid #dedede;
+.b {
+  table-layout: fixed
+}
+
+.c {
+  width: 100%
+}
+
+.d {
+  border-top: 1px solid #dedede
+}
+
+.e {
   border-left: 3px solid #bd2527
+}
+
+.f:first-child {
+  border-top: initial
 }
 "
 `;

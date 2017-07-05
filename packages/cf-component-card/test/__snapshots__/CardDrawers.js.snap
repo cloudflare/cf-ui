@@ -2,18 +2,18 @@
 
 exports[`should render when given all the props 1`] = `
 <div
-  className="f1rvdz2f"
+  className="a b c d e f"
 >
   <div
-    className="f1ml0oyj"
+    className="d g f h i j"
   >
     <div />
     <div
-      className="f107ja4p"
+      className="k"
       role="tablist"
     >
       <a
-        className="cf-link f1qnym2h"
+        className="cf-link l m n o p q r s t u v w x"
         href="#!"
         id="card-0-drawer-one"
         onClick={[Function]}
@@ -22,7 +22,7 @@ exports[`should render when given all the props 1`] = `
         One
       </a>
       <a
-        className="cf-link fssm709"
+        className="cf-link l m n o p q r s t u v w y"
         href="#!"
         id="card-0-drawer-two"
         onClick={[Function]}
@@ -34,10 +34,10 @@ exports[`should render when given all the props 1`] = `
   </div>
   <div
     active="one"
-    className="fuhlm2"
+    className="z"
   >
     <div
-      className="fbqsgun"
+      className="d ab"
       id={undefined}
       isActive={true}
       onClick={undefined}
@@ -45,7 +45,7 @@ exports[`should render when given all the props 1`] = `
       One Content
     </div>
     <div
-      className="f1g5f8m1"
+      className="ac ad"
       id={undefined}
       isActive={false}
       onClick={undefined}
@@ -56,92 +56,123 @@ exports[`should render when given all the props 1`] = `
 
 exports[`should render when given all the props 2`] = `
 "
-.f1rvdz2f:first-child {
-  border-top: initial
+.a {
+  display: table
 }
 
-.f1rvdz2f {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  border-top: 1px solid #dedede;
+.b {
+  table-layout: fixed
+}
+
+.c {
+  width: 100%
+}
+
+.d {
+  border-top: 1px solid #dedede
+}
+
+.e {
   border-left: initial
 }
 
-.f1ml0oyj:first-child {
+.f:first-child {
   border-top: initial
 }
 
-.f1ml0oyj::after {
-  content: '';
-  display: table;
-  clear: both
-}
-
-.f1ml0oyj {
-  border-top: 1px solid #dedede;
+.g {
   min-height: 2.96666rem
 }
 
-.f107ja4p {
+.h::after {
+  content: ''
+}
+
+.i::after {
+  display: table
+}
+
+.j::after {
+  clear: both
+}
+
+.k {
   float: right
 }
 
-.f1qnym2h::after {
-  content: '\\\\f003';
-  font-family: \\"cloudflare-font\\";
-  font-style: normal;
-  font-weight: normal;
-  margin-top: -0.7em;
-  position: absolute;
-  top: 60%;
-  right: 1rem;
+.l {
+  position: relative
+}
+
+.m {
+  display: inline-block
+}
+
+.n {
+  padding: 0.73333rem 2em 0.73333rem 0.5rem
+}
+
+.o::after {
+  content: '\\\\f003'
+}
+
+.p::after {
+  font-family: \\"cloudflare-font\\"
+}
+
+.q::after {
+  font-style: normal
+}
+
+.r::after {
+  font-weight: normal
+}
+
+.s::after {
+  margin-top: -0.7em
+}
+
+.t::after {
+  position: absolute
+}
+
+.u::after {
+  top: 60%
+}
+
+.v::after {
+  right: 1rem
+}
+
+.w::after {
   transition: -webkit-transform 0.2s ease,transform 0.2s ease;
   -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
-  -moz-transition: transform 0.2s ease;
+  -moz-transition: transform 0.2s ease
+}
+
+.x::after {
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg)
 }
 
-.f1qnym2h {
-  position: relative;
-  display: inline-block;
-  padding: 0.73333rem 2em 0.73333rem 0.5rem
-}
-
-.fssm709::after {
-  content: '\\\\f003';
-  font-family: \\"cloudflare-font\\";
-  font-style: normal;
-  font-weight: normal;
-  margin-top: -0.7em;
-  position: absolute;
-  top: 60%;
-  right: 1rem;
-  transition: -webkit-transform 0.2s ease,transform 0.2s ease;
-  -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
-  -moz-transition: transform 0.2s ease;
+.y::after {
   transform: initial;
   -webkit-transform: initial
 }
 
-.fssm709 {
-  position: relative;
-  display: inline-block;
-  padding: 0.73333rem 2em 0.73333rem 0.5rem
-}
-
-.fuhlm2 {
+.z {
   display: block
 }
 
-.fbqsgun {
-  border-top: 1px solid #dedede;
+.ab {
   padding: 1.5rem
 }
 
-.f1g5f8m1 {
-  border-top: initial;
+.ac {
+  border-top: initial
+}
+
+.ad {
   padding: initial
 }
 "
@@ -149,18 +180,18 @@ exports[`should render when given all the props 2`] = `
 
 exports[`should render when not given props 1`] = `
 <div
-  className="f1rvdz2f"
+  className="a b c d e f"
 >
   <div
-    className="f1ml0oyj"
+    className="d g f h i j"
   >
     <div />
     <div
-      className="f107ja4p"
+      className="k"
       role="tablist"
     >
       <a
-        className="cf-link fssm709"
+        className="cf-link l m n o p q r s t u v w x"
         href="#!"
         id="card-1-drawer-one"
         onClick={[Function]}
@@ -169,7 +200,7 @@ exports[`should render when not given props 1`] = `
         One
       </a>
       <a
-        className="cf-link fssm709"
+        className="cf-link l m n o p q r s t u v w x"
         href="#!"
         id="card-1-drawer-two"
         onClick={[Function]}
@@ -181,16 +212,16 @@ exports[`should render when not given props 1`] = `
   </div>
   <div
     active={undefined}
-    className="f1u9fru1"
+    className="y"
   >
     <div
-      className="f1g5f8m1"
+      className="z ab"
       id={undefined}
       isActive={false}
       onClick={undefined}
     />
     <div
-      className="f1g5f8m1"
+      className="z ab"
       id={undefined}
       isActive={false}
       onClick={undefined}
@@ -201,65 +232,114 @@ exports[`should render when not given props 1`] = `
 
 exports[`should render when not given props 2`] = `
 "
-.f1rvdz2f:first-child {
-  border-top: initial
+.a {
+  display: table
 }
 
-.f1rvdz2f {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
-  border-top: 1px solid #dedede;
+.b {
+  table-layout: fixed
+}
+
+.c {
+  width: 100%
+}
+
+.d {
+  border-top: 1px solid #dedede
+}
+
+.e {
   border-left: initial
 }
 
-.f1ml0oyj:first-child {
+.f:first-child {
   border-top: initial
 }
 
-.f1ml0oyj::after {
-  content: '';
-  display: table;
-  clear: both
-}
-
-.f1ml0oyj {
-  border-top: 1px solid #dedede;
+.g {
   min-height: 2.96666rem
 }
 
-.f107ja4p {
+.h::after {
+  content: ''
+}
+
+.i::after {
+  display: table
+}
+
+.j::after {
+  clear: both
+}
+
+.k {
   float: right
 }
 
-.fssm709::after {
-  content: '\\\\f003';
-  font-family: \\"cloudflare-font\\";
-  font-style: normal;
-  font-weight: normal;
-  margin-top: -0.7em;
-  position: absolute;
-  top: 60%;
-  right: 1rem;
+.l {
+  position: relative
+}
+
+.m {
+  display: inline-block
+}
+
+.n {
+  padding: 0.73333rem 2em 0.73333rem 0.5rem
+}
+
+.o::after {
+  content: '\\\\f003'
+}
+
+.p::after {
+  font-family: \\"cloudflare-font\\"
+}
+
+.q::after {
+  font-style: normal
+}
+
+.r::after {
+  font-weight: normal
+}
+
+.s::after {
+  margin-top: -0.7em
+}
+
+.t::after {
+  position: absolute
+}
+
+.u::after {
+  top: 60%
+}
+
+.v::after {
+  right: 1rem
+}
+
+.w::after {
   transition: -webkit-transform 0.2s ease,transform 0.2s ease;
   -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
-  -moz-transition: transform 0.2s ease;
+  -moz-transition: transform 0.2s ease
+}
+
+.x::after {
   transform: initial;
   -webkit-transform: initial
 }
 
-.fssm709 {
-  position: relative;
-  display: inline-block;
-  padding: 0.73333rem 2em 0.73333rem 0.5rem
-}
-
-.f1u9fru1 {
+.y {
   display: none
 }
 
-.f1g5f8m1 {
-  border-top: initial;
+.z {
+  border-top: initial
+}
+
+.ab {
   padding: initial
 }
 "

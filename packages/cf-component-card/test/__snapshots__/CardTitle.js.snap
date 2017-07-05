@@ -1,23 +1,21 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render 1`] = `
-<div
+<h3
   className="a b"
 >
-  CardContent
-</div>
+  CardTitle
+</h3>
 `;
 
 exports[`should render 2`] = `
 "
 .a {
-  padding: 1.5rem
+  font-weight: 400
 }
 
-@media (min-width: 47.2em) {
-  .b {
-    display: table-cell
-  }
+.b {
+  margin-bottom: 1rem
 }
 "
 `;
