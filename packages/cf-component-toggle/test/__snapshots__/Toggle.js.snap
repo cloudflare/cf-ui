@@ -6,7 +6,9 @@ exports[`should render 1`] = `
   htmlFor="test"
 >
   <input
+    checkbox={undefined}
     checked={undefined}
+    className="ak al c am an ao ap"
     disabled={undefined}
     id="test"
     name="test"
@@ -16,13 +18,13 @@ exports[`should render 1`] = `
     type="checkbox"
   />
   <span
-    className="ak al am an ao ap aq ar"
+    className="ak al c am an ao ap"
   >
     Test Toggle
   </span>
   <span
     active={undefined}
-    className="a ak as at au av aw ax ay az ba bb bc bd be n bf o bg bh bi bj bk bl bm bn bo bp y bq z br bs bt bu bv"
+    className="a ak aq ar as at au av aw ax ay az ba bb bc n bd o be bf bg bh bi bj bk bl bm bn y bo z bp bq br bs bt"
   />
 </label>
 `;
@@ -174,152 +176,144 @@ exports[`should render 2`] = `
 }
 
 .al {
-  width: 1px
-}
-
-.am {
-  height: 1px
-}
-
-.an {
-  padding: 0px
-}
-
-.ao {
-  margin: -1px
-}
-
-.ap {
   overflow: hidden
 }
 
-.aq {
-  clip: rect(0, 0, 0, 0)
+.am {
+  padding: 0px
 }
 
-.ar {
+.an {
   border: 0px
 }
 
-.as {
+.ao {
+  outline: 0px
+}
+
+.ap {
+  opacity: 0
+}
+
+.aq {
   z-index: 1
 }
 
-.at {
+.ar {
   top: 0px
 }
 
-.au {
+.as {
   bottom: 0px
 }
 
-.av {
+.at {
   left: 0px
 }
 
-.aw {
+.au {
   width: 50%
 }
 
-.ax {
+.av {
   border: inherit
 }
 
-.ay {
+.aw {
   border-width: 0px
 }
 
-.az {
+.ax {
   border-right-width: inherit
 }
 
-.ba {
+.ay {
   border-left-width: 0px
 }
 
-.bb {
+.az {
   background: #fff
 }
 
-.bc {
+.ba {
   transition: left 100ms ease;
   -webkit-transition: left 100ms ease;
   -moz-transition: left 100ms ease
 }
 
-.bd::before {
+.bb::before {
   border: 4px solid transparent
+}
+
+.bc::before {
+  content: ''
+}
+
+.bd::before {
+  height: 0px
 }
 
 .be::before {
-  content: ''
+  top: 50%
 }
 
 .bf::before {
-  height: 0px
+  left: 50%
 }
 
 .bg::before {
-  top: 50%
+  margin-top: -3px
 }
 
 .bh::before {
-  left: 50%
-}
-
-.bi::before {
-  margin-top: -3px
-}
-
-.bj::before {
   width: 0px
 }
 
-.bk::before {
+.bi::before {
   border-left-color: transparent
 }
 
-.bl::before {
+.bj::before {
   border-right-color: inherit
 }
 
-.bm::before {
+.bk::before {
   margin-left: -10px
 }
 
-.bn::after {
+.bl::after {
   border: 4px solid transparent
 }
 
-.bo::after {
+.bm::after {
   border-left-color: inherit
 }
 
-.bp::after {
+.bn::after {
   content: ''
 }
 
-.bq::after {
+.bo::after {
   height: 0px
 }
 
-.br::after {
+.bp::after {
   top: 50%
 }
 
-.bs::after {
+.bq::after {
   left: 50%
 }
 
-.bt::after {
+.br::after {
   margin-left: 2px
 }
 
-.bu::after {
+.bs::after {
   margin-top: -3px
 }
 
-.bv::after {
+.bt::after {
   width: 0px
 }
 "
@@ -331,7 +325,9 @@ exports[`should render checked 1`] = `
   htmlFor="test"
 >
   <input
+    checkbox={undefined}
     checked={true}
+    className="ak al c am an ao ap"
     disabled={undefined}
     id="test"
     name="test"
@@ -341,13 +337,13 @@ exports[`should render checked 1`] = `
     type="checkbox"
   />
   <span
-    className="ak al am an ao ap aq ar"
+    className="ak al c am an ao ap"
   >
     Test Toggle
   </span>
   <span
     active={true}
-    className="a ak as at au av aw ax ay az ba bb bc bd be n bf o bg bh bi bj bk bl bm bn bo bp y bq z br bs bt bu bv"
+    className="a ak aq ar as at au av aw ax ay az ba bb bc n bd o be bf bg bh bi bj bk bl bm bn y bo z bp bq br bs bt"
   />
 </label>
 `;
@@ -499,152 +495,144 @@ exports[`should render checked 2`] = `
 }
 
 .al {
-  width: 1px
-}
-
-.am {
-  height: 1px
-}
-
-.an {
-  padding: 0px
-}
-
-.ao {
-  margin: -1px
-}
-
-.ap {
   overflow: hidden
 }
 
-.aq {
-  clip: rect(0, 0, 0, 0)
+.am {
+  padding: 0px
 }
 
-.ar {
+.an {
   border: 0px
 }
 
-.as {
+.ao {
+  outline: 0px
+}
+
+.ap {
+  opacity: 0
+}
+
+.aq {
   z-index: 1
 }
 
-.at {
+.ar {
   top: 0px
 }
 
-.au {
+.as {
   bottom: 0px
 }
 
-.av {
+.at {
   left: 50%
 }
 
-.aw {
+.au {
   width: 50%
 }
 
-.ax {
+.av {
   border: inherit
 }
 
-.ay {
+.aw {
   border-width: 0px
 }
 
-.az {
+.ax {
   border-right-width: 0px
 }
 
-.ba {
+.ay {
   border-left-width: inherit
 }
 
-.bb {
+.az {
   background: #fff
 }
 
-.bc {
+.ba {
   transition: left 100ms ease;
   -webkit-transition: left 100ms ease;
   -moz-transition: left 100ms ease
 }
 
-.bd::before {
+.bb::before {
   border: 4px solid transparent
+}
+
+.bc::before {
+  content: ''
+}
+
+.bd::before {
+  height: 0px
 }
 
 .be::before {
-  content: ''
+  top: 50%
 }
 
 .bf::before {
-  height: 0px
+  left: 50%
 }
 
 .bg::before {
-  top: 50%
+  margin-top: -3px
 }
 
 .bh::before {
-  left: 50%
-}
-
-.bi::before {
-  margin-top: -3px
-}
-
-.bj::before {
   width: 0px
 }
 
-.bk::before {
+.bi::before {
   border-left-color: transparent
 }
 
-.bl::before {
+.bj::before {
   border-right-color: inherit
 }
 
-.bm::before {
+.bk::before {
   margin-left: -10px
 }
 
-.bn::after {
+.bl::after {
   border: 4px solid transparent
 }
 
-.bo::after {
+.bm::after {
   border-left-color: inherit
 }
 
-.bp::after {
+.bn::after {
   content: ''
 }
 
-.bq::after {
+.bo::after {
   height: 0px
 }
 
-.br::after {
+.bp::after {
   top: 50%
 }
 
-.bs::after {
+.bq::after {
   left: 50%
 }
 
-.bt::after {
+.br::after {
   margin-left: 2px
 }
 
-.bu::after {
+.bs::after {
   margin-top: -3px
 }
 
-.bv::after {
+.bt::after {
   width: 0px
 }
 "
@@ -656,7 +644,9 @@ exports[`should render disabled 1`] = `
   htmlFor="test"
 >
   <input
+    checkbox={undefined}
     checked={true}
+    className="ak al c am an ao ap"
     disabled={true}
     id="test"
     name="test"
@@ -666,13 +656,13 @@ exports[`should render disabled 1`] = `
     type="checkbox"
   />
   <span
-    className="ak al am an ao ap aq ar"
+    className="ak al c am an ao ap"
   >
     Test Toggle
   </span>
   <span
     active={true}
-    className="a ak as at au av aw ax ay az ba bb bc bd be n bf o bg bh bi bj bk bl bm bn bo bp y bq z br bs bt bu bv"
+    className="a ak aq ar as at au av aw ax ay az ba bb bc n bd o be bf bg bh bi bj bk bl bm bn y bo z bp bq br bs bt"
   />
 </label>
 `;
@@ -824,152 +814,144 @@ exports[`should render disabled 2`] = `
 }
 
 .al {
-  width: 1px
-}
-
-.am {
-  height: 1px
-}
-
-.an {
-  padding: 0px
-}
-
-.ao {
-  margin: -1px
-}
-
-.ap {
   overflow: hidden
 }
 
-.aq {
-  clip: rect(0, 0, 0, 0)
+.am {
+  padding: 0px
 }
 
-.ar {
+.an {
   border: 0px
 }
 
-.as {
+.ao {
+  outline: 0px
+}
+
+.ap {
+  opacity: 0
+}
+
+.aq {
   z-index: 1
 }
 
-.at {
+.ar {
   top: 0px
 }
 
-.au {
+.as {
   bottom: 0px
 }
 
-.av {
+.at {
   left: 50%
 }
 
-.aw {
+.au {
   width: 50%
 }
 
-.ax {
+.av {
   border: inherit
 }
 
-.ay {
+.aw {
   border-width: 0px
 }
 
-.az {
+.ax {
   border-right-width: 0px
 }
 
-.ba {
+.ay {
   border-left-width: inherit
 }
 
-.bb {
+.az {
   background: #fff
 }
 
-.bc {
+.ba {
   transition: left 100ms ease;
   -webkit-transition: left 100ms ease;
   -moz-transition: left 100ms ease
 }
 
-.bd::before {
+.bb::before {
   border: 4px solid transparent
+}
+
+.bc::before {
+  content: ''
+}
+
+.bd::before {
+  height: 0px
 }
 
 .be::before {
-  content: ''
+  top: 50%
 }
 
 .bf::before {
-  height: 0px
+  left: 50%
 }
 
 .bg::before {
-  top: 50%
+  margin-top: -3px
 }
 
 .bh::before {
-  left: 50%
-}
-
-.bi::before {
-  margin-top: -3px
-}
-
-.bj::before {
   width: 0px
 }
 
-.bk::before {
+.bi::before {
   border-left-color: transparent
 }
 
-.bl::before {
+.bj::before {
   border-right-color: inherit
 }
 
-.bm::before {
+.bk::before {
   margin-left: -10px
 }
 
-.bn::after {
+.bl::after {
   border: 4px solid transparent
 }
 
-.bo::after {
+.bm::after {
   border-left-color: inherit
 }
 
-.bp::after {
+.bn::after {
   content: ''
 }
 
-.bq::after {
+.bo::after {
   height: 0px
 }
 
-.br::after {
+.bp::after {
   top: 50%
 }
 
-.bs::after {
+.bq::after {
   left: 50%
 }
 
-.bt::after {
+.br::after {
   margin-left: 2px
 }
 
-.bu::after {
+.bs::after {
   margin-top: -3px
 }
 
-.bv::after {
+.bt::after {
   width: 0px
 }
 "
