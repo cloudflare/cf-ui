@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <div
-  className="a b c d e f g"
+  className="a b c d"
 >
   Hello World
 </div>
@@ -18,34 +18,12 @@ exports[`should render 2`] = `
   margin-right: auto
 }
 
-@media (min-width: 13.6em) {
-  .c {
-    width: 13.6em
-  }
+.c {
+  width: 90%
 }
 
-@media (min-width: 30.4em) {
-  .d {
-    width: 30.4em
-  }
-}
-
-@media (min-width: 47.2em) {
-  .e {
-    width: 47.2em
-  }
-}
-
-@media (min-width: 64em) {
-  .f {
-    width: 64em
-  }
-}
-
-@media (min-width: 97.6em) {
-  .g {
-    width: 97.6em
-  }
+.d {
+  max-width: 79em
 }
 "
 `;
