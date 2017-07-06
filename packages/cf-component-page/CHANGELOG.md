@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.1.0"></a>
+# [4.1.0](https://github.com/cloudflare/cf-ui/compare/cf-component-page@4.0.2...cf-component-page@4.1.0) (2017-07-06)
+
+
+### Features
+
+* **cf-component-page:** Remove breakpoints for PageContent ([e6a4bac](https://github.com/cloudflare/cf-ui/commit/e6a4bac))
+* **cf-component-page:** update snapshots ([ec0b335](https://github.com/cloudflare/cf-ui/commit/ec0b335))
+* **cf-style-provider:** Update snapshots - they use atomic classNames now ([1a42284](https://github.com/cloudflare/cf-ui/commit/1a42284))
+
+
+
+
 <a name="4.0.2"></a>
 ## [4.0.2](https://github.com/koddsson/cf-ui/compare/cf-component-page@4.0.1...cf-component-page@4.0.2) (2017-06-28)
 

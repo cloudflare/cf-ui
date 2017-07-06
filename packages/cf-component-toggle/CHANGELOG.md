@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.0.3"></a>
+## [4.0.3](https://github.com/cloudflare/cf-ui/compare/cf-component-toggle@4.0.0...cf-component-toggle@4.0.3) (2017-07-06)
+
+
+### Bug Fixes
+
+* **cf-component-toggle:** add missing dependency (#298) ([756b4cc](https://github.com/cloudflare/cf-ui/commit/756b4cc))
+
+
+
+
 <a name="4.0.2"></a>
 ## [4.0.2](https://github.com/koddsson/cf-ui/compare/cf-component-toggle@4.0.1...cf-component-toggle@4.0.2) (2017-07-06)
 
