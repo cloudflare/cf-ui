@@ -1,3 +1,11 @@
-import Link from './Link';
+import LinkUnstyled from './Link';
+import LinkTheme from './LinkTheme';
+import { applyTheme } from 'cf-style-container';
 
-export default Link;
+const Link = applyTheme(LinkUnstyled, LinkTheme);
+
+export default {
+  Link,
+  LinkUnstyled,
+  LinkTheme
+};

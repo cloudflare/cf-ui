@@ -1,43 +1,45 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import Link from '../../cf-component-link/src/index';
+import { felaSnapshot } from 'cf-style-provider';
+import { Link } from '../../cf-component-link/src/index';
 
 test('should render', () => {
-  const component = renderer.create(<Link to="/route">Hello World</Link>);
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<Link to="/route">Hello World</Link>);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render with onClick', () => {
-  const component = renderer.create(
-    <Link onClick={() => {}}>Hello World</Link>
-  );
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<Link onClick={() => {}}>Hello World</Link>);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render with tagName', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Link to="/route" tagName="button">Hello World</Link>
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render with className', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Link to="/route" className="special-link">Hello World</Link>
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render with role', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Link to="/route" role="button" tagName="div">Hello World</Link>
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render with disabled', () => {
-  const component = renderer.create(
-    <Link to="/route" disabled>Hello World</Link>
-  );
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<Link to="/route" disabled>Hello World</Link>);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
