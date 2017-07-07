@@ -4,9 +4,9 @@ import { createComponent } from 'cf-style-container';
 
 const styles = ({ theme, type = 'default' }) => {
   return {
-    margin: '1rem',
-    padding: '1rem',
-    border: '1px solid transparent',
+    margin: theme.margin,
+    padding: theme.padding,
+    border: theme.border,
     borderRadius: theme.borderRadius,
     color: theme.color,
 

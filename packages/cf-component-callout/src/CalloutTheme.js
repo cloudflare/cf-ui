@@ -1,4 +1,8 @@
 export default baseTheme => ({
+  margin: '1rem',
+  padding: '1rem',
+  border: '1px solid transparent',
+
   borderRadius: baseTheme.borderRadius,
   color: baseTheme.colorWhite,
   default: {
