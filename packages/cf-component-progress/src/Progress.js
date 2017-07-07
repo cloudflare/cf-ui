@@ -55,8 +55,8 @@ const Item = createComponent(
     }
 
     return {
-      width,
-      float: 'left',
+      width: 'auto',
+      float: 'none',
       height: 'auto',
       padding: 0,
       paddingTop: '7.5px',
@@ -66,15 +66,16 @@ const Item = createComponent(
 
       textAlign: 'center',
       cursor: disabled ? 'default' : 'pointer',
+      display: active ? 'list-item' : 'none',
 
       '&::before': {
         content: 'none'
       },
 
       tablet: {
-        display: active ? 'block' : 'none',
-        width: 'auto !important',
-        float: 'none'
+        width,
+        float: 'left',
+        display: 'list-item'
       },
 
       '& > .cf-link': {

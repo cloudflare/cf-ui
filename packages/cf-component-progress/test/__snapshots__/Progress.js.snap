@@ -14,7 +14,7 @@ exports[`should render 1`] = `
   >
     <li
       active={true}
-      className="r s t q u v w x y z ab ac ad ae af ag"
+      className="r s t q u v w x y z ab ac ad ae af ag ah"
       disabled={false}
       width="33.3333%"
     >
@@ -29,7 +29,7 @@ exports[`should render 1`] = `
     </li>
     <li
       active={false}
-      className="r s t q u ah w x y z ab ac ad ai af ag"
+      className="r s t q u ai w x y aj ab ac ad ae af ag ah"
       disabled={false}
       width="33.3333%"
     >
@@ -44,7 +44,7 @@ exports[`should render 1`] = `
     </li>
     <li
       active={false}
-      className="r s t q u aj w x ak z ab ac ad ai af ag"
+      className="r s t q u ak w x al aj ab ac ad ae af ag ah"
       disabled={true}
       width="33.3333%"
     >
@@ -137,11 +137,11 @@ exports[`should render 2`] = `
 }
 
 .r {
-  width: 33.3333%
+  width: auto
 }
 
 .s {
-  float: left
+  float: none
 }
 
 .t {
@@ -168,49 +168,53 @@ exports[`should render 2`] = `
   cursor: pointer
 }
 
-.z::before {
+.z {
+  display: list-item
+}
+
+.ab::before {
   content: none
 }
 
-.ab > .cf-link {
+.ac > .cf-link {
   display: block
 }
 
-.ac > .cf-link {
+.ad > .cf-link {
   color: inherit
 }
 
-.ad > .cf-link {
+.ae > .cf-link {
   cursor: pointer
 }
 
-.ah {
+.ai {
   color: #7c7c7c
 }
 
 .aj {
-  color: #dedede
+  display: none
 }
 
 .ak {
+  color: #dedede
+}
+
+.al {
   cursor: default
 }
 
 @media (min-width: 47.2em) {
-  .ae {
-    display: block
-  }
-  
   .af {
-    width: auto !important
+    width: 33.3333%
   }
   
   .ag {
-    float: none
+    float: left
   }
   
-  .ai {
-    display: none
+  .ah {
+    display: list-item
   }
 }
 "
