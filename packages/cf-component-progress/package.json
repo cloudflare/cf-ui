@@ -1,7 +1,7 @@
 {
   "name": "cf-component-progress",
   "description": "Cloudflare Progress Component",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
