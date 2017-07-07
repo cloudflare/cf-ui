@@ -66,7 +66,7 @@ function createComponentFactory(createElement, contextTypes) {
     }
 
     // use the rule name as display name to better debug with react inspector
-    FelaComponent.displayName = componentName;
+    FelaComponent.displayName = `${componentName}FelaWrapper`;
     FelaComponent._isFelaComponent = true;
 
     return FelaComponent;
