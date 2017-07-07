@@ -1,10 +1,10 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import Progress from '../../cf-component-progress/src/index';
+import { felaSnapshot } from 'cf-style-provider';
+import { Progress } from '../../cf-component-progress/src/index';
 import Link from '../../cf-component-link/src/index';
 
 test('should render', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Progress
       active="foo"
       onChange={() => {}}
@@ -15,5 +15,6 @@ test('should render', () => {
       ]}
     />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

@@ -1,6 +1,92 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'cf-component-link';
+import { createComponent } from 'cf-style-container';
+import { clearFix } from 'polished';
+
+const styles = () => ({
+  position: 'relative'
+});
+
+const Bar = createComponent(
+  ({ theme }) => ({
+    display: 'block',
+    width: '100%',
+    appearance: 'none',
+
+    '&::-webkit-progress-bar': {
+      backgroundColor: theme.bodyBackground,
+      color: theme.bodyBackground
+    },
+
+    '&::-webkit-progress-value': {
+      backgroundColor: theme.color.marine,
+      color: theme.color.marine,
+      transition: 'width 500ms ease'
+    },
+
+    /* Mozilla uses progress-bar as the value */
+    '&::-moz-progress-bar': {
+      backgroundColor: theme.color.marine,
+      color: theme.color.marine
+    }
+  }),
+  'progress',
+  ['max', 'value']
+);
+
+const Items = createComponent(
+  () => ({
+    listStyle: 'none',
+    ...clearFix(),
+    margin: 0,
+    padding: 0
+  }),
+  'ol'
+);
+
+const Item = createComponent(
+  ({ theme, width, disabled, active }) => {
+    let color = theme.colorGray;
+    if (disabled) {
+      color = theme.colorGrayLight;
+    } else if (active) {
+      color = theme.color.marine;
+    }
+
+    return {
+      width,
+      float: 'left',
+      height: 'auto',
+      padding: 0,
+      paddingTop: '7.5px',
+
+      color,
+      fontSize: '0.86667em',
+
+      textAlign: 'center',
+      cursor: disabled ? 'default' : 'pointer',
+
+      '&::before': {
+        content: 'none'
+      },
+
+      tablet: {
+        display: active ? 'block' : 'none',
+        width: 'auto !important',
+        float: 'none'
+      },
+
+      '& > .cf-link': {
+        display: 'block',
+        color: 'inherit',
+        cursor: 'pointer'
+      }
+    };
+  },
+  'li',
+  ['key', 'width', 'disabled', 'active']
+);
 
 class Progress extends React.Component {
   constructor(props) {
@@ -15,41 +101,42 @@ class Progress extends React.Component {
   }
 
   render() {
-    const max = this.props.steps.length;
+    const { className, steps, active } = this.props;
+    const max = steps.length;
     const itemWidth = (1 / max * 100).toFixed(4) + '%';
 
     let value;
 
-    const items = this.props.steps.map((step, index) => {
-      let className = 'cf-progress__item';
+    const items = steps.map((step, index) => {
+      const isActive = step.id === active;
 
-      if (step.id === this.props.active) {
+      if (isActive) {
         value = index + 1;
-        className += ' cf-progress__item--active';
-      }
-
-      if (step.disabled) {
-        className += ' cf-progress__item--disabled';
       }
 
       return (
-        <li key={step.id} className={className} style={{ width: itemWidth }}>
+        <Item
+          key={step.id}
+          width={itemWidth}
+          disabled={step.disabled}
+          active={isActive}
+        >
           <Link
             onClick={this.handleClick.bind(null, step)}
             disabled={step.disabled}
           >
             {step.label}
           </Link>
-        </li>
+        </Item>
       );
     });
 
     return (
-      <div className="cf-progress">
-        <progress className="cf-progress__bar" max={max} value={value} />
-        <ol className="cf-progress__items">
+      <div className={className}>
+        <Bar max={max} value={value} />
+        <Items>
           {items}
-        </ol>
+        </Items>
       </div>
     );
   }
@@ -64,11 +151,12 @@ Progress.propTypes = {
       label: PropTypes.string.isRequired,
       disabled: PropTypes.bool.isRequired
     })
-  ).isRequired
+  ).isRequired,
+  className: PropTypes.string
 };
 
 Progress.defaultProps = {
   steps: []
 };
 
-export default Progress;
+export default createComponent(styles, Progress);

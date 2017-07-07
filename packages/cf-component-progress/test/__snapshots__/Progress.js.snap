@@ -2,23 +2,21 @@
 
 exports[`should render 1`] = `
 <div
-  className="cf-progress"
+  className="a"
 >
   <progress
-    className="cf-progress__bar"
+    className="b c d e f g h i j k"
     max={3}
     value={1}
   />
   <ol
-    className="cf-progress__items"
+    className="l m n o p q"
   >
     <li
-      className="cf-progress__item cf-progress__item--active"
-      style={
-        Object {
-          "width": "33.3333%",
-        }
-      }
+      active={true}
+      className="r s t q u v w x y z ab ac ad ae af ag"
+      disabled={false}
+      width="33.3333%"
     >
       <a
         className="cf-link"
@@ -30,12 +28,10 @@ exports[`should render 1`] = `
       </a>
     </li>
     <li
-      className="cf-progress__item"
-      style={
-        Object {
-          "width": "33.3333%",
-        }
-      }
+      active={false}
+      className="r s t q u ah w x y z ab ac ad ai af ag"
+      disabled={false}
+      width="33.3333%"
     >
       <a
         className="cf-link"
@@ -47,12 +43,10 @@ exports[`should render 1`] = `
       </a>
     </li>
     <li
-      className="cf-progress__item cf-progress__item--disabled"
-      style={
-        Object {
-          "width": "33.3333%",
-        }
-      }
+      active={false}
+      className="r s t q u aj w x ak z ab ac ad ai af ag"
+      disabled={true}
+      width="33.3333%"
     >
       <a
         className="cf-link cf-link--disabled"
@@ -66,4 +60,158 @@ exports[`should render 1`] = `
     </li>
   </ol>
 </div>
+`;
+
+exports[`should render 2`] = `
+"
+.a {
+  position: relative
+}
+
+.b {
+  display: block
+}
+
+.c {
+  width: 100%
+}
+
+.d {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none
+}
+
+.e::-webkit-progress-bar {
+  background-color: #ebebeb
+}
+
+.f::-webkit-progress-bar {
+  color: #ebebeb
+}
+
+.g::-webkit-progress-value {
+  background-color: #2F7BBF
+}
+
+.h::-webkit-progress-value {
+  color: #2F7BBF
+}
+
+.i::-webkit-progress-value {
+  transition: width 500ms ease;
+  -webkit-transition: width 500ms ease;
+  -moz-transition: width 500ms ease
+}
+
+.j::-moz-progress-bar {
+  background-color: #2F7BBF
+}
+
+.k::-moz-progress-bar {
+  color: #2F7BBF
+}
+
+.l {
+  list-style: none
+}
+
+.m::after {
+  clear: both
+}
+
+.n::after {
+  content: \\"\\"
+}
+
+.o::after {
+  display: table
+}
+
+.p {
+  margin: 0px
+}
+
+.q {
+  padding: 0px
+}
+
+.r {
+  width: 33.3333%
+}
+
+.s {
+  float: left
+}
+
+.t {
+  height: auto
+}
+
+.u {
+  padding-top: 7.5px
+}
+
+.v {
+  color: #2F7BBF
+}
+
+.w {
+  font-size: 0.86667em
+}
+
+.x {
+  text-align: center
+}
+
+.y {
+  cursor: pointer
+}
+
+.z::before {
+  content: none
+}
+
+.ab > .cf-link {
+  display: block
+}
+
+.ac > .cf-link {
+  color: inherit
+}
+
+.ad > .cf-link {
+  cursor: pointer
+}
+
+.ah {
+  color: #7c7c7c
+}
+
+.aj {
+  color: #dedede
+}
+
+.ak {
+  cursor: default
+}
+
+@media (min-width: 47.2em) {
+  .ae {
+    display: block
+  }
+  
+  .af {
+    width: auto !important
+  }
+  
+  .ag {
+    float: none
+  }
+  
+  .ai {
+    display: none
+  }
+}
+"
 `;

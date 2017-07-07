@@ -12,7 +12,7 @@ $ npm install cf-component-progress
 
 ```jsx
 import React from 'react';
-import Progress from 'cf-component-progress';
+import { Progress } from 'cf-component-progress';
 
 class ProgressComponent extends React.Component {
   constructor(props) {
