@@ -2,34 +2,102 @@
 
 exports[`should render "default" by default 1`] = `
 <div
-  className="cf-callout cf-callout--default"
+  className="a b c d e f g"
 >
-  <h3
-    className="cf-callout__heading"
-  >
+  <h3>
     Hello
   </h3>
   <p
-    className="cf-callout__content"
+    className="h"
   >
     World
   </p>
 </div>
 `;
 
+exports[`should render "default" by default 2`] = `
+"
+.a {
+  margin: 1rem
+}
+
+.b {
+  padding: 1rem
+}
+
+.c {
+  border: 1px solid transparent
+}
+
+.d {
+  border-radius: 2px
+}
+
+.e {
+  color: #fff
+}
+
+.f {
+  background-color: #333333
+}
+
+.g {
+  border-color: #333333
+}
+
+.h {
+  margin-top: 0px
+}
+"
+`;
+
 exports[`should render "type" 1`] = `
 <div
-  className="cf-callout cf-callout--info"
+  className="a b c d e f g"
 >
-  <h3
-    className="cf-callout__heading"
-  >
+  <h3>
     Hello
   </h3>
   <p
-    className="cf-callout__content"
+    className="h"
   >
     World
   </p>
 </div>
+`;
+
+exports[`should render "type" 2`] = `
+"
+.a {
+  margin: 1rem
+}
+
+.b {
+  padding: 1rem
+}
+
+.c {
+  border: 1px solid transparent
+}
+
+.d {
+  border-radius: 2px
+}
+
+.e {
+  color: #fff
+}
+
+.f {
+  background-color: #2F7BBF
+}
+
+.g {
+  border-color: #408BC9
+}
+
+.h {
+  margin-top: 0px
+}
+"
 `;
