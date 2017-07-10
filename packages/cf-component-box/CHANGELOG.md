@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.5.1"></a>
+## [2.5.1](https://github.com/koddsson/cf-ui/compare/cf-component-box@2.5.0...cf-component-box@2.5.1) (2017-07-10)
+
+
+
+
 <a name="2.5.0"></a>
 # [2.5.0](https://github.com/koddsson/cf-ui/compare/cf-component-box@2.4.0...cf-component-box@2.5.0) (2017-07-10)
 
