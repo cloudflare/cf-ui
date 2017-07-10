@@ -5,10 +5,12 @@ import {
   mergeThemes,
   filterNone,
   filterStyle,
-  mapChildren
+  mapChildren,
+  applyTheme
 } from '../../cf-style-container/src/index';
 import { variables } from 'cf-style-const';
 import { felaSnapshot } from 'cf-style-provider';
+import { shallow } from 'enzyme';
 
 test('mergeThemes should return an immutable and deeply cloned object', () => {
   const themeA = () => ({ color: 'yellow' });
@@ -118,4 +120,15 @@ test('mapChildren will call a function for each child, passing its index and the
     return child;
   });
   expect(result).toHaveLength(1);
+});
+
+describe('applyTheme', () => {
+  test('will set the display name to the same display name as the wrapped component with a "Themed" prefix', () => {
+    const SomeComponent = () => <div>foo</div>;
+    SomeComponent.displayName = 'SomeComponent';
+    const ThemedComponent = applyTheme(SomeComponent, {});
+
+    const wrapper = shallow(<ThemedComponent />);
+    expect(ThemedComponent.displayName).toBe('ThemedSomeComponent');
+  });
 });

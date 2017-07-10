@@ -42,6 +42,7 @@ const applyTheme = (ComponentToWrap, ...themes) => {
     }
   }
 
+  ThemedComponent.displayName = `Themed${ComponentToWrap.displayName}`;
   ThemedComponent.childContextTypes = { theme: PropTypes.object };
   ThemedComponent.contextTypes = { theme: PropTypes.object };
   return ThemedComponent;
