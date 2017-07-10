@@ -1,7 +1,13 @@
 import React from 'react';
+import { createComponent } from 'cf-style-container';
 
-const DropdownSeparator = () => (
-  <div className="cf-dropdown__separator" role="separator" />
+const styles = ({ theme }) => ({
+  margin: '0.53333rem 0',
+  borderTop: `1px solid ${theme.colorGrayLight}`
+});
+
+const DropdownSeparator = ({ className }) => (
+  <div className={className} role="separator" />
 );
 
-export default DropdownSeparator;
+export default createComponent(styles, DropdownSeparator);

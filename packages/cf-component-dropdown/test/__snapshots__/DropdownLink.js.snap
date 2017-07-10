@@ -2,11 +2,11 @@
 
 exports[`should render with onClick 1`] = `
 <ul
-  className="cf-dropdown cf-dropdown--left"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y"
   role="menu"
 >
   <li
-    className="cf-dropdown__link"
+    className="z b ab ac ad ae af ag ah ai aj ak al am an"
     role="menuitem"
   >
     <a
@@ -23,13 +23,232 @@ exports[`should render with onClick 1`] = `
 </ul>
 `;
 
+exports[`should render with onClick 2`] = `
+"
+@-webkit-keyframes k1 {
+  0% {
+    display: none;
+    opacity: 0
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+    top: 80%
+  }
+
+  100% {
+    display: none;
+    opacity: 1;
+    top: 102%
+  }
+}
+
+@-moz-keyframes k1 {
+  0% {
+    display: none;
+    opacity: 0
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+    top: 80%
+  }
+
+  100% {
+    display: none;
+    opacity: 1;
+    top: 102%
+  }
+}
+
+@keyframes k1 {
+  0% {
+    display: none;
+    opacity: 0
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+    top: 80%
+  }
+
+  100% {
+    display: none;
+    opacity: 1;
+    top: 102%
+  }
+}
+
+.a {
+  position: absolute
+}
+
+.b {
+  z-index: 1
+}
+
+.c {
+  min-width: 10.66667rem
+}
+
+.d {
+  margin: 0.5em 0 0
+}
+
+.e {
+  padding: 0.33333rem 0
+}
+
+.f {
+  list-style: none
+}
+
+.g {
+  background: #fff
+}
+
+.h {
+  border: 1px solid #dedede
+}
+
+.i {
+  border-radius: 2px
+}
+
+.j {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2)
+}
+
+.k {
+  left: initial
+}
+
+.l {
+  right: initial
+}
+
+.m {
+  animation-name: k1
+}
+
+.n {
+  animation-duration: 150ms;
+  -webkit-animation-duration: 150ms
+}
+
+.o {
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out
+}
+
+.p::before {
+  content: ''
+}
+
+.q::before {
+  display: block
+}
+
+.r::before {
+  position: absolute
+}
+
+.s::before {
+  bottom: 100%
+}
+
+.t::before {
+  border: solid transparent
+}
+
+.u::before {
+  border-width: 10px
+}
+
+.v::before {
+  border-top-width: 0px
+}
+
+.w::before {
+  border-bottom-color: #fff
+}
+
+.x::before {
+  left: initial
+}
+
+.y::before {
+  right: initial
+}
+
+.z {
+  position: relative
+}
+
+.ab:first-child {
+  border-top-width: 0px
+}
+
+.ac > a {
+  display: block
+}
+
+.ad > a {
+  padding: 0.2rem 1.06667rem
+}
+
+.ae > a {
+  cursor: pointer
+}
+
+.af > a {
+  white-space: nowrap
+}
+
+.ag > a:hover {
+  color: #fff
+}
+
+.ah > a:hover {
+  background: #2F7BBF
+}
+
+.ai > a:focus {
+  color: #fff
+}
+
+.aj > a:focus {
+  background: #76C4E2
+}
+
+.ak > a:focus {
+  outline: 5px auto -webkit-focus-ring-color
+}
+
+.al > a:focus {
+  outline-offset: -1px
+}
+
+.am > a:active {
+  color: #fff
+}
+
+.an > a:active {
+  background: #408BC9
+}
+"
+`;
+
 exports[`should render with to 1`] = `
 <ul
-  className="cf-dropdown cf-dropdown--left"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y"
   role="menu"
 >
   <li
-    className="cf-dropdown__link"
+    className="z b ab ac ad ae af ag ah ai aj ak al am an"
     role="menuitem"
   >
     <a
@@ -43,4 +262,223 @@ exports[`should render with to 1`] = `
     </a>
   </li>
 </ul>
+`;
+
+exports[`should render with to 2`] = `
+"
+@-webkit-keyframes k1 {
+  0% {
+    display: none;
+    opacity: 0
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+    top: 80%
+  }
+
+  100% {
+    display: none;
+    opacity: 1;
+    top: 102%
+  }
+}
+
+@-moz-keyframes k1 {
+  0% {
+    display: none;
+    opacity: 0
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+    top: 80%
+  }
+
+  100% {
+    display: none;
+    opacity: 1;
+    top: 102%
+  }
+}
+
+@keyframes k1 {
+  0% {
+    display: none;
+    opacity: 0
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+    top: 80%
+  }
+
+  100% {
+    display: none;
+    opacity: 1;
+    top: 102%
+  }
+}
+
+.a {
+  position: absolute
+}
+
+.b {
+  z-index: 1
+}
+
+.c {
+  min-width: 10.66667rem
+}
+
+.d {
+  margin: 0.5em 0 0
+}
+
+.e {
+  padding: 0.33333rem 0
+}
+
+.f {
+  list-style: none
+}
+
+.g {
+  background: #fff
+}
+
+.h {
+  border: 1px solid #dedede
+}
+
+.i {
+  border-radius: 2px
+}
+
+.j {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2)
+}
+
+.k {
+  left: initial
+}
+
+.l {
+  right: initial
+}
+
+.m {
+  animation-name: k1
+}
+
+.n {
+  animation-duration: 150ms;
+  -webkit-animation-duration: 150ms
+}
+
+.o {
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out
+}
+
+.p::before {
+  content: ''
+}
+
+.q::before {
+  display: block
+}
+
+.r::before {
+  position: absolute
+}
+
+.s::before {
+  bottom: 100%
+}
+
+.t::before {
+  border: solid transparent
+}
+
+.u::before {
+  border-width: 10px
+}
+
+.v::before {
+  border-top-width: 0px
+}
+
+.w::before {
+  border-bottom-color: #fff
+}
+
+.x::before {
+  left: initial
+}
+
+.y::before {
+  right: initial
+}
+
+.z {
+  position: relative
+}
+
+.ab:first-child {
+  border-top-width: 0px
+}
+
+.ac > a {
+  display: block
+}
+
+.ad > a {
+  padding: 0.2rem 1.06667rem
+}
+
+.ae > a {
+  cursor: pointer
+}
+
+.af > a {
+  white-space: nowrap
+}
+
+.ag > a:hover {
+  color: #fff
+}
+
+.ah > a:hover {
+  background: #2F7BBF
+}
+
+.ai > a:focus {
+  color: #fff
+}
+
+.aj > a:focus {
+  background: #76C4E2
+}
+
+.ak > a:focus {
+  outline: 5px auto -webkit-focus-ring-color
+}
+
+.al > a:focus {
+  outline-offset: -1px
+}
+
+.am > a:active {
+  color: #fff
+}
+
+.an > a:active {
+  background: #408BC9
+}
+"
 `;

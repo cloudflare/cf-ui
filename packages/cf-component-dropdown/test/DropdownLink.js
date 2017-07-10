@@ -1,21 +1,23 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { felaSnapshot } from 'cf-style-provider';
 import { Dropdown, DropdownLink } from '../../cf-component-dropdown/src/index';
 
 test('should render with to', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Dropdown onClose={() => {}}>
       <DropdownLink to="/foo">Route to /foo</DropdownLink>
     </Dropdown>
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render with onClick', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Dropdown onClose={() => {}}>
       <DropdownLink onClick={() => {}}>onClick handler</DropdownLink>
     </Dropdown>
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

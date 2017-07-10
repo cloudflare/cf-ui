@@ -1,5 +1,27 @@
-import Dropdown from './Dropdown';
-import DropdownLink from './DropdownLink';
-import DropdownSeparator from './DropdownSeparator';
+import { applyTheme } from 'cf-style-container';
 
-export { Dropdown, DropdownLink, DropdownSeparator };
+import DropdownUnstyled from './Dropdown';
+import DropdownTheme from './DropdownTheme';
+import DropdownLinkUnstyled from './DropdownLink';
+import DropdownLinkTheme from './DropdownLinkTheme';
+import DropdownSeparatorUnstyled from './DropdownSeparator';
+import DropdownSeparatorTheme from './DropdownTheme';
+
+const Dropdown = applyTheme(DropdownUnstyled, DropdownTheme);
+const DropdownLink = applyTheme(DropdownLinkUnstyled, DropdownLinkTheme);
+const DropdownSeparator = applyTheme(
+  DropdownSeparatorUnstyled,
+  DropdownSeparatorTheme
+);
+
+export {
+  Dropdown,
+  DropdownTheme,
+  DropdownUnstyled,
+  DropdownLink,
+  DropdownLinkTheme,
+  DropdownLinkUnstyled,
+  DropdownSeparator,
+  DropdownSeparatorTheme,
+  DropdownSeparatorUnstyled
+};

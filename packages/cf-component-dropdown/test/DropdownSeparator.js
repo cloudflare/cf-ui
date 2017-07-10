@@ -1,8 +1,9 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { felaSnapshot } from 'cf-style-provider';
 import { DropdownSeparator } from '../../cf-component-dropdown/src/index';
 
 test('should render with to', () => {
-  const component = renderer.create(<DropdownSeparator />);
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<DropdownSeparator />);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
