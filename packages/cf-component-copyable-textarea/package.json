@@ -1,7 +1,7 @@
 {
   "name": "cf-component-copyable-textarea",
   "description": "Cloudflare Copyable Textarea Component",
-  "version": "2.4.1",
+  "version": "3.0.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -11,9 +11,9 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-component-textarea": "^3.3.1",
-    "react-dom": "^0.14.2 || ^15.0.0-0",
-    "prop-types": "^15.5.8"
+    "cf-component-textarea": "^4.0.0",
+    "prop-types": "^15.5.8",
+    "react-dom": "^0.14.2 || ^15.0.0-0"
   },
   "peerDependencies": {
     "react": "^0.14.9 || ^15.0.0-0 || ^16.0.0-0"
