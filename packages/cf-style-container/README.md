@@ -22,7 +22,7 @@ We proxy/alias some useful functions from fela without changing their behaviour.
 
 Very similar to [createComponent](https://github.com/rofrischmann/fela/blob/master/packages/react-fela/docs/createComponent.md) from react-fela. However, it automatically adds PropTypes from `[type]` in case that it is a React Component.
 
-You should use this HOC every time when you want to use Fela in your component and you need only one className (one rule function).
+You should use this HOC every time when you want to use Fela in your component. **This is a primary way how to style React components**.
 
 ```jsx
 import React from 'react';
@@ -91,7 +91,7 @@ accessible as `styles.mainStyles` and `styles.legendStyles` in this case.
 
 ### applyTheme(Component, ...themes)
 
-And HOC that ties a Fela component with the theme (adds the theme to its
+A HOC that ties a Fela component with the theme (adds the theme to its
 context). The themes can be functions that takes a baseTheme and returns a new
 theme, or just an object.
 
@@ -110,6 +110,40 @@ const Heading = applyTheme(HeadingUnstyled, HeadingTheme, CustomTheme);
 <Heading />
 ```
 
+### withTheme(Component)
+
+A HOC that passes the current theme from context into the prop `theme`. This is useful
+when you need to access the theme without using `createComponent`. In other words,
+you can't create a new styled component with it.
+
+```jsx
+import { withTheme } from 'cf-style-container';
+
+const MyComponent = ({ theme }) => <div>Color: {theme.colors.hail}</div> 
+
+export default withTheme(MyComponent);
+```
+
+### withRenderer(Component)
+
+A HOC that passes the renderer from context into the prop `renderer`. This is useful
+for third party integration when you need to generate a class name and you can't create
+a new styled component with it.
+
+```jsx
+import { withRenderer } from 'cf-style-container';
+
+const MyComponent = ({ theme }) => {
+  const styles = props => ({
+    fontSize: props.fontSize,
+    color: 'red'
+  });
+  const className = renderer.renderRule(styles, { fontSize: 12 })
+  return (<div>Class name: {className}</div>);
+} 
+
+export default withRenderer(MyComponent);
+```
 
 ## mergeTheme(baseTheme, ...themes)
 
