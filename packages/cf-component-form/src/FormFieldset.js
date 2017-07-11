@@ -60,10 +60,14 @@ class FormFieldset extends React.Component {
 }
 
 FormFieldset.propTypes = {
-  layout: PropTypes.oneOf(['horizontal', 'vertical']).isRequired,
+  layout: PropTypes.oneOf(['horizontal', 'vertical']),
   styles: PropTypes.object.isRequired,
   legend: PropTypes.string.isRequired,
   children: PropTypes.node
+};
+
+FormFieldset.defaultProps = {
+  layout: 'vertical'
 };
 
 export default createComponentStyles(
