@@ -2,9 +2,91 @@
 
 exports[`should render 1`] = `
 <textarea
-  className="cf-textarea"
+  className="a b c d e f g h i j k l m n o p q r"
+  disabled={undefined}
   name="example"
+  onBlur={undefined}
   onChange={[Function]}
+  onFocus={undefined}
+  readOnly={undefined}
   value="content"
 />
+`;
+
+exports[`should render 2`] = `
+"
+.a {
+  height: initial
+}
+
+.b {
+  word-break: initial
+}
+
+.c {
+  cursor: initial
+}
+
+.d {
+  resize: initial
+}
+
+.e {
+  z-index: 0
+}
+
+.f {
+  width: 100%
+}
+
+.g {
+  margin: 0 0 0.75rem
+}
+
+.h {
+  padding: 0.45em 0.75em
+}
+
+.i {
+  border: 1px solid #BCBEC0
+}
+
+.j {
+  border-radius: 2px
+}
+
+.k {
+  vertical-align: middle
+}
+
+.l {
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+}
+
+.m {
+  font-size: 0.86667rem
+}
+
+.n {
+  background: #fff
+}
+
+.o {
+  color: #333333
+}
+
+.p {
+  outline: none
+}
+
+.q {
+  transition: border-color 0.2s ease;
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease
+}
+
+.r:hover {
+  border-color: #256298
+}
+"
 `;

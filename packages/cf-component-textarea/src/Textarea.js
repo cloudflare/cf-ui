@@ -1,19 +1,43 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import requiredIf from 'react-required-if';
+import { createComponent } from 'cf-style-container';
 
-class Textarea extends React.Component {
-  render() {
-    const { className, ...props } = this.props;
-    const classes = ['cf-textarea'];
+const styles = ({ theme }) => ({
+  height: theme.height,
+  wordBreak: theme.wordBreak,
+  cursor: theme.cursor,
+  resize: theme.resize,
 
-    if (className) classes.push(className);
-    if (this.props.disabled) classes.push('cf-textarea--disabled');
-    if (this.props.readOnly) classes.push('cf-textarea--readonly');
+  zIndex: theme.zIndex,
+  width: theme.width,
+  margin: theme.margin,
+  padding: theme.padding,
+  border: theme.border,
+  borderRadius: theme.borderRadius,
 
-    return <textarea className={classes.join(' ')} {...props} />;
+  verticalAlign: theme.verticalAlign,
+  fontFamily: theme.fontFamily,
+  fontSize: theme.fontSize,
+
+  background: theme.background,
+  color: theme.color,
+  outline: theme.outline,
+
+  transition: theme.transition,
+
+  '&:hover': {
+    borderColor: theme['&:hover'].borderColor
+  },
+
+  '&:focus': {
+    outline: theme['&:hover'].outline,
+    outlineOffset: theme['&:hover'].outlineOffset
   }
-}
+});
+
+const Textarea = props => <textarea {...props} />;
+Textarea.displayName = 'Textarea';
 
 Textarea.propTypes = {
   name: PropTypes.string.isRequired,
@@ -29,4 +53,12 @@ Textarea.propTypes = {
   onBlur: PropTypes.func
 };
 
-export default Textarea;
+export default createComponent(styles, Textarea, [
+  'name',
+  'value',
+  'disabled',
+  'readOnly',
+  'onChange',
+  'onFocus',
+  'onBlur'
+]);

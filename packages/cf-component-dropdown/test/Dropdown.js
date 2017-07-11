@@ -50,9 +50,7 @@ describe('interactions', () => {
 
     var dom = mount(felaTestContext(<Dropdown onClose={onClose} />));
 
-    // Fela renders a Stateless component so we can't just use `.getNode()` but
-    // we know that the Dropdown we want is the second element in the list.
-    const instance = dom.find('Dropdown').getNodes()[1];
+    const instance = dom.find('Dropdown').getNode();
 
     instance.handleDocumentKeydown({ keyCode: 27 });
     expect(called).toBeTruthy();
@@ -74,7 +72,7 @@ describe('interactions', () => {
         </Dropdown>
       )
     );
-    const instance = dom.find('Dropdown').getNodes()[1];
+    const instance = dom.find('Dropdown').getNode();
 
     expect(getFocusedHref()).toBe(null);
 

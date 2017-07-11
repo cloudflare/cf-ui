@@ -1,8 +1,10 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
 import jsdom from 'jsdom';
 import { mount } from 'enzyme';
-import CopyableTextarea from '../../cf-component-copyable-textarea/src/index';
+import { felaSnapshot, felaTestContext } from 'cf-style-provider';
+import {
+  CopyableTextarea
+} from '../../cf-component-copyable-textarea/src/index';
 
 beforeEach(() => {
   const doc = jsdom.jsdom('<!doctype html><html><body></body></html>');
@@ -12,7 +14,7 @@ beforeEach(() => {
 });
 
 test('should render', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <CopyableTextarea
       name="example"
       value="content"
@@ -21,17 +23,20 @@ test('should render', () => {
       pressCommandOrCtrlCToCopyText="press here"
     />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should call onCopy on focus', () => {
   let clicked = false;
   const copyableTextarea = mount(
-    <CopyableTextarea
-      name="example"
-      value="content"
-      onCopy={() => clicked = true}
-    />
+    felaTestContext(
+      <CopyableTextarea
+        name="example"
+        value="content"
+        onCopy={() => clicked = true}
+      />
+    )
   );
   copyableTextarea.find('textarea').simulate('focus');
   expect(clicked).toBeTruthy();
@@ -39,16 +44,16 @@ test('should call onCopy on focus', () => {
 
 test('should render copied help text after copying', () => {
   const copyableTextarea = mount(
-    <CopyableTextarea
-      name="example"
-      value="content"
-      copiedTextToClipboardText="copied"
-    />
+    felaTestContext(
+      <CopyableTextarea
+        name="example"
+        value="content"
+        copiedTextToClipboardText="copied"
+      />
+    )
   );
   copyableTextarea.find('textarea').simulate('focus');
-  expect(copyableTextarea.find('.cf-copyable-textarea__help-text').text()).toBe(
-    'copied'
-  );
+  expect(copyableTextarea.find('p').text()).toBe('copied');
 });
 
 test('should render press help text if copying was not successful', () => {
@@ -56,14 +61,14 @@ test('should render press help text if copying was not successful', () => {
     throw new Error('error');
   };
   const copyableTextarea = mount(
-    <CopyableTextarea
-      name="example"
-      value="content"
-      pressCommandOrCtrlCToCopyText="press here"
-    />
+    felaTestContext(
+      <CopyableTextarea
+        name="example"
+        value="content"
+        pressCommandOrCtrlCToCopyText="press here"
+      />
+    )
   );
   copyableTextarea.find('textarea').simulate('focus');
-  expect(copyableTextarea.find('.cf-copyable-textarea__help-text').text()).toBe(
-    'press here'
-  );
+  expect(copyableTextarea.find('p').text()).toBe('press here');
 });

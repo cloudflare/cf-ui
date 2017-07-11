@@ -2,20 +2,124 @@
 
 exports[`should render 1`] = `
 <div
-  className="cf-copyable-textarea"
+  className="a b"
 >
   <textarea
-    className="cf-textarea cf-textarea--readonly"
+    className="c d e f g h i j k l m n o p q r s t"
+    disabled={undefined}
     name="example"
     onBlur={[Function]}
+    onChange={undefined}
     onFocus={[Function]}
     readOnly={true}
     value="content"
   />
   <p
-    className="cf-copyable-textarea__help-text"
+    className="u v w x"
   >
     click here
   </p>
 </div>
+`;
+
+exports[`should render 2`] = `
+"
+.a {
+  margin-top: 1rem
+}
+
+.b {
+  cursor: pointer
+}
+
+.c {
+  height: 7rem
+}
+
+.d {
+  word-break: break-all
+}
+
+.e {
+  cursor: text
+}
+
+.f {
+  resize: none
+}
+
+.g {
+  z-index: 0
+}
+
+.h {
+  width: 100%
+}
+
+.i {
+  margin: 0 0 0.75rem
+}
+
+.j {
+  padding: 0.45em 0.75em
+}
+
+.k {
+  border: 1px solid #BCBEC0
+}
+
+.l {
+  border-radius: 2px
+}
+
+.m {
+  vertical-align: middle
+}
+
+.n {
+  font-family: monaco, courier, monospace
+}
+
+.o {
+  font-size: 0.86667rem
+}
+
+.p {
+  background: #fff
+}
+
+.q {
+  color: #333333
+}
+
+.r {
+  outline: none
+}
+
+.s {
+  transition: border-color 0.2s ease;
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease
+}
+
+.t:hover {
+  border-color: #256298
+}
+
+.u {
+  font-size: 0.8em
+}
+
+.v {
+  color: #7c7c7c
+}
+
+.w {
+  margin-top: -0.5em
+}
+
+.x {
+  margin-bottom: 1em
+}
+"
 `;
