@@ -1,4 +1,9 @@
 import React from 'react';
+import { createRenderer } from 'cf-style-provider';
+import { Provider } from 'react-fela';
+import { variables } from 'cf-style-const';
+import { felaSnapshot, felaTestContext } from 'cf-style-provider';
+import { shallow, mount } from 'enzyme';
 import {
   createComponent,
   createComponentStyles,
@@ -6,11 +11,10 @@ import {
   filterNone,
   filterStyle,
   mapChildren,
-  applyTheme
-} from '../../cf-style-container/src/index';
-import { variables } from 'cf-style-const';
-import { felaSnapshot } from 'cf-style-provider';
-import { shallow } from 'enzyme';
+  applyTheme,
+  withTheme,
+  withRenderer
+} from '../src/index';
 
 test('mergeThemes should return an immutable and deeply cloned object', () => {
   const themeA = () => ({ color: 'yellow' });
@@ -122,13 +126,38 @@ test('mapChildren will call a function for each child, passing its index and the
   expect(result).toHaveLength(1);
 });
 
-describe('applyTheme', () => {
-  test('will set the display name to the same display name as the wrapped component with a "Themed" prefix', () => {
-    const SomeComponent = () => <div>foo</div>;
-    SomeComponent.displayName = 'SomeComponent';
-    const ThemedComponent = applyTheme(SomeComponent, {});
+test('applyTheme will set the display name to the same display name as the wrapped component with a "Themed" prefix', () => {
+  const SomeComponent = () => <div>foo</div>;
+  SomeComponent.displayName = 'SomeComponent';
+  const ThemedComponent = applyTheme(SomeComponent, {});
 
-    const wrapper = shallow(<ThemedComponent />);
-    expect(ThemedComponent.displayName).toBe('ThemedSomeComponent');
+  const wrapper = shallow(<ThemedComponent />);
+  expect(ThemedComponent.displayName).toBe('ThemedSomeComponent');
+});
+
+test('withTheme will pass theme as a prop', () => {
+  const Component = () => <div />;
+  const WithThemeComponent = withTheme(Component);
+  const wrapper = mount(felaTestContext(<WithThemeComponent />));
+  expect(wrapper.find(Component).prop('theme')).toEqual(variables);
+});
+
+test('withRenderer will pass renderer as a prop', () => {
+  const renderer = createRenderer();
+  const styles = props => ({
+    fontSize: props.fontSize,
+    color: 'red'
   });
+
+  const Component = ({ renderer }) => {
+    const className = renderer.renderRule(styles, { fontSize: 12 });
+    return <div>{className}</div>;
+  };
+  const WithRendererComponent = withRenderer(Component);
+  const wrapper = mount(
+    <Provider renderer={renderer}><WithRendererComponent /></Provider>
+  );
+  expect(wrapper.find(Component).prop('renderer')).toEqual(renderer);
+  expect(wrapper.find(Component).text()).toBe('a b');
+  expect(renderer.renderToString()).toBe('.a{font-size:12px}.b{color:red}');
 });

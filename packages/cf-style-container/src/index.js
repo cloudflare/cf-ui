@@ -48,6 +48,30 @@ const applyTheme = (ComponentToWrap, ...themes) => {
   return ThemedComponent;
 };
 
+const withTheme = ComponentToWrap => {
+  class WithThemeComponent extends Component {
+    render() {
+      return <ComponentToWrap theme={this.context.theme} {...this.props} />;
+    }
+  }
+  WithThemeComponent.displayName = `WithTheme${ComponentToWrap.displayName}`;
+  WithThemeComponent.contextTypes = { theme: PropTypes.object };
+  return WithThemeComponent;
+};
+
+const withRenderer = ComponentToWrap => {
+  class WithRendererComponent extends Component {
+    render() {
+      return (
+        <ComponentToWrap renderer={this.context.renderer} {...this.props} />
+      );
+    }
+  }
+  WithRendererComponent.displayName = `WithRenderer${ComponentToWrap.displayName}`;
+  WithRendererComponent.contextTypes = { renderer: PropTypes.object };
+  return WithRendererComponent;
+};
+
 const createComponentStyles = (styleFunctions, component) =>
   connect(styleFunctions)(component);
 
@@ -59,7 +83,9 @@ export {
   connect,
   combineRules,
   createComponentStyles,
-  capitalize
+  capitalize,
+  withTheme,
+  withRenderer
 };
 
 // Loops the key-value pairs of a props object, and apply a filter function to
