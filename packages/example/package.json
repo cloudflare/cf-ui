@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "example",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Basic example of cf-ui usage including Fela",
   "main": "index.js",
   "author": "Vojtech Miksu <vojtech@cloudflare.com>",
@@ -14,8 +14,8 @@
     "babel-loader": "^7.1.0",
     "babel-preset-es2015": "^6.24.0",
     "babel-preset-react": "^6.23.0",
-    "cf-component-button": "^5.8.1",
-    "cf-style-provider": "^2.1.4",
+    "cf-component-button": "^5.9.0",
+    "cf-style-provider": "^2.2.0",
     "react": "^15.6.0",
     "webpack": "^3.0.0"
   }

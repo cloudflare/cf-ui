@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.2.0"></a>
+# [2.2.0](https://github.com/sejoker/cf-ui/compare/cf-style-provider@2.1.2...cf-style-provider@2.2.0) (2017-07-12)
+
+
+### Features
+
+* **cf-style-provider:** allow passing selectPrefix in cf-style-provider ([3bc1ba9](https://github.com/sejoker/cf-ui/commit/3bc1ba9))
+
+
+
+
 <a name="2.1.4"></a>
 ## [2.1.4](https://github.com/koddsson/cf-ui/compare/cf-style-provider@2.1.3...cf-style-provider@2.1.4) (2017-07-10)
 
