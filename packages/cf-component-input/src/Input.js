@@ -32,28 +32,7 @@ const styles = ({ theme }) => ({
 
 class Input extends React.Component {
   render() {
-    const {
-      type,
-      name,
-      value,
-      onChange,
-      placeholder,
-      autoComplete,
-      invalid,
-      className
-    } = this.props;
-    return (
-      <input
-        type={type}
-        name={name}
-        value={value}
-        onChange={onChange}
-        placeholder={placeholder}
-        autoComplete={autoComplete}
-        invalid={invalid}
-        className={className}
-      />
-    );
+    return <input {...this.props} />;
   }
 }
 
