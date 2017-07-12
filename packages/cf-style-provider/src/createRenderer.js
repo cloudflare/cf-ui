@@ -45,6 +45,7 @@ const createRenderer = opts => {
   return createFelaRenderer({
     plugins,
     enhancers,
+    selectorPrefix: usedOpts.selectorPrefix,
     mediaQueryOrder: [
       removePrefix(mediaQueries.mobile),
       removePrefix(mediaQueries.mobileWide),
