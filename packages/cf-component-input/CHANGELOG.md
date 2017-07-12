@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.0.1"></a>
+## [4.0.1](https://github.com/koddsson/cf-ui/compare/cf-component-input@4.0.0...cf-component-input@4.0.1) (2017-07-12)
+
+
+### Bug Fixes
+
+* **cf-component-input:** spread input props (#306) ([eeb5250](https://github.com/koddsson/cf-ui/commit/eeb5250))
+
+
+
+
 <a name="4.0.0"></a>
 # [4.0.0](https://github.com/koddsson/cf-ui/compare/cf-component-input@3.2.1...cf-component-input@4.0.0) (2017-07-12)
 
