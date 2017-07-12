@@ -1,3 +1,7 @@
-import Input from './Input';
+import InputUnstyled from './Input';
+import InputTheme from './InputTheme';
+import { applyTheme } from 'cf-style-container';
 
-export default Input;
+const Input = applyTheme(InputUnstyled, InputTheme);
+
+export { Input, InputUnstyled, InputTheme };

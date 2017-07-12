@@ -1,5 +1,5 @@
 import React from 'react';
-import Input from 'cf-component-input';
+import { Input } from 'cf-component-input';
 
 class InputComponent extends React.Component {
   constructor(props) {

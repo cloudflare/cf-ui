@@ -2,51 +2,309 @@
 
 exports[`should pass all props down to the inner input and merge classnames 1`] = `
 <input
-  className="cf-input cf-input--number cf-input--invalid klass"
-  data-shadowed={true}
-  disabled={true}
-  min={3}
+  autoComplete={undefined}
+  className="a b c d e f g h i j k l m n"
+  invalid={true}
   name="example"
   onChange={[Function]}
+  placeholder={undefined}
   type="number"
   value=""
 />
 `;
 
+exports[`should pass all props down to the inner input and merge classnames 2`] = `
+"
+.a {
+  z-index: 0
+}
+
+.b {
+  width: 100%
+}
+
+.c {
+  margin: 0 0 0.75rem
+}
+
+.d {
+  padding: 0.45em 0.75em
+}
+
+.e {
+  border: 1px solid #BCBEC0
+}
+
+.f {
+  border-radius: 2px
+}
+
+.g {
+  vertical-align: middle
+}
+
+.h {
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+}
+
+.i {
+  font-size: 0.86667rem
+}
+
+.j {
+  background: #fff
+}
+
+.k {
+  color: #333333
+}
+
+.l {
+  outline: none
+}
+
+.m {
+  transition: border-color 0.2s ease;
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease
+}
+
+.n:hover {
+  border-color: #256298
+}
+"
+`;
+
 exports[`should render 1`] = `
 <input
-  className="cf-input cf-input--text"
+  autoComplete={undefined}
+  className="a b c d e f g h i j k l m n"
+  invalid={undefined}
   name="example"
   onChange={[Function]}
+  placeholder={undefined}
   type="text"
   value="content"
 />
 `;
 
+exports[`should render 2`] = `
+"
+.a {
+  z-index: 0
+}
+
+.b {
+  width: 100%
+}
+
+.c {
+  margin: 0 0 0.75rem
+}
+
+.d {
+  padding: 0.45em 0.75em
+}
+
+.e {
+  border: 1px solid #BCBEC0
+}
+
+.f {
+  border-radius: 2px
+}
+
+.g {
+  vertical-align: middle
+}
+
+.h {
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+}
+
+.i {
+  font-size: 0.86667rem
+}
+
+.j {
+  background: #fff
+}
+
+.k {
+  color: #333333
+}
+
+.l {
+  outline: none
+}
+
+.m {
+  transition: border-color 0.2s ease;
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease
+}
+
+.n:hover {
+  border-color: #256298
+}
+"
+`;
+
 exports[`should render with autocomplete 1`] = `
 <input
   autoComplete="off"
-  className="cf-input cf-input--text"
+  className="a b c d e f g h i j k l m n"
+  invalid={undefined}
   name="example"
   onChange={[Function]}
+  placeholder={undefined}
   type="text"
   value=""
 />
+`;
+
+exports[`should render with autocomplete 2`] = `
+"
+.a {
+  z-index: 0
+}
+
+.b {
+  width: 100%
+}
+
+.c {
+  margin: 0 0 0.75rem
+}
+
+.d {
+  padding: 0.45em 0.75em
+}
+
+.e {
+  border: 1px solid #BCBEC0
+}
+
+.f {
+  border-radius: 2px
+}
+
+.g {
+  vertical-align: middle
+}
+
+.h {
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+}
+
+.i {
+  font-size: 0.86667rem
+}
+
+.j {
+  background: #fff
+}
+
+.k {
+  color: #333333
+}
+
+.l {
+  outline: none
+}
+
+.m {
+  transition: border-color 0.2s ease;
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease
+}
+
+.n:hover {
+  border-color: #256298
+}
+"
 `;
 
 exports[`should render with error 1`] = `
 <input
-  className="cf-input cf-input--text cf-input--invalid"
+  autoComplete={undefined}
+  className="a b c d e f g h i j k l m n"
+  invalid={true}
   name="example"
   onChange={[Function]}
+  placeholder={undefined}
   type="text"
   value=""
 />
 `;
 
+exports[`should render with error 2`] = `
+"
+.a {
+  z-index: 0
+}
+
+.b {
+  width: 100%
+}
+
+.c {
+  margin: 0 0 0.75rem
+}
+
+.d {
+  padding: 0.45em 0.75em
+}
+
+.e {
+  border: 1px solid #BCBEC0
+}
+
+.f {
+  border-radius: 2px
+}
+
+.g {
+  vertical-align: middle
+}
+
+.h {
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+}
+
+.i {
+  font-size: 0.86667rem
+}
+
+.j {
+  background: #fff
+}
+
+.k {
+  color: #333333
+}
+
+.l {
+  outline: none
+}
+
+.m {
+  transition: border-color 0.2s ease;
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease
+}
+
+.n:hover {
+  border-color: #256298
+}
+"
+`;
+
 exports[`should render with placeholder 1`] = `
 <input
-  className="cf-input cf-input--text"
+  autoComplete={undefined}
+  className="a b c d e f g h i j k l m n"
+  invalid={undefined}
   name="example"
   onChange={[Function]}
   placeholder="placeholder"
@@ -55,12 +313,139 @@ exports[`should render with placeholder 1`] = `
 />
 `;
 
+exports[`should render with placeholder 2`] = `
+"
+.a {
+  z-index: 0
+}
+
+.b {
+  width: 100%
+}
+
+.c {
+  margin: 0 0 0.75rem
+}
+
+.d {
+  padding: 0.45em 0.75em
+}
+
+.e {
+  border: 1px solid #BCBEC0
+}
+
+.f {
+  border-radius: 2px
+}
+
+.g {
+  vertical-align: middle
+}
+
+.h {
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+}
+
+.i {
+  font-size: 0.86667rem
+}
+
+.j {
+  background: #fff
+}
+
+.k {
+  color: #333333
+}
+
+.l {
+  outline: none
+}
+
+.m {
+  transition: border-color 0.2s ease;
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease
+}
+
+.n:hover {
+  border-color: #256298
+}
+"
+`;
+
 exports[`should render with type 1`] = `
 <input
-  className="cf-input cf-input--search"
+  autoComplete={undefined}
+  className="a b c d e f g h i j k l m n"
+  invalid={undefined}
   name="example"
   onChange={[Function]}
+  placeholder={undefined}
   type="search"
   value="content"
 />
+`;
+
+exports[`should render with type 2`] = `
+"
+.a {
+  z-index: 0
+}
+
+.b {
+  width: 100%
+}
+
+.c {
+  margin: 0 0 0.75rem
+}
+
+.d {
+  padding: 0.45em 0.75em
+}
+
+.e {
+  border: 1px solid #BCBEC0
+}
+
+.f {
+  border-radius: 2px
+}
+
+.g {
+  vertical-align: middle
+}
+
+.h {
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+}
+
+.i {
+  font-size: 0.86667rem
+}
+
+.j {
+  background: #fff
+}
+
+.k {
+  color: #333333
+}
+
+.l {
+  outline: none
+}
+
+.m {
+  transition: border-color 0.2s ease;
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease
+}
+
+.n:hover {
+  border-color: #256298
+}
+"
 `;
