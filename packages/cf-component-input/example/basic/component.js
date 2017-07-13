@@ -32,6 +32,13 @@ class InputComponent extends React.Component {
           value={this.state.inputValue}
           onChange={this.handleChange}
         />
+
+        <Input
+          disabled
+          name="example"
+          value={this.state.inputValue}
+          onChange={this.handleChange}
+        />
       </div>
     );
   }
