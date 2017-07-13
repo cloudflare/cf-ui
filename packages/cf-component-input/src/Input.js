@@ -41,6 +41,8 @@ Input.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
+  onBlur: PropTypes.func,
+  onFocus: PropTypes.func,
   placeholder: PropTypes.string,
   autoComplete: PropTypes.string,
   invalid: PropTypes.bool,
