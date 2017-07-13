@@ -2,11 +2,11 @@
 
 exports[`should render with onClick 1`] = `
 <ul
-  className="a b c d e f g h i j k l m n o p q r s t u v w x y"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z"
   role="menu"
 >
   <li
-    className="z b ab ac ad ae af ag ah ai aj ak al am an"
+    className="ab b ac ad ae af ag ah ai aj ak al am an ao"
     role="menuitem"
   >
     <a
@@ -131,112 +131,116 @@ exports[`should render with onClick 2`] = `
 }
 
 .m {
-  animation-name: k1
+  text-align: initial
 }
 
 .n {
+  animation-name: k1
+}
+
+.o {
   animation-duration: 150ms;
   -webkit-animation-duration: 150ms
 }
 
-.o {
+.p {
   animation-timing-function: ease-out;
   -webkit-animation-timing-function: ease-out
 }
 
-.p::before {
+.q::before {
   content: ''
 }
 
-.q::before {
-  display: block
-}
-
 .r::before {
-  position: absolute
+  display: block
 }
 
 .s::before {
-  bottom: 100%
+  position: absolute
 }
 
 .t::before {
-  border: solid transparent
+  bottom: 100%
 }
 
 .u::before {
-  border-width: 10px
+  border: solid transparent
 }
 
 .v::before {
-  border-top-width: 0px
+  border-width: 10px
 }
 
 .w::before {
-  border-bottom-color: #fff
-}
-
-.x::before {
-  left: initial
-}
-
-.y::before {
-  right: initial
-}
-
-.z {
-  position: relative
-}
-
-.ab:first-child {
   border-top-width: 0px
 }
 
-.ac > a {
-  display: block
+.x::before {
+  border-bottom-color: #fff
+}
+
+.y::before {
+  left: initial
+}
+
+.z::before {
+  right: initial
+}
+
+.ab {
+  position: relative
+}
+
+.ac:first-child {
+  border-top-width: 0px
 }
 
 .ad > a {
-  padding: 0.2rem 1.06667rem
+  display: block
 }
 
 .ae > a {
-  cursor: pointer
+  padding: 0.2rem 1.06667rem
 }
 
 .af > a {
+  cursor: pointer
+}
+
+.ag > a {
   white-space: nowrap
 }
 
-.ag > a:hover {
+.ah > a:hover {
   color: #fff
 }
 
-.ah > a:hover {
+.ai > a:hover {
   background: #2F7BBF
 }
 
-.ai > a:focus {
-  color: #fff
-}
-
 .aj > a:focus {
-  background: #76C4E2
+  color: #fff
 }
 
 .ak > a:focus {
-  outline: 5px auto -webkit-focus-ring-color
+  background: #76C4E2
 }
 
 .al > a:focus {
+  outline: 5px auto -webkit-focus-ring-color
+}
+
+.am > a:focus {
   outline-offset: -1px
 }
 
-.am > a:active {
+.an > a:active {
   color: #fff
 }
 
-.an > a:active {
+.ao > a:active {
   background: #408BC9
 }
 "
@@ -244,11 +248,11 @@ exports[`should render with onClick 2`] = `
 
 exports[`should render with to 1`] = `
 <ul
-  className="a b c d e f g h i j k l m n o p q r s t u v w x y"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z"
   role="menu"
 >
   <li
-    className="z b ab ac ad ae af ag ah ai aj ak al am an"
+    className="ab b ac ad ae af ag ah ai aj ak al am an ao"
     role="menuitem"
   >
     <a
@@ -372,112 +376,116 @@ exports[`should render with to 2`] = `
 }
 
 .m {
-  animation-name: k1
+  text-align: initial
 }
 
 .n {
+  animation-name: k1
+}
+
+.o {
   animation-duration: 150ms;
   -webkit-animation-duration: 150ms
 }
 
-.o {
+.p {
   animation-timing-function: ease-out;
   -webkit-animation-timing-function: ease-out
 }
 
-.p::before {
+.q::before {
   content: ''
 }
 
-.q::before {
-  display: block
-}
-
 .r::before {
-  position: absolute
+  display: block
 }
 
 .s::before {
-  bottom: 100%
+  position: absolute
 }
 
 .t::before {
-  border: solid transparent
+  bottom: 100%
 }
 
 .u::before {
-  border-width: 10px
+  border: solid transparent
 }
 
 .v::before {
-  border-top-width: 0px
+  border-width: 10px
 }
 
 .w::before {
-  border-bottom-color: #fff
-}
-
-.x::before {
-  left: initial
-}
-
-.y::before {
-  right: initial
-}
-
-.z {
-  position: relative
-}
-
-.ab:first-child {
   border-top-width: 0px
 }
 
-.ac > a {
-  display: block
+.x::before {
+  border-bottom-color: #fff
+}
+
+.y::before {
+  left: initial
+}
+
+.z::before {
+  right: initial
+}
+
+.ab {
+  position: relative
+}
+
+.ac:first-child {
+  border-top-width: 0px
 }
 
 .ad > a {
-  padding: 0.2rem 1.06667rem
+  display: block
 }
 
 .ae > a {
-  cursor: pointer
+  padding: 0.2rem 1.06667rem
 }
 
 .af > a {
+  cursor: pointer
+}
+
+.ag > a {
   white-space: nowrap
 }
 
-.ag > a:hover {
+.ah > a:hover {
   color: #fff
 }
 
-.ah > a:hover {
+.ai > a:hover {
   background: #2F7BBF
 }
 
-.ai > a:focus {
-  color: #fff
-}
-
 .aj > a:focus {
-  background: #76C4E2
+  color: #fff
 }
 
 .ak > a:focus {
-  outline: 5px auto -webkit-focus-ring-color
+  background: #76C4E2
 }
 
 .al > a:focus {
+  outline: 5px auto -webkit-focus-ring-color
+}
+
+.am > a:focus {
   outline-offset: -1px
 }
 
-.am > a:active {
+.an > a:active {
   color: #fff
 }
 
-.an > a:active {
+.ao > a:active {
   background: #408BC9
 }
 "

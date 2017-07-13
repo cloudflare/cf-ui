@@ -1,1 +1,3 @@
-export default baseTheme => ({});
+export default baseTheme => ({
+  textAlign: 'initial'
+});
