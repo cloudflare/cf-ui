@@ -1,25 +1,28 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import { Checkbox } from '../../cf-component-checkbox/src/index';
 import { shallow } from 'enzyme';
+import { felaTestContext, felaSnapshot } from 'cf-style-provider';
+
+import { Checkbox } from '../../cf-component-checkbox/src/index';
 
 test('should handle onChange', () => {
   let called = false;
   const wrapper = shallow(
-    <Checkbox
-      label="Option 1"
-      name="checkbox-option-1"
-      value="option1"
-      checked={false}
-      onChange={() => called = true}
-    />
+    felaTestContext(
+      <Checkbox
+        label="Option 1"
+        name="checkbox-option-1"
+        value="option1"
+        checked={false}
+        onChange={() => called = true}
+      />
+    )
   );
-  wrapper.find('input').simulate('change');
+  wrapper.find('ThemedCheckboxFelaWrapper').simulate('change');
   expect(called).toBeTruthy();
 });
 
 test('should render', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Checkbox
       label="Option 1"
       name="checkbox-option-1"
@@ -28,11 +31,12 @@ test('should render', () => {
       onChange={() => {}}
     />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render checked', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Checkbox
       label="Option 1"
       name="checkbox-option-1"
@@ -41,11 +45,12 @@ test('should render checked', () => {
       onChange={() => {}}
     />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render without a label', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Checkbox
       label={false}
       name="checkbox-option-1"
@@ -54,5 +59,6 @@ test('should render without a label', () => {
       onChange={() => {}}
     />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

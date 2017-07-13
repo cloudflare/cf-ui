@@ -2,12 +2,12 @@
 
 exports[`should render 1`] = `
 <label
-  className="cf-checkbox"
+  className="a b c d"
   htmlFor="checkbox-option-1"
 >
   <input
     checked={false}
-    className="cf-checkbox__input"
+    className="e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj"
     id="checkbox-option-1"
     name="checkbox-option-1"
     onChange={[Function]}
@@ -15,21 +15,187 @@ exports[`should render 1`] = `
     value="option1"
   />
   <span
-    className="cf-checkbox__label"
+    className="ak j al am an"
   >
     Option 1
   </span>
 </label>
+`;
+
+exports[`should render 2`] = `
+"
+.a {
+  cursor: pointer
+}
+
+.b {
+  display: block
+}
+
+.c {
+  min-height: 1em
+}
+
+.d {
+  padding-left: 2em
+}
+
+.e {
+  z-index: 0
+}
+
+.f {
+  border: 1px solid #bdbdbd
+}
+
+.g {
+  border-radius: 2px
+}
+
+.h {
+  vertical-align: middle
+}
+
+.i {
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+}
+
+.j {
+  font-size: 0.86667rem
+}
+
+.k {
+  background: #fff
+}
+
+.l {
+  color: #333333
+}
+
+.m {
+  outline: none
+}
+
+.n {
+  transition: border-color 0.2s ease;
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease
+}
+
+.o {
+  position: relative
+}
+
+.p {
+  height: 15px
+}
+
+.q {
+  width: 15px
+}
+
+.r {
+  margin: 1px 0 0
+}
+
+.s {
+  padding: 0px
+}
+
+.t {
+  line-height: normal
+}
+
+.u {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none
+}
+
+.v {
+  top: -1px
+}
+
+.w:hover {
+  border-color: #256298
+}
+
+.x:focus {
+  outline: 5px auto -webkit-focus-ring-color
+}
+
+.y:focus {
+  outline-offset: -1px
+}
+
+.z::before {
+  color: transparent
+}
+
+.ab::before {
+  position: absolute
+}
+
+.ac::before {
+  background-color: transparent
+}
+
+.ad::before {
+  -webkit-text-stroke: 0px
+}
+
+.ae::before {
+  transition: all 150ms ease-out;
+  -webkit-transition: all 150ms ease-out;
+  -moz-transition: all 150ms ease-out
+}
+
+.af::before {
+  content: '\\\\f009'
+}
+
+.ag::before {
+  font-family: cloudflare-font
+}
+
+.ah::before {
+  font-size: 15px
+}
+
+.ai::before {
+  left: -1px
+}
+
+.aj::before {
+  top: -1px
+}
+
+.ak {
+  display: inline
+}
+
+.al {
+  margin-bottom: 0.38333em
+}
+
+.am {
+  margin-left: 1em
+}
+
+.an {
+  min-height: 1.22em
+}
+"
 `;
 
 exports[`should render checked 1`] = `
 <label
-  className="cf-checkbox cf-checkbox--checked"
+  className="a b c d"
   htmlFor="checkbox-option-1"
 >
   <input
     checked={true}
-    className="cf-checkbox__input"
+    className="e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj"
     id="checkbox-option-1"
     name="checkbox-option-1"
     onChange={[Function]}
@@ -37,21 +203,187 @@ exports[`should render checked 1`] = `
     value="option1"
   />
   <span
-    className="cf-checkbox__label"
+    className="ak j al am an"
   >
     Option 1
   </span>
 </label>
 `;
 
+exports[`should render checked 2`] = `
+"
+.a {
+  cursor: pointer
+}
+
+.b {
+  display: block
+}
+
+.c {
+  min-height: 1em
+}
+
+.d {
+  padding-left: 2em
+}
+
+.e {
+  z-index: 0
+}
+
+.f {
+  border: 1px solid #bdbdbd
+}
+
+.g {
+  border-radius: 2px
+}
+
+.h {
+  vertical-align: middle
+}
+
+.i {
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+}
+
+.j {
+  font-size: 0.86667rem
+}
+
+.k {
+  background: #fff
+}
+
+.l {
+  color: #333333
+}
+
+.m {
+  outline: none
+}
+
+.n {
+  transition: border-color 0.2s ease;
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease
+}
+
+.o {
+  position: relative
+}
+
+.p {
+  height: 15px
+}
+
+.q {
+  width: 15px
+}
+
+.r {
+  margin: 1px 0 0
+}
+
+.s {
+  padding: 0px
+}
+
+.t {
+  line-height: normal
+}
+
+.u {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none
+}
+
+.v {
+  top: -1px
+}
+
+.w:hover {
+  border-color: #256298
+}
+
+.x:focus {
+  outline: 5px auto -webkit-focus-ring-color
+}
+
+.y:focus {
+  outline-offset: -1px
+}
+
+.z::before {
+  color: #333333
+}
+
+.ab::before {
+  position: absolute
+}
+
+.ac::before {
+  background-color: transparent
+}
+
+.ad::before {
+  -webkit-text-stroke: 0px
+}
+
+.ae::before {
+  transition: all 150ms ease-out;
+  -webkit-transition: all 150ms ease-out;
+  -moz-transition: all 150ms ease-out
+}
+
+.af::before {
+  content: '\\\\f009'
+}
+
+.ag::before {
+  font-family: cloudflare-font
+}
+
+.ah::before {
+  font-size: 15px
+}
+
+.ai::before {
+  left: -1px
+}
+
+.aj::before {
+  top: -1px
+}
+
+.ak {
+  display: inline
+}
+
+.al {
+  margin-bottom: 0.38333em
+}
+
+.am {
+  margin-left: 1em
+}
+
+.an {
+  min-height: 1.22em
+}
+"
+`;
+
 exports[`should render without a label 1`] = `
 <label
-  className="cf-checkbox"
+  className="a b c d"
   htmlFor="checkbox-option-1"
 >
   <input
     checked={false}
-    className="cf-checkbox__input"
+    className="e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj"
     id="checkbox-option-1"
     name="checkbox-option-1"
     onChange={[Function]}
@@ -59,4 +391,154 @@ exports[`should render without a label 1`] = `
     value="option1"
   />
 </label>
+`;
+
+exports[`should render without a label 2`] = `
+"
+.a {
+  cursor: pointer
+}
+
+.b {
+  display: block
+}
+
+.c {
+  min-height: 1em
+}
+
+.d {
+  padding-left: 2em
+}
+
+.e {
+  z-index: 0
+}
+
+.f {
+  border: 1px solid #bdbdbd
+}
+
+.g {
+  border-radius: 2px
+}
+
+.h {
+  vertical-align: middle
+}
+
+.i {
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+}
+
+.j {
+  font-size: 0.86667rem
+}
+
+.k {
+  background: #fff
+}
+
+.l {
+  color: #333333
+}
+
+.m {
+  outline: none
+}
+
+.n {
+  transition: border-color 0.2s ease;
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease
+}
+
+.o {
+  position: relative
+}
+
+.p {
+  height: 15px
+}
+
+.q {
+  width: 15px
+}
+
+.r {
+  margin: 1px 0 0
+}
+
+.s {
+  padding: 0px
+}
+
+.t {
+  line-height: normal
+}
+
+.u {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none
+}
+
+.v {
+  top: -1px
+}
+
+.w:hover {
+  border-color: #256298
+}
+
+.x:focus {
+  outline: 5px auto -webkit-focus-ring-color
+}
+
+.y:focus {
+  outline-offset: -1px
+}
+
+.z::before {
+  color: transparent
+}
+
+.ab::before {
+  position: absolute
+}
+
+.ac::before {
+  background-color: transparent
+}
+
+.ad::before {
+  -webkit-text-stroke: 0px
+}
+
+.ae::before {
+  transition: all 150ms ease-out;
+  -webkit-transition: all 150ms ease-out;
+  -moz-transition: all 150ms ease-out
+}
+
+.af::before {
+  content: '\\\\f009'
+}
+
+.ag::before {
+  font-family: cloudflare-font
+}
+
+.ah::before {
+  font-size: 15px
+}
+
+.ai::before {
+  left: -1px
+}
+
+.aj::before {
+  top: -1px
+}
+"
 `;
