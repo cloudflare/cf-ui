@@ -20,6 +20,7 @@ const styles = ({ theme }) => ({
   outline: theme.outline,
 
   transition: theme.transition,
+  textIndent: theme.textIndent,
 
   '&:hover': {
     borderColor: theme['&:hover'].borderColor
