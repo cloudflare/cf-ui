@@ -3,7 +3,7 @@
 exports[`should pass all props down to the inner input and merge classnames 1`] = `
 <input
   autoComplete={undefined}
-  className="a b c d e f g h i j k l m n"
+  className="a b c d e f g h i j k l m n o"
   invalid={true}
   name="example"
   onBlur={undefined}
@@ -42,36 +42,41 @@ exports[`should pass all props down to the inner input and merge classnames 2`] 
 }
 
 .g {
-  vertical-align: middle
+  flex: initial;
+  -webkit-flex: initial
 }
 
 .h {
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+  vertical-align: middle
 }
 
 .i {
-  font-size: 0.86667rem
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
 }
 
 .j {
-  background: #fff
+  font-size: 0.86667rem
 }
 
 .k {
-  color: #333333
+  background: #fff
 }
 
 .l {
-  outline: none
+  color: #333333
 }
 
 .m {
+  outline: none
+}
+
+.n {
   transition: border-color 0.2s ease;
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease
 }
 
-.n:hover {
+.o:hover {
   border-color: #256298
 }
 "
@@ -80,7 +85,7 @@ exports[`should pass all props down to the inner input and merge classnames 2`] 
 exports[`should render 1`] = `
 <input
   autoComplete={undefined}
-  className="a b c d e f g h i j k l m n"
+  className="a b c d e f g h i j k l m n o"
   invalid={undefined}
   name="example"
   onBlur={undefined}
@@ -119,36 +124,41 @@ exports[`should render 2`] = `
 }
 
 .g {
-  vertical-align: middle
+  flex: initial;
+  -webkit-flex: initial
 }
 
 .h {
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+  vertical-align: middle
 }
 
 .i {
-  font-size: 0.86667rem
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
 }
 
 .j {
-  background: #fff
+  font-size: 0.86667rem
 }
 
 .k {
-  color: #333333
+  background: #fff
 }
 
 .l {
-  outline: none
+  color: #333333
 }
 
 .m {
+  outline: none
+}
+
+.n {
   transition: border-color 0.2s ease;
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease
 }
 
-.n:hover {
+.o:hover {
   border-color: #256298
 }
 "
@@ -157,7 +167,7 @@ exports[`should render 2`] = `
 exports[`should render with autocomplete 1`] = `
 <input
   autoComplete="off"
-  className="a b c d e f g h i j k l m n"
+  className="a b c d e f g h i j k l m n o"
   invalid={undefined}
   name="example"
   onBlur={undefined}
@@ -196,36 +206,41 @@ exports[`should render with autocomplete 2`] = `
 }
 
 .g {
-  vertical-align: middle
+  flex: initial;
+  -webkit-flex: initial
 }
 
 .h {
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+  vertical-align: middle
 }
 
 .i {
-  font-size: 0.86667rem
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
 }
 
 .j {
-  background: #fff
+  font-size: 0.86667rem
 }
 
 .k {
-  color: #333333
+  background: #fff
 }
 
 .l {
-  outline: none
+  color: #333333
 }
 
 .m {
+  outline: none
+}
+
+.n {
   transition: border-color 0.2s ease;
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease
 }
 
-.n:hover {
+.o:hover {
   border-color: #256298
 }
 "
@@ -234,7 +249,7 @@ exports[`should render with autocomplete 2`] = `
 exports[`should render with error 1`] = `
 <input
   autoComplete={undefined}
-  className="a b c d e f g h i j k l m n"
+  className="a b c d e f g h i j k l m n o"
   invalid={true}
   name="example"
   onBlur={undefined}
@@ -273,36 +288,41 @@ exports[`should render with error 2`] = `
 }
 
 .g {
-  vertical-align: middle
+  flex: initial;
+  -webkit-flex: initial
 }
 
 .h {
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+  vertical-align: middle
 }
 
 .i {
-  font-size: 0.86667rem
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
 }
 
 .j {
-  background: #fff
+  font-size: 0.86667rem
 }
 
 .k {
-  color: #333333
+  background: #fff
 }
 
 .l {
-  outline: none
+  color: #333333
 }
 
 .m {
+  outline: none
+}
+
+.n {
   transition: border-color 0.2s ease;
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease
 }
 
-.n:hover {
+.o:hover {
   border-color: #256298
 }
 "
@@ -311,7 +331,7 @@ exports[`should render with error 2`] = `
 exports[`should render with placeholder 1`] = `
 <input
   autoComplete={undefined}
-  className="a b c d e f g h i j k l m n"
+  className="a b c d e f g h i j k l m n o"
   invalid={undefined}
   name="example"
   onBlur={undefined}
@@ -350,36 +370,41 @@ exports[`should render with placeholder 2`] = `
 }
 
 .g {
-  vertical-align: middle
+  flex: initial;
+  -webkit-flex: initial
 }
 
 .h {
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+  vertical-align: middle
 }
 
 .i {
-  font-size: 0.86667rem
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
 }
 
 .j {
-  background: #fff
+  font-size: 0.86667rem
 }
 
 .k {
-  color: #333333
+  background: #fff
 }
 
 .l {
-  outline: none
+  color: #333333
 }
 
 .m {
+  outline: none
+}
+
+.n {
   transition: border-color 0.2s ease;
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease
 }
 
-.n:hover {
+.o:hover {
   border-color: #256298
 }
 "
@@ -388,7 +413,7 @@ exports[`should render with placeholder 2`] = `
 exports[`should render with type 1`] = `
 <input
   autoComplete={undefined}
-  className="a b c d e f g h i j k l m n"
+  className="a b c d e f g h i j k l m n o"
   invalid={undefined}
   name="example"
   onBlur={undefined}
@@ -427,36 +452,41 @@ exports[`should render with type 2`] = `
 }
 
 .g {
-  vertical-align: middle
+  flex: initial;
+  -webkit-flex: initial
 }
 
 .h {
-  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
+  vertical-align: middle
 }
 
 .i {
-  font-size: 0.86667rem
+  font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
 }
 
 .j {
-  background: #fff
+  font-size: 0.86667rem
 }
 
 .k {
-  color: #333333
+  background: #fff
 }
 
 .l {
-  outline: none
+  color: #333333
 }
 
 .m {
+  outline: none
+}
+
+.n {
   transition: border-color 0.2s ease;
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease
 }
 
-.n:hover {
+.o:hover {
   border-color: #256298
 }
 "
