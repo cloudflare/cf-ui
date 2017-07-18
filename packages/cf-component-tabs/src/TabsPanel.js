@@ -3,13 +3,7 @@ import PropTypes from 'prop-types';
 import { createComponent } from 'cf-style-container';
 
 const styles = ({ theme }) => ({
-  backgroundColor: theme.backgroundColor,
-  borderColor: theme.borderColor,
-  borderStyle: theme.borderStyle,
-  borderTopWidth: theme.borderTopWidth,
-  borderLeftWidth: theme.borderLeftWidth,
-  borderBottomWidth: theme.borderBottomWidth,
-  borderRightWidth: theme.borderRightWidth
+  backgroundColor: theme.backgroundColor
 });
 
 class TabsPanel extends React.Component {

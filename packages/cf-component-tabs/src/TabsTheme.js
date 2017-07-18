@@ -12,22 +12,22 @@ export default baseTheme => ({
   outline: 'none',
   userSelect: 'none',
 
-  borderTopWidth: 1,
+  borderTopWidth: 0,
   borderTopWidthSelected: 2,
-  borderLeftWidth: 1,
+  borderLeftWidth: 0,
   borderBottomWidth: 1,
   borderBottomWidthSelected: 0,
-  borderRightWidth: 0,
+  borderRightWidth: 1,
 
   borderStyle: 'solid',
-  borderTopColor: '#dedede',
+  borderTopColor: baseTheme.color.smoke,
   borderTopColorSelected: baseTheme.colorBlue,
-  borderLeftColor: '#dedede',
-  borderBottomColor: '#dedede',
-  borderRightColor: '#dedede',
+  borderLeftColor: baseTheme.color.smoke,
+  borderBottomColor: baseTheme.color.smoke,
+  borderRightColor: baseTheme.color.smoke,
 
   '&:last-child': {
-    borderRightWidth: 1
+    borderRightWidth: 0
   },
 
   '&:focus': {
@@ -37,7 +37,7 @@ export default baseTheme => ({
   },
 
   '&:hover': {
-    background: '#f6f6f6',
+    background: baseTheme.color.moonshine,
     backgroundSelected: baseTheme.colorWhite,
     color: baseTheme.colorBlue
   }

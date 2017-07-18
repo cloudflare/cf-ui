@@ -2,15 +2,31 @@
 
 exports[`should render 1`] = `
 <section
-  className="cf-tabs"
+  className="a b"
 >
   <div
     aria-hidden={false}
     aria-labelledby="2"
-    className="cf-tabs__panel"
+    className="c"
     role="tabpanel"
   >
     Two
   </div>
 </section>
+`;
+
+exports[`should render 2`] = `
+"
+.a {
+  margin-top: 1.5rem
+}
+
+.b {
+  margin-bottom: 1.5rem
+}
+
+.c {
+  background-color: #fff
+}
+"
 `;
