@@ -47,7 +47,8 @@ Input.propTypes = {
   placeholder: PropTypes.string,
   autoComplete: PropTypes.string,
   invalid: PropTypes.bool,
-  className: PropTypes.string
+  className: PropTypes.string,
+  disabled: PropTypes.boolean
 };
 
 Input.defaultProps = {
