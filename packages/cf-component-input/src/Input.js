@@ -9,6 +9,7 @@ const styles = ({ theme }) => ({
   padding: theme.padding,
   border: theme.border,
   borderRadius: theme.borderRadius,
+  flex: theme.flex,
 
   verticalAlign: theme.verticalAlign,
   fontFamily: theme.fontFamily,

@@ -5,6 +5,7 @@ export default baseTheme => ({
   padding: '0.45em 0.75em',
   border: `1px solid ${baseTheme.color.hail}`,
   borderRadius: baseTheme.borderRadius,
+  flex: 'initial',
 
   verticalAlign: 'middle',
   fontFamily: baseTheme.fontFamily,
