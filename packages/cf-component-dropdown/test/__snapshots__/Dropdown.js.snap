@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <ul
-  className="a b c d e f g h i j k l m n o p q r s t u v w x y"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z"
   role="menu"
 >
   Dropdown
@@ -117,56 +117,60 @@ exports[`should render 2`] = `
 }
 
 .m {
-  animation-name: k1
+  text-align: initial
 }
 
 .n {
+  animation-name: k1
+}
+
+.o {
   animation-duration: 150ms;
   -webkit-animation-duration: 150ms
 }
 
-.o {
+.p {
   animation-timing-function: ease-out;
   -webkit-animation-timing-function: ease-out
 }
 
-.p::before {
+.q::before {
   content: ''
 }
 
-.q::before {
+.r::before {
   display: block
 }
 
-.r::before {
+.s::before {
   position: absolute
 }
 
-.s::before {
+.t::before {
   bottom: 100%
 }
 
-.t::before {
+.u::before {
   border: solid transparent
 }
 
-.u::before {
+.v::before {
   border-width: 10px
 }
 
-.v::before {
+.w::before {
   border-top-width: 0px
 }
 
-.w::before {
+.x::before {
   border-bottom-color: #fff
 }
 
-.x::before {
+.y::before {
   left: initial
 }
 
-.y::before {
+.z::before {
   right: initial
 }
 "
@@ -174,7 +178,7 @@ exports[`should render 2`] = `
 
 exports[`should render with align 1`] = `
 <ul
-  className="a b c d e f g h i j k l m n o p q r s t u v w x y"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z"
   role="menu"
 >
   Dropdown
@@ -289,56 +293,60 @@ exports[`should render with align 2`] = `
 }
 
 .m {
-  animation-name: k1
+  text-align: initial
 }
 
 .n {
+  animation-name: k1
+}
+
+.o {
   animation-duration: 150ms;
   -webkit-animation-duration: 150ms
 }
 
-.o {
+.p {
   animation-timing-function: ease-out;
   -webkit-animation-timing-function: ease-out
 }
 
-.p::before {
+.q::before {
   content: ''
 }
 
-.q::before {
+.r::before {
   display: block
 }
 
-.r::before {
+.s::before {
   position: absolute
 }
 
-.s::before {
+.t::before {
   bottom: 100%
 }
 
-.t::before {
+.u::before {
   border: solid transparent
 }
 
-.u::before {
+.v::before {
   border-width: 10px
 }
 
-.v::before {
+.w::before {
   border-top-width: 0px
 }
 
-.w::before {
+.x::before {
   border-bottom-color: #fff
 }
 
-.x::before {
+.y::before {
   left: initial
 }
 
-.y::before {
+.z::before {
   right: 10px
 }
 "

@@ -20,6 +20,8 @@ const styles = ({ theme, align }) => ({
   left: align === 'left' ? 0 : 'initial',
   right: align === 'right' ? 0 : 'initial',
 
+  textAlign: theme.textAlign,
+
   animationName: {
     '0%': {
       display: 'none',
