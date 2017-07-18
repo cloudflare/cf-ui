@@ -12,14 +12,14 @@ export default {
     desktopLarge: '97.6em'
   },
   gradient: {
-    primary: 'linear-gradient(left, #76C4E2, #85CBA8)',
-    two: 'linear-gradient(left, #8176B5, #85CBA8)',
-    three: 'linear-gradient(left, #8176B5, #76C4E2)',
-    four: 'linear-gradient(left, #8176B5, #BA77B1)',
-    five: 'linear-gradient(left, #8176B5, #F16975)',
-    six: 'linear-gradient(left, #F16975, #F69259)',
-    seven: 'linear-gradient(left, #F69259, #FFDB6F)',
-    eight: 'linear-gradient(left, #85CBA8, #FFDB6F)'
+    skyDew: 'linear-gradient(left, #76C4E2, #85CBA8)',
+    twilightDew: 'linear-gradient(left, #8176B5, #85CBA8)',
+    twilightSky: 'linear-gradient(left, #8176B5, #76C4E2)',
+    twilightSunset: 'linear-gradient(left, #8176B5, #BA77B1)',
+    twilightDawn: 'linear-gradient(left, #8176B5, #F16975)',
+    dawnSunrise: 'linear-gradient(left, #F16975, #F69259)',
+    sunriseLightning: 'linear-gradient(left, #F69259, #FFDB6F)',
+    dewLightning: 'linear-gradient(left, #85CBA8, #FFDB6F)'
   },
   color: {
     //Style guide colors
