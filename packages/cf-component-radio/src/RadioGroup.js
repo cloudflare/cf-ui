@@ -1,11 +1,28 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Radio from './Radio';
+import { createComponent, applyTheme } from 'cf-style-container';
+
+import RadioUnstyled from './Radio';
+import RadioTheme from './RadioTheme';
+
+const Radio = applyTheme(RadioUnstyled, RadioTheme, () => ({
+  marginTop: '1em',
+
+  '&:first-child': {
+    marginTop: 0
+  }
+}));
+
+const styles = () => ({
+  textAlign: 'left',
+  display: 'inline-block',
+  verticalAlign: 'middle'
+});
 
 class RadioGroup extends React.Component {
   render() {
     return (
-      <div className="cf-radio__group">
+      <div className={this.props.className}>
         {this.props.options.map(option => {
           return (
             <Radio
@@ -36,4 +53,4 @@ RadioGroup.propTypes = {
   ).isRequired
 };
 
-export default RadioGroup;
+export default createComponent(styles, RadioGroup);

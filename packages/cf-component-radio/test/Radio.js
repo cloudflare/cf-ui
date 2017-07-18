@@ -1,9 +1,10 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { felaSnapshot } from 'cf-style-provider';
+
 import { Radio } from '../../cf-component-radio/src/index';
 
 test('should render', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Radio
       label="Option 1"
       name="radio-option-1"
@@ -12,11 +13,12 @@ test('should render', () => {
       onChange={() => {}}
     />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render checked', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Radio
       label="Option 1"
       name="radio-option-1"
@@ -25,11 +27,12 @@ test('should render checked', () => {
       onChange={() => {}}
     />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render without a label', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Radio
       label={false}
       name="radio-option-1"
@@ -38,5 +41,6 @@ test('should render without a label', () => {
       onChange={() => {}}
     />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

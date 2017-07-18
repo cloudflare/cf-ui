@@ -2,12 +2,12 @@
 
 exports[`should render 1`] = `
 <label
-  className="cf-radio"
+  className="a b c d e f g"
   htmlFor="radio-option-1"
 >
   <input
     checked={false}
-    className="cf-radio__input"
+    className="h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao"
     id="radio-option-1"
     name="radio-option-1"
     onChange={[Function]}
@@ -15,21 +15,207 @@ exports[`should render 1`] = `
     value="option1"
   />
   <span
-    className="cf-radio__label"
+    className="ap l aq ar as"
   >
     Option 1
   </span>
 </label>
+`;
+
+exports[`should render 2`] = `
+"
+.a {
+  cursor: pointer
+}
+
+.b {
+  display: block
+}
+
+.c {
+  min-height: 1em
+}
+
+.d {
+  padding-left: 2em
+}
+
+.e {
+  margin-top: initial
+}
+
+.f:first-child {
+  margin-top: initial
+}
+
+.g:hover input {
+  border-color: #256298
+}
+
+.h {
+  z-index: 0
+}
+
+.i {
+  border: 1px solid #bdbdbd
+}
+
+.j {
+  vertical-align: middle
+}
+
+.k {
+  font-family: Open Sans,Helvetica,Arial,sans-serif
+}
+
+.l {
+  font-size: 0.86667rem
+}
+
+.m {
+  background: #fff
+}
+
+.n {
+  color: #333333
+}
+
+.o {
+  outline: none
+}
+
+.p {
+  transition: border-color 0.2s ease;
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease
+}
+
+.q {
+  position: relative
+}
+
+.r {
+  height: 15px
+}
+
+.s {
+  width: 15px
+}
+
+.t {
+  margin: 1px 0 0
+}
+
+.u {
+  padding: 0px
+}
+
+.v {
+  line-height: normal
+}
+
+.w {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none
+}
+
+.x {
+  top: -1px
+}
+
+.y {
+  border-radius: 50%
+}
+
+.z:hover {
+  border-color: #256298
+}
+
+.ab:focus {
+  border-color: #2f7bbf
+}
+
+.ac:focus {
+  outline: 5px auto -webkit-focus-ring-color
+}
+
+.ad:focus {
+  outline-offset: -1px
+}
+
+.ae::before {
+  content: ''
+}
+
+.af::before {
+  position: absolute
+}
+
+.ag::before {
+  background-color: transparent
+}
+
+.ah::before {
+  color: transparent
+}
+
+.ai::before {
+  -webkit-text-stroke: 0px
+}
+
+.aj::before {
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out
+}
+
+.ak::before {
+  border-radius: 50%
+}
+
+.al::before {
+  height: 3px
+}
+
+.am::before {
+  width: 3px
+}
+
+.an::before {
+  top: 5px
+}
+
+.ao::before {
+  left: 5px
+}
+
+.ap {
+  display: inline
+}
+
+.aq {
+  margin-bottom: 0.38333em
+}
+
+.ar {
+  margin-left: 1em
+}
+
+.as {
+  min-height: 1.22em
+}
+"
 `;
 
 exports[`should render checked 1`] = `
 <label
-  className="cf-radio cf-radio--checked"
+  className="a b c d e f g"
   htmlFor="radio-option-1"
 >
   <input
     checked={true}
-    className="cf-radio__input"
+    className="h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao"
     id="radio-option-1"
     name="radio-option-1"
     onChange={[Function]}
@@ -37,21 +223,207 @@ exports[`should render checked 1`] = `
     value="option1"
   />
   <span
-    className="cf-radio__label"
+    className="ap l aq ar as"
   >
     Option 1
   </span>
 </label>
 `;
 
+exports[`should render checked 2`] = `
+"
+.a {
+  cursor: pointer
+}
+
+.b {
+  display: block
+}
+
+.c {
+  min-height: 1em
+}
+
+.d {
+  padding-left: 2em
+}
+
+.e {
+  margin-top: initial
+}
+
+.f:first-child {
+  margin-top: initial
+}
+
+.g:hover input {
+  border-color: #256298
+}
+
+.h {
+  z-index: 0
+}
+
+.i {
+  border: 1px solid #bdbdbd
+}
+
+.j {
+  vertical-align: middle
+}
+
+.k {
+  font-family: Open Sans,Helvetica,Arial,sans-serif
+}
+
+.l {
+  font-size: 0.86667rem
+}
+
+.m {
+  background: #fff
+}
+
+.n {
+  color: #333333
+}
+
+.o {
+  outline: none
+}
+
+.p {
+  transition: border-color 0.2s ease;
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease
+}
+
+.q {
+  position: relative
+}
+
+.r {
+  height: 15px
+}
+
+.s {
+  width: 15px
+}
+
+.t {
+  margin: 1px 0 0
+}
+
+.u {
+  padding: 0px
+}
+
+.v {
+  line-height: normal
+}
+
+.w {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none
+}
+
+.x {
+  top: -1px
+}
+
+.y {
+  border-radius: 50%
+}
+
+.z:hover {
+  border-color: #256298
+}
+
+.ab:focus {
+  border-color: #2f7bbf
+}
+
+.ac:focus {
+  outline: 5px auto -webkit-focus-ring-color
+}
+
+.ad:focus {
+  outline-offset: -1px
+}
+
+.ae::before {
+  content: ''
+}
+
+.af::before {
+  position: absolute
+}
+
+.ag::before {
+  background-color: #333
+}
+
+.ah::before {
+  color: transparent
+}
+
+.ai::before {
+  -webkit-text-stroke: 0px
+}
+
+.aj::before {
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out
+}
+
+.ak::before {
+  border-radius: 50%
+}
+
+.al::before {
+  height: 7px
+}
+
+.am::before {
+  width: 7px
+}
+
+.an::before {
+  top: 3px
+}
+
+.ao::before {
+  left: 3px
+}
+
+.ap {
+  display: inline
+}
+
+.aq {
+  margin-bottom: 0.38333em
+}
+
+.ar {
+  margin-left: 1em
+}
+
+.as {
+  min-height: 1.22em
+}
+"
+`;
+
 exports[`should render without a label 1`] = `
 <label
-  className="cf-radio"
+  className="a b c d e f g"
   htmlFor="radio-option-1"
 >
   <input
     checked={false}
-    className="cf-radio__input"
+    className="h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao"
     id="radio-option-1"
     name="radio-option-1"
     onChange={[Function]}
@@ -59,4 +431,174 @@ exports[`should render without a label 1`] = `
     value="option1"
   />
 </label>
+`;
+
+exports[`should render without a label 2`] = `
+"
+.a {
+  cursor: pointer
+}
+
+.b {
+  display: block
+}
+
+.c {
+  min-height: 1em
+}
+
+.d {
+  padding-left: 2em
+}
+
+.e {
+  margin-top: initial
+}
+
+.f:first-child {
+  margin-top: initial
+}
+
+.g:hover input {
+  border-color: #256298
+}
+
+.h {
+  z-index: 0
+}
+
+.i {
+  border: 1px solid #bdbdbd
+}
+
+.j {
+  vertical-align: middle
+}
+
+.k {
+  font-family: Open Sans,Helvetica,Arial,sans-serif
+}
+
+.l {
+  font-size: 0.86667rem
+}
+
+.m {
+  background: #fff
+}
+
+.n {
+  color: #333333
+}
+
+.o {
+  outline: none
+}
+
+.p {
+  transition: border-color 0.2s ease;
+  -webkit-transition: border-color 0.2s ease;
+  -moz-transition: border-color 0.2s ease
+}
+
+.q {
+  position: relative
+}
+
+.r {
+  height: 15px
+}
+
+.s {
+  width: 15px
+}
+
+.t {
+  margin: 1px 0 0
+}
+
+.u {
+  padding: 0px
+}
+
+.v {
+  line-height: normal
+}
+
+.w {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none
+}
+
+.x {
+  top: -1px
+}
+
+.y {
+  border-radius: 50%
+}
+
+.z:hover {
+  border-color: #256298
+}
+
+.ab:focus {
+  border-color: #2f7bbf
+}
+
+.ac:focus {
+  outline: 5px auto -webkit-focus-ring-color
+}
+
+.ad:focus {
+  outline-offset: -1px
+}
+
+.ae::before {
+  content: ''
+}
+
+.af::before {
+  position: absolute
+}
+
+.ag::before {
+  background-color: transparent
+}
+
+.ah::before {
+  color: transparent
+}
+
+.ai::before {
+  -webkit-text-stroke: 0px
+}
+
+.aj::before {
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out
+}
+
+.ak::before {
+  border-radius: 50%
+}
+
+.al::before {
+  height: 3px
+}
+
+.am::before {
+  width: 3px
+}
+
+.an::before {
+  top: 5px
+}
+
+.ao::before {
+  left: 5px
+}
+"
 `;
