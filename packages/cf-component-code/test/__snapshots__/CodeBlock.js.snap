@@ -2,12 +2,84 @@
 
 exports[`should render 1`] = `
 <pre
-  className="cf-code__block"
+  className="a b c d e f g h i j"
 >
   <code
-    className="cf-code"
+    className="k c d l m n o p q"
   >
     Hello
   </code>
 </pre>
+`;
+
+exports[`should render 2`] = `
+"
+.a {
+  background-color: #e0e0e0
+}
+
+.b {
+  border: 1px solid #BCBEC0
+}
+
+.c {
+  font-family: monaco, courier, monospace
+}
+
+.d {
+  border-radius: 2px
+}
+
+.e {
+  display: block
+}
+
+.f {
+  width: 100%
+}
+
+.g {
+  margin: 2rem 0
+}
+
+.h {
+  padding: 0.5rem
+}
+
+.i {
+  font-size: 0.86667rem
+}
+
+.j {
+  color: #4D4D4F
+}
+
+.k {
+  border: none
+}
+
+.l {
+  display: inherit
+}
+
+.m {
+  margin-left: 0.13333em
+}
+
+.n {
+  margin-right: 0.13333em
+}
+
+.o {
+  padding: auto
+}
+
+.p {
+  vertical-align: baseline
+}
+
+.q {
+  color: inherit
+}
+"
 `;

@@ -1,8 +1,10 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { felaSnapshot } from 'cf-style-provider';
+
 import { CodeBlock } from '../../cf-component-code/src/index';
 
 test('should render', () => {
-  const component = renderer.create(<CodeBlock>Hello</CodeBlock>);
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<CodeBlock>Hello</CodeBlock>);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
