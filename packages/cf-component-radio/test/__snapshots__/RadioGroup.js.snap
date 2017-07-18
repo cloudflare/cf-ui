@@ -84,7 +84,7 @@ exports[`should render 2`] = `
 }
 
 .j:hover input {
-  border-color: #256298
+  border-color: #1E4E79
 }
 
 .k {
@@ -92,7 +92,7 @@ exports[`should render 2`] = `
 }
 
 .l {
-  border: 1px solid #bdbdbd
+  border: 1px solid #BCBEC0
 }
 
 .m {
@@ -164,7 +164,7 @@ exports[`should render 2`] = `
 }
 
 .ad:focus {
-  border-color: #2f7bbf
+  border-color: #2F7BBF
 }
 
 .ae:focus {

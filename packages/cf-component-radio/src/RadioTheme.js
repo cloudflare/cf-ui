@@ -10,6 +10,6 @@ export default baseTheme => ({
   },
 
   '&:hover input': {
-    borderColor: '#256298'
+    borderColor: baseTheme.color.deepsea
   }
 });

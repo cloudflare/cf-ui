@@ -21,14 +21,14 @@ const styles = ({ theme }) => ({
 const Input = createComponent(
   ({ theme, checked }) => ({
     zIndex: 0,
-    border: '1px solid #bdbdbd',
+    border: `1px solid ${theme.color.hail}`,
 
     verticalAlign: 'middle',
     fontFamily: 'Open Sans,Helvetica,Arial,sans-serif',
     fontSize: '0.86667rem',
 
     background: theme.colorWhite,
-    color: '#333333',
+    color: theme.color.charcoal,
     outline: 'none',
 
     transition: 'border-color 0.2s ease',
@@ -48,7 +48,7 @@ const Input = createComponent(
     },
 
     '&:focus': {
-      borderColor: '#2f7bbf',
+      borderColor: theme.color.marine,
       outline: '5px auto -webkit-focus-ring-color',
       outlineOffset: -1
     },
