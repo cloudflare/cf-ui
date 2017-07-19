@@ -26,7 +26,7 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae   s af ag"
+      className="m p ad ae s af ag"
       role={null}
     >
       <a
@@ -39,7 +39,7 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="m p ah ai   aj"
+      className="m p ah ai aj"
       role={null}
     >
       <a
@@ -52,7 +52,7 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="m p ah ai   aj"
+      className="m p ah ai aj"
       role={null}
     >
       <a
@@ -65,7 +65,7 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="m p ah ai   aj"
+      className="m p ah ai aj"
       role={null}
     >
       <a
@@ -78,7 +78,7 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="m p ah ai   aj"
+      className="m p ah ai aj"
       role={null}
     >
       <a
@@ -91,7 +91,7 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae   aj n"
+      className="m p ad ae aj n"
       role={null}
     >
       <a
@@ -283,7 +283,7 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae   s af ag"
+      className="m p ad ae s af ag"
       role={null}
     >
       <a
@@ -299,7 +299,7 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="m p ah ai   aj"
+      className="m p ah ai aj"
       role={null}
     >
       <a
@@ -312,7 +312,7 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="m p ah ai   aj"
+      className="m p ah ai aj"
       role={null}
     >
       <a
@@ -325,7 +325,7 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="m p ah ai   aj"
+      className="m p ah ai aj"
       role={null}
     >
       <a
@@ -338,7 +338,7 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="m p ah ai   aj"
+      className="m p ah ai aj"
       role={null}
     >
       <a
@@ -351,7 +351,7 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae   aj n"
+      className="m p ad ae aj n"
       role={null}
     >
       <a
@@ -543,7 +543,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae   s"
+      className="m p ad ae s"
       role={null}
     >
       <a
@@ -556,7 +556,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="m p q r   af ag ah"
+      className="m p q r af ag ah"
       role={null}
     >
       <a
@@ -569,7 +569,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae   s"
+      className="m p ad ae s"
       role={null}
     >
       <a
@@ -582,7 +582,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae   s"
+      className="m p ad ae s"
       role={null}
     >
       <a
@@ -595,7 +595,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae   s"
+      className="m p ad ae s"
       role={null}
     >
       <a
@@ -608,7 +608,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="m p q r   s n"
+      className="m p q r s n"
       role={null}
     >
       <a
@@ -792,7 +792,7 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae   s"
+      className="m p ad ae s"
       role={null}
     >
       <a
@@ -805,7 +805,7 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae   s"
+      className="m p ad ae s"
       role={null}
     >
       <a
@@ -818,7 +818,7 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae   s"
+      className="m p ad ae s"
       role={null}
     >
       <a
@@ -831,7 +831,7 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae   s"
+      className="m p ad ae s"
       role={null}
     >
       <a
@@ -844,7 +844,7 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="m p q r   af ag ah"
+      className="m p q r af ag ah"
       role={null}
     >
       <a
@@ -857,7 +857,7 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="m p ai aj   af n"
+      className="m p ai aj af n"
       role={null}
     >
       <a
@@ -1049,7 +1049,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae   s"
+      className="m p ad ae s"
       role={null}
     >
       <a
@@ -1062,7 +1062,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae   s"
+      className="m p ad ae s"
       role="presentation"
     >
       <a
@@ -1077,7 +1077,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae   s"
+      className="m p ad ae s"
       role={null}
     >
       <a
@@ -1090,7 +1090,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae   s"
+      className="m p ad ae s"
       role={null}
     >
       <a
@@ -1103,7 +1103,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="m p q r   af ag ah"
+      className="m p q r af ag ah"
       role={null}
     >
       <a
@@ -1116,7 +1116,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae   s"
+      className="m p ad ae s"
       role={null}
     >
       <a
@@ -1129,7 +1129,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae   s"
+      className="m p ad ae s"
       role={null}
     >
       <a
@@ -1142,7 +1142,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae   s"
+      className="m p ad ae s"
       role="presentation"
     >
       <a
@@ -1157,7 +1157,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae   s"
+      className="m p ad ae s"
       role={null}
     >
       <a
@@ -1170,7 +1170,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="m p q r   s n"
+      className="m p q r s n"
       role={null}
     >
       <a

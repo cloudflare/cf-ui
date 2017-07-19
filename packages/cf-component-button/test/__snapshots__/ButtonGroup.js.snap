@@ -245,7 +245,7 @@ exports[`should render 2 buttons 1`] = `
     Button
   </button>
   <button
-    className="e f g h i j k  l  m n o p  q r s  t  u v a w x y z ab ac ad ae af ag ah ai aj ak b au av aw ax ap aq ar as at"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b au av aw ax ap aq ar as at"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -473,7 +473,7 @@ exports[`should render 3 buttons 1`] = `
     Button
   </button>
   <button
-    className="e f g h i j k  l  m n o p  q r s  t  u v a w x y z ab ac ad ae af ag ah ai aj ak b al au av ao ap aq ar as at"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b al au av ao ap aq ar as at"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -481,7 +481,7 @@ exports[`should render 3 buttons 1`] = `
     Button
   </button>
   <button
-    className="e f g h i j k  l  m n o p  q r s  t  u v a w x y z ab ac ad ae af ag ah ai aj ak b aw au av ax ap aq ar as at"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b aw au av ax ap aq ar as at"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -709,7 +709,7 @@ exports[`should render 3 buttons with spacing 1`] = `
     Button
   </button>
   <button
-    className="e f g h i j k  l  m n o p  q r s  t  u v a w x y z ab ac ad ar af ag ah ai aj ak b al am an ao ap aq"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ar af ag ah ai aj ak b al am an ao ap aq"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -717,7 +717,7 @@ exports[`should render 3 buttons with spacing 1`] = `
     Button
   </button>
   <button
-    className="e f g h i j k  l  m n o p  q r s  t  u v a w x y z ab ac ad ar af ag ah ai aj ak b al am an ao ap aq"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ar af ag ah ai aj ak b al am an ao ap aq"
     disabled={undefined}
     onClick={[Function]}
     type="button"
