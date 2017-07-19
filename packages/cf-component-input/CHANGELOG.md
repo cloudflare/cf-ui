@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.2.0"></a>
+# [5.2.0](https://github.com/cloudflare/cf-ui/compare/cf-component-input@5.0.1...cf-component-input@5.2.0) (2017-07-19)
+
+
+### Bug Fixes
+
+* **cf-component-input:** add blur/focus proptypes (#308) ([d2eac76](https://github.com/cloudflare/cf-ui/commit/d2eac76))
+
+
+### Features
+
+* **cf-component-input:** allow disabled on input (#311) ([0764ff8](https://github.com/cloudflare/cf-ui/commit/0764ff8))
+* **cf-component-input:** allow flex on input (#312) ([bd965a5](https://github.com/cloudflare/cf-ui/commit/bd965a5))
+
+
+
+
 <a name="5.1.0"></a>
 # [5.1.0](https://github.com/koddsson/cf-ui/compare/cf-component-input@5.0.2...cf-component-input@5.1.0) (2017-07-18)
 
