@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<ol
+  className="a b c"
+>
+  List
+</ol>
+`;
+
+exports[`should render 2`] = `
+"
+.a {
+  list-style-type: decimal
+}
+
+.b {
+  list-style-position: outside
+}
+
+.c {
+  margin-left: 3em
+}
+"
+`;

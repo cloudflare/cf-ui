@@ -1,19 +1,15 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
+import { createComponent } from 'cf-style-container';
 
-class ListItem extends React.Component {
-  render() {
-    return (
-      <li className="cf-list__item">
-        {this.props.children}
-      </li>
-    );
-  }
-}
+const styles = () => ({});
+
+const ListItem = ({ children, className }) => (
+  <li className={className}>{children}</li>
+);
 
 ListItem.propTypes = {
   children: PropTypes.node
 };
 
-export default ListItem;
+export default createComponent(styles, ListItem);

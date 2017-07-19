@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<ul
+  className="a b c"
+>
+  List
+</ul>
+`;
+
+exports[`should render 2`] = `
+"
+.a {
+  list-style-type: disc
+}
+
+.b {
+  list-style-position: outside
+}
+
+.c {
+  margin-left: 3em
+}
+"
+`;
