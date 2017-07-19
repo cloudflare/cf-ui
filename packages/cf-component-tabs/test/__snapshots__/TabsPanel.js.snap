@@ -4,20 +4,36 @@ exports[`should render 1`] = `
 <div
   aria-hidden={true}
   aria-labelledby="tab"
-  className="cf-tabs__panel"
+  className="a"
   role="tabpanel"
 >
   TabsPanel
 </div>
 `;
 
+exports[`should render 2`] = `
+"
+.a {
+  background-color: #fff
+}
+"
+`;
+
 exports[`should render active 1`] = `
 <div
   aria-hidden={false}
   aria-labelledby="tab"
-  className="cf-tabs__panel"
+  className="a"
   role="tabpanel"
 >
   TabsPanel
 </div>
+`;
+
+exports[`should render active 2`] = `
+"
+.a {
+  background-color: #fff
+}
+"
 `;

@@ -1,6 +1,10 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
+import { createComponent } from 'cf-style-container';
+
+const styles = ({ theme }) => ({
+  backgroundColor: theme.backgroundColor
+});
 
 class TabsPanel extends React.Component {
   render() {
@@ -8,7 +12,7 @@ class TabsPanel extends React.Component {
 
     return (
       <div
-        className="cf-tabs__panel"
+        className={this.props.className}
         role="tabpanel"
         aria-labelledby={this.props.id}
         aria-hidden={!selected}
@@ -28,4 +32,4 @@ TabsPanel.contextTypes = {
   active: PropTypes.string.isRequired
 };
 
-export default TabsPanel;
+export default createComponent(styles, TabsPanel);

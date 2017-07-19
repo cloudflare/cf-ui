@@ -1,9 +1,10 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { felaSnapshot } from 'cf-style-provider';
+
 import { Tabs, TabsPanel } from '../../cf-component-tabs/src/index';
 
 test('should render', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Tabs
       active="2"
       tabs={[{ id: '1', label: 'One' }, { id: '2', label: 'Two' }]}
@@ -13,5 +14,6 @@ test('should render', () => {
       <TabsPanel id="2">Two</TabsPanel>
     </Tabs>
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

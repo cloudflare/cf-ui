@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import renderer from 'react-test-renderer';
+import { felaSnapshot } from 'cf-style-provider';
+
 import { TabsPanel } from '../../cf-component-tabs/src/index';
 
 class Context extends React.Component {
@@ -22,19 +23,21 @@ Context.childContextTypes = {
 };
 
 test('should render', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Context active="something-else">
       <TabsPanel id="tab">TabsPanel</TabsPanel>
     </Context>
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render active', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <Context active="tab">
       <TabsPanel id="tab">TabsPanel</TabsPanel>
     </Context>
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

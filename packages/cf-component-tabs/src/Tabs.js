@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Viewport from 'cf-component-viewport';
 import Select from 'cf-component-select';
+import { createComponent } from 'cf-style-container';
 
 const find = (list, condition) => {
   let foundElement = undefined;
@@ -12,6 +13,85 @@ const find = (list, condition) => {
   });
   return foundElement;
 };
+
+const styles = ({ theme }) => ({
+  marginTop: '1.5rem',
+  marginBottom: '1.5rem',
+  border: `1px solid ${theme.color.smoke}`
+});
+
+const TabsGroup = createComponent(
+  () => ({
+    display: 'flex',
+    width: '100%',
+    margin: 0,
+    padding: 0,
+    listStyle: 'none'
+  }),
+  'ul',
+  ['role']
+);
+
+const TabItem = createComponent(
+  ({ theme, selected }) => ({
+    flex: theme.flex,
+    background: theme.background,
+    color: theme.color,
+    cursor: theme.cursor,
+    display: theme.display,
+    margin: theme.margin,
+    padding: theme.padding,
+    position: theme.position,
+    textAlign: theme.textAlign,
+    verticalAlign: theme.verticalAlign,
+    outline: theme.outline,
+    userSelect: theme.userSelect,
+
+    borderStyle: theme.borderStyle,
+    borderTopWidth: selected
+      ? theme.borderTopWidthSelected
+      : theme.borderTopWidth,
+    borderLeftWidth: theme.borderLeftWidth,
+    borderBottomWidth: selected
+      ? theme.borderBottomWidthSelected
+      : theme.borderBottomWidth,
+    borderRightWidth: theme.borderRightWidth,
+    borderTopColor: selected
+      ? theme.borderTopColorSelected
+      : theme.borderTopColor,
+    borderLeftColor: theme.borderLeftColor,
+    borderBottomColor: theme.borderBottomColor,
+    borderRightColor: theme.borderRightColor,
+
+    '&:last-child': {
+      borderRightWidth: theme['&:last-child'].borderRightWidth
+    },
+
+    '&:focus': {
+      '&::after': {
+        outline: theme['&:focus']['&::after'].outline
+      }
+    },
+
+    '&:hover': {
+      background: selected
+        ? theme['&:hover'].backgroundSelected
+        : theme['&:hover'].background,
+      color: theme['&:hover'].color
+    }
+  }),
+  'li',
+  [
+    'selected',
+    'key',
+    'role',
+    'tabIndex',
+    'aria-controls',
+    'aria-selected',
+    'onKeyDown',
+    'onClick'
+  ]
+);
 
 class Tabs extends React.Component {
   getChildContext() {
@@ -34,7 +114,7 @@ class Tabs extends React.Component {
 
   render() {
     return (
-      <section className="cf-tabs">
+      <section className={this.props.className}>
         <Viewport size="mobile">
           <Select
             onChange={this.handleChange.bind(this)}
@@ -48,31 +128,25 @@ class Tabs extends React.Component {
           />
         </Viewport>
         <Viewport not size="mobile">
-          <ul className="cf-tabs__group" role="tablist">
+          <TabsGroup role="tablist">
             {this.props.tabs.map(tab => {
               const selected = tab.id === this.props.active;
-
-              let className = 'cf-tabs__item';
-              if (selected) {
-                className += ' cf-tabs__item--active';
-              }
-
               return (
-                <li
+                <TabItem
+                  selected={selected}
                   key={tab.id}
                   role="tab"
                   tabIndex={0}
                   aria-controls={tab.id}
                   aria-selected={selected}
-                  className={className}
                   onKeyDown={this.handleKeyDown.bind(this, tab.id)}
                   onClick={this.handleChange.bind(this, tab.id)}
                 >
                   {tab.label}
-                </li>
+                </TabItem>
               );
             })}
-          </ul>
+          </TabsGroup>
         </Viewport>
         {find(this.props.children, child => {
           return child.props.id === this.props.active;
@@ -98,4 +172,4 @@ Tabs.childContextTypes = {
   active: PropTypes.string.isRequired
 };
 
-export default Tabs;
+export default createComponent(styles, Tabs);
