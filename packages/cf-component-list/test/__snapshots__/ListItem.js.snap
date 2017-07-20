@@ -2,8 +2,14 @@
 
 exports[`should render 1`] = `
 <li
-  className="cf-list__item"
+  className=""
 >
   ListItem
 </li>
+`;
+
+exports[`should render 2`] = `
+"
+
+"
 `;

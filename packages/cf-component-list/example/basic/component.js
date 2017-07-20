@@ -1,25 +1,19 @@
 import React from 'react';
-import { List, ListItem } from 'cf-component-list';
+import { UnorderedList, OrderedList, ListItem } from 'cf-component-list';
 
 const ListComponent = () => (
   <div>
     <p>Basic usage:</p>
-    <List>
+    <UnorderedList>
       <ListItem>One</ListItem>
       <ListItem>Two</ListItem>
-    </List>
+    </UnorderedList>
 
     <p>Ordered list:</p>
-    <List ordered>
+    <OrderedList>
       <ListItem>One</ListItem>
       <ListItem>Two</ListItem>
-    </List>
-
-    <p>Unstyled list:</p>
-    <List unstyled>
-      <ListItem>One</ListItem>
-      <ListItem>Two</ListItem>
-    </List>
+    </OrderedList>
   </div>
 );
 
