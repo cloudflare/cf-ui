@@ -1,7 +1,7 @@
 {
   "name": "cf-component-code",
   "description": "Cloudflare Code Component",
-  "version": "2.2.1",
+  "version": "3.0.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
