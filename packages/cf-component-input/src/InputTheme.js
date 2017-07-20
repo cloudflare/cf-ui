@@ -16,6 +16,7 @@ export default baseTheme => ({
   outline: 'none',
 
   transition: 'border-color 0.2s ease',
+  textIndent: 'initial',
 
   '&:hover': {
     borderColor: '#256298'
