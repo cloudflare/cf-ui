@@ -2,8 +2,52 @@
 
 exports[`should render 1`] = `
 <code
-  className="cf-code"
+  className="a b c d e f g h i j"
 >
   Hello
 </code>
+`;
+
+exports[`should render 2`] = `
+"
+.a {
+  background-color: #e0e0e0
+}
+
+.b {
+  border: 1px solid #BCBEC0
+}
+
+.c {
+  font-family: monaco, courier, monospace
+}
+
+.d {
+  border-radius: 2px
+}
+
+.e {
+  display: inline-block
+}
+
+.f {
+  margin-left: 0.13333em
+}
+
+.g {
+  margin-right: 0.13333em
+}
+
+.h {
+  padding: 0 0.4em
+}
+
+.i {
+  vertical-align: baseline
+}
+
+.j {
+  color: #BD2527
+}
+"
 `;
