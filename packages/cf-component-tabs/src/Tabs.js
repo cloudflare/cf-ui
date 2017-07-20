@@ -34,50 +34,50 @@ const TabsGroup = createComponent(
 
 const TabItem = createComponent(
   ({ theme, selected }) => ({
-    flex: theme.flex,
-    background: theme.background,
-    color: theme.color,
-    cursor: theme.cursor,
-    display: theme.display,
-    margin: theme.margin,
-    padding: theme.padding,
-    position: theme.position,
-    textAlign: theme.textAlign,
-    verticalAlign: theme.verticalAlign,
-    outline: theme.outline,
-    userSelect: theme.userSelect,
+    flex: theme.item.flex,
+    background: theme.item.background,
+    color: theme.item.color,
+    cursor: theme.item.cursor,
+    display: theme.item.display,
+    margin: theme.item.margin,
+    padding: theme.item.padding,
+    position: theme.item.position,
+    textAlign: theme.item.textAlign,
+    verticalAlign: theme.item.verticalAlign,
+    outline: theme.item.outline,
+    userSelect: theme.item.userSelect,
 
-    borderStyle: theme.borderStyle,
+    borderStyle: theme.item.borderStyle,
     borderTopWidth: selected
-      ? theme.borderTopWidthSelected
-      : theme.borderTopWidth,
-    borderLeftWidth: theme.borderLeftWidth,
+      ? theme.item.borderTopWidthSelected
+      : theme.item.borderTopWidth,
+    borderLeftWidth: theme.item.borderLeftWidth,
     borderBottomWidth: selected
-      ? theme.borderBottomWidthSelected
-      : theme.borderBottomWidth,
-    borderRightWidth: theme.borderRightWidth,
+      ? theme.item.borderBottomWidthSelected
+      : theme.item.borderBottomWidth,
+    borderRightWidth: theme.item.borderRightWidth,
     borderTopColor: selected
-      ? theme.borderTopColorSelected
-      : theme.borderTopColor,
-    borderLeftColor: theme.borderLeftColor,
-    borderBottomColor: theme.borderBottomColor,
-    borderRightColor: theme.borderRightColor,
+      ? theme.item.borderTopColorSelected
+      : theme.item.borderTopColor,
+    borderLeftColor: theme.item.borderLeftColor,
+    borderBottomColor: theme.item.borderBottomColor,
+    borderRightColor: theme.item.borderRightColor,
 
     '&:last-child': {
-      borderRightWidth: theme['&:last-child'].borderRightWidth
+      borderRightWidth: theme.item['&:last-child'].borderRightWidth
     },
 
     '&:focus': {
       '&::after': {
-        outline: theme['&:focus']['&::after'].outline
+        outline: theme.item['&:focus']['&::after'].outline
       }
     },
 
     '&:hover': {
       background: selected
-        ? theme['&:hover'].backgroundSelected
-        : theme['&:hover'].background,
-      color: theme['&:hover'].color
+        ? theme.item['&:hover'].backgroundSelected
+        : theme.item['&:hover'].background,
+      color: theme.item['&:hover'].color
     }
   }),
   'li',
