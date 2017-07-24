@@ -6,4 +6,4 @@ before_script:
 script:
   - yarn run build
   - yarn run lint
-  - yarn test
+  - yarn test -- --runInBand

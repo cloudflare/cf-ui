@@ -50,7 +50,6 @@ test('should render with autocomplete', () => {
 test('should pass all props down to the inner input and merge classnames', () => {
   const snapshot = felaSnapshot(
     <Input
-      className="klass"
       name="example"
       value=""
       onChange={() => {}}

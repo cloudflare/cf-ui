@@ -10,7 +10,8 @@
       "**/test/**/*.js"
     ],
     "setupFiles": [
-      "./test_setup/setup-fetch.js"
+      "./test_setup/setup-fetch.js",
+      "./test_setup/patch-console.js"
     ]
   },
   "scripts": {
