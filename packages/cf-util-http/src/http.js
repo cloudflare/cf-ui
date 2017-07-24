@@ -186,7 +186,6 @@ export function request(method, url, opts, callback) {
     .catch(err => {
       logError(logMessage);
       callback && callback(err);
-      console.trace(err);
       throw err;
     });
 }

@@ -49,7 +49,7 @@ Input.propTypes = {
   autoComplete: PropTypes.string,
   invalid: PropTypes.bool,
   className: PropTypes.string,
-  disabled: PropTypes.boolean
+  disabled: PropTypes.bool
 };
 
 Input.defaultProps = {
