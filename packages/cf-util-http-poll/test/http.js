@@ -4,17 +4,15 @@ afterEach(() => fetch.mockClear());
 
 test('should poll until `isComplete` returns `true`', done => {
   function setupResponse(active) {
-    setTimeout(() => {
-      fetch.mochResponse(
-        JSON.stringify({
-          active
-        }),
-        {
-          headers: { 'Content-Type': 'application/json' },
-          status: 200
-        }
-      );
-    }, 5);
+    fetch.mockResponse(
+      JSON.stringify({
+        active
+      }),
+      {
+        headers: { 'Content-Type': 'application/json' },
+        status: 200
+      }
+    );
   }
 
   let count = 0;
@@ -46,5 +44,47 @@ test('should poll until `isComplete` returns `true`', done => {
     onError(err) {
       done(err);
     }
+  });
+});
+
+test('should throw an error if options are incorrect', () => {
+  expect(() => httpPoll('/foo')).toThrow('`poll` requires `isComplete`');
+  expect(() => httpPoll('/foo', {})).toThrow('`poll` requires `isComplete`');
+  expect(() => httpPoll('/foo', { isComplete: true })).toThrow(
+    '`poll` requires `onComplete`'
+  );
+  expect(() =>
+    httpPoll('/foo', { isComplete: true, onComplete: true })
+  ).toThrow('`poll` requires `onError`');
+});
+
+test('should cancel when instructed to do so', () => {
+  const onCancel = jest.fn();
+  const cancel = httpPoll('/foo', {
+    isComplete: true,
+    onComplete: true,
+    onError: true,
+    onCancel
+  });
+
+  cancel();
+  expect(onCancel).toHaveBeenCalled();
+});
+
+test('should call the onError callback when a error occurs', done => {
+  fetch.mockResponse(
+    JSON.stringify({
+      error: true
+    }),
+    {
+      headers: { 'Content-Type': 'application/json' },
+      status: 200
+    }
+  );
+
+  httpPoll('/status', {
+    isComplete: true,
+    onComplete: true,
+    onError: () => done()
   });
 });
