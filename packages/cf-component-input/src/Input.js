@@ -39,7 +39,30 @@ class Input extends React.Component {
 }
 
 Input.propTypes = {
-  type: PropTypes.oneOf(['text', 'email', 'number', 'password', 'search']),
+  type: PropTypes.oneOf([
+    'button',
+    'checkbox',
+    'color',
+    'date',
+    'datetime-local',
+    'email',
+    'file',
+    'hidden',
+    'image',
+    'month',
+    'number',
+    'password',
+    'radio',
+    'range',
+    'reset',
+    'search',
+    'submit',
+    'tel',
+    'text',
+    'time',
+    'url',
+    'week'
+  ]),
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
