@@ -1,12 +1,13 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import DynamicContent from '../../cf-component-dynamic-content/src/index';
+import { felaSnapshot } from 'cf-style-provider';
+import { DynamicContent } from '../../cf-component-dynamic-content/src/index';
 
 test('should render', function() {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <DynamicContent
       dangerouslySetInnerHTML={{ __html: '<p>Hello World</p>' }}
     />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

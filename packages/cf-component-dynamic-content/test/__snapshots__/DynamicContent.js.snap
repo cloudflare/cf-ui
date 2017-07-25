@@ -2,11 +2,19 @@
 
 exports[`should render 1`] = `
 <div
-  className="cf-dynamic-content"
+  className="a"
   dangerouslySetInnerHTML={
     Object {
       "__html": "<p>Hello World</p>",
     }
   }
 />
+`;
+
+exports[`should render 2`] = `
+"
+.a {
+  display: initial
+}
+"
 `;

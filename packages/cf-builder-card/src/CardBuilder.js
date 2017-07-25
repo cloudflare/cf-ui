@@ -9,7 +9,7 @@ import {
   CardDrawers,
   CardPropTypes
 } from 'cf-component-card';
-import DynamicContent from 'cf-component-dynamic-content';
+import { DynamicContent } from 'cf-component-dynamic-content';
 import markdown from 'cf-util-markdown';
 import cardActions from './cardActions';
 

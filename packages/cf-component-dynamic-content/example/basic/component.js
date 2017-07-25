@@ -1,5 +1,5 @@
 import React from 'react';
-import DynamicContent from 'cf-component-dynamic-content';
+import { DynamicContent } from 'cf-component-dynamic-content';
 
 class DynamicContentComponent extends React.Component {
   render() {
