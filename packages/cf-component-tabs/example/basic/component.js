@@ -1,5 +1,15 @@
 import React from 'react';
-import { Tabs, TabsPanel } from 'cf-component-tabs';
+import {
+  Tabs,
+  TabsItemUnstyled,
+  TabsItemTheme,
+  TabsPanel
+} from 'cf-component-tabs';
+import { applyTheme } from 'cf-style-container';
+
+const Tab = applyTheme(TabsItemUnstyled, TabsItemTheme, () => ({
+  background: '#FFFFF0'
+}));
 
 class TabsComponent extends React.Component {
   constructor(props) {
@@ -19,7 +29,7 @@ class TabsComponent extends React.Component {
         active={this.state.active}
         tabs={[
           { id: 'one', label: 'Tab One' },
-          { id: 'two', label: 'Tab Two' },
+          { id: 'two', label: 'Tab Two', component: Tab },
           { id: 'three', label: 'Tab Three' }
         ]}
         onChange={this.handleTabChange.bind(this)}
