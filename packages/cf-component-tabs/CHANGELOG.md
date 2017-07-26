@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.1.0"></a>
+# [6.1.0](https://github.com/koddsson/cf-ui/compare/cf-component-tabs@6.0.2...cf-component-tabs@6.1.0) (2017-07-26)
+
+
+### Features
+
+* **cf-component-tabs:** `TabsItem` own component (#321) ([ac8a1ab](https://github.com/koddsson/cf-ui/commit/ac8a1ab))
+
+
+
+
 <a name="6.0.2"></a>
 ## [6.0.2](https://github.com/koddsson/cf-ui/compare/cf-component-tabs@6.0.0...cf-component-tabs@6.0.2) (2017-07-20)
 
