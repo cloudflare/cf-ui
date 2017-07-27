@@ -255,7 +255,9 @@ export default {
       'block',
       'inline-block',
       'flex',
-      'inline-flex'
+      'inline-flex',
+      'table',
+      'table-cell'
     ]),
     default: 'block'
   },
