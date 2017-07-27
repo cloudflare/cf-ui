@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.2.0"></a>
+# [6.2.0](https://github.com/koddsson/cf-ui/compare/cf-component-tabs@6.1.0...cf-component-tabs@6.2.0) (2017-07-27)
+
+
+### Features
+
+* **cf-component-tabs:** allow border override (#326) ([bf5c1a7](https://github.com/koddsson/cf-ui/commit/bf5c1a7))
+
+
+
+
 <a name="6.1.0"></a>
 # [6.1.0](https://github.com/koddsson/cf-ui/compare/cf-component-tabs@6.0.2...cf-component-tabs@6.1.0) (2017-07-26)
 
