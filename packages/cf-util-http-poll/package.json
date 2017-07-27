@@ -1,7 +1,7 @@
 {
   "name": "cf-util-http-poll",
   "description": "Cloudflare HTTP Polling Util",
-  "version": "2.7.4",
+  "version": "2.7.5",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -11,6 +11,6 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-util-http": "^4.0.2"
+    "cf-util-http": "^4.0.3"
   }
 }

@@ -1,7 +1,7 @@
 {
   "name": "cf-builder-card",
   "description": "Cloudflare Card Builder",
-  "version": "2.4.2",
+  "version": "2.4.3",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
