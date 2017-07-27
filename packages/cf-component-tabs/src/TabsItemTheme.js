@@ -2,6 +2,7 @@ export default baseTheme => ({
   flex: 1,
   background: baseTheme.colorWhite,
   color: baseTheme.colorBlue,
+  colorSelected: baseTheme.colorBlue,
   cursor: 'pointer',
   display: 'table-cell',
   margin: 0,

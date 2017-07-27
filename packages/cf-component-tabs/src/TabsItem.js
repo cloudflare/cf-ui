@@ -4,7 +4,7 @@ const TabsItem = createComponent(
   ({ theme, selected }) => ({
     flex: theme.flex,
     background: theme.background,
-    color: theme.color,
+    color: selected ? theme.colorSelected : theme.color,
     cursor: theme.cursor,
     display: theme.display,
     margin: theme.margin,
