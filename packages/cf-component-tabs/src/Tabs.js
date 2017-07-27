@@ -18,7 +18,7 @@ const find = (list, condition) => {
 const styles = ({ theme }) => ({
   marginTop: theme.marginTop,
   marginBottom: theme.marginBottom,
-  border: `1px solid ${theme.color.smoke}`
+  border: theme.border
 });
 
 const TabsGroup = createComponent(
