@@ -2,12 +2,12 @@
 
 exports[`should render 1`] = `
 <section
-  className="a b c"
+  className="a b c d e"
 >
   <div
     aria-hidden={false}
     aria-labelledby="2"
-    className="d"
+    className="f"
     role="tabpanel"
   >
     Two
@@ -26,10 +26,18 @@ exports[`should render 2`] = `
 }
 
 .c {
-  border: 1px solid #e0e0e0
+  border-style: solid
 }
 
 .d {
+  border-color: #e0e0e0
+}
+
+.e {
+  border-width: 1px
+}
+
+.f {
   background-color: #fff
 }
 "
