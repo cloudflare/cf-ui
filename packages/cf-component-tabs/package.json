@@ -1,7 +1,7 @@
 {
   "name": "cf-component-tabs",
   "description": "Cloudflare Tabs Component",
-  "version": "6.2.0",
+  "version": "6.3.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
