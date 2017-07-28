@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`should render 1`] = `
-<del
-  className="cf-del"
->
-  Del
-</del>
-`;
