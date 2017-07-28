@@ -26,6 +26,7 @@ export default {
     rain: '#408BC9',
     sky: '#76C4E2',
     dew: '#85CBA8',
+    deepsea: '#1E4E79',
     twilight: '#8176B5',
     sunset: '#BA77B1',
     dawn: '#F16975',
