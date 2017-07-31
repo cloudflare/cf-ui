@@ -1,7 +1,7 @@
 {
   "name": "cf-builder-card",
   "description": "Cloudflare Card Builder",
-  "version": "2.4.3",
+  "version": "2.5.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "cf-component-card": "^2.1.1",
-    "cf-component-dynamic-content": "^2.2.1",
+    "cf-component-dynamic-content": "^2.3.0",
     "cf-util-markdown": "^3.2.0",
     "prop-types": "^15.5.8",
     "react-redux": "^5.0.5"
