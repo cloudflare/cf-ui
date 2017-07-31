@@ -10,6 +10,8 @@ global.console.trace = () => {
   throw new Error("Please don't call console.trace in the codebase");
 };
 
-global.console.log = () => {
+const log = global.console.log;
+global.console.log = message => {
+  log(message);
   throw new Error("Please don't call console.log in the codebase");
 };
