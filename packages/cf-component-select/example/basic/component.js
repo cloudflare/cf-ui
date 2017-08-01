@@ -1,5 +1,5 @@
 import React from 'react';
-import Select from 'cf-component-select';
+import { Select } from 'cf-component-select';
 
 class SelectComponent extends React.Component {
   constructor(props) {

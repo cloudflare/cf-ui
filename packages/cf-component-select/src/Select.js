@@ -1,10 +1,39 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReactSelect from 'react-select';
+import { createComponent } from 'cf-style-container';
+
+const styles = ({ theme }) => ({
+  flex: theme.flex,
+  margin: theme.margin,
+  width: theme.width,
+  display: theme.display,
+  verticalAlign: theme.verticalAlign
+});
+
+const Label = createComponent(
+  ({ theme }) => ({
+    display: 'block',
+    fontSize: '0.7em',
+    color: theme.color.storm,
+    fontWeight: 'bold',
+    textTransform: 'uppercase',
+    letterSpacing: '0.1em',
+    marginBottom: '0.5em'
+  }),
+  'label'
+);
 
 class Select extends React.Component {
   render() {
-    const { async, creatable, searchable, label, ...props } = this.props;
+    const {
+      async,
+      creatable,
+      searchable,
+      label,
+      className,
+      ...props
+    } = this.props;
 
     let SelectClass;
     if (async) {
@@ -14,8 +43,11 @@ class Select extends React.Component {
     }
 
     return (
-      <div className="cf-select">
-        {label && <label>{label}</label>}
+      <div className={className}>
+        {label &&
+          <Label>
+            {label}
+          </Label>}
         <SelectClass
           {...props}
           searchable={searchable}
@@ -34,4 +66,14 @@ Select.defaultProps = {
   creatable: false
 };
 
-export default Select;
+Select.propTypes = {
+  disabled: PropTypes.bool,
+  label: PropTypes.string,
+  value: PropTypes.number,
+  options: PropTypes.array,
+  searchable: PropTypes.bool,
+  multi: PropTypes.bool,
+  onChange: PropTypes.func
+};
+
+export default createComponent(styles, Select);
