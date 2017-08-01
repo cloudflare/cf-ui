@@ -4,6 +4,7 @@ exports[`should pass all props down to the inner input and merge classnames 1`] 
 <input
   autoComplete={undefined}
   className="a b c d e f g h i j k l m n o p"
+  defaultValue={undefined}
   disabled={true}
   invalid={true}
   name="example"
@@ -91,6 +92,7 @@ exports[`should render 1`] = `
 <input
   autoComplete={undefined}
   className="a b c d e f g h i j k l m n o p"
+  defaultValue={undefined}
   disabled={undefined}
   invalid={undefined}
   name="example"
@@ -178,6 +180,7 @@ exports[`should render with autocomplete 1`] = `
 <input
   autoComplete="off"
   className="a b c d e f g h i j k l m n o p"
+  defaultValue={undefined}
   disabled={undefined}
   invalid={undefined}
   name="example"
@@ -265,6 +268,7 @@ exports[`should render with error 1`] = `
 <input
   autoComplete={undefined}
   className="a b c d e f g h i j k l m n o p"
+  defaultValue={undefined}
   disabled={undefined}
   invalid={true}
   name="example"
@@ -352,6 +356,7 @@ exports[`should render with placeholder 1`] = `
 <input
   autoComplete={undefined}
   className="a b c d e f g h i j k l m n o p"
+  defaultValue={undefined}
   disabled={undefined}
   invalid={undefined}
   name="example"
@@ -439,6 +444,7 @@ exports[`should render with type 1`] = `
 <input
   autoComplete={undefined}
   className="a b c d e f g h i j k l m n o p"
+  defaultValue={undefined}
   disabled={undefined}
   invalid={undefined}
   name="example"
