@@ -1,5 +1,10 @@
 import React from 'react';
-import { Radio, RadioGroup } from '../../src/index';
+import { Radio, RadioUnstyled, RadioTheme, RadioGroup } from '../../src/index';
+import { applyTheme } from 'cf-style-container';
+
+const RadioGroupItem = applyTheme(RadioUnstyled, RadioTheme, () => ({
+  cursor: 'initial'
+}));
 
 class RadioComponent extends React.Component {
   constructor(props) {
@@ -19,7 +24,9 @@ class RadioComponent extends React.Component {
   render() {
     return (
       <div>
-        <p>You can create them individually with <code>Radio</code></p>
+        <p>
+          You can create them individually with <code>Radio</code>
+        </p>
 
         <Radio
           label="Option 1"
@@ -37,16 +44,22 @@ class RadioComponent extends React.Component {
           onChange={this.onRadioChange}
         />
 
-        <p>Or as a group with <code>RadioGroup</code></p>
+        <p>
+          Or as a group with <code>RadioGroup</code>
+        </p>
 
-        <RadioGroup
-          value={this.state.radioValue}
-          onChange={this.onRadioChange}
-          options={[
-            { label: 'Option 1', name: 'group-option-1', value: 'option1' },
-            { label: 'Option 2', name: 'group-option-2', value: 'option2' }
-          ]}
-        />
+        <RadioGroup value={this.state.radioValue} onChange={this.onRadioChange}>
+          <RadioGroupItem
+            label="Option 1"
+            name="group-option-1"
+            value="option1"
+          />
+          <RadioGroupItem
+            label="Option 2"
+            name="group-option-2"
+            value="option2"
+          />
+        </RadioGroup>
 
         <p>
           You can also disable a label by passing <code>false</code> explicitly
