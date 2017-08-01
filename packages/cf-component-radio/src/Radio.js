@@ -1,6 +1,86 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
+import { createComponent } from 'cf-style-container';
+
+const styles = ({ theme }) => ({
+  cursor: theme.cursor,
+  display: theme.display,
+  minHeight: theme.minHeight,
+  paddingLeft: theme.paddingLeft,
+  marginTop: theme.marginTop,
+
+  '&:first-child': {
+    marginTop: theme['&:first-child'].marginTop
+  },
+
+  '&:hover input': {
+    borderColor: theme['&:hover input'].borderColor
+  }
+});
+
+const Input = createComponent(
+  ({ theme, checked }) => ({
+    zIndex: 0,
+    border: `1px solid ${theme.color.hail}`,
+
+    verticalAlign: 'middle',
+    fontFamily: 'Open Sans,Helvetica,Arial,sans-serif',
+    fontSize: '0.86667rem',
+
+    background: theme.colorWhite,
+    color: theme.color.charcoal,
+    outline: 'none',
+
+    transition: 'border-color 0.2s ease',
+
+    position: 'relative',
+    height: 15,
+    width: 15,
+    margin: '1px 0 0',
+    padding: 0,
+    lineHeight: 'normal',
+    appearance: 'none',
+    top: -1,
+    borderRadius: '50%',
+
+    '&:hover': {
+      borderColor: '#256298'
+    },
+
+    '&:focus': {
+      borderColor: theme.color.marine,
+      outline: '5px auto -webkit-focus-ring-color',
+      outlineOffset: -1
+    },
+
+    '&::before': {
+      content: "''",
+      position: 'absolute',
+      backgroundColor: checked ? theme.colorGrayDark : 'transparent',
+      color: 'transparent',
+      '-webkit-text-stroke': 0,
+      transition: 'all 0.2s ease-out',
+      borderRadius: '50%',
+      height: checked ? 7 : 3,
+      width: checked ? 7 : 3,
+      top: checked ? 3 : 5,
+      left: checked ? 3 : 5
+    }
+  }),
+  'input',
+  ['type', 'className', 'id', 'name', 'value', 'checked', 'onChange']
+);
+
+const Label = createComponent(
+  () => ({
+    display: 'inline',
+    fontSize: '0.86667rem',
+    marginBottom: '0.38333em',
+    marginLeft: '1em',
+    minHeight: '1.22em'
+  }),
+  'span'
+);
 
 class Radio extends React.Component {
   constructor(props) {
@@ -13,27 +93,21 @@ class Radio extends React.Component {
   }
 
   render() {
-    let className = 'cf-radio';
-
-    if (this.props.checked) {
-      className += ' cf-radio--checked';
-    }
-
     return (
-      <label htmlFor={this.props.name} className={className}>
-        <input
+      <label htmlFor={this.props.name} className={this.props.className}>
+        <Input
           type="radio"
-          className="cf-radio__input"
           id={this.props.name}
           name={this.props.name}
           value={this.props.value}
           checked={this.props.checked}
           onChange={this.handleChange}
+          checked={this.props.checked}
         />
         {this.props.label &&
-          <span className="cf-radio__label">
+          <Label>
             {this.props.label}
-          </span>}
+          </Label>}
       </label>
     );
   }
@@ -48,4 +122,4 @@ Radio.propTypes = {
   onChange: PropTypes.func.isRequired
 };
 
-export default Radio;
+export default createComponent(styles, Radio);
