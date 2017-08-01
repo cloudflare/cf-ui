@@ -1,24 +1,40 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { createComponent } from 'cf-style-container';
+import { createComponent, applyTheme } from 'cf-style-container';
 
-const styles = ({ theme }) => ({
-  textAlign: theme.textAlign,
-  display: theme.display,
-  verticalAlign: theme.verticalAlign
+import RadioUnstyled from './Radio';
+import RadioTheme from './RadioTheme';
+
+const Radio = applyTheme(RadioUnstyled, RadioTheme, () => ({
+  marginTop: '1em',
+
+  '&:first-child': {
+    marginTop: 0
+  }
+}));
+
+const styles = () => ({
+  textAlign: 'left',
+  display: 'inline-block',
+  verticalAlign: 'middle'
 });
 
 class RadioGroup extends React.Component {
   render() {
     return (
       <div className={this.props.className}>
-        {React.Children.map(this.props.children, Radio =>
-          React.cloneElement(Radio, {
-            key: Radio.props.name,
-            checked: this.props.value === Radio.props.value,
-            onChange: this.props.onChange
-          })
-        )}
+        {this.props.options.map(option => {
+          return (
+            <Radio
+              key={option.name}
+              label={option.label}
+              name={option.name}
+              value={option.value}
+              checked={this.props.value === option.value}
+              onChange={this.props.onChange}
+            />
+          );
+        })}
       </div>
     );
   }
