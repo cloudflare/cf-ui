@@ -41,7 +41,8 @@ class Input extends React.Component {
 Input.propTypes = {
   type: PropTypes.oneOf(['text', 'email', 'number', 'password', 'search']),
   name: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
+  value: PropTypes.string,
+  defaultValue: PropTypes.string,
   onChange: PropTypes.func.isRequired,
   onBlur: PropTypes.func,
   onFocus: PropTypes.func,
