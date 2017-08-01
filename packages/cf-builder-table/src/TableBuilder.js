@@ -43,7 +43,7 @@ class TableBuilder extends React.Component {
           {rows.map(row => {
             const type = flashes[row.id] || row.type;
             return (
-              <TableRow key={row.id} type={type} accent={row.accent}>
+              <TableRow key={row.id} type={type}>
                 {columns.map(column => {
                   return column.cell(row.cells);
                 })}

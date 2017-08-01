@@ -1,116 +1,3123 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render a table 1`] = `
-<table
-  className="cf-table cf-table--bordered"
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
 >
-  <thead
-    className="cf-table__head"
+  <StyleProvider
+    dev={true}
   >
-    <tr
-      className="cf-table__row cf-table__row--default"
-    />
-  </thead>
-  <tbody
-    className="cf-table__body"
-  />
-</table>
+    <Provider
+      renderer={
+        Object {
+          "_emitChange": [Function],
+          "_renderStyleToCache": [Function],
+          "_renderStyleToClassNames": [Function],
+          "cache": Object {
+            "cf-1b0jccb": true,
+            "cf-46sr0r": true,
+            "cf-d1fi02": true,
+            "cf-zos2pn": true,
+          },
+          "clear": [Function],
+          "fontFaces": "",
+          "keyframePrefixes": Array [
+            "-webkit-",
+            "-moz-",
+            "",
+          ],
+          "keyframes": "",
+          "listeners": Array [
+            [Function],
+            [Function],
+          ],
+          "mediaQueryOrder": Array [],
+          "mediaRules": Object {
+            "(max-width: 47.2em)": ".cf-46sr0r {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-d1fi02 {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-1b0jccb {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-zos2pn {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }",
+            "screen and (max-width: 47.2em)": ".cf-46sr0r {
+          display: block
+        }
+        
+        .cf-d1fi02 {
+          display: none
+        }
+        
+        .cf-1b0jccb:after {
+          content: \\"\\";
+          display: table;
+          clear: both
+        }
+        
+        .cf-1b0jccb {
+          display: block;
+          padding: 0.73333333333rem;
+          border-top: none;
+          background-color: #ccc
+        }
+        
+        .cf-zos2pn {
+          display: block
+        }",
+          },
+          "plugins": Array [
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+          ],
+          "prettySelectors": false,
+          "renderFont": [Function],
+          "renderKeyframe": [Function],
+          "renderRule": [Function],
+          "renderStatic": [Function],
+          "renderToString": [Function],
+          "rules": ".cf-46sr0r {
+          background: #fff;
+          border-collapse: collapse;
+          border-spacing: 0px;
+          max-width: 100%;
+          width: 100%
+        }
+        
+        .cf-d1fi02 {
+          background: #dedede
+        }
+        
+        .cf-1b0jccb {
+          border-color: #dedede
+        }",
+          "selectorPrefix": "cf-",
+          "statics": "",
+          "styleNodes": Object {
+            "RULE": <style
+              data-fela-type="RULE"
+              type="text/css"
+        >
+              .cf-46sr0r { background: #fff; border-collapse: collapse; border-spacing: 0px; max-width: 100%; width: 100% } .cf-d1fi02 { background: #dedede } .cf-1b0jccb { border-color: #dedede }
+        </style>,
+            "RULE(max-width: 47.2em)": <style
+              data-fela-type="RULE"
+              type="text/css"
+              media="(max-width: 47.2em)"
+        >
+              .cf-46sr0r { display: block; width: 100%; box-sizing: border-box } .cf-d1fi02 { display: block; width: 100%; box-sizing: border-box } .cf-1b0jccb { display: block; width: 100%; box-sizing: border-box } .cf-zos2pn { display: block; width: 100%; box-sizing: border-box }
+        </style>,
+            "RULEscreen and (max-width: 47.2em)": <style
+              data-fela-type="RULE"
+              type="text/css"
+              media="screen and (max-width: 47.2em)"
+        >
+              .cf-46sr0r { display: block } .cf-d1fi02 { display: none } .cf-1b0jccb:after { content: ""; display: table; clear: both } .cf-1b0jccb { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .cf-zos2pn { display: block }
+        </style>,
+          },
+          "subscribe": [Function],
+          "uniqueKeyframeIdentifier": 0,
+          "uniqueRuleIdentifier": 0,
+        }
+      }
+    >
+      <ThemeProvider
+        overwrite={false}
+        theme={
+          Object {
+            "arrowSize": "5px",
+            "bodyAccentColor": "#333",
+            "bodyBackground": "#ebebeb",
+            "bodyOffsetColor": "#787878",
+            "borderRadius": "2px",
+            "boxShadow": "0 0 20px 0 rgba(136,136,136,0.50)",
+            "breakpoints": Object {
+              "desktop": "64em",
+              "desktopLarge": "97.6em",
+              "mobile": "13.6em",
+              "mobileWide": "30.4em",
+              "tablet": "47.2em",
+            },
+            "color": Object {
+              "apple": "#BD2527",
+              "carrot": "#f56500",
+              "cement": "#7D7D7D",
+              "charcoal": "#333333",
+              "dawn": "#F16975",
+              "dew": "#85CBA8",
+              "dusk": "#4D4D4F",
+              "grass": "#9BCA3E",
+              "hail": "#BCBEC0",
+              "lightning": "#FFDB6F",
+              "marine": "#2F7BBF",
+              "moonshine": "#F7F7F7",
+              "night": "#404041",
+              "rain": "#408BC9",
+              "sky": "#76C4E2",
+              "smoke": "#e0e0e0",
+              "storm": "#808285",
+              "sunrise": "#F69259",
+              "sunset": "#BA77B1",
+              "tangerine": "#FF7900",
+              "twilight": "#8176B5",
+            },
+            "colorBlack": "#000",
+            "colorBlue": "#2f7bbf",
+            "colorBlueDark": "#2869a2",
+            "colorBlueLight": "#62a1d8",
+            "colorError": "#ff3100",
+            "colorFacebookBlue": "#3b5998",
+            "colorGray": "#7c7c7c",
+            "colorGrayBorder": "#666",
+            "colorGrayDark": "#333",
+            "colorGrayLight": "#dedede",
+            "colorGrayLightOnboarding": "#F7F7F7",
+            "colorGreen": "#9bca3e",
+            "colorGreenDark": "#87b331",
+            "colorGreenLight": "#bada7a",
+            "colorImportantInformation": "rgba(64,139,201,0.2)",
+            "colorInfo": "#00a9eb",
+            "colorMainBackground": "#e6e6e6",
+            "colorMuted": "#7c7c7c",
+            "colorOffsetDark": 0.07,
+            "colorOffsetLight": 0.15,
+            "colorOrange": "#ff7900",
+            "colorOrangeDark": "#db6800",
+            "colorOrangeLight": "#ffa14d",
+            "colorOverlay": "rgba(0, 0, 0, .7)",
+            "colorPink": "#d91698",
+            "colorPinkDark": "#b91381",
+            "colorPinkLight": "#ed4eb8",
+            "colorPurple": "#9545e5",
+            "colorPurpleDark": "#b91381",
+            "colorPurpleLight": "#ed4eb8",
+            "colorRed": "#bd2527",
+            "colorRedDark": "#9f1f21",
+            "colorRedLight": "#dd5153",
+            "colorSmoke": "#f2f2f2",
+            "colorSuccess": "#68970f",
+            "colorTwitterBlue": "#00aced",
+            "colorWarning": "#fca520",
+            "colorWhite": "#fff",
+            "colorYellow": "#ffd24d",
+            "colorYellowDark": "#ffc929",
+            "colorYellowLight": "#ffe59a",
+            "disabledBackground": "#ededed",
+            "em": "1em",
+            "fontColor": "#333",
+            "fontColorHeadingCaption": "#888",
+            "fontFamily": "\\"Open Sans\\", Helvetica, Arial, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": 400,
+            "fontWeightLight": 300,
+            "gradient": Object {
+              "eight": "linear-gradient(left, #85CBA8, #FFDB6F)",
+              "five": "linear-gradient(left, #8176B5, #F16975)",
+              "four": "linear-gradient(left, #8176B5, #BA77B1)",
+              "primary": "linear-gradient(left, #76C4E2, #85CBA8)",
+              "seven": "linear-gradient(left, #F69259, #FFDB6F)",
+              "six": "linear-gradient(left, #F16975, #F69259)",
+              "three": "linear-gradient(left, #8176B5, #76C4E2)",
+              "two": "linear-gradient(left, #8176B5, #85CBA8)",
+            },
+            "inputFontSize": "13px",
+            "inputLineHeight": 1.4,
+            "lineHeight": 1.5,
+            "rem": "1rem",
+            "weightBold": 700,
+            "weightLight": 300,
+            "weightNormal": 400,
+            "weightSemiBold": 600,
+            "zIndexMax": 1000,
+          }
+        }
+      >
+        <Connect(TableBuilder)
+          columns={Array []}
+          rows={Array []}
+          tableName="test-table"
+        >
+          <TableBuilder
+            columns={Array []}
+            dispatch={[Function]}
+            flashes={Object {}}
+            rows={Array []}
+            tableName="test-table"
+          >
+            <ThemedComponent>
+              <FelaComponent>
+                <Table
+                  bare={false}
+                  bordered={true}
+                  className="cf-46sr0r"
+                  condensed={false}
+                  hover={false}
+                  is="table"
+                  striped={false}
+                >
+                  <table
+                    className="cf-46sr0r"
+                  >
+                    <ThemedComponent
+                      bare={false}
+                      bordered={true}
+                      condensed={false}
+                      hover={false}
+                      striped={false}
+                    >
+                      <FelaComponent
+                        bare={false}
+                        bordered={true}
+                        condensed={false}
+                        hover={false}
+                        striped={false}
+                      >
+                        <TableHead
+                          bare={false}
+                          bordered={true}
+                          className="cf-d1fi02"
+                          condensed={false}
+                          hover={false}
+                          is="thead"
+                          striped={false}
+                        >
+                          <thead
+                            className="cf-d1fi02"
+                          >
+                            <ThemedComponent
+                              bare={false}
+                              bordered={true}
+                              condensed={false}
+                              hover={false}
+                              rowIndex={-0}
+                              striped={false}
+                              theadIndex={0}
+                            >
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={false}
+                                hover={false}
+                                rowIndex={-0}
+                                striped={false}
+                                theadIndex={0}
+                              >
+                                <TableRow
+                                  bare={false}
+                                  bordered={true}
+                                  className="cf-1b0jccb"
+                                  condensed={false}
+                                  hover={false}
+                                  is="tr"
+                                  rowIndex={-0}
+                                  striped={false}
+                                  theadIndex={0}
+                                  type="default"
+                                >
+                                  <tr
+                                    className="cf-1b0jccb"
+                                  />
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                          </thead>
+                        </TableHead>
+                      </FelaComponent>
+                    </ThemedComponent>
+                    <ThemedComponent
+                      bare={false}
+                      bordered={true}
+                      condensed={false}
+                      hover={false}
+                      striped={false}
+                    >
+                      <FelaComponent
+                        bare={false}
+                        bordered={true}
+                        condensed={false}
+                        hover={false}
+                        striped={false}
+                      >
+                        <TableBody
+                          bare={false}
+                          bordered={true}
+                          className="cf-zos2pn"
+                          condensed={false}
+                          hover={false}
+                          is="tbody"
+                          striped={false}
+                        >
+                          <tbody
+                            className="cf-zos2pn"
+                          />
+                        </TableBody>
+                      </FelaComponent>
+                    </ThemedComponent>
+                  </table>
+                </Table>
+              </FelaComponent>
+            </ThemedComponent>
+          </TableBuilder>
+        </Connect(TableBuilder)>
+      </ThemeProvider>
+    </Provider>
+  </StyleProvider>
+</Provider>
 `;
 
 exports[`should render the dataset in columns 1`] = `
-<table
-  className="cf-table cf-table--bordered"
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
 >
-  <thead
-    className="cf-table__head"
+  <StyleProvider
+    dev={true}
   >
-    <tr
-      className="cf-table__row cf-table__row--default"
+    <Provider
+      renderer={
+        Object {
+          "_emitChange": [Function],
+          "_renderStyleToCache": [Function],
+          "_renderStyleToClassNames": [Function],
+          "cache": Object {
+            "cf-1b0jccb": true,
+            "cf-1c6l5ki": true,
+            "cf-1f59ksd": true,
+            "cf-1fm7xdg": true,
+            "cf-1k2myrb": true,
+            "cf-1uiy02g": true,
+            "cf-1ypdp8g": true,
+            "cf-46sr0r": true,
+            "cf-7ul4z3": true,
+            "cf-9x0t0g": true,
+            "cf-9yqouo": true,
+            "cf-d1fi02": true,
+            "cf-g0oihw": true,
+            "cf-t9kph0": true,
+            "cf-zos2pn": true,
+          },
+          "clear": [Function],
+          "fontFaces": "",
+          "keyframePrefixes": Array [
+            "-webkit-",
+            "-moz-",
+            "",
+          ],
+          "keyframes": "",
+          "listeners": Array [
+            [Function],
+            [Function],
+          ],
+          "mediaQueryOrder": Array [],
+          "mediaRules": Object {
+            "(max-width: 47.2em)": ".cf-46sr0r {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-d1fi02 {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-1b0jccb {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-9x0t0g {
+          display: block;
+          width: 100%;
+          box-sizing: border-box;
+          border-top-width: 0px
+        }
+        
+        .cf-7ul4z3 {
+          display: block;
+          width: 100%;
+          box-sizing: border-box;
+          border-top-width: 0px
+        }
+        
+        .cf-zos2pn {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-1c6l5ki {
+          display: block;
+          width: 100%;
+          box-sizing: border-box;
+          border-top-width: 0px
+        }
+        
+        .cf-1f59ksd {
+          display: block;
+          width: 100%;
+          box-sizing: border-box;
+          border-top-width: 0px
+        }
+        
+        .cf-1k2myrb {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-1fm7xdg {
+          display: block;
+          width: 100%;
+          box-sizing: border-box;
+          border-top-width: 0px
+        }
+        
+        .cf-1ypdp8g {
+          display: block;
+          width: 100%;
+          box-sizing: border-box;
+          border-top-width: 0px
+        }
+        
+        .cf-t9kph0 {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-g0oihw {
+          display: block;
+          width: 100%;
+          box-sizing: border-box;
+          border-top-width: 0px
+        }
+        
+        .cf-9yqouo {
+          display: block;
+          width: 100%;
+          box-sizing: border-box;
+          border-top-width: 0px
+        }
+        
+        .cf-1uiy02g {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }",
+            "screen and (max-width: 47.2em)": ".cf-46sr0r {
+          display: block
+        }
+        
+        .cf-d1fi02 {
+          display: none
+        }
+        
+        .cf-1b0jccb:after {
+          content: \\"\\";
+          display: table;
+          clear: both
+        }
+        
+        .cf-1b0jccb {
+          display: block;
+          padding: 0.73333333333rem;
+          border-top: none;
+          background-color: #ccc
+        }
+        
+        .cf-9x0t0g {
+          display: block;
+          border: none;
+          float: left;
+          clear: left;
+          padding: 0px
+        }
+        
+        .cf-7ul4z3 {
+          display: block;
+          border: none;
+          float: left;
+          clear: left;
+          padding: 0px
+        }
+        
+        .cf-zos2pn {
+          display: block
+        }
+        
+        .cf-1c6l5ki {
+          display: block;
+          border: none;
+          float: left;
+          clear: left;
+          padding: 0px
+        }
+        
+        .cf-1f59ksd {
+          display: block;
+          border: none;
+          float: left;
+          clear: left;
+          padding: 0px
+        }
+        
+        .cf-1k2myrb:after {
+          content: \\"\\";
+          display: table;
+          clear: both
+        }
+        
+        .cf-1k2myrb {
+          display: block;
+          padding: 0.73333333333rem;
+          border-top: 1px solid #dedede;
+          background-color: #ccc
+        }
+        
+        .cf-1fm7xdg {
+          display: block;
+          border: none;
+          float: left;
+          clear: left;
+          padding: 0px
+        }
+        
+        .cf-1ypdp8g {
+          display: block;
+          border: none;
+          float: left;
+          clear: left;
+          padding: 0px
+        }
+        
+        .cf-t9kph0:after {
+          content: \\"\\";
+          display: table;
+          clear: both
+        }
+        
+        .cf-t9kph0:hover> td {
+          background-color: transparent
+        }
+        
+        .cf-t9kph0 {
+          display: block;
+          padding: 0.73333333333rem;
+          border-top: none;
+          background-color: #ccc
+        }
+        
+        .cf-g0oihw {
+          display: block;
+          border: none;
+          float: left;
+          clear: left;
+          padding: 0px
+        }
+        
+        .cf-9yqouo {
+          display: block;
+          border: none;
+          float: left;
+          clear: left;
+          padding: 0px
+        }
+        
+        .cf-1uiy02g:after {
+          content: \\"\\";
+          display: table;
+          clear: both
+        }
+        
+        .cf-1uiy02g:hover> td {
+          background-color: transparent
+        }
+        
+        .cf-1uiy02g {
+          display: block;
+          padding: 0.73333333333rem;
+          border-top: 1px solid #dedede;
+          background-color: #ccc
+        }",
+          },
+          "plugins": Array [
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+          ],
+          "prettySelectors": false,
+          "renderFont": [Function],
+          "renderKeyframe": [Function],
+          "renderRule": [Function],
+          "renderStatic": [Function],
+          "renderToString": [Function],
+          "rules": ".cf-46sr0r {
+          background: #fff;
+          border-collapse: collapse;
+          border-spacing: 0px;
+          max-width: 100%;
+          width: 100%
+        }
+        
+        .cf-d1fi02 {
+          background: #dedede
+        }
+        
+        .cf-1b0jccb {
+          border-color: #dedede
+        }
+        
+        .cf-9x0t0g:first-letter {
+          text-transform: capitalize
+        }
+        
+        .cf-9x0t0g {
+          border-top: 1px solid #dedede;
+          line-height: 1.5;
+          padding: 0.73333333333rem;
+          vertical-align: middle;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          border-left: 1px solid #dedede;
+          text-align: left;
+          font-weight: 600
+        }
+        
+        .cf-7ul4z3:first-letter {
+          text-transform: capitalize
+        }
+        
+        .cf-7ul4z3 {
+          border-top: 1px solid #dedede;
+          line-height: 1.5;
+          padding: 0.73333333333rem;
+          vertical-align: middle;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          border-left: 1px solid #dedede;
+          text-align: left;
+          font-weight: 600
+        }
+        
+        .cf-1c6l5ki {
+          border-top: 1px solid #dedede;
+          line-height: 1.5;
+          padding: 0.73333333333rem;
+          vertical-align: middle;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          border-left: 1px solid #dedede
+        }
+        
+        .cf-1f59ksd {
+          border-top: 1px solid #dedede;
+          line-height: 1.5;
+          padding: 0.73333333333rem;
+          vertical-align: middle;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          border-left: 1px solid #dedede
+        }
+        
+        .cf-1k2myrb {
+          border-color: #dedede
+        }
+        
+        .cf-1fm7xdg:first-letter {
+          text-transform: capitalize
+        }
+        
+        .cf-1fm7xdg {
+          border-top: 0px;
+          line-height: 1.5;
+          padding: 0.73333333333rem;
+          vertical-align: bottom;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          border-left: 1px solid #dedede;
+          text-align: left;
+          font-weight: 600;
+          border-top-left-radius: 2px
+        }
+        
+        .cf-1ypdp8g:first-letter {
+          text-transform: capitalize
+        }
+        
+        .cf-1ypdp8g {
+          border-top: 0px;
+          line-height: 1.5;
+          padding: 0.73333333333rem;
+          vertical-align: bottom;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          border-left: 1px solid #dedede;
+          text-align: left;
+          font-weight: 600;
+          border-top-right-radius: 2px
+        }
+        
+        .cf-t9kph0 {
+          border-color: #dedede
+        }
+        
+        .cf-g0oihw {
+          border-top: 0px;
+          line-height: 1.5;
+          padding: 0.73333333333rem;
+          vertical-align: middle;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          border-top-left-radius: 2px;
+          border-left: 1px solid #dedede
+        }
+        
+        .cf-9yqouo {
+          border-top: 0px;
+          line-height: 1.5;
+          padding: 0.73333333333rem;
+          vertical-align: middle;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          border-top-right-radius: 2px;
+          border-left: 1px solid #dedede
+        }
+        
+        .cf-1uiy02g {
+          border-color: #dedede
+        }",
+          "selectorPrefix": "cf-",
+          "statics": "",
+          "styleNodes": Object {
+            "RULE": <style
+              data-fela-type="RULE"
+              type="text/css"
+        >
+              .cf-46sr0r { background: #fff; border-collapse: collapse; border-spacing: 0px; max-width: 100%; width: 100% } .cf-d1fi02 { background: #dedede } .cf-1b0jccb { border-color: #dedede } .cf-9x0t0g:first-letter { text-transform: capitalize } .cf-9x0t0g { border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 1px solid #dedede; text-align: left; font-weight: 600 } .cf-7ul4z3:first-letter { text-transform: capitalize } .cf-7ul4z3 { border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 1px solid #dedede; text-align: left; font-weight: 600 } .cf-1c6l5ki { border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 1px solid #dedede } .cf-1f59ksd { border-top: 1px solid #dedede; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 1px solid #dedede } .cf-1k2myrb { border-color: #dedede } .cf-1fm7xdg:first-letter { text-transform: capitalize } .cf-1fm7xdg { border-top: 0px; line-height: 1.5; padding: 0.73333333333rem; vertical-align: bottom; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 1px solid #dedede; text-align: left; font-weight: 600; border-top-left-radius: 2px } .cf-1ypdp8g:first-letter { text-transform: capitalize } .cf-1ypdp8g { border-top: 0px; line-height: 1.5; padding: 0.73333333333rem; vertical-align: bottom; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-left: 1px solid #dedede; text-align: left; font-weight: 600; border-top-right-radius: 2px } .cf-t9kph0 { border-color: #dedede } .cf-g0oihw { border-top: 0px; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-top-left-radius: 2px; border-left: 1px solid #dedede } .cf-9yqouo { border-top: 0px; line-height: 1.5; padding: 0.73333333333rem; vertical-align: middle; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; border-top-right-radius: 2px; border-left: 1px solid #dedede } .cf-1uiy02g { border-color: #dedede }
+        </style>,
+            "RULE(max-width: 47.2em)": <style
+              data-fela-type="RULE"
+              type="text/css"
+              media="(max-width: 47.2em)"
+        >
+              .cf-46sr0r { display: block; width: 100%; box-sizing: border-box } .cf-d1fi02 { display: block; width: 100%; box-sizing: border-box } .cf-1b0jccb { display: block; width: 100%; box-sizing: border-box } .cf-9x0t0g { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .cf-7ul4z3 { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .cf-zos2pn { display: block; width: 100%; box-sizing: border-box } .cf-1c6l5ki { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .cf-1f59ksd { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .cf-1k2myrb { display: block; width: 100%; box-sizing: border-box } .cf-1fm7xdg { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .cf-1ypdp8g { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .cf-t9kph0 { display: block; width: 100%; box-sizing: border-box } .cf-g0oihw { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .cf-9yqouo { display: block; width: 100%; box-sizing: border-box; border-top-width: 0px } .cf-1uiy02g { display: block; width: 100%; box-sizing: border-box }
+        </style>,
+            "RULEscreen and (max-width: 47.2em)": <style
+              data-fela-type="RULE"
+              type="text/css"
+              media="screen and (max-width: 47.2em)"
+        >
+              .cf-46sr0r { display: block } .cf-d1fi02 { display: none } .cf-1b0jccb:after { content: ""; display: table; clear: both } .cf-1b0jccb { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .cf-9x0t0g { display: block; border: none; float: left; clear: left; padding: 0px } .cf-7ul4z3 { display: block; border: none; float: left; clear: left; padding: 0px } .cf-zos2pn { display: block } .cf-1c6l5ki { display: block; border: none; float: left; clear: left; padding: 0px } .cf-1f59ksd { display: block; border: none; float: left; clear: left; padding: 0px } .cf-1k2myrb:after { content: ""; display: table; clear: both } .cf-1k2myrb { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc } .cf-1fm7xdg { display: block; border: none; float: left; clear: left; padding: 0px } .cf-1ypdp8g { display: block; border: none; float: left; clear: left; padding: 0px } .cf-t9kph0:after { content: ""; display: table; clear: both } .cf-t9kph0:hover> td { background-color: transparent } .cf-t9kph0 { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .cf-g0oihw { display: block; border: none; float: left; clear: left; padding: 0px } .cf-9yqouo { display: block; border: none; float: left; clear: left; padding: 0px } .cf-1uiy02g:after { content: ""; display: table; clear: both } .cf-1uiy02g:hover> td { background-color: transparent } .cf-1uiy02g { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc }
+        </style>,
+          },
+          "subscribe": [Function],
+          "uniqueKeyframeIdentifier": 0,
+          "uniqueRuleIdentifier": 0,
+        }
+      }
     >
-      <th
-        className="cf-table__cell cf-table__cell--head"
+      <ThemeProvider
+        overwrite={false}
+        theme={
+          Object {
+            "arrowSize": "5px",
+            "bodyAccentColor": "#333",
+            "bodyBackground": "#ebebeb",
+            "bodyOffsetColor": "#787878",
+            "borderRadius": "2px",
+            "boxShadow": "0 0 20px 0 rgba(136,136,136,0.50)",
+            "breakpoints": Object {
+              "desktop": "64em",
+              "desktopLarge": "97.6em",
+              "mobile": "13.6em",
+              "mobileWide": "30.4em",
+              "tablet": "47.2em",
+            },
+            "color": Object {
+              "apple": "#BD2527",
+              "carrot": "#f56500",
+              "cement": "#7D7D7D",
+              "charcoal": "#333333",
+              "dawn": "#F16975",
+              "dew": "#85CBA8",
+              "dusk": "#4D4D4F",
+              "grass": "#9BCA3E",
+              "hail": "#BCBEC0",
+              "lightning": "#FFDB6F",
+              "marine": "#2F7BBF",
+              "moonshine": "#F7F7F7",
+              "night": "#404041",
+              "rain": "#408BC9",
+              "sky": "#76C4E2",
+              "smoke": "#e0e0e0",
+              "storm": "#808285",
+              "sunrise": "#F69259",
+              "sunset": "#BA77B1",
+              "tangerine": "#FF7900",
+              "twilight": "#8176B5",
+            },
+            "colorBlack": "#000",
+            "colorBlue": "#2f7bbf",
+            "colorBlueDark": "#2869a2",
+            "colorBlueLight": "#62a1d8",
+            "colorError": "#ff3100",
+            "colorFacebookBlue": "#3b5998",
+            "colorGray": "#7c7c7c",
+            "colorGrayBorder": "#666",
+            "colorGrayDark": "#333",
+            "colorGrayLight": "#dedede",
+            "colorGrayLightOnboarding": "#F7F7F7",
+            "colorGreen": "#9bca3e",
+            "colorGreenDark": "#87b331",
+            "colorGreenLight": "#bada7a",
+            "colorImportantInformation": "rgba(64,139,201,0.2)",
+            "colorInfo": "#00a9eb",
+            "colorMainBackground": "#e6e6e6",
+            "colorMuted": "#7c7c7c",
+            "colorOffsetDark": 0.07,
+            "colorOffsetLight": 0.15,
+            "colorOrange": "#ff7900",
+            "colorOrangeDark": "#db6800",
+            "colorOrangeLight": "#ffa14d",
+            "colorOverlay": "rgba(0, 0, 0, .7)",
+            "colorPink": "#d91698",
+            "colorPinkDark": "#b91381",
+            "colorPinkLight": "#ed4eb8",
+            "colorPurple": "#9545e5",
+            "colorPurpleDark": "#b91381",
+            "colorPurpleLight": "#ed4eb8",
+            "colorRed": "#bd2527",
+            "colorRedDark": "#9f1f21",
+            "colorRedLight": "#dd5153",
+            "colorSmoke": "#f2f2f2",
+            "colorSuccess": "#68970f",
+            "colorTwitterBlue": "#00aced",
+            "colorWarning": "#fca520",
+            "colorWhite": "#fff",
+            "colorYellow": "#ffd24d",
+            "colorYellowDark": "#ffc929",
+            "colorYellowLight": "#ffe59a",
+            "disabledBackground": "#ededed",
+            "em": "1em",
+            "fontColor": "#333",
+            "fontColorHeadingCaption": "#888",
+            "fontFamily": "\\"Open Sans\\", Helvetica, Arial, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": 400,
+            "fontWeightLight": 300,
+            "gradient": Object {
+              "eight": "linear-gradient(left, #85CBA8, #FFDB6F)",
+              "five": "linear-gradient(left, #8176B5, #F16975)",
+              "four": "linear-gradient(left, #8176B5, #BA77B1)",
+              "primary": "linear-gradient(left, #76C4E2, #85CBA8)",
+              "seven": "linear-gradient(left, #F69259, #FFDB6F)",
+              "six": "linear-gradient(left, #F16975, #F69259)",
+              "three": "linear-gradient(left, #8176B5, #76C4E2)",
+              "two": "linear-gradient(left, #8176B5, #85CBA8)",
+            },
+            "inputFontSize": "13px",
+            "inputLineHeight": 1.4,
+            "lineHeight": 1.5,
+            "rem": "1rem",
+            "weightBold": 700,
+            "weightLight": 300,
+            "weightNormal": 400,
+            "weightSemiBold": 600,
+            "zIndexMax": 1000,
+          }
+        }
       >
-        Name
-      </th>
-      <th
-        className="cf-table__cell cf-table__cell--head"
-      >
-        Value
-      </th>
-    </tr>
-  </thead>
-  <tbody
-    className="cf-table__body"
+        <Connect(TableBuilder)
+          columns={
+            Array [
+              Object {
+                "cell": [Function],
+                "label": "Name",
+              },
+              Object {
+                "cell": [Function],
+                "label": "Value",
+              },
+            ]
+          }
+          rows={
+            Array [
+              Object {
+                "cells": Object {
+                  "name": "Foo",
+                  "value": "foo",
+                },
+                "id": "1",
+              },
+              Object {
+                "cells": Object {
+                  "name": "Bar",
+                  "value": "bar",
+                },
+                "id": "2",
+              },
+            ]
+          }
+          tableName="test-table"
+        >
+          <TableBuilder
+            columns={
+              Array [
+                Object {
+                  "cell": [Function],
+                  "label": "Name",
+                },
+                Object {
+                  "cell": [Function],
+                  "label": "Value",
+                },
+              ]
+            }
+            dispatch={[Function]}
+            flashes={Object {}}
+            rows={
+              Array [
+                Object {
+                  "cells": Object {
+                    "name": "Foo",
+                    "value": "foo",
+                  },
+                  "id": "1",
+                },
+                Object {
+                  "cells": Object {
+                    "name": "Bar",
+                    "value": "bar",
+                  },
+                  "id": "2",
+                },
+              ]
+            }
+            tableName="test-table"
+          >
+            <ThemedComponent>
+              <FelaComponent>
+                <Table
+                  bare={false}
+                  bordered={true}
+                  className="cf-46sr0r"
+                  condensed={false}
+                  hover={false}
+                  is="table"
+                  striped={false}
+                >
+                  <table
+                    className="cf-46sr0r"
+                  >
+                    <ThemedComponent
+                      bare={false}
+                      bordered={true}
+                      condensed={false}
+                      hover={false}
+                      striped={false}
+                    >
+                      <FelaComponent
+                        bare={false}
+                        bordered={true}
+                        condensed={false}
+                        hover={false}
+                        striped={false}
+                      >
+                        <TableHead
+                          bare={false}
+                          bordered={true}
+                          className="cf-d1fi02"
+                          condensed={false}
+                          hover={false}
+                          is="thead"
+                          striped={false}
+                        >
+                          <thead
+                            className="cf-d1fi02"
+                          >
+                            <ThemedComponent
+                              bare={false}
+                              bordered={true}
+                              condensed={false}
+                              hover={false}
+                              rowIndex={-0}
+                              striped={false}
+                              theadIndex={0}
+                            >
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={false}
+                                hover={false}
+                                rowIndex={-0}
+                                striped={false}
+                                theadIndex={0}
+                              >
+                                <TableRow
+                                  bare={false}
+                                  bordered={true}
+                                  className="cf-1b0jccb"
+                                  condensed={false}
+                                  hover={false}
+                                  is="tr"
+                                  rowIndex={-0}
+                                  striped={false}
+                                  theadIndex={0}
+                                  type="default"
+                                >
+                                  <tr
+                                    className="cf-1b0jccb"
+                                  >
+                                    <ThemedComponent
+                                      bare={false}
+                                      bordered={true}
+                                      cellIndex={0}
+                                      condensed={false}
+                                      hover={false}
+                                      rowIndex={-0}
+                                      rowType="default"
+                                      striped={false}
+                                      theadIndex={0}
+                                    >
+                                      <FelaComponent
+                                        bare={false}
+                                        bordered={true}
+                                        cellIndex={0}
+                                        condensed={false}
+                                        hover={false}
+                                        rowIndex={-0}
+                                        rowType="default"
+                                        striped={false}
+                                        theadIndex={0}
+                                      >
+                                        <TableHeadCell
+                                          bare={false}
+                                          bordered={true}
+                                          cellIndex={0}
+                                          className="cf-1fm7xdg"
+                                          condensed={false}
+                                          hover={false}
+                                          is="th"
+                                          rowIndex={-0}
+                                          rowType="default"
+                                          striped={false}
+                                          theadIndex={0}
+                                        >
+                                          <th
+                                            className="cf-1fm7xdg"
+                                          >
+                                            Name
+                                          </th>
+                                        </TableHeadCell>
+                                      </FelaComponent>
+                                    </ThemedComponent>
+                                    <ThemedComponent
+                                      bare={false}
+                                      bordered={true}
+                                      cellIndex={-1}
+                                      condensed={false}
+                                      hover={false}
+                                      rowIndex={-0}
+                                      rowType="default"
+                                      striped={false}
+                                      theadIndex={0}
+                                    >
+                                      <FelaComponent
+                                        bare={false}
+                                        bordered={true}
+                                        cellIndex={-1}
+                                        condensed={false}
+                                        hover={false}
+                                        rowIndex={-0}
+                                        rowType="default"
+                                        striped={false}
+                                        theadIndex={0}
+                                      >
+                                        <TableHeadCell
+                                          bare={false}
+                                          bordered={true}
+                                          cellIndex={-1}
+                                          className="cf-1ypdp8g"
+                                          condensed={false}
+                                          hover={false}
+                                          is="th"
+                                          rowIndex={-0}
+                                          rowType="default"
+                                          striped={false}
+                                          theadIndex={0}
+                                        >
+                                          <th
+                                            className="cf-1ypdp8g"
+                                          >
+                                            Value
+                                          </th>
+                                        </TableHeadCell>
+                                      </FelaComponent>
+                                    </ThemedComponent>
+                                  </tr>
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                          </thead>
+                        </TableHead>
+                      </FelaComponent>
+                    </ThemedComponent>
+                    <ThemedComponent
+                      bare={false}
+                      bordered={true}
+                      condensed={false}
+                      hover={false}
+                      striped={false}
+                    >
+                      <FelaComponent
+                        bare={false}
+                        bordered={true}
+                        condensed={false}
+                        hover={false}
+                        striped={false}
+                      >
+                        <TableBody
+                          bare={false}
+                          bordered={true}
+                          className="cf-zos2pn"
+                          condensed={false}
+                          hover={false}
+                          is="tbody"
+                          striped={false}
+                        >
+                          <tbody
+                            className="cf-zos2pn"
+                          >
+                            <ThemedComponent
+                              bare={false}
+                              bordered={true}
+                              condensed={false}
+                              hover={false}
+                              rowIndex={0}
+                              striped={false}
+                              tbodyIndex={0}
+                            >
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={false}
+                                hover={false}
+                                rowIndex={0}
+                                striped={false}
+                                tbodyIndex={0}
+                              >
+                                <TableRow
+                                  bare={false}
+                                  bordered={true}
+                                  className="cf-t9kph0"
+                                  condensed={false}
+                                  hover={false}
+                                  is="tr"
+                                  rowIndex={0}
+                                  striped={false}
+                                  tbodyIndex={0}
+                                  type="default"
+                                >
+                                  <tr
+                                    className="cf-t9kph0"
+                                  >
+                                    <ThemedComponent
+                                      bare={false}
+                                      bordered={true}
+                                      cellIndex={0}
+                                      condensed={false}
+                                      hover={false}
+                                      rowIndex={0}
+                                      rowType="default"
+                                      striped={false}
+                                      tbodyIndex={0}
+                                    >
+                                      <FelaComponent
+                                        bare={false}
+                                        bordered={true}
+                                        cellIndex={0}
+                                        condensed={false}
+                                        hover={false}
+                                        rowIndex={0}
+                                        rowType="default"
+                                        striped={false}
+                                        tbodyIndex={0}
+                                      >
+                                        <TableCell
+                                          align="left"
+                                          bare={false}
+                                          bordered={true}
+                                          cellIndex={0}
+                                          className="cf-g0oihw"
+                                          condensed={false}
+                                          hover={false}
+                                          is="td"
+                                          rowIndex={0}
+                                          rowType="default"
+                                          striped={false}
+                                          tbodyIndex={0}
+                                        >
+                                          <td
+                                            className="cf-g0oihw"
+                                          >
+                                            Foo
+                                          </td>
+                                        </TableCell>
+                                      </FelaComponent>
+                                    </ThemedComponent>
+                                    <ThemedComponent
+                                      bare={false}
+                                      bordered={true}
+                                      cellIndex={-1}
+                                      condensed={false}
+                                      hover={false}
+                                      rowIndex={0}
+                                      rowType="default"
+                                      striped={false}
+                                      tbodyIndex={0}
+                                    >
+                                      <FelaComponent
+                                        bare={false}
+                                        bordered={true}
+                                        cellIndex={-1}
+                                        condensed={false}
+                                        hover={false}
+                                        rowIndex={0}
+                                        rowType="default"
+                                        striped={false}
+                                        tbodyIndex={0}
+                                      >
+                                        <TableCell
+                                          align="left"
+                                          bare={false}
+                                          bordered={true}
+                                          cellIndex={-1}
+                                          className="cf-9yqouo"
+                                          condensed={false}
+                                          hover={false}
+                                          is="td"
+                                          rowIndex={0}
+                                          rowType="default"
+                                          striped={false}
+                                          tbodyIndex={0}
+                                        >
+                                          <td
+                                            className="cf-9yqouo"
+                                          >
+                                            foo
+                                          </td>
+                                        </TableCell>
+                                      </FelaComponent>
+                                    </ThemedComponent>
+                                  </tr>
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                            <ThemedComponent
+                              bare={false}
+                              bordered={true}
+                              condensed={false}
+                              hover={false}
+                              rowIndex={-1}
+                              striped={false}
+                              tbodyIndex={0}
+                            >
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={false}
+                                hover={false}
+                                rowIndex={-1}
+                                striped={false}
+                                tbodyIndex={0}
+                              >
+                                <TableRow
+                                  bare={false}
+                                  bordered={true}
+                                  className="cf-1uiy02g"
+                                  condensed={false}
+                                  hover={false}
+                                  is="tr"
+                                  rowIndex={-1}
+                                  striped={false}
+                                  tbodyIndex={0}
+                                  type="default"
+                                >
+                                  <tr
+                                    className="cf-1uiy02g"
+                                  >
+                                    <ThemedComponent
+                                      bare={false}
+                                      bordered={true}
+                                      cellIndex={0}
+                                      condensed={false}
+                                      hover={false}
+                                      rowIndex={-1}
+                                      rowType="default"
+                                      striped={false}
+                                      tbodyIndex={0}
+                                    >
+                                      <FelaComponent
+                                        bare={false}
+                                        bordered={true}
+                                        cellIndex={0}
+                                        condensed={false}
+                                        hover={false}
+                                        rowIndex={-1}
+                                        rowType="default"
+                                        striped={false}
+                                        tbodyIndex={0}
+                                      >
+                                        <TableCell
+                                          align="left"
+                                          bare={false}
+                                          bordered={true}
+                                          cellIndex={0}
+                                          className="cf-1c6l5ki"
+                                          condensed={false}
+                                          hover={false}
+                                          is="td"
+                                          rowIndex={-1}
+                                          rowType="default"
+                                          striped={false}
+                                          tbodyIndex={0}
+                                        >
+                                          <td
+                                            className="cf-1c6l5ki"
+                                          >
+                                            Bar
+                                          </td>
+                                        </TableCell>
+                                      </FelaComponent>
+                                    </ThemedComponent>
+                                    <ThemedComponent
+                                      bare={false}
+                                      bordered={true}
+                                      cellIndex={-1}
+                                      condensed={false}
+                                      hover={false}
+                                      rowIndex={-1}
+                                      rowType="default"
+                                      striped={false}
+                                      tbodyIndex={0}
+                                    >
+                                      <FelaComponent
+                                        bare={false}
+                                        bordered={true}
+                                        cellIndex={-1}
+                                        condensed={false}
+                                        hover={false}
+                                        rowIndex={-1}
+                                        rowType="default"
+                                        striped={false}
+                                        tbodyIndex={0}
+                                      >
+                                        <TableCell
+                                          align="left"
+                                          bare={false}
+                                          bordered={true}
+                                          cellIndex={-1}
+                                          className="cf-1f59ksd"
+                                          condensed={false}
+                                          hover={false}
+                                          is="td"
+                                          rowIndex={-1}
+                                          rowType="default"
+                                          striped={false}
+                                          tbodyIndex={0}
+                                        >
+                                          <td
+                                            className="cf-1f59ksd"
+                                          >
+                                            bar
+                                          </td>
+                                        </TableCell>
+                                      </FelaComponent>
+                                    </ThemedComponent>
+                                  </tr>
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                          </tbody>
+                        </TableBody>
+                      </FelaComponent>
+                    </ThemedComponent>
+                  </table>
+                </Table>
+              </FelaComponent>
+            </ThemedComponent>
+          </TableBuilder>
+        </Connect(TableBuilder)>
+      </ThemeProvider>
+    </Provider>
+  </StyleProvider>
+</Provider>
+`;
+
+exports[`should support flashes 1`] = `
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+>
+  <StyleProvider
+    dev={true}
   >
-    <tr
-      className="cf-table__row cf-table__row--default"
+    <Provider
+      renderer={
+        Object {
+          "_emitChange": [Function],
+          "_renderStyleToCache": [Function],
+          "_renderStyleToClassNames": [Function],
+          "cache": Object {
+            "cf-14uu5dt": true,
+            "cf-1b0jccb": true,
+            "cf-1k2myrb": true,
+            "cf-1uiy02g": true,
+            "cf-46sr0r": true,
+            "cf-d1fi02": true,
+            "cf-t9kph0": true,
+            "cf-zos2pn": true,
+          },
+          "clear": [Function],
+          "fontFaces": "",
+          "keyframePrefixes": Array [
+            "-webkit-",
+            "-moz-",
+            "",
+          ],
+          "keyframes": "",
+          "listeners": Array [
+            [Function],
+            [Function],
+          ],
+          "mediaQueryOrder": Array [],
+          "mediaRules": Object {
+            "(max-width: 47.2em)": ".cf-46sr0r {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-d1fi02 {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-1b0jccb {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-zos2pn {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-1k2myrb {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-t9kph0 {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-1uiy02g {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-14uu5dt {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }",
+            "screen and (max-width: 47.2em)": ".cf-46sr0r {
+          display: block
+        }
+        
+        .cf-d1fi02 {
+          display: none
+        }
+        
+        .cf-1b0jccb:after {
+          content: \\"\\";
+          display: table;
+          clear: both
+        }
+        
+        .cf-1b0jccb {
+          display: block;
+          padding: 0.73333333333rem;
+          border-top: none;
+          background-color: #ccc
+        }
+        
+        .cf-zos2pn {
+          display: block
+        }
+        
+        .cf-1k2myrb:after {
+          content: \\"\\";
+          display: table;
+          clear: both
+        }
+        
+        .cf-1k2myrb {
+          display: block;
+          padding: 0.73333333333rem;
+          border-top: 1px solid #dedede;
+          background-color: #ccc
+        }
+        
+        .cf-t9kph0:after {
+          content: \\"\\";
+          display: table;
+          clear: both
+        }
+        
+        .cf-t9kph0:hover> td {
+          background-color: transparent
+        }
+        
+        .cf-t9kph0 {
+          display: block;
+          padding: 0.73333333333rem;
+          border-top: none;
+          background-color: #ccc
+        }
+        
+        .cf-1uiy02g:after {
+          content: \\"\\";
+          display: table;
+          clear: both
+        }
+        
+        .cf-1uiy02g:hover> td {
+          background-color: transparent
+        }
+        
+        .cf-1uiy02g {
+          display: block;
+          padding: 0.73333333333rem;
+          border-top: 1px solid #dedede;
+          background-color: #ccc
+        }
+        
+        .cf-14uu5dt:after {
+          content: \\"\\";
+          display: table;
+          clear: both
+        }
+        
+        .cf-14uu5dt:hover> td {
+          background-color: transparent
+        }
+        
+        .cf-14uu5dt {
+          display: block;
+          padding: 0.73333333333rem;
+          border-top: none;
+          background-color: #ccc
+        }",
+          },
+          "plugins": Array [
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+          ],
+          "prettySelectors": false,
+          "renderFont": [Function],
+          "renderKeyframe": [Function],
+          "renderRule": [Function],
+          "renderStatic": [Function],
+          "renderToString": [Function],
+          "rules": ".cf-46sr0r {
+          background: #fff;
+          border-collapse: collapse;
+          border-spacing: 0px;
+          max-width: 100%;
+          width: 100%
+        }
+        
+        .cf-d1fi02 {
+          background: #dedede
+        }
+        
+        .cf-1b0jccb {
+          border-color: #dedede
+        }
+        
+        .cf-1k2myrb {
+          border-color: #dedede
+        }
+        
+        .cf-t9kph0 {
+          border-color: #dedede
+        }
+        
+        .cf-1uiy02g {
+          border-color: #dedede
+        }
+        
+        .cf-14uu5dt {
+          border-color: #b0d466;
+          background-color: #bada7a
+        }",
+          "selectorPrefix": "cf-",
+          "statics": "",
+          "styleNodes": Object {
+            "RULE": <style
+              data-fela-type="RULE"
+              type="text/css"
+        >
+              .cf-46sr0r { background: #fff; border-collapse: collapse; border-spacing: 0px; max-width: 100%; width: 100% } .cf-d1fi02 { background: #dedede } .cf-1b0jccb { border-color: #dedede } .cf-1k2myrb { border-color: #dedede } .cf-t9kph0 { border-color: #dedede } .cf-1uiy02g { border-color: #dedede } .cf-14uu5dt { border-color: #b0d466; background-color: #bada7a }
+        </style>,
+            "RULE(max-width: 47.2em)": <style
+              data-fela-type="RULE"
+              type="text/css"
+              media="(max-width: 47.2em)"
+        >
+              .cf-46sr0r { display: block; width: 100%; box-sizing: border-box } .cf-d1fi02 { display: block; width: 100%; box-sizing: border-box } .cf-1b0jccb { display: block; width: 100%; box-sizing: border-box } .cf-zos2pn { display: block; width: 100%; box-sizing: border-box } .cf-1k2myrb { display: block; width: 100%; box-sizing: border-box } .cf-t9kph0 { display: block; width: 100%; box-sizing: border-box } .cf-1uiy02g { display: block; width: 100%; box-sizing: border-box } .cf-14uu5dt { display: block; width: 100%; box-sizing: border-box }
+        </style>,
+            "RULEscreen and (max-width: 47.2em)": <style
+              data-fela-type="RULE"
+              type="text/css"
+              media="screen and (max-width: 47.2em)"
+        >
+              .cf-46sr0r { display: block } .cf-d1fi02 { display: none } .cf-1b0jccb:after { content: ""; display: table; clear: both } .cf-1b0jccb { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .cf-zos2pn { display: block } .cf-1k2myrb:after { content: ""; display: table; clear: both } .cf-1k2myrb { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc } .cf-t9kph0:after { content: ""; display: table; clear: both } .cf-t9kph0:hover> td { background-color: transparent } .cf-t9kph0 { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .cf-1uiy02g:after { content: ""; display: table; clear: both } .cf-1uiy02g:hover> td { background-color: transparent } .cf-1uiy02g { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc } .cf-14uu5dt:after { content: ""; display: table; clear: both } .cf-14uu5dt:hover> td { background-color: transparent } .cf-14uu5dt { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc }
+        </style>,
+          },
+          "subscribe": [Function],
+          "uniqueKeyframeIdentifier": 0,
+          "uniqueRuleIdentifier": 0,
+        }
+      }
     >
-      <td
-        className="cf-table__cell"
+      <ThemeProvider
+        overwrite={false}
+        theme={
+          Object {
+            "arrowSize": "5px",
+            "bodyAccentColor": "#333",
+            "bodyBackground": "#ebebeb",
+            "bodyOffsetColor": "#787878",
+            "borderRadius": "2px",
+            "boxShadow": "0 0 20px 0 rgba(136,136,136,0.50)",
+            "breakpoints": Object {
+              "desktop": "64em",
+              "desktopLarge": "97.6em",
+              "mobile": "13.6em",
+              "mobileWide": "30.4em",
+              "tablet": "47.2em",
+            },
+            "color": Object {
+              "apple": "#BD2527",
+              "carrot": "#f56500",
+              "cement": "#7D7D7D",
+              "charcoal": "#333333",
+              "dawn": "#F16975",
+              "dew": "#85CBA8",
+              "dusk": "#4D4D4F",
+              "grass": "#9BCA3E",
+              "hail": "#BCBEC0",
+              "lightning": "#FFDB6F",
+              "marine": "#2F7BBF",
+              "moonshine": "#F7F7F7",
+              "night": "#404041",
+              "rain": "#408BC9",
+              "sky": "#76C4E2",
+              "smoke": "#e0e0e0",
+              "storm": "#808285",
+              "sunrise": "#F69259",
+              "sunset": "#BA77B1",
+              "tangerine": "#FF7900",
+              "twilight": "#8176B5",
+            },
+            "colorBlack": "#000",
+            "colorBlue": "#2f7bbf",
+            "colorBlueDark": "#2869a2",
+            "colorBlueLight": "#62a1d8",
+            "colorError": "#ff3100",
+            "colorFacebookBlue": "#3b5998",
+            "colorGray": "#7c7c7c",
+            "colorGrayBorder": "#666",
+            "colorGrayDark": "#333",
+            "colorGrayLight": "#dedede",
+            "colorGrayLightOnboarding": "#F7F7F7",
+            "colorGreen": "#9bca3e",
+            "colorGreenDark": "#87b331",
+            "colorGreenLight": "#bada7a",
+            "colorImportantInformation": "rgba(64,139,201,0.2)",
+            "colorInfo": "#00a9eb",
+            "colorMainBackground": "#e6e6e6",
+            "colorMuted": "#7c7c7c",
+            "colorOffsetDark": 0.07,
+            "colorOffsetLight": 0.15,
+            "colorOrange": "#ff7900",
+            "colorOrangeDark": "#db6800",
+            "colorOrangeLight": "#ffa14d",
+            "colorOverlay": "rgba(0, 0, 0, .7)",
+            "colorPink": "#d91698",
+            "colorPinkDark": "#b91381",
+            "colorPinkLight": "#ed4eb8",
+            "colorPurple": "#9545e5",
+            "colorPurpleDark": "#b91381",
+            "colorPurpleLight": "#ed4eb8",
+            "colorRed": "#bd2527",
+            "colorRedDark": "#9f1f21",
+            "colorRedLight": "#dd5153",
+            "colorSmoke": "#f2f2f2",
+            "colorSuccess": "#68970f",
+            "colorTwitterBlue": "#00aced",
+            "colorWarning": "#fca520",
+            "colorWhite": "#fff",
+            "colorYellow": "#ffd24d",
+            "colorYellowDark": "#ffc929",
+            "colorYellowLight": "#ffe59a",
+            "disabledBackground": "#ededed",
+            "em": "1em",
+            "fontColor": "#333",
+            "fontColorHeadingCaption": "#888",
+            "fontFamily": "\\"Open Sans\\", Helvetica, Arial, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": 400,
+            "fontWeightLight": 300,
+            "gradient": Object {
+              "eight": "linear-gradient(left, #85CBA8, #FFDB6F)",
+              "five": "linear-gradient(left, #8176B5, #F16975)",
+              "four": "linear-gradient(left, #8176B5, #BA77B1)",
+              "primary": "linear-gradient(left, #76C4E2, #85CBA8)",
+              "seven": "linear-gradient(left, #F69259, #FFDB6F)",
+              "six": "linear-gradient(left, #F16975, #F69259)",
+              "three": "linear-gradient(left, #8176B5, #76C4E2)",
+              "two": "linear-gradient(left, #8176B5, #85CBA8)",
+            },
+            "inputFontSize": "13px",
+            "inputLineHeight": 1.4,
+            "lineHeight": 1.5,
+            "rem": "1rem",
+            "weightBold": 700,
+            "weightLight": 300,
+            "weightNormal": 400,
+            "weightSemiBold": 600,
+            "zIndexMax": 1000,
+          }
+        }
       >
-        Foo
-      </td>
-      <td
-        className="cf-table__cell"
-      >
-        foo
-      </td>
-    </tr>
-    <tr
-      className="cf-table__row cf-table__row--default"
-    >
-      <td
-        className="cf-table__cell"
-      >
-        Bar
-      </td>
-      <td
-        className="cf-table__cell"
-      >
-        bar
-      </td>
-    </tr>
-  </tbody>
-</table>
+        <Connect(TableBuilder)
+          columns={Array []}
+          rows={
+            Array [
+              Object {
+                "cells": Object {},
+                "id": "1",
+              },
+              Object {
+                "cells": Object {},
+                "id": "2",
+              },
+            ]
+          }
+          tableName="test-table"
+        >
+          <TableBuilder
+            columns={Array []}
+            dispatch={[Function]}
+            flashes={
+              Object {
+                "1": "success",
+              }
+            }
+            rows={
+              Array [
+                Object {
+                  "cells": Object {},
+                  "id": "1",
+                },
+                Object {
+                  "cells": Object {},
+                  "id": "2",
+                },
+              ]
+            }
+            tableName="test-table"
+          >
+            <ThemedComponent>
+              <FelaComponent>
+                <Table
+                  bare={false}
+                  bordered={true}
+                  className="cf-46sr0r"
+                  condensed={false}
+                  hover={false}
+                  is="table"
+                  striped={false}
+                >
+                  <table
+                    className="cf-46sr0r"
+                  >
+                    <ThemedComponent
+                      bare={false}
+                      bordered={true}
+                      condensed={false}
+                      hover={false}
+                      striped={false}
+                    >
+                      <FelaComponent
+                        bare={false}
+                        bordered={true}
+                        condensed={false}
+                        hover={false}
+                        striped={false}
+                      >
+                        <TableHead
+                          bare={false}
+                          bordered={true}
+                          className="cf-d1fi02"
+                          condensed={false}
+                          hover={false}
+                          is="thead"
+                          striped={false}
+                        >
+                          <thead
+                            className="cf-d1fi02"
+                          >
+                            <ThemedComponent
+                              bare={false}
+                              bordered={true}
+                              condensed={false}
+                              hover={false}
+                              rowIndex={-0}
+                              striped={false}
+                              theadIndex={0}
+                            >
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={false}
+                                hover={false}
+                                rowIndex={-0}
+                                striped={false}
+                                theadIndex={0}
+                              >
+                                <TableRow
+                                  bare={false}
+                                  bordered={true}
+                                  className="cf-1b0jccb"
+                                  condensed={false}
+                                  hover={false}
+                                  is="tr"
+                                  rowIndex={-0}
+                                  striped={false}
+                                  theadIndex={0}
+                                  type="default"
+                                >
+                                  <tr
+                                    className="cf-1b0jccb"
+                                  />
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                          </thead>
+                        </TableHead>
+                      </FelaComponent>
+                    </ThemedComponent>
+                    <ThemedComponent
+                      bare={false}
+                      bordered={true}
+                      condensed={false}
+                      hover={false}
+                      striped={false}
+                    >
+                      <FelaComponent
+                        bare={false}
+                        bordered={true}
+                        condensed={false}
+                        hover={false}
+                        striped={false}
+                      >
+                        <TableBody
+                          bare={false}
+                          bordered={true}
+                          className="cf-zos2pn"
+                          condensed={false}
+                          hover={false}
+                          is="tbody"
+                          striped={false}
+                        >
+                          <tbody
+                            className="cf-zos2pn"
+                          >
+                            <ThemedComponent
+                              bare={false}
+                              bordered={true}
+                              condensed={false}
+                              hover={false}
+                              rowIndex={0}
+                              striped={false}
+                              tbodyIndex={0}
+                              type="success"
+                            >
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={false}
+                                hover={false}
+                                rowIndex={0}
+                                striped={false}
+                                tbodyIndex={0}
+                                type="success"
+                              >
+                                <TableRow
+                                  bare={false}
+                                  bordered={true}
+                                  className="cf-14uu5dt"
+                                  condensed={false}
+                                  hover={false}
+                                  is="tr"
+                                  rowIndex={0}
+                                  striped={false}
+                                  tbodyIndex={0}
+                                  type="success"
+                                >
+                                  <tr
+                                    className="cf-14uu5dt"
+                                  />
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                            <ThemedComponent
+                              bare={false}
+                              bordered={true}
+                              condensed={false}
+                              hover={false}
+                              rowIndex={-1}
+                              striped={false}
+                              tbodyIndex={0}
+                            >
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={false}
+                                hover={false}
+                                rowIndex={-1}
+                                striped={false}
+                                tbodyIndex={0}
+                              >
+                                <TableRow
+                                  bare={false}
+                                  bordered={true}
+                                  className="cf-1uiy02g"
+                                  condensed={false}
+                                  hover={false}
+                                  is="tr"
+                                  rowIndex={-1}
+                                  striped={false}
+                                  tbodyIndex={0}
+                                  type="default"
+                                >
+                                  <tr
+                                    className="cf-1uiy02g"
+                                  />
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                          </tbody>
+                        </TableBody>
+                      </FelaComponent>
+                    </ThemedComponent>
+                  </table>
+                </Table>
+              </FelaComponent>
+            </ThemedComponent>
+          </TableBuilder>
+        </Connect(TableBuilder)>
+      </ThemeProvider>
+    </Provider>
+  </StyleProvider>
+</Provider>
 `;
 
 exports[`should support row type/accent 1`] = `
-<table
-  className="cf-table cf-table--bordered"
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
 >
-  <thead
-    className="cf-table__head"
+  <StyleProvider
+    dev={true}
   >
-    <tr
-      className="cf-table__row cf-table__row--default"
-    />
-  </thead>
-  <tbody
-    className="cf-table__body"
-  >
-    <tr
-      className="cf-table__row cf-table__row--success"
-    />
-    <tr
-      className="cf-table__row cf-table__row--default cf-table__row--accent-red"
-    />
-  </tbody>
-</table>
+    <Provider
+      renderer={
+        Object {
+          "_emitChange": [Function],
+          "_renderStyleToCache": [Function],
+          "_renderStyleToClassNames": [Function],
+          "cache": Object {
+            "cf-14uu5dt": true,
+            "cf-1b0jccb": true,
+            "cf-1k2myrb": true,
+            "cf-1uiy02g": true,
+            "cf-46sr0r": true,
+            "cf-d1fi02": true,
+            "cf-dreiha": true,
+            "cf-zos2pn": true,
+          },
+          "clear": [Function],
+          "fontFaces": "",
+          "keyframePrefixes": Array [
+            "-webkit-",
+            "-moz-",
+            "",
+          ],
+          "keyframes": "",
+          "listeners": Array [
+            [Function],
+            [Function],
+          ],
+          "mediaQueryOrder": Array [],
+          "mediaRules": Object {
+            "(max-width: 47.2em)": ".cf-46sr0r {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-d1fi02 {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-1b0jccb {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-zos2pn {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-dreiha {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-1k2myrb {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-14uu5dt {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-1uiy02g {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }",
+            "screen and (max-width: 47.2em)": ".cf-46sr0r {
+          display: block
+        }
+        
+        .cf-d1fi02 {
+          display: none
+        }
+        
+        .cf-1b0jccb:after {
+          content: \\"\\";
+          display: table;
+          clear: both
+        }
+        
+        .cf-1b0jccb {
+          display: block;
+          padding: 0.73333333333rem;
+          border-top: none;
+          background-color: #ccc
+        }
+        
+        .cf-zos2pn {
+          display: block
+        }
+        
+        .cf-dreiha:after {
+          content: \\"\\";
+          display: table;
+          clear: both
+        }
+        
+        .cf-dreiha {
+          display: block;
+          padding: 0.73333333333rem;
+          border-top: none;
+          background-color: #ccc
+        }
+        
+        .cf-1k2myrb:after {
+          content: \\"\\";
+          display: table;
+          clear: both
+        }
+        
+        .cf-1k2myrb {
+          display: block;
+          padding: 0.73333333333rem;
+          border-top: 1px solid #dedede;
+          background-color: #ccc
+        }
+        
+        .cf-14uu5dt:after {
+          content: \\"\\";
+          display: table;
+          clear: both
+        }
+        
+        .cf-14uu5dt:hover> td {
+          background-color: transparent
+        }
+        
+        .cf-14uu5dt {
+          display: block;
+          padding: 0.73333333333rem;
+          border-top: none;
+          background-color: #ccc
+        }
+        
+        .cf-1uiy02g:after {
+          content: \\"\\";
+          display: table;
+          clear: both
+        }
+        
+        .cf-1uiy02g:hover> td {
+          background-color: transparent
+        }
+        
+        .cf-1uiy02g {
+          display: block;
+          padding: 0.73333333333rem;
+          border-top: 1px solid #dedede;
+          background-color: #ccc
+        }",
+          },
+          "plugins": Array [
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+          ],
+          "prettySelectors": false,
+          "renderFont": [Function],
+          "renderKeyframe": [Function],
+          "renderRule": [Function],
+          "renderStatic": [Function],
+          "renderToString": [Function],
+          "rules": ".cf-46sr0r {
+          background: #fff;
+          border-collapse: collapse;
+          border-spacing: 0px;
+          max-width: 100%;
+          width: 100%
+        }
+        
+        .cf-d1fi02 {
+          background: #dedede
+        }
+        
+        .cf-1b0jccb {
+          border-color: #dedede
+        }
+        
+        .cf-dreiha {
+          border-color: #b0d466;
+          background-color: #bada7a
+        }
+        
+        .cf-1k2myrb {
+          border-color: #dedede
+        }
+        
+        .cf-14uu5dt {
+          border-color: #b0d466;
+          background-color: #bada7a
+        }
+        
+        .cf-1uiy02g {
+          border-color: #dedede
+        }",
+          "selectorPrefix": "cf-",
+          "statics": "",
+          "styleNodes": Object {
+            "RULE": <style
+              data-fela-type="RULE"
+              type="text/css"
+        >
+              .cf-46sr0r { background: #fff; border-collapse: collapse; border-spacing: 0px; max-width: 100%; width: 100% } .cf-d1fi02 { background: #dedede } .cf-1b0jccb { border-color: #dedede } .cf-dreiha { border-color: #b0d466; background-color: #bada7a } .cf-1k2myrb { border-color: #dedede } .cf-14uu5dt { border-color: #b0d466; background-color: #bada7a } .cf-1uiy02g { border-color: #dedede }
+        </style>,
+            "RULE(max-width: 47.2em)": <style
+              data-fela-type="RULE"
+              type="text/css"
+              media="(max-width: 47.2em)"
+        >
+              .cf-46sr0r { display: block; width: 100%; box-sizing: border-box } .cf-d1fi02 { display: block; width: 100%; box-sizing: border-box } .cf-1b0jccb { display: block; width: 100%; box-sizing: border-box } .cf-zos2pn { display: block; width: 100%; box-sizing: border-box } .cf-dreiha { display: block; width: 100%; box-sizing: border-box } .cf-1k2myrb { display: block; width: 100%; box-sizing: border-box } .cf-14uu5dt { display: block; width: 100%; box-sizing: border-box } .cf-1uiy02g { display: block; width: 100%; box-sizing: border-box }
+        </style>,
+            "RULEscreen and (max-width: 47.2em)": <style
+              data-fela-type="RULE"
+              type="text/css"
+              media="screen and (max-width: 47.2em)"
+        >
+              .cf-46sr0r { display: block } .cf-d1fi02 { display: none } .cf-1b0jccb:after { content: ""; display: table; clear: both } .cf-1b0jccb { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .cf-zos2pn { display: block } .cf-dreiha:after { content: ""; display: table; clear: both } .cf-dreiha { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .cf-1k2myrb:after { content: ""; display: table; clear: both } .cf-1k2myrb { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc } .cf-14uu5dt:after { content: ""; display: table; clear: both } .cf-14uu5dt:hover> td { background-color: transparent } .cf-14uu5dt { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .cf-1uiy02g:after { content: ""; display: table; clear: both } .cf-1uiy02g:hover> td { background-color: transparent } .cf-1uiy02g { display: block; padding: 0.73333333333rem; border-top: 1px solid #dedede; background-color: #ccc }
+        </style>,
+          },
+          "subscribe": [Function],
+          "uniqueKeyframeIdentifier": 0,
+          "uniqueRuleIdentifier": 0,
+        }
+      }
+    >
+      <ThemeProvider
+        overwrite={false}
+        theme={
+          Object {
+            "arrowSize": "5px",
+            "bodyAccentColor": "#333",
+            "bodyBackground": "#ebebeb",
+            "bodyOffsetColor": "#787878",
+            "borderRadius": "2px",
+            "boxShadow": "0 0 20px 0 rgba(136,136,136,0.50)",
+            "breakpoints": Object {
+              "desktop": "64em",
+              "desktopLarge": "97.6em",
+              "mobile": "13.6em",
+              "mobileWide": "30.4em",
+              "tablet": "47.2em",
+            },
+            "color": Object {
+              "apple": "#BD2527",
+              "carrot": "#f56500",
+              "cement": "#7D7D7D",
+              "charcoal": "#333333",
+              "dawn": "#F16975",
+              "dew": "#85CBA8",
+              "dusk": "#4D4D4F",
+              "grass": "#9BCA3E",
+              "hail": "#BCBEC0",
+              "lightning": "#FFDB6F",
+              "marine": "#2F7BBF",
+              "moonshine": "#F7F7F7",
+              "night": "#404041",
+              "rain": "#408BC9",
+              "sky": "#76C4E2",
+              "smoke": "#e0e0e0",
+              "storm": "#808285",
+              "sunrise": "#F69259",
+              "sunset": "#BA77B1",
+              "tangerine": "#FF7900",
+              "twilight": "#8176B5",
+            },
+            "colorBlack": "#000",
+            "colorBlue": "#2f7bbf",
+            "colorBlueDark": "#2869a2",
+            "colorBlueLight": "#62a1d8",
+            "colorError": "#ff3100",
+            "colorFacebookBlue": "#3b5998",
+            "colorGray": "#7c7c7c",
+            "colorGrayBorder": "#666",
+            "colorGrayDark": "#333",
+            "colorGrayLight": "#dedede",
+            "colorGrayLightOnboarding": "#F7F7F7",
+            "colorGreen": "#9bca3e",
+            "colorGreenDark": "#87b331",
+            "colorGreenLight": "#bada7a",
+            "colorImportantInformation": "rgba(64,139,201,0.2)",
+            "colorInfo": "#00a9eb",
+            "colorMainBackground": "#e6e6e6",
+            "colorMuted": "#7c7c7c",
+            "colorOffsetDark": 0.07,
+            "colorOffsetLight": 0.15,
+            "colorOrange": "#ff7900",
+            "colorOrangeDark": "#db6800",
+            "colorOrangeLight": "#ffa14d",
+            "colorOverlay": "rgba(0, 0, 0, .7)",
+            "colorPink": "#d91698",
+            "colorPinkDark": "#b91381",
+            "colorPinkLight": "#ed4eb8",
+            "colorPurple": "#9545e5",
+            "colorPurpleDark": "#b91381",
+            "colorPurpleLight": "#ed4eb8",
+            "colorRed": "#bd2527",
+            "colorRedDark": "#9f1f21",
+            "colorRedLight": "#dd5153",
+            "colorSmoke": "#f2f2f2",
+            "colorSuccess": "#68970f",
+            "colorTwitterBlue": "#00aced",
+            "colorWarning": "#fca520",
+            "colorWhite": "#fff",
+            "colorYellow": "#ffd24d",
+            "colorYellowDark": "#ffc929",
+            "colorYellowLight": "#ffe59a",
+            "disabledBackground": "#ededed",
+            "em": "1em",
+            "fontColor": "#333",
+            "fontColorHeadingCaption": "#888",
+            "fontFamily": "\\"Open Sans\\", Helvetica, Arial, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": 400,
+            "fontWeightLight": 300,
+            "gradient": Object {
+              "eight": "linear-gradient(left, #85CBA8, #FFDB6F)",
+              "five": "linear-gradient(left, #8176B5, #F16975)",
+              "four": "linear-gradient(left, #8176B5, #BA77B1)",
+              "primary": "linear-gradient(left, #76C4E2, #85CBA8)",
+              "seven": "linear-gradient(left, #F69259, #FFDB6F)",
+              "six": "linear-gradient(left, #F16975, #F69259)",
+              "three": "linear-gradient(left, #8176B5, #76C4E2)",
+              "two": "linear-gradient(left, #8176B5, #85CBA8)",
+            },
+            "inputFontSize": "13px",
+            "inputLineHeight": 1.4,
+            "lineHeight": 1.5,
+            "rem": "1rem",
+            "weightBold": 700,
+            "weightLight": 300,
+            "weightNormal": 400,
+            "weightSemiBold": 600,
+            "zIndexMax": 1000,
+          }
+        }
+      >
+        <Connect(TableBuilder)
+          columns={Array []}
+          rows={
+            Array [
+              Object {
+                "cells": Object {},
+                "id": "1",
+                "type": "success",
+              },
+              Object {
+                "accent": "red",
+                "cells": Object {},
+                "id": "2",
+              },
+            ]
+          }
+          tableName="test-table"
+        >
+          <TableBuilder
+            columns={Array []}
+            dispatch={[Function]}
+            flashes={Object {}}
+            rows={
+              Array [
+                Object {
+                  "cells": Object {},
+                  "id": "1",
+                  "type": "success",
+                },
+                Object {
+                  "accent": "red",
+                  "cells": Object {},
+                  "id": "2",
+                },
+              ]
+            }
+            tableName="test-table"
+          >
+            <ThemedComponent>
+              <FelaComponent>
+                <Table
+                  bare={false}
+                  bordered={true}
+                  className="cf-46sr0r"
+                  condensed={false}
+                  hover={false}
+                  is="table"
+                  striped={false}
+                >
+                  <table
+                    className="cf-46sr0r"
+                  >
+                    <ThemedComponent
+                      bare={false}
+                      bordered={true}
+                      condensed={false}
+                      hover={false}
+                      striped={false}
+                    >
+                      <FelaComponent
+                        bare={false}
+                        bordered={true}
+                        condensed={false}
+                        hover={false}
+                        striped={false}
+                      >
+                        <TableHead
+                          bare={false}
+                          bordered={true}
+                          className="cf-d1fi02"
+                          condensed={false}
+                          hover={false}
+                          is="thead"
+                          striped={false}
+                        >
+                          <thead
+                            className="cf-d1fi02"
+                          >
+                            <ThemedComponent
+                              bare={false}
+                              bordered={true}
+                              condensed={false}
+                              hover={false}
+                              rowIndex={-0}
+                              striped={false}
+                              theadIndex={0}
+                            >
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={false}
+                                hover={false}
+                                rowIndex={-0}
+                                striped={false}
+                                theadIndex={0}
+                              >
+                                <TableRow
+                                  bare={false}
+                                  bordered={true}
+                                  className="cf-1b0jccb"
+                                  condensed={false}
+                                  hover={false}
+                                  is="tr"
+                                  rowIndex={-0}
+                                  striped={false}
+                                  theadIndex={0}
+                                  type="default"
+                                >
+                                  <tr
+                                    className="cf-1b0jccb"
+                                  />
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                          </thead>
+                        </TableHead>
+                      </FelaComponent>
+                    </ThemedComponent>
+                    <ThemedComponent
+                      bare={false}
+                      bordered={true}
+                      condensed={false}
+                      hover={false}
+                      striped={false}
+                    >
+                      <FelaComponent
+                        bare={false}
+                        bordered={true}
+                        condensed={false}
+                        hover={false}
+                        striped={false}
+                      >
+                        <TableBody
+                          bare={false}
+                          bordered={true}
+                          className="cf-zos2pn"
+                          condensed={false}
+                          hover={false}
+                          is="tbody"
+                          striped={false}
+                        >
+                          <tbody
+                            className="cf-zos2pn"
+                          >
+                            <ThemedComponent
+                              bare={false}
+                              bordered={true}
+                              condensed={false}
+                              hover={false}
+                              rowIndex={0}
+                              striped={false}
+                              tbodyIndex={0}
+                              type="success"
+                            >
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={false}
+                                hover={false}
+                                rowIndex={0}
+                                striped={false}
+                                tbodyIndex={0}
+                                type="success"
+                              >
+                                <TableRow
+                                  bare={false}
+                                  bordered={true}
+                                  className="cf-14uu5dt"
+                                  condensed={false}
+                                  hover={false}
+                                  is="tr"
+                                  rowIndex={0}
+                                  striped={false}
+                                  tbodyIndex={0}
+                                  type="success"
+                                >
+                                  <tr
+                                    className="cf-14uu5dt"
+                                  />
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                            <ThemedComponent
+                              bare={false}
+                              bordered={true}
+                              condensed={false}
+                              hover={false}
+                              rowIndex={-1}
+                              striped={false}
+                              tbodyIndex={0}
+                            >
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={false}
+                                hover={false}
+                                rowIndex={-1}
+                                striped={false}
+                                tbodyIndex={0}
+                              >
+                                <TableRow
+                                  bare={false}
+                                  bordered={true}
+                                  className="cf-1uiy02g"
+                                  condensed={false}
+                                  hover={false}
+                                  is="tr"
+                                  rowIndex={-1}
+                                  striped={false}
+                                  tbodyIndex={0}
+                                  type="default"
+                                >
+                                  <tr
+                                    className="cf-1uiy02g"
+                                  />
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                          </tbody>
+                        </TableBody>
+                      </FelaComponent>
+                    </ThemedComponent>
+                  </table>
+                </Table>
+              </FelaComponent>
+            </ThemedComponent>
+          </TableBuilder>
+        </Connect(TableBuilder)>
+      </ThemeProvider>
+    </Provider>
+  </StyleProvider>
+</Provider>
 `;
 
 exports[`should support table props 1`] = `
-<table
-  className="cf-table cf-table--striped cf-table--hover cf-table--bordered cf-table--condensed"
+<Provider
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
 >
-  <thead
-    className="cf-table__head"
+  <StyleProvider
+    dev={true}
   >
-    <tr
-      className="cf-table__row cf-table__row--default"
-    />
-  </thead>
-  <tbody
-    className="cf-table__body"
-  />
-</table>
+    <Provider
+      renderer={
+        Object {
+          "_emitChange": [Function],
+          "_renderStyleToCache": [Function],
+          "_renderStyleToClassNames": [Function],
+          "cache": Object {
+            "cf-127ooxc": true,
+            "cf-1b0jccb": true,
+            "cf-d1fi02": true,
+            "cf-zos2pn": true,
+          },
+          "clear": [Function],
+          "fontFaces": "",
+          "keyframePrefixes": Array [
+            "-webkit-",
+            "-moz-",
+            "",
+          ],
+          "keyframes": "",
+          "listeners": Array [
+            [Function],
+            [Function],
+          ],
+          "mediaQueryOrder": Array [],
+          "mediaRules": Object {
+            "(max-width: 47.2em)": ".cf-127ooxc {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-d1fi02 {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-1b0jccb {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }
+        
+        .cf-zos2pn {
+          display: block;
+          width: 100%;
+          box-sizing: border-box
+        }",
+            "screen and (max-width: 47.2em)": ".cf-127ooxc {
+          display: block
+        }
+        
+        .cf-d1fi02 {
+          display: none
+        }
+        
+        .cf-1b0jccb:after {
+          content: \\"\\";
+          display: table;
+          clear: both
+        }
+        
+        .cf-1b0jccb {
+          display: block;
+          padding: 0.73333333333rem;
+          border-top: none;
+          background-color: #ccc
+        }
+        
+        .cf-zos2pn {
+          display: block
+        }",
+          },
+          "plugins": Array [
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+            [Function],
+          ],
+          "prettySelectors": false,
+          "renderFont": [Function],
+          "renderKeyframe": [Function],
+          "renderRule": [Function],
+          "renderStatic": [Function],
+          "renderToString": [Function],
+          "rules": ".cf-127ooxc {
+          background: #fff;
+          border-collapse: separate;
+          border-spacing: 0px;
+          max-width: 100%;
+          width: 100%;
+          border: 1px solid \${theme.tableBorderColor
+        };
+        
+        border-left:0px
+        }
+        
+        .cf-d1fi02 {
+        background: #dedede
+        }
+        
+        .cf-1b0jccb {
+        border-color: #dedede
+        }",
+          "selectorPrefix": "cf-",
+          "statics": "",
+          "styleNodes": Object {
+            "RULE": <style
+              data-fela-type="RULE"
+              type="text/css"
+        >
+              .cf-127ooxc { background: #fff; border-collapse: separate; border-spacing: 0px; max-width: 100%; width: 100%; border: 1px solid \${theme.tableBorderColor }; border-left:0px } .cf-d1fi02 { background: #dedede } .cf-1b0jccb { border-color: #dedede }
+        </style>,
+            "RULE(max-width: 47.2em)": <style
+              data-fela-type="RULE"
+              type="text/css"
+              media="(max-width: 47.2em)"
+        >
+              .cf-127ooxc { display: block; width: 100%; box-sizing: border-box } .cf-d1fi02 { display: block; width: 100%; box-sizing: border-box } .cf-1b0jccb { display: block; width: 100%; box-sizing: border-box } .cf-zos2pn { display: block; width: 100%; box-sizing: border-box }
+        </style>,
+            "RULEscreen and (max-width: 47.2em)": <style
+              data-fela-type="RULE"
+              type="text/css"
+              media="screen and (max-width: 47.2em)"
+        >
+              .cf-127ooxc { display: block } .cf-d1fi02 { display: none } .cf-1b0jccb:after { content: ""; display: table; clear: both } .cf-1b0jccb { display: block; padding: 0.73333333333rem; border-top: none; background-color: #ccc } .cf-zos2pn { display: block }
+        </style>,
+          },
+          "subscribe": [Function],
+          "uniqueKeyframeIdentifier": 0,
+          "uniqueRuleIdentifier": 0,
+        }
+      }
+    >
+      <ThemeProvider
+        overwrite={false}
+        theme={
+          Object {
+            "arrowSize": "5px",
+            "bodyAccentColor": "#333",
+            "bodyBackground": "#ebebeb",
+            "bodyOffsetColor": "#787878",
+            "borderRadius": "2px",
+            "boxShadow": "0 0 20px 0 rgba(136,136,136,0.50)",
+            "breakpoints": Object {
+              "desktop": "64em",
+              "desktopLarge": "97.6em",
+              "mobile": "13.6em",
+              "mobileWide": "30.4em",
+              "tablet": "47.2em",
+            },
+            "color": Object {
+              "apple": "#BD2527",
+              "carrot": "#f56500",
+              "cement": "#7D7D7D",
+              "charcoal": "#333333",
+              "dawn": "#F16975",
+              "dew": "#85CBA8",
+              "dusk": "#4D4D4F",
+              "grass": "#9BCA3E",
+              "hail": "#BCBEC0",
+              "lightning": "#FFDB6F",
+              "marine": "#2F7BBF",
+              "moonshine": "#F7F7F7",
+              "night": "#404041",
+              "rain": "#408BC9",
+              "sky": "#76C4E2",
+              "smoke": "#e0e0e0",
+              "storm": "#808285",
+              "sunrise": "#F69259",
+              "sunset": "#BA77B1",
+              "tangerine": "#FF7900",
+              "twilight": "#8176B5",
+            },
+            "colorBlack": "#000",
+            "colorBlue": "#2f7bbf",
+            "colorBlueDark": "#2869a2",
+            "colorBlueLight": "#62a1d8",
+            "colorError": "#ff3100",
+            "colorFacebookBlue": "#3b5998",
+            "colorGray": "#7c7c7c",
+            "colorGrayBorder": "#666",
+            "colorGrayDark": "#333",
+            "colorGrayLight": "#dedede",
+            "colorGrayLightOnboarding": "#F7F7F7",
+            "colorGreen": "#9bca3e",
+            "colorGreenDark": "#87b331",
+            "colorGreenLight": "#bada7a",
+            "colorImportantInformation": "rgba(64,139,201,0.2)",
+            "colorInfo": "#00a9eb",
+            "colorMainBackground": "#e6e6e6",
+            "colorMuted": "#7c7c7c",
+            "colorOffsetDark": 0.07,
+            "colorOffsetLight": 0.15,
+            "colorOrange": "#ff7900",
+            "colorOrangeDark": "#db6800",
+            "colorOrangeLight": "#ffa14d",
+            "colorOverlay": "rgba(0, 0, 0, .7)",
+            "colorPink": "#d91698",
+            "colorPinkDark": "#b91381",
+            "colorPinkLight": "#ed4eb8",
+            "colorPurple": "#9545e5",
+            "colorPurpleDark": "#b91381",
+            "colorPurpleLight": "#ed4eb8",
+            "colorRed": "#bd2527",
+            "colorRedDark": "#9f1f21",
+            "colorRedLight": "#dd5153",
+            "colorSmoke": "#f2f2f2",
+            "colorSuccess": "#68970f",
+            "colorTwitterBlue": "#00aced",
+            "colorWarning": "#fca520",
+            "colorWhite": "#fff",
+            "colorYellow": "#ffd24d",
+            "colorYellowDark": "#ffc929",
+            "colorYellowLight": "#ffe59a",
+            "disabledBackground": "#ededed",
+            "em": "1em",
+            "fontColor": "#333",
+            "fontColorHeadingCaption": "#888",
+            "fontFamily": "\\"Open Sans\\", Helvetica, Arial, sans-serif",
+            "fontSize": "15px",
+            "fontWeight": 400,
+            "fontWeightLight": 300,
+            "gradient": Object {
+              "eight": "linear-gradient(left, #85CBA8, #FFDB6F)",
+              "five": "linear-gradient(left, #8176B5, #F16975)",
+              "four": "linear-gradient(left, #8176B5, #BA77B1)",
+              "primary": "linear-gradient(left, #76C4E2, #85CBA8)",
+              "seven": "linear-gradient(left, #F69259, #FFDB6F)",
+              "six": "linear-gradient(left, #F16975, #F69259)",
+              "three": "linear-gradient(left, #8176B5, #76C4E2)",
+              "two": "linear-gradient(left, #8176B5, #85CBA8)",
+            },
+            "inputFontSize": "13px",
+            "inputLineHeight": 1.4,
+            "lineHeight": 1.5,
+            "rem": "1rem",
+            "weightBold": 700,
+            "weightLight": 300,
+            "weightNormal": 400,
+            "weightSemiBold": 600,
+            "zIndexMax": 1000,
+          }
+        }
+      >
+        <Connect(TableBuilder)
+          bordered={true}
+          columns={Array []}
+          condensed={true}
+          hover={true}
+          rows={Array []}
+          striped={true}
+          tableName="test-table"
+        >
+          <TableBuilder
+            bordered={true}
+            columns={Array []}
+            condensed={true}
+            dispatch={[Function]}
+            flashes={Object {}}
+            hover={true}
+            rows={Array []}
+            striped={true}
+            tableName="test-table"
+          >
+            <ThemedComponent
+              bordered={true}
+              condensed={true}
+              hover={true}
+              striped={true}
+            >
+              <FelaComponent
+                bordered={true}
+                condensed={true}
+                hover={true}
+                striped={true}
+              >
+                <Table
+                  bare={false}
+                  bordered={true}
+                  className="cf-127ooxc"
+                  condensed={true}
+                  hover={true}
+                  is="table"
+                  striped={true}
+                >
+                  <table
+                    className="cf-127ooxc"
+                  >
+                    <ThemedComponent
+                      bare={false}
+                      bordered={true}
+                      condensed={true}
+                      hover={true}
+                      striped={true}
+                    >
+                      <FelaComponent
+                        bare={false}
+                        bordered={true}
+                        condensed={true}
+                        hover={true}
+                        striped={true}
+                      >
+                        <TableHead
+                          bare={false}
+                          bordered={true}
+                          className="cf-d1fi02"
+                          condensed={true}
+                          hover={true}
+                          is="thead"
+                          striped={true}
+                        >
+                          <thead
+                            className="cf-d1fi02"
+                          >
+                            <ThemedComponent
+                              bare={false}
+                              bordered={true}
+                              condensed={true}
+                              hover={true}
+                              rowIndex={-0}
+                              striped={true}
+                              theadIndex={0}
+                            >
+                              <FelaComponent
+                                bare={false}
+                                bordered={true}
+                                condensed={true}
+                                hover={true}
+                                rowIndex={-0}
+                                striped={true}
+                                theadIndex={0}
+                              >
+                                <TableRow
+                                  bare={false}
+                                  bordered={true}
+                                  className="cf-1b0jccb"
+                                  condensed={true}
+                                  hover={true}
+                                  is="tr"
+                                  rowIndex={-0}
+                                  striped={true}
+                                  theadIndex={0}
+                                  type="default"
+                                >
+                                  <tr
+                                    className="cf-1b0jccb"
+                                  />
+                                </TableRow>
+                              </FelaComponent>
+                            </ThemedComponent>
+                          </thead>
+                        </TableHead>
+                      </FelaComponent>
+                    </ThemedComponent>
+                    <ThemedComponent
+                      bare={false}
+                      bordered={true}
+                      condensed={true}
+                      hover={true}
+                      striped={true}
+                    >
+                      <FelaComponent
+                        bare={false}
+                        bordered={true}
+                        condensed={true}
+                        hover={true}
+                        striped={true}
+                      >
+                        <TableBody
+                          bare={false}
+                          bordered={true}
+                          className="cf-zos2pn"
+                          condensed={true}
+                          hover={true}
+                          is="tbody"
+                          striped={true}
+                        >
+                          <tbody
+                            className="cf-zos2pn"
+                          />
+                        </TableBody>
+                      </FelaComponent>
+                    </ThemedComponent>
+                  </table>
+                </Table>
+              </FelaComponent>
+            </ThemedComponent>
+          </TableBuilder>
+        </Connect(TableBuilder)>
+      </ThemeProvider>
+    </Provider>
+  </StyleProvider>
+</Provider>
 `;

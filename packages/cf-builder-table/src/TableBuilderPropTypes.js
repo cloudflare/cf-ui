@@ -5,8 +5,7 @@ import { TablePropTypes } from 'cf-component-table';
 const row = PropTypes.shape({
   id: PropTypes.string.isRequired,
   cells: PropTypes.object.isRequired,
-  type: TablePropTypes.rowType,
-  accent: TablePropTypes.rowAccent
+  type: TablePropTypes.rowType
 });
 
 const rows = PropTypes.arrayOf(row);

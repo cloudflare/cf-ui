@@ -7,6 +7,7 @@ import { shallow, mount } from 'enzyme';
 import {
   createComponent,
   createComponentStyles,
+  connectStyles,
   mergeThemes,
   filterNone,
   filterStyle,
@@ -15,6 +16,24 @@ import {
   withTheme,
   withRenderer
 } from '../src/index';
+
+test('connectStyles should return a partial function that accepts a React element that returns a FelaComponent', () => {
+  const createElement = connectStyles({ color: 'blue' }, { color: 'black' });
+  expect(typeof createElement === 'function').toBe(true);
+  expect(createElement('div').displayName).toBe('FelaComponent');
+});
+
+test("connectStyles's return value should return a styled component when invoked", () => {
+  const Element = connectStyles({ color: 'blue' }, { color: 'black' })('div');
+  expect(felaSnapshot(<Element />)).toMatchSnapshot();
+});
+
+test('connectStyles should accept styles functions or objects', () => {
+  const Element = connectStyles({ color: 'blue' }, ({ theme }) => ({
+    color: theme.colorWhite
+  }))('div');
+  expect(felaSnapshot(<Element />)).toMatchSnapshot();
+});
 
 test('mergeThemes should return an immutable and deeply cloned object', () => {
   const themeA = () => ({ color: 'yellow' });
@@ -41,6 +60,10 @@ test('mergeThemes should return an immutable and deeply cloned object', () => {
   // To be or not to be. That is the question.
   // https://facebook.github.io/jest/docs/en/expect.html#tobevalue
   expect(props.theme.breakpoints).not.toBe(themeB.breakpoints);
+
+  expect(() => {
+    delete props.theme.color;
+  }).toThrow();
 });
 
 test('mergesThemes should accept functions themes', () => {

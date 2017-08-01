@@ -1,33 +1,307 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render 1`] = `
-<tr
-  className="cf-table__row cf-table__row--default"
+exports[`TableRow should compose with styles overrides 1`] = `
+Object {
+  "component": <tr
+    className="cf-t744or"
 >
-  TableRow
-</tr>
+    <td
+        className="cf-1glop85"
+        colSpan={undefined}
+        rowSpan={undefined}
+    />
+</tr>,
+  "styles": ".cf-t744or {
+  border-color: #dedede;
+  vertical-align: right
+}
+.cf-1glop85 {
+  border-top: 1px solid #dedede;
+  line-height: 1.5;
+  padding: 0.73333333333rem;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+@media (max-width: 47.2em) {
+  .cf-t744or {
+    display: block;
+    width: 100%;
+    box-sizing: border-box
+  }
+  .cf-1glop85 {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-top-width: 0px
+  }
+}
+@media screen and (max-width: 47.2em) {
+  .cf-t744or:after {
+    content: \\"\\";
+    display: table;
+    clear: both
+  }
+  .cf-t744or {
+    display: block;
+    padding: 0.73333333333rem;
+    border-top: 1px solid #dedede;
+    background-color: #ccc
+  }
+  .cf-1glop85 {
+    display: block;
+    border: none;
+    float: left;
+    clear: left;
+    padding: 0px
+  }
+}
+@media (min-width: 97.6em) {
+  .cf-t744or {
+    width: 1000px
+  }
+}",
+}
 `;
 
-exports[`should render extra class name 1`] = `
-<tr
-  className="cf-table__row cf-table__row--default extra"
+exports[`TableRow should render 1`] = `
+Object {
+  "component": <tr
+    className="cf-1k2myrb"
 >
-  TableRow
-</tr>
+    TableRow
+</tr>,
+  "styles": ".cf-1k2myrb {
+  border-color: #dedede
+}
+@media (max-width: 47.2em) {
+  .cf-1k2myrb {
+    display: block;
+    width: 100%;
+    box-sizing: border-box
+  }
+}
+@media screen and (max-width: 47.2em) {
+  .cf-1k2myrb:after {
+    content: \\"\\";
+    display: table;
+    clear: both
+  }
+  .cf-1k2myrb {
+    display: block;
+    padding: 0.73333333333rem;
+    border-top: 1px solid #dedede;
+    background-color: #ccc
+  }
+}",
+}
 `;
 
-exports[`should render with accent 1`] = `
-<tr
-  className="cf-table__row cf-table__row--default cf-table__row--accent-orange"
+exports[`TableRow should render with type 1`] = `
+Object {
+  "component": <tr
+    className="cf-7q8ucp"
 >
-  TableRow
-</tr>
+    TableRow
+</tr>,
+  "styles": ".cf-7q8ucp {
+  border-color: #d93c3e;
+  background-color: #dd5153
+}
+@media (max-width: 47.2em) {
+  .cf-7q8ucp {
+    display: block;
+    width: 100%;
+    box-sizing: border-box
+  }
+}
+@media screen and (max-width: 47.2em) {
+  .cf-7q8ucp:after {
+    content: \\"\\";
+    display: table;
+    clear: both
+  }
+  .cf-7q8ucp {
+    display: block;
+    padding: 0.73333333333rem;
+    border-top: 1px solid #dedede;
+    background-color: #ccc
+  }
+}",
+}
 `;
 
-exports[`should render with type 1`] = `
-<tr
-  className="cf-table__row cf-table__row--error"
+exports[`createTableRow should be able to render a div 1`] = `
+Object {
+  "component": <div
+    bare={undefined}
+    bordered={undefined}
+    className="cf-1edt7t"
+    condensed={undefined}
+    hover={undefined}
+    is="div"
+    rowIndex={undefined}
+    striped={undefined}
+    tbodyIndex={undefined}
+    tfootIndex={undefined}
+    theadIndex={undefined}
+    type={undefined}
 >
-  TableRow
-</tr>
+    <div
+        align={undefined}
+        bare={undefined}
+        bordered={undefined}
+        cellIndex={undefined}
+        className="cf-kk9pov"
+        colSpan={undefined}
+        condensed={undefined}
+        headers={undefined}
+        hover={undefined}
+        is="div"
+        rowIndex={undefined}
+        rowSpan={undefined}
+        rowType={undefined}
+        striped={undefined}
+        tbodyIndex={undefined}
+        tfootIndex={undefined}
+        theadIndex={undefined}
+        width={undefined}
+    />
+</div>,
+  "styles": ".cf-1edt7t {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: nowrap;
+  -webkit-box-lines: nowrap;
+  -webkit-flex-wrap: nowrap;
+  justify-content: space-around;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-around;
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  border-color: #dedede;
+  vertical-align: right
+}
+.cf-kk9pov {
+  display: inline-block;
+  flex: auto;
+  -webkit-flex: auto;
+  border-top: 1px solid #dedede;
+  line-height: 1.5;
+  padding: 0.73333333333rem;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-color: #dedede
+}
+@media (max-width: 47.2em) {
+  .cf-1edt7t {
+    display: block;
+    width: 100%;
+    box-sizing: border-box
+  }
+  .cf-kk9pov {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-top-width: 0px
+  }
+}
+@media screen and (max-width: 47.2em) {
+  .cf-1edt7t:after {
+    content: \\"\\";
+    display: table;
+    clear: both
+  }
+  .cf-1edt7t {
+    display: block;
+    padding: 0.73333333333rem;
+    border-top: 1px solid #dedede;
+    background-color: #ccc
+  }
+  .cf-kk9pov {
+    display: block;
+    border: none;
+    float: left;
+    clear: left;
+    padding: 0px
+  }
+}
+@media (min-width: 97.6em) {
+  .cf-1edt7t {
+    width: 1000px
+  }
+}",
+}
+`;
+
+exports[`createTableRow should compose with styles overrides 1`] = `
+Object {
+  "component": <tr
+    className="cf-t744or"
+>
+    <td
+        className="cf-1glop85"
+        colSpan={undefined}
+        rowSpan={undefined}
+    />
+</tr>,
+  "styles": ".cf-t744or {
+  border-color: #dedede;
+  vertical-align: right
+}
+.cf-1glop85 {
+  border-top: 1px solid #dedede;
+  line-height: 1.5;
+  padding: 0.73333333333rem;
+  vertical-align: middle;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis
+}
+@media (max-width: 47.2em) {
+  .cf-t744or {
+    display: block;
+    width: 100%;
+    box-sizing: border-box
+  }
+  .cf-1glop85 {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-top-width: 0px
+  }
+}
+@media screen and (max-width: 47.2em) {
+  .cf-t744or:after {
+    content: \\"\\";
+    display: table;
+    clear: both
+  }
+  .cf-t744or {
+    display: block;
+    padding: 0.73333333333rem;
+    border-top: 1px solid #dedede;
+    background-color: #ccc
+  }
+  .cf-1glop85 {
+    display: block;
+    border: none;
+    float: left;
+    clear: left;
+    padding: 0px
+  }
+}
+@media (min-width: 97.6em) {
+  .cf-t744or {
+    width: 1000px
+  }
+}",
+}
 `;

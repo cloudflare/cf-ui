@@ -15,6 +15,16 @@ const createComponent = (rule, type = 'div', passThroughProps = []) =>
       : passThroughProps
   );
 
+const connectStyles = (...styles) => type =>
+  createComponent(
+    combineRules(
+      ...styles.map(
+        style => (typeof style === 'function' ? style : () => style)
+      )
+    ),
+    type
+  );
+
 const mergeThemes = (baseTheme, ...themes) => ({
   theme: (themes &&
     themes.reduce((acc, theme) => {
@@ -77,6 +87,7 @@ const createComponentStyles = (styleFunctions, component) =>
 
 export {
   createComponent,
+  connectStyles,
   mergeThemes,
   applyTheme,
   ThemeProvider,
