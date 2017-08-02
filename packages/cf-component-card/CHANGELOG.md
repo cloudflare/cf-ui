@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 <a name="3.0.0"></a>
-# [3.0.0](https://github.com/cloudflare/cf-ui/compare/cf-builder-card@2.5.0...cf-builder-card@3.0.0) (2017-08-02)
+# [3.0.0](https://github.com/cloudflare/cf-ui/compare/cf-component-card@2.1.1...cf-component-card@3.0.0) (2017-08-02)
 
 
 ### Features
@@ -30,26 +30,3 @@ component into their own components.
 `footerMessage` props. If you need a title or footer in a `CardContent`
 component, use the newly created `CardTitle` and `CardFooter`
 components.
-
-
-
-
-<a name="2.5.0"></a>
-# [2.5.0](https://github.com/koddsson/cf-ui/compare/cf-builder-card@2.4.3...cf-builder-card@2.5.0) (2017-07-31)
-
-
-### Features
-
-* **cf-component-dynamic-content:** css2fela (#323) ([0565631](https://github.com/koddsson/cf-ui/commit/0565631))
-
-
-
-
-<a name="2.4.3"></a>
-## [2.4.3](https://github.com/cloudflare/cf-ui/compare/cf-builder-card@2.4.1...cf-builder-card@2.4.3) (2017-07-27)
-
-
-
-
-<a name="2.4.2"></a>
-## [2.4.2](https://github.com/koddsson/cf-ui/compare/cf-builder-card@2.4.1...cf-builder-card@2.4.2) (2017-07-26)
