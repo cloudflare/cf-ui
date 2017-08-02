@@ -37,11 +37,11 @@ exports[`should render 2`] = `
 }
 
 .d {
-  padding-left: 2em
+  margin: initial
 }
 
 .e {
-  margin-top: initial
+  padding: 0 0 0 2em
 }
 
 .f:first-child {
@@ -245,11 +245,11 @@ exports[`should render checked 2`] = `
 }
 
 .d {
-  padding-left: 2em
+  margin: initial
 }
 
 .e {
-  margin-top: initial
+  padding: 0 0 0 2em
 }
 
 .f:first-child {
@@ -448,11 +448,11 @@ exports[`should render without a label 2`] = `
 }
 
 .d {
-  padding-left: 2em
+  margin: initial
 }
 
 .e {
-  margin-top: initial
+  padding: 0 0 0 2em
 }
 
 .f:first-child {

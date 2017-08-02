@@ -2,8 +2,8 @@ export default baseTheme => ({
   cursor: 'pointer',
   display: 'block',
   minHeight: '1em',
-  paddingLeft: '2em',
-  marginTop: 'initial',
+  padding: '0 0 0 2em',
+  margin: 'initial',
 
   '&:first-child': {
     marginTop: 'initial'
