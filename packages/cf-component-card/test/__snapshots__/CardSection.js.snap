@@ -2,16 +2,72 @@
 
 exports[`should render 1`] = `
 <div
-  className="cf-card__section cf-card__section--default"
+  className="a b c d e f"
 >
   CardSection
 </div>
 `;
 
+exports[`should render 2`] = `
+"
+.a {
+  display: table
+}
+
+.b {
+  table-layout: fixed
+}
+
+.c {
+  width: 100%
+}
+
+.d {
+  border-top: 1px solid #dedede
+}
+
+.e {
+  border-left: initial
+}
+
+.f:first-child {
+  border-top: initial
+}
+"
+`;
+
 exports[`should render with status 1`] = `
 <div
-  className="cf-card__section cf-card__section--error"
+  className="a b c d e f"
 >
   CardSection
 </div>
+`;
+
+exports[`should render with status 2`] = `
+"
+.a {
+  display: table
+}
+
+.b {
+  table-layout: fixed
+}
+
+.c {
+  width: 100%
+}
+
+.d {
+  border-top: 1px solid #dedede
+}
+
+.e {
+  border-left: 3px solid #bd2527
+}
+
+.f:first-child {
+  border-top: initial
+}
+"
 `;

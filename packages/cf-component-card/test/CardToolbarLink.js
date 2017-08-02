@@ -1,21 +1,23 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { felaSnapshot } from 'cf-style-provider';
 import CardToolbarLink from '../src/CardToolbarLink';
 
 test('should render', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <CardToolbarLink id="link" isActive={false} onClick={() => {}}>
       CardToolbarLink
     </CardToolbarLink>
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render with isActive', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <CardToolbarLink id="link" isActive={true} onClick={() => {}}>
       CardToolbarLink
     </CardToolbarLink>
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

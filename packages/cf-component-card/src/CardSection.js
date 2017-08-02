@@ -1,18 +1,22 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
+import { createComponent } from 'cf-style-container';
 
-class CardSection extends React.Component {
-  render() {
-    return (
-      <div
-        className={'cf-card__section cf-card__section--' + this.props.status}
-      >
-        {this.props.children}
-      </div>
-    );
+const styles = ({ theme, status }) => ({
+  display: 'table',
+  tableLayout: 'fixed',
+  width: '100%',
+  borderTop: `1px solid ${theme.colorGrayLight}`,
+  borderLeft: status === 'error' ? `3px solid ${theme.colorRed}` : 'initial',
+
+  '&:first-child': {
+    borderTop: 'initial'
   }
-}
+});
+
+const CardSection = ({ className, children }) => (
+  <div className={className}>{children}</div>
+);
 
 CardSection.propTypes = {
   status: PropTypes.oneOf(['default', 'error']),
@@ -23,4 +27,4 @@ CardSection.defaultProps = {
   status: 'default'
 };
 
-export default CardSection;
+export default createComponent(styles, CardSection, ['status']);

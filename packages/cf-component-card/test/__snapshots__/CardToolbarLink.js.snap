@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <a
-  className="cf-link cf-card__toolbar_link"
+  className="cf-link a b c d e f g h i j k l m"
   href="#!"
   id="link"
   onClick={[Function]}
@@ -12,9 +12,68 @@ exports[`should render 1`] = `
 </a>
 `;
 
+exports[`should render 2`] = `
+"
+.a {
+  position: relative
+}
+
+.b {
+  display: inline-block
+}
+
+.c {
+  padding: 0.73333rem 2em 0.73333rem 0.5rem
+}
+
+.d::after {
+  content: '\\\\f003'
+}
+
+.e::after {
+  font-family: \\"cloudflare-font\\"
+}
+
+.f::after {
+  font-style: normal
+}
+
+.g::after {
+  font-weight: normal
+}
+
+.h::after {
+  margin-top: -0.7em
+}
+
+.i::after {
+  position: absolute
+}
+
+.j::after {
+  top: 60%
+}
+
+.k::after {
+  right: 1rem
+}
+
+.l::after {
+  transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -moz-transition: transform 0.2s ease
+}
+
+.m::after {
+  transform: initial;
+  -webkit-transform: initial
+}
+"
+`;
+
 exports[`should render with isActive 1`] = `
 <a
-  className="cf-link cf-card__toolbar_link cf-card__toolbar_link--open"
+  className="cf-link a b c d e f g h i j k l m"
   href="#!"
   id="link"
   onClick={[Function]}
@@ -22,4 +81,63 @@ exports[`should render with isActive 1`] = `
 >
   CardToolbarLink
 </a>
+`;
+
+exports[`should render with isActive 2`] = `
+"
+.a {
+  position: relative
+}
+
+.b {
+  display: inline-block
+}
+
+.c {
+  padding: 0.73333rem 2em 0.73333rem 0.5rem
+}
+
+.d::after {
+  content: '\\\\f003'
+}
+
+.e::after {
+  font-family: \\"cloudflare-font\\"
+}
+
+.f::after {
+  font-style: normal
+}
+
+.g::after {
+  font-weight: normal
+}
+
+.h::after {
+  margin-top: -0.7em
+}
+
+.i::after {
+  position: absolute
+}
+
+.j::after {
+  top: 60%
+}
+
+.k::after {
+  right: 1rem
+}
+
+.l::after {
+  transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -moz-transition: transform 0.2s ease
+}
+
+.m::after {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg)
+}
+"
 `;

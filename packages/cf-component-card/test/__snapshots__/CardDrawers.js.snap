@@ -2,20 +2,18 @@
 
 exports[`should render when given all the props 1`] = `
 <div
-  className="cf-card__section cf-card__section--default"
+  className="a b c d e f"
 >
   <div
-    className="cf-card__toolbar"
+    className="d g f h i j"
   >
+    <div />
     <div
-      className="cf-card__toolbar_controls"
-    />
-    <div
-      className="cf-card__toolbar_links"
+      className="k"
       role="tablist"
     >
       <a
-        className="cf-link cf-card__toolbar_link cf-card__toolbar_link--open"
+        className="cf-link l m n o p q r s t u v w x"
         href="#!"
         id="card-0-drawer-one"
         onClick={[Function]}
@@ -24,7 +22,7 @@ exports[`should render when given all the props 1`] = `
         One
       </a>
       <a
-        className="cf-link cf-card__toolbar_link"
+        className="cf-link l m n o p q r s t u v w y"
         href="#!"
         id="card-0-drawer-two"
         onClick={[Function]}
@@ -35,42 +33,165 @@ exports[`should render when given all the props 1`] = `
     </div>
   </div>
   <div
-    className="cf-card__drawers_container cf-card__drawers_container--open"
+    active="one"
+    className="z"
   >
     <div
-      aria-hidden="false"
-      aria-labelledby="card-0-drawer-one"
-      className="cf-card__drawer cf-card__drawer--active"
-      role="tabpanel"
+      className="d ab"
+      id={undefined}
+      isActive={true}
+      onClick={undefined}
     >
       One Content
     </div>
     <div
-      aria-hidden="true"
-      aria-labelledby="card-0-drawer-two"
-      className="cf-card__drawer"
-      role="tabpanel"
+      className="ac ad"
+      id={undefined}
+      isActive={false}
+      onClick={undefined}
     />
   </div>
 </div>
 `;
 
+exports[`should render when given all the props 2`] = `
+"
+.a {
+  display: table
+}
+
+.b {
+  table-layout: fixed
+}
+
+.c {
+  width: 100%
+}
+
+.d {
+  border-top: 1px solid #dedede
+}
+
+.e {
+  border-left: initial
+}
+
+.f:first-child {
+  border-top: initial
+}
+
+.g {
+  min-height: 2.96666rem
+}
+
+.h::after {
+  content: ''
+}
+
+.i::after {
+  display: table
+}
+
+.j::after {
+  clear: both
+}
+
+.k {
+  float: right
+}
+
+.l {
+  position: relative
+}
+
+.m {
+  display: inline-block
+}
+
+.n {
+  padding: 0.73333rem 2em 0.73333rem 0.5rem
+}
+
+.o::after {
+  content: '\\\\f003'
+}
+
+.p::after {
+  font-family: \\"cloudflare-font\\"
+}
+
+.q::after {
+  font-style: normal
+}
+
+.r::after {
+  font-weight: normal
+}
+
+.s::after {
+  margin-top: -0.7em
+}
+
+.t::after {
+  position: absolute
+}
+
+.u::after {
+  top: 60%
+}
+
+.v::after {
+  right: 1rem
+}
+
+.w::after {
+  transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -moz-transition: transform 0.2s ease
+}
+
+.x::after {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg)
+}
+
+.y::after {
+  transform: initial;
+  -webkit-transform: initial
+}
+
+.z {
+  display: block
+}
+
+.ab {
+  padding: 1.5rem
+}
+
+.ac {
+  border-top: initial
+}
+
+.ad {
+  padding: initial
+}
+"
+`;
+
 exports[`should render when not given props 1`] = `
 <div
-  className="cf-card__section cf-card__section--default"
+  className="a b c d e f"
 >
   <div
-    className="cf-card__toolbar"
+    className="d g f h i j"
   >
+    <div />
     <div
-      className="cf-card__toolbar_controls"
-    />
-    <div
-      className="cf-card__toolbar_links"
+      className="k"
       role="tablist"
     >
       <a
-        className="cf-link cf-card__toolbar_link"
+        className="cf-link l m n o p q r s t u v w x"
         href="#!"
         id="card-1-drawer-one"
         onClick={[Function]}
@@ -79,7 +200,7 @@ exports[`should render when not given props 1`] = `
         One
       </a>
       <a
-        className="cf-link cf-card__toolbar_link"
+        className="cf-link l m n o p q r s t u v w x"
         href="#!"
         id="card-1-drawer-two"
         onClick={[Function]}
@@ -90,20 +211,136 @@ exports[`should render when not given props 1`] = `
     </div>
   </div>
   <div
-    className="cf-card__drawers_container"
+    active={undefined}
+    className="y"
   >
     <div
-      aria-hidden="true"
-      aria-labelledby="card-1-drawer-one"
-      className="cf-card__drawer"
-      role="tabpanel"
+      className="z ab"
+      id={undefined}
+      isActive={false}
+      onClick={undefined}
     />
     <div
-      aria-hidden="true"
-      aria-labelledby="card-1-drawer-two"
-      className="cf-card__drawer"
-      role="tabpanel"
+      className="z ab"
+      id={undefined}
+      isActive={false}
+      onClick={undefined}
     />
   </div>
 </div>
+`;
+
+exports[`should render when not given props 2`] = `
+"
+.a {
+  display: table
+}
+
+.b {
+  table-layout: fixed
+}
+
+.c {
+  width: 100%
+}
+
+.d {
+  border-top: 1px solid #dedede
+}
+
+.e {
+  border-left: initial
+}
+
+.f:first-child {
+  border-top: initial
+}
+
+.g {
+  min-height: 2.96666rem
+}
+
+.h::after {
+  content: ''
+}
+
+.i::after {
+  display: table
+}
+
+.j::after {
+  clear: both
+}
+
+.k {
+  float: right
+}
+
+.l {
+  position: relative
+}
+
+.m {
+  display: inline-block
+}
+
+.n {
+  padding: 0.73333rem 2em 0.73333rem 0.5rem
+}
+
+.o::after {
+  content: '\\\\f003'
+}
+
+.p::after {
+  font-family: \\"cloudflare-font\\"
+}
+
+.q::after {
+  font-style: normal
+}
+
+.r::after {
+  font-weight: normal
+}
+
+.s::after {
+  margin-top: -0.7em
+}
+
+.t::after {
+  position: absolute
+}
+
+.u::after {
+  top: 60%
+}
+
+.v::after {
+  right: 1rem
+}
+
+.w::after {
+  transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -moz-transition: transform 0.2s ease
+}
+
+.x::after {
+  transform: initial;
+  -webkit-transform: initial
+}
+
+.y {
+  display: none
+}
+
+.z {
+  border-top: initial
+}
+
+.ab {
+  padding: initial
+}
+"
 `;

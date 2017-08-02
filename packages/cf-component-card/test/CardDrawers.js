@@ -1,5 +1,5 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { felaSnapshot } from 'cf-style-provider';
 import {
   CardDrawers,
   CardToolbar,
@@ -7,7 +7,7 @@ import {
 } from '../../cf-component-card/src/index';
 
 test('should render when given all the props', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <CardDrawers
       onClick={() => {}}
       active="one"
@@ -17,11 +17,12 @@ test('should render when given all the props', () => {
       ]}
     />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render when not given props', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <CardDrawers
       drawers={[
         { id: 'one', name: 'One', content: 'One Content' },
@@ -29,5 +30,6 @@ test('should render when not given props', () => {
       ]}
     />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

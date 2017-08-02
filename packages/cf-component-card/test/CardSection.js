@@ -1,15 +1,17 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { felaSnapshot } from 'cf-style-provider';
 import { CardSection } from '../../cf-component-card/src/index';
 
 test('should render', () => {
-  const component = renderer.create(<CardSection>CardSection</CardSection>);
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<CardSection>CardSection</CardSection>);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render with status', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <CardSection status="error">CardSection</CardSection>
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

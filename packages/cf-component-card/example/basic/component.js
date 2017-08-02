@@ -1,11 +1,14 @@
 import React from 'react';
 import {
   Card,
+  CardBlock,
   CardContent,
   CardControl,
   CardDrawers,
   CardMessages,
-  CardSection
+  CardSection,
+  CardTitle,
+  CardFooter
 } from 'cf-component-card';
 import { Button } from 'cf-component-button';
 
@@ -28,10 +31,8 @@ class CardComponent extends React.Component {
     return (
       <Card>
         <CardSection>
-          <CardContent
-            title="Hello World"
-            footerMessage="This is a footer message."
-          >
+          <CardContent>
+            <CardTitle>Hello World</CardTitle>
             <p>Here is some content.</p>
             <CardMessages
               messages={[
@@ -39,9 +40,15 @@ class CardComponent extends React.Component {
                 { type: 'error', content: 'Error Message' }
               ]}
             />
+            <CardFooter>This is a footer message</CardFooter>
           </CardContent>
           <CardControl>
-            <Button type="default" onClick={() => {}}>Example Control</Button>
+            <CardBlock>
+              This is a block
+            </CardBlock>
+            <CardBlock>
+              <Button type="default" onClick={() => {}}>Example Control</Button>
+            </CardBlock>
           </CardControl>
         </CardSection>
         <CardDrawers
