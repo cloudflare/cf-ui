@@ -6,8 +6,9 @@ const styles = ({ theme }) => ({
   cursor: theme.cursor,
   display: theme.display,
   minHeight: theme.minHeight,
-  paddingLeft: theme.paddingLeft,
-  marginTop: theme.marginTop,
+
+  margin: theme.margin,
+  padding: theme.padding,
 
   '&:first-child': {
     marginTop: theme['&:first-child'].marginTop
