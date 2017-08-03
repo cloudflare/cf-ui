@@ -48,7 +48,6 @@ Input.propTypes = {
   onFocus: PropTypes.func,
   placeholder: PropTypes.string,
   autoComplete: PropTypes.string,
-  invalid: PropTypes.bool,
   className: PropTypes.string,
   disabled: PropTypes.bool
 };

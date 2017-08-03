@@ -20,7 +20,7 @@ test('should render with type', () => {
 
 test('should render with error', () => {
   const snapshot = felaSnapshot(
-    <Input name="example" value="" invalid onChange={() => {}} />
+    <Input name="example" value="" onChange={() => {}} />
   );
   expect(snapshot.component).toMatchSnapshot();
   expect(snapshot.styles).toMatchSnapshot();
@@ -54,7 +54,6 @@ test('should pass all props down to the inner input and merge classnames', () =>
       value=""
       onChange={() => {}}
       disabled
-      invalid
       type="number"
       data-shadowed={true}
       min={3}
