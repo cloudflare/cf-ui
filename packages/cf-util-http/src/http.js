@@ -1,3 +1,4 @@
+import './polyfillFetchInEdge';
 import 'isomorphic-fetch';
 
 import createLogger from 'cf-util-logger';
