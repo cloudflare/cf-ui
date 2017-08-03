@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.7.8"></a>
+## [4.7.8](https://github.com/cloudflare/cf-ui/compare/cf-util-http-file@4.7.6...cf-util-http-file@4.7.8) (2017-08-03)
+
+
+
+
 <a name="4.7.7"></a>
 ## [4.7.7](https://github.com/sejoker/cf-ui/compare/cf-util-http-file@4.7.6...cf-util-http-file@4.7.7) (2017-08-03)
 

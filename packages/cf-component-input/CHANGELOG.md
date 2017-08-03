@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.3.4"></a>
+## [5.3.4](https://github.com/cloudflare/cf-ui/compare/cf-component-input@5.3.2...cf-component-input@5.3.4) (2017-08-03)
+
+
+
+
 <a name="5.3.3"></a>
 ## [5.3.3](https://github.com/koddsson/cf-ui/compare/cf-component-input@5.3.1...cf-component-input@5.3.3) (2017-08-01)
 
