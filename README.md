@@ -55,6 +55,24 @@ open index.html
 
 To get started contributing please see [CONTRIBUTING.md](CONTRIBUTING.md)
 
+## Deploying new packages
+
+When a commit hits the `master` branch it will go through the CI pipeline which
+will at the end publish the packages to the npm registry given that the commits
+have the correct conventional commits format.
+
+Here's a example conventional commit message for reference. Note that the
+package name needs to be in the scope section of the message but otherwise
+adhere to the [conventional commits standard](https://conventionalcommits.org/).
+
+```
+fix(cf-component-radio): allow padding/margin override
+
+Previously we only allowed `marginTop` and `paddingLeft` to be
+overridden but we want to override the whole shorthand in some places
+where this component is implemented.
+```
+
 ## License
 
 cf-ui is [BSD Licensed](LICENSE)
