@@ -11,4 +11,4 @@ deploy:
   provider: script
   script: yarn run publish -- --yes
   on:
-    branch: production
+    branch: master
