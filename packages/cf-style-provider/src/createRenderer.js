@@ -19,7 +19,8 @@ const mediaQueries = {
   mobileWide: `@media (min-width: ${variables.breakpoints.mobileWide})`,
   tablet: `@media (min-width: ${variables.breakpoints.tablet})`,
   desktop: `@media (min-width: ${variables.breakpoints.desktop})`,
-  desktopLarge: `@media (min-width: ${variables.breakpoints.desktopLarge})`
+  desktopLarge: `@media (min-width: ${variables.breakpoints.desktopLarge})`,
+  hover: `@media (hover)`
 };
 
 const removePrefix = query => query.replace('@media ', '');
