@@ -7,7 +7,6 @@ import {
   FormLabel,
   FormFieldError
 } from 'cf-component-form';
-import { Flex, FlexItem } from 'cf-component-flex';
 import { Input } from 'cf-component-input';
 import Select from 'cf-component-select';
 import { Textarea } from 'cf-component-textarea';
@@ -60,29 +59,22 @@ class FormComponent extends React.Component {
     return (
       <Form layout="horizontal" onSubmit={this.handleSubmit}>
         <FormHeader title="Feedback Form" />
-
         <FormFieldset legend="Name">
-          <Flex spacing="wide">
-            <FlexItem>
-              <FormLabel>First Name</FormLabel>
-              <Input
-                name="firstName"
-                type="text"
-                value={this.state.firstName}
-                onChange={this.handleFirstNameChange}
-              />
-            </FlexItem>
+          <FormLabel>First Name</FormLabel>
+          <Input
+            name="firstName"
+            type="text"
+            value={this.state.firstName}
+            onChange={this.handleFirstNameChange}
+          />
+          <FormLabel>Last Name</FormLabel>
+          <Input
+            name="lastName"
+            type="text"
+            value={this.state.lastName}
+            onChange={this.handleLastNameChange}
+          />
 
-            <FlexItem>
-              <FormLabel>Last Name</FormLabel>
-              <Input
-                name="lastName"
-                type="text"
-                value={this.state.lastName}
-                onChange={this.handleLastNameChange}
-              />
-            </FlexItem>
-          </Flex>
         </FormFieldset>
 
         <FormFieldset legend="Type">
