@@ -48,6 +48,7 @@ const createRenderer = opts => {
     enhancers,
     selectorPrefix: usedOpts.selectorPrefix,
     mediaQueryOrder: [
+      removePrefix(mediaQueries.hover),
       removePrefix(mediaQueries.mobile),
       removePrefix(mediaQueries.mobileWide),
       removePrefix(mediaQueries.tablet),
