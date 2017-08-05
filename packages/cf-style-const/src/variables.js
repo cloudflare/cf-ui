@@ -45,7 +45,8 @@ export default {
     apple: '#BD2527',
     charcoal: '#333333',
     carrot: '#f56500',
-    smoke: '#e0e0e0'
+    smoke: '#e0e0e0',
+    dust: '#ebebeb'
   },
   fontSize: '15px',
   boxShadow: '0 0 20px 0 rgba(136,136,136,0.50)',
