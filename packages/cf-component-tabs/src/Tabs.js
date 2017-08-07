@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Viewport from 'cf-component-viewport';
-import Select from 'cf-component-select';
+import { Select } from 'cf-component-select';
 import { createComponent } from 'cf-style-container';
 import { TabsItem } from './index';
 

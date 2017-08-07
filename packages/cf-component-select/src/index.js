@@ -1,3 +1,8 @@
-import Select from './Select';
+import { applyTheme } from 'cf-style-container';
 
-export default Select;
+import SelectUnstyled from './Select';
+import SelectTheme from './SelectTheme';
+
+const Select = applyTheme(SelectUnstyled, SelectTheme);
+
+export { Select, SelectUnstyled, SelectTheme };
