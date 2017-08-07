@@ -8,7 +8,7 @@ const styles = props => {
     display: theme.display,
     position: theme.position,
     verticalAlign: theme.verticalAlign,
-    whiteSpace: props.vertical ? 'initial' : theme.whiteSpace
+    whiteSpace: props.direction === 'column' ? 'initial' : theme.whiteSpace
   };
 };
 
@@ -22,13 +22,13 @@ const getGroupByIndex = (index, length) => {
   return 'inbetween';
 };
 
-const addGroupProps = (children, spaced, vertical) =>
+const addGroupProps = (children, spaced, direction) =>
   React.Children.map(children, (child, index) => {
     if (React.isValidElement(child)) {
       return React.cloneElement(child, {
         group: getGroupByIndex(index, React.Children.count(children)),
         spaced,
-        vertical
+        direction
       });
     }
     return child;
@@ -36,10 +36,10 @@ const addGroupProps = (children, spaced, vertical) =>
 
 class ButtonGroup extends React.Component {
   render() {
-    const { className, children, spaced, vertical } = this.props;
+    const { className, children, spaced, direction } = this.props;
     return (
       <div className={className}>
-        {addGroupProps(children, spaced, vertical)}
+        {addGroupProps(children, spaced, direction)}
       </div>
     );
   }
@@ -49,7 +49,11 @@ ButtonGroup.propTypes = {
   children: PropTypes.node,
   spaced: PropTypes.bool,
   className: PropTypes.string.isRequired,
-  vertical: PropTypes.bool
+  direction: PropTypes.oneOf(['column', 'row'])
+};
+
+ButtonGroup.defaultProps = {
+  direction: 'row'
 };
 
 export default createComponent(styles, ButtonGroup);

@@ -53,8 +53,8 @@ const before = (fadeZoomIn, loading) => {
   };
 };
 
-const marginLeft = (marginLeft, group, spaced, vertical) => {
-  if (!group || vertical) {
+const marginLeft = (marginLeft, group, spaced, direction) => {
+  if (!group || direction === 'column') {
     return { marginLeft };
   }
   if (spaced && group !== 'first') {
@@ -63,11 +63,11 @@ const marginLeft = (marginLeft, group, spaced, vertical) => {
   return { marginLeft: 0 };
 };
 
-const marginTop = (marginTop, group, spaced, vertical) => {
-  if (!group || !vertical) {
+const marginTop = (marginTop, group, spaced, direction) => {
+  if (!group || direction === 'row') {
     return { marginTop };
   }
-  if (spaced && vertical && group !== 'first') {
+  if (spaced && direction === 'column' && group !== 'first') {
     return { marginTop: '0.4rem' };
   }
   return { marginTop: 0 };
@@ -98,7 +98,9 @@ const styles = props => {
       backgroundColor: props.loading
         ? theme.backgroundColor
         : theme[`${props.type}Background`],
-      boxShadow: `inset 0px 0px 0px ${theme.borderSize} ${theme[`${props.type}focusOutlineColor`]}`,
+      boxShadow: `inset 0px 0px 0px ${theme.borderSize} ${theme[
+        `${props.type}focusOutlineColor`
+      ]}`,
       color: props.loading
         ? theme.disabledBackground
         : theme[`${props.type}FocusColor`],
@@ -136,8 +138,8 @@ const styles = props => {
     marginBottom: props.group ? 0 : theme.marginBottom,
     marginRight: props.group ? 0 : theme.marginRight,
     marginTop: props.group ? 0 : theme.marginTop,
-    ...marginTop(theme.marginTop, props.group, props.spaced, props.vertical),
-    ...marginLeft(theme.marginLeft, props.group, props.spaced, props.vertical),
+    ...marginTop(theme.marginTop, props.group, props.spaced, props.direction),
+    ...marginLeft(theme.marginLeft, props.group, props.spaced, props.direction),
     ...opacity(props.loading, props.disabled),
     paddingBottom: theme.paddingBottom,
     paddingLeft: theme.paddingLeft,
@@ -152,7 +154,7 @@ const styles = props => {
     float: theme.float,
     maxWidth: theme.maxWidth,
     float: theme.float,
-    width: props.vertical ? '100%' : 'auto'
+    width: props.direction === 'column' ? '100%' : 'auto'
   };
 };
 
@@ -183,7 +185,7 @@ Button.propTypes = {
   onClick: PropTypes.func,
   submit: PropTypes.bool,
   spaced: PropTypes.bool,
-  vertical: PropTypes.bool,
+  direction: PropTypes.oneOf(['column', 'row']),
   className: PropTypes.string.isRequired,
   group: PropTypes.oneOf(['first', 'inbetween', 'last']),
   type: PropTypes.oneOf(['default', 'primary', 'success', 'warning', 'danger'])
