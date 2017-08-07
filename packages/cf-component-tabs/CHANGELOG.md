@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.7.0"></a>
+# [6.7.0](https://github.com/cloudflare/cf-ui/compare/cf-component-tabs@6.5.0...cf-component-tabs@6.7.0) (2017-08-07)
+
+
+### Features
+
+* **cf-component-select:** migrate select to fela (#335) ([ca87352](https://github.com/cloudflare/cf-ui/commit/ca87352))
+
+
+
+
+<a name="6.6.0"></a>
+# [6.6.0](https://github.com/cloudflare/cf-ui/compare/cf-component-tabs@6.5.0...cf-component-tabs@6.6.0) (2017-08-07)
+
+
+### Features
+
+* **cf-component-select:** migrate select to fela (#335) ([ca87352](https://github.com/cloudflare/cf-ui/commit/ca87352))
+
+
+
+
 <a name="6.5.0"></a>
 # [6.5.0](https://github.com/koddsson/cf-ui/compare/cf-component-tabs@6.4.0...cf-component-tabs@6.5.0) (2017-07-28)
 
