@@ -1,43 +1,219 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render when given all the props 1`] = `
-<div
-  className="a b c d e f"
->
+exports[`should open a drawer when a link is clicked 1`] = `
+<div>
   <div
-    className="d g f h i j"
+    className="a b c d e"
   >
-    <div />
     <div
-      className="k"
-      role="tablist"
+      className="f a b g h i j"
     >
-      <a
-        className="cf-link l m n o p q r s t u v w x"
-        href="#!"
-        id="card-0-drawer-one"
-        onClick={[Function]}
-        role="tab"
+      <div
+        className="c k"
+      />
+      <div
+        className="a d l"
+        role="tablist"
       >
-        One
-      </a>
-      <a
-        className="cf-link l m n o p q r s t u v w y"
-        href="#!"
-        id="card-0-drawer-two"
-        onClick={[Function]}
-        role="tab"
+        <a
+          className="cf-link m n o p q r s t u"
+          href="#!"
+          id="card-2-drawer-one"
+          onClick={[Function]}
+          role="tab"
+        >
+          One
+        </a>
+        <a
+          className="cf-link m n o p q r s t u"
+          href="#!"
+          id="card-2-drawer-two"
+          onClick={[Function]}
+          role="tab"
+        >
+          Two
+        </a>
+      </div>
+    </div>
+  </div>
+  <div
+    active={undefined}
+    className="v"
+  >
+    <div
+      className="w x"
+      id={undefined}
+      isActive={false}
+      onClick={undefined}
+    />
+    <div
+      className="w x"
+      id={undefined}
+      isActive={false}
+      onClick={undefined}
+    />
+  </div>
+</div>
+`;
+
+exports[`should open a drawer when a link is clicked 2`] = `
+"
+.a {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex
+}
+
+.b {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center
+}
+
+.c {
+  flex: 1;
+  -webkit-flex: 1
+}
+
+.d {
+  justify-content: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end
+}
+
+.e {
+  border-top: 1px solid #dedede
+}
+
+.f {
+  min-height: 2.96666rem
+}
+
+.g {
+  width: 100%
+}
+
+.h::after {
+  content: ''
+}
+
+.i::after {
+  display: table
+}
+
+.j::after {
+  clear: both
+}
+
+.k {
+  margin-left: 1em
+}
+
+.l {
+  height: 100%
+}
+
+.m {
+  display: inline-block
+}
+
+.n {
+  margin-right: 1em
+}
+
+.o::after {
+  display: inline-block
+}
+
+.p::after {
+  content: '\\\\f003'
+}
+
+.q::after {
+  font-family: \\"cloudflare-font\\"
+}
+
+.r::after {
+  font-style: normal
+}
+
+.s::after {
+  font-weight: normal
+}
+
+.t::after {
+  transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -moz-transition: transform 0.2s ease
+}
+
+.u::after {
+  transform: initial;
+  -webkit-transform: initial
+}
+
+.v {
+  display: none
+}
+
+.w {
+  border-top: initial
+}
+
+.x {
+  padding: initial
+}
+"
+`;
+
+exports[`should render when given all the props 1`] = `
+<div>
+  <div
+    className="a b c d e"
+  >
+    <div
+      className="f a b g h i j"
+    >
+      <div
+        className="c k"
       >
-        Two
-      </a>
+        <div>
+          hello world
+        </div>
+      </div>
+      <div
+        className="a d l"
+        role="tablist"
+      >
+        <a
+          className="cf-link m n o p q r s t u"
+          href="#!"
+          id="card-0-drawer-one"
+          onClick={[Function]}
+          role="tab"
+        >
+          One
+        </a>
+        <a
+          className="cf-link m n o p q r s t v"
+          href="#!"
+          id="card-0-drawer-two"
+          onClick={[Function]}
+          role="tab"
+        >
+          Two
+        </a>
+      </div>
     </div>
   </div>
   <div
     active="one"
-    className="z"
+    className="w"
   >
     <div
-      className="d ab"
+      className="e x"
       id={undefined}
       isActive={true}
       onClick={undefined}
@@ -45,7 +221,7 @@ exports[`should render when given all the props 1`] = `
       One Content
     </div>
     <div
-      className="ac ad"
+      className="y z"
       id={undefined}
       isActive={false}
       onClick={undefined}
@@ -57,31 +233,40 @@ exports[`should render when given all the props 1`] = `
 exports[`should render when given all the props 2`] = `
 "
 .a {
-  display: table
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex
 }
 
 .b {
-  table-layout: fixed
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center
 }
 
 .c {
-  width: 100%
+  flex: 1;
+  -webkit-flex: 1
 }
 
 .d {
-  border-top: 1px solid #dedede
+  justify-content: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end
 }
 
 .e {
-  border-left: initial
+  border-top: 1px solid #dedede
 }
 
-.f:first-child {
-  border-top: initial
+.f {
+  min-height: 2.96666rem
 }
 
 .g {
-  min-height: 2.96666rem
+  width: 100%
 }
 
 .h::after {
@@ -97,11 +282,11 @@ exports[`should render when given all the props 2`] = `
 }
 
 .k {
-  float: right
+  margin-left: 1em
 }
 
 .l {
-  position: relative
+  height: 100%
 }
 
 .m {
@@ -109,119 +294,111 @@ exports[`should render when given all the props 2`] = `
 }
 
 .n {
-  padding: 0.73333rem 2em 0.73333rem 0.5rem
+  margin-right: 1em
 }
 
 .o::after {
-  content: '\\\\f003'
+  display: inline-block
 }
 
 .p::after {
-  font-family: \\"cloudflare-font\\"
+  content: '\\\\f003'
 }
 
 .q::after {
-  font-style: normal
+  font-family: \\"cloudflare-font\\"
 }
 
 .r::after {
-  font-weight: normal
+  font-style: normal
 }
 
 .s::after {
-  margin-top: -0.7em
+  font-weight: normal
 }
 
 .t::after {
-  position: absolute
-}
-
-.u::after {
-  top: 60%
-}
-
-.v::after {
-  right: 1rem
-}
-
-.w::after {
   transition: -webkit-transform 0.2s ease,transform 0.2s ease;
   -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
   -moz-transition: transform 0.2s ease
 }
 
-.x::after {
+.u::after {
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg)
 }
 
-.y::after {
+.v::after {
   transform: initial;
   -webkit-transform: initial
 }
 
-.z {
+.w {
   display: block
 }
 
-.ab {
+.x {
   padding: 1.5rem
 }
 
-.ac {
+.y {
   border-top: initial
 }
 
-.ad {
+.z {
   padding: initial
 }
 "
 `;
 
 exports[`should render when not given props 1`] = `
-<div
-  className="a b c d e f"
->
+<div>
   <div
-    className="d g f h i j"
+    className="a b c d e"
   >
-    <div />
     <div
-      className="k"
-      role="tablist"
+      className="f a b g h i j"
     >
-      <a
-        className="cf-link l m n o p q r s t u v w x"
-        href="#!"
-        id="card-1-drawer-one"
-        onClick={[Function]}
-        role="tab"
+      <div
+        className="c k"
+      />
+      <div
+        className="a d l"
+        role="tablist"
       >
-        One
-      </a>
-      <a
-        className="cf-link l m n o p q r s t u v w x"
-        href="#!"
-        id="card-1-drawer-two"
-        onClick={[Function]}
-        role="tab"
-      >
-        Two
-      </a>
+        <a
+          className="cf-link m n o p q r s t u"
+          href="#!"
+          id="card-1-drawer-one"
+          onClick={[Function]}
+          role="tab"
+        >
+          One
+        </a>
+        <a
+          className="cf-link m n o p q r s t u"
+          href="#!"
+          id="card-1-drawer-two"
+          onClick={[Function]}
+          role="tab"
+        >
+          Two
+        </a>
+      </div>
     </div>
   </div>
   <div
     active={undefined}
-    className="y"
+    className="v"
   >
     <div
-      className="z ab"
+      className="w x"
       id={undefined}
       isActive={false}
       onClick={undefined}
     />
     <div
-      className="z ab"
+      className="w x"
       id={undefined}
       isActive={false}
       onClick={undefined}
@@ -233,31 +410,40 @@ exports[`should render when not given props 1`] = `
 exports[`should render when not given props 2`] = `
 "
 .a {
-  display: table
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex
 }
 
 .b {
-  table-layout: fixed
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center
 }
 
 .c {
-  width: 100%
+  flex: 1;
+  -webkit-flex: 1
 }
 
 .d {
-  border-top: 1px solid #dedede
+  justify-content: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end
 }
 
 .e {
-  border-left: initial
+  border-top: 1px solid #dedede
 }
 
-.f:first-child {
-  border-top: initial
+.f {
+  min-height: 2.96666rem
 }
 
 .g {
-  min-height: 2.96666rem
+  width: 100%
 }
 
 .h::after {
@@ -273,11 +459,11 @@ exports[`should render when not given props 2`] = `
 }
 
 .k {
-  float: right
+  margin-left: 1em
 }
 
 .l {
-  position: relative
+  height: 100%
 }
 
 .m {
@@ -285,61 +471,49 @@ exports[`should render when not given props 2`] = `
 }
 
 .n {
-  padding: 0.73333rem 2em 0.73333rem 0.5rem
+  margin-right: 1em
 }
 
 .o::after {
-  content: '\\\\f003'
+  display: inline-block
 }
 
 .p::after {
-  font-family: \\"cloudflare-font\\"
+  content: '\\\\f003'
 }
 
 .q::after {
-  font-style: normal
+  font-family: \\"cloudflare-font\\"
 }
 
 .r::after {
-  font-weight: normal
+  font-style: normal
 }
 
 .s::after {
-  margin-top: -0.7em
+  font-weight: normal
 }
 
 .t::after {
-  position: absolute
-}
-
-.u::after {
-  top: 60%
-}
-
-.v::after {
-  right: 1rem
-}
-
-.w::after {
   transition: -webkit-transform 0.2s ease,transform 0.2s ease;
   -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
   -moz-transition: transform 0.2s ease
 }
 
-.x::after {
+.u::after {
   transform: initial;
   -webkit-transform: initial
 }
 
-.y {
+.v {
   display: none
 }
 
-.z {
+.w {
   border-top: initial
 }
 
-.ab {
+.x {
   padding: initial
 }
 "

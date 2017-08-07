@@ -2,13 +2,15 @@
 
 exports[`should render 1`] = `
 <div
-  className="a b c d e f"
+  className="a b c d e f g"
 >
-  <div>
+  <div
+    className="h i"
+  >
     Controls
   </div>
   <div
-    className="g"
+    className="b j k"
     role="tablist"
   >
     Links
@@ -19,31 +21,56 @@ exports[`should render 1`] = `
 exports[`should render 2`] = `
 "
 .a {
-  border-top: 1px solid #dedede
-}
-
-.b {
   min-height: 2.96666rem
 }
 
-.c:first-child {
-  border-top: initial
+.b {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex
 }
 
-.d::after {
-  content: ''
+.c {
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center
+}
+
+.d {
+  width: 100%
 }
 
 .e::after {
-  display: table
+  content: ''
 }
 
 .f::after {
+  display: table
+}
+
+.g::after {
   clear: both
 }
 
-.g {
-  float: right
+.h {
+  flex: 1;
+  -webkit-flex: 1
+}
+
+.i {
+  margin-left: 1em
+}
+
+.j {
+  justify-content: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end
+}
+
+.k {
+  height: 100%
 }
 "
 `;

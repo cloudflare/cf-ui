@@ -26,6 +26,14 @@ const Container = createComponent(
   ['active']
 );
 
+const styles = ({ theme }) => ({
+  display: 'flex',
+  alignItems: 'center',
+  flex: 1,
+  justifyContent: 'flex-end',
+  borderTop: `1px solid ${theme.colorGrayLight}`
+});
+
 class CardDrawers extends React.Component {
   constructor(props) {
     super(props);
@@ -82,12 +90,14 @@ class CardDrawers extends React.Component {
     });
 
     return (
-      <CardSection>
-        <CardToolbar controls={this.props.controls} links={links} />
+      <div>
+        <div className={this.props.className}>
+          <CardToolbar controls={this.props.controls} links={links} />
+        </div>
         <Container active={this.props.active}>
           {drawers}
         </Container>
-      </CardSection>
+      </div>
     );
   }
 }
@@ -102,4 +112,4 @@ CardDrawers.propTypes = {
   controls: PropTypes.any
 };
 
-export default CardDrawers;
+export default createComponent(styles, CardDrawers);
