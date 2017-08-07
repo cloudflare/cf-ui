@@ -3,13 +3,13 @@ node_js:
   - "6"
 before_script:
   - yarn run bootstrap
+  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
 script:
   - yarn run build
   - yarn run lint
   - yarn test -- --runInBand
-before_install:
-  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
 deploy:
+  skip_cleanup: true
   provider: script
   script: yarn && yarn run publish
   on:
