@@ -53,14 +53,24 @@ const before = (fadeZoomIn, loading) => {
   };
 };
 
-const marginLeft = (marginLeft, group, spaced) => {
-  if (!group) {
+const marginLeft = (marginLeft, group, spaced, vertical) => {
+  if (!group || vertical) {
     return { marginLeft };
   }
   if (spaced && group !== 'first') {
     return { marginLeft: '0.4rem' };
   }
   return { marginLeft: 0 };
+};
+
+const marginTop = (marginTop, group, spaced, vertical) => {
+  if (!group || !vertical) {
+    return { marginTop };
+  }
+  if (spaced && vertical && group !== 'first') {
+    return { marginTop: '0.4rem' };
+  }
+  return { marginTop: 0 };
 };
 
 const styles = props => {
@@ -126,7 +136,8 @@ const styles = props => {
     marginBottom: props.group ? 0 : theme.marginBottom,
     marginRight: props.group ? 0 : theme.marginRight,
     marginTop: props.group ? 0 : theme.marginTop,
-    ...marginLeft(theme.marginLeft, props.group, props.spaced),
+    ...marginTop(theme.marginTop, props.group, props.spaced, props.vertical),
+    ...marginLeft(theme.marginLeft, props.group, props.spaced, props.vertical),
     ...opacity(props.loading, props.disabled),
     paddingBottom: theme.paddingBottom,
     paddingLeft: theme.paddingLeft,
@@ -140,7 +151,8 @@ const styles = props => {
     userSelect: theme.userSelect,
     float: theme.float,
     maxWidth: theme.maxWidth,
-    float: theme.float
+    float: theme.float,
+    width: props.vertical ? '100%' : 'auto'
   };
 };
 
@@ -171,6 +183,7 @@ Button.propTypes = {
   onClick: PropTypes.func,
   submit: PropTypes.bool,
   spaced: PropTypes.bool,
+  vertical: PropTypes.bool,
   className: PropTypes.string.isRequired,
   group: PropTypes.oneOf(['first', 'inbetween', 'last']),
   type: PropTypes.oneOf(['default', 'primary', 'success', 'warning', 'danger'])

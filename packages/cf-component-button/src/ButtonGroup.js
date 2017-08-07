@@ -8,7 +8,7 @@ const styles = props => {
     display: theme.display,
     position: theme.position,
     verticalAlign: theme.verticalAlign,
-    whiteSpace: theme.whiteSpace
+    whiteSpace: props.vertical ? 'initial' : theme.whiteSpace
   };
 };
 
@@ -22,12 +22,13 @@ const getGroupByIndex = (index, length) => {
   return 'inbetween';
 };
 
-const addGroupProps = (children, spaced) =>
+const addGroupProps = (children, spaced, vertical) =>
   React.Children.map(children, (child, index) => {
     if (React.isValidElement(child)) {
       return React.cloneElement(child, {
         group: getGroupByIndex(index, React.Children.count(children)),
-        spaced
+        spaced,
+        vertical
       });
     }
     return child;
@@ -35,15 +36,20 @@ const addGroupProps = (children, spaced) =>
 
 class ButtonGroup extends React.Component {
   render() {
-    const { className, children, spaced } = this.props;
-    return <div className={className}>{addGroupProps(children, spaced)}</div>;
+    const { className, children, spaced, vertical } = this.props;
+    return (
+      <div className={className}>
+        {addGroupProps(children, spaced, vertical)}
+      </div>
+    );
   }
 }
 
 ButtonGroup.propTypes = {
   children: PropTypes.node,
   spaced: PropTypes.bool,
-  className: PropTypes.string.isRequired
+  className: PropTypes.string.isRequired,
+  vertical: PropTypes.bool
 };
 
 export default createComponent(styles, ButtonGroup);
