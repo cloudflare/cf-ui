@@ -9,6 +9,6 @@ script:
   - yarn test -- --runInBand
 deploy:
   provider: script
-  script: yarn && yarn run publish -- --yes
+  script: yarn && yarn run publish
   on:
     branch: master
