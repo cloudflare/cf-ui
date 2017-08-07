@@ -98,9 +98,7 @@ const styles = props => {
       backgroundColor: props.loading
         ? theme.backgroundColor
         : theme[`${props.type}Background`],
-      boxShadow: `inset 0px 0px 0px ${theme.borderSize} ${theme[
-        `${props.type}focusOutlineColor`
-      ]}`,
+      boxShadow: `inset 0px 0px 0px ${theme.borderSize} ${theme[`${props.type}focusOutlineColor`]}`,
       color: props.loading
         ? theme.disabledBackground
         : theme[`${props.type}FocusColor`],
