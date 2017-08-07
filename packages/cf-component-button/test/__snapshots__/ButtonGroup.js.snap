@@ -13,7 +13,7 @@ exports[`should render 1 button 1`] = `
   className="a b c d"
 >
   <button
-    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b al am an ao ap aq ar as at"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b al am an ao ap aq ar as at au"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -209,6 +209,10 @@ exports[`should render 1 button 2`] = `
 .at {
   max-width: initial
 }
+
+.au {
+  width: auto
+}
 "
 `;
 
@@ -237,7 +241,7 @@ exports[`should render 2 buttons 1`] = `
   className="a b c d"
 >
   <button
-    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b al am an ao ap aq ar as at"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b al am an ao ap aq ar as at au"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -245,7 +249,7 @@ exports[`should render 2 buttons 1`] = `
     Button
   </button>
   <button
-    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b au av aw ax ap aq ar as at"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b av aw ax ay ap aq ar as at au"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -443,18 +447,22 @@ exports[`should render 2 buttons 2`] = `
 }
 
 .au {
-  border-top-right-radius: 2px
+  width: auto
 }
 
 .av {
-  border-top-left-radius: 0px
+  border-top-right-radius: 2px
 }
 
 .aw {
-  border-bottom-left-radius: 0px
+  border-top-left-radius: 0px
 }
 
 .ax {
+  border-bottom-left-radius: 0px
+}
+
+.ay {
   border-bottom-right-radius: 2px
 }
 "
@@ -465,7 +473,7 @@ exports[`should render 3 buttons 1`] = `
   className="a b c d"
 >
   <button
-    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b al am an ao ap aq ar as at"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b al am an ao ap aq ar as at au"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -473,7 +481,7 @@ exports[`should render 3 buttons 1`] = `
     Button
   </button>
   <button
-    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b al au av ao ap aq ar as at"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b al av aw ao ap aq ar as at au"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -481,7 +489,7 @@ exports[`should render 3 buttons 1`] = `
     Button
   </button>
   <button
-    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b aw au av ax ap aq ar as at"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b ax av aw ay ap aq ar as at au"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -679,18 +687,22 @@ exports[`should render 3 buttons 2`] = `
 }
 
 .au {
-  border-top-left-radius: 0px
+  width: auto
 }
 
 .av {
-  border-bottom-left-radius: 0px
+  border-top-left-radius: 0px
 }
 
 .aw {
-  border-top-right-radius: 2px
+  border-bottom-left-radius: 0px
 }
 
 .ax {
+  border-top-right-radius: 2px
+}
+
+.ay {
   border-bottom-right-radius: 2px
 }
 "
@@ -701,7 +713,7 @@ exports[`should render 3 buttons with spacing 1`] = `
   className="a b c d"
 >
   <button
-    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b al am an ao ap aq"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b al am an ao ap aq ar"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -709,7 +721,7 @@ exports[`should render 3 buttons with spacing 1`] = `
     Button
   </button>
   <button
-    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ar af ag ah ai aj ak b al am an ao ap aq"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad as af ag ah ai aj ak b al am an ao ap aq ar"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -717,7 +729,7 @@ exports[`should render 3 buttons with spacing 1`] = `
     Button
   </button>
   <button
-    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ar af ag ah ai aj ak b al am an ao ap aq"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad as af ag ah ai aj ak b al am an ao ap aq ar"
     disabled={undefined}
     onClick={[Function]}
     type="button"
@@ -903,6 +915,10 @@ exports[`should render 3 buttons with spacing 2`] = `
 }
 
 .ar {
+  width: auto
+}
+
+.as {
   margin-left: 0.4rem
 }
 "

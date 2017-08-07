@@ -2,7 +2,7 @@
 
 exports[`should render as submit 1`] = `
 <button
-  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao ap"
   disabled={undefined}
   onClick={[Function]}
   type="submit"
@@ -177,12 +177,16 @@ exports[`should render as submit 2`] = `
 .ao {
   max-width: initial
 }
+
+.ap {
+  width: auto
+}
 "
 `;
 
 exports[`should render with loading 1`] = `
 <button
-  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao ap aq ar as at au av aw ax ay az ba bb"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao ap aq ar as at au av aw ax ay az ba bb bc"
   disabled={true}
   onClick={[Function]}
   type="button"
@@ -430,12 +434,16 @@ exports[`should render with loading 2`] = `
 .bb {
   max-width: initial
 }
+
+.bc {
+  width: auto
+}
 "
 `;
 
 exports[`should render with loading and disabled overridden 1`] = `
 <button
-  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao ap aq ar as at au av aw ax ay az ba bb"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao ap aq ar as at au av aw ax ay az ba bb bc"
   disabled={true}
   onClick={[Function]}
   type="button"
@@ -683,12 +691,16 @@ exports[`should render with loading and disabled overridden 2`] = `
 .bb {
   max-width: initial
 }
+
+.bc {
+  width: auto
+}
 "
 `;
 
 exports[`should render with type 1`] = `
 <button
-  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao ap"
   disabled={undefined}
   onClick={[Function]}
   type="button"
@@ -863,12 +875,16 @@ exports[`should render with type 2`] = `
 .ao {
   max-width: initial
 }
+
+.ap {
+  width: auto
+}
 "
 `;
 
 exports[`should render with type/disabled 1`] = `
 <button
-  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao ap"
   disabled={true}
   onClick={[Function]}
   type="button"
@@ -1042,6 +1058,10 @@ exports[`should render with type/disabled 2`] = `
 
 .ao {
   max-width: initial
+}
+
+.ap {
+  width: auto
 }
 "
 `;
