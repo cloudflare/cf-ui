@@ -7,8 +7,11 @@ script:
   - yarn run build
   - yarn run lint
   - yarn test -- --runInBand
+before_deploy:
+  - echo "//registry.npmjs.org/:_authToken=\${NPM_TOKEN}" > .npmrc
+  - yarn
 deploy:
   provider: script
-  script: yarn && yarn run publish
+  script: yarn run publish
   on:
     branch: master
