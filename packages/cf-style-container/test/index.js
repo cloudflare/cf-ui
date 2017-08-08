@@ -25,7 +25,9 @@ test('mergeThemes should return an immutable and deeply cloned object', () => {
       desktopLarge: '1em',
       mobile: '1em',
       mobileWide: '1em',
-      tablet: '1em'
+      tablet: '1em',
+      tabletWide: '1em',
+      tabletLegacy: '1em'
     }
   };
   const props = mergeThemes(variables, themeA, themeB);

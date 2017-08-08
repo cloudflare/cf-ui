@@ -8,6 +8,8 @@ export default {
     mobile: '13.6em',
     mobileWide: '30.4em',
     tablet: '47.2em',
+    tabletLegacy: '49.2em',
+    tabletWide: '55em',
     desktop: '64em',
     desktopLarge: '97.6em'
   },
