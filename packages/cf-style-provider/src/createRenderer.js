@@ -18,6 +18,8 @@ const mediaQueries = {
   mobile: `@media (min-width: ${variables.breakpoints.mobile})`,
   mobileWide: `@media (min-width: ${variables.breakpoints.mobileWide})`,
   tablet: `@media (min-width: ${variables.breakpoints.tablet})`,
+  tabletLegacy: `@media (min-width: ${variables.breakpoints.tabletLegacy})`,
+  tabletWide: `@media (min-width: ${variables.breakpoints.tabletWide})`,
   desktop: `@media (min-width: ${variables.breakpoints.desktop})`,
   desktopLarge: `@media (min-width: ${variables.breakpoints.desktopLarge})`,
   hover: `@media (hover)`
@@ -52,6 +54,8 @@ const createRenderer = opts => {
       removePrefix(mediaQueries.mobile),
       removePrefix(mediaQueries.mobileWide),
       removePrefix(mediaQueries.tablet),
+      removePrefix(mediaQueries.tabletLegacy),
+      removePrefix(mediaQueries.tabletWide),
       removePrefix(mediaQueries.desktop),
       removePrefix(mediaQueries.desktopLarge)
     ]
