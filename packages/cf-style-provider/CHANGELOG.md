@@ -3,6 +3,19 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.3.0"></a>
+# [2.3.0](https://github.com/cloudflare/cf-ui/compare/cf-style-provider@2.2.2...cf-style-provider@2.3.0) (2017-08-09)
+
+
+### Features
+
+* **cf-style-provider:** Add [@media](https://github.com/media)(hover) ([80fb1eb](https://github.com/cloudflare/cf-ui/commit/80fb1eb))
+* **cf-style-provider:** Add two new breakpoints to support new navigation ([f00199c](https://github.com/cloudflare/cf-ui/commit/f00199c))
+* **cf-style-provider:** Put [@media](https://github.com/media)(query) to the first place ([87958f0](https://github.com/cloudflare/cf-ui/commit/87958f0))
+
+
+
+
 <a name="2.2.3"></a>
 ## [2.2.3](https://github.com/koddsson/cf-ui/compare/cf-style-provider@2.2.2...cf-style-provider@2.2.3) (2017-07-31)
 
