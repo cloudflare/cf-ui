@@ -14,6 +14,7 @@ const Footer = ({ className, children }) => (
 );
 
 Footer.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.string
 };
 

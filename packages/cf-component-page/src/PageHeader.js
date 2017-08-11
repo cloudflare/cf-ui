@@ -34,6 +34,7 @@ const PageHeader = ({ title, subtitle, className }) => {
 };
 
 PageHeader.propTypes = {
+  className: PropTypes.string,
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string
 };

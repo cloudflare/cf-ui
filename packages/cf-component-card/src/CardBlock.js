@@ -22,6 +22,7 @@ class CardBlock extends React.Component {
 }
 
 CardBlock.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node
 };
 

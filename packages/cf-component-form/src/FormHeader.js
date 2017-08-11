@@ -24,7 +24,7 @@ class FormHeader extends React.Component {
 
 FormHeader.propTypes = {
   title: PropTypes.string.isRequired,
-  className: PropTypes.string
+  styles: PropTypes.object.isRequired
 };
 
 export default createComponentStyles({ mainStyles, titleStyles }, FormHeader);

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   Modal,
   ModalHeader,
@@ -92,5 +93,9 @@ const finalComponent = () => (
     <ModalComponent />
   </Application>
 );
+
+Application.propTypes = {
+  children: PropTypes.node
+};
 
 export default finalComponent;

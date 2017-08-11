@@ -40,6 +40,7 @@ class CodeBlock extends React.Component {
 }
 
 CodeBlock.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node
 };
 

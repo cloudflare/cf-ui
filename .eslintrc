@@ -1,9 +1,11 @@
 {
   "parser"  : "babel-eslint",
   "plugins": [
-    "prettier"
+    "prettier",
+    "react"
   ],
   "rules": {
-    "prettier/prettier": ["error", {"singleQuote": true}]
+    "prettier/prettier": ["error", {"singleQuote": true}],
+    "react/prop-types": 2
   }
 }

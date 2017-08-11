@@ -24,6 +24,7 @@ class TabsPanel extends React.Component {
 }
 
 TabsPanel.propTypes = {
+  className: PropTypes.string,
   id: PropTypes.string.isRequired,
   children: PropTypes.node
 };

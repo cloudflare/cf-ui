@@ -47,6 +47,7 @@ class Modal extends React.Component {
 }
 
 Modal.propTypes = {
+  className: PropTypes.string,
   type: PropTypes.oneOf(['confirm']),
   isOpen: PropTypes.bool.isRequired,
   onRequestClose: PropTypes.func.isRequired,

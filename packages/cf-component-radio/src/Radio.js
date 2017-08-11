@@ -115,6 +115,7 @@ class Radio extends React.Component {
 }
 
 Radio.propTypes = {
+  className: PropTypes.string,
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([false])])
     .isRequired,
   name: PropTypes.string.isRequired,

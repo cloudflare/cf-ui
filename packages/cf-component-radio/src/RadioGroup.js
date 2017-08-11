@@ -25,6 +25,8 @@ class RadioGroup extends React.Component {
 }
 
 RadioGroup.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.node,
   value: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
   options: PropTypes.arrayOf(

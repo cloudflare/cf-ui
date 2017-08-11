@@ -67,13 +67,16 @@ Select.defaultProps = {
 };
 
 Select.propTypes = {
+  className: PropTypes.string,
   disabled: PropTypes.bool,
   label: PropTypes.string,
   value: PropTypes.number,
   options: PropTypes.array,
   searchable: PropTypes.bool,
   multi: PropTypes.bool,
-  onChange: PropTypes.func
+  onChange: PropTypes.func,
+  async: PropTypes.bool,
+  creatable: PropTypes.bool
 };
 
 export default createComponent(styles, Select);

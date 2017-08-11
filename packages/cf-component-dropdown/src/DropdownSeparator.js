@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { createComponent } from 'cf-style-container';
 
 const styles = ({ theme }) => ({
@@ -9,5 +10,9 @@ const styles = ({ theme }) => ({
 const DropdownSeparator = ({ className }) => (
   <div className={className} role="separator" />
 );
+
+DropdownSeparator.propTypes = {
+  className: PropTypes.string
+};
 
 export default createComponent(styles, DropdownSeparator);

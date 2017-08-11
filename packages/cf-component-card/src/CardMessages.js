@@ -17,6 +17,7 @@ const CardMessages = ({ className, messages }) => (
 );
 
 CardMessages.propTypes = {
+  className: PropTypes.string,
   /* The messages to render */
   messages: PropTypes.arrayOf(
     PropTypes.shape({

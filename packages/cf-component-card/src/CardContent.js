@@ -17,6 +17,7 @@ const CardContent = ({ className, children }) => (
 );
 
 CardContent.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node
 };
 

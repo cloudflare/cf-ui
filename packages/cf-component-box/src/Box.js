@@ -137,6 +137,10 @@ const extractPropTypes = () => {
   return propTypes;
 };
 
-Box.propTypes = extractPropTypes();
+Box.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.node,
+  ...extractPropTypes()
+};
 
 export default createComponent(styles, Box);

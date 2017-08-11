@@ -88,6 +88,7 @@ class CopyableTextarea extends React.Component {
 }
 
 CopyableTextarea.propTypes = {
+  className: PropTypes.string,
   name: PropTypes.string.isRequired,
   value: PropTypes.string.isRequired,
   onCopy: PropTypes.func,

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { createRenderer } from 'cf-style-provider';
 import { Provider } from 'react-fela';
 import { variables } from 'cf-style-const';
@@ -105,6 +106,9 @@ test('createComponentStyles creates a component', () => {
     },
     Foo
   );
+  Foo.propTypes = {
+    styles: PropTypes.object.isRequired
+  };
   const snapshot = felaSnapshot(<FelaComponent />);
   expect(snapshot.component).toMatchSnapshot();
   expect(snapshot.styles).toMatchSnapshot();
@@ -154,6 +158,9 @@ test('withRenderer will pass renderer as a prop', () => {
   const Component = ({ renderer }) => {
     const className = renderer.renderRule(styles, { fontSize: 12 });
     return <div>{className}</div>;
+  };
+  Component.propTypes = {
+    renderer: PropTypes.object.isRequired
   };
   const WithRendererComponent = withRenderer(Component);
   const wrapper = mount(

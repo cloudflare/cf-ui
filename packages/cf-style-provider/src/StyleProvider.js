@@ -27,6 +27,7 @@ const StyleProvider = ({ dev, children, renderer, ...restProps }) => {
 };
 
 StyleProvider.propTypes = {
+  children: PropTypes.node,
   dev: PropTypes.bool,
   renderer: PropTypes.object
 };

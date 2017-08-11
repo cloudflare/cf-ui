@@ -117,6 +117,7 @@ class Dropdown extends React.Component {
 }
 
 Dropdown.propTypes = {
+  className: PropTypes.string,
   onClose: PropTypes.func.isRequired,
   align: PropTypes.oneOf(['left', 'right']),
   children: PropTypes.node

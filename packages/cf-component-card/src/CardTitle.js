@@ -12,6 +12,7 @@ const Title = ({ children, className }) => (
 );
 
 Title.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.string
 };
 
