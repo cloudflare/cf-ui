@@ -18,6 +18,7 @@ const PageContent = ({ className, children }) => {
 };
 
 PageContent.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node
 };
 

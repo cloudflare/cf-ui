@@ -100,6 +100,7 @@ class Tabs extends React.Component {
 }
 
 Tabs.propTypes = {
+  className: PropTypes.string,
   onChange: PropTypes.func.isRequired,
   active: PropTypes.string.isRequired,
   tabs: PropTypes.arrayOf(

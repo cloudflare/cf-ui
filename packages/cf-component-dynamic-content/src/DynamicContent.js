@@ -18,6 +18,7 @@ class DynamicContent extends React.Component {
 }
 
 DynamicContent.propTypes = {
+  className: PropTypes.string,
   dangerouslySetInnerHTML: PropTypes.shape({
     __html: PropTypes.string.isRequired
   }).isRequired

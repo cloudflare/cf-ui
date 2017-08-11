@@ -24,6 +24,7 @@ class Card extends React.Component {
 }
 
 Card.propTypes = {
+  className: PropTypes.string,
   id: PropTypes.string,
   children: PropTypes.node
 };

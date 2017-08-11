@@ -9,6 +9,7 @@ const ListItem = ({ children, className }) => (
 );
 
 ListItem.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node
 };
 

@@ -49,6 +49,7 @@ class CardToolbarLink extends React.Component {
 }
 
 CardToolbarLink.propTypes = {
+  className: PropTypes.string,
   onClick: PropTypes.func.isRequired,
   isActive: PropTypes.bool.isRequired,
   id: PropTypes.string,

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import renderer from 'react-test-renderer';
 import { Modal } from '../../cf-component-modal/src/index';
 import { GatewayProvider, Gateway, GatewayDest } from 'react-gateway';
@@ -17,6 +18,10 @@ class Application extends React.Component {
     );
   }
 }
+
+Application.propTypes = {
+  children: PropTypes.node
+};
 
 test('should hide the modal when `isOpen` is `false`', () => {
   const component = renderer.create(

@@ -30,6 +30,7 @@ const CardControl = ({ className, children }) => (
 );
 
 CardControl.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node,
   wide: PropTypes.bool
 };

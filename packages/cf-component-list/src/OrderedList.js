@@ -13,6 +13,7 @@ const OrderedList = ({ children, className }) => (
 );
 
 OrderedList.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node
 };
 

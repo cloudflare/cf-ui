@@ -19,6 +19,7 @@ const CardSection = ({ className, children }) => (
 );
 
 CardSection.propTypes = {
+  className: PropTypes.string,
   status: PropTypes.oneOf(['default', 'error']),
   children: PropTypes.node
 };

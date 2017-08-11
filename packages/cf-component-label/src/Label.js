@@ -36,6 +36,7 @@ class Label extends React.Component {
 }
 
 Label.propTypes = {
+  className: PropTypes.string,
   type: PropTypes.oneOf(['default', 'info', 'success', 'warning', 'error'])
     .isRequired,
   children: PropTypes.node

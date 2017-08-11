@@ -26,6 +26,7 @@ class Code extends React.Component {
 }
 
 Code.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node
 };
 

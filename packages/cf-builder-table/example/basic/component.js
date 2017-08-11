@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { TableBuilder, tableReducer, tableActions } from 'cf-builder-table';
 import { TableCell } from 'cf-component-table';
@@ -84,5 +85,9 @@ class BuilderTable extends React.Component {
     );
   }
 }
+
+BuilderTable.propTypes = {
+  dispatch: PropTypes.func
+};
 
 export default connect(() => ({}))(BuilderTable);

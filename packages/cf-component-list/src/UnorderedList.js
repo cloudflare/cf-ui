@@ -13,6 +13,7 @@ const UnorderedList = ({ children, className }) => (
 );
 
 UnorderedList.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node
 };
 
