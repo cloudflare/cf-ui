@@ -4,6 +4,8 @@ node_js:
 before_script:
   - yarn run bootstrap
 script:
+  - echo "$(git log master.. --pretty=%B)"
+  - yarn run commitmsg -- "$(git log master.. --pretty=%B)"
   - yarn run build
   - yarn run lint
   - yarn test -- --runInBand
