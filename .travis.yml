@@ -4,6 +4,7 @@ node_js:
 before_script:
   - yarn run bootstrap
 script:
+  - yarn run validate-commit-msg
   - yarn run build
   - yarn run lint
   - yarn test -- --runInBand
