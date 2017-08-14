@@ -4,6 +4,7 @@ node_js:
 before_script:
   - yarn run bootstrap
 script:
+  - yarn run validate-commit-msg \"$(git log --walk-reflogs $TRAVIS_PULL_REQUEST_SLUG --pretty=%B)\"
   - yarn run build
   - yarn run lint
   - yarn test -- --runInBand
