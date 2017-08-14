@@ -4,6 +4,7 @@ node_js:
 before_script:
   - yarn run bootstrap
 script:
+  - yarn run commitmsg  -- \"$(git log --walk-reflogs $TRAVIS_BRANCH --pretty=%B)\"
   - yarn run build
   - yarn run lint
   - yarn test -- --runInBand
