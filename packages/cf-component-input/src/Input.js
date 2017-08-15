@@ -44,6 +44,7 @@ Input.propTypes = {
   value: PropTypes.string,
   defaultValue: PropTypes.string,
   onChange: PropTypes.func.isRequired,
+  onKeyDown: PropTypes.func,
   onBlur: PropTypes.func,
   onFocus: PropTypes.func,
   placeholder: PropTypes.string,
