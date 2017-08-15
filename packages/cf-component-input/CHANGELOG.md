@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.4.0"></a>
+# [5.4.0](https://github.com/cloudflare/cf-ui/compare/cf-component-input@5.3.4...cf-component-input@5.4.0) (2017-08-15)
+
+
+### Features
+
+* **cf-component-input:** Add onKeyDown to cf-input (#348) ([72d204f](https://github.com/cloudflare/cf-ui/commit/72d204f))
+
+
+
+
 <a name="5.3.4"></a>
 ## [5.3.4](https://github.com/cloudflare/cf-ui/compare/cf-component-input@5.3.2...cf-component-input@5.3.4) (2017-08-03)
 

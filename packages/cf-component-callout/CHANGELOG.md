@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.0.2"></a>
+## [5.0.2](https://github.com/cloudflare/cf-ui/compare/cf-component-callout@5.0.1...cf-component-callout@5.0.2) (2017-08-15)
+
+
+
+
 <a name="5.0.0"></a>
 # [5.0.0](https://github.com/sejoker/cf-ui/compare/cf-component-callout@3.2.2...cf-component-callout@5.0.0) (2017-07-12)
 

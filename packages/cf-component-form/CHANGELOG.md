@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.1.0"></a>
+# [7.1.0](https://github.com/cloudflare/cf-ui/compare/cf-component-form@7.0.1...cf-component-form@7.1.0) (2017-08-15)
+
+
+### Bug Fixes
+
+* **cf-component-form:** Remove cf-component-flex from the example since it was deprecated ([d906576](https://github.com/cloudflare/cf-ui/commit/d906576))
+
+
+### Features
+
+* **cf-component-select:** migrate select to fela (#335) ([ca87352](https://github.com/cloudflare/cf-ui/commit/ca87352))
+
+
+
+
 <a name="7.0.0"></a>
 # [7.0.0](https://github.com/sejoker/cf-ui/compare/cf-component-form@4.6.0...cf-component-form@7.0.0) (2017-07-12)
 

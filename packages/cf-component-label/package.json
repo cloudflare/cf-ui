@@ -1,7 +1,7 @@
 {
   "name": "cf-component-label",
   "description": "Cloudflare Label Component",
-  "version": "3.3.1",
+  "version": "3.3.2",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+      <a name="5.0.1"></a>
+## [5.0.1](https://github.com/cloudflare/cf-ui/compare/cf-component-radio@5.0.0...cf-component-radio@5.0.1) (2017-08-15)
+
+
+
+
       <a name="5.0.0"></a>
 # [5.0.0](https://github.com/cloudflare/cf-ui/compare/cf-component-radio@3.0.0...cf-component-radio@5.0.0) (2017-08-02)
 
@@ -32,8 +38,8 @@ Before:
 value={this.state.radioValue}
 onChange={this.onRadioChange}
 options={[
-  { label: 'Option 1', name: 'group-option-1', value: 'option1' },
-  { label: 'Option 2', name: 'group-option-2', value: 'option2' }
+{ label: 'Option 1', name: 'group-option-1', value: 'option1' },
+{ label: 'Option 2', name: 'group-option-2', value: 'option2' }
 ]}
 />
 ```
@@ -43,14 +49,14 @@ After:
 ```jsx
 <RadioGroup value={this.state.radioValue} onChange={this.onRadioChange}>
 <RadioGroupItem
-  label="Option 1"
-  name="group-option-1"
-  value="option1"
+label="Option 1"
+name="group-option-1"
+value="option1"
 />
 <RadioGroupItem
-  label="Option 2"
-  name="group-option-2"
-  value="option2"
+label="Option 2"
+name="group-option-2"
+value="option2"
 />
 </RadioGroup>
 ```
@@ -66,8 +72,8 @@ Before:
 value={this.state.radioValue}
 onChange={this.onRadioChange}
 options={[
-  { label: 'Option 1', name: 'group-option-1', value: 'option1' },
-  { label: 'Option 2', name: 'group-option-2', value: 'option2' }
+{ label: 'Option 1', name: 'group-option-1', value: 'option1' },
+{ label: 'Option 2', name: 'group-option-2', value: 'option2' }
 ]}
 />
 ```
@@ -77,14 +83,14 @@ After:
 ```jsx
 <RadioGroup value={this.state.radioValue} onChange={this.onRadioChange}>
 <RadioGroupItem
-  label="Option 1"
-  name="group-option-1"
-  value="option1"
+label="Option 1"
+name="group-option-1"
+value="option1"
 />
 <RadioGroupItem
-  label="Option 2"
-  name="group-option-2"
-  value="option2"
+label="Option 2"
+name="group-option-2"
+value="option2"
 />
 </RadioGroup>
 ```
@@ -94,7 +100,7 @@ Related-to: #
 
 
 
-      <a name="4.0.0"></a>
+    <a name="4.0.0"></a>
 # [4.0.0](https://github.com/koddsson/cf-ui/compare/cf-component-radio@3.0.0...cf-component-radio@4.0.0) (2017-08-02)
 
 
@@ -145,7 +151,7 @@ Related-to: #
 
 
 
-    <a name="3.0.0"></a>
+  <a name="3.0.0"></a>
 # [3.0.0](https://github.com/koddsson/cf-ui/compare/cf-component-radio@1.0.6...cf-component-radio@3.0.0) (2017-08-01)
 
 
