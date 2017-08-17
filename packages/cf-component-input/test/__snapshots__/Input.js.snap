@@ -3,7 +3,7 @@
 exports[`should pass all props down to the inner input and merge classnames 1`] = `
 <input
   autoComplete={undefined}
-  className="a b c d e f g h i j k l m n o p"
+  className="a b c d e f g h i j k l m n o p q"
   defaultValue={undefined}
   disabled={true}
   name="example"
@@ -28,61 +28,65 @@ exports[`should pass all props down to the inner input and merge classnames 2`] 
 }
 
 .c {
-  margin: 0 0 0.75rem
+  height: 2.26667rem
 }
 
 .d {
-  padding: 0.45em 0.75em
+  margin: 0 0 0.75rem
 }
 
 .e {
-  border: 1px solid #BCBEC0
+  padding: 0.45em 0.75em
 }
 
 .f {
-  border-radius: 2px
+  border: 1px solid #BCBEC0
 }
 
 .g {
+  border-radius: 2px
+}
+
+.h {
   flex: initial;
   -webkit-flex: initial
 }
 
-.h {
+.i {
   vertical-align: middle
 }
 
-.i {
+.j {
   font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
 }
 
-.j {
+.k {
   font-size: 0.86667rem
 }
 
-.k {
+.l {
   background: #fff
 }
 
-.l {
+.m {
   color: #333333
 }
 
-.m {
+.n {
   outline: none
 }
 
-.n {
+.o {
   transition: border-color 0.2s ease;
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease
 }
 
-.o {
+.p {
   text-indent: initial
 }
 
-.p:hover {
+.q:hover {
   border-color: #256298
 }
 "
@@ -91,7 +95,7 @@ exports[`should pass all props down to the inner input and merge classnames 2`] 
 exports[`should render 1`] = `
 <input
   autoComplete={undefined}
-  className="a b c d e f g h i j k l m n o p"
+  className="a b c d e f g h i j k l m n o p q"
   defaultValue={undefined}
   disabled={undefined}
   name="example"
@@ -116,61 +120,65 @@ exports[`should render 2`] = `
 }
 
 .c {
-  margin: 0 0 0.75rem
+  height: 2.26667rem
 }
 
 .d {
-  padding: 0.45em 0.75em
+  margin: 0 0 0.75rem
 }
 
 .e {
-  border: 1px solid #BCBEC0
+  padding: 0.45em 0.75em
 }
 
 .f {
-  border-radius: 2px
+  border: 1px solid #BCBEC0
 }
 
 .g {
+  border-radius: 2px
+}
+
+.h {
   flex: initial;
   -webkit-flex: initial
 }
 
-.h {
+.i {
   vertical-align: middle
 }
 
-.i {
+.j {
   font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
 }
 
-.j {
+.k {
   font-size: 0.86667rem
 }
 
-.k {
+.l {
   background: #fff
 }
 
-.l {
+.m {
   color: #333333
 }
 
-.m {
+.n {
   outline: none
 }
 
-.n {
+.o {
   transition: border-color 0.2s ease;
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease
 }
 
-.o {
+.p {
   text-indent: initial
 }
 
-.p:hover {
+.q:hover {
   border-color: #256298
 }
 "
@@ -179,7 +187,7 @@ exports[`should render 2`] = `
 exports[`should render with autocomplete 1`] = `
 <input
   autoComplete="off"
-  className="a b c d e f g h i j k l m n o p"
+  className="a b c d e f g h i j k l m n o p q"
   defaultValue={undefined}
   disabled={undefined}
   name="example"
@@ -204,61 +212,65 @@ exports[`should render with autocomplete 2`] = `
 }
 
 .c {
-  margin: 0 0 0.75rem
+  height: 2.26667rem
 }
 
 .d {
-  padding: 0.45em 0.75em
+  margin: 0 0 0.75rem
 }
 
 .e {
-  border: 1px solid #BCBEC0
+  padding: 0.45em 0.75em
 }
 
 .f {
-  border-radius: 2px
+  border: 1px solid #BCBEC0
 }
 
 .g {
+  border-radius: 2px
+}
+
+.h {
   flex: initial;
   -webkit-flex: initial
 }
 
-.h {
+.i {
   vertical-align: middle
 }
 
-.i {
+.j {
   font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
 }
 
-.j {
+.k {
   font-size: 0.86667rem
 }
 
-.k {
+.l {
   background: #fff
 }
 
-.l {
+.m {
   color: #333333
 }
 
-.m {
+.n {
   outline: none
 }
 
-.n {
+.o {
   transition: border-color 0.2s ease;
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease
 }
 
-.o {
+.p {
   text-indent: initial
 }
 
-.p:hover {
+.q:hover {
   border-color: #256298
 }
 "
@@ -267,7 +279,7 @@ exports[`should render with autocomplete 2`] = `
 exports[`should render with error 1`] = `
 <input
   autoComplete={undefined}
-  className="a b c d e f g h i j k l m n o p"
+  className="a b c d e f g h i j k l m n o p q"
   defaultValue={undefined}
   disabled={undefined}
   name="example"
@@ -292,61 +304,65 @@ exports[`should render with error 2`] = `
 }
 
 .c {
-  margin: 0 0 0.75rem
+  height: 2.26667rem
 }
 
 .d {
-  padding: 0.45em 0.75em
+  margin: 0 0 0.75rem
 }
 
 .e {
-  border: 1px solid #BCBEC0
+  padding: 0.45em 0.75em
 }
 
 .f {
-  border-radius: 2px
+  border: 1px solid #BCBEC0
 }
 
 .g {
+  border-radius: 2px
+}
+
+.h {
   flex: initial;
   -webkit-flex: initial
 }
 
-.h {
+.i {
   vertical-align: middle
 }
 
-.i {
+.j {
   font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
 }
 
-.j {
+.k {
   font-size: 0.86667rem
 }
 
-.k {
+.l {
   background: #fff
 }
 
-.l {
+.m {
   color: #333333
 }
 
-.m {
+.n {
   outline: none
 }
 
-.n {
+.o {
   transition: border-color 0.2s ease;
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease
 }
 
-.o {
+.p {
   text-indent: initial
 }
 
-.p:hover {
+.q:hover {
   border-color: #256298
 }
 "
@@ -355,7 +371,7 @@ exports[`should render with error 2`] = `
 exports[`should render with placeholder 1`] = `
 <input
   autoComplete={undefined}
-  className="a b c d e f g h i j k l m n o p"
+  className="a b c d e f g h i j k l m n o p q"
   defaultValue={undefined}
   disabled={undefined}
   name="example"
@@ -380,61 +396,65 @@ exports[`should render with placeholder 2`] = `
 }
 
 .c {
-  margin: 0 0 0.75rem
+  height: 2.26667rem
 }
 
 .d {
-  padding: 0.45em 0.75em
+  margin: 0 0 0.75rem
 }
 
 .e {
-  border: 1px solid #BCBEC0
+  padding: 0.45em 0.75em
 }
 
 .f {
-  border-radius: 2px
+  border: 1px solid #BCBEC0
 }
 
 .g {
+  border-radius: 2px
+}
+
+.h {
   flex: initial;
   -webkit-flex: initial
 }
 
-.h {
+.i {
   vertical-align: middle
 }
 
-.i {
+.j {
   font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
 }
 
-.j {
+.k {
   font-size: 0.86667rem
 }
 
-.k {
+.l {
   background: #fff
 }
 
-.l {
+.m {
   color: #333333
 }
 
-.m {
+.n {
   outline: none
 }
 
-.n {
+.o {
   transition: border-color 0.2s ease;
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease
 }
 
-.o {
+.p {
   text-indent: initial
 }
 
-.p:hover {
+.q:hover {
   border-color: #256298
 }
 "
@@ -443,7 +463,7 @@ exports[`should render with placeholder 2`] = `
 exports[`should render with type 1`] = `
 <input
   autoComplete={undefined}
-  className="a b c d e f g h i j k l m n o p"
+  className="a b c d e f g h i j k l m n o p q"
   defaultValue={undefined}
   disabled={undefined}
   name="example"
@@ -468,61 +488,65 @@ exports[`should render with type 2`] = `
 }
 
 .c {
-  margin: 0 0 0.75rem
+  height: 2.26667rem
 }
 
 .d {
-  padding: 0.45em 0.75em
+  margin: 0 0 0.75rem
 }
 
 .e {
-  border: 1px solid #BCBEC0
+  padding: 0.45em 0.75em
 }
 
 .f {
-  border-radius: 2px
+  border: 1px solid #BCBEC0
 }
 
 .g {
+  border-radius: 2px
+}
+
+.h {
   flex: initial;
   -webkit-flex: initial
 }
 
-.h {
+.i {
   vertical-align: middle
 }
 
-.i {
+.j {
   font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
 }
 
-.j {
+.k {
   font-size: 0.86667rem
 }
 
-.k {
+.l {
   background: #fff
 }
 
-.l {
+.m {
   color: #333333
 }
 
-.m {
+.n {
   outline: none
 }
 
-.n {
+.o {
   transition: border-color 0.2s ease;
   -webkit-transition: border-color 0.2s ease;
   -moz-transition: border-color 0.2s ease
 }
 
-.o {
+.p {
   text-indent: initial
 }
 
-.p:hover {
+.q:hover {
   border-color: #256298
 }
 "
