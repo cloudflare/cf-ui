@@ -1,6 +1,7 @@
 export default baseTheme => ({
   zIndex: 0,
   width: '100%',
+  height: baseTheme.inputHeight,
   margin: '0 0 0.75rem',
   padding: '0.45em 0.75em',
   border: `1px solid ${baseTheme.color.hail}`,

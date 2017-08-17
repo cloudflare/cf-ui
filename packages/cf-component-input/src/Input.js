@@ -5,6 +5,7 @@ import { createComponent } from 'cf-style-container';
 const styles = ({ theme }) => ({
   zIndex: theme.zIndex,
   width: theme.width,
+  height: theme.height,
   margin: theme.margin,
   padding: theme.padding,
   border: theme.border,

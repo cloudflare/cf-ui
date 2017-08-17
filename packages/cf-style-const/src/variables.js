@@ -55,6 +55,7 @@ export default {
   inputFontSize: '13px',
   lineHeight: 1.5,
   inputLineHeight: 1.4,
+  inputHeight: '2.26667rem',
   em: '1em',
   rem: '1rem',
   fontFamily: '"Open Sans", Helvetica, Arial, sans-serif',
