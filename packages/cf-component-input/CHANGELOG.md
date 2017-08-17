@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.5.0"></a>
+# [5.5.0](https://github.com/cloudflare/cf-ui/compare/cf-component-input@5.4.0...cf-component-input@5.5.0) (2017-08-17)
+
+
+### Features
+
+* **cf-component-input:** Added height to input for search label (#352) ([530a7fe](https://github.com/cloudflare/cf-ui/commit/530a7fe))
+
+
+
+
 <a name="5.4.0"></a>
 # [5.4.0](https://github.com/cloudflare/cf-ui/compare/cf-component-input@5.3.4...cf-component-input@5.4.0) (2017-08-15)
 

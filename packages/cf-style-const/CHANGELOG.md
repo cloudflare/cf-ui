@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.3.0"></a>
+# [2.3.0](https://github.com/cloudflare/cf-ui/compare/cf-style-const@2.2.0...cf-style-const@2.3.0) (2017-08-17)
+
+
+### Features
+
+* **cf-component-input:** Added height to input for search label (#352) ([530a7fe](https://github.com/cloudflare/cf-ui/commit/530a7fe))
+
+
+
+
 <a name="2.2.0"></a>
 # [2.2.0](https://github.com/cloudflare/cf-ui/compare/cf-style-const@2.0.0...cf-style-const@2.2.0) (2017-08-09)
 
