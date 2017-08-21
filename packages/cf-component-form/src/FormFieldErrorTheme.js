@@ -1,6 +1,6 @@
 export default baseTheme => ({
   position: 'relative',
-  marginTop: '-0.75em',
+  marginTop: '0.5em',
   padding: '0.5em 1em',
   border: `1px solid  ${baseTheme.colorRedDark}`,
   fontSize: '0.8em',
