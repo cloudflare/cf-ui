@@ -13,7 +13,7 @@ exports[`should render invalid state 2`] = `
 }
 
 .b {
-  margin-top: -0.75em
+  margin-top: 0.5em
 }
 
 .c {
@@ -155,7 +155,7 @@ exports[`should render invalid state with validation errors 2`] = `
 }
 
 .b {
-  margin-top: -0.75em
+  margin-top: 0.5em
 }
 
 .c {
