@@ -45,6 +45,7 @@ export default {
     marine: '#2F7BBF',
     tangerine: '#FF7900',
     apple: '#BD2527',
+    cherry: '#9F1F21',
     charcoal: '#333333',
     carrot: '#f56500',
     smoke: '#e0e0e0',
