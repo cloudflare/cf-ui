@@ -54,6 +54,7 @@ class CardComponent extends React.Component {
         <CardDrawers
           onClick={this.handleDrawerClick}
           active={this.state.activeDrawer}
+          controls={<div>Here's some text</div>}
           drawers={[
             {
               id: 'one',

@@ -11,6 +11,7 @@ test('should render when given all the props', () => {
     <CardDrawers
       onClick={() => {}}
       active="one"
+      controls={<div>hello world</div>}
       drawers={[
         { id: 'one', name: 'One', content: 'One Content' },
         { id: 'two', name: 'Two', content: 'Two Content' }

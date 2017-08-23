@@ -4,20 +4,16 @@ import Link from 'cf-component-link';
 import { createComponent } from 'cf-style-container';
 
 const styles = ({ isActive }) => ({
-  position: 'relative',
   display: 'inline-block',
-  padding: '0.73333rem 2em 0.73333rem 0.5rem',
+  marginRight: '1em',
 
   '&::after': {
+    display: 'inline-block',
     content: "'\\f003'",
     fontFamily: '"cloudflare-font"',
     fontStyle: 'normal',
     fontWeight: 'normal',
-    marginTop: '-0.7em',
 
-    position: 'absolute',
-    top: '60%',
-    right: '1rem',
     transition: 'transform 0.2s ease',
     transform: isActive ? 'rotate(90deg)' : 'initial'
   }

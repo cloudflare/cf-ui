@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <a
-  className="cf-link a b c d e f g h i j k l m"
+  className="cf-link a b c d e f g h i"
   href="#!"
   id="link"
   onClick={[Function]}
@@ -15,15 +15,15 @@ exports[`should render 1`] = `
 exports[`should render 2`] = `
 "
 .a {
-  position: relative
-}
-
-.b {
   display: inline-block
 }
 
-.c {
-  padding: 0.73333rem 2em 0.73333rem 0.5rem
+.b {
+  margin-right: 1em
+}
+
+.c::after {
+  display: inline-block
 }
 
 .d::after {
@@ -43,28 +43,12 @@ exports[`should render 2`] = `
 }
 
 .h::after {
-  margin-top: -0.7em
-}
-
-.i::after {
-  position: absolute
-}
-
-.j::after {
-  top: 60%
-}
-
-.k::after {
-  right: 1rem
-}
-
-.l::after {
   transition: -webkit-transform 0.2s ease,transform 0.2s ease;
   -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
   -moz-transition: transform 0.2s ease
 }
 
-.m::after {
+.i::after {
   transform: initial;
   -webkit-transform: initial
 }
@@ -73,7 +57,7 @@ exports[`should render 2`] = `
 
 exports[`should render with isActive 1`] = `
 <a
-  className="cf-link a b c d e f g h i j k l m"
+  className="cf-link a b c d e f g h i"
   href="#!"
   id="link"
   onClick={[Function]}
@@ -86,15 +70,15 @@ exports[`should render with isActive 1`] = `
 exports[`should render with isActive 2`] = `
 "
 .a {
-  position: relative
-}
-
-.b {
   display: inline-block
 }
 
-.c {
-  padding: 0.73333rem 2em 0.73333rem 0.5rem
+.b {
+  margin-right: 1em
+}
+
+.c::after {
+  display: inline-block
 }
 
 .d::after {
@@ -114,28 +98,12 @@ exports[`should render with isActive 2`] = `
 }
 
 .h::after {
-  margin-top: -0.7em
-}
-
-.i::after {
-  position: absolute
-}
-
-.j::after {
-  top: 60%
-}
-
-.k::after {
-  right: 1rem
-}
-
-.l::after {
   transition: -webkit-transform 0.2s ease,transform 0.2s ease;
   -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
   -moz-transition: transform 0.2s ease
 }
 
-.m::after {
+.i::after {
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg)
 }

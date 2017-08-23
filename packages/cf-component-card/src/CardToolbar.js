@@ -3,12 +3,10 @@ import PropTypes from 'prop-types';
 import { createComponent } from 'cf-style-container';
 
 const styles = ({ theme }) => ({
-  borderTop: `1px solid ${theme.colorGrayLight}`,
   minHeight: '2.96666rem',
-
-  '&:first-child': {
-    borderTop: 'initial'
-  },
+  display: 'flex',
+  alignItems: 'center',
+  width: '100%',
 
   '&::after': {
     content: "''",
@@ -19,15 +17,22 @@ const styles = ({ theme }) => ({
 
 const Links = createComponent(
   () => ({
-    float: 'right'
+    display: 'flex',
+    justifyContent: 'flex-end',
+    height: '100%'
   }),
   'div',
   ['role']
 );
 
+const Controls = createComponent(() => ({
+  flex: 1,
+  marginLeft: '1em'
+}));
+
 const CardToolbar = ({ className, controls, links }) => (
   <div className={className}>
-    <div>{controls}</div>
+    <Controls>{controls}</Controls>
     <Links role="tablist">
       {links}
     </Links>
