@@ -544,7 +544,7 @@ exports[`should render drawers 2`] = `
 }
 
 .af::after {
-  top: 60%
+  top: 51%
 }
 
 .ag::after {
