@@ -16,7 +16,7 @@ const styles = ({ isActive }) => ({
     marginTop: '-0.7em',
 
     position: 'absolute',
-    top: '60%',
+    top: '51%',
     right: '1rem',
     transition: 'transform 0.2s ease',
     transform: isActive ? 'rotate(90deg)' : 'initial'

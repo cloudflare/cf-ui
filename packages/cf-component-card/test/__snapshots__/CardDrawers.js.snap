@@ -137,7 +137,7 @@ exports[`should render when given all the props 2`] = `
 }
 
 .u::after {
-  top: 60%
+  top: 51%
 }
 
 .v::after {
@@ -313,7 +313,7 @@ exports[`should render when not given props 2`] = `
 }
 
 .u::after {
-  top: 60%
+  top: 51%
 }
 
 .v::after {

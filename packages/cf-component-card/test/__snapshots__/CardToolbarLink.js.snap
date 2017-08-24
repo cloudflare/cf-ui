@@ -51,7 +51,7 @@ exports[`should render 2`] = `
 }
 
 .j::after {
-  top: 60%
+  top: 51%
 }
 
 .k::after {
@@ -122,7 +122,7 @@ exports[`should render with isActive 2`] = `
 }
 
 .j::after {
-  top: 60%
+  top: 51%
 }
 
 .k::after {
