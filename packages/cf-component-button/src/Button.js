@@ -75,18 +75,20 @@ const marginTop = (marginTop, group, spaced, direction) => {
 
 const border = (theme, group, type) => {
   const isOutlineButton = type === 'dangerOutline';
-  return isOutlineButton ? {
-     borderBottom: '1px solid',
-     borderLeft: '1px solid',
-     borderRight: '1px solid',
-     borderTop: '1px solid'
-  } : {
-    borderBottom: theme.borderBottom,
-    borderLeft: (group && group !== 'first') ? 0 : theme.borderLeft,
-    borderRight: theme.borderRight,
-    borderTop: theme.borderTop,
-  };
-}
+  return isOutlineButton
+    ? {
+        borderBottom: '1px solid',
+        borderLeft: '1px solid',
+        borderRight: '1px solid',
+        borderTop: '1px solid'
+      }
+    : {
+        borderBottom: theme.borderBottom,
+        borderLeft: group && group !== 'first' ? 0 : theme.borderLeft,
+        borderRight: theme.borderRight,
+        borderTop: theme.borderTop
+      };
+};
 
 const styles = props => {
   const theme = props.theme;
@@ -196,8 +198,14 @@ Button.propTypes = {
   direction: PropTypes.oneOf(['column', 'row']),
   className: PropTypes.string.isRequired,
   group: PropTypes.oneOf(['first', 'inbetween', 'last']),
-  type: PropTypes.oneOf(['default', 'primary', 'success', 'warning', 'danger', 'dangerOutline'])
-    .isRequired,
+  type: PropTypes.oneOf([
+    'default',
+    'primary',
+    'success',
+    'warning',
+    'danger',
+    'dangerOutline'
+  ]).isRequired,
   disabled: PropTypes.bool,
   loading: PropTypes.bool,
   children: PropTypes.node
