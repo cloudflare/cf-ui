@@ -1,5 +1,7 @@
 # cf-ui
 
+[![Build Status](https://travis-ci.org/cloudflare/cf-ui.svg?branch=master)](https://travis-ci.org/cloudflare/cf-ui)
+
 > Cloudflare UI Framework
 
 cf-ui is a set of over 50 packages used to build UIs at Cloudflare using
