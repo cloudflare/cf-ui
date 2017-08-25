@@ -22,6 +22,12 @@ const ButtonComponent = () => (
       <Button type="danger" onClick={() => console.log('Clicked Five!')}>
         Button Five
       </Button>
+      <Button type="dangerOutline" onClick={() => console.log('Clicked Six!')}>
+        Button Six
+      </Button>
+      <Button loading onClick={() => console.log('Clicked Loading!')}>
+        Button Seven
+      </Button>
     </ButtonGroup>
   </div>
 );

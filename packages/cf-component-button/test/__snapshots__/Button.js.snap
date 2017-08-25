@@ -3,7 +3,7 @@
 exports[`should render as submit 1`] = `
 <button
   className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao ap"
-  disabled={undefined}
+  disabled={false}
   onClick={[Function]}
   type="submit"
 >
@@ -58,23 +58,23 @@ exports[`should render as submit 2`] = `
 }
 
 .l {
-  border-color: #2869a2
-}
-
-.m {
   border-bottom: 1px solid
 }
 
-.n {
+.m {
   border-left: 0px
 }
 
-.o {
+.n {
   border-right: 0px
 }
 
-.p {
+.o {
   border-top: 0px
+}
+
+.p {
+  border-color: #2869a2
 }
 
 .q {
@@ -315,23 +315,23 @@ exports[`should render with loading 2`] = `
 }
 
 .y {
-  border-color: #dbdbdb
-}
-
-.z {
   border-bottom: 1px solid
 }
 
-.ab {
+.z {
   border-left: 0px
 }
 
-.ac {
+.ab {
   border-right: 0px
 }
 
-.ad {
+.ac {
   border-top: 0px
+}
+
+.ad {
+  border-color: #dbdbdb
 }
 
 .ae {
@@ -572,23 +572,23 @@ exports[`should render with loading and disabled overridden 2`] = `
 }
 
 .y {
-  border-color: #dbdbdb
-}
-
-.z {
   border-bottom: 1px solid
 }
 
-.ab {
+.z {
   border-left: 0px
 }
 
-.ac {
+.ab {
   border-right: 0px
 }
 
-.ad {
+.ac {
   border-top: 0px
+}
+
+.ad {
+  border-color: #dbdbdb
 }
 
 .ae {
@@ -701,7 +701,7 @@ exports[`should render with loading and disabled overridden 2`] = `
 exports[`should render with type 1`] = `
 <button
   className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao ap"
-  disabled={undefined}
+  disabled={false}
   onClick={[Function]}
   type="button"
 >
@@ -756,23 +756,23 @@ exports[`should render with type 2`] = `
 }
 
 .l {
-  border-color: #2869a2
-}
-
-.m {
   border-bottom: 1px solid
 }
 
-.n {
+.m {
   border-left: 0px
 }
 
-.o {
+.n {
   border-right: 0px
 }
 
-.p {
+.o {
   border-top: 0px
+}
+
+.p {
+  border-color: #2869a2
 }
 
 .q {
@@ -940,23 +940,23 @@ exports[`should render with type/disabled 2`] = `
 }
 
 .l {
-  border-color: #2869a2
-}
-
-.m {
   border-bottom: 1px solid
 }
 
-.n {
+.m {
   border-left: 0px
 }
 
-.o {
+.n {
   border-right: 0px
 }
 
-.p {
+.o {
   border-top: 0px
+}
+
+.p {
+  border-color: #2869a2
 }
 
 .q {
