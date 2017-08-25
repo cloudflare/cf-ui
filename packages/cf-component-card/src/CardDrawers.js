@@ -18,14 +18,6 @@ const Drawer = createComponent(
   ['key', 'id', 'isActive', 'onClick']
 );
 
-const Container = createComponent(
-  ({ active }) => ({
-    display: active ? 'block' : 'none'
-  }),
-  'div',
-  ['active']
-);
-
 class CardDrawers extends React.Component {
   constructor(props) {
     super(props);
@@ -84,9 +76,9 @@ class CardDrawers extends React.Component {
     return (
       <CardSection>
         <CardToolbar controls={this.props.controls} links={links} />
-        <Container active={this.props.active}>
+        <div>
           {drawers}
-        </Container>
+        </div>
       </CardSection>
     );
   }

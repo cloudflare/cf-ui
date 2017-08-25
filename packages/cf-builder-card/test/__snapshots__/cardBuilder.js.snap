@@ -402,18 +402,15 @@ exports[`should render drawers 1`] = `
         </a>
       </div>
     </div>
-    <div
-      active={undefined}
-      className="ak"
-    >
+    <div>
       <div
-        className="al am"
+        className="ak al"
         id={undefined}
         isActive={false}
         onClick={undefined}
       />
       <div
-        className="al am"
+        className="ak al"
         id={undefined}
         isActive={false}
         onClick={undefined}
@@ -567,14 +564,10 @@ exports[`should render drawers 2`] = `
 }
 
 .ak {
-  display: none
-}
-
-.al {
   border-top: initial
 }
 
-.am {
+.al {
   padding: initial
 }
 

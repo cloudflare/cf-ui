@@ -32,12 +32,9 @@ exports[`should render when given all the props 1`] = `
       </a>
     </div>
   </div>
-  <div
-    active="one"
-    className="ab"
-  >
+  <div>
     <div
-      className="d ac"
+      className="d ab"
       id={undefined}
       isActive={true}
       onClick={undefined}
@@ -45,7 +42,7 @@ exports[`should render when given all the props 1`] = `
       One Content
     </div>
     <div
-      className="ad ae"
+      className="ac ad"
       id={undefined}
       isActive={false}
       onClick={undefined}
@@ -165,18 +162,14 @@ exports[`should render when given all the props 2`] = `
 }
 
 .ab {
-  display: block
-}
-
-.ac {
   padding: 1.5rem
 }
 
-.ad {
+.ac {
   border-top: initial
 }
 
-.ae {
+.ad {
   padding: initial
 }
 "
@@ -214,18 +207,15 @@ exports[`should render when not given props 1`] = `
       </a>
     </div>
   </div>
-  <div
-    active={undefined}
-    className="z"
-  >
+  <div>
     <div
-      className="ab ac"
+      className="z ab"
       id={undefined}
       isActive={false}
       onClick={undefined}
     />
     <div
-      className="ab ac"
+      className="z ab"
       id={undefined}
       isActive={false}
       onClick={undefined}
@@ -340,14 +330,10 @@ exports[`should render when not given props 2`] = `
 }
 
 .z {
-  display: none
-}
-
-.ab {
   border-top: initial
 }
 
-.ac {
+.ab {
   padding: initial
 }
 "
