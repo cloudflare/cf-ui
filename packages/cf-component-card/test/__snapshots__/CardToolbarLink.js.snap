@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <a
-  className="cf-link a b c d e f g h i j k l m"
+  className="cf-link a b c d e f g h i j k l m n"
   href="#!"
   id="link"
   onClick={[Function]}
@@ -26,45 +26,49 @@ exports[`should render 2`] = `
   padding: 0.73333rem 2em 0.73333rem 0.5rem
 }
 
-.d::after {
-  content: '\\\\f003'
+.d {
+  line-height: 1.5
 }
 
 .e::after {
-  font-family: \\"cloudflare-font\\"
+  content: '\\\\f003'
 }
 
 .f::after {
-  font-style: normal
+  font-family: \\"cloudflare-font\\"
 }
 
 .g::after {
-  font-weight: normal
+  font-style: normal
 }
 
 .h::after {
-  margin-top: -0.7em
+  font-weight: normal
 }
 
 .i::after {
-  position: absolute
+  margin-top: -0.7em
 }
 
 .j::after {
-  top: 51%
+  position: absolute
 }
 
 .k::after {
-  right: 1rem
+  top: 51%
 }
 
 .l::after {
+  right: 1rem
+}
+
+.m::after {
   transition: -webkit-transform 0.2s ease,transform 0.2s ease;
   -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
   -moz-transition: transform 0.2s ease
 }
 
-.m::after {
+.n::after {
   transform: initial;
   -webkit-transform: initial
 }
@@ -73,7 +77,7 @@ exports[`should render 2`] = `
 
 exports[`should render with isActive 1`] = `
 <a
-  className="cf-link a b c d e f g h i j k l m"
+  className="cf-link a b c d e f g h i j k l m n"
   href="#!"
   id="link"
   onClick={[Function]}
@@ -97,45 +101,49 @@ exports[`should render with isActive 2`] = `
   padding: 0.73333rem 2em 0.73333rem 0.5rem
 }
 
-.d::after {
-  content: '\\\\f003'
+.d {
+  line-height: 1.5
 }
 
 .e::after {
-  font-family: \\"cloudflare-font\\"
+  content: '\\\\f003'
 }
 
 .f::after {
-  font-style: normal
+  font-family: \\"cloudflare-font\\"
 }
 
 .g::after {
-  font-weight: normal
+  font-style: normal
 }
 
 .h::after {
-  margin-top: -0.7em
+  font-weight: normal
 }
 
 .i::after {
-  position: absolute
+  margin-top: -0.7em
 }
 
 .j::after {
-  top: 51%
+  position: absolute
 }
 
 .k::after {
-  right: 1rem
+  top: 51%
 }
 
 .l::after {
+  right: 1rem
+}
+
+.m::after {
   transition: -webkit-transform 0.2s ease,transform 0.2s ease;
   -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
   -moz-transition: transform 0.2s ease
 }
 
-.m::after {
+.n::after {
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg)
 }

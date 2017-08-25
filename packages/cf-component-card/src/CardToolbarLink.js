@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import Link from 'cf-component-link';
 import { createComponent } from 'cf-style-container';
 
-const styles = ({ isActive }) => ({
+const styles = ({ isActive, theme }) => ({
   position: 'relative',
   display: 'inline-block',
   padding: '0.73333rem 2em 0.73333rem 0.5rem',
+  lineHeight: theme.lineHeight,
 
   '&::after': {
     content: "'\\f003'",

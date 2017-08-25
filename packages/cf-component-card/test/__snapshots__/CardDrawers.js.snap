@@ -13,7 +13,7 @@ exports[`should render when given all the props 1`] = `
       role="tablist"
     >
       <a
-        className="cf-link l m n o p q r s t u v w x"
+        className="cf-link l m n o p q r s t u v w x y"
         href="#!"
         id="card-0-drawer-one"
         onClick={[Function]}
@@ -22,7 +22,7 @@ exports[`should render when given all the props 1`] = `
         One
       </a>
       <a
-        className="cf-link l m n o p q r s t u v w y"
+        className="cf-link l m n o p q r s t u v w x z"
         href="#!"
         id="card-0-drawer-two"
         onClick={[Function]}
@@ -34,10 +34,10 @@ exports[`should render when given all the props 1`] = `
   </div>
   <div
     active="one"
-    className="z"
+    className="ab"
   >
     <div
-      className="d ab"
+      className="d ac"
       id={undefined}
       isActive={true}
       onClick={undefined}
@@ -45,7 +45,7 @@ exports[`should render when given all the props 1`] = `
       One Content
     </div>
     <div
-      className="ac ad"
+      className="ad ae"
       id={undefined}
       isActive={false}
       onClick={undefined}
@@ -112,67 +112,71 @@ exports[`should render when given all the props 2`] = `
   padding: 0.73333rem 2em 0.73333rem 0.5rem
 }
 
-.o::after {
-  content: '\\\\f003'
+.o {
+  line-height: 1.5
 }
 
 .p::after {
-  font-family: \\"cloudflare-font\\"
+  content: '\\\\f003'
 }
 
 .q::after {
-  font-style: normal
+  font-family: \\"cloudflare-font\\"
 }
 
 .r::after {
-  font-weight: normal
+  font-style: normal
 }
 
 .s::after {
-  margin-top: -0.7em
+  font-weight: normal
 }
 
 .t::after {
-  position: absolute
+  margin-top: -0.7em
 }
 
 .u::after {
-  top: 51%
+  position: absolute
 }
 
 .v::after {
-  right: 1rem
+  top: 51%
 }
 
 .w::after {
+  right: 1rem
+}
+
+.x::after {
   transition: -webkit-transform 0.2s ease,transform 0.2s ease;
   -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
   -moz-transition: transform 0.2s ease
 }
 
-.x::after {
+.y::after {
   transform: rotate(90deg);
   -webkit-transform: rotate(90deg)
 }
 
-.y::after {
+.z::after {
   transform: initial;
   -webkit-transform: initial
 }
 
-.z {
+.ab {
   display: block
 }
 
-.ab {
+.ac {
   padding: 1.5rem
 }
 
-.ac {
+.ad {
   border-top: initial
 }
 
-.ad {
+.ae {
   padding: initial
 }
 "
@@ -191,7 +195,7 @@ exports[`should render when not given props 1`] = `
       role="tablist"
     >
       <a
-        className="cf-link l m n o p q r s t u v w x"
+        className="cf-link l m n o p q r s t u v w x y"
         href="#!"
         id="card-1-drawer-one"
         onClick={[Function]}
@@ -200,7 +204,7 @@ exports[`should render when not given props 1`] = `
         One
       </a>
       <a
-        className="cf-link l m n o p q r s t u v w x"
+        className="cf-link l m n o p q r s t u v w x y"
         href="#!"
         id="card-1-drawer-two"
         onClick={[Function]}
@@ -212,16 +216,16 @@ exports[`should render when not given props 1`] = `
   </div>
   <div
     active={undefined}
-    className="y"
+    className="z"
   >
     <div
-      className="z ab"
+      className="ab ac"
       id={undefined}
       isActive={false}
       onClick={undefined}
     />
     <div
-      className="z ab"
+      className="ab ac"
       id={undefined}
       isActive={false}
       onClick={undefined}
@@ -288,58 +292,62 @@ exports[`should render when not given props 2`] = `
   padding: 0.73333rem 2em 0.73333rem 0.5rem
 }
 
-.o::after {
-  content: '\\\\f003'
+.o {
+  line-height: 1.5
 }
 
 .p::after {
-  font-family: \\"cloudflare-font\\"
+  content: '\\\\f003'
 }
 
 .q::after {
-  font-style: normal
+  font-family: \\"cloudflare-font\\"
 }
 
 .r::after {
-  font-weight: normal
+  font-style: normal
 }
 
 .s::after {
-  margin-top: -0.7em
+  font-weight: normal
 }
 
 .t::after {
-  position: absolute
+  margin-top: -0.7em
 }
 
 .u::after {
-  top: 51%
+  position: absolute
 }
 
 .v::after {
-  right: 1rem
+  top: 51%
 }
 
 .w::after {
+  right: 1rem
+}
+
+.x::after {
   transition: -webkit-transform 0.2s ease,transform 0.2s ease;
   -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
   -moz-transition: transform 0.2s ease
 }
 
-.x::after {
+.y::after {
   transform: initial;
   -webkit-transform: initial
 }
 
-.y {
+.z {
   display: none
 }
 
-.z {
+.ab {
   border-top: initial
 }
 
-.ab {
+.ac {
   padding: initial
 }
 "
