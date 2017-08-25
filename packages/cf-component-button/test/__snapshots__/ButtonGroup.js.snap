@@ -86,11 +86,11 @@ exports[`should render 1 button 2`] = `
 }
 
 .p {
-  border-bottom: 1px solid
+  border-color: #2869a2
 }
 
 .q {
-  border-color: #2869a2
+  border-bottom: 1px solid
 }
 
 .r {
@@ -322,11 +322,11 @@ exports[`should render 2 buttons 2`] = `
 }
 
 .p {
-  border-bottom: 1px solid
+  border-color: #2869a2
 }
 
 .q {
-  border-color: #2869a2
+  border-bottom: 1px solid
 }
 
 .r {
@@ -562,11 +562,11 @@ exports[`should render 3 buttons 2`] = `
 }
 
 .p {
-  border-bottom: 1px solid
+  border-color: #2869a2
 }
 
 .q {
-  border-color: #2869a2
+  border-bottom: 1px solid
 }
 
 .r {
@@ -802,11 +802,11 @@ exports[`should render 3 buttons with spacing 2`] = `
 }
 
 .p {
-  border-bottom: 1px solid
+  border-color: #2869a2
 }
 
 .q {
-  border-color: #2869a2
+  border-bottom: 1px solid
 }
 
 .r {

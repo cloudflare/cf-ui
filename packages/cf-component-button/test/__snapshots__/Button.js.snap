@@ -58,11 +58,11 @@ exports[`should render as submit 2`] = `
 }
 
 .l {
-  border-bottom: 1px solid
+  border-color: #2869a2
 }
 
 .m {
-  border-color: #2869a2
+  border-bottom: 1px solid
 }
 
 .n {
@@ -315,11 +315,11 @@ exports[`should render with loading 2`] = `
 }
 
 .y {
-  border-bottom: 1px solid
+  border-color: #dbdbdb
 }
 
 .z {
-  border-color: #dbdbdb
+  border-bottom: 1px solid
 }
 
 .ab {
@@ -572,11 +572,11 @@ exports[`should render with loading and disabled overridden 2`] = `
 }
 
 .y {
-  border-bottom: 1px solid
+  border-color: #dbdbdb
 }
 
 .z {
-  border-color: #dbdbdb
+  border-bottom: 1px solid
 }
 
 .ab {
@@ -756,11 +756,11 @@ exports[`should render with type 2`] = `
 }
 
 .l {
-  border-bottom: 1px solid
+  border-color: #2869a2
 }
 
 .m {
-  border-color: #2869a2
+  border-bottom: 1px solid
 }
 
 .n {
@@ -940,11 +940,11 @@ exports[`should render with type/disabled 2`] = `
 }
 
 .l {
-  border-bottom: 1px solid
+  border-color: #2869a2
 }
 
 .m {
-  border-color: #2869a2
+  border-bottom: 1px solid
 }
 
 .n {
