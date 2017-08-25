@@ -73,6 +73,23 @@ const marginTop = (marginTop, group, spaced, direction) => {
   return { marginTop: 0 };
 };
 
+const border = (theme, group, type) => {
+  const isOutlineButton = type === 'dangerOutline';
+  return isOutlineButton
+    ? {
+        borderBottom: '1px solid',
+        borderLeft: '1px solid',
+        borderRight: '1px solid',
+        borderTop: '1px solid'
+      }
+    : {
+        borderBottom: theme.borderBottom,
+        borderLeft: group && group !== 'first' ? 0 : theme.borderLeft,
+        borderRight: theme.borderRight,
+        borderTop: theme.borderTop
+      };
+};
+
 const styles = props => {
   const theme = props.theme;
   return {
@@ -97,7 +114,7 @@ const styles = props => {
     '&:focus': {
       backgroundColor: props.loading
         ? theme.backgroundColor
-        : theme[`${props.type}Background`],
+        : theme[`${props.type}FocusBackground`],
       boxShadow: `inset 0px 0px 0px ${theme.borderSize} ${theme[`${props.type}focusOutlineColor`]}`,
       color: props.loading
         ? theme.disabledBackground
@@ -114,16 +131,11 @@ const styles = props => {
     backgroundColor: props.loading
       ? theme.disabledBackground
       : theme[`${props.type}Background`],
-    borderBottom: theme.borderBottom,
-    borderBottomWidth: theme.borderBottomWidth,
     borderColor: props.loading
       ? theme.disabledBorder
       : theme[`${props.type}Border`],
-    borderLeft: props.group && props.group !== 'first' ? 0 : theme.borderLeft,
-    borderRight: theme.borderRight,
+    ...border(theme, props.group, props.type),
     borderStyle: theme.borderStyle,
-    borderTop: theme.borderTop,
-    borderWidth: theme.borderWidth,
     color: props.loading
       ? theme.disabledBackground
       : theme[`${props.type}Color`],
@@ -186,8 +198,14 @@ Button.propTypes = {
   direction: PropTypes.oneOf(['column', 'row']),
   className: PropTypes.string.isRequired,
   group: PropTypes.oneOf(['first', 'inbetween', 'last']),
-  type: PropTypes.oneOf(['default', 'primary', 'success', 'warning', 'danger'])
-    .isRequired,
+  type: PropTypes.oneOf([
+    'default',
+    'primary',
+    'success',
+    'warning',
+    'danger',
+    'dangerOutline'
+  ]).isRequired,
   disabled: PropTypes.bool,
   loading: PropTypes.bool,
   children: PropTypes.node

@@ -12,6 +12,7 @@ export default baseTheme => {
     baseTheme.colorOrange
   );
   const dangerBorder = darken(baseTheme.colorOffsetDark, baseTheme.colorRed);
+
   const defaultHoverBackground = darken(
     baseTheme.colorOffsetDark,
     baseTheme.colorGrayLight
@@ -81,18 +82,21 @@ export default baseTheme => {
     successBackground: baseTheme.colorGreen,
     warningBackground: baseTheme.colorOrange,
     dangerBackground: baseTheme.colorRed,
+    dangerOutlineBackground: 'transparent',
 
     defaultBorder,
     primaryBorder,
     successBorder,
     warningBorder,
     dangerBorder,
+    dangerOutlineBorder: baseTheme.color.apple,
 
     defaultColor: baseTheme.colorGrayDark,
     primaryColor: baseTheme.colorWhite,
     successColor: baseTheme.colorWhite,
     warningColor: baseTheme.colorWhite,
     dangerColor: baseTheme.colorWhite,
+    dangerOutlineColor: baseTheme.color.apple,
 
     // Hover
     defaultHoverBackground,
@@ -100,6 +104,7 @@ export default baseTheme => {
     successHoverBackground: baseTheme.colorGreenDark,
     warningHoverBackground: baseTheme.colorOrangeDark,
     dangerHoverBackground: baseTheme.colorRedDark,
+    dangerOutlineHoverBackground: baseTheme.color.apple,
 
     defaultHoverBorder: darken(baseTheme.colorOffsetDark, defaultBorder),
     primaryHoverBorder: darken(baseTheme.colorOffsetDark, primaryBorder),
@@ -115,12 +120,14 @@ export default baseTheme => {
       baseTheme.colorOffsetDark,
       baseTheme.colorRedDark
     ),
+    dangerOutlineHoverBorder: baseTheme.color.cherry,
 
     defaultHoverColor: baseTheme.colorGrayDark,
     primaryHoverColor: baseTheme.colorWhite,
     successHoverColor: baseTheme.colorWhite,
     warningHoverColor: baseTheme.colorWhite,
     dangerHoverColor: baseTheme.colorWhite,
+    dangerOutlineHoverColor: baseTheme.colorWhite,
 
     // Active
     defaultActiveBackground,
@@ -128,6 +135,7 @@ export default baseTheme => {
     successActiveBackground,
     warningActiveBackground,
     dangerActiveBackground,
+    dangerOutlineActiveBackground: baseTheme.color.cherry,
 
     defaultActiveBorder: darken(
       baseTheme.colorOffsetDark,
@@ -149,19 +157,29 @@ export default baseTheme => {
       baseTheme.colorOffsetDark,
       dangerActiveBackground
     ),
+    dangerOutlineActiveBorder: baseTheme.color.cherry,
 
     defaultActiveColor: baseTheme.colorGrayDark,
     primaryActiveColor: baseTheme.colorWhite,
     successActiveColor: baseTheme.colorWhite,
     warningActiveColor: baseTheme.colorWhite,
     dangerActiveColor: baseTheme.colorWhite,
+    dangerOutlineActiveColor: baseTheme.colorWhite,
 
     // Focus
+    defaultFocusBackground: baseTheme.colorGrayLight,
+    primaryFocusBackground: baseTheme.colorBlue,
+    successFocusBackground: baseTheme.colorGreen,
+    warningFocusBackground: baseTheme.colorOrange,
+    dangerFocusBackground: baseTheme.colorRed,
+    dangerOutlineFocusBackground: baseTheme.color.cherry,
+
     defaultFocusColor: baseTheme.colorGrayDark,
     primaryFocusColor: baseTheme.colorWhite,
     successFocusColor: baseTheme.colorWhite,
     warningFocusColor: baseTheme.colorWhite,
     dangerFocusColor: baseTheme.colorWhite,
+    dangerOutlineFocusColor: baseTheme.colorWhite,
 
     defaultFocusOutlineColor: darken(
       baseTheme.colorOffsetDark,
@@ -182,6 +200,7 @@ export default baseTheme => {
     dangerFocusOutlineColor: darken(
       baseTheme.colorOffsetDark,
       dangerActiveBackground
-    )
+    ),
+    dangerOutlineFocusOutlineColor: 'transparent'
   };
 };
