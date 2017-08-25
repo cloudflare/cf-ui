@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.1.0"></a>
+# [6.1.0](https://github.com/cloudflare/cf-ui/compare/cf-component-button@6.0.0...cf-component-button@6.1.0) (2017-08-25)
+
+
+### Features
+
+* **cf-component-button:** add 'dangerOutline' button type (#356) ([fc71718](https://github.com/cloudflare/cf-ui/commit/fc71718))
+
+
+
+
 <a name="6.0.0"></a>
 # [6.0.0](https://github.com/cloudflare/cf-ui/compare/cf-component-button@5.9.1...cf-component-button@6.0.0) (2017-08-07)
 
