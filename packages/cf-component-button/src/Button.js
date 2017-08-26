@@ -73,21 +73,28 @@ const marginTop = (marginTop, group, spaced, direction) => {
   return { marginTop: 0 };
 };
 
-const border = (theme, group, type) => {
+const border = (theme, group, type, loading) => {
   const isOutlineButton = type === 'dangerOutline';
-  return isOutlineButton
-    ? {
-        borderBottom: '1px solid',
-        borderLeft: '1px solid',
-        borderRight: '1px solid',
-        borderTop: '1px solid'
-      }
-    : {
-        borderBottom: theme.borderBottom,
-        borderLeft: group && group !== 'first' ? 0 : theme.borderLeft,
-        borderRight: theme.borderRight,
-        borderTop: theme.borderTop
-      };
+  const borderColor = loading ? theme.disabledBorder : theme[`${type}Border`];
+
+  return Object.assign(
+    isOutlineButton
+      ? {
+          borderBottom: '1px solid',
+          borderLeft: '1px solid',
+          borderRight: '1px solid',
+          borderTop: '1px solid'
+        }
+      : {
+          borderBottom: theme.borderBottom,
+          borderLeft: group && group !== 'first' ? 0 : theme.borderLeft,
+          borderRight: theme.borderRight,
+          borderTop: theme.borderTop
+        },
+    {
+      borderColor: borderColor
+    }
+  );
 };
 
 const styles = props => {
@@ -131,11 +138,7 @@ const styles = props => {
     backgroundColor: props.loading
       ? theme.disabledBackground
       : theme[`${props.type}Background`],
-    borderColor: props.loading
-      ? theme.disabledBorder
-      : theme[`${props.type}Border`],
-    ...border(theme, props.group, props.type),
-    borderStyle: theme.borderStyle,
+    ...border(theme, props.group, props.type, props.loading),
     color: props.loading
       ? theme.disabledBackground
       : theme[`${props.type}Color`],
@@ -213,7 +216,8 @@ Button.propTypes = {
 
 Button.defaultProps = {
   type: 'default',
-  submit: false
+  submit: false,
+  loading: false
 };
 
 Button.displayName = 'Button';

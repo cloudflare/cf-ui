@@ -18,13 +18,6 @@ class CardComponent extends React.Component {
     this.state = {
       activeDrawer: null
     };
-    this.handleDrawerClick = this.handleDrawerClick.bind(this);
-  }
-
-  handleDrawerClick(id) {
-    this.setState({
-      activeDrawer: id === this.state.activeDrawer ? null : id
-    });
   }
 
   render() {
@@ -52,8 +45,6 @@ class CardComponent extends React.Component {
           </CardControl>
         </CardSection>
         <CardDrawers
-          onClick={this.handleDrawerClick}
-          active={this.state.activeDrawer}
           drawers={[
             {
               id: 'one',
