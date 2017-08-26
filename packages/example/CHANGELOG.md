@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.0.19"></a>
+## [1.0.19](https://github.com/cloudflare/cf-ui/compare/example@1.0.8...example@1.0.19) (2017-08-26)
+
+
+
+
 <a name="1.0.18"></a>
 ## [1.0.18](https://github.com/cloudflare/cf-ui/compare/example@1.0.8...example@1.0.18) (2017-08-25)
 
