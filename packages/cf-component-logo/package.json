@@ -1,11 +1,11 @@
 {
-  "name": "cf-component-page",
-  "description": "Cloudflare Page Component",
-  "version": "4.1.1",
+  "name": "cf-component-logo",
+  "description": "Cloudflare Logo Component",
+  "version": "1.0.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
-  "author": "James Kyle <jkyle@cloudflare.com>",
+  "author": "Vojtech Miksu <vojtech@miksu.cz>",
   "license": "BSD-3-Clause",
   "publishConfig": {
     "registry": "http://registry.npmjs.org/"

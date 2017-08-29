@@ -2,13 +2,6 @@ import PageUnstyled from './Page';
 import PageHeaderUnstyled from './PageHeader';
 import PageContentUnstyled from './PageContent';
 import PageTheme from './PageTheme';
-import Header from './Header';
-import Logo from './Logo';
-import Hamburger from './Hamburger';
-import NavList from './NavList';
-import NavItem from './NavItem';
-import logoSvg from './logo.svg';
-import logoSvgMobile from './logo_mobile.svg';
 
 import { applyTheme } from 'cf-style-container';
 
@@ -17,13 +10,6 @@ const PageHeader = applyTheme(PageHeaderUnstyled, {});
 const PageContent = applyTheme(PageContentUnstyled, {});
 
 export {
-  Header,
-  Logo,
-  Hamburger,
-  logoSvg,
-  logoSvgMobile,
-  NavItem,
-  NavList,
   Page,
   PageTheme,
   PageUnstyled,
