@@ -7,13 +7,17 @@ import {
   Header,
   Logo,
   NavList,
-  NavItem
+  NavItem,
+  Hamburger
 } from 'cf-component-page';
 
 const PageComponent = () => (
   <div>
     <Header sticky>
-      <a href="#"><Logo /></a>
+      <Box display="flex">
+        <Hamburger />
+        <a href="#"><Logo /></a>
+      </Box>
       <NavList>
         <NavItem>One</NavItem>
         <NavItem>Two</NavItem>
