@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<header
+  className="a b c d e f g h i j k l m n o"
+>
+  Hello World
+</header>
+`;
+
+exports[`should render 2`] = `
+"
+.a {
+  background-image: -webkit-linear-gradient(left, #F16975, #F69259);
+  background-image: -moz-linear-gradient(left, #F16975, #F69259);
+  background-image: linear-gradient(left, #F16975, #F69259)
+}
+
+.b {
+  background-size: 100% 3px
+}
+
+.c {
+  background-repeat: no-repeat
+}
+
+.d {
+  background-color: #F7F7F7
+}
+
+.e {
+  border-bottom: 1px solid #ebebeb
+}
+
+.f {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex
+}
+
+.g {
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between
+}
+
+.h {
+  color: #333333
+}
+
+.i {
+  height: 63px
+}
+
+.j {
+  padding-top: 3px
+}
+
+.k {
+  top: 0px
+}
+
+.l {
+  left: 0px
+}
+
+.m {
+  position: static
+}
+
+.n {
+  width: 100%
+}
+
+.o {
+  z-index: 1200
+}
+"
+`;
+
+exports[`should render sticky 1`] = `
+<header
+  className="a b c d e f g h i j k l m n o"
+>
+  Hello World
+</header>
+`;
+
+exports[`should render sticky 2`] = `
+"
+.a {
+  background-image: -webkit-linear-gradient(left, #F16975, #F69259);
+  background-image: -moz-linear-gradient(left, #F16975, #F69259);
+  background-image: linear-gradient(left, #F16975, #F69259)
+}
+
+.b {
+  background-size: 100% 3px
+}
+
+.c {
+  background-repeat: no-repeat
+}
+
+.d {
+  background-color: #F7F7F7
+}
+
+.e {
+  border-bottom: 1px solid #ebebeb
+}
+
+.f {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex
+}
+
+.g {
+  justify-content: space-between;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between
+}
+
+.h {
+  color: #333333
+}
+
+.i {
+  height: 63px
+}
+
+.j {
+  padding-top: 3px
+}
+
+.k {
+  top: 0px
+}
+
+.l {
+  left: 0px
+}
+
+.m {
+  position: fixed
+}
+
+.n {
+  width: 100%
+}
+
+.o {
+  z-index: 1200
+}
+"
+`;

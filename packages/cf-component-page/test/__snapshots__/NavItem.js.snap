@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<li
+  className="a b c d"
+/>
+`;
+
+exports[`should render 2`] = `
+"
+.a {
+  display: inline-block
+}
+
+.b {
+  vertical-align: middle
+}
+
+.c {
+  padding: 0.5rem
+}
+
+.d {
+  font-size: 0.933rem
+}
+"
+`;
