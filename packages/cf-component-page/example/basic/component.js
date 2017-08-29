@@ -13,7 +13,7 @@ import {
 
 const PageComponent = () => (
   <div>
-    <Header sticky>
+    <Header>
       <Box display="flex">
         <Hamburger />
         <a href="#"><Logo /></a>
