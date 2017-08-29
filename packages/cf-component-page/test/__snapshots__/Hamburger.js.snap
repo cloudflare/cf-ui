@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<div
+  className="a b c d e f"
+>
+  <i
+    className="cf-icon cf-icon--hamburger"
+    role={undefined}
+  >
+    <span
+      className="cf-icon__label"
+    >
+      Open the menu
+    </span>
+  </i>
+</div>
+`;
+
+exports[`should render 2`] = `
+"
+.a {
+  font-size: 1.3rem
+}
+
+.b {
+  border-right: 1px solid #e0e0e0
+}
+
+.c {
+  padding: 1em
+}
+
+.d {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none
+}
+
+.e {
+  cursor: pointer
+}
+
+@media (min-width: 47.2em) {
+  .f {
+    display: none
+  }
+}
+"
+`;
