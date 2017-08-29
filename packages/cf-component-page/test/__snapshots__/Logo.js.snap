@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render 1`] = `
+<div
+  className="a b c d e f g"
+/>
+`;
+
+exports[`should render 2`] = `
+"
+.a {
+  width: 80px
+}
+
+.b {
+  height: 40px
+}
+
+.c {
+  vertical-align: middle
+}
+
+.d {
+  background: transparent url('test-file-stub') center no-repeat
+}
+
+.e {
+  margin-top: 8px
+}
+
+@media (min-width: 47.2em) {
+  .f {
+    width: 133px
+  }
+  
+  .g {
+    background: transparent url('test-file-stub') center no-repeat
+  }
+}
+"
+`;
