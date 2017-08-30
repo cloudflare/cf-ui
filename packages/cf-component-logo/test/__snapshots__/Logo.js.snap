@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <div
-  className="a b c d e f g"
+  className="a b c d e f g h"
 />
 `;
 
@@ -28,12 +28,16 @@ exports[`should render 2`] = `
   margin-top: 8px
 }
 
+.f {
+  margin-right: 5px
+}
+
 @media (min-width: 47.2em) {
-  .f {
+  .g {
     width: 133px
   }
   
-  .g {
+  .h {
     background: transparent url('test-file-stub') center no-repeat
   }
 }
