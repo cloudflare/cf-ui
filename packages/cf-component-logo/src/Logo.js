@@ -9,6 +9,7 @@ const Logo = createComponent(({ logoUrl, logoUrlMobile }) => ({
   verticalAlign: 'middle',
   background: `transparent url('${logoUrlMobile}') center no-repeat`,
   marginTop: 8,
+  marginRight: 5,
   tablet: {
     width: 133,
     background: `transparent url('${logoUrl}') center no-repeat`
