@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.8.7"></a>
+## [4.8.7](https://github.com/cloudflare/cf-ui/compare/cf-component-heading@4.8.6...cf-component-heading@4.8.7) (2017-08-30)
+
+
+
+
 <a name="4.8.6"></a>
 ## [4.8.6](https://github.com/cloudflare/cf-ui/compare/cf-component-heading@4.8.5...cf-component-heading@4.8.6) (2017-08-22)
 
