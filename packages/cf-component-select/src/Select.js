@@ -70,7 +70,7 @@ Select.propTypes = {
   className: PropTypes.string,
   disabled: PropTypes.bool,
   label: PropTypes.string,
-  value: PropTypes.number,
+  value: PropTypes.string,
   options: PropTypes.array,
   searchable: PropTypes.bool,
   multi: PropTypes.bool,
