@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render error 1`] = `
+<div>
+  <div
+    className="a b c d e f"
+  >
+    Error
+  </div>
+</div>
+`;
+
+exports[`should render error 2`] = `
+"
+.a {
+  padding: 0.5rem 0.8rem
+}
+
+.b {
+  margin-bottom: 1rem
+}
+
+.c {
+  border-width: 1px
+}
+
+.d {
+  border-style: solid
+}
+
+.e {
+  border-color: #de9293
+}
+
+.f {
+  background-color: #f8e9e9
+}
+"
+`;
+
+exports[`should render info 1`] = `
+<div>
+  <div
+    className="a b c d e f"
+  >
+    Info
+  </div>
+</div>
+`;
+
+exports[`should render info 2`] = `
+"
+.a {
+  padding: 0.5rem 0.8rem
+}
+
+.b {
+  margin-bottom: 1rem
+}
+
+.c {
+  border-width: 1px
+}
+
+.d {
+  border-style: solid
+}
+
+.e {
+  border-color: #97bddf
+}
+
+.f {
+  background-color: #eaf2f8
+}
+"
+`;
+
+exports[`should render success 1`] = `
+<div>
+  <div
+    className="a b c d e f"
+  >
+    Success
+  </div>
+</div>
+`;
+
+exports[`should render success 2`] = `
+"
+.a {
+  padding: 0.5rem 0.8rem
+}
+
+.b {
+  margin-bottom: 1rem
+}
+
+.c {
+  border-width: 1px
+}
+
+.d {
+  border-style: solid
+}
+
+.e {
+  border-color: #cde49e
+}
+
+.f {
+  background-color: #f5faeb
+}
+"
+`;

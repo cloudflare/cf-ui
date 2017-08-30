@@ -1,0 +1,20 @@
+{
+  "name": "cf-component-toast",
+  "description": "Cloudflare Toast Component",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "jsnext:main": "es/index.js",
+  "author": "James Culveyhouse <jculveyhouse@cloudflare.com>",
+  "license": "BSD-3-Clause",
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "cf-style-const": "^2.4.0",
+    "cf-style-container": "^4.1.0"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
+  }
+}
