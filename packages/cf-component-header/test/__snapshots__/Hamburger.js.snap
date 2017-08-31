@@ -28,7 +28,7 @@ exports[`should render 2`] = `
 }
 
 .c {
-  padding: 1em
+  padding: 0.9em 1em 1em 1em
 }
 
 .d {
