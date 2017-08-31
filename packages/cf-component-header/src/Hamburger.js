@@ -6,7 +6,7 @@ import { createComponent } from 'cf-style-container';
 const Wrapper = createComponent(({ theme }) => ({
   fontSize: '1.3rem',
   borderRight: `1px solid ${theme.color.smoke}`,
-  padding: '1em',
+  padding: '0.9em 1em 1em 1em',
   userSelect: 'none',
   cursor: 'pointer',
   tablet: {
