@@ -20,7 +20,7 @@ export default baseTheme => ({
   textIndent: 'initial',
 
   '&:hover': {
-    borderColor: '#256298'
+    borderColor: baseTheme.color.marine
   },
 
   '&:focus': {

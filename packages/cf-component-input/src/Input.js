@@ -28,14 +28,15 @@ const styles = ({ theme }) => ({
   },
 
   '&:focus': {
-    outline: theme['&:hover'].outline,
-    outlineOffset: theme['&:hover'].outlineOffset
+    borderColor: theme['&:hover'].borderColor,
+    outline: theme['&:hover'].outline
   }
 });
 
 class Input extends React.Component {
   render() {
-    return <input {...this.props} />;
+    const { inputRef, ...restProps } = this.props;
+    return <input {...restProps} ref={inputRef} />;
   }
 }
 
@@ -46,6 +47,7 @@ Input.propTypes = {
   defaultValue: PropTypes.string,
   onChange: PropTypes.func.isRequired,
   onKeyDown: PropTypes.func,
+  inputRef: PropTypes.func,
   onBlur: PropTypes.func,
   onFocus: PropTypes.func,
   placeholder: PropTypes.string,
