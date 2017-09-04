@@ -12,7 +12,7 @@ const Title = ({ children, className }) => (
 );
 
 Title.propTypes = {
-  className: PropTypes.string,
+  className: PropTypes.node,
   children: PropTypes.string
 };
 
