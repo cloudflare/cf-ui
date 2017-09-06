@@ -1,5 +1,16 @@
 import React from 'react';
-import Icon from 'cf-component-icon';
+import { Icon } from 'cf-component-icon';
+
+import { createComponent } from 'cf-style-container';
+
+const ColorWrapper = createComponent(
+  () => ({
+    backgroundColor: '#f1f1f1',
+    paddingTop: '10px',
+    paddingBottom: '10px'
+  }),
+  'div'
+);
 
 const IconComponent = () => (
   <div>
@@ -57,14 +68,16 @@ const IconComponent = () => (
     </p>
 
     <p>Colors:</p>
-    <p style={{ backgroundColor: '#f1f1f1' }}>
-      <Icon label="default" size="3x" type="gear" color="default" />Default
-      <Icon label="primary" size="3x" type="gear" color="primary" />Primary
-      <Icon label="success" size="3x" type="gear" color="success" />Success
-      <Icon label="warning" size="3x" type="gear" color="warning" />Warning
-      <Icon label="danger" size="3x" type="gear" color="danger" />Danger
-      <Icon label="danger" size="3x" type="gear" color="black" />Black
-      <Icon label="danger" size="3x" type="gear" color="white" />White
+    <p>
+      <ColorWrapper>
+        <Icon label="default" size="3x" type="gear" color="default" />Default
+        <Icon label="primary" size="3x" type="gear" color="primary" />Primary
+        <Icon label="success" size="3x" type="gear" color="success" />Success
+        <Icon label="warning" size="3x" type="gear" color="warning" />Warning
+        <Icon label="danger" size="3x" type="gear" color="danger" />Danger
+        <Icon label="danger" size="3x" type="gear" color="black" />Black
+        <Icon label="danger" size="3x" type="gear" color="white" />White
+      </ColorWrapper>
     </p>
 
   </div>
