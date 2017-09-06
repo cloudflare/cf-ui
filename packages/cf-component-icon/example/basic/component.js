@@ -75,8 +75,8 @@ const IconComponent = () => (
         <Icon label="success" size="3x" type="gear" color="success" />Success
         <Icon label="warning" size="3x" type="gear" color="warning" />Warning
         <Icon label="danger" size="3x" type="gear" color="danger" />Danger
-        <Icon label="danger" size="3x" type="gear" color="black" />Black
-        <Icon label="danger" size="3x" type="gear" color="white" />White
+        <Icon label="black" size="3x" type="gear" color="black" />Black
+        <Icon label="white" size="3x" type="gear" color="white" />White
       </ColorWrapper>
     </p>
 
