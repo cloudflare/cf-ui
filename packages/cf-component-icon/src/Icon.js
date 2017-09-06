@@ -1,24 +1,102 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import * as svgs from './svgs.js';
+
+import { createComponent } from 'cf-style-container';
+
+const DEFAULT_HEIGHT = 15.5;
+
+const getHeight = size => {
+  let height;
+  switch (size) {
+    case '1.5x':
+      height = 23;
+      break;
+    case '2x':
+      height = 30.5;
+      break;
+    case '2.5x':
+      height = 38;
+      break;
+    case '3x':
+      height = 45.5;
+      break;
+    case '3.5x':
+      height = 53;
+      break;
+    case '4x':
+      height = 60.5;
+      break;
+    default:
+      height = DEFAULT_HEIGHT;
+  }
+  return height;
+};
+
+const getFill = (color, theme) => {
+  let fill;
+  switch (color) {
+    case 'default':
+      fill = theme.color.smoke;
+      break;
+    case 'primary':
+      fill = theme.color.marine;
+      break;
+    case 'success':
+      fill = theme.color.grass;
+      break;
+    case 'warning':
+      fill = theme.color.carrot;
+      break;
+    case 'danger':
+      fill = theme.color.apple;
+      break;
+    case 'black':
+      fill = theme.colorBlack;
+      break;
+    case 'white':
+      fill = theme.colorWhite;
+      break;
+    default:
+      fill = theme.colorBlack;
+  }
+  return fill;
+};
+
+const IconWrapper = createComponent(
+  ({ height }) => ({
+    display: 'inline-block',
+    height: height ? height : DEFAULT_HEIGHT
+  }),
+  'span',
+  ['aria-label']
+);
+
 class Icon extends React.Component {
   render() {
-    let className = `cf-icon cf-icon--${this.props.type}`;
+    const { className, size, label, color } = this.props;
+    const icon = svgs[this.props.type.replace(/-/g, '')];
+    let height, fill;
 
-    if (this.props.size) {
-      className += ` cf-icon--${this.props.size}`;
+    if (!icon) throw `Invalid Icon type ${this.props.type}`;
+
+    if (size) {
+      height = getHeight(size);
     }
 
-    if (this.props.border) className += ' cf-icon--border';
-    if (this.props.spin) className += ' cf-icon--spin';
-    if (this.props.muted) className += ' cf-icon--muted';
-    if (this.props.white) className += ' cf-icon--white';
+    const SvgIcon = createComponent(
+      ({ color, theme }) => ({
+        height: '100%',
+        fill: color ? getFill(color, theme) : theme.colorBlack
+      }),
+      icon
+    );
 
     return (
-      <i className={className} role={this.props.role}>
-        {this.props.label &&
-          <span className="cf-icon__label">{this.props.label}</span>}
-      </i>
+      <IconWrapper aria-label={label} height={height}>
+        <SvgIcon color={color} />
+      </IconWrapper>
     );
   }
 }
@@ -27,6 +105,7 @@ Icon.propTypes = {
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([false])])
     .isRequired,
   type: PropTypes.oneOf([
+    'api',
     'bolt',
     'calendar',
     'caret-down',
@@ -34,17 +113,17 @@ Icon.propTypes = {
     'caret-right',
     'caret-up',
     'chart',
-    'chevron-down',
-    'chevron-left',
-    'chevron-right',
-    'chevron-up',
     'clipboard',
     'close',
+    'credit-card',
+    'door',
+    'download',
     'drive',
     'exclamation-sign',
     'facebook',
     'file',
     'filter',
+    'firebolt',
     'flowchart',
     'gear',
     'googleplus',
@@ -56,13 +135,14 @@ Icon.propTypes = {
     'list',
     'loading',
     'lock',
-    'ok',
+    'mail',
+    'network',
     'ok-sign',
+    'ok',
     'pause',
     'plus',
     'refresh',
     'remove',
-    'remove-sign',
     'resize-horizontal',
     'sad',
     'search',
@@ -71,15 +151,18 @@ Icon.propTypes = {
     'time',
     'twitter',
     'upload',
-    'widen',
     'wrench'
   ]).isRequired,
-  size: PropTypes.oneOf(['2x', '3x', '4x', 'large', 'xlarge']),
-  border: PropTypes.bool,
-  spin: PropTypes.bool,
-  muted: PropTypes.bool,
-  white: PropTypes.bool,
-  role: PropTypes.string
+  size: PropTypes.oneOf(['2x', '2.5x', '3x', '3.5x', '4x']),
+  color: PropTypes.oneOf([
+    'default',
+    'primary',
+    'success',
+    'warning',
+    'danger',
+    'black',
+    'white'
+  ])
 };
 
 export default Icon;

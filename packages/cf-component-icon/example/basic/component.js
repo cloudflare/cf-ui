@@ -12,10 +12,6 @@ const IconComponent = () => (
       <Icon label="caret-right" type="caret-right" />
       <Icon label="caret-up" type="caret-up" />
       <Icon label="chart" type="chart" />
-      <Icon label="chevron-down" type="chevron-down" />
-      <Icon label="chevron-left" type="chevron-left" />
-      <Icon label="chevron-right" type="chevron-right" />
-      <Icon label="chevron-up" type="chevron-up" />
       <Icon label="clipboard" type="clipboard" />
       <Icon label="close" type="close" />
       <Icon label="drive" type="drive" />
@@ -40,7 +36,6 @@ const IconComponent = () => (
       <Icon label="plus" type="plus" />
       <Icon label="refresh" type="refresh" />
       <Icon label="remove" type="remove" />
-      <Icon label="remove-sign" type="remove-sign" />
       <Icon label="resize-horizontal" type="resize-horizontal" />
       <Icon label="sad" type="sad" />
       <Icon label="search" type="search" />
@@ -49,30 +44,29 @@ const IconComponent = () => (
       <Icon label="time" type="time" />
       <Icon label="twitter" type="twitter" />
       <Icon label="upload" type="upload" />
-      <Icon label="widen" type="widen" />
       <Icon label="wrench" type="wrench" />
     </p>
 
     <p>Sizes:</p>
     <p>
-      <Icon label="2x" type="gear" />
-      <Icon label="3x" type="gear" />
-      <Icon label="4x" type="gear" />
-      <Icon label="large" type="gear" />
-      <Icon label="xlarge" type="gear" />
+      <Icon label="2x" size="2x" type="gear" />2x
+      <Icon label="2.5x" size="2.5x" type="gear" />2.5x
+      <Icon label="3x" size="3x" type="gear" />3x
+      <Icon label="3.5x" size="3.5x" type="gear" />3.5x
+      <Icon label="4x" size="4x" type="gear" />4x
     </p>
 
-    <p>Border:</p>
-    <p><Icon label="border" type="gear" border /></p>
+    <p>Colors:</p>
+    <p style={{ backgroundColor: '#f1f1f1' }}>
+      <Icon label="default" size="3x" type="gear" color="default" />Default
+      <Icon label="primary" size="3x" type="gear" color="primary" />Primary
+      <Icon label="success" size="3x" type="gear" color="success" />Success
+      <Icon label="warning" size="3x" type="gear" color="warning" />Warning
+      <Icon label="danger" size="3x" type="gear" color="danger" />Danger
+      <Icon label="danger" size="3x" type="gear" color="black" />Black
+      <Icon label="danger" size="3x" type="gear" color="white" />White
+    </p>
 
-    <p>Spin:</p>
-    <p><Icon label="border" type="gear" spin /></p>
-
-    <p>Muted:</p>
-    <p><Icon label="border" type="gear" muted /></p>
-
-    <p>White:</p>
-    <p><Icon label="border" type="gear" white /></p>
   </div>
 );
 
