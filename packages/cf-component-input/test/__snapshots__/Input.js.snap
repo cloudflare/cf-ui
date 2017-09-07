@@ -3,7 +3,7 @@
 exports[`should pass all props down to the inner input and merge classnames 1`] = `
 <input
   autoComplete={undefined}
-  className="a b c d e f g h i j k l m n o p q"
+  className="a b c d e f g h i j k l m n o p q r"
   defaultValue={undefined}
   disabled={true}
   name="example"
@@ -87,7 +87,11 @@ exports[`should pass all props down to the inner input and merge classnames 2`] 
 }
 
 .q:hover {
-  border-color: #256298
+  border-color: #2F7BBF
+}
+
+.r:focus {
+  border-color: #2F7BBF
 }
 "
 `;
@@ -95,7 +99,7 @@ exports[`should pass all props down to the inner input and merge classnames 2`] 
 exports[`should render 1`] = `
 <input
   autoComplete={undefined}
-  className="a b c d e f g h i j k l m n o p q"
+  className="a b c d e f g h i j k l m n o p q r"
   defaultValue={undefined}
   disabled={undefined}
   name="example"
@@ -179,7 +183,11 @@ exports[`should render 2`] = `
 }
 
 .q:hover {
-  border-color: #256298
+  border-color: #2F7BBF
+}
+
+.r:focus {
+  border-color: #2F7BBF
 }
 "
 `;
@@ -187,7 +195,7 @@ exports[`should render 2`] = `
 exports[`should render with autocomplete 1`] = `
 <input
   autoComplete="off"
-  className="a b c d e f g h i j k l m n o p q"
+  className="a b c d e f g h i j k l m n o p q r"
   defaultValue={undefined}
   disabled={undefined}
   name="example"
@@ -271,7 +279,11 @@ exports[`should render with autocomplete 2`] = `
 }
 
 .q:hover {
-  border-color: #256298
+  border-color: #2F7BBF
+}
+
+.r:focus {
+  border-color: #2F7BBF
 }
 "
 `;
@@ -279,7 +291,7 @@ exports[`should render with autocomplete 2`] = `
 exports[`should render with error 1`] = `
 <input
   autoComplete={undefined}
-  className="a b c d e f g h i j k l m n o p q"
+  className="a b c d e f g h i j k l m n o p q r"
   defaultValue={undefined}
   disabled={undefined}
   name="example"
@@ -363,7 +375,11 @@ exports[`should render with error 2`] = `
 }
 
 .q:hover {
-  border-color: #256298
+  border-color: #2F7BBF
+}
+
+.r:focus {
+  border-color: #2F7BBF
 }
 "
 `;
@@ -371,7 +387,7 @@ exports[`should render with error 2`] = `
 exports[`should render with placeholder 1`] = `
 <input
   autoComplete={undefined}
-  className="a b c d e f g h i j k l m n o p q"
+  className="a b c d e f g h i j k l m n o p q r"
   defaultValue={undefined}
   disabled={undefined}
   name="example"
@@ -455,7 +471,11 @@ exports[`should render with placeholder 2`] = `
 }
 
 .q:hover {
-  border-color: #256298
+  border-color: #2F7BBF
+}
+
+.r:focus {
+  border-color: #2F7BBF
 }
 "
 `;
@@ -463,7 +483,7 @@ exports[`should render with placeholder 2`] = `
 exports[`should render with type 1`] = `
 <input
   autoComplete={undefined}
-  className="a b c d e f g h i j k l m n o p q"
+  className="a b c d e f g h i j k l m n o p q r"
   defaultValue={undefined}
   disabled={undefined}
   name="example"
@@ -547,7 +567,11 @@ exports[`should render with type 2`] = `
 }
 
 .q:hover {
-  border-color: #256298
+  border-color: #2F7BBF
+}
+
+.r:focus {
+  border-color: #2F7BBF
 }
 "
 `;
