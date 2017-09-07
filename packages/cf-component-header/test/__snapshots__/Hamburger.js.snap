@@ -3,6 +3,7 @@
 exports[`should render 1`] = `
 <div
   className="a b c d e f"
+  onClick={[Function]}
 >
   <i
     className="cf-icon cf-icon--hamburger"

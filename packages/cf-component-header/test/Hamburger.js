@@ -4,7 +4,7 @@ import Hamburger from '../src/Hamburger';
 import { felaSnapshot } from 'cf-style-provider';
 
 test('should render', () => {
-  const snapshot = felaSnapshot(<Hamburger />);
+  const snapshot = felaSnapshot(<Hamburger onClick={() => {}} />);
   expect(snapshot.component).toMatchSnapshot();
   expect(snapshot.styles).toMatchSnapshot();
 });

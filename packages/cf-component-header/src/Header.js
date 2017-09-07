@@ -7,7 +7,7 @@ const Header = createComponent(
     backgroundImage: theme.gradient.dawnSunrise,
     backgroundSize: '100% 3px',
     backgroundRepeat: 'no-repeat',
-    backgroundColor: theme.color.moonshine,
+    backgroundColor: theme.colorWhite,
     borderBottom: `1px solid ${theme.color.smoke}`,
     display: 'flex',
     justifyContent: 'space-between',
