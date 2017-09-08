@@ -105,7 +105,7 @@ class Select extends React.Component {
     }
 
     return (
-      <div className={`cf-select ${className}`}>
+      <div className={`${className}`}>
         {label &&
           <Label>
             {label}
