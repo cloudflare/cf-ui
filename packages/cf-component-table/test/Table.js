@@ -17,6 +17,11 @@ test('should render striped', () => {
   expect(component.toJSON()).toMatchSnapshot();
 });
 
+test('should render responsive', () => {
+  const component = renderer.create(<Table responsive>Table</Table>);
+  expect(component.toJSON()).toMatchSnapshot();
+});
+
 test('should render hover', () => {
   const component = renderer.create(<Table hover>Table</Table>);
   expect(component.toJSON()).toMatchSnapshot();

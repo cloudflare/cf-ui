@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <table
-  className="cf-table cf-table--bordered cf-table--responsive"
+  className="cf-table cf-table--bordered"
 >
   Table
 </table>
@@ -10,7 +10,7 @@ exports[`should render 1`] = `
 
 exports[`should render condensed 1`] = `
 <table
-  className="cf-table cf-table--bordered cf-table--responsive cf-table--condensed"
+  className="cf-table cf-table--bordered cf-table--condensed"
 >
   Table
 </table>
@@ -18,7 +18,7 @@ exports[`should render condensed 1`] = `
 
 exports[`should render extra class names 1`] = `
 <table
-  className="cf-table cf-table--bordered cf-table--responsive extra"
+  className="cf-table cf-table--bordered extra"
 >
   Table
 </table>
@@ -26,7 +26,7 @@ exports[`should render extra class names 1`] = `
 
 exports[`should render hover 1`] = `
 <table
-  className="cf-table cf-table--hover cf-table--bordered cf-table--responsive"
+  className="cf-table cf-table--hover cf-table--bordered"
 >
   Table
 </table>
@@ -34,7 +34,15 @@ exports[`should render hover 1`] = `
 
 exports[`should render not bordered 1`] = `
 <table
-  className="cf-table cf-table--responsive"
+  className="cf-table"
+>
+  Table
+</table>
+`;
+
+exports[`should render responsive 1`] = `
+<table
+  className="cf-table cf-table--bordered cf-table--responsive"
 >
   Table
 </table>
@@ -42,7 +50,7 @@ exports[`should render not bordered 1`] = `
 
 exports[`should render striped 1`] = `
 <table
-  className="cf-table cf-table--striped cf-table--bordered cf-table--responsive"
+  className="cf-table cf-table--striped cf-table--bordered"
 >
   Table
 </table>
