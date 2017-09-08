@@ -8,7 +8,7 @@ const ClearRenderer = createComponent(
     fontWeight: 'normal',
     lineHeight: 1,
     ':hover': {
-      color: theme.color.red
+      color: theme.color.apple
     }
   }),
   'span'

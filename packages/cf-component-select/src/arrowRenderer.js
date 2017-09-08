@@ -3,8 +3,8 @@ import { createComponent } from 'cf-style-container';
 
 const ArrowRendererWrapper = createComponent(({ theme, isOpen }) => ({
   borderColor: isOpen
-    ? `transparent transparent ${theme.colorGray}`
-    : `${theme.colorGray} transparent transparent`,
+    ? `transparent transparent ${theme.color.cement}`
+    : `${theme.color.cement} transparent transparent`,
   borderWidth: isOpen ? `0 5px 5px` : '5px 5px 2.5px',
   borderStyle: 'solid',
   display: 'inline-block',

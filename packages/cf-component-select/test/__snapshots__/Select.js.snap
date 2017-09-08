@@ -134,7 +134,7 @@ exports[`should render 2`] = `
 }
 
 .s .Select-control {
-  color: #333
+  color: #333333
 }
 
 .t .Select-control {
@@ -368,7 +368,7 @@ exports[`should render 2`] = `
 }
 
 .ca .Select-noresults {
-  color: #7c7c7c
+  color: #7D7D7D
 }
 
 .cb .Select-noresults {
@@ -440,7 +440,7 @@ exports[`should render 2`] = `
 }
 
 .cs .Select-clear-zone {
-  color: #7c7c7c
+  color: #7D7D7D
 }
 
 .ct .Select-clear-zone {
@@ -472,7 +472,7 @@ exports[`should render 2`] = `
 }
 
 .da {
-  border-color: #7c7c7c transparent transparent
+  border-color: #7D7D7D transparent transparent
 }
 
 .db {

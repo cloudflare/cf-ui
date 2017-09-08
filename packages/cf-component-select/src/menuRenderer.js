@@ -5,14 +5,11 @@ import { createComponent } from 'cf-style-container';
 import ScrollContainer from './ScrollContainer';
 
 const MenuWrapper = createComponent(({ theme }) => {
-  const menuTheme = (theme.select && theme.select.menu) || {};
-  const maxHeight = menuTheme.maxHeight || 200;
-
   return {
-    border: menuTheme.border || `1px solid ${theme.color.hail}`,
-    borderRadius: menuTheme.borderRadius || theme.borderRadius,
-    backgroundColor: menuTheme.backgroundColor || theme.colorWhite,
-    marginTop: menuTheme.marginTop || '5px',
+    border: `1px solid ${theme.color.hail}`,
+    borderRadius: theme.borderRadius,
+    backgroundColor: theme.colorWhite,
+    marginTop: '5px',
 
     boxSizing: 'border-box',
     position: 'absolute',

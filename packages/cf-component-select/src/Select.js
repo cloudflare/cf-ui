@@ -196,10 +196,10 @@ const styles = ({ theme, disabled }) => {
     opacity: disabled ? 0.5 : 1,
 
     '& .Select-control': {
-      backgroundColor: disabled ? theme.colorGrayDark : theme.colorWhite,
+      backgroundColor: disabled ? theme.color.smoke : theme.colorWhite,
       border: `1px solid ${theme.color.hail}`,
       borderRadius: theme.borderRadius,
-      color: theme.colorGrayDark,
+      color: theme.color.charcoal,
       cursor: 'default',
       display: 'table',
       borderSpacing: 0,
@@ -251,7 +251,7 @@ const styles = ({ theme, disabled }) => {
     },
     '& .Select-noresults': {
       boxVizing: 'border-box',
-      color: theme.colorGray,
+      color: theme.color.cement,
       cursor: 'default',
       display: 'block',
       padding: '8px 10px'
@@ -275,7 +275,7 @@ const styles = ({ theme, disabled }) => {
       top: '1px'
     },
     '& .Select-clear-zone': {
-      color: theme.colorGray,
+      color: theme.color.cement,
       cursor: ' pointer',
       display: 'table-cell',
       position: 'relative',
