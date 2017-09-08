@@ -1,32 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import * as svgs from './svgs.js';
-
+import SVG_COMPONENTS from './reactsvgs';
 import { createComponent } from 'cf-style-container';
 
-const DEFAULT_HEIGHT = 15.5;
+const DEFAULT_HEIGHT = 15;
 
 const getHeight = size => {
   let height;
   switch (size) {
     case '1.5x':
-      height = 23;
+      height = 22;
       break;
     case '2x':
-      height = 30.5;
+      height = 30;
       break;
     case '2.5x':
-      height = 38;
+      height = 37;
       break;
     case '3x':
-      height = 45.5;
+      height = 45;
       break;
     case '3.5x':
-      height = 53;
+      height = 52;
       break;
     case '4x':
-      height = 60.5;
+      height = 60;
       break;
     default:
       height = DEFAULT_HEIGHT;
@@ -64,40 +63,18 @@ const getFill = (color, theme) => {
   return fill;
 };
 
-const IconWrapper = createComponent(
-  ({ height }) => ({
-    display: 'inline-block',
-    height: height ? height : DEFAULT_HEIGHT
-  }),
-  'span',
-  ['aria-label']
-);
+const iconStyles = ({ theme, size, color }) => ({
+  height: size ? getHeight(size) : DEFAULT_HEIGHT,
+  fill: color ? getFill(color, theme) : theme.colorBlack
+});
 
 class Icon extends React.Component {
   render() {
-    const { className, size, label, color } = this.props;
-    const icon = svgs[this.props.type.replace(/-/g, '')];
-    let height, fill;
+    const Svg = SVG_COMPONENTS[this.props.type];
 
-    if (!icon) throw `Invalid Icon type ${this.props.type}`;
+    const { size, label, className } = this.props;
 
-    if (size) {
-      height = getHeight(size);
-    }
-
-    const SvgIcon = createComponent(
-      ({ color, theme }) => ({
-        height: '100%',
-        fill: color ? getFill(color, theme) : theme.colorBlack
-      }),
-      icon
-    );
-
-    return (
-      <IconWrapper aria-label={label} height={height}>
-        <SvgIcon color={color} />
-      </IconWrapper>
-    );
+    return <Svg className={className} label={label ? label : ''} />;
   }
 }
 
@@ -114,7 +91,6 @@ Icon.propTypes = {
     'caret-up',
     'chart',
     'clipboard',
-    'close',
     'credit-card',
     'door',
     'download',
@@ -126,7 +102,7 @@ Icon.propTypes = {
     'firebolt',
     'flowchart',
     'gear',
-    'googleplus',
+    'google-plus',
     'hamburger',
     'happy',
     'help',
@@ -153,7 +129,7 @@ Icon.propTypes = {
     'upload',
     'wrench'
   ]).isRequired,
-  size: PropTypes.oneOf(['2x', '2.5x', '3x', '3.5x', '4x']),
+
   color: PropTypes.oneOf([
     'default',
     'primary',
@@ -162,7 +138,9 @@ Icon.propTypes = {
     'danger',
     'black',
     'white'
-  ])
+  ]),
+
+  size: PropTypes.oneOf(['2x', '2.5x', '3x', '3.5x', '4x'])
 };
 
-export default Icon;
+export default createComponent(iconStyles, Icon);

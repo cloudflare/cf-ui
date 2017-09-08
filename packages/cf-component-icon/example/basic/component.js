@@ -7,9 +7,20 @@ const ColorWrapper = createComponent(
   () => ({
     backgroundColor: '#f1f1f1',
     paddingTop: '10px',
-    paddingBottom: '10px'
+    paddingBottom: '10px',
+    paddingLeft: '15px',
+    maxWidth: 750,
+    display: 'block'
   }),
-  'div'
+  'span'
+);
+
+const TextWrapper = createComponent(
+  () => ({
+    paddingRight: '20px',
+    paddingLeft: '5px'
+  }),
+  'span'
 );
 
 const IconComponent = () => (
@@ -24,7 +35,6 @@ const IconComponent = () => (
       <Icon label="caret-up" type="caret-up" />
       <Icon label="chart" type="chart" />
       <Icon label="clipboard" type="clipboard" />
-      <Icon label="close" type="close" />
       <Icon label="drive" type="drive" />
       <Icon label="exclamation-sign" type="exclamation-sign" />
       <Icon label="facebook" type="facebook" />
@@ -32,7 +42,7 @@ const IconComponent = () => (
       <Icon label="filter" type="filter" />
       <Icon label="flowchart" type="flowchart" />
       <Icon label="gear" type="gear" />
-      <Icon label="googleplus" type="googleplus" />
+      <Icon label="google-plus" type="google-plus" />
       <Icon label="hamburger" type="hamburger" />
       <Icon label="happy" type="happy" />
       <Icon label="help" type="help" />
@@ -60,26 +70,37 @@ const IconComponent = () => (
 
     <p>Sizes:</p>
     <p>
-      <Icon label="2x" size="2x" type="gear" />2x
-      <Icon label="2.5x" size="2.5x" type="gear" />2.5x
-      <Icon label="3x" size="3x" type="gear" />3x
-      <Icon label="3.5x" size="3.5x" type="gear" />3.5x
-      <Icon label="4x" size="4x" type="gear" />4x
+      <Icon label="2x" size="2x" type="gear" />
+      <TextWrapper>2x</TextWrapper>
+      <Icon label="2.5x" size="2.5x" type="gear" />
+      <TextWrapper>2.5x</TextWrapper>
+      <Icon label="3x" size="3x" type="gear" />
+      <TextWrapper>3x</TextWrapper>
+      <Icon label="3.5x" size="3.5x" type="gear" />
+      <TextWrapper>3.5x</TextWrapper>
+      <Icon label="4x" size="4x" type="gear" />
+      <TextWrapper>4x</TextWrapper>
     </p>
 
     <p>Colors:</p>
     <p>
       <ColorWrapper>
-        <Icon label="default" size="3x" type="gear" color="default" />Default
-        <Icon label="primary" size="3x" type="gear" color="primary" />Primary
-        <Icon label="success" size="3x" type="gear" color="success" />Success
-        <Icon label="warning" size="3x" type="gear" color="warning" />Warning
-        <Icon label="danger" size="3x" type="gear" color="danger" />Danger
-        <Icon label="black" size="3x" type="gear" color="black" />Black
-        <Icon label="white" size="3x" type="gear" color="white" />White
+        <Icon label="default" size="2x" type="search" color="default" />
+        <TextWrapper>Default</TextWrapper>
+        <Icon label="primary" size="2x" type="caret-right" color="primary" />
+        <TextWrapper>Primary</TextWrapper>
+        <Icon label="success" size="2x" type="ok" color="success" />
+        <TextWrapper>Success</TextWrapper>
+        <Icon label="warning" size="2x" type="info-sign" color="warning" />
+        <TextWrapper>Warning</TextWrapper>
+        <Icon label="danger" size="2x" type="exclamation-sign" color="danger" />
+        <TextWrapper>Danger</TextWrapper>
+        <Icon label="black" size="2x" type="remove" color="black" />
+        <TextWrapper>Black</TextWrapper>
+        <Icon label="white" size="2x" type="shield" color="white" />
+        <TextWrapper>White</TextWrapper>
       </ColorWrapper>
     </p>
-
   </div>
 );
 
