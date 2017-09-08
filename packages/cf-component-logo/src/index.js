@@ -1,5 +1,5 @@
 import Logo from './Logo';
-import logoSvg from './logo.svg';
-import logoSvgMobile from './logo_mobile.svg';
+import logoSvg from '../assets/logo.svg';
+import logoSvgMobile from '../assets/logo_mobile.svg';
 
 export { Logo, logoSvg, logoSvgMobile };

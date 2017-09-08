@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { createComponent } from 'cf-style-container';
-import logoSvg from './logo.svg';
-import logoSvgMobile from './logo_mobile.svg';
+import logoSvg from '../assets/logo.svg';
+import logoSvgMobile from '../assets/logo_mobile.svg';
 
 const Logo = createComponent(({ logoUrl, logoUrlMobile }) => ({
   width: 80,
