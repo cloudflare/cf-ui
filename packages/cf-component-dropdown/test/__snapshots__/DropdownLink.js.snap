@@ -6,7 +6,7 @@ exports[`should render with onClick 1`] = `
   role="menu"
 >
   <li
-    className="ab b ac ad ae af ag ah ai aj ak al am an ao"
+    className="ab b ac ae af ag ah ai aj ak al am an ao ap"
     role="menuitem"
   >
     <a
@@ -196,51 +196,51 @@ exports[`should render with onClick 2`] = `
   border-top-width: 0px
 }
 
-.ad > a {
+.ae > a {
   display: block
 }
 
-.ae > a {
+.af > a {
   padding: 0.2rem 1.06667rem
 }
 
-.af > a {
+.ag > a {
   cursor: pointer
 }
 
-.ag > a {
+.ah > a {
   white-space: nowrap
 }
 
-.ah > a:hover {
+.ai > a:hover {
   color: #fff
 }
 
-.ai > a:hover {
+.aj > a:hover {
   background: #2F7BBF
 }
 
-.aj > a:focus {
-  color: #fff
-}
-
 .ak > a:focus {
-  background: #76C4E2
+  color: #fff
 }
 
 .al > a:focus {
-  outline: 5px auto -webkit-focus-ring-color
+  background: #76C4E2
 }
 
 .am > a:focus {
+  outline: 5px auto -webkit-focus-ring-color
+}
+
+.an > a:focus {
   outline-offset: -1px
 }
 
-.an > a:active {
+.ao > a:active {
   color: #fff
 }
 
-.ao > a:active {
+.ap > a:active {
   background: #408BC9
 }
 "
@@ -252,7 +252,7 @@ exports[`should render with to 1`] = `
   role="menu"
 >
   <li
-    className="ab b ac ad ae af ag ah ai aj ak al am an ao"
+    className="ab b ac ae af ag ah ai aj ak al am an ao ap"
     role="menuitem"
   >
     <a
@@ -441,51 +441,51 @@ exports[`should render with to 2`] = `
   border-top-width: 0px
 }
 
-.ad > a {
+.ae > a {
   display: block
 }
 
-.ae > a {
+.af > a {
   padding: 0.2rem 1.06667rem
 }
 
-.af > a {
+.ag > a {
   cursor: pointer
 }
 
-.ag > a {
+.ah > a {
   white-space: nowrap
 }
 
-.ah > a:hover {
+.ai > a:hover {
   color: #fff
 }
 
-.ai > a:hover {
+.aj > a:hover {
   background: #2F7BBF
 }
 
-.aj > a:focus {
-  color: #fff
-}
-
 .ak > a:focus {
-  background: #76C4E2
+  color: #fff
 }
 
 .al > a:focus {
-  outline: 5px auto -webkit-focus-ring-color
+  background: #76C4E2
 }
 
 .am > a:focus {
+  outline: 5px auto -webkit-focus-ring-color
+}
+
+.an > a:focus {
   outline-offset: -1px
 }
 
-.an > a:active {
+.ao > a:active {
   color: #fff
 }
 
-.ao > a:active {
+.ap > a:active {
   background: #408BC9
 }
 "

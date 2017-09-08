@@ -26,7 +26,7 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae s af ag"
+      className="m p ae af s ag ah"
       role={null}
     >
       <a
@@ -39,12 +39,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="m p ah ai aj"
+      className="m p ai aj ak"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab aj ac"
+        className="t p u v w x y z ab ak ac"
         href="#"
         onClick={[Function]}
       >
@@ -52,12 +52,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="m p ah ai aj"
+      className="m p ai aj ak"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab aj ac"
+        className="t p u v w x y z ab ak ac"
         href="#"
         onClick={[Function]}
       >
@@ -65,12 +65,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="m p ah ai aj"
+      className="m p ai aj ak"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab aj ac"
+        className="t p u v w x y z ab ak ac"
         href="#"
         onClick={[Function]}
       >
@@ -78,12 +78,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="m p ah ai aj"
+      className="m p ai aj ak"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab aj ac"
+        className="t p u v w x y z ab ak ac"
         href="#"
         onClick={[Function]}
       >
@@ -91,12 +91,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae aj n"
+      className="m p ae af ak n"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab aj ac"
+        className="t p u v w x y z ab ak ac"
         href="#"
         onClick={[Function]}
       >
@@ -227,31 +227,31 @@ exports[`should render pagination 2`] = `
   z-index: 1
 }
 
-.ad {
+.ae {
   background-color: #408BC9
 }
 
-.ae {
+.af {
   color: #fff
 }
 
-.af {
+.ag {
   border-color: #62a1d8
 }
 
-.ag {
+.ah {
   z-index: 1
 }
 
-.ah {
+.ai {
   background-color: #fff
 }
 
-.ai {
+.aj {
   color: #408BC9
 }
 
-.aj {
+.ak {
   cursor: pointer
 }
 "
@@ -283,7 +283,7 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae s af ag"
+      className="m p ae af s ag ah"
       role={null}
     >
       <a
@@ -299,12 +299,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="m p ah ai aj"
+      className="m p ai aj ak"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab aj ac"
+        className="t p u v w x y z ab ak ac"
         href="#"
         onClick={[Function]}
       >
@@ -312,12 +312,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="m p ah ai aj"
+      className="m p ai aj ak"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab aj ac"
+        className="t p u v w x y z ab ak ac"
         href="#"
         onClick={[Function]}
       >
@@ -325,12 +325,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="m p ah ai aj"
+      className="m p ai aj ak"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab aj ac"
+        className="t p u v w x y z ab ak ac"
         href="#"
         onClick={[Function]}
       >
@@ -338,12 +338,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="m p ah ai aj"
+      className="m p ai aj ak"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab aj ac"
+        className="t p u v w x y z ab ak ac"
         href="#"
         onClick={[Function]}
       >
@@ -351,12 +351,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae aj n"
+      className="m p ae af ak n"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab aj ac"
+        className="t p u v w x y z ab ak ac"
         href="#"
         onClick={[Function]}
       >
@@ -487,31 +487,31 @@ exports[`should render pagination loading 2`] = `
   z-index: 1
 }
 
-.ad {
+.ae {
   background-color: #408BC9
 }
 
-.ae {
+.af {
   color: #fff
 }
 
-.af {
+.ag {
   border-color: #62a1d8
 }
 
-.ag {
+.ah {
   z-index: 1
 }
 
-.ah {
+.ai {
   background-color: #fff
 }
 
-.ai {
+.aj {
   color: #408BC9
 }
 
-.aj {
+.ak {
   cursor: pointer
 }
 "
@@ -543,7 +543,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae s"
+      className="m p ae af s"
       role={null}
     >
       <a
@@ -556,12 +556,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="m p q r af ag ah"
+      className="m p q r ag ah ai"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab af ac"
+        className="t p u v w x y z ab ag ac"
         href="#"
         onClick={[Function]}
       >
@@ -569,7 +569,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae s"
+      className="m p ae af s"
       role={null}
     >
       <a
@@ -582,7 +582,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae s"
+      className="m p ae af s"
       role={null}
     >
       <a
@@ -595,7 +595,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae s"
+      className="m p ae af s"
       role={null}
     >
       <a
@@ -744,23 +744,23 @@ exports[`should render pagination with an infoFormatter 2`] = `
   z-index: 1
 }
 
-.ad {
+.ae {
   background-color: #fff
 }
 
-.ae {
+.af {
   color: #408BC9
 }
 
-.af {
+.ag {
   cursor: default
 }
 
-.ag {
+.ah {
   border-color: #62a1d8
 }
 
-.ah {
+.ai {
   z-index: 1
 }
 "
@@ -792,7 +792,7 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae s"
+      className="m p ae af s"
       role={null}
     >
       <a
@@ -805,7 +805,7 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae s"
+      className="m p ae af s"
       role={null}
     >
       <a
@@ -818,7 +818,7 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae s"
+      className="m p ae af s"
       role={null}
     >
       <a
@@ -831,7 +831,7 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae s"
+      className="m p ae af s"
       role={null}
     >
       <a
@@ -844,12 +844,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="m p q r af ag ah"
+      className="m p q r ag ah ai"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab af ac"
+        className="t p u v w x y z ab ag ac"
         href="#"
         onClick={[Function]}
       >
@@ -857,12 +857,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-      className="m p ai aj af n"
+      className="m p aj ak ag n"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab af ac"
+        className="t p u v w x y z ab ag ac"
         href="#"
         onClick={[Function]}
       >
@@ -993,31 +993,31 @@ exports[`should render pagination with the last page active 2`] = `
   z-index: 1
 }
 
-.ad {
+.ae {
   background-color: #fff
 }
 
-.ae {
+.af {
   color: #408BC9
 }
 
-.af {
+.ag {
   cursor: default
 }
 
-.ag {
+.ah {
   border-color: #62a1d8
 }
 
-.ah {
+.ai {
   z-index: 1
 }
 
-.ai {
+.aj {
   background-color: #ededed
 }
 
-.aj {
+.ak {
   color: #666
 }
 "
@@ -1049,7 +1049,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae s"
+      className="m p ae af s"
       role={null}
     >
       <a
@@ -1062,7 +1062,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae s"
+      className="m p ae af s"
       role="presentation"
     >
       <a
@@ -1077,7 +1077,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae s"
+      className="m p ae af s"
       role={null}
     >
       <a
@@ -1090,7 +1090,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae s"
+      className="m p ae af s"
       role={null}
     >
       <a
@@ -1103,12 +1103,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="m p q r af ag ah"
+      className="m p q r ag ah ai"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab af ac"
+        className="t p u v w x y z ab ag ac"
         href="#"
         onClick={[Function]}
       >
@@ -1116,7 +1116,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae s"
+      className="m p ae af s"
       role={null}
     >
       <a
@@ -1129,7 +1129,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae s"
+      className="m p ae af s"
       role={null}
     >
       <a
@@ -1142,7 +1142,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae s"
+      className="m p ae af s"
       role="presentation"
     >
       <a
@@ -1157,7 +1157,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-      className="m p ad ae s"
+      className="m p ae af s"
       role={null}
     >
       <a
@@ -1306,23 +1306,23 @@ exports[`should render with collapsed items 2`] = `
   z-index: 1
 }
 
-.ad {
+.ae {
   background-color: #fff
 }
 
-.ae {
+.af {
   color: #408BC9
 }
 
-.af {
+.ag {
   cursor: default
 }
 
-.ag {
+.ah {
   border-color: #62a1d8
 }
 
-.ah {
+.ai {
   z-index: 1
 }
 "

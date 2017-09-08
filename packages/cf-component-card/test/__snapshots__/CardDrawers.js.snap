@@ -42,7 +42,7 @@ exports[`should render when given all the props 1`] = `
       One Content
     </div>
     <div
-      className="ac ad"
+      className="ac ae"
       id={undefined}
       isActive={false}
       onClick={undefined}
@@ -169,7 +169,7 @@ exports[`should render when given all the props 2`] = `
   border-top: initial
 }
 
-.ad {
+.ae {
   padding: initial
 }
 "

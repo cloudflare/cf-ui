@@ -7,7 +7,7 @@ exports[`should render 1`] = `
 >
   <input
     checked={false}
-    className="h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao"
+    className="h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak al am an ao ap"
     id="radio-option-1"
     name="radio-option-1"
     onChange={[Function]}
@@ -15,7 +15,7 @@ exports[`should render 1`] = `
     value="option1"
   />
   <span
-    className="ap l aq ar as"
+    className="aq l ar as at"
   >
     Option 1
   </span>
@@ -140,69 +140,69 @@ exports[`should render 2`] = `
   outline: 5px auto -webkit-focus-ring-color
 }
 
-.ad:focus {
+.ae:focus {
   outline-offset: -1px
 }
 
-.ae::before {
+.af::before {
   content: ''
 }
 
-.af::before {
+.ag::before {
   position: absolute
 }
 
-.ag::before {
+.ah::before {
   background-color: transparent
 }
 
-.ah::before {
+.ai::before {
   color: transparent
 }
 
-.ai::before {
+.aj::before {
   -webkit-text-stroke: 0px
 }
 
-.aj::before {
+.ak::before {
   transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out
 }
 
-.ak::before {
+.al::before {
   border-radius: 50%
 }
 
-.al::before {
+.am::before {
   height: 3px
 }
 
-.am::before {
+.an::before {
   width: 3px
 }
 
-.an::before {
+.ao::before {
   top: 5px
 }
 
-.ao::before {
+.ap::before {
   left: 5px
 }
 
-.ap {
+.aq {
   display: inline
 }
 
-.aq {
+.ar {
   margin-bottom: 0.38333em
 }
 
-.ar {
+.as {
   margin-left: 1em
 }
 
-.as {
+.at {
   min-height: 1.22em
 }
 "
@@ -215,7 +215,7 @@ exports[`should render checked 1`] = `
 >
   <input
     checked={true}
-    className="h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao"
+    className="h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak al am an ao ap"
     id="radio-option-1"
     name="radio-option-1"
     onChange={[Function]}
@@ -223,7 +223,7 @@ exports[`should render checked 1`] = `
     value="option1"
   />
   <span
-    className="ap l aq ar as"
+    className="aq l ar as at"
   >
     Option 1
   </span>
@@ -348,69 +348,69 @@ exports[`should render checked 2`] = `
   outline: 5px auto -webkit-focus-ring-color
 }
 
-.ad:focus {
+.ae:focus {
   outline-offset: -1px
 }
 
-.ae::before {
+.af::before {
   content: ''
 }
 
-.af::before {
+.ag::before {
   position: absolute
 }
 
-.ag::before {
+.ah::before {
   background-color: #333
 }
 
-.ah::before {
+.ai::before {
   color: transparent
 }
 
-.ai::before {
+.aj::before {
   -webkit-text-stroke: 0px
 }
 
-.aj::before {
+.ak::before {
   transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out
 }
 
-.ak::before {
+.al::before {
   border-radius: 50%
 }
 
-.al::before {
+.am::before {
   height: 7px
 }
 
-.am::before {
+.an::before {
   width: 7px
 }
 
-.an::before {
+.ao::before {
   top: 3px
 }
 
-.ao::before {
+.ap::before {
   left: 3px
 }
 
-.ap {
+.aq {
   display: inline
 }
 
-.aq {
+.ar {
   margin-bottom: 0.38333em
 }
 
-.ar {
+.as {
   margin-left: 1em
 }
 
-.as {
+.at {
   min-height: 1.22em
 }
 "
@@ -423,7 +423,7 @@ exports[`should render without a label 1`] = `
 >
   <input
     checked={false}
-    className="h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao"
+    className="h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak al am an ao ap"
     id="radio-option-1"
     name="radio-option-1"
     onChange={[Function]}
@@ -551,53 +551,53 @@ exports[`should render without a label 2`] = `
   outline: 5px auto -webkit-focus-ring-color
 }
 
-.ad:focus {
+.ae:focus {
   outline-offset: -1px
 }
 
-.ae::before {
+.af::before {
   content: ''
 }
 
-.af::before {
+.ag::before {
   position: absolute
 }
 
-.ag::before {
+.ah::before {
   background-color: transparent
 }
 
-.ah::before {
+.ai::before {
   color: transparent
 }
 
-.ai::before {
+.aj::before {
   -webkit-text-stroke: 0px
 }
 
-.aj::before {
+.ak::before {
   transition: all 0.2s ease-out;
   -webkit-transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out
 }
 
-.ak::before {
+.al::before {
   border-radius: 50%
 }
 
-.al::before {
+.am::before {
   height: 3px
 }
 
-.am::before {
+.an::before {
   width: 3px
 }
 
-.an::before {
+.ao::before {
   top: 5px
 }
 
-.ao::before {
+.ap::before {
   left: 5px
 }
 "
