@@ -9,7 +9,7 @@ const Value = createComponent(
       return {
         backgroundColor: theme.color.moonshine,
         border: `1px solid #a0a1a4`,
-        color: '#5d5d5d',
+        color: theme.color.dusk,
         display: 'inline-block',
         fontSize: '.86667rem',
         lineHeight: 1.4,
@@ -24,11 +24,11 @@ const Value = createComponent(
           float: 'right'
         },
         '& .Select-value-icon:hover': {
-          color: '#5d5d5d'
+          color: theme.color.dusk
         },
         '& .Select-value-icon:focus': {
           backgroundColor: theme.color.smoke,
-          color: theme.colorGray
+          color: theme.color.dusk
         },
         '& .Select-value-icon:active': {
           backgroundColor: theme.color.smoke
@@ -40,7 +40,7 @@ const Value = createComponent(
           top: '2px'
         },
         '& .Select--multi a.Select-value-label': {
-          color: '#08c',
+          color: theme.color.rain,
           cursor: 'pointer',
           textDecoration: 'none'
         },

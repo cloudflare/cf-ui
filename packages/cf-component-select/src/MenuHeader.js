@@ -5,12 +5,12 @@ import { createComponent } from 'cf-style-container';
 
 const MenuHeader = createComponent(
   ({ theme }) => ({
-    color: '#454545',
+    color: theme.color.dusk,
     cursor: 'default',
     fontWeight: 'bold',
     fontSize: '.86667rem',
-    backgroundColor: '#f9f9f9',
-    borderBottom: `1px solid #eeeeef`,
+    backgroundColor: theme.color.moonshine,
+    borderBottom: `1px solid ${theme.color.dust}`,
     width: '100%',
     '> *': {
       display: 'inline-block',

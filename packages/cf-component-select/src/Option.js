@@ -14,9 +14,9 @@ const Option = createComponent(({
 
   let backgroundColor = theme.colorWhite;
   if (isFocused) {
-    backgroundColor = '#f0f0f0';
+    backgroundColor = theme.color.dust;
   } else if (isSelected) {
-    backgroundColor = '#f7f7f7';
+    backgroundColor = theme.color.moonshine;
   }
 
   return {
