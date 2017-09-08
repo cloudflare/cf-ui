@@ -37,7 +37,7 @@ Table.defaultProps = {
   striped: false,
   hover: false,
   bordered: true,
-  responsive: true,
+  responsive: false,
   condensed: false
 };
 
