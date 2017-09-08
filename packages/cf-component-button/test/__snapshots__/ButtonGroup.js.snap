@@ -13,7 +13,7 @@ exports[`should render 1 button 1`] = `
   className="a b c d"
 >
   <button
-    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b al am an ao ap aq ar as at au"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ae af ag ah ai aj ak al b am an ao ap aq ar as at au av"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -137,80 +137,80 @@ exports[`should render 1 button 2`] = `
   margin-right: 0px
 }
 
-.ad {
+.ae {
   margin-top: 0px
 }
 
-.ae {
+.af {
   margin-left: 0px
 }
 
-.af {
+.ag {
   opacity: inherit
 }
 
-.ag {
+.ah {
   padding-bottom: 0.53em
 }
 
-.ah {
+.ai {
   padding-left: 1em
 }
 
-.ai {
+.aj {
   padding-right: 1em
 }
 
-.aj {
+.ak {
   padding-top: 0.6em
 }
 
-.ak {
+.al {
   pointer-events: auto
 }
 
-.al {
+.am {
   border-top-right-radius: 2px
 }
 
-.am {
+.an {
   border-top-left-radius: 0px
 }
 
-.an {
+.ao {
   border-bottom-left-radius: 0px
 }
 
-.ao {
+.ap {
   border-bottom-right-radius: 2px
 }
 
-.ap {
+.aq {
   text-align: center
 }
 
-.aq {
+.ar {
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease
 }
 
-.ar {
+.as {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none
 }
 
-.as {
+.at {
   float: none
 }
 
-.at {
+.au {
   max-width: initial
 }
 
-.au {
+.av {
   width: auto
 }
 "
@@ -241,7 +241,7 @@ exports[`should render 2 buttons 1`] = `
   className="a b c d"
 >
   <button
-    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b al am an ao ap aq ar as at au"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ae af ag ah ai aj ak al b am an ao ap aq ar as at au av"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -249,7 +249,7 @@ exports[`should render 2 buttons 1`] = `
     Button
   </button>
   <button
-    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b av aw ax ay ap aq ar as at au"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ae af ag ah ai aj ak al b aw ax ay az aq ar as at au av"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -373,96 +373,96 @@ exports[`should render 2 buttons 2`] = `
   margin-right: 0px
 }
 
-.ad {
+.ae {
   margin-top: 0px
 }
 
-.ae {
+.af {
   margin-left: 0px
 }
 
-.af {
+.ag {
   opacity: inherit
 }
 
-.ag {
+.ah {
   padding-bottom: 0.53em
 }
 
-.ah {
+.ai {
   padding-left: 1em
 }
 
-.ai {
+.aj {
   padding-right: 1em
 }
 
-.aj {
+.ak {
   padding-top: 0.6em
 }
 
-.ak {
+.al {
   pointer-events: auto
 }
 
-.al {
+.am {
   border-top-right-radius: 0px
 }
 
-.am {
+.an {
   border-top-left-radius: 2px
 }
 
-.an {
+.ao {
   border-bottom-left-radius: 2px
 }
 
-.ao {
+.ap {
   border-bottom-right-radius: 0px
 }
 
-.ap {
+.aq {
   text-align: center
 }
 
-.aq {
+.ar {
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease
 }
 
-.ar {
+.as {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none
 }
 
-.as {
+.at {
   float: none
 }
 
-.at {
+.au {
   max-width: initial
 }
 
-.au {
+.av {
   width: auto
 }
 
-.av {
+.aw {
   border-top-right-radius: 2px
 }
 
-.aw {
+.ax {
   border-top-left-radius: 0px
 }
 
-.ax {
+.ay {
   border-bottom-left-radius: 0px
 }
 
-.ay {
+.az {
   border-bottom-right-radius: 2px
 }
 "
@@ -473,7 +473,7 @@ exports[`should render 3 buttons 1`] = `
   className="a b c d"
 >
   <button
-    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b al am an ao ap aq ar as at au"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ae af ag ah ai aj ak al b am an ao ap aq ar as at au av"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -481,7 +481,7 @@ exports[`should render 3 buttons 1`] = `
     Button
   </button>
   <button
-    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b al av aw ao ap aq ar as at au"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ae af ag ah ai aj ak al b am aw ax ap aq ar as at au av"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -489,7 +489,7 @@ exports[`should render 3 buttons 1`] = `
     Button
   </button>
   <button
-    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b ax av aw ay ap aq ar as at au"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ae af ag ah ai aj ak al b ay aw ax az aq ar as at au av"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -613,96 +613,96 @@ exports[`should render 3 buttons 2`] = `
   margin-right: 0px
 }
 
-.ad {
+.ae {
   margin-top: 0px
 }
 
-.ae {
+.af {
   margin-left: 0px
 }
 
-.af {
+.ag {
   opacity: inherit
 }
 
-.ag {
+.ah {
   padding-bottom: 0.53em
 }
 
-.ah {
+.ai {
   padding-left: 1em
 }
 
-.ai {
+.aj {
   padding-right: 1em
 }
 
-.aj {
+.ak {
   padding-top: 0.6em
 }
 
-.ak {
+.al {
   pointer-events: auto
 }
 
-.al {
+.am {
   border-top-right-radius: 0px
 }
 
-.am {
+.an {
   border-top-left-radius: 2px
 }
 
-.an {
+.ao {
   border-bottom-left-radius: 2px
 }
 
-.ao {
+.ap {
   border-bottom-right-radius: 0px
 }
 
-.ap {
+.aq {
   text-align: center
 }
 
-.aq {
+.ar {
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease
 }
 
-.ar {
+.as {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none
 }
 
-.as {
+.at {
   float: none
 }
 
-.at {
+.au {
   max-width: initial
 }
 
-.au {
+.av {
   width: auto
 }
 
-.av {
+.aw {
   border-top-left-radius: 0px
 }
 
-.aw {
+.ax {
   border-bottom-left-radius: 0px
 }
 
-.ax {
+.ay {
   border-top-right-radius: 2px
 }
 
-.ay {
+.az {
   border-bottom-right-radius: 2px
 }
 "
@@ -713,7 +713,7 @@ exports[`should render 3 buttons with spacing 1`] = `
   className="a b c d"
 >
   <button
-    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad ae af ag ah ai aj ak b al am an ao ap aq ar"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ae af ag ah ai aj ak al b am an ao ap aq ar as"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -721,7 +721,7 @@ exports[`should render 3 buttons with spacing 1`] = `
     Button
   </button>
   <button
-    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad as af ag ah ai aj ak b al am an ao ap aq ar"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ae at ag ah ai aj ak al b am an ao ap aq ar as"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -729,7 +729,7 @@ exports[`should render 3 buttons with spacing 1`] = `
     Button
   </button>
   <button
-    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ad as af ag ah ai aj ak b al am an ao ap aq ar"
+    className="e f g h i j k l m n o p q r s t u v a w x y z ab ac ae at ag ah ai aj ak al b am an ao ap aq ar as"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -853,72 +853,72 @@ exports[`should render 3 buttons with spacing 2`] = `
   margin-right: 0px
 }
 
-.ad {
+.ae {
   margin-top: 0px
 }
 
-.ae {
+.af {
   margin-left: 0px
 }
 
-.af {
+.ag {
   opacity: inherit
 }
 
-.ag {
+.ah {
   padding-bottom: 0.53em
 }
 
-.ah {
+.ai {
   padding-left: 1em
 }
 
-.ai {
+.aj {
   padding-right: 1em
 }
 
-.aj {
+.ak {
   padding-top: 0.6em
 }
 
-.ak {
+.al {
   pointer-events: auto
 }
 
-.al {
+.am {
   border-radius: 2px
 }
 
-.am {
+.an {
   text-align: center
 }
 
-.an {
+.ao {
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease
 }
 
-.ao {
+.ap {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none
 }
 
-.ap {
+.aq {
   float: none
 }
 
-.aq {
+.ar {
   max-width: initial
 }
 
-.ar {
+.as {
   width: auto
 }
 
-.as {
+.at {
   margin-left: 0.4rem
 }
 "

@@ -14,7 +14,7 @@ exports[`should render 1`] = `
   >
     <li
       active={true}
-      className="r s t q u v w x y z ab ac ad ae af ag ah"
+      className="r s t q u v w x y z ab ac ae af ag ah ai"
       disabled={false}
       width="33.3333%"
     >
@@ -29,7 +29,7 @@ exports[`should render 1`] = `
     </li>
     <li
       active={false}
-      className="r s t q u ai w x y aj ab ac ad ae af ag ah"
+      className="r s t q u aj w x y ak ab ac ae af ag ah ai"
       disabled={false}
       width="33.3333%"
     >
@@ -44,7 +44,7 @@ exports[`should render 1`] = `
     </li>
     <li
       active={false}
-      className="r s t q u ak w x al aj ab ac ad ae af ag ah"
+      className="r s t q u al w x am ak ab ac ae af ag ah ai"
       disabled={true}
       width="33.3333%"
     >
@@ -180,40 +180,40 @@ exports[`should render 2`] = `
   display: block
 }
 
-.ad > .cf-link {
+.ae > .cf-link {
   color: inherit
 }
 
-.ae > .cf-link {
+.af > .cf-link {
   cursor: pointer
 }
 
-.ai {
+.aj {
   color: #7c7c7c
 }
 
-.aj {
+.ak {
   display: none
 }
 
-.ak {
+.al {
   color: #dedede
 }
 
-.al {
+.am {
   cursor: default
 }
 
 @media (min-width: 47.2em) {
-  .af {
+  .ag {
     width: 33.3333%
   }
   
-  .ag {
+  .ah {
     float: left
   }
   
-  .ah {
+  .ai {
     display: list-item
   }
 }

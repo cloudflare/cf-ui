@@ -2,7 +2,7 @@
 
 exports[`should render invalid state 1`] = `
 <div
-  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah"
 />
 `;
 
@@ -120,19 +120,19 @@ exports[`should render invalid state 2`] = `
   border-width: 4px
 }
 
-.ad::after {
+.ae::after {
   border-bottom-color: #bd2527
 }
 
-.ae p {
+.af p {
   margin-top: 0px
 }
 
-.af p {
+.ag p {
   margin-bottom: 0px
 }
 
-.ag p + p {
+.ah p + p {
   margin-top: 0.5em
 }
 "
@@ -140,7 +140,7 @@ exports[`should render invalid state 2`] = `
 
 exports[`should render invalid state with validation errors 1`] = `
 <div
-  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah"
 >
   <p>
     This is required
@@ -262,19 +262,19 @@ exports[`should render invalid state with validation errors 2`] = `
   border-width: 4px
 }
 
-.ad::after {
+.ae::after {
   border-bottom-color: #bd2527
 }
 
-.ae p {
+.af p {
   margin-top: 0px
 }
 
-.af p {
+.ag p {
   margin-bottom: 0px
 }
 
-.ag p + p {
+.ah p + p {
   margin-top: 0.5em
 }
 "

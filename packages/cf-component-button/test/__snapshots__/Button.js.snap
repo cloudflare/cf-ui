@@ -2,7 +2,7 @@
 
 exports[`should render as submit 1`] = `
 <button
-  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao ap"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak al am an ao ap aq"
   disabled={false}
   onClick={[Function]}
   type="submit"
@@ -125,60 +125,60 @@ exports[`should render as submit 2`] = `
   opacity: inherit
 }
 
-.ad {
+.ae {
   padding-bottom: 0.53em
 }
 
-.ae {
+.af {
   padding-left: 1em
 }
 
-.af {
+.ag {
   padding-right: 1em
 }
 
-.ag {
+.ah {
   padding-top: 0.6em
 }
 
-.ah {
+.ai {
   pointer-events: auto
 }
 
-.ai {
+.aj {
   position: relative
 }
 
-.aj {
+.ak {
   border-radius: 2px
 }
 
-.ak {
+.al {
   text-align: center
 }
 
-.al {
+.am {
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease
 }
 
-.am {
+.an {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none
 }
 
-.an {
+.ao {
   float: none
 }
 
-.ao {
+.ap {
   max-width: initial
 }
 
-.ap {
+.aq {
   width: auto
 }
 "
@@ -186,7 +186,7 @@ exports[`should render as submit 2`] = `
 
 exports[`should render with loading 1`] = `
 <button
-  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao ap aq ar as at au av aw ax ay az ba bb bc"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak al am an ao ap aq ar as at au av aw ax ay az ba bb bc bd"
   disabled={true}
   onClick={[Function]}
   type="button"
@@ -330,112 +330,112 @@ exports[`should render with loading 2`] = `
   border-top: 0px
 }
 
-.ad {
+.ae {
   border-color: #dbdbdb
 }
 
-.ae {
+.af {
   color: #ededed
 }
 
-.af {
+.ag {
   cursor: default
 }
 
-.ag {
+.ah {
   display: inline-block
 }
 
-.ah {
+.ai {
   font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
 }
 
-.ai {
+.aj {
   font-size: 0.9333333333333333rem
 }
 
-.aj {
+.ak {
   font-weight: 400
 }
 
-.ak {
+.al {
   line-height: 1.2
 }
 
-.al {
+.am {
   margin-bottom: 0px
 }
 
-.am {
+.an {
   margin-right: 0px
 }
 
-.an {
+.ao {
   margin-top: 0px
 }
 
-.ao {
+.ap {
   margin-left: 0px
 }
 
-.ap {
+.aq {
   opacity: 0.8
 }
 
-.aq {
+.ar {
   padding-bottom: 0.53em
 }
 
-.ar {
+.as {
   padding-left: 1em
 }
 
-.as {
+.at {
   padding-right: 1em
 }
 
-.at {
+.au {
   padding-top: 0.6em
 }
 
-.au {
+.av {
   pointer-events: auto
 }
 
-.av {
+.aw {
   position: relative
 }
 
-.aw {
+.ax {
   border-radius: 2px
 }
 
-.ax {
+.ay {
   text-align: center
 }
 
-.ay {
+.az {
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease
 }
 
-.az {
+.ba {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none
 }
 
-.ba {
+.bb {
   float: none
 }
 
-.bb {
+.bc {
   max-width: initial
 }
 
-.bc {
+.bd {
   width: auto
 }
 "
@@ -443,7 +443,7 @@ exports[`should render with loading 2`] = `
 
 exports[`should render with loading and disabled overridden 1`] = `
 <button
-  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao ap aq ar as at au av aw ax ay az ba bb bc"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak al am an ao ap aq ar as at au av aw ax ay az ba bb bc bd"
   disabled={true}
   onClick={[Function]}
   type="button"
@@ -587,112 +587,112 @@ exports[`should render with loading and disabled overridden 2`] = `
   border-top: 0px
 }
 
-.ad {
+.ae {
   border-color: #dbdbdb
 }
 
-.ae {
+.af {
   color: #ededed
 }
 
-.af {
+.ag {
   cursor: default
 }
 
-.ag {
+.ah {
   display: inline-block
 }
 
-.ah {
+.ai {
   font-family: \\"Open Sans\\", Helvetica, Arial, sans-serif
 }
 
-.ai {
+.aj {
   font-size: 0.9333333333333333rem
 }
 
-.aj {
+.ak {
   font-weight: 400
 }
 
-.ak {
+.al {
   line-height: 1.2
 }
 
-.al {
+.am {
   margin-bottom: 0px
 }
 
-.am {
+.an {
   margin-right: 0px
 }
 
-.an {
+.ao {
   margin-top: 0px
 }
 
-.ao {
+.ap {
   margin-left: 0px
 }
 
-.ap {
+.aq {
   opacity: 0.8
 }
 
-.aq {
+.ar {
   padding-bottom: 0.53em
 }
 
-.ar {
+.as {
   padding-left: 1em
 }
 
-.as {
+.at {
   padding-right: 1em
 }
 
-.at {
+.au {
   padding-top: 0.6em
 }
 
-.au {
+.av {
   pointer-events: auto
 }
 
-.av {
+.aw {
   position: relative
 }
 
-.aw {
+.ax {
   border-radius: 2px
 }
 
-.ax {
+.ay {
   text-align: center
 }
 
-.ay {
+.az {
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease
 }
 
-.az {
+.ba {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none
 }
 
-.ba {
+.bb {
   float: none
 }
 
-.bb {
+.bc {
   max-width: initial
 }
 
-.bc {
+.bd {
   width: auto
 }
 "
@@ -700,7 +700,7 @@ exports[`should render with loading and disabled overridden 2`] = `
 
 exports[`should render with type 1`] = `
 <button
-  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao ap"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak al am an ao ap aq"
   disabled={false}
   onClick={[Function]}
   type="button"
@@ -823,60 +823,60 @@ exports[`should render with type 2`] = `
   opacity: inherit
 }
 
-.ad {
+.ae {
   padding-bottom: 0.53em
 }
 
-.ae {
+.af {
   padding-left: 1em
 }
 
-.af {
+.ag {
   padding-right: 1em
 }
 
-.ag {
+.ah {
   padding-top: 0.6em
 }
 
-.ah {
+.ai {
   pointer-events: auto
 }
 
-.ai {
+.aj {
   position: relative
 }
 
-.aj {
+.ak {
   border-radius: 2px
 }
 
-.ak {
+.al {
   text-align: center
 }
 
-.al {
+.am {
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease
 }
 
-.am {
+.an {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none
 }
 
-.an {
+.ao {
   float: none
 }
 
-.ao {
+.ap {
   max-width: initial
 }
 
-.ap {
+.aq {
   width: auto
 }
 "
@@ -884,7 +884,7 @@ exports[`should render with type 2`] = `
 
 exports[`should render with type/disabled 1`] = `
 <button
-  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj ak al am an ao ap"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak al am an ao ap aq"
   disabled={true}
   onClick={[Function]}
   type="button"
@@ -1007,60 +1007,60 @@ exports[`should render with type/disabled 2`] = `
   opacity: 0.5
 }
 
-.ad {
+.ae {
   padding-bottom: 0.53em
 }
 
-.ae {
+.af {
   padding-left: 1em
 }
 
-.af {
+.ag {
   padding-right: 1em
 }
 
-.ag {
+.ah {
   padding-top: 0.6em
 }
 
-.ah {
+.ai {
   pointer-events: none
 }
 
-.ai {
+.aj {
   position: relative
 }
 
-.aj {
+.ak {
   border-radius: 2px
 }
 
-.ak {
+.al {
   text-align: center
 }
 
-.al {
+.am {
   transition: all 200ms ease;
   -webkit-transition: all 200ms ease;
   -moz-transition: all 200ms ease
 }
 
-.am {
+.an {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none
 }
 
-.an {
+.ao {
   float: none
 }
 
-.ao {
+.ap {
   max-width: initial
 }
 
-.ap {
+.aq {
   width: auto
 }
 "

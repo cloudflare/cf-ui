@@ -2,13 +2,13 @@
 
 exports[`should render 1`] = `
 <label
-  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak"
   htmlFor="test"
 >
   <input
     checkbox={undefined}
     checked={undefined}
-    className="ak al c am an ao ap"
+    className="al am c an ao ap aq"
     disabled={undefined}
     id="test"
     name="test"
@@ -18,13 +18,13 @@ exports[`should render 1`] = `
     type="checkbox"
   />
   <span
-    className="ak al c am an ao ap"
+    className="al am c an ao ap aq"
   >
     Test Toggle
   </span>
   <span
     active={undefined}
-    className="a ak aq ar as at au av aw ax ay az ba bb bc n bd o be bf bg bh bi bj bk bl bm bn y bo z bp bq br bs bt"
+    className="a al ar as at au av aw ax ay az ba bb bc bd n be o bf bg bh bi bj bk bl bm bn bo y bp z bq br bs bt bu"
   />
 </label>
 `;
@@ -143,177 +143,177 @@ exports[`should render 2`] = `
   top: 0px
 }
 
-.ad::after {
-  bottom: 0px
-}
-
 .ae::after {
-  right: 0px
+  bottom: 0px
 }
 
 .af::after {
-  text-align: center
+  right: 0px
 }
 
 .ag::after {
-  width: 50%
+  text-align: center
 }
 
 .ah::after {
-  line-height: 2.26667rem
-}
-
-.ai::after {
-  background: #7c7c7c
-}
-
-.aj::after {
-  color: #fff
-}
-
-.ak {
-  position: absolute
-}
-
-.al {
-  overflow: hidden
-}
-
-.am {
-  padding: 0px
-}
-
-.an {
-  border: 0px
-}
-
-.ao {
-  outline: 0px
-}
-
-.ap {
-  opacity: 0
-}
-
-.aq {
-  z-index: 1
-}
-
-.ar {
-  top: 0px
-}
-
-.as {
-  bottom: 0px
-}
-
-.at {
-  left: 0px
-}
-
-.au {
   width: 50%
 }
 
+.ai::after {
+  line-height: 2.26667rem
+}
+
+.aj::after {
+  background: #7c7c7c
+}
+
+.ak::after {
+  color: #fff
+}
+
+.al {
+  position: absolute
+}
+
+.am {
+  overflow: hidden
+}
+
+.an {
+  padding: 0px
+}
+
+.ao {
+  border: 0px
+}
+
+.ap {
+  outline: 0px
+}
+
+.aq {
+  opacity: 0
+}
+
+.ar {
+  z-index: 1
+}
+
+.as {
+  top: 0px
+}
+
+.at {
+  bottom: 0px
+}
+
+.au {
+  left: 0px
+}
+
 .av {
-  border: inherit
+  width: 50%
 }
 
 .aw {
-  border-width: 0px
+  border: inherit
 }
 
 .ax {
-  border-right-width: inherit
+  border-width: 0px
 }
 
 .ay {
-  border-left-width: 0px
+  border-right-width: inherit
 }
 
 .az {
-  background: #fff
+  border-left-width: 0px
 }
 
 .ba {
+  background: #fff
+}
+
+.bb {
   transition: left 100ms ease;
   -webkit-transition: left 100ms ease;
   -moz-transition: left 100ms ease
 }
 
-.bb::before {
-  border: 4px solid transparent
-}
-
 .bc::before {
-  content: ''
+  border: 4px solid transparent
 }
 
 .bd::before {
-  height: 0px
-}
-
-.be::before {
-  top: 50%
-}
-
-.bf::before {
-  left: 50%
-}
-
-.bg::before {
-  margin-top: -3px
-}
-
-.bh::before {
-  width: 0px
-}
-
-.bi::before {
-  border-left-color: transparent
-}
-
-.bj::before {
-  border-right-color: inherit
-}
-
-.bk::before {
-  margin-left: -10px
-}
-
-.bl::after {
-  border: 4px solid transparent
-}
-
-.bm::after {
-  border-left-color: inherit
-}
-
-.bn::after {
   content: ''
 }
 
-.bo::after {
+.be::before {
   height: 0px
 }
 
-.bp::after {
+.bf::before {
   top: 50%
 }
 
-.bq::after {
+.bg::before {
   left: 50%
 }
 
-.br::after {
-  margin-left: 2px
-}
-
-.bs::after {
+.bh::before {
   margin-top: -3px
 }
 
+.bi::before {
+  width: 0px
+}
+
+.bj::before {
+  border-left-color: transparent
+}
+
+.bk::before {
+  border-right-color: inherit
+}
+
+.bl::before {
+  margin-left: -10px
+}
+
+.bm::after {
+  border: 4px solid transparent
+}
+
+.bn::after {
+  border-left-color: inherit
+}
+
+.bo::after {
+  content: ''
+}
+
+.bp::after {
+  height: 0px
+}
+
+.bq::after {
+  top: 50%
+}
+
+.br::after {
+  left: 50%
+}
+
+.bs::after {
+  margin-left: 2px
+}
+
 .bt::after {
+  margin-top: -3px
+}
+
+.bu::after {
   width: 0px
 }
 "
@@ -321,13 +321,13 @@ exports[`should render 2`] = `
 
 exports[`should render checked 1`] = `
 <label
-  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak"
   htmlFor="test"
 >
   <input
     checkbox={undefined}
     checked={true}
-    className="ak al c am an ao ap"
+    className="al am c an ao ap aq"
     disabled={undefined}
     id="test"
     name="test"
@@ -337,13 +337,13 @@ exports[`should render checked 1`] = `
     type="checkbox"
   />
   <span
-    className="ak al c am an ao ap"
+    className="al am c an ao ap aq"
   >
     Test Toggle
   </span>
   <span
     active={true}
-    className="a ak aq ar as at au av aw ax ay az ba bb bc n bd o be bf bg bh bi bj bk bl bm bn y bo z bp bq br bs bt"
+    className="a al ar as at au av aw ax ay az ba bb bc bd n be o bf bg bh bi bj bk bl bm bn bo y bp z bq br bs bt bu"
   />
 </label>
 `;
@@ -462,177 +462,177 @@ exports[`should render checked 2`] = `
   top: 0px
 }
 
-.ad::after {
-  bottom: 0px
-}
-
 .ae::after {
-  right: 0px
+  bottom: 0px
 }
 
 .af::after {
-  text-align: center
+  right: 0px
 }
 
 .ag::after {
-  width: 50%
+  text-align: center
 }
 
 .ah::after {
-  line-height: 2.26667rem
-}
-
-.ai::after {
-  background: #7c7c7c
-}
-
-.aj::after {
-  color: #fff
-}
-
-.ak {
-  position: absolute
-}
-
-.al {
-  overflow: hidden
-}
-
-.am {
-  padding: 0px
-}
-
-.an {
-  border: 0px
-}
-
-.ao {
-  outline: 0px
-}
-
-.ap {
-  opacity: 0
-}
-
-.aq {
-  z-index: 1
-}
-
-.ar {
-  top: 0px
-}
-
-.as {
-  bottom: 0px
-}
-
-.at {
-  left: 50%
-}
-
-.au {
   width: 50%
 }
 
+.ai::after {
+  line-height: 2.26667rem
+}
+
+.aj::after {
+  background: #7c7c7c
+}
+
+.ak::after {
+  color: #fff
+}
+
+.al {
+  position: absolute
+}
+
+.am {
+  overflow: hidden
+}
+
+.an {
+  padding: 0px
+}
+
+.ao {
+  border: 0px
+}
+
+.ap {
+  outline: 0px
+}
+
+.aq {
+  opacity: 0
+}
+
+.ar {
+  z-index: 1
+}
+
+.as {
+  top: 0px
+}
+
+.at {
+  bottom: 0px
+}
+
+.au {
+  left: 50%
+}
+
 .av {
-  border: inherit
+  width: 50%
 }
 
 .aw {
-  border-width: 0px
+  border: inherit
 }
 
 .ax {
-  border-right-width: 0px
+  border-width: 0px
 }
 
 .ay {
-  border-left-width: inherit
+  border-right-width: 0px
 }
 
 .az {
-  background: #fff
+  border-left-width: inherit
 }
 
 .ba {
+  background: #fff
+}
+
+.bb {
   transition: left 100ms ease;
   -webkit-transition: left 100ms ease;
   -moz-transition: left 100ms ease
 }
 
-.bb::before {
-  border: 4px solid transparent
-}
-
 .bc::before {
-  content: ''
+  border: 4px solid transparent
 }
 
 .bd::before {
-  height: 0px
-}
-
-.be::before {
-  top: 50%
-}
-
-.bf::before {
-  left: 50%
-}
-
-.bg::before {
-  margin-top: -3px
-}
-
-.bh::before {
-  width: 0px
-}
-
-.bi::before {
-  border-left-color: transparent
-}
-
-.bj::before {
-  border-right-color: inherit
-}
-
-.bk::before {
-  margin-left: -10px
-}
-
-.bl::after {
-  border: 4px solid transparent
-}
-
-.bm::after {
-  border-left-color: inherit
-}
-
-.bn::after {
   content: ''
 }
 
-.bo::after {
+.be::before {
   height: 0px
 }
 
-.bp::after {
+.bf::before {
   top: 50%
 }
 
-.bq::after {
+.bg::before {
   left: 50%
 }
 
-.br::after {
-  margin-left: 2px
-}
-
-.bs::after {
+.bh::before {
   margin-top: -3px
 }
 
+.bi::before {
+  width: 0px
+}
+
+.bj::before {
+  border-left-color: transparent
+}
+
+.bk::before {
+  border-right-color: inherit
+}
+
+.bl::before {
+  margin-left: -10px
+}
+
+.bm::after {
+  border: 4px solid transparent
+}
+
+.bn::after {
+  border-left-color: inherit
+}
+
+.bo::after {
+  content: ''
+}
+
+.bp::after {
+  height: 0px
+}
+
+.bq::after {
+  top: 50%
+}
+
+.br::after {
+  left: 50%
+}
+
+.bs::after {
+  margin-left: 2px
+}
+
 .bt::after {
+  margin-top: -3px
+}
+
+.bu::after {
   width: 0px
 }
 "
@@ -640,13 +640,13 @@ exports[`should render checked 2`] = `
 
 exports[`should render disabled 1`] = `
 <label
-  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ad ae af ag ah ai aj"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak"
   htmlFor="test"
 >
   <input
     checkbox={undefined}
     checked={true}
-    className="ak al c am an ao ap"
+    className="al am c an ao ap aq"
     disabled={true}
     id="test"
     name="test"
@@ -656,13 +656,13 @@ exports[`should render disabled 1`] = `
     type="checkbox"
   />
   <span
-    className="ak al c am an ao ap"
+    className="al am c an ao ap aq"
   >
     Test Toggle
   </span>
   <span
     active={true}
-    className="a ak aq ar as at au av aw ax ay az ba bb bc n bd o be bf bg bh bi bj bk bl bm bn y bo z bp bq br bs bt"
+    className="a al ar as at au av aw ax ay az ba bb bc bd n be o bf bg bh bi bj bk bl bm bn bo y bp z bq br bs bt bu"
   />
 </label>
 `;
@@ -781,177 +781,177 @@ exports[`should render disabled 2`] = `
   top: 0px
 }
 
-.ad::after {
-  bottom: 0px
-}
-
 .ae::after {
-  right: 0px
+  bottom: 0px
 }
 
 .af::after {
-  text-align: center
+  right: 0px
 }
 
 .ag::after {
-  width: 50%
+  text-align: center
 }
 
 .ah::after {
-  line-height: 2.26667rem
-}
-
-.ai::after {
-  background: #7c7c7c
-}
-
-.aj::after {
-  color: #dedede
-}
-
-.ak {
-  position: absolute
-}
-
-.al {
-  overflow: hidden
-}
-
-.am {
-  padding: 0px
-}
-
-.an {
-  border: 0px
-}
-
-.ao {
-  outline: 0px
-}
-
-.ap {
-  opacity: 0
-}
-
-.aq {
-  z-index: 1
-}
-
-.ar {
-  top: 0px
-}
-
-.as {
-  bottom: 0px
-}
-
-.at {
-  left: 50%
-}
-
-.au {
   width: 50%
 }
 
+.ai::after {
+  line-height: 2.26667rem
+}
+
+.aj::after {
+  background: #7c7c7c
+}
+
+.ak::after {
+  color: #dedede
+}
+
+.al {
+  position: absolute
+}
+
+.am {
+  overflow: hidden
+}
+
+.an {
+  padding: 0px
+}
+
+.ao {
+  border: 0px
+}
+
+.ap {
+  outline: 0px
+}
+
+.aq {
+  opacity: 0
+}
+
+.ar {
+  z-index: 1
+}
+
+.as {
+  top: 0px
+}
+
+.at {
+  bottom: 0px
+}
+
+.au {
+  left: 50%
+}
+
 .av {
-  border: inherit
+  width: 50%
 }
 
 .aw {
-  border-width: 0px
+  border: inherit
 }
 
 .ax {
-  border-right-width: 0px
+  border-width: 0px
 }
 
 .ay {
-  border-left-width: inherit
+  border-right-width: 0px
 }
 
 .az {
-  background: #fff
+  border-left-width: inherit
 }
 
 .ba {
+  background: #fff
+}
+
+.bb {
   transition: left 100ms ease;
   -webkit-transition: left 100ms ease;
   -moz-transition: left 100ms ease
 }
 
-.bb::before {
-  border: 4px solid transparent
-}
-
 .bc::before {
-  content: ''
+  border: 4px solid transparent
 }
 
 .bd::before {
-  height: 0px
-}
-
-.be::before {
-  top: 50%
-}
-
-.bf::before {
-  left: 50%
-}
-
-.bg::before {
-  margin-top: -3px
-}
-
-.bh::before {
-  width: 0px
-}
-
-.bi::before {
-  border-left-color: transparent
-}
-
-.bj::before {
-  border-right-color: inherit
-}
-
-.bk::before {
-  margin-left: -10px
-}
-
-.bl::after {
-  border: 4px solid transparent
-}
-
-.bm::after {
-  border-left-color: inherit
-}
-
-.bn::after {
   content: ''
 }
 
-.bo::after {
+.be::before {
   height: 0px
 }
 
-.bp::after {
+.bf::before {
   top: 50%
 }
 
-.bq::after {
+.bg::before {
   left: 50%
 }
 
-.br::after {
-  margin-left: 2px
-}
-
-.bs::after {
+.bh::before {
   margin-top: -3px
 }
 
+.bi::before {
+  width: 0px
+}
+
+.bj::before {
+  border-left-color: transparent
+}
+
+.bk::before {
+  border-right-color: inherit
+}
+
+.bl::before {
+  margin-left: -10px
+}
+
+.bm::after {
+  border: 4px solid transparent
+}
+
+.bn::after {
+  border-left-color: inherit
+}
+
+.bo::after {
+  content: ''
+}
+
+.bp::after {
+  height: 0px
+}
+
+.bq::after {
+  top: 50%
+}
+
+.br::after {
+  left: 50%
+}
+
+.bs::after {
+  margin-left: 2px
+}
+
 .bt::after {
+  margin-top: -3px
+}
+
+.bu::after {
   width: 0px
 }
 "
