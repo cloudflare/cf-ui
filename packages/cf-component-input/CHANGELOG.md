@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.6.0"></a>
+# [5.6.0](https://github.com/cloudflare/cf-ui/compare/cf-component-input@5.5.0...cf-component-input@5.6.0) (2017-09-08)
+
+
+### Features
+
+* **cf-component-header:** Small improvements ([32d614b](https://github.com/cloudflare/cf-ui/commit/32d614b))
+* **cf-component-input:** Pass ref ([f15361e](https://github.com/cloudflare/cf-ui/commit/f15361e))
+
+
+
+
 <a name="5.5.0"></a>
 # [5.5.0](https://github.com/cloudflare/cf-ui/compare/cf-component-input@5.4.0...cf-component-input@5.5.0) (2017-08-17)
 
