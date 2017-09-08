@@ -41,9 +41,9 @@ class ScrollContainer extends React.Component {
   }
 }
 
-const ScrollContainerWrapper = createComponent(() => {
+const ScrollContainerWrapper = createComponent((theme) => {
   return {
-    maxHeight: '198px',
+    maxHeight: theme.maxMenuHeight || '198px',
     overflowY: 'auto'
   };
 }, ScrollContainer);
