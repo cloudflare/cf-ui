@@ -5,3 +5,4 @@ coverage
 test
 example
 karma.conf.js
+svgtoreact.sh
