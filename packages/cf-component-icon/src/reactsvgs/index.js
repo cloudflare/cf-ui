@@ -25,7 +25,6 @@ import Help from './Help';
 import InfoSign from './InfoSign';
 import Linkedin from './Linkedin';
 import List from './List';
-import Loading from './Loading';
 import Lock from './Lock';
 import Mail from './Mail';
 import Network from './Network';
@@ -72,7 +71,6 @@ export default {
 'info-sign':InfoSign ,
 'linkedin':Linkedin ,
 'list':List ,
-'loading':Loading ,
 'lock':Lock ,
 'mail':Mail ,
 'network':Network ,
