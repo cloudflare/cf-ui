@@ -12,3 +12,82 @@ exports[`should render 1`] = `
   </span>
 </i>
 `;
+
+exports[`should render 2`] = `
+"
+@-webkit-keyframes k1 {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg)
+  }
+}
+
+@-moz-keyframes k1 {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg)
+  }
+}
+
+@keyframes k1 {
+  0% {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg)
+  }
+
+  100% {
+    transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg);
+    -webkit-transform: rotate(359deg)
+  }
+}
+
+.a>svg {
+  animation-name: k1
+}
+
+.b>svg {
+  animation-duration: 800ms;
+  -webkit-animation-duration: 800ms
+}
+
+.c>svg {
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite
+}
+
+.d>svg {
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear
+}
+
+.e {
+  height: 15px
+}
+
+.f {
+  fill: #f56500
+}
+"
+`;

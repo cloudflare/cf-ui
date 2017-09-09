@@ -49,7 +49,6 @@ const IconComponent = () => (
       <Icon label="info-sign" type="info-sign" />
       <Icon label="linkedin" type="linkedin" />
       <Icon label="list" type="list" />
-      <Icon label="loading" type="loading" />
       <Icon label="lock" type="lock" />
       <Icon label="ok" type="ok" />
       <Icon label="ok-sign" type="ok-sign" />
