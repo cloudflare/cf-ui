@@ -158,7 +158,11 @@ Select.propTypes = {
   newOptionCreator: PropTypes.func,
   menuTitle: PropTypes.string,
   menuHeaderComponent: PropTypes.func,
-  closeMenuComponent: PropTypes.func
+  closeMenuComponent: PropTypes.func,
+  loadOptions: PropTypes.func,
+  autoload: PropTypes.bool,
+  searchPromptText: PropTypes.string,
+  cache: PropTypes.bool
 };
 
 const singleOrPlaceholder = theme => ({
