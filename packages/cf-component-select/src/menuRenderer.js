@@ -79,3 +79,18 @@ export default function menuRenderer(
     </MenuWrapper>
   );
 }
+
+menuRenderer.propTypes = {
+  focusedOption: PropTypes.object,
+  instancePrefix: PropTypes.string,
+  labelKey: PropTypes.string,
+  onFocus: PropTypes.func,
+  onSelect: PropTypes.func,
+  optionClassName: PropTypes.string,
+  optionComponent: PropTypes.element,
+  optionRenderer: PropTypes.func,
+  options: PropTypes.array,
+  valueArray: PropTypes.array,
+  valueKey: PropTypes.string,
+  onOptionRef: PropTypes.func
+};

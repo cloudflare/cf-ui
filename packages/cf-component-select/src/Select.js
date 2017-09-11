@@ -156,7 +156,9 @@ Select.propTypes = {
   noResultsText: PropTypes.string,
   promptTextCreator: PropTypes.func,
   newOptionCreator: PropTypes.func,
-  menuTitle: PropTypes.string
+  menuTitle: PropTypes.string,
+  menuHeaderComponent: PropTypes.func,
+  closeMenuComponent: PropTypes.func
 };
 
 const singleOrPlaceholder = theme => ({

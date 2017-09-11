@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from 'react';
+
 import { createComponent } from 'cf-style-container';
 
 const ArrowRendererWrapper = createComponent(({ theme, isOpen }) => ({
@@ -17,3 +19,7 @@ const ArrowRendererWrapper = createComponent(({ theme, isOpen }) => ({
 export default function arrowRenderer({ onMouseDown }) {
   return <ArrowRendererWrapper onMouseDown={onMouseDown} />;
 }
+
+arrowRenderer.propTypes = {
+  onMouseDown: PropTypes.func
+};

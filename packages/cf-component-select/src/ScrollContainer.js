@@ -41,7 +41,12 @@ class ScrollContainer extends React.Component {
   }
 }
 
-const ScrollContainerWrapper = createComponent((theme) => {
+ScrollContainer.propTypes = {
+  children: PropTypes.node,
+  className: PropTypes.string
+};
+
+const ScrollContainerWrapper = createComponent(theme => {
   return {
     maxHeight: theme.maxMenuHeight || '198px',
     overflowY: 'auto'

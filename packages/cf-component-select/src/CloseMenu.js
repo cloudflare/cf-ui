@@ -30,7 +30,8 @@ class CloseMenuComponent extends React.Component {
 }
 
 CloseMenuComponent.propTypes = {
-  closeMenu: PropTypes.func.isRequired
+  closeMenu: PropTypes.func.isRequired,
+  className: PropTypes.string
 };
 
 const CloseMenu = createComponent(
