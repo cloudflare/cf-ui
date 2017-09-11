@@ -13,12 +13,13 @@ const ValueComponent = ({ className, ...props }) => {
 };
 
 ValueComponent.propTypes = {
+  className: PropTypes.string,
   children: PropTypes.node,
   disabled: PropTypes.bool,
   id: PropTypes.string,
   onClick: PropTypes.func,
   onRemove: PropTypes.func,
-  value: PropTypes.object.isRequired
+  value: PropTypes.object.isRequired,
 };
 
 const Value = createComponent(({ theme, onRemove, disabled }) => {
