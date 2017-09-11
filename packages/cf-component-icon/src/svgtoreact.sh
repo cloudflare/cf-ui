@@ -57,6 +57,9 @@ export default "$REACTSANITIZED";" >"$DIRECTORY"/"$REACTSANITIZED".js;
          #Output index.js file
          echo "export default {\n"${EXPORT/%",\n"/}"\n};" >> "$DIRECTORY"/index.js
          echo Created ${CYAN}"$DIRECTORY"/index.js${NC}
+         echo "Running prettier on files"
+         ./node_modules/eslint/bin/eslint.js --fix "$DIRECTORY"
+
          echo ${GREEN}Done successfully${NC}
          else
          echo "Oops! Please enter a directory"
