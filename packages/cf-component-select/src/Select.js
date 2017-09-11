@@ -68,7 +68,7 @@ const Label = createComponent(
 );
 
 // bindRight is used to ensure that menuRenderer, called from within react-select,
-// is always passed a second parameter which is used for further configuration.
+// is always passed a second parameter which is used for further configuration
 const bindRight = (fn, ...rightArgs) => (...args) => fn(...args, ...rightArgs);
 
 class Select extends React.Component {
