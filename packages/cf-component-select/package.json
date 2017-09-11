@@ -11,7 +11,9 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
+    "cf-style-container": "^4.1.0",
     "prop-types": "^15.5.8",
+    "react-input-autosize": "^1.1.4",
     "react-select": "1.0.0-rc.4 || 1.x"
   },
   "peerDependencies": {
