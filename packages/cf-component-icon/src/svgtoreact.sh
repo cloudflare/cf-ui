@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# Usage ./svgtoreact.sh ./mysvgs ./outputfolder
 CYAN='\033[1;36m'
 GREEN='\033[1;32m'
 NC='\033[0m' 

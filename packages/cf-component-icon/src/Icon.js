@@ -37,7 +37,7 @@ const getFill = (color, theme) => {
   let fill;
   switch (color) {
     case 'default':
-      fill = theme.color.smoke;
+      fill = theme.color.cement;
       break;
     case 'primary':
       fill = theme.color.marine;

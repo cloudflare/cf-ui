@@ -77,7 +77,11 @@ class PaginationBuilder extends React.Component {
           disabled={page === 1}
           onClick={() => handleClickItem(page - 1)}
         >
-          <Icon type="caret-left" label={false} />
+          <Icon
+            color={page === 1 ? 'default' : 'white'}
+            type="caret-left"
+            label={false}
+          />
         </PaginationItem>
         {items}
         <PaginationItem
@@ -86,7 +90,11 @@ class PaginationBuilder extends React.Component {
           disabled={page === totalPages}
           onClick={() => handleClickItem(page + 1)}
         >
-          <Icon type="caret-right" label={false} />
+          <Icon
+            type="caret-right"
+            color={page === totalPages ? 'default' : 'white'}
+            label={false}
+          />
         </PaginationItem>
       </Pagination>
     );
