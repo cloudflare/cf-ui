@@ -2,49 +2,53 @@
 
 exports[`should render 1`] = `
 <div
-  className="a b c d e f"
+  className="a b c d e"
   onClick={[Function]}
 >
-  <i
-    className="cf-icon cf-icon--hamburger"
-    role={undefined}
+  <svg
+    aria-label="Open the menu"
+    className="f g"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
   >
-    <span
-      className="cf-icon__label"
-    >
-      Open the menu
-    </span>
-  </i>
+    <path
+      d="M14.3,1.7V4.22H1.7V1.7ZM1.7,14.3H14.3V11.78H1.7Zm0-5.04H14.3V6.74H1.7Z"
+    />
+  </svg>
 </div>
 `;
 
 exports[`should render 2`] = `
 "
 .a {
-  font-size: 1.3rem
-}
-
-.b {
   border-right: 1px solid #e0e0e0
 }
 
-.c {
+.b {
   padding: 0.9em 1em 1em 1em
 }
 
-.d {
+.c {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none
 }
 
-.e {
+.d {
   cursor: pointer
 }
 
+.f {
+  height: 22px
+}
+
+.g {
+  fill: #000
+}
+
 @media (min-width: 47.2em) {
-  .f {
+  .e {
     display: none
   }
 }

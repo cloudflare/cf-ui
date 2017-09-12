@@ -141,7 +141,7 @@ Icon.propTypes = {
     'white'
   ]),
 
-  size: PropTypes.oneOf(['2x', '2.5x', '3x', '3.5x', '4x'])
+  size: PropTypes.oneOf(['1.5x', '2x', '2.5x', '3x', '3.5x', '4x'])
 };
 
 export default createComponent(iconStyles, Icon);

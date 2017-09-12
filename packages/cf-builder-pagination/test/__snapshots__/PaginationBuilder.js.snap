@@ -32,17 +32,25 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="m p aj ak al"
->>>>>>> chore(cf-component-icon): Update snapshots
+      className="m p af ag s ah ai"
       role={null}
     >
       <a
         aria-label={undefined}
-<<<<<<< HEAD
-        className="t p u v w x y z ab ak ac"
-=======
+        className="t p u v w x y z ab s ac"
+        href="#"
+        onClick={[Function]}
+      >
+        1
+      </a>
+    </li>
+    <li
+      className="m p aj ak al"
+      role={null}
+    >
+      <a
+        aria-label={undefined}
         className="t p u v w x y z ab al ac"
->>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -50,20 +58,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ai aj ak"
-=======
       className="m p aj ak al"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
-<<<<<<< HEAD
-        className="t p u v w x y z ab ak ac"
-=======
         className="t p u v w x y z ab al ac"
->>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -71,20 +71,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ai aj ak"
-=======
       className="m p aj ak al"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
-<<<<<<< HEAD
-        className="t p u v w x y z ab ak ac"
-=======
         className="t p u v w x y z ab al ac"
->>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -92,20 +84,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ai aj ak"
-=======
       className="m p aj ak al"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
-<<<<<<< HEAD
-        className="t p u v w x y z ab ak ac"
-=======
         className="t p u v w x y z ab al ac"
->>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -113,20 +97,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ae af ak n"
-=======
       className="m p af ag al n"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
-<<<<<<< HEAD
-        className="t p u v w x y z ab ak ac"
-=======
         className="t p u v w x y z ab al ac"
->>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -264,32 +240,6 @@ exports[`should render pagination 2`] = `
 }
 
 .ae {
-<<<<<<< HEAD
-  background-color: #408BC9
-}
-
-.af {
-  color: #fff
-}
-
-.ag {
-  border-color: #62a1d8
-}
-
-.ah {
-  z-index: 1
-}
-
-.ai {
-  background-color: #fff
-}
-
-.aj {
-  color: #408BC9
-}
-
-.ak {
-=======
   height: 15px
 }
 
@@ -318,7 +268,6 @@ exports[`should render pagination 2`] = `
 }
 
 .al {
->>>>>>> chore(cf-component-icon): Update snapshots
   cursor: pointer
 }
 
@@ -360,11 +309,7 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ae af s ag ah"
-=======
       className="m p af ag s ah ai"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -390,20 +335,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ai aj ak"
-=======
       className="m p av aw ax"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
-<<<<<<< HEAD
-        className="t p u v w x y z ab ak ac"
-=======
         className="t p u v w x y z ab ax ac"
->>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -411,20 +348,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ai aj ak"
-=======
       className="m p av aw ax"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
-<<<<<<< HEAD
-        className="t p u v w x y z ab ak ac"
-=======
         className="t p u v w x y z ab ax ac"
->>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -432,20 +361,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ai aj ak"
-=======
       className="m p av aw ax"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
-<<<<<<< HEAD
-        className="t p u v w x y z ab ak ac"
-=======
         className="t p u v w x y z ab ax ac"
->>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -453,20 +374,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ai aj ak"
-=======
       className="m p av aw ax"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
-<<<<<<< HEAD
-        className="t p u v w x y z ab ak ac"
-=======
         className="t p u v w x y z ab ax ac"
->>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -474,20 +387,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ae af ak n"
-=======
       className="m p af ag ax n"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
-<<<<<<< HEAD
-        className="t p u v w x y z ab ak ac"
-=======
         className="t p u v w x y z ab ax ac"
->>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -700,32 +605,6 @@ exports[`should render pagination loading 2`] = `
 }
 
 .ae {
-<<<<<<< HEAD
-  background-color: #408BC9
-}
-
-.af {
-  color: #fff
-}
-
-.ag {
-  border-color: #62a1d8
-}
-
-.ah {
-  z-index: 1
-}
-
-.ai {
-  background-color: #fff
-}
-
-.aj {
-  color: #408BC9
-}
-
-.ak {
-=======
   height: 15px
 }
 
@@ -808,7 +687,6 @@ exports[`should render pagination loading 2`] = `
 }
 
 .ax {
->>>>>>> chore(cf-component-icon): Update snapshots
   cursor: pointer
 }
 
@@ -850,11 +728,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ae af s"
-=======
       className="m p ag ah s"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -867,20 +741,12 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p q r ag ah ai"
-=======
       className="m p q r ai aj ak"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
-<<<<<<< HEAD
-        className="t p u v w x y z ab ag ac"
-=======
         className="t p u v w x y z ab ai ac"
->>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -888,11 +754,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ae af s"
-=======
       className="m p ag ah s"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -905,11 +767,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ae af s"
-=======
       className="m p ag ah s"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -922,11 +780,7 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ae af s"
-=======
       className="m p ag ah s"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -1082,24 +936,6 @@ exports[`should render pagination with an infoFormatter 2`] = `
 }
 
 .ae {
-<<<<<<< HEAD
-  background-color: #fff
-}
-
-.af {
-  color: #408BC9
-}
-
-.ag {
-  cursor: default
-}
-
-.ah {
-  border-color: #62a1d8
-}
-
-.ai {
-=======
   height: 15px
 }
 
@@ -1124,7 +960,6 @@ exports[`should render pagination with an infoFormatter 2`] = `
 }
 
 .ak {
->>>>>>> chore(cf-component-icon): Update snapshots
   z-index: 1
 }
 "
@@ -1162,11 +997,7 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ae af s"
-=======
       className="m p ag ah s"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -1179,11 +1010,7 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ae af s"
-=======
       className="m p ag ah s"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -1196,11 +1023,7 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ae af s"
-=======
       className="m p ag ah s"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -1213,11 +1036,7 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ae af s"
-=======
       className="m p ag ah s"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -1230,20 +1049,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p q r ag ah ai"
-=======
       className="m p q r ai aj ak"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
-<<<<<<< HEAD
-        className="t p u v w x y z ab ag ac"
-=======
         className="t p u v w x y z ab ai ac"
->>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -1251,20 +1062,12 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p aj ak ag n"
-=======
       className="m p al am ai n"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
-<<<<<<< HEAD
-        className="t p u v w x y z ab ag ac"
-=======
         className="t p u v w x y z ab ai ac"
->>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -1402,32 +1205,6 @@ exports[`should render pagination with the last page active 2`] = `
 }
 
 .ae {
-<<<<<<< HEAD
-  background-color: #fff
-}
-
-.af {
-  color: #408BC9
-}
-
-.ag {
-  cursor: default
-}
-
-.ah {
-  border-color: #62a1d8
-}
-
-.ai {
-  z-index: 1
-}
-
-.aj {
-  background-color: #ededed
-}
-
-.ak {
-=======
   height: 15px
 }
 
@@ -1460,7 +1237,6 @@ exports[`should render pagination with the last page active 2`] = `
 }
 
 .am {
->>>>>>> chore(cf-component-icon): Update snapshots
   color: #666
 }
 "
@@ -1498,11 +1274,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ae af s"
-=======
       className="m p ag ah s"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -1515,11 +1287,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ae af s"
-=======
       className="m p ag ah s"
->>>>>>> chore(cf-component-icon): Update snapshots
       role="presentation"
     >
       <a
@@ -1534,11 +1302,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ae af s"
-=======
       className="m p ag ah s"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -1551,11 +1315,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ae af s"
-=======
       className="m p ag ah s"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -1568,20 +1328,12 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p q r ag ah ai"
-=======
       className="m p q r ai aj ak"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
-<<<<<<< HEAD
-        className="t p u v w x y z ab ag ac"
-=======
         className="t p u v w x y z ab ai ac"
->>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -1589,11 +1341,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ae af s"
-=======
       className="m p ag ah s"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -1606,11 +1354,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ae af s"
-=======
       className="m p ag ah s"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -1623,11 +1367,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ae af s"
-=======
       className="m p ag ah s"
->>>>>>> chore(cf-component-icon): Update snapshots
       role="presentation"
     >
       <a
@@ -1642,11 +1382,7 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
-<<<<<<< HEAD
-      className="m p ae af s"
-=======
       className="m p ag ah s"
->>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -1802,24 +1538,6 @@ exports[`should render with collapsed items 2`] = `
 }
 
 .ae {
-<<<<<<< HEAD
-  background-color: #fff
-}
-
-.af {
-  color: #408BC9
-}
-
-.ag {
-  cursor: default
-}
-
-.ah {
-  border-color: #62a1d8
-}
-
-.ai {
-=======
   height: 15px
 }
 
@@ -1844,7 +1562,6 @@ exports[`should render with collapsed items 2`] = `
 }
 
 .ak {
->>>>>>> chore(cf-component-icon): Update snapshots
   z-index: 1
 }
 "
