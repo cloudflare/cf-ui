@@ -5,11 +5,29 @@ exports[`should render 1`] = `
   className="cf-modal__close"
   onClick={[Function]}
 >
-  <i
-    className="cf-icon cf-icon--close cf-icon--2x"
-    role={undefined}
-  />
+  <svg
+    aria-label=""
+    className="a b"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <polygon
+      points="14.3 3.625 12.375 1.7 8 6.075 3.625 1.7 1.7 3.625 6.075 8 1.7 12.375 3.625 14.3 8 9.925 12.375 14.3 14.3 12.375 9.925 8 14.3 3.625"
+    />
+  </svg>
 </span>
+`;
+
+exports[`should render 2`] = `
+"
+.a {
+  height: 15px
+}
+
+.b {
+  fill: #000
+}
+"
 `;
 
 exports[`should render with a label 1`] = `
@@ -17,15 +35,27 @@ exports[`should render with a label 1`] = `
   className="cf-modal__close"
   onClick={[Function]}
 >
-  <i
-    className="cf-icon cf-icon--close cf-icon--2x"
-    role={undefined}
+  <svg
+    aria-label="label"
+    className="a b"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
   >
-    <span
-      className="cf-icon__label"
-    >
-      label
-    </span>
-  </i>
+    <polygon
+      points="14.3 3.625 12.375 1.7 8 6.075 3.625 1.7 1.7 3.625 6.075 8 1.7 12.375 3.625 14.3 8 9.925 12.375 14.3 14.3 12.375 9.925 8 14.3 3.625"
+    />
+  </svg>
 </span>
+`;
+
+exports[`should render with a label 2`] = `
+"
+.a {
+  height: 15px
+}
+
+.b {
+  fill: #000
+}
+"
 `;

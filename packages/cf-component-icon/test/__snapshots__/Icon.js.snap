@@ -82,7 +82,7 @@ exports[`should render colors 2`] = `
 }
 
 .b {
-  fill: #e0e0e0
+  fill: #7D7D7D
 }
 
 .c {

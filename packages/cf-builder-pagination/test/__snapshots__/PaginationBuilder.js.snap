@@ -19,32 +19,30 @@ exports[`should render pagination 1`] = `
         href="#"
         onClick={[Function]}
       >
-        <i
-          className="cf-icon cf-icon--caret-left"
-          role={undefined}
-        />
+        <svg
+          aria-label=""
+          className="ae"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.463,4.517l-3.3,3.3a.263.263,0,0,0,0,.371l3.3,3.3a.263.263,0,0,0,.448-.186V4.7A.262.262,0,0,0,9.463,4.517Z"
+          />
+        </svg>
       </a>
     </li>
     <li
-      className="m p ae af s ag ah"
+      className="m p aj ak al"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab s ac"
-        href="#"
-        onClick={[Function]}
-      >
-        1
-      </a>
-    </li>
-    <li
-      className="m p ai aj ak"
-      role={null}
-    >
-      <a
-        aria-label={undefined}
+<<<<<<< HEAD
         className="t p u v w x y z ab ak ac"
+=======
+        className="t p u v w x y z ab al ac"
+>>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -52,12 +50,20 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ai aj ak"
+=======
+      className="m p aj ak al"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
+<<<<<<< HEAD
         className="t p u v w x y z ab ak ac"
+=======
+        className="t p u v w x y z ab al ac"
+>>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -65,12 +71,20 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ai aj ak"
+=======
+      className="m p aj ak al"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
+<<<<<<< HEAD
         className="t p u v w x y z ab ak ac"
+=======
+        className="t p u v w x y z ab al ac"
+>>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -78,12 +92,20 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ai aj ak"
+=======
+      className="m p aj ak al"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
+<<<<<<< HEAD
         className="t p u v w x y z ab ak ac"
+=======
+        className="t p u v w x y z ab al ac"
+>>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -91,19 +113,33 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ae af ak n"
+=======
+      className="m p af ag al n"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
+<<<<<<< HEAD
         className="t p u v w x y z ab ak ac"
+=======
+        className="t p u v w x y z ab al ac"
+>>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
-        <i
-          className="cf-icon cf-icon--caret-right"
-          role={undefined}
-        />
+        <svg
+          aria-label=""
+          className="ae am"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.537,11.483l3.3-3.3a.263.263,0,0,0,0-.371l-3.3-3.3a.262.262,0,0,0-.448.186v6.6A.262.262,0,0,0,6.537,11.483Z"
+          />
+        </svg>
       </a>
     </li>
   </ul>
@@ -200,7 +236,7 @@ exports[`should render pagination 2`] = `
 }
 
 .v {
-  padding-top: .5em
+  padding-top: .7em
 }
 
 .w {
@@ -228,6 +264,7 @@ exports[`should render pagination 2`] = `
 }
 
 .ae {
+<<<<<<< HEAD
   background-color: #408BC9
 }
 
@@ -252,7 +289,41 @@ exports[`should render pagination 2`] = `
 }
 
 .ak {
+=======
+  height: 15px
+}
+
+.af {
+  background-color: #408BC9
+}
+
+.ag {
+  color: #fff
+}
+
+.ah {
+  border-color: #62a1d8
+}
+
+.ai {
+  z-index: 1
+}
+
+.aj {
+  background-color: #fff
+}
+
+.ak {
+  color: #408BC9
+}
+
+.al {
+>>>>>>> chore(cf-component-icon): Update snapshots
   cursor: pointer
+}
+
+.am {
+  fill: #fff
 }
 "
 `;
@@ -276,14 +347,24 @@ exports[`should render pagination loading 1`] = `
         href="#"
         onClick={[Function]}
       >
-        <i
-          className="cf-icon cf-icon--caret-left"
-          role={undefined}
-        />
+        <svg
+          aria-label=""
+          className="ae"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.463,4.517l-3.3,3.3a.263.263,0,0,0,0,.371l3.3,3.3a.263.263,0,0,0,.448-.186V4.7A.262.262,0,0,0,9.463,4.517Z"
+          />
+        </svg>
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ae af s ag ah"
+=======
+      className="m p af ag s ah ai"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -292,19 +373,37 @@ exports[`should render pagination loading 1`] = `
         href="#"
         onClick={[Function]}
       >
-        <i
-          className="cf-icon cf-icon--loading"
-          role={undefined}
-        />
+        <div
+          className="aj ak al am an ao ap aq ar as at au"
+        >
+          <svg
+            viewBox="0 0 40 40"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="50%"
+              cy="50%"
+              r="40%"
+            />
+          </svg>
+        </div>
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ai aj ak"
+=======
+      className="m p av aw ax"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
+<<<<<<< HEAD
         className="t p u v w x y z ab ak ac"
+=======
+        className="t p u v w x y z ab ax ac"
+>>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -312,12 +411,20 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ai aj ak"
+=======
+      className="m p av aw ax"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
+<<<<<<< HEAD
         className="t p u v w x y z ab ak ac"
+=======
+        className="t p u v w x y z ab ax ac"
+>>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -325,12 +432,20 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ai aj ak"
+=======
+      className="m p av aw ax"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
+<<<<<<< HEAD
         className="t p u v w x y z ab ak ac"
+=======
+        className="t p u v w x y z ab ax ac"
+>>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -338,12 +453,20 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ai aj ak"
+=======
+      className="m p av aw ax"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
+<<<<<<< HEAD
         className="t p u v w x y z ab ak ac"
+=======
+        className="t p u v w x y z ab ax ac"
+>>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -351,19 +474,33 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ae af ak n"
+=======
+      className="m p af ag ax n"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
+<<<<<<< HEAD
         className="t p u v w x y z ab ak ac"
+=======
+        className="t p u v w x y z ab ax ac"
+>>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
-        <i
-          className="cf-icon cf-icon--caret-right"
-          role={undefined}
-        />
+        <svg
+          aria-label=""
+          className="ae ay"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.537,11.483l3.3-3.3a.263.263,0,0,0,0-.371l-3.3-3.3a.262.262,0,0,0-.448.186v6.6A.262.262,0,0,0,6.537,11.483Z"
+          />
+        </svg>
       </a>
     </li>
   </ul>
@@ -372,6 +509,81 @@ exports[`should render pagination loading 1`] = `
 
 exports[`should render pagination loading 2`] = `
 "
+@-webkit-keyframes k1 {
+  0% {
+    stroke-dasharray: 1,95;
+    stroke-dashoffset: 0;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg)
+  }
+
+  50% {
+    stroke-dasharray: 85,95;
+    stroke-dashoffset: -25
+  }
+
+  100% {
+    stroke-dasharray: 85,95;
+    stroke-dashoffset: -93;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg)
+  }
+}
+
+@-moz-keyframes k1 {
+  0% {
+    stroke-dasharray: 1,95;
+    stroke-dashoffset: 0;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg)
+  }
+
+  50% {
+    stroke-dasharray: 85,95;
+    stroke-dashoffset: -25
+  }
+
+  100% {
+    stroke-dasharray: 85,95;
+    stroke-dashoffset: -93;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg)
+  }
+}
+
+@keyframes k1 {
+  0% {
+    stroke-dasharray: 1,95;
+    stroke-dashoffset: 0;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg)
+  }
+
+  50% {
+    stroke-dasharray: 85,95;
+    stroke-dashoffset: -25
+  }
+
+  100% {
+    stroke-dasharray: 85,95;
+    stroke-dashoffset: -93;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg)
+  }
+}
+
 .a:after {
   content: \\"\\"
 }
@@ -460,7 +672,7 @@ exports[`should render pagination loading 2`] = `
 }
 
 .v {
-  padding-top: .5em
+  padding-top: .7em
 }
 
 .w {
@@ -488,6 +700,7 @@ exports[`should render pagination loading 2`] = `
 }
 
 .ae {
+<<<<<<< HEAD
   background-color: #408BC9
 }
 
@@ -512,7 +725,95 @@ exports[`should render pagination loading 2`] = `
 }
 
 .ak {
+=======
+  height: 15px
+}
+
+.af {
+  background-color: #408BC9
+}
+
+.ag {
+  color: #fff
+}
+
+.ah {
+  border-color: #62a1d8
+}
+
+.ai {
+  z-index: 1
+}
+
+.aj {
+  width: 15px
+}
+
+.ak {
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s
+}
+
+.al {
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite
+}
+
+.am {
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear
+}
+
+.an>svg {
+  height: 100%
+}
+
+.ao>svg {
+  fill: transparent
+}
+
+.ap>svg {
+  stroke-width: 6
+}
+
+.aq>svg {
+  stroke: #BCBEC0
+}
+
+.ar>svg {
+  animation-name: k1
+}
+
+.as>svg {
+  animation-duration: 1.9s;
+  -webkit-animation-duration: 1.9s
+}
+
+.at>svg {
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite
+}
+
+.au>svg {
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear
+}
+
+.av {
+  background-color: #fff
+}
+
+.aw {
+  color: #408BC9
+}
+
+.ax {
+>>>>>>> chore(cf-component-icon): Update snapshots
   cursor: pointer
+}
+
+.ay {
+  fill: #fff
 }
 "
 `;
@@ -536,14 +837,24 @@ exports[`should render pagination with an infoFormatter 1`] = `
         href="#"
         onClick={[Function]}
       >
-        <i
-          className="cf-icon cf-icon--caret-left"
-          role={undefined}
-        />
+        <svg
+          aria-label=""
+          className="ae af"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.463,4.517l-3.3,3.3a.263.263,0,0,0,0,.371l3.3,3.3a.263.263,0,0,0,.448-.186V4.7A.262.262,0,0,0,9.463,4.517Z"
+          />
+        </svg>
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ae af s"
+=======
+      className="m p ag ah s"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -556,12 +867,20 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p q r ag ah ai"
+=======
+      className="m p q r ai aj ak"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
+<<<<<<< HEAD
         className="t p u v w x y z ab ag ac"
+=======
+        className="t p u v w x y z ab ai ac"
+>>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -569,7 +888,11 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ae af s"
+=======
+      className="m p ag ah s"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -582,7 +905,11 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ae af s"
+=======
+      className="m p ag ah s"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -595,7 +922,11 @@ exports[`should render pagination with an infoFormatter 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ae af s"
+=======
+      className="m p ag ah s"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -617,10 +948,16 @@ exports[`should render pagination with an infoFormatter 1`] = `
         href="#"
         onClick={[Function]}
       >
-        <i
-          className="cf-icon cf-icon--caret-right"
-          role={undefined}
-        />
+        <svg
+          aria-label=""
+          className="ae af"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.537,11.483l3.3-3.3a.263.263,0,0,0,0-.371l-3.3-3.3a.262.262,0,0,0-.448.186v6.6A.262.262,0,0,0,6.537,11.483Z"
+          />
+        </svg>
       </a>
     </li>
   </ul>
@@ -717,7 +1054,7 @@ exports[`should render pagination with an infoFormatter 2`] = `
 }
 
 .v {
-  padding-top: .5em
+  padding-top: .7em
 }
 
 .w {
@@ -745,6 +1082,7 @@ exports[`should render pagination with an infoFormatter 2`] = `
 }
 
 .ae {
+<<<<<<< HEAD
   background-color: #fff
 }
 
@@ -761,6 +1099,32 @@ exports[`should render pagination with an infoFormatter 2`] = `
 }
 
 .ai {
+=======
+  height: 15px
+}
+
+.af {
+  fill: #fff
+}
+
+.ag {
+  background-color: #fff
+}
+
+.ah {
+  color: #408BC9
+}
+
+.ai {
+  cursor: default
+}
+
+.aj {
+  border-color: #62a1d8
+}
+
+.ak {
+>>>>>>> chore(cf-component-icon): Update snapshots
   z-index: 1
 }
 "
@@ -785,14 +1149,24 @@ exports[`should render pagination with the last page active 1`] = `
         href="#"
         onClick={[Function]}
       >
-        <i
-          className="cf-icon cf-icon--caret-left"
-          role={undefined}
-        />
+        <svg
+          aria-label=""
+          className="ae af"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.463,4.517l-3.3,3.3a.263.263,0,0,0,0,.371l3.3,3.3a.263.263,0,0,0,.448-.186V4.7A.262.262,0,0,0,9.463,4.517Z"
+          />
+        </svg>
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ae af s"
+=======
+      className="m p ag ah s"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -805,7 +1179,11 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ae af s"
+=======
+      className="m p ag ah s"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -818,7 +1196,11 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ae af s"
+=======
+      className="m p ag ah s"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -831,7 +1213,11 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ae af s"
+=======
+      className="m p ag ah s"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -844,12 +1230,20 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p q r ag ah ai"
+=======
+      className="m p q r ai aj ak"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
+<<<<<<< HEAD
         className="t p u v w x y z ab ag ac"
+=======
+        className="t p u v w x y z ab ai ac"
+>>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -857,19 +1251,33 @@ exports[`should render pagination with the last page active 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p aj ak ag n"
+=======
+      className="m p al am ai n"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
+<<<<<<< HEAD
         className="t p u v w x y z ab ag ac"
+=======
+        className="t p u v w x y z ab ai ac"
+>>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
-        <i
-          className="cf-icon cf-icon--caret-right"
-          role={undefined}
-        />
+        <svg
+          aria-label=""
+          className="ae"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.537,11.483l3.3-3.3a.263.263,0,0,0,0-.371l-3.3-3.3a.262.262,0,0,0-.448.186v6.6A.262.262,0,0,0,6.537,11.483Z"
+          />
+        </svg>
       </a>
     </li>
   </ul>
@@ -966,7 +1374,7 @@ exports[`should render pagination with the last page active 2`] = `
 }
 
 .v {
-  padding-top: .5em
+  padding-top: .7em
 }
 
 .w {
@@ -994,6 +1402,7 @@ exports[`should render pagination with the last page active 2`] = `
 }
 
 .ae {
+<<<<<<< HEAD
   background-color: #fff
 }
 
@@ -1018,6 +1427,40 @@ exports[`should render pagination with the last page active 2`] = `
 }
 
 .ak {
+=======
+  height: 15px
+}
+
+.af {
+  fill: #fff
+}
+
+.ag {
+  background-color: #fff
+}
+
+.ah {
+  color: #408BC9
+}
+
+.ai {
+  cursor: default
+}
+
+.aj {
+  border-color: #62a1d8
+}
+
+.ak {
+  z-index: 1
+}
+
+.al {
+  background-color: #ededed
+}
+
+.am {
+>>>>>>> chore(cf-component-icon): Update snapshots
   color: #666
 }
 "
@@ -1042,14 +1485,24 @@ exports[`should render with collapsed items 1`] = `
         href="#"
         onClick={[Function]}
       >
-        <i
-          className="cf-icon cf-icon--caret-left"
-          role={undefined}
-        />
+        <svg
+          aria-label=""
+          className="ae af"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M9.463,4.517l-3.3,3.3a.263.263,0,0,0,0,.371l3.3,3.3a.263.263,0,0,0,.448-.186V4.7A.262.262,0,0,0,9.463,4.517Z"
+          />
+        </svg>
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ae af s"
+=======
+      className="m p ag ah s"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -1062,7 +1515,11 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ae af s"
+=======
+      className="m p ag ah s"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role="presentation"
     >
       <a
@@ -1077,7 +1534,11 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ae af s"
+=======
+      className="m p ag ah s"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -1090,7 +1551,11 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ae af s"
+=======
+      className="m p ag ah s"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -1103,12 +1568,20 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p q r ag ah ai"
+=======
+      className="m p q r ai aj ak"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
         aria-label={undefined}
+<<<<<<< HEAD
         className="t p u v w x y z ab ag ac"
+=======
+        className="t p u v w x y z ab ai ac"
+>>>>>>> chore(cf-component-icon): Update snapshots
         href="#"
         onClick={[Function]}
       >
@@ -1116,7 +1589,11 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ae af s"
+=======
+      className="m p ag ah s"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -1129,7 +1606,11 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ae af s"
+=======
+      className="m p ag ah s"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -1142,7 +1623,11 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ae af s"
+=======
+      className="m p ag ah s"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role="presentation"
     >
       <a
@@ -1157,7 +1642,11 @@ exports[`should render with collapsed items 1`] = `
       </a>
     </li>
     <li
+<<<<<<< HEAD
       className="m p ae af s"
+=======
+      className="m p ag ah s"
+>>>>>>> chore(cf-component-icon): Update snapshots
       role={null}
     >
       <a
@@ -1179,10 +1668,16 @@ exports[`should render with collapsed items 1`] = `
         href="#"
         onClick={[Function]}
       >
-        <i
-          className="cf-icon cf-icon--caret-right"
-          role={undefined}
-        />
+        <svg
+          aria-label=""
+          className="ae af"
+          viewBox="0 0 16 16"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.537,11.483l3.3-3.3a.263.263,0,0,0,0-.371l-3.3-3.3a.262.262,0,0,0-.448.186v6.6A.262.262,0,0,0,6.537,11.483Z"
+          />
+        </svg>
       </a>
     </li>
   </ul>
@@ -1279,7 +1774,7 @@ exports[`should render with collapsed items 2`] = `
 }
 
 .v {
-  padding-top: .5em
+  padding-top: .7em
 }
 
 .w {
@@ -1307,6 +1802,7 @@ exports[`should render with collapsed items 2`] = `
 }
 
 .ae {
+<<<<<<< HEAD
   background-color: #fff
 }
 
@@ -1323,6 +1819,32 @@ exports[`should render with collapsed items 2`] = `
 }
 
 .ai {
+=======
+  height: 15px
+}
+
+.af {
+  fill: #fff
+}
+
+.ag {
+  background-color: #fff
+}
+
+.ah {
+  color: #408BC9
+}
+
+.ai {
+  cursor: default
+}
+
+.aj {
+  border-color: #62a1d8
+}
+
+.ak {
+>>>>>>> chore(cf-component-icon): Update snapshots
   z-index: 1
 }
 "

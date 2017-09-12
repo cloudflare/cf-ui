@@ -1,16 +1,17 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { felaSnapshot } from 'cf-style-provider';
 import { ModalClose } from '../../cf-component-modal/src/index';
-import Icon from '../../cf-component-icon/src/index';
 
 test('should render', () => {
-  const component = renderer.create(<ModalClose onClick={() => {}} />);
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<ModalClose onClick={() => {}} />);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render with a label', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <ModalClose label="label" onClick={() => {}} />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
