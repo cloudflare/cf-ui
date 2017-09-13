@@ -1,11 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Icon from 'cf-component-icon';
+import { Icon } from 'cf-component-icon';
 import { createComponent } from 'cf-style-container';
 
 const Wrapper = createComponent(
   ({ theme }) => ({
-    fontSize: '1.3rem',
     borderRight: `1px solid ${theme.color.smoke}`,
     padding: '0.9em 1em 1em 1em',
     userSelect: 'none',
@@ -19,7 +18,9 @@ const Wrapper = createComponent(
 );
 
 const Hamburger = ({ onClick, label }) => (
-  <Wrapper onClick={onClick}><Icon label={label} type="hamburger" /></Wrapper>
+  <Wrapper onClick={onClick}>
+    <Icon label={label} size="1.5x" type="hamburger" />
+  </Wrapper>
 );
 
 Hamburger.propTypes = {

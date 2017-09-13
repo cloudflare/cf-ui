@@ -1,34 +1,39 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import Icon from '../../cf-component-icon/src/index';
+import { felaSnapshot } from 'cf-style-provider';
+import { Icon } from '../../cf-component-icon/src/index';
 
 test('should render type', () => {
-  const component = renderer.create(<Icon type="info-sign" label="Info" />);
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<Icon type="info-sign" label="Info" />);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render type/size', () => {
-  const component = renderer.create(
-    <Icon type="info-sign" label="Info" size="xlarge" />
+  const snapshot = felaSnapshot(
+    <Icon type="hamburger" label="Info" size="2x" />
   );
-  expect(component.toJSON()).toMatchSnapshot();
-});
-
-test('should render type/border/spin/muted/white', () => {
-  const component = renderer.create(
-    <Icon type="info-sign" label="Info" border spin muted white />
-  );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
 test('should render type with no label', () => {
-  const component = renderer.create(<Icon type="info-sign" label={false} />);
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<Icon type="info-sign" label={false} />);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });
 
-test('should render role', () => {
-  const component = renderer.create(
-    <Icon type="loading" label={false} role="status" />
+test('should render colors', () => {
+  const snapshot = felaSnapshot(
+    <div>
+      <Icon label="default" size="2x" type="search" color="default" />
+      <Icon label="primary" size="2x" type="caret-right" color="primary" />
+      <Icon label="success" size="2x" type="ok" color="success" />
+      <Icon label="warning" size="2x" type="info-sign" color="warning" />
+      <Icon label="danger" size="2x" type="exclamation-sign" color="danger" />
+      <Icon label="black" size="2x" type="remove" color="black" />
+      <Icon label="white" size="2x" type="shield" color="white" />
+    </div>
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Icon from 'cf-component-icon';
+import { Icon } from 'cf-component-icon';
 
 class ModalClose extends React.Component {
   render() {
     return (
       <span className="cf-modal__close" onClick={this.props.onClick}>
-        <Icon type="close" label={this.props.label} size="2x" />
+        <Icon type="remove" label={this.props.label} />
       </span>
     );
   }

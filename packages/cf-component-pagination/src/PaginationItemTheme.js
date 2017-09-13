@@ -33,7 +33,7 @@ export default baseTheme => ({
     userSelect: 'none',
     position: 'relative',
     display: 'block',
-    paddingTop: '.5em',
+    paddingTop: '.7em',
     paddingBottom: '.5em',
     paddingLeft: '1em',
     paddingRight: '1em',

@@ -3,7 +3,7 @@ import { lighten, darken } from 'polished';
 const colorOffsetLight = 0.15;
 const colorOffsetDark = 0.07;
 
-export default {
+const base = {
   breakpoints: {
     mobile: '13.6em',
     mobileWide: '30.4em',
@@ -139,3 +139,9 @@ export default {
   colorImportantInformation: 'rgba(64,139,201,0.2)',
   zIndexMax: 1000
 };
+
+const alias = { colors: base.color };
+
+const baseTheme = Object.assign({}, base, alias);
+
+export default baseTheme;

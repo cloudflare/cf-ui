@@ -1,54 +1,187 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render role 1`] = `
-<i
-  className="cf-icon cf-icon--loading"
-  role="status"
-/>
+exports[`should render colors 1`] = `
+<div>
+  <svg
+    aria-label="default"
+    className="a b"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M14.69,13.679l-3.25-3.25a5.791,5.791,0,1,0-1.315,1.17l3.322,3.322a.37.37,0,0,0,.524,0l.719-.718A.371.371,0,0,0,14.69,13.679ZM4.137,9.595a4.026,4.026,0,1,1,5.8-.125l-.24.24a4.014,4.014,0,0,1-5.563-.114Z"
+    />
+  </svg>
+  <svg
+    aria-label="primary"
+    className="a c"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M6.537,11.483l3.3-3.3a.263.263,0,0,0,0-.371l-3.3-3.3a.262.262,0,0,0-.448.186v6.6A.262.262,0,0,0,6.537,11.483Z"
+    />
+  </svg>
+  <svg
+    aria-label="success"
+    className="a d"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <polygon
+      points="15.736 3.872 13.7 1.836 5.761 9.776 2.3 6.315 0.264 8.35 5.761 13.847 15.736 3.872"
+    />
+  </svg>
+  <svg
+    aria-label="warning"
+    className="a e"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M8.149,1.014A6.986,6.986,0,1,0,15.134,8,6.986,6.986,0,0,0,8.149,1.014Zm.817,11.423h-1.7V6.933h1.7Zm0-7.065a.226.226,0,0,1-.226.226H7.487a.226.226,0,0,1-.226-.226V4.121a.226.226,0,0,1,.226-.226H8.739a.226.226,0,0,1,.226.226Z"
+    />
+  </svg>
+  <svg
+    aria-label="danger"
+    className="a f"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M15.672,14.2,8.3,1.443a.352.352,0,0,0-.609,0L.328,14.2a.352.352,0,0,0,.3.527H15.368A.352.352,0,0,0,15.672,14.2ZM8.743,12.9a.221.221,0,0,1-.221.221H7.478a.221.221,0,0,1-.221-.221V11.86a.221.221,0,0,1,.221-.221H8.522a.221.221,0,0,1,.221.221Zm-.025-2.422H7.282L7.257,6.005H8.743Z"
+    />
+  </svg>
+  <svg
+    aria-label="black"
+    className="a g"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <polygon
+      points="14.3 3.625 12.375 1.7 8 6.075 3.625 1.7 1.7 3.625 6.075 8 1.7 12.375 3.625 14.3 8 9.925 12.375 14.3 14.3 12.375 9.925 8 14.3 3.625"
+    />
+  </svg>
+  <svg
+    aria-label="white"
+    className="a h"
+    viewBox="0 0 16 16"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      d="M1.98,1.312V8.43h0a5.172,5.172,0,0,0,1.168,3.153,5.921,5.921,0,0,0,1.908,1.54l.01.012L8,14.688l3.008-1.593.016-.013a5.9,5.9,0,0,0,1.825-1.5A5.172,5.172,0,0,0,14.017,8.43h0V1.312Zm10.761,7.03h0a4.086,4.086,0,0,1-.921,2.489,4.668,4.668,0,0,1-1.441,1.183l-.013.01L7.989,13.282V2.724h4.751Z"
+    />
+  </svg>
+</div>
+`;
+
+exports[`should render colors 2`] = `
+"
+.a {
+  height: 30px
+}
+
+.b {
+  fill: #7D7D7D
+}
+
+.c {
+  fill: #2F7BBF
+}
+
+.d {
+  fill: #9BCA3E
+}
+
+.e {
+  fill: #f56500
+}
+
+.f {
+  fill: #BD2527
+}
+
+.g {
+  fill: #000
+}
+
+.h {
+  fill: #fff
+}
+"
 `;
 
 exports[`should render type 1`] = `
-<i
-  className="cf-icon cf-icon--info-sign"
-  role={undefined}
+<svg
+  aria-label="Info"
+  className="a b"
+  viewBox="0 0 16 16"
+  xmlns="http://www.w3.org/2000/svg"
 >
-  <span
-    className="cf-icon__label"
-  >
-    Info
-  </span>
-</i>
+  <path
+    d="M8.149,1.014A6.986,6.986,0,1,0,15.134,8,6.986,6.986,0,0,0,8.149,1.014Zm.817,11.423h-1.7V6.933h1.7Zm0-7.065a.226.226,0,0,1-.226.226H7.487a.226.226,0,0,1-.226-.226V4.121a.226.226,0,0,1,.226-.226H8.739a.226.226,0,0,1,.226.226Z"
+  />
+</svg>
+`;
+
+exports[`should render type 2`] = `
+"
+.a {
+  height: 15px
+}
+
+.b {
+  fill: #000
+}
+"
 `;
 
 exports[`should render type with no label 1`] = `
-<i
-  className="cf-icon cf-icon--info-sign"
-  role={undefined}
-/>
+<svg
+  aria-label=""
+  className="a b"
+  viewBox="0 0 16 16"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M8.149,1.014A6.986,6.986,0,1,0,15.134,8,6.986,6.986,0,0,0,8.149,1.014Zm.817,11.423h-1.7V6.933h1.7Zm0-7.065a.226.226,0,0,1-.226.226H7.487a.226.226,0,0,1-.226-.226V4.121a.226.226,0,0,1,.226-.226H8.739a.226.226,0,0,1,.226.226Z"
+  />
+</svg>
 `;
 
-exports[`should render type/border/spin/muted/white 1`] = `
-<i
-  className="cf-icon cf-icon--info-sign cf-icon--border cf-icon--spin cf-icon--muted cf-icon--white"
-  role={undefined}
->
-  <span
-    className="cf-icon__label"
-  >
-    Info
-  </span>
-</i>
+exports[`should render type with no label 2`] = `
+"
+.a {
+  height: 15px
+}
+
+.b {
+  fill: #000
+}
+"
 `;
 
 exports[`should render type/size 1`] = `
-<i
-  className="cf-icon cf-icon--info-sign cf-icon--xlarge"
-  role={undefined}
+<svg
+  aria-label="Info"
+  className="a b"
+  viewBox="0 0 16 16"
+  xmlns="http://www.w3.org/2000/svg"
 >
-  <span
-    className="cf-icon__label"
-  >
-    Info
-  </span>
-</i>
+  <path
+    d="M14.3,1.7V4.22H1.7V1.7ZM1.7,14.3H14.3V11.78H1.7Zm0-5.04H14.3V6.74H1.7Z"
+  />
+</svg>
+`;
+
+exports[`should render type/size 2`] = `
+"
+.a {
+  height: 30px
+}
+
+.b {
+  fill: #000
+}
+"
 `;

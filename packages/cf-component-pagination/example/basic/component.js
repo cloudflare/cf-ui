@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pagination, PaginationItem } from 'cf-component-pagination';
-import Icon from 'cf-component-icon';
+import { Icon } from 'cf-component-icon';
 
 class PaginationComponent extends React.Component {
   constructor(props) {
@@ -52,7 +52,11 @@ class PaginationComponent extends React.Component {
           disabled={this.state.active === 1}
           onClick={this.handleClickPrev.bind(this)}
         >
-          <Icon type="caret-left" label={false} />
+          <Icon
+            color={this.state.active === 1 ? 'default' : 'white'}
+            type="caret-left"
+            label={false}
+          />
         </PaginationItem>
         {items}
         <PaginationItem
@@ -61,7 +65,11 @@ class PaginationComponent extends React.Component {
           disabled={this.state.active === this.state.pages}
           onClick={this.handleClickNext.bind(this)}
         >
-          <Icon type="caret-right" label={false} />
+          <Icon
+            type="caret-right"
+            color={this.state.active === this.state.pages ? 'default' : 'white'}
+            label={false}
+          />
         </PaginationItem>
       </Pagination>
     );

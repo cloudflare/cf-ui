@@ -12,7 +12,7 @@ $ npm install cf-component-loading
 
 ```jsx
 import React from 'react';
-import Loading from 'cf-component-loading';
+import { Loading } from 'cf-component-loading';
 
 const LoadingComponent = () => (
   <div>
@@ -21,4 +21,5 @@ const LoadingComponent = () => (
 );
 
 export default LoadingComponent;
+
 ```

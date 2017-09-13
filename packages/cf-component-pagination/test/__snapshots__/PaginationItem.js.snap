@@ -50,7 +50,7 @@ exports[`should render 2`] = `
 }
 
 .h {
-  padding-top: .5em
+  padding-top: .7em
 }
 
 .i {
@@ -137,7 +137,7 @@ exports[`should render active 2`] = `
 }
 
 .j {
-  padding-top: .5em
+  padding-top: .7em
 }
 
 .k {
@@ -244,7 +244,7 @@ exports[`should render active dot 2`] = `
 }
 
 .o {
-  padding-top: .5em
+  padding-top: .7em
 }
 
 .p {
@@ -335,7 +335,7 @@ exports[`should render active next 2`] = `
 }
 
 .k {
-  padding-top: .5em
+  padding-top: .7em
 }
 
 .l {
@@ -426,7 +426,7 @@ exports[`should render active prev 2`] = `
 }
 
 .k {
-  padding-top: .5em
+  padding-top: .7em
 }
 
 .l {
@@ -505,7 +505,7 @@ exports[`should render disabled 2`] = `
 }
 
 .h {
-  padding-top: .5em
+  padding-top: .7em
 }
 
 .i {
@@ -604,7 +604,7 @@ exports[`should render disabled dot 2`] = `
 }
 
 .m {
-  padding-top: .5em
+  padding-top: .7em
 }
 
 .n {
@@ -687,7 +687,7 @@ exports[`should render disabled next 2`] = `
 }
 
 .i {
-  padding-top: .5em
+  padding-top: .7em
 }
 
 .j {
@@ -770,7 +770,7 @@ exports[`should render disabled prev 2`] = `
 }
 
 .i {
-  padding-top: .5em
+  padding-top: .7em
 }
 
 .j {

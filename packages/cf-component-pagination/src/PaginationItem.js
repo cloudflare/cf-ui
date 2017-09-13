@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Icon from 'cf-component-icon';
+import { Loading } from 'cf-component-loading';
 import { combineRules, createComponent } from 'cf-style-container';
 
 const active = ({ active, theme }) => {
@@ -92,7 +92,7 @@ class PaginationItem extends React.Component {
     if (isEllipsis) {
       children = <span>…</span>;
     } else if (isLoading) {
-      children = <Icon type="loading" label={false} />;
+      children = <Loading />;
     } else {
       children = props.children;
     }

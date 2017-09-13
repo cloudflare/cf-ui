@@ -1,14 +1,151 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render 1`] = `
-<i
-  className="cf-icon cf-icon--loading"
-  role="status"
+<div
+  className="a b c d e f g h i j k l"
 >
-  <span
-    className="cf-icon__label"
+  <svg
+    viewBox="0 0 40 40"
+    xmlns="http://www.w3.org/2000/svg"
   >
-    Loading
-  </span>
-</i>
+    <circle
+      cx="50%"
+      cy="50%"
+      r="40%"
+    />
+  </svg>
+</div>
+`;
+
+exports[`should render 2`] = `
+"
+@-webkit-keyframes k1 {
+  0% {
+    stroke-dasharray: 1,95;
+    stroke-dashoffset: 0;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg)
+  }
+
+  50% {
+    stroke-dasharray: 85,95;
+    stroke-dashoffset: -25
+  }
+
+  100% {
+    stroke-dasharray: 85,95;
+    stroke-dashoffset: -93;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg)
+  }
+}
+
+@-moz-keyframes k1 {
+  0% {
+    stroke-dasharray: 1,95;
+    stroke-dashoffset: 0;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg)
+  }
+
+  50% {
+    stroke-dasharray: 85,95;
+    stroke-dashoffset: -25
+  }
+
+  100% {
+    stroke-dasharray: 85,95;
+    stroke-dashoffset: -93;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg)
+  }
+}
+
+@keyframes k1 {
+  0% {
+    stroke-dasharray: 1,95;
+    stroke-dashoffset: 0;
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg)
+  }
+
+  50% {
+    stroke-dasharray: 85,95;
+    stroke-dashoffset: -25
+  }
+
+  100% {
+    stroke-dasharray: 85,95;
+    stroke-dashoffset: -93;
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg)
+  }
+}
+
+.a {
+  width: 15px
+}
+
+.b {
+  animation-duration: 2.5s;
+  -webkit-animation-duration: 2.5s
+}
+
+.c {
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite
+}
+
+.d {
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear
+}
+
+.e>svg {
+  height: 100%
+}
+
+.f>svg {
+  fill: transparent
+}
+
+.g>svg {
+  stroke-width: 6
+}
+
+.h>svg {
+  stroke: #BCBEC0
+}
+
+.i>svg {
+  animation-name: k1
+}
+
+.j>svg {
+  animation-duration: 1.9s;
+  -webkit-animation-duration: 1.9s
+}
+
+.k>svg {
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite
+}
+
+.l>svg {
+  animation-timing-function: linear;
+  -webkit-animation-timing-function: linear
+}
+"
 `;

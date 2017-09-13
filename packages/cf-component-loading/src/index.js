@@ -1,3 +1,8 @@
-import Loading from './Loading';
+import LoadingUnstyled from './Loading';
+import LoadingTheme from './LoadingTheme';
 
-export default Loading;
+import { applyTheme } from 'cf-style-container';
+
+const Loading = applyTheme(LoadingUnstyled, LoadingTheme);
+
+export { Loading, LoadingUnstyled, LoadingTheme };

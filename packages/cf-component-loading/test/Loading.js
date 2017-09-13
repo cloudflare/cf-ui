@@ -1,8 +1,9 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
-import Loading from '../../cf-component-loading/src/index';
+import { felaSnapshot } from 'cf-style-provider';
+import { Loading } from '../../cf-component-loading/src/index';
 
 test('should render', () => {
-  const component = renderer.create(<Loading />);
-  expect(component.toJSON()).toMatchSnapshot();
+  const snapshot = felaSnapshot(<Loading />);
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

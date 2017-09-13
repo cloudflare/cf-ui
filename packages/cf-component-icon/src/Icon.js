@@ -1,32 +1,89 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import SVG_COMPONENTS from './reactsvgs';
+import { createComponent } from 'cf-style-container';
+
+const DEFAULT_HEIGHT = 15;
+
+const getHeight = size => {
+  let height;
+  switch (size) {
+    case '1.5x':
+      height = 22;
+      break;
+    case '2x':
+      height = 30;
+      break;
+    case '2.5x':
+      height = 37;
+      break;
+    case '3x':
+      height = 45;
+      break;
+    case '3.5x':
+      height = 52;
+      break;
+    case '4x':
+      height = 60;
+      break;
+    default:
+      height = DEFAULT_HEIGHT;
+  }
+  return height;
+};
+
+const getFill = (color, theme) => {
+  let fill;
+  switch (color) {
+    case 'default':
+      fill = theme.color.cement;
+      break;
+    case 'primary':
+      fill = theme.color.marine;
+      break;
+    case 'success':
+      fill = theme.color.grass;
+      break;
+    case 'warning':
+      fill = theme.color.carrot;
+      break;
+    case 'danger':
+      fill = theme.color.apple;
+      break;
+    case 'black':
+      fill = theme.colorBlack;
+      break;
+    case 'white':
+      fill = theme.colorWhite;
+      break;
+    default:
+      fill = theme.colorBlack;
+  }
+  return fill;
+};
+
+const iconStyles = ({ theme, size, color }) => ({
+  height: size ? getHeight(size) : DEFAULT_HEIGHT,
+  fill: color ? getFill(color, theme) : theme.colorBlack
+});
+
 class Icon extends React.Component {
   render() {
-    let className = `cf-icon cf-icon--${this.props.type}`;
+    const Svg = SVG_COMPONENTS[this.props.type];
 
-    if (this.props.size) {
-      className += ` cf-icon--${this.props.size}`;
-    }
+    const { size, label, className } = this.props;
 
-    if (this.props.border) className += ' cf-icon--border';
-    if (this.props.spin) className += ' cf-icon--spin';
-    if (this.props.muted) className += ' cf-icon--muted';
-    if (this.props.white) className += ' cf-icon--white';
-
-    return (
-      <i className={className} role={this.props.role}>
-        {this.props.label &&
-          <span className="cf-icon__label">{this.props.label}</span>}
-      </i>
-    );
+    return <Svg className={className} label={label ? label : ''} />;
   }
 }
 
 Icon.propTypes = {
+  className: PropTypes.string.isRequired,
   label: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([false])])
     .isRequired,
   type: PropTypes.oneOf([
+    'api',
     'bolt',
     'calendar',
     'caret-down',
@@ -34,20 +91,19 @@ Icon.propTypes = {
     'caret-right',
     'caret-up',
     'chart',
-    'chevron-down',
-    'chevron-left',
-    'chevron-right',
-    'chevron-up',
     'clipboard',
-    'close',
+    'credit-card',
+    'door',
+    'download',
     'drive',
     'exclamation-sign',
     'facebook',
     'file',
     'filter',
+    'firebolt',
     'flowchart',
     'gear',
-    'googleplus',
+    'google-plus',
     'hamburger',
     'happy',
     'help',
@@ -56,13 +112,14 @@ Icon.propTypes = {
     'list',
     'loading',
     'lock',
-    'ok',
+    'mail',
+    'network',
     'ok-sign',
+    'ok',
     'pause',
     'plus',
     'refresh',
     'remove',
-    'remove-sign',
     'resize-horizontal',
     'sad',
     'search',
@@ -71,15 +128,20 @@ Icon.propTypes = {
     'time',
     'twitter',
     'upload',
-    'widen',
     'wrench'
   ]).isRequired,
-  size: PropTypes.oneOf(['2x', '3x', '4x', 'large', 'xlarge']),
-  border: PropTypes.bool,
-  spin: PropTypes.bool,
-  muted: PropTypes.bool,
-  white: PropTypes.bool,
-  role: PropTypes.string
+
+  color: PropTypes.oneOf([
+    'default',
+    'primary',
+    'success',
+    'warning',
+    'danger',
+    'black',
+    'white'
+  ]),
+
+  size: PropTypes.oneOf(['1.5x', '2x', '2.5x', '3x', '3.5x', '4x'])
 };
 
-export default Icon;
+export default createComponent(iconStyles, Icon);
