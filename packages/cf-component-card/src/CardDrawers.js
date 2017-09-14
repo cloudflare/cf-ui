@@ -15,7 +15,7 @@ const Drawer = createComponent(
     padding: isActive ? '1.5rem' : 'initial'
   }),
   'div',
-  ['key', 'id', 'isActive', 'onClick']
+  ['key', 'id', 'onClick']
 );
 
 class CardDrawers extends React.Component {
@@ -76,9 +76,7 @@ class CardDrawers extends React.Component {
     return (
       <CardSection>
         <CardToolbar controls={this.props.controls} links={links} />
-        <div>
-          {drawers}
-        </div>
+        <div>{drawers}</div>
       </CardSection>
     );
   }
