@@ -6,8 +6,10 @@ import { Logo } from 'cf-component-logo';
 const ViewComponent = () => (
   <Header>
     <Box display="flex">
-      <Hamburger />
-      <a href="#"><Logo /></a>
+      <Hamburger onClick={() => console.log('Yum! Hamburger')} />
+      <a href="#">
+        <Logo />
+      </a>
     </Box>
     <NavList>
       <NavItem>One</NavItem>
