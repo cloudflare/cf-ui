@@ -28,15 +28,7 @@ RadioGroup.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
   value: PropTypes.string.isRequired,
-  onChange: PropTypes.func.isRequired,
-  options: PropTypes.arrayOf(
-    PropTypes.shape({
-      label: PropTypes.oneOfType([PropTypes.string, PropTypes.oneOf([false])])
-        .isRequired,
-      name: PropTypes.string.isRequired,
-      value: PropTypes.string.isRequired
-    })
-  ).isRequired
+  onChange: PropTypes.func.isRequired
 };
 
 export default createComponent(styles, RadioGroup);
