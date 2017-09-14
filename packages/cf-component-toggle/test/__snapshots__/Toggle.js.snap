@@ -6,7 +6,6 @@ exports[`should render 1`] = `
   htmlFor="test"
 >
   <input
-    checkbox={undefined}
     checked={undefined}
     className="al am c an ao ap aq"
     disabled={undefined}
@@ -23,7 +22,6 @@ exports[`should render 1`] = `
     Test Toggle
   </span>
   <span
-    active={undefined}
     className="a al ar as at au av aw ax ay az ba bb bc bd n be o bf bg bh bi bj bk bl bm bn bo y bp z bq br bs bt bu"
   />
 </label>
@@ -325,7 +323,6 @@ exports[`should render checked 1`] = `
   htmlFor="test"
 >
   <input
-    checkbox={undefined}
     checked={true}
     className="al am c an ao ap aq"
     disabled={undefined}
@@ -342,7 +339,6 @@ exports[`should render checked 1`] = `
     Test Toggle
   </span>
   <span
-    active={true}
     className="a al ar as at au av aw ax ay az ba bb bc bd n be o bf bg bh bi bj bk bl bm bn bo y bp z bq br bs bt bu"
   />
 </label>
@@ -644,7 +640,6 @@ exports[`should render disabled 1`] = `
   htmlFor="test"
 >
   <input
-    checkbox={undefined}
     checked={true}
     className="al am c an ao ap aq"
     disabled={true}
@@ -661,7 +656,6 @@ exports[`should render disabled 1`] = `
     Test Toggle
   </span>
   <span
-    active={true}
     className="a al ar as at au av aw ax ay az ba bb bc bd n be o bf bg bh bi bj bk bl bm bn bo y bp z bq br bs bt bu"
   />
 </label>

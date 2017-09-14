@@ -36,7 +36,6 @@ exports[`should render when given all the props 1`] = `
     <div
       className="d ab"
       id={undefined}
-      isActive={true}
       onClick={undefined}
     >
       One Content
@@ -44,7 +43,6 @@ exports[`should render when given all the props 1`] = `
     <div
       className="ac ae"
       id={undefined}
-      isActive={false}
       onClick={undefined}
     />
   </div>
@@ -211,13 +209,11 @@ exports[`should render when not given props 1`] = `
     <div
       className="z ab"
       id={undefined}
-      isActive={false}
       onClick={undefined}
     />
     <div
       className="z ab"
       id={undefined}
-      isActive={false}
       onClick={undefined}
     />
   </div>

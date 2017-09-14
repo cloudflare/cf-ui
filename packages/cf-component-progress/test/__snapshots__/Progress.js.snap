@@ -13,7 +13,6 @@ exports[`should render 1`] = `
     className="l m n o p q"
   >
     <li
-      active={true}
       className="r s t q u v w x y z ab ac ae af ag ah ai"
       disabled={false}
       width="33.3333%"
@@ -28,7 +27,6 @@ exports[`should render 1`] = `
       </a>
     </li>
     <li
-      active={false}
       className="r s t q u aj w x y ak ab ac ae af ag ah ai"
       disabled={false}
       width="33.3333%"
@@ -43,7 +41,6 @@ exports[`should render 1`] = `
       </a>
     </li>
     <li
-      active={false}
       className="r s t q u al w x am ak ab ac ae af ag ah ai"
       disabled={true}
       width="33.3333%"
