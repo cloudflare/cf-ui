@@ -86,7 +86,7 @@ const Item = createComponent(
     };
   },
   'li',
-  ['key', 'width', 'disabled', 'active']
+  ['key', 'width', 'disabled']
 );
 
 class Progress extends React.Component {
@@ -135,9 +135,7 @@ class Progress extends React.Component {
     return (
       <div className={className}>
         <Bar max={max} value={value} />
-        <Items>
-          {items}
-        </Items>
+        <Items>{items}</Items>
       </div>
     );
   }
