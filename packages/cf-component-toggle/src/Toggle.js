@@ -93,8 +93,7 @@ const Handle = createComponent(
       width: 0
     }
   }),
-  'span',
-  ['active']
+  'span'
 );
 
 const HiddenStyles = () => ({
@@ -109,7 +108,6 @@ const HiddenStyles = () => ({
 
 const Input = createComponent(HiddenStyles, 'input', [
   'type',
-  'checkbox',
   'disabled',
   'id',
   'name',
