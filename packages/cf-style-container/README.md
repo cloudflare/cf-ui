@@ -145,6 +145,20 @@ const MyComponent = ({ theme }) => {
 export default withRenderer(MyComponent);
 ```
 
+### applyStaticStyles(staticStyles, Component)
+
+A HOC that applies a string of static styles to a component using fela's [renderStatic](https://github.com/rofrischmann/fela/blob/master/docs/api/fela/Renderer.md#renderstaticstyle-selector).
+Useful for integration with older libraries that require side loading of a static CSS block.
+
+```jsx
+import { applyStaticStyles } from 'cf-style-container';
+
+const staticStyles = '.purple-component { background-color: purple }';
+const MyComponent = () => <div className='purple-component' />;
+
+export default applyStaticStyles(staticStyles, MyComponent);
+```
+
 ## mergeTheme(baseTheme, ...themes)
 
 `applyTheme()` calls this method internally to merge all themes. The returned

@@ -14,7 +14,8 @@ import {
   mapChildren,
   applyTheme,
   withTheme,
-  withRenderer
+  withRenderer,
+  applyStaticStyles
 } from '../src/index';
 
 test('mergeThemes should return an immutable and deeply cloned object', () => {
@@ -112,6 +113,22 @@ test('createComponentStyles creates a component', () => {
   const snapshot = felaSnapshot(<FelaComponent />);
   expect(snapshot.component).toMatchSnapshot();
   expect(snapshot.styles).toMatchSnapshot();
+});
+
+test('applyStaticStyles should add static styles to head', () => {
+  const staticStyles = '.test-static-style { background-color: purple }';
+  const Component = () => <div className="test-static-style" />;
+  const StyledComponent = applyStaticStyles(staticStyles, Component);
+
+  const renderer = createRenderer();
+  mount(
+    <Provider renderer={renderer}>
+      <StyledComponent />
+    </Provider>
+  );
+
+  const headStyle = document.head.querySelector('style').innerHTML;
+  expect(headStyle).toEqual(staticStyles);
 });
 
 test('filterNone will filter out all keys with undefined or null values', () => {
