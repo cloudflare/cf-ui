@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.0.2"></a>
+## [6.0.2](https://github.com/cloudflare/cf-ui/compare/cf-component-progress@6.0.1...cf-component-progress@6.0.2) (2017-09-15)
+
+
+
+
 <a name="6.0.0"></a>
 # [6.0.0](https://github.com/sejoker/cf-ui/compare/cf-component-progress@4.2.1...cf-component-progress@6.0.0) (2017-07-12)
 

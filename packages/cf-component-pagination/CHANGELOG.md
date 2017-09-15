@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.4.2"></a>
+## [5.4.2](https://github.com/cloudflare/cf-ui/compare/cf-component-pagination@5.4.1...cf-component-pagination@5.4.2) (2017-09-15)
+
+
+
+
 <a name="5.4.0"></a>
 # [5.4.0](https://github.com/sejoker/cf-ui/compare/cf-component-pagination@5.2.6...cf-component-pagination@5.4.0) (2017-07-12)
 

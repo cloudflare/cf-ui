@@ -1,7 +1,7 @@
 {
   "name": "cf-style-const",
   "description": "Cloudflare Style Constants",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
