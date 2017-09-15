@@ -25,7 +25,11 @@ const ButtonComponent = () => (
       <Button type="dangerOutline" onClick={() => console.log('Clicked Six!')}>
         Button Six
       </Button>
-      <Button loading onClick={() => console.log('Clicked Loading!')}>
+      <Button
+        type="default"
+        loading
+        onClick={() => console.log('Clicked Loading!')}
+      >
         Button Seven
       </Button>
     </ButtonGroup>

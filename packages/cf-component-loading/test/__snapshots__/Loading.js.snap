@@ -95,7 +95,7 @@ exports[`should render 2`] = `
 }
 
 .a {
-  width: 15px
+  height: 15px
 }
 
 .b {

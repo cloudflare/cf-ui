@@ -5,7 +5,7 @@ import { createComponent } from 'cf-style-container';
 
 const loadingStyles = ({ theme }) => {
   return {
-    width: 15,
+    height: 15,
     animationDuration: '2.5s',
     animationIterationCount: 'infinite',
     animationTimingFunction: 'linear',

@@ -29,12 +29,15 @@ class TabsComponent extends React.Component {
         active={this.state.active}
         tabs={[
           { id: 'one', label: 'Tab One' },
-          { id: 'two', label: 'Tab Two', component: Tab },
+          {
+            id: 'two',
+            label: 'Tab Two: Custom Header',
+            component: Tab
+          },
           { id: 'three', label: 'Tab Three' }
         ]}
         onChange={this.handleTabChange.bind(this)}
       >
-
         <TabsPanel id="one">
           <h1>Tab One</h1>
         </TabsPanel>
