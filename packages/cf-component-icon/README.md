@@ -120,5 +120,4 @@ export default IconComponent;
 
 ```
 
-
 If you specifically don't want to use a `label` then you must pass `false`.
