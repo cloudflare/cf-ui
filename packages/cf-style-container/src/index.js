@@ -75,6 +75,25 @@ const withRenderer = ComponentToWrap => {
 const createComponentStyles = (styleFunctions, component) =>
   connect(styleFunctions)(component);
 
+const applyStaticStyles = (staticStyles, ComponentToWrap) => {
+  class CompWithStaticStyles extends React.PureComponent {
+    componentWillMount() {
+      this.props.renderer.renderStatic(staticStyles);
+    }
+
+    render() {
+      const { renderer, ...props } = this.props;
+      return <ComponentToWrap {...props} />;
+    }
+  }
+
+  CompWithStaticStyles.propTypes = {
+    renderer: PropTypes.object.isRequired
+  };
+
+  return withRenderer(CompWithStaticStyles);
+};
+
 export {
   createComponent,
   mergeThemes,
@@ -85,7 +104,8 @@ export {
   createComponentStyles,
   capitalize,
   withTheme,
-  withRenderer
+  withRenderer,
+  applyStaticStyles
 };
 
 // Loops the key-value pairs of a props object, and apply a filter function to
