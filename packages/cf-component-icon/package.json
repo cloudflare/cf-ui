@@ -1,7 +1,7 @@
 {
   "name": "cf-component-icon",
   "description": "Cloudflare Icon Component",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",

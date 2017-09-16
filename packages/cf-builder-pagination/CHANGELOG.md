@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.0.1"></a>
+## [5.0.1](https://github.com/cloudflare/cf-ui/compare/cf-builder-pagination@5.0.0...cf-builder-pagination@5.0.1) (2017-09-16)
+
+
+
+
 <a name="5.0.0"></a>
 # [5.0.0](https://github.com/cloudflare/cf-ui/compare/cf-builder-pagination@4.4.1...cf-builder-pagination@5.0.0) (2017-09-15)
 
