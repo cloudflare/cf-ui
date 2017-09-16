@@ -21,7 +21,7 @@ exports[`should render pagination 1`] = `
       >
         <svg
           aria-label=""
-          className="ae"
+          className="ae af"
           viewBox="0 0 16 16"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -32,7 +32,7 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="m p af ag s ah ai"
+      className="m p ag ah s ai aj"
       role={null}
     >
       <a
@@ -45,12 +45,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="m p aj ak al"
+      className="m p ak al am"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab al ac"
+        className="t p u v w x y z ab am ac"
         href="#"
         onClick={[Function]}
       >
@@ -58,12 +58,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="m p aj ak al"
+      className="m p ak al am"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab al ac"
+        className="t p u v w x y z ab am ac"
         href="#"
         onClick={[Function]}
       >
@@ -71,12 +71,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="m p aj ak al"
+      className="m p ak al am"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab al ac"
+        className="t p u v w x y z ab am ac"
         href="#"
         onClick={[Function]}
       >
@@ -84,12 +84,12 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="m p aj ak al"
+      className="m p ak al am"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab al ac"
+        className="t p u v w x y z ab am ac"
         href="#"
         onClick={[Function]}
       >
@@ -97,18 +97,18 @@ exports[`should render pagination 1`] = `
       </a>
     </li>
     <li
-      className="m p af ag al n"
+      className="m p ag ah am n"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab al ac"
+        className="t p u v w x y z ab am ac"
         href="#"
         onClick={[Function]}
       >
         <svg
           aria-label=""
-          className="ae am"
+          className="ae an"
           viewBox="0 0 16 16"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -244,34 +244,38 @@ exports[`should render pagination 2`] = `
 }
 
 .af {
-  background-color: #408BC9
+  fill: #7D7D7D
 }
 
 .ag {
-  color: #fff
+  background-color: #408BC9
 }
 
 .ah {
-  border-color: #62a1d8
+  color: #fff
 }
 
 .ai {
-  z-index: 1
+  border-color: #62a1d8
 }
 
 .aj {
-  background-color: #fff
+  z-index: 1
 }
 
 .ak {
-  color: #408BC9
+  background-color: #fff
 }
 
 .al {
-  cursor: pointer
+  color: #408BC9
 }
 
 .am {
+  cursor: pointer
+}
+
+.an {
   fill: #fff
 }
 "
@@ -298,7 +302,7 @@ exports[`should render pagination loading 1`] = `
       >
         <svg
           aria-label=""
-          className="ae"
+          className="ae af"
           viewBox="0 0 16 16"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -309,7 +313,7 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="m p af ag s ah ai"
+      className="m p ag ah s ai aj"
       role={null}
     >
       <a
@@ -319,7 +323,7 @@ exports[`should render pagination loading 1`] = `
         onClick={[Function]}
       >
         <div
-          className="ae aj ak al am an ao ap aq ar as at"
+          className="ae ak al am an ao ap aq ar as at au"
         >
           <svg
             viewBox="0 0 40 40"
@@ -335,12 +339,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="m p au av aw"
+      className="m p av aw ax"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab aw ac"
+        className="t p u v w x y z ab ax ac"
         href="#"
         onClick={[Function]}
       >
@@ -348,12 +352,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="m p au av aw"
+      className="m p av aw ax"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab aw ac"
+        className="t p u v w x y z ab ax ac"
         href="#"
         onClick={[Function]}
       >
@@ -361,12 +365,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="m p au av aw"
+      className="m p av aw ax"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab aw ac"
+        className="t p u v w x y z ab ax ac"
         href="#"
         onClick={[Function]}
       >
@@ -374,12 +378,12 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="m p au av aw"
+      className="m p av aw ax"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab aw ac"
+        className="t p u v w x y z ab ax ac"
         href="#"
         onClick={[Function]}
       >
@@ -387,18 +391,18 @@ exports[`should render pagination loading 1`] = `
       </a>
     </li>
     <li
-      className="m p af ag aw n"
+      className="m p ag ah ax n"
       role={null}
     >
       <a
         aria-label={undefined}
-        className="t p u v w x y z ab aw ac"
+        className="t p u v w x y z ab ax ac"
         href="#"
         onClick={[Function]}
       >
         <svg
           aria-label=""
-          className="ae ax"
+          className="ae ay"
           viewBox="0 0 16 16"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -609,84 +613,88 @@ exports[`should render pagination loading 2`] = `
 }
 
 .af {
-  background-color: #408BC9
+  fill: #7D7D7D
 }
 
 .ag {
-  color: #fff
+  background-color: #408BC9
 }
 
 .ah {
-  border-color: #62a1d8
+  color: #fff
 }
 
 .ai {
-  z-index: 1
+  border-color: #62a1d8
 }
 
 .aj {
+  z-index: 1
+}
+
+.ak {
   animation-duration: 2.5s;
   -webkit-animation-duration: 2.5s
 }
 
-.ak {
+.al {
   animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite
 }
 
-.al {
+.am {
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear
 }
 
-.am>svg {
+.an>svg {
   height: 100%
 }
 
-.an>svg {
+.ao>svg {
   fill: transparent
 }
 
-.ao>svg {
+.ap>svg {
   stroke-width: 6
 }
 
-.ap>svg {
+.aq>svg {
   stroke: #BCBEC0
 }
 
-.aq>svg {
+.ar>svg {
   animation-name: k1
 }
 
-.ar>svg {
+.as>svg {
   animation-duration: 1.9s;
   -webkit-animation-duration: 1.9s
 }
 
-.as>svg {
+.at>svg {
   animation-iteration-count: infinite;
   -webkit-animation-iteration-count: infinite
 }
 
-.at>svg {
+.au>svg {
   animation-timing-function: linear;
   -webkit-animation-timing-function: linear
 }
 
-.au {
+.av {
   background-color: #fff
 }
 
-.av {
+.aw {
   color: #408BC9
 }
 
-.aw {
+.ax {
   cursor: pointer
 }
 
-.ax {
+.ay {
   fill: #fff
 }
 "
@@ -1069,7 +1077,7 @@ exports[`should render pagination with the last page active 1`] = `
       >
         <svg
           aria-label=""
-          className="ae"
+          className="ae an"
           viewBox="0 0 16 16"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -1234,6 +1242,10 @@ exports[`should render pagination with the last page active 2`] = `
 
 .am {
   color: #666
+}
+
+.an {
+  fill: #7D7D7D
 }
 "
 `;
