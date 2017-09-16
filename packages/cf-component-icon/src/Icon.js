@@ -37,19 +37,19 @@ const getFill = (color, theme) => {
   let fill;
   switch (color) {
     case 'default':
-      fill = theme.color.cement;
+      fill = theme.colors.cement;
       break;
     case 'primary':
-      fill = theme.color.marine;
+      fill = theme.colors.marine;
       break;
     case 'success':
-      fill = theme.color.grass;
+      fill = theme.colors.grass;
       break;
     case 'warning':
-      fill = theme.color.carrot;
+      fill = theme.colors.carrot;
       break;
     case 'danger':
-      fill = theme.color.apple;
+      fill = theme.colors.apple;
       break;
     case 'black':
       fill = theme.colorBlack;
