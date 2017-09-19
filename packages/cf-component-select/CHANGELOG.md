@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.0.2"></a>
+## [4.0.2](https://github.com/cloudflare/cf-ui/compare/cf-component-select@4.0.1...cf-component-select@4.0.2) (2017-09-19)
+
+
+### Bug Fixes
+
+* **cf-component-select:** Pass disabled property to react-select (#378) ([05cbe95](https://github.com/cloudflare/cf-ui/commit/05cbe95))
+
+
+
+
 <a name="4.0.1"></a>
 ## [4.0.1](https://github.com/cloudflare/cf-ui/compare/cf-component-select@4.0.0...cf-component-select@4.0.1) (2017-09-19)
 
