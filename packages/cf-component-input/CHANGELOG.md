@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="5.7.0"></a>
+# [5.7.0](https://github.com/cloudflare/cf-ui/compare/cf-component-input@5.6.0...cf-component-input@5.7.0) (2017-09-19)
+
+
+### Features
+
+* **cf-component-input:** Add color to list of input types (#375) ([8dd3e65](https://github.com/cloudflare/cf-ui/commit/8dd3e65))
+
+
+
+
 <a name="5.6.0"></a>
 # [5.6.0](https://github.com/cloudflare/cf-ui/compare/cf-component-input@5.5.0...cf-component-input@5.6.0) (2017-09-08)
 
