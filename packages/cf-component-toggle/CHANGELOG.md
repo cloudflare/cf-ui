@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="4.0.9"></a>
+## [4.0.9](https://github.com/cloudflare/cf-ui/compare/cf-component-toggle@4.0.8...cf-component-toggle@4.0.9) (2017-09-19)
+
+
+
+
 <a name="4.0.8"></a>
 ## [4.0.8](https://github.com/cloudflare/cf-ui/compare/cf-component-toggle@4.0.7...cf-component-toggle@4.0.8) (2017-09-15)
 

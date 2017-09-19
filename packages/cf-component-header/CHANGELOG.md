@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="1.1.3"></a>
+## [1.1.3](https://github.com/cloudflare/cf-ui/compare/cf-component-header@1.1.2...cf-component-header@1.1.3) (2017-09-19)
+
+
+
+
 <a name="1.1.2"></a>
 ## [1.1.2](https://github.com/cloudflare/cf-ui/compare/cf-component-header@1.1.1...cf-component-header@1.1.2) (2017-09-16)
 

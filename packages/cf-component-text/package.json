@@ -1,7 +1,7 @@
 {
   "name": "cf-component-text",
   "description": "Cloudflare Text Component",
-  "version": "4.5.1",
+  "version": "4.5.2",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "capitalize": "^1.0.0",
-    "cf-style-container": "^4.1.0",
+    "cf-style-container": "^5.0.0",
     "prop-types": "^15.5.8"
   },
   "peerDependencies": {

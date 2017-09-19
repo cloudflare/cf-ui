@@ -1,7 +1,7 @@
 {
   "name": "cf-component-pagination",
   "description": "Cloudflare Pagination Component",
-  "version": "5.4.3",
+  "version": "5.4.4",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -11,8 +11,8 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-component-icon": "^3.0.1",
-    "cf-style-container": "^4.1.0",
+    "cf-component-icon": "^3.0.2",
+    "cf-style-container": "^5.0.0",
     "lodash": "^4.2.0",
     "prop-types": "^15.5.8"
   },

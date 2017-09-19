@@ -1,7 +1,7 @@
 {
   "name": "cf-component-icon",
   "description": "Cloudflare Icon Component",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",
@@ -11,7 +11,7 @@
     "registry": "http://registry.npmjs.org/"
   },
   "dependencies": {
-    "cf-style-container": "^4.1.0",
+    "cf-style-container": "^5.0.0",
     "prop-types": "^15.5.8"
   },
   "peerDependencies": {

@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="6.7.5"></a>
+## [6.7.5](https://github.com/cloudflare/cf-ui/compare/cf-component-tabs@6.7.4...cf-component-tabs@6.7.5) (2017-09-19)
+
+
+
+
 <a name="6.7.4"></a>
 ## [6.7.4](https://github.com/cloudflare/cf-ui/compare/cf-component-tabs@6.7.2...cf-component-tabs@6.7.4) (2017-09-11)
 

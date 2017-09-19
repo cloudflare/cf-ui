@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="7.1.3"></a>
+## [7.1.3](https://github.com/cloudflare/cf-ui/compare/cf-component-form@7.1.2...cf-component-form@7.1.3) (2017-09-19)
+
+
+
+
 <a name="7.1.2"></a>
 ## [7.1.2](https://github.com/cloudflare/cf-ui/compare/cf-component-form@7.1.0...cf-component-form@7.1.2) (2017-08-22)
 
