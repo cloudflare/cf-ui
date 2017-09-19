@@ -198,11 +198,10 @@ const styles = ({ theme, disabled }) => {
     display: theme.display,
     verticalAlign: theme.verticalAlign,
     position: 'relative',
-    opacity: disabled ? 0.5 : 1,
     textAlign: 'left',
 
     '& .Select-control': {
-      backgroundColor: disabled ? theme.color.smoke : theme.colorWhite,
+      backgroundColor: disabled ? theme.color.dust : theme.colorWhite,
       border: `1px solid ${theme.color.hail}`,
       borderRadius: theme.borderRadius,
       color: theme.color.charcoal,
@@ -215,7 +214,8 @@ const styles = ({ theme, disabled }) => {
       overflow: 'hidden',
       position: 'relative',
       width: '100%',
-      transition: 'border-color 0.2s ease'
+      transition: 'border-color 0.2s ease',
+      opacity: disabled ? 0.5 : 1
     },
     '& .Select-control .Select-input:focus': {
       outline: 'none'
