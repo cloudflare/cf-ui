@@ -2,7 +2,7 @@
 
 exports[`should render 1`] = `
 <div
-  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak al am an ao ap aq ar as at au av aw ax ay az ba bb bc bd be bf bg bh bi bj bk bl bm bn bo bp bq br bs bt bu bv bw bx by bz ca cb cc cd ce cf cg ch ci cj ck cl cm cn co cp cq cr cs ct cu cv cw cx cy cz"
+  className="a b c d e f g h i j k l m n o p q r s t u v w x y z ab ac ae af ag ah ai aj ak al am an ao ap aq ar as at au av aw ax ay az ba bb bc bd be bf bg bh bi bj bk bl bm bn bo bp bq br bs bt bu bv bw bx by bz ca cb cc cd ce cf cg ch ci cj ck cl cm cn co cp cq cr cs ct cu cv cw cx cy cz da"
 >
   <div
     className="Select Select--single"
@@ -50,7 +50,7 @@ exports[`should render 1`] = `
         onMouseDown={[Function]}
       >
         <div
-          className="da db dc dd de df n dg"
+          className="db dc dd de df dg n dh"
         />
       </span>
     </div>
@@ -118,7 +118,7 @@ exports[`should render 2`] = `
 }
 
 .o {
-  opacity: 1
+  text-align: left
 }
 
 .p .Select-control {
@@ -179,323 +179,327 @@ exports[`should render 2`] = `
   -moz-transition: border-color 0.2s ease
 }
 
-.af .Select-control .Select-input:focus {
+.af .Select-control {
+  opacity: 1
+}
+
+.ag .Select-control .Select-input:focus {
   outline: none
 }
 
-.ag .Select-menu-outer {
+.ah .Select-menu-outer {
   position: relative
 }
 
-.ah:hover .Select-control {
+.ai:hover .Select-control {
   border-color: #2869a2
 }
 
-.ai .is-focused .Select-control {
+.aj .is-focused .Select-control {
   border-color: #2869a2
 }
 
-.aj .is-open .Select-control {
+.ak .is-open .Select-control {
   border-color: #BCBEC0
 }
 
-.ak .Select-placeholder {
-  bottom: 0px
-}
-
 .al .Select-placeholder {
-  color: #333
+  bottom: 0px
 }
 
 .am .Select-placeholder {
-  left: 0px
-}
-
-.an .Select-placeholder {
-  line-height: 32px
-}
-
-.ao .Select-placeholder {
-  padding-left: 10px
-}
-
-.ap .Select-placeholder {
-  padding-right: 10px
-}
-
-.aq .Select-placeholder {
-  position: absolute
-}
-
-.ar .Select-placeholder {
-  right: 0px
-}
-
-.as .Select-placeholder {
-  top: 0px
-}
-
-.at .Select-placeholder {
-  max-width: 100%
-}
-
-.au .Select-placeholder {
-  overflow: hidden
-}
-
-.av .Select-placeholder {
-  text-overflow: ellipsis
-}
-
-.aw .Select-placeholder {
-  white-space: nowrap
-}
-
-.ax .Select--single > .Select-control .Select-value {
-  bottom: 0px
-}
-
-.ay .Select--single > .Select-control .Select-value {
   color: #333
 }
 
-.az .Select--single > .Select-control .Select-value {
+.an .Select-placeholder {
   left: 0px
 }
 
-.ba .Select--single > .Select-control .Select-value {
+.ao .Select-placeholder {
   line-height: 32px
 }
 
-.bb .Select--single > .Select-control .Select-value {
+.ap .Select-placeholder {
   padding-left: 10px
 }
 
-.bc .Select--single > .Select-control .Select-value {
+.aq .Select-placeholder {
   padding-right: 10px
 }
 
-.bd .Select--single > .Select-control .Select-value {
+.ar .Select-placeholder {
   position: absolute
 }
 
-.be .Select--single > .Select-control .Select-value {
+.as .Select-placeholder {
   right: 0px
 }
 
-.bf .Select--single > .Select-control .Select-value {
+.at .Select-placeholder {
   top: 0px
 }
 
-.bg .Select--single > .Select-control .Select-value {
+.au .Select-placeholder {
   max-width: 100%
 }
 
-.bh .Select--single > .Select-control .Select-value {
+.av .Select-placeholder {
   overflow: hidden
 }
 
-.bi .Select--single > .Select-control .Select-value {
+.aw .Select-placeholder {
   text-overflow: ellipsis
 }
 
-.bj .Select--single > .Select-control .Select-value {
+.ax .Select-placeholder {
   white-space: nowrap
 }
 
-.bk .Select-input {
-  height: 32px
+.ay .Select--single > .Select-control .Select-value {
+  bottom: 0px
 }
 
-.bl .Select-input {
+.az .Select--single > .Select-control .Select-value {
+  color: #333
+}
+
+.ba .Select--single > .Select-control .Select-value {
+  left: 0px
+}
+
+.bb .Select--single > .Select-control .Select-value {
+  line-height: 32px
+}
+
+.bc .Select--single > .Select-control .Select-value {
   padding-left: 10px
 }
 
-.bm .Select-input {
+.bd .Select--single > .Select-control .Select-value {
   padding-right: 10px
 }
 
-.bn .Select-input {
-  vertical-align: middle
+.be .Select--single > .Select-control .Select-value {
+  position: absolute
 }
 
-.bo .Select-input > input {
-  width: 100%
+.bf .Select--single > .Select-control .Select-value {
+  right: 0px
 }
 
-.bp .Select-input > input {
-  background: none transparent
+.bg .Select--single > .Select-control .Select-value {
+  top: 0px
 }
 
-.bq .Select-input > input {
-  border: 0 none
+.bh .Select--single > .Select-control .Select-value {
+  max-width: 100%
 }
 
-.br .Select-input > input {
-  cursor: default
-}
-
-.bs .Select-input > input {
-  display: inline-block
-}
-
-.bt .Select-input > input {
-  font-family: inherit
-}
-
-.bu .Select-input > input {
-  font-size: inherit
-}
-
-.bv .Select-input > input {
-  margin: 0px
-}
-
-.bw .Select-input > input {
-  outline: none
-}
-
-.bx .Select-input > input {
-  line-height: 14px
-}
-
-.by .Select-input > input {
-  padding: 0px
-}
-
-.bz .Select-noresults {
-  box-vizing: border-box
-}
-
-.ca .Select-noresults {
-  color: #7D7D7D
-}
-
-.cb .Select-noresults {
-  cursor: default
-}
-
-.cc .Select-noresults {
-  display: block
-}
-
-.cd .Select-noresults {
-  padding: 8px 10px
-}
-
-.ce .Select-aria-only {
-  display: inline-block
-}
-
-.cf .Select-aria-only {
-  height: 1px
-}
-
-.cg .Select-aria-only {
-  width: 1px
-}
-
-.ch .Select-aria-only {
-  margin: -1px
-}
-
-.ci .Select-aria-only {
-  clip: rect(0, 0, 0, 0)
-}
-
-.cj .Select-aria-only {
+.bi .Select--single > .Select-control .Select-value {
   overflow: hidden
 }
 
-.ck .Select-arrow-zone {
-  cursor: pointer
+.bj .Select--single > .Select-control .Select-value {
+  text-overflow: ellipsis
 }
 
-.cl .Select-arrow-zone {
-  display: table-cell
+.bk .Select--single > .Select-control .Select-value {
+  white-space: nowrap
 }
 
-.cm .Select-arrow-zone {
-  position: relative
+.bl .Select-input {
+  height: 32px
 }
 
-.cn .Select-arrow-zone {
-  text-align: center
+.bm .Select-input {
+  padding-left: 10px
 }
 
-.co .Select-arrow-zone {
+.bn .Select-input {
+  padding-right: 10px
+}
+
+.bo .Select-input {
   vertical-align: middle
 }
 
-.cp .Select-arrow-zone {
-  width: 25px
+.bp .Select-input > input {
+  width: 100%
 }
 
-.cq .Select-arrow-zone {
-  padding-right: 5px
+.bq .Select-input > input {
+  background: none transparent
 }
 
-.cr .Select-arrow-zone {
-  top: 1px
+.br .Select-input > input {
+  border: 0 none
 }
 
-.cs .Select-clear-zone {
-  color: #7D7D7D
+.bs .Select-input > input {
+  cursor: default
 }
 
-.ct .Select-clear-zone {
-  cursor: pointer
-}
-
-.cu .Select-clear-zone {
-  display: table-cell
-}
-
-.cv .Select-clear-zone {
-  position: relative
-}
-
-.cw .Select-clear-zone {
-  top: 1px
-}
-
-.cx .Select-clear-zone {
-  text-align: center
-}
-
-.cy .Select-clear-zone {
-  vertical-align: middle
-}
-
-.cz .Select-clear-zone {
-  width: 17px
-}
-
-.da {
-  border-color: #7D7D7D transparent transparent
-}
-
-.db {
-  border-width: 5px 5px 2.5px
-}
-
-.dc {
-  border-style: solid
-}
-
-.dd {
+.bt .Select-input > input {
   display: inline-block
 }
 
+.bu .Select-input > input {
+  font-family: inherit
+}
+
+.bv .Select-input > input {
+  font-size: inherit
+}
+
+.bw .Select-input > input {
+  margin: 0px
+}
+
+.bx .Select-input > input {
+  outline: none
+}
+
+.by .Select-input > input {
+  line-height: 14px
+}
+
+.bz .Select-input > input {
+  padding: 0px
+}
+
+.ca .Select-noresults {
+  box-vizing: border-box
+}
+
+.cb .Select-noresults {
+  color: #7D7D7D
+}
+
+.cc .Select-noresults {
+  cursor: default
+}
+
+.cd .Select-noresults {
+  display: block
+}
+
+.ce .Select-noresults {
+  padding: 8px 10px
+}
+
+.cf .Select-aria-only {
+  display: inline-block
+}
+
+.cg .Select-aria-only {
+  height: 1px
+}
+
+.ch .Select-aria-only {
+  width: 1px
+}
+
+.ci .Select-aria-only {
+  margin: -1px
+}
+
+.cj .Select-aria-only {
+  clip: rect(0, 0, 0, 0)
+}
+
+.ck .Select-aria-only {
+  overflow: hidden
+}
+
+.cl .Select-arrow-zone {
+  cursor: pointer
+}
+
+.cm .Select-arrow-zone {
+  display: table-cell
+}
+
+.cn .Select-arrow-zone {
+  position: relative
+}
+
+.co .Select-arrow-zone {
+  text-align: center
+}
+
+.cp .Select-arrow-zone {
+  vertical-align: middle
+}
+
+.cq .Select-arrow-zone {
+  width: 25px
+}
+
+.cr .Select-arrow-zone {
+  padding-right: 5px
+}
+
+.cs .Select-arrow-zone {
+  top: 1px
+}
+
+.ct .Select-clear-zone {
+  color: #7D7D7D
+}
+
+.cu .Select-clear-zone {
+  cursor: pointer
+}
+
+.cv .Select-clear-zone {
+  display: table-cell
+}
+
+.cw .Select-clear-zone {
+  position: relative
+}
+
+.cx .Select-clear-zone {
+  top: 1px
+}
+
+.cy .Select-clear-zone {
+  text-align: center
+}
+
+.cz .Select-clear-zone {
+  vertical-align: middle
+}
+
+.da .Select-clear-zone {
+  width: 17px
+}
+
+.db {
+  border-color: #7D7D7D transparent transparent
+}
+
+.dc {
+  border-width: 5px 5px 2.5px
+}
+
+.dd {
+  border-style: solid
+}
+
 .de {
-  height: 0px
+  display: inline-block
 }
 
 .df {
-  width: 0px
+  height: 0px
 }
 
 .dg {
+  width: 0px
+}
+
+.dh {
   top: 0px
 }
 "

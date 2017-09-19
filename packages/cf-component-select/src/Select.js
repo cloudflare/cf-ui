@@ -91,7 +91,6 @@ class Select extends React.Component {
       async,
       creatable,
       searchable,
-      disabled,
       label,
       className,
       ...props
@@ -199,10 +198,10 @@ const styles = ({ theme, disabled }) => {
     display: theme.display,
     verticalAlign: theme.verticalAlign,
     position: 'relative',
-    opacity: disabled ? 0.5 : 1,
+    textAlign: 'left',
 
     '& .Select-control': {
-      backgroundColor: disabled ? theme.color.smoke : theme.colorWhite,
+      backgroundColor: disabled ? theme.color.dust : theme.colorWhite,
       border: `1px solid ${theme.color.hail}`,
       borderRadius: theme.borderRadius,
       color: theme.color.charcoal,
@@ -215,7 +214,8 @@ const styles = ({ theme, disabled }) => {
       overflow: 'hidden',
       position: 'relative',
       width: '100%',
-      transition: 'border-color 0.2s ease'
+      transition: 'border-color 0.2s ease',
+      opacity: disabled ? 0.5 : 1
     },
     '& .Select-control .Select-input:focus': {
       outline: 'none'
@@ -224,7 +224,7 @@ const styles = ({ theme, disabled }) => {
       position: 'relative'
     },
     '&:hover .Select-control': {
-      borderColor: theme.colorBlueDark
+      borderColor: disabled ? theme.color.hail : theme.colorBlueDark
     },
     '& .is-focused .Select-control': {
       borderColor: theme.colorBlueDark
@@ -271,7 +271,7 @@ const styles = ({ theme, disabled }) => {
       overflow: 'hidden'
     },
     '& .Select-arrow-zone': {
-      cursor: 'pointer',
+      cursor: disabled ? 'default' : 'pointer',
       display: 'table-cell',
       position: 'relative',
       textAlign: 'center',
