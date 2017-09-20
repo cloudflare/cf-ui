@@ -59,22 +59,14 @@ const base = {
     storm: '#808285',
     hail: '#BCBEC0',
     moonshine: '#F7F7F7',
-    //current colors
-    cement: '#7D7D7D',
-    grass: '#9BCA3E',
+
+    //Need to rename these colors, do not use
     grass50: '#cde49e',
     grass10: '#f5faeb',
-    marine: '#2F7BBF',
     marine50: '#97bddf',
     marine10: '#eaf2f8',
-    tangerine: '#FF7900',
-    apple: '#BD2527',
     apple50: '#de9293',
-    apple10: '#f8e9e9',
-    charcoal: '#333333',
-    carrot: '#f56500',
-    smoke: '#e0e0e0',
-    dust: '#ebebeb'
+    apple10: '#f8e9e9'
   },
   fontSize: '15px',
   boxShadow: '0 0 20px 0 rgba(136,136,136,0.50)',
