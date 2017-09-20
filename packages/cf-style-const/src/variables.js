@@ -26,15 +26,19 @@ const base = {
   color: {
     //Style guide colors
     grass: '#9BCA3E',
+    fern: '#85B832',
     marine: '#2F7BBF',
+    thunder: '#286EA4',
     apple: '#BD2527',
-    cherry: '#9F1F21',
+    cherry: '#A61E20',
     tangerine: '#FF7900',
+    pumpkin: '#E66B00',
     carrot: '#f56500',
     moonshine: '#F7F7F7',
     dust: '#ebebeb',
     smoke: '#e0e0e0',
     hail: '#BCBEC0',
+    ash: '#CCCCCC',
     storm: '#808285',
     cement: '#7D7D7D',
     dusk: '#4D4D4F',
@@ -55,23 +59,14 @@ const base = {
     storm: '#808285',
     hail: '#BCBEC0',
     moonshine: '#F7F7F7',
-    //current colors
-    cement: '#7D7D7D',
-    grass: '#9BCA3E',
+
+    //Need to rename these colors, do not use
     grass50: '#cde49e',
     grass10: '#f5faeb',
-    marine: '#2F7BBF',
     marine50: '#97bddf',
     marine10: '#eaf2f8',
-    tangerine: '#FF7900',
-    apple: '#BD2527',
     apple50: '#de9293',
-    apple10: '#f8e9e9',
-    cherry: '#9F1F21',
-    charcoal: '#333333',
-    carrot: '#f56500',
-    smoke: '#e0e0e0',
-    dust: '#ebebeb'
+    apple10: '#f8e9e9'
   },
   fontSize: '15px',
   boxShadow: '0 0 20px 0 rgba(136,136,136,0.50)',
