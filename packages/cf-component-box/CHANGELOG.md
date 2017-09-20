@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.6.13"></a>
+## [2.6.13](https://github.com/cloudflare/cf-ui/compare/cf-component-box@2.6.9...cf-component-box@2.6.13) (2017-09-20)
+
+
+
+
 <a name="2.6.12"></a>
 ## [2.6.12](https://github.com/cloudflare/cf-ui/compare/cf-component-box@2.6.9...cf-component-box@2.6.12) (2017-09-19)
 

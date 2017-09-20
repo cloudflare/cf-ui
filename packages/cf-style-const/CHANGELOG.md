@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="2.5.2"></a>
+## [2.5.2](https://github.com/cloudflare/cf-ui/compare/cf-style-const@2.5.1...cf-style-const@2.5.2) (2017-09-20)
+
+
+
+
 <a name="2.5.1"></a>
 ## [2.5.1](https://github.com/cloudflare/cf-ui/compare/cf-style-const@2.5.0...cf-style-const@2.5.1) (2017-09-15)
 
