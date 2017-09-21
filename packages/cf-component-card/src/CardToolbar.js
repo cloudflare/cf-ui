@@ -37,8 +37,7 @@ const CardToolbar = ({ className, controls, links }) => (
 CardToolbar.propTypes = {
   className: PropTypes.string,
   controls: PropTypes.any,
-  links: PropTypes.any,
-  children: PropTypes.node
+  links: PropTypes.any
 };
 
 export default createComponent(styles, CardToolbar);

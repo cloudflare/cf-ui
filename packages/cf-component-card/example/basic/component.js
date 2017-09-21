@@ -8,7 +8,9 @@ import {
   CardMessages,
   CardSection,
   CardTitle,
-  CardFooter
+  CardFooter,
+  CardToolbar,
+  CardToolbarLink
 } from 'cf-component-card';
 import { Button } from 'cf-component-button';
 
@@ -58,6 +60,20 @@ class CardComponent extends React.Component {
             }
           ]}
         />
+        <CardSection>
+          <CardToolbar
+            controls={[]}
+            links={[
+              <CardToolbarLink
+                expandable={false}
+                onClick={() =>
+                  window.open('https://en.wikipedia.org/wiki/Main_Page')}
+              >
+                Wikipedia
+              </CardToolbarLink>
+            ]}
+          />
+        </CardSection>
       </Card>
     );
   }
