@@ -60,20 +60,18 @@ class CardComponent extends React.Component {
             }
           ]}
         />
-        <CardSection>
-          <CardToolbar
-            controls={[]}
-            links={[
-              <CardToolbarLink
-                expandable={false}
-                onClick={() =>
-                  window.open('https://en.wikipedia.org/wiki/Main_Page')}
-              >
-                Wikipedia
-              </CardToolbarLink>
-            ]}
-          />
-        </CardSection>
+        <CardToolbar
+          controls={[]}
+          links={[
+            <CardToolbarLink
+              expandable={false}
+              onClick={() =>
+                window.open('https://en.wikipedia.org/wiki/Main_Page')}
+            >
+              Wikipedia
+            </CardToolbarLink>
+          ]}
+        />
       </Card>
     );
   }

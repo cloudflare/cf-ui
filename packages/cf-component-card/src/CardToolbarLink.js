@@ -38,10 +38,10 @@ class CardToolbarLink extends React.Component {
   }
 
   render() {
-    const { id, className, to, children } = this.props;
+    const { id, className, to, children, expandable } = this.props;
     return (
       <Link
-        role="tab"
+        role={expandable ? 'tab' : 'link'}
         id={id}
         className={className}
         to={to}
@@ -67,4 +67,8 @@ CardToolbarLink.defaultProps = {
   expandable: true
 };
 
-export default createComponent(styles, CardToolbarLink, ['isActive', 'expandable', 'to']);
+export default createComponent(styles, CardToolbarLink, [
+  'isActive',
+  'expandable',
+  'to'
+]);
