@@ -383,7 +383,7 @@ exports[`should render drawers 1`] = `
         role="tablist"
       >
         <a
-          className="cf-link v w x y z ab ac ae af ag ah ai aj ak"
+          className="cf-link cf-card__toolbar_link"
           href="#!"
           id="card-0-drawer-help"
           onClick={[Function]}
@@ -392,7 +392,7 @@ exports[`should render drawers 1`] = `
           Help
         </a>
         <a
-          className="cf-link v w x y z ab ac ae af ag ah ai aj ak"
+          className="cf-link cf-card__toolbar_link"
           href="#!"
           id="card-0-drawer-api"
           onClick={[Function]}
@@ -404,15 +404,13 @@ exports[`should render drawers 1`] = `
     </div>
     <div>
       <div
-        className="al am"
+        className="v w"
         id={undefined}
-        isActive={false}
         onClick={undefined}
       />
       <div
-        className="al am"
+        className="v w"
         id={undefined}
-        isActive={false}
         onClick={undefined}
       />
     </div>
@@ -505,69 +503,10 @@ exports[`should render drawers 2`] = `
 }
 
 .v {
-  position: relative
-}
-
-.w {
-  display: inline-block
-}
-
-.x {
-  padding: 0.73333rem 2em 0.73333rem 0.5rem
-}
-
-.y {
-  line-height: 1.5
-}
-
-.z::after {
-  content: '\\\\f003'
-}
-
-.ab::after {
-  font-family: \\"cloudflare-font\\"
-}
-
-.ac::after {
-  font-style: normal
-}
-
-.ae::after {
-  font-weight: normal
-}
-
-.af::after {
-  margin-top: -0.7em
-}
-
-.ag::after {
-  position: absolute
-}
-
-.ah::after {
-  top: 51%
-}
-
-.ai::after {
-  right: 1rem
-}
-
-.aj::after {
-  transition: -webkit-transform 0.2s ease,transform 0.2s ease;
-  -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
-  -moz-transition: transform 0.2s ease
-}
-
-.ak::after {
-  transform: initial;
-  -webkit-transform: initial
-}
-
-.al {
   border-top: initial
 }
 
-.am {
+.w {
   padding: initial
 }
 

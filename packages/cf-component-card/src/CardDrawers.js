@@ -4,7 +4,7 @@ import { createComponent } from 'cf-style-container';
 
 import CardSection from './CardSection';
 import CardToolbar from './CardToolbar';
-import CardDrawerLink from './CardDrawerLink';
+import CardToolbarLink from './CardToolbarLink';
 import CardPropTypes from './CardPropTypes';
 
 let UNIQUE_ID = 0;
@@ -50,14 +50,15 @@ class CardDrawers extends React.Component {
       const id = `card-${this._cardId}-drawer-${drawer.id}`;
 
       links.push(
-        <CardDrawerLink
+        <CardToolbarLink
           key={drawer.id}
           id={id}
           isActive={isActive}
           onClick={() => this.handleLinkClick(drawer.id)}
+          expandable
         >
           {drawer.name}
-        </CardDrawerLink>
+        </CardToolbarLink>
       );
 
       drawers.push(

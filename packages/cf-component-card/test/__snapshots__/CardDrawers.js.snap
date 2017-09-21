@@ -13,7 +13,7 @@ exports[`should render when given all the props 1`] = `
       role="tablist"
     >
       <a
-        className="cf-link cf-card__toolbar_link cf-card__toolbar_link--open"
+        className="cf-link l m n o p q r s t u v w x y"
         href="#!"
         id="card-0-drawer-one"
         onClick={[Function]}
@@ -22,7 +22,7 @@ exports[`should render when given all the props 1`] = `
         One
       </a>
       <a
-        className="cf-link cf-card__toolbar_link"
+        className="cf-link l m n o p q r s t u v w x z"
         href="#!"
         id="card-0-drawer-two"
         onClick={[Function]}
@@ -34,14 +34,14 @@ exports[`should render when given all the props 1`] = `
   </div>
   <div>
     <div
-      className="d l"
+      className="d ab"
       id={undefined}
       onClick={undefined}
     >
       One Content
     </div>
     <div
-      className="m n"
+      className="ac ae"
       id={undefined}
       onClick={undefined}
     />
@@ -96,14 +96,78 @@ exports[`should render when given all the props 2`] = `
 }
 
 .l {
-  padding: 1.5rem
+  position: relative
 }
 
 .m {
-  border-top: initial
+  display: inline-block
 }
 
 .n {
+  padding: 0.73333rem 2em 0.73333rem 0.5rem
+}
+
+.o {
+  line-height: 1.5
+}
+
+.p::after {
+  content: '\\\\f003'
+}
+
+.q::after {
+  font-family: \\"cloudflare-font\\"
+}
+
+.r::after {
+  font-style: normal
+}
+
+.s::after {
+  font-weight: normal
+}
+
+.t::after {
+  margin-top: -0.7em
+}
+
+.u::after {
+  position: absolute
+}
+
+.v::after {
+  top: 51%
+}
+
+.w::after {
+  right: 1rem
+}
+
+.x::after {
+  transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -moz-transition: transform 0.2s ease
+}
+
+.y::after {
+  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg)
+}
+
+.z::after {
+  transform: initial;
+  -webkit-transform: initial
+}
+
+.ab {
+  padding: 1.5rem
+}
+
+.ac {
+  border-top: initial
+}
+
+.ae {
   padding: initial
 }
 "
@@ -122,7 +186,7 @@ exports[`should render when not given props 1`] = `
       role="tablist"
     >
       <a
-        className="cf-link cf-card__toolbar_link"
+        className="cf-link l m n o p q r s t u v w x y"
         href="#!"
         id="card-1-drawer-one"
         onClick={[Function]}
@@ -131,7 +195,7 @@ exports[`should render when not given props 1`] = `
         One
       </a>
       <a
-        className="cf-link cf-card__toolbar_link"
+        className="cf-link l m n o p q r s t u v w x y"
         href="#!"
         id="card-1-drawer-two"
         onClick={[Function]}
@@ -143,12 +207,12 @@ exports[`should render when not given props 1`] = `
   </div>
   <div>
     <div
-      className="l m"
+      className="z ab"
       id={undefined}
       onClick={undefined}
     />
     <div
-      className="l m"
+      className="z ab"
       id={undefined}
       onClick={undefined}
     />
@@ -203,10 +267,69 @@ exports[`should render when not given props 2`] = `
 }
 
 .l {
-  border-top: initial
+  position: relative
 }
 
 .m {
+  display: inline-block
+}
+
+.n {
+  padding: 0.73333rem 2em 0.73333rem 0.5rem
+}
+
+.o {
+  line-height: 1.5
+}
+
+.p::after {
+  content: '\\\\f003'
+}
+
+.q::after {
+  font-family: \\"cloudflare-font\\"
+}
+
+.r::after {
+  font-style: normal
+}
+
+.s::after {
+  font-weight: normal
+}
+
+.t::after {
+  margin-top: -0.7em
+}
+
+.u::after {
+  position: absolute
+}
+
+.v::after {
+  top: 51%
+}
+
+.w::after {
+  right: 1rem
+}
+
+.x::after {
+  transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -webkit-transition: -webkit-transform 0.2s ease,transform 0.2s ease;
+  -moz-transition: transform 0.2s ease
+}
+
+.y::after {
+  transform: initial;
+  -webkit-transform: initial
+}
+
+.z {
+  border-top: initial
+}
+
+.ab {
   padding: initial
 }
 "
