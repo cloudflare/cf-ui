@@ -81,7 +81,7 @@ exports[`should render nonexpandable link 1`] = `
   href="#!"
   id="link"
   onClick={[Function]}
-  role="tab"
+  role="link"
 >
   CardToolbarLink
 </a>
