@@ -1,5 +1,23 @@
 import React from 'react';
-import { Checkbox, CheckboxGroup } from 'cf-component-checkbox';
+import {
+  Checkbox,
+  CheckboxUnstyled,
+  CheckboxTheme,
+  CheckboxGroup
+} from 'cf-component-checkbox';
+import { applyTheme } from 'cf-style-container';
+
+const CheckboxGroupItem = applyTheme(
+  CheckboxUnstyled,
+  CheckboxTheme,
+  theme => ({
+    marginTop: '1em',
+
+    '&:first-child': {
+      marginTop: 0
+    }
+  })
+);
 
 class CheckboxComponent extends React.Component {
   constructor(props) {
@@ -21,14 +39,16 @@ class CheckboxComponent extends React.Component {
   render() {
     return (
       <div>
-        <p>You can create them individually with <code>Checkbox</code></p>
+        <p>
+          You can create them individually with <code>Checkbox</code>
+        </p>
 
         <Checkbox
           label="Checkbox 1"
           name="checkbox-1"
           value="checkbox1"
           checked={this.state.checkbox1}
-          onChange={checked => this.setState({ checkbox1: checked })}
+          onChange={event => this.setState({ checkbox1: event.target.checked })}
         />
 
         <Checkbox
@@ -36,19 +56,28 @@ class CheckboxComponent extends React.Component {
           name="checkbox-2"
           value="checkbox2"
           checked={this.state.checkbox2}
-          onChange={checked => this.setState({ checkbox2: checked })}
+          onChange={event => this.setState({ checkbox2: event.target.checked })}
         />
 
-        <p>Or as a group with <code>CheckboxGroup</code></p>
+        <p>
+          Or as a group with <code>CheckboxGroup</code>
+        </p>
 
         <CheckboxGroup
           values={this.state.checkboxValues}
           onChange={this.onCheckboxGroupChange}
-          options={[
-            { label: 'Option 1', name: 'group-option-1', value: 'option1' },
-            { label: 'Option 2', name: 'group-option-2', value: 'option2' }
-          ]}
-        />
+        >
+          <CheckboxGroupItem
+            label="Option 1"
+            name="group-option-1"
+            value="option1"
+          />
+          <CheckboxGroupItem
+            label="Option 2"
+            name="group-option-2"
+            value="option2"
+          />
+        </CheckboxGroup>
 
         <p>
           You can also disable a label by passing <code>false</code> explicitly
@@ -59,7 +88,7 @@ class CheckboxComponent extends React.Component {
           name="checkbox-1-no-label"
           value="checkbox1"
           checked={this.state.checkbox1}
-          onChange={checked => this.setState({ checkbox1: checked })}
+          onChange={event => this.setState({ checkbox1: event.target.checked })}
         />
       </div>
     );

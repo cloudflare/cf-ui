@@ -1,9 +1,10 @@
 import React from 'react';
-import renderer from 'react-test-renderer';
+import { felaSnapshot } from 'cf-style-provider';
+
 import { CheckboxGroup } from '../../cf-component-checkbox/src/index';
 
 test('should render', () => {
-  const component = renderer.create(
+  const snapshot = felaSnapshot(
     <CheckboxGroup
       values={['option1']}
       onChange={() => {}}
@@ -13,5 +14,6 @@ test('should render', () => {
       ]}
     />
   );
-  expect(component.toJSON()).toMatchSnapshot();
+  expect(snapshot.component).toMatchSnapshot();
+  expect(snapshot.styles).toMatchSnapshot();
 });

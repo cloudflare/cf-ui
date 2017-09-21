@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Checkbox from './Checkbox';
 import includes from 'lodash/includes';
 
 class CheckboxGroup extends React.Component {
@@ -10,16 +9,16 @@ class CheckboxGroup extends React.Component {
   }
 
   handleChange(value, checked) {
-    const values = this.props.options
+    const values = this.props.children
       .filter(option => {
-        if (option.value === value) {
+        if (option.props.value === value) {
           return checked;
         }
 
-        return includes(this.props.values, option.value);
+        return includes(this.props.values, option.props.value);
       })
       .map(option => {
-        return option.value;
+        return option.props.value;
       });
 
     this.props.onChange(values);
@@ -27,19 +26,15 @@ class CheckboxGroup extends React.Component {
 
   render() {
     return (
-      <div className="cf-checkbox__group">
-        {this.props.options.map(option => {
-          return (
-            <Checkbox
-              key={option.name}
-              label={option.label}
-              name={option.name}
-              value={option.value}
-              checked={includes(this.props.values, option.value)}
-              onChange={e => this.handleChange(option.value, e.target.checked)}
-            />
-          );
-        })}
+      <div>
+        {React.Children.map(this.props.children, Checkbox =>
+          React.cloneElement(Checkbox, {
+            key: Checkbox.props.name,
+            checked: includes(this.props.values, Checkbox.props.value),
+            onChange: event =>
+              this.handleChange(Checkbox.props.value, event.target.checked)
+          })
+        )}
       </div>
     );
   }
