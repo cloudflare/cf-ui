@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/cloudflare/cf-ui/compare/cf-builder-card@3.0.4...cf-builder-card@3.1.0) (2017-09-21)
+
+
+### Bug Fixes
+
+* **cf-component-card:** use role link when is not expandable, clean up exmaple ([1127f34](https://github.com/cloudflare/cf-ui/commit/1127f34))
+
+
+### Features
+
+* **cf-component-card:** allow non expandable toolbar links ([8e35164](https://github.com/cloudflare/cf-ui/commit/8e35164))
+
+
+
+
 <a name="3.0.4"></a>
 ## [3.0.4](https://github.com/cloudflare/cf-ui/compare/cf-builder-card@3.0.3...cf-builder-card@3.0.4) (2017-09-15)
 
