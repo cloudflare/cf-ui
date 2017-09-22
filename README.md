@@ -1,4 +1,8 @@
-# cf-ui
+# cf-ui (not maintained)
+
+***
+**This repository is no longer maintained.** We decided to merge cf-ui into our internal monorepo and we will keep the future development there. We do not accept pull requests here. However, we plan to synchronize our internal changes with this repository.
+***
 
 [![Build Status](https://travis-ci.org/cloudflare/cf-ui.svg?branch=master)](https://travis-ci.org/cloudflare/cf-ui)
 
