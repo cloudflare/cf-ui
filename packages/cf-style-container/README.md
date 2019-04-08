@@ -216,7 +216,7 @@ object properties and their keys. The `filter(key, value, accum)` callback will
 be invoked with the current key, value and accumulated value for each
 pair. Useful to blacklist object keys.
 
-All filter functions are composible.
+All filter functions are composable.
 
 ```javascript
 import { filterNone, filterProps } from 'cf-style-container';
