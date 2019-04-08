@@ -15,7 +15,7 @@ yarn run bootstrap
 > `yarn run bootstrap` anytime that you have changed the dependencies within a
 > package.
 
-## Commiting changes
+## Committing changes
 
 `cf-ui` follows the [`conventional-commits`](http://conventionalcommits.org/)
 standard and enforces it with a pre-commit hook that should have been installed
