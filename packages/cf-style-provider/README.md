@@ -61,7 +61,7 @@ renderer.renderToString(); // returns CSS as a string
 context. Handy for testing with enzyme.
 
 **NOTE:** felaTestContext is not exported from the index, you must provide a
-deep path to acccess it.
+deep path to access it.
 
 ```js
 import { mount } from 'enzyme';
@@ -92,7 +92,7 @@ test('should call onPageChange when clicking another page', () => {
 **For testing**. Uses internally felaTestContext. It shallow renders the component and returns snapshots of DOM and styles as a object with properties `component` and `styles`. Use it like this:
 
 **NOTE:** feleSnapshot is not exported from the index, you must provide a deep
-path to acccess it.
+path to access it.
 
 ```js
 import React from 'react';

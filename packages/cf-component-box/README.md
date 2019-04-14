@@ -7,7 +7,7 @@ This is styling component similar to cf-component-flex which allows for arbitrar
 This component should only be used when the built in style doesn't quite fit the bill and when
 it can't be done with fela. Ideally, cf-ui components should have the right styling built in for
 most cases. In the few edge cases that pop up in real world feature development, this is an alternative
-to wrapping your component in a `<div>` or `<span>` and styling it with css to accomodate one-offs.
+to wrapping your component in a `<div>` or `<span>` and styling it with css to accommodate one-offs.
 
 Also, note that using Box effectively performs a component level CSS reset, as all props
 not provided will be pulled from the default theme. These defaults, outlined in propertiesSpec,
